@@ -1,0 +1,16 @@
+{	
+    "type": "PeriodCollection",
+    "id": "0", "label": "Some examples",
+    "rev_date": "2013-10-12", "author": [{"name":"@kgeographer"}],
+    "projection": {"datetype": "date", "atom": "date", "origin": "0001-01-01", "calendar": "gregorian", "scale": 1},
+    "periods": [
+        {"id": "0", "durType": "w", "label": "~2 yr stint in WW II", "tSpans": [{"s": "1942-12-08", "e": "1945-09-02", "d": "~2y"}] },
+        {"id": "1", "durType": "w", "label": "6 mo. hospital, 1946", "tSpans": [{"s": "1946", "d": "6m"}] },
+        {"id": "2", "durType": "w", "label": "6 mo. hospital, mid-40s", "tSpans": [{"s": "1946", "e":"1947", "d": "6m"}] },
+        {"id": "", "durType": "w", "label": "", "tSpans": [{"s": "", "e": "", "d": ""}] },
+        {"id": "", "durType": "w", "label": "", "tSpans": [{"s": "", "e": "", "d": ""}] },
+        {"id": "", "durType": "w", "label": "", "tSpans": [{"s": "", "e": "", "d": ""}] },
+        {"id": "", "durType": "w", "label": "", "tSpans": [{"s": "", "e": "", "d": ""}] },
+        {"id": "", "durType": "w", "label": "", "tSpans": [{"s": "", "e": "", "d": ""}] }
+    ]
+}

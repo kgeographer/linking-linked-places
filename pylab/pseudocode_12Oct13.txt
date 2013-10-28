@@ -1,0 +1,54 @@
+
+open data file
+check format: type="PeriodCollection", ['periods'].length > 0
+    else --> error out
+set atom = projection['atom']
+if (atom == 'date'):
+    parseDate(periods)
+else:
+    parseYear(periods)
+
+def parseDate(coll):
+    newColl = {};
+    for x in xrange(len(coll)):
+        newSpans = [];
+        for y in xrange(len(coll[x]['tSpans']):
+            if (col[x][y]['durType'] == 'w'):
+                # it's a span (duration) within a span
+                newSpan = {};
+                if (!coll[x][y]['d']):
+                    print 'format issue: *All* durType "w" need a duration "d"'; break;
+                elif (!coll[x][y]['e']):  # no end yet, build a span from a month or year
+                    newSpan['s'] = toJul(coll[x][y]['s'],'span')[0];  #
+                    newSpan['e'] = toJul(coll[x][y]['s'],'span')[1];  #
+                else:                   # there's an s and an e, convert to julian range
+                    newSpan['s'] = toJul(coll[x][y]['s'],'sDate')
+                    newSpan['e'] = toJul(coll[x][y]['e'],'eDate')
+                # have s, e, and d now
+                
+                newSpans.append(newSpan)
+        elif (col[x]['durType'] == 't'):
+            # it was 'throughout' a span
+            
+            
+
+def toJul(d,e):
+    regex stuff (yyyy || yyyy-mm)
+    jRange=[]; jDate = '';
+    if e == 'span':
+        if year:
+            jRange['s'] = gcal2jd(year.group(1),1,1); jRange['e'] = gcal2jd(year.group(1),12,31);
+        elif month:
+            jRange['s'] = gcal2jd(year.group(1),month.group(1),1); jRange['e'] = gcal2jd(year.group(1),month.group(1),31);
+        else:
+            print 'not year or month - no way to make span';
+        return jRange;
+    else :
+        if year:
+            jDate = gcal2jd(year.group(),1,1) if e == 'sDate' else gcal2jd(year.group(1),12,31);
+        elif month:
+            jDate = gcal2jd(year.group(),month.group(1),1); 
+        else:
+            jDate = gcal2jd(d); 
+        return jDate;
+        
