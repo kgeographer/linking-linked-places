@@ -1,14 +1,14 @@
-# rev 29 Oct 2013 kg
+# rev 1 Nov 2013 kg
 # 
-data = 'Dance' # pleiades_fuzz98 Dance ttspec ww2
+data = 'ww2' # pleiades_fuzz98 Dance ttspec ww2
 loc = 'laptop' # home laptop work
 
 import os, re, math, codecs
 from matplotlib import pyplot
 from shapely.geometry import MultiPolygon
 from descartes.patch import PolygonPatch
-import helper5
-from helper5 import parseDate, toJul;
+import helper6
+from helper6 import parseDate, toJul;
 import simplejson as json
 
 path2='Repos/topotime/'
@@ -31,18 +31,16 @@ coll=file.read(); file.close();
 fnw1='data/out/'+data+'_collection.json' # collection with julian dates, geometry
 w1 = codecs.open(wd+fnw1,"w", "utf-8"); 
 
-global newSpans, newCollection;
-newCollection = json.loads(coll)
-
-periods = newCollection['periods']; print periods;
+newCollection = json.loads(coll)	# load
+periods = newCollection['periods']	# copy
 atom = newCollection['projection']['atom']
 
-#pds=periods; x=8; y=0; z=0 # testing values
+#pds=periods; x=0; y=0; z=0
 
 if (atom == 'date'):
-   newCollection['periods']=parseDate(periods)
-   json.dump(newCollection,w1,indent=2, sort_keys=True)
-   w1.close()
+   newCollection['periods']=makeNew(periods)
+   json.dump(newCollection,file_w,indent=3, sort_keys=True)
+   file_w.close()
 else:
    print 'atom is not date; that\'s all we can parse now'
 
@@ -52,6 +50,7 @@ w2 = codecs.open(wd+fnw2,"w", "utf-8");
 fnw3='data/out/'+data+'_geom_d3.json' # a labeled geometries object for d3
 w3 = codecs.open(wd+fnw3,"w", "utf-8");
 
+# have newCollection, add geometry array
 collGeomRaw = []; collGeomObj = []
 for per in newCollection['periods']:
    geomArrayRaw = []; geomObj = {}; pointsArray = []
@@ -60,7 +59,6 @@ for per in newCollection['periods']:
       pointPair['x']=per['geom'][i][0]
       pointPair['y']=per['geom'][i][1]
       pointsArray.append(pointPair)
-      geomArrayRaw.append(per['geom'][i])
    geomObj['points'] = pointsArray
    geomObj['label'] = per['label']
    geomObj['id'] = per['id']
@@ -71,11 +69,3 @@ w2.close()
 #w3.write('ttPolys = ')
 w3.write(json.dumps(sorted(collGeomObj,key=lambda k: k['points'][0]['x'])))
 w3.close()
-   
-#collectionGeometry = []
-#for per in newCollection['periods']:
-   #geomArray = []
-   ## geomArray.append('"id": '+per['id'])
-   #for i in range(len(per['geom'])):
-      #geomArray.append(per['geom'][i])
-   #collectionGeometry.append(geomArray)
