@@ -1,3 +1,4 @@
-# makeNew.py 1 Nov 2013
-def makeNew(coll):
+# ttParse.py 2 Nov 2013
+def ttParse(pds):
+   newColl = coll
    

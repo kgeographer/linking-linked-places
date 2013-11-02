@@ -3,20 +3,18 @@
 	"rev_date": "2013-09-28", "author": [{"name":"Unk. (from N. Coleman)"}],
 	"projection": {"datetype": "date", "atom": "date", "origin": "1900-01-01", "calendar": "gregorian", "scale": 1},
 	"periods": [
-		{"id":"0", "label": "George Dance The Younger's Life", "tSpans": [{"s":"1741-01-01","e":"1825-12-31"}]},
+		{"id":"0", "label": "George Dance the Younger's Life", "tSpans": [{"s":"1741-01-01","e":"1825-12-31"}]},
 		{"id":"1", "label": "Birth of G. Dance the Younger", "tSpans": [{"s":"1741", "d":"1d", "during":true}], "class": "Event"},
 		{"id":"2", "label": "Death of G. Dance the Younger", "tSpans": [{"s":"1825", "d":"1d", "during":true}], "class": "Event"},
 		{"id":"3", "label": "Founding of Royal Academy", "tSpans": [{"s":"1768", "d": "1d", "during":true}], "class": "Event"},	
 		{"id":"4", "label": "Founding of Architects' Club", "tSpans": [{"s":"1791", "d":"1d", "during":true}], "class": "Event"},	
 		{"id":"5", "label": "G. Dance appointed prof. of Architecture at RA", "tSpans": [{"s":"1798", "d":"1d", "during":true}], "class": "Event"},	
 		{"id":"6", "label": "G. Dance resigns from RA", "tSpans": [{"s":"1806", "d":"1d", "during":true}], "class": "Event"},
-
 		{"id":"7", "label": "George Dance The Younger's European Adventure", "tSpans": [
-				{"s":"1758-12-01","ls":"1758-12-31","e":">13","ee":"1764-12-31"}], "class": "Event"},
+				{"s":"1758-12-01","ls":"1758-12-31","e":">14","ee":"1764-12-31"}], "class": "Event"},
 		{"id":"8", "label": "departs Gravesend", "tSpans": [{"s":"1758-12-01","e":"1758-12-31"}], "class": "Event"},
 		{"id":"17", "label": "resides in Florence", "tSpans": [{"s":">8.e","ls":"1759-03-21","e":"<9.s"}], "class": "Event"}, 
 
-		
 		{"id":"9", "label": "resides in Rome", "tSpans": [
 				{"s":"1759-05-01","ls":"1759-05-31","e":"1761-04-20"},
 				{"s":"1761-05-01","ls":"1761-05-31","ee":"1763-04-01","e":"1763-04-30"},

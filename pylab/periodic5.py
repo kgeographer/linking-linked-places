@@ -1,6 +1,6 @@
 # rev 29 Oct 2013 kg
 # 
-data = 'Dance' # pleiades_fuzz98 Dance ttspec ww2
+data = 'pleiades_fuzz98' # pleiades_fuzz98 Dance ttspec ww2
 loc = 'laptop' # home laptop work
 
 import os, re, math, codecs
@@ -37,7 +37,7 @@ newCollection = json.loads(coll)
 periods = newCollection['periods']; print periods;
 atom = newCollection['projection']['atom']
 
-#pds=periods; x=8; y=0; z=0 # testing values
+pds=periods; x=0; y=0; z=0 # testing values
 
 if (atom == 'date'):
    newCollection['periods']=parseDate(periods)

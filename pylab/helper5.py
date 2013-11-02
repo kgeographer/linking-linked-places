@@ -9,8 +9,7 @@ from helper2 import toRange
 def parseDate(pds):
    global p; p = pds
    newPeriods = []; 
-   #for x in xrange(len(pds)):
-   for x in xrange(8):
+   for x in xrange(len(pds)):
       newPeriod = {}; geom = []; newTspans = []; 
       newPeriods.append(newPeriod)
       newPeriods[x]['id']=pds[x]['id']; newPeriods[x]['label']=pds[x]['label']
@@ -46,7 +45,7 @@ def parseDate(pds):
          else: # handle all non-during
             newerPeriods=[]; newerTspans= []
             for z in xrange(len(oldSpan)): # find references 
-               ref=re.match(r'([<>~])?(\d{1,3})\.?([sle]{0,2})',oldSpan.values()[z])
+               ref=re.match(r'([<>~])?(\d{1,3})\D\.?([sle]{0,2})',oldSpan.values()[z])
                if ref:                  
                   # print ref.group(1), ref.group(2), ref.group(3)
                   if not refOkay(ref):
@@ -59,6 +58,7 @@ def parseDate(pds):
                   newSpan[oldSpan.keys()[z]] = \
                      oldSpan.values()[z]
             #print newSpan
+            #newPeriods[x]['tSpans'].append(newSpan)            
             newerSpan={}; 
             for w in xrange(len(newSpan)): # find operators
                try:
@@ -66,8 +66,10 @@ def parseDate(pds):
                                newSpan.values()[w])
                   if op.group(2) == None:
                      val = ref.group(1)
+                     #newSpan[k] = toJul(val,'sDate','');
                   else:
                      val=op.group(2)
+                           #newSpan[k] = toJul(val,'sDate','');
                   newerSpan[newSpan.keys()[w]] = toJul(val,'eDate','e')
                except:
                   print 'stalled on '+str(x)+', '+str(y);
@@ -86,6 +88,9 @@ def parseDate(pds):
                elif newSpan['e'][0]=='>':
                   newerSpan['ee']=newerSpan['e']
                   newerSpan['e']=newerSpan+fudge                  
+            # newPeriods[x]['tSpans'].append(newSpan)
+            # newerTspans.append(newerSpan)
+            #if len(newPeriods[x]['tSpans']) == 0:
             newPeriods[x]['tSpans'].append(newerSpan)
             coordPairs=[(newerSpan['s']/1000000,0), \
                         (newerSpan['ls']/1000000,1) if 'ls' in newerSpan else (newerSpan['s']/1000000,1),\
@@ -95,13 +100,14 @@ def parseDate(pds):
             for p in newPeriods: print p['tSpans'];
    return newPeriods
 
+   
 def getIdx(i):
    for x in xrange(len(p)):
       if p[x]['id'] == i:
          return x
 
 def refOkay(r):
-   if r.group(2)=='':
+   if r.group(2)=='' or r.group(3)=='':
       print 'reference pointer in data missing a term'
       return False
    else:
