@@ -134,7 +134,12 @@ d3_layout_timeline = function() {
                     }
                 }
             }
-            temporalPeriods = newCollection.periods;
+            if (newCollection.periods) {
+                temporalPeriods = newCollection.periods;
+            }
+            else {
+                temporalPeriods = newCollection;
+            }
             formatPeriodArray();
 
             if (newCollection.relations) {
@@ -224,6 +229,32 @@ d3_layout_timeline = function() {
         //build a period hash
         for (x in temporalPeriods) {
             if(temporalPeriods[x]) {
+                //a CSV input is going to need to make tSpans
+                if(temporalPeriods[x].s || temporalPeriods[x].e) {
+                    temporalPeriods[x].tSpans = [{}];
+                    if(temporalPeriods[x].s.length > 0) {
+                        temporalPeriods[x].tSpans[0].s = temporalPeriods[x].s;
+                    }
+                    if(temporalPeriods[x].ls.length > 0) {
+                        temporalPeriods[x].tSpans[0].ls = temporalPeriods[x].ls;
+                    }
+                    if(temporalPeriods[x].e.length > 0) {
+                        temporalPeriods[x].tSpans[0].e = temporalPeriods[x].e;
+                    }
+                    if(temporalPeriods[x].ee.length > 0) {
+                        temporalPeriods[x].tSpans[0].ee = temporalPeriods[x].ee;
+                    }
+                    if(temporalPeriods[x].d.length > 0) {
+                        temporalPeriods[x].tSpans[0].d = temporalPeriods[x].d;
+                    }
+                    if(temporalPeriods[x].cstep.length > 0) {
+                        temporalPeriods[x].tSpans[0].cstep = temporalPeriods[x].cstep;
+                    }
+                    if(temporalPeriods[x].cduration.length > 0) {
+                        temporalPeriods[x].tSpans[0].cduration = temporalPeriods[x].cduration;
+                    }
+                    
+                }
                 temporalPeriods[x].lane = -1;
                 temporalPeriods[x].level = 1;
                 temporalPeriods[x].lanerange = [];
@@ -328,7 +359,12 @@ d3_layout_timeline = function() {
         if(incomingPeriod.tSpans && currentProcessedPeriods.indexOf(incomingPeriod) == -1) {
             var isCyclical = false;
             currentProcessedPeriods.push(incomingPeriod);
+                console.log("***")
+                console.log(incomingPeriod)
+                console.log("***")
             for (x in incomingPeriod.tSpans) {
+                console.log(incomingPeriod.tSpans[x])
+                console.log(incomingPeriod.tSpans[x])
                 var processedTSpan = {};
                 if (incomingPeriod.tSpans[x].s) {
                     if (!String(incomingPeriod.tSpans[x].s).match(tSpanOperators)) {
@@ -447,7 +483,7 @@ d3_layout_timeline = function() {
                     }
                 }
                 if (incomingPeriod.tSpans[x].cstep) {
-                    isCycical = true;
+                    isCyclical = true;
                     if (incomingPeriod.tSpans[x].cstep.substring(0,1) != "=") {
                         var cycleBounds = processedTSpan;
                         var durVal = incomingPeriod.tSpans[x].cduration;
@@ -469,19 +505,17 @@ d3_layout_timeline = function() {
                         var x = cycleBounds.s;
                         var xe = cycleBounds.e;
                         while (x < xe) {
-                            var processedTSpan = {
+                            var processedCycleTSpan = {
                                 s: x,
                                 e: x + durVal
                                 };
-                                incomingPeriod.projectedTSpans.push(processedTSpan);
+                                incomingPeriod.projectedTSpans.push(processedCycleTSpan);
                                 x = x + stepVal;
                         }
                     }
-                    else {
-                        
-                    }
                 }
-                if (!isCyclical) {
+
+                if (isCyclical == false) {
                     incomingPeriod.projectedTSpans.push(processedTSpan);
                 //estimate an end or start if none is discovered
                     estimatePeriodOnTheFly(incomingPeriod.projectedTSpans[incomingPeriod.projectedTSpans.length - 1]);
