@@ -3,7 +3,7 @@ topotime
 
 A pragmatic JSON data format, D3 layout, and functions for representing and computing over complex temporal phenomena.
 
-To learn more, [see the Wiki.](https://github.com/emeeks/topotime/wiki)
+To learn more, [see the Wiki.](https://github.com/ComputingPlace/topotime/wiki)
 
 Contents:
 timeline.js - A D3 timeline layout
