@@ -17,8 +17,8 @@ function timelineViz() {
     //so xScale = 365 means 1 pixel = 1 year
     xScale = 3.65;
 //    d3.json("data/Dance_life.json", function(data) {
-    d3.json("us_history.json", function(data) {
-//    d3.json("topotime_format.json", function(data) {
+    d3.json("data/us_history.json", function(data) {
+//    d3.json("data/topotime_format.json", function(data) {
 //    exposedData = pleiades_periods;
     exposedData = data;
 
