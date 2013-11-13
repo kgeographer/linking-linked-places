@@ -13,7 +13,7 @@
 		{"id":"7", "label": "George Dance The Younger's European Adventure", "tSpans": [
 				{"s":"1758-12-01","ls":"1758-12-31","e":">14","ee":"1764-12-31"}], "class": "Event"},
 		{"id":"8", "label": "departs Gravesend", "tSpans": [{"s":"1758-12-01","e":"1758-12-31"}], "class": "Event"},
-		{"id":"17", "label": "resides in Florence", "tSpans": [{"s":">8.e","ls":"1759-03-21","e":"<9.s"}], "class": "Event"}, 
+		{"id":"17", "label": "resides in Florence", "tSpans": [{"s":">8","ls":"1759-03-21","e":"<9.s"}], "class": "Event"}, 
 
 		{"id":"9", "label": "resides in Rome", "tSpans": [
 				{"s":"1759-05-01","ls":"1759-05-31","e":"1761-04-20"},

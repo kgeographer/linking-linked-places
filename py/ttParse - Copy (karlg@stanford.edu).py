@@ -1,6 +1,5 @@
-# rev 1 Nov 2013 kg
-# 
-data = 'ww2' # pleiades_fuzz98 Dance ttspec ww2
+# rev 2 Nov 2013 kg
+data = 'ttspec' # pleiades_fuzz98 Dance ttspec ww2
 loc = 'laptop' # home laptop work
 
 import os, re, math, codecs
@@ -8,7 +7,7 @@ from matplotlib import pyplot
 from shapely.geometry import MultiPolygon
 from descartes.patch import PolygonPatch
 import helper6
-from helper6 import parseDate, toJul;
+from helper6 import parseDate, toJul, withinSpan
 import simplejson as json
 
 path2='Repos/topotime/'
@@ -26,18 +25,19 @@ fn=wd + 'data/' + data + '.json'
 
 file = codecs.open(fn,"r", "utf-8"); 
 coll=file.read(); file.close();
-fnw1='data/out/'+data+'_collection.json' # collection with julian dates, geometry
+fnw1='../ttout/'+data+'_collection.json' # collection with julian dates, geometry
 w1 = codecs.open(wd+fnw1,"w", "utf-8"); 
 
 collection = json.loads(coll)	# load
 periods = collection['periods']	# isolate periods
+pds = periods # copy for debugging
 newCollection = collection # clone, replace periods[] later
 atom = newCollection['projection']['atom']
 
 #pds=periods; x=0; y=0; z=0
 
 if (atom == 'date'):
-   newCollection['periods']=ttParse(periods)
+   newCollection['periods']=makeNew.parse(periods)
    json.dump(newCollection,file_w,indent=3, sort_keys=True)
    file_w.close()
 else:
@@ -45,9 +45,9 @@ else:
 
 # for pyplot, d3
 # make geometry files from newCollection['periods'] 
-fnw2='data/out/'+data+'_geom_raw.json' # a raw geometries object for pyplot
+fnw2='../ttout/'+data+'_geom_raw.json' # a raw geometries object for pyplot
 w2 = codecs.open(wd+fnw2,"w", "utf-8");
-fnw3='data/out/'+data+'_geom_d3.json' # a labeled geometries object for d3
+fnw3='../ttout/'+data+'_geom_d3.json' # a labeled geometries object for d3
 w3 = codecs.open(wd+fnw3,"w", "utf-8");
 
 periodsGeomRaw = []; periodsGeomObj = []

@@ -5,7 +5,7 @@ loc = 'laptop' # home laptop work
 
 import os, re, math, codecs
 from matplotlib import pyplot
-from shapely.geometry import MultiPolygon
+from shapely.geometry import Polygon, MultiPolygon
 from descartes.patch import PolygonPatch
 import helper5
 from helper5 import parseDate, toJul;
@@ -28,7 +28,7 @@ file = codecs.open(fn,"r", "utf-8");
 coll=file.read(); file.close();
 #fnw="data/pleiades_periods_geom_fuzz.json"
 #fnw="data/pleiades_periods_geom.json"
-fnw1='data/out/'+data+'_collection.json' # collection with julian dates, geometry
+fnw1='../ttout/'+data+'_collection.json' # collection with julian dates, geometry
 w1 = codecs.open(wd+fnw1,"w", "utf-8"); 
 
 global newSpans, newCollection;
@@ -47,9 +47,9 @@ else:
    print 'atom is not date; that\'s all we can parse now'
 
 # for pyplot, d3
-fnw2='data/out/'+data+'_geom_raw.json' # a raw geometries object for pyplot
+fnw2='../ttout/'+data+'_geom_raw.json' # a raw geometries object for pyplot
 w2 = codecs.open(wd+fnw2,"w", "utf-8");
-fnw3='data/out/'+data+'_geom_d3.json' # a labeled geometries object for d3
+fnw3='../ttout/'+data+'_geom_d3.json' # a labeled geometries object for d3
 w3 = codecs.open(wd+fnw3,"w", "utf-8");
 
 collGeomRaw = []; collGeomObj = []
@@ -71,11 +71,24 @@ w2.close()
 #w3.write('ttPolys = ')
 w3.write(json.dumps(sorted(collGeomObj,key=lambda k: k['points'][0]['x'])))
 w3.close()
+
+# make shapely multipolygon
+allArray = []
+for x in xrange(len(collGeomRaw)):
+   allArray.append([collGeomRaw[x],[]])
+multi1 = MultiPolygon(allArray)
+
+qpoly=Polygon(collGeomRaw[45])
+
+def qtt(coll,q):
+   areaColl = coll.area
+   areaQ = q.area
+   print 'that period is: ~'+str("%.2f" % (areaQ/areaColl*100))+'% of the collection'
    
-#collectionGeometry = []
-#for per in newCollection['periods']:
-   #geomArray = []
-   ## geomArray.append('"id": '+per['id'])
-   #for i in range(len(per['geom'])):
-      #geomArray.append(per['geom'][i])
-   #collectionGeometry.append(geomArray)
+for span in multi1:
+   if span.intersection(qpoly):
+      print span.intersection(qpoly)
+      
+for span in multi1:
+   #print span.distance(qpoly)
+   print qpoly.distance(span.centroid)
