@@ -14,25 +14,26 @@ Topotime currently permits the representation of:
 To learn more, check these and other [pages in the Wiki.](https://github.com/ComputingPlace/topotime/wiki)
 
 * [Topotime v 0.1 Specification](https://github.com/ComputingPlace/topotime/wiki/Topotime-v-0.1-specification)
-####Files (javascript):
+
+#####Files (javascript):
 
 * timeline.js - A D3 timeline layout
 * topo\_projection.js - Temporal projection function used for topotime data
 * example.js - Example code for using the timeline layout and displaying the processed results
 
-####Files (Python)
+#####Files (Python)
 * py/ttParse.py - Parses a data file and generates temporal geometries permitting calculation of purely temporal topological relations including containment and overlap.
 * py/ajx2.py - Functions for computing intersections between Period timespans
 * ttDemo.html - Some early interactive access to Python functions
 
-####Example Data
+#####Example Data
 
 These files are parsed by either timeline.js or ttParse.py
 * topotime_format.json - JSON file with various supported period types
 * data/pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period ("Holocene Climatic Optimum") with no defined timespan
 
 
-####Future developments
+#####Future developments
 * Actors
 * Example tied to geospatial and network data
 
