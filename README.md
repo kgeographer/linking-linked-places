@@ -20,6 +20,7 @@ To learn more, check out these and other pages in [the Wiki.](https://github.com
 * timeline.js - A D3 timeline layout
 * topo\_projection.js - Temporal projection function used for topotime data
 * example.js - Example code for using the timeline layout and displaying the processed results
+* index.html - Renders a D3 timeline to a web page
 
 #####Files (Python)
 * py/ttParse.py - Parses a data file and generates temporal geometries permitting calculation of purely temporal topological relations including containment and overlap.
