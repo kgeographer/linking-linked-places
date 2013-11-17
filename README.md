@@ -28,9 +28,14 @@ To learn more, check out these and other pages in [the Wiki.](https://github.com
 
 #####Example Data
 
-These files are parsed by either timeline.js or ttParse.py
+These files can be parsed by both timeline.js (for rendering timelines) and ttParse.py (for other calculations)
 * topotime_format.json - JSON file with various supported period types
-* data/pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period ("Holocene Climatic Optimum") with no defined timespan
+* pleiades_98.json - 98 historic periods from the Pleiades project
+* us_history.json - The "lifespans" of the 50 US states, plus some other events
+* ww2.json - A scenario of 8 events
+* Dance.json - The lifespan of George Dance the Younger (1741-1825), an architect
+* pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period("Holocene Climatic Optimum") with no defined timespan
+
 
 
 #####Future developments
