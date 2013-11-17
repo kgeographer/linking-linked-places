@@ -1,5 +1,5 @@
 # rev 2 Nov 2013 kg
-data = 'topotime_format' # pleiades_fuzz98 Dance topotime_format ww2
+data = 'ttspec' # pleiades_fuzz98 Dance topotime_format  ttspec ww2
 loc = 'home' # home laptop work
 
 import os, re, math, codecs
@@ -39,7 +39,11 @@ def init():
 init()
 p=0; t=0; z=0
 
+foo=sorted(periodHash.items(), key=lambda x:int(x[1]['id']))
+for k,v in foo: print v['id'],v['tSpansP']
+
 if (atom == 'date'):
+   # make projected periods and add to new collection
    newCollection['periods']=makeNew.parse(periods)
    json.dump(newCollection,file_w,indent=3, sort_keys=True)
    file_w.close()
