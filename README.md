@@ -11,11 +11,11 @@ Topotime currently permits the representation of:
 * Estimated periods when a period has no timespan defined
 * Relations between events; so far, _part-of_, and _participates-in_. Further relations including _has-location_ are in development.
 
-To learn more, check these and other [pages in the Wiki.](https://github.com/ComputingPlace/topotime/wiki)
+To learn more, check out these and other pages in [the Wiki.](https://github.com/ComputingPlace/topotime/wiki)
 
 * [Topotime v 0.1 Specification](https://github.com/ComputingPlace/topotime/wiki/Topotime-v-0.1-specification)
 
-#####Files (javascript):
+#####Files (JavaScript):
 
 * timeline.js - A D3 timeline layout
 * topo\_projection.js - Temporal projection function used for topotime data
