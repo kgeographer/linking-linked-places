@@ -5,7 +5,7 @@
     "projection": {"atom": "date", "origin": "1900-01-01", "datetype": "date", "scale": 1},
     "periods":[
     {
-        "id":"1",
+        "id": 1,
         "label": "Standard Example",
         "tSpans": [{"s": "1901-01-01", "ls": "1911-02-02", "e": "1950-05-05", "ee": "1943-01-01"}],
         "tSpanType": "periodArray",
@@ -19,11 +19,10 @@
         }
     },
     {
-        "id":"2",
+        "id": 2,
         "label": "Multipart Example (standard, pt2 e>12 ee:1961-01-01",
-		  "tSpans": [{"s": "1901-01-01", "ls": "1901-02-02", "e": "1920-05-05", "ee": "1919-01-01"}, 
-		  {"s": "1931-01-01", "ls": "1935-02-02", "e": ">12", "ee": "1961-01-01"}
-		  ],
+		  "tSpans": [{"s": "1901-01-01", "ls": "1901-02-02", "ee": "1919-01-01", "e": "1920-05-05"}, 
+		  {"s": "1931-01-01", "ls": "1935-02-02", "ee": "1961-01-01", "e": ">12"}],
         "tSpanType": "periodArray",
         "css_color": "#555555",
         "css_class": "life",
@@ -35,7 +34,7 @@
         }
     },
     {
-        "id":"3",
+        "id": 3,
         "label": "Cyclical Example",
         "tSpans": [{"s": "1901-01-01", "ls": "1901-02-02", "e": "1950-05-05", "ee": "1949-01-01", "cduration": "3y", "cstep": "10y"}],
         "tSpanType": "periodArray",
@@ -49,7 +48,7 @@
         }
     },
        {
-        "id":"4",
+        "id": 4,
         "label": "Duration Example",
         "tSpans": [{"s": "1901-01-01", "duration": "31y", "minduration": "28y"}],
         "tSpanType": "periodArray",
@@ -63,10 +62,9 @@
         }
     },
     {
-        "id":"5",
+        "id": 5,
         "label": "Estimated Example",
         "tSpanType": "periodArray",
-				"tSpans": [{}],
         "css_color": "#555555",
         "css_class": "life",
         "src": "DOI999",
@@ -77,8 +75,8 @@
         }
     },
         {
-        "id":"6",
-        "label": "d",
+        "id": 6,
+        "label": "Duration",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1926-01-01", "duration": "2y"}],
         "css_color": "#555555",
@@ -91,7 +89,7 @@
         }
     },
         {
-        "id":"7",
+        "id": 7,
         "label": "Contingent s>1.e d31y",
         "tSpanType": "periodArray",
         "tSpans": [{"s": ">1.e", "duration": "11y"}],
@@ -105,7 +103,7 @@
         }
     },
             {
-        "id":"8",
+        "id": 8,
         "label": "Contingent s<1 e>4",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "<1", "e": ">4"}],
@@ -119,7 +117,7 @@
         }
     },
             {
-        "id":"9",
+        "id": 9,
         "label": "Contingent s>12 d20y (1-off)",
         "tSpanType": "periodArray",
         "tSpans": [{"s": ">12", "duration": "20y"}],
@@ -133,7 +131,7 @@
         }
     },
     {
-        "id":"10",
+        "id": 10,
         "label": "Contingent s>7 d20y",
         "tSpanType": "periodArray",
         "tSpans": [{"s": ">7", "duration": "20y"}],
@@ -147,7 +145,7 @@
         }
     },
     {
-        "id":"11",
+        "id": 11,
         "label": "Contingent s~10.e d20y",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "~10.e", "duration": "20y"}],
@@ -161,10 +159,10 @@
         }
     },
     {
-        "id":"12",
+        "id": 12,
         "label": "Contingent s>11 d20y",
         "tSpanType": "periodArray",
-        "tSpans": [{"s": ">11", "duration": "20y"}],
+        "tSpans": [{"s": "1914-01-01", "duration": "20y"}],
         "css_color": "#555555",
         "css_class": "life",
         "src": "DOI999",
@@ -175,7 +173,7 @@
         }
     },
     {
-        "id":"13",
+        "id": 13,
         "label": "Shared event",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1914-01-01", "duration": "4y"}],
@@ -189,7 +187,7 @@
         }
     },
         {
-        "id":"14",
+        "id": 14,
         "label": "Nested event level 1",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1920-01-01", "duration": "5y"}],
@@ -203,7 +201,7 @@
         }
     },
         {
-        "id":"15",
+        "id": 15,
         "label": "Nested event level 1",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1926-01-01", "duration": "4y"}],
@@ -217,7 +215,7 @@
         }
     },
         {
-        "id":"16",
+        "id": 16,
         "label": "Nested event level 1",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1920-01-01", "duration": "8y"}],
@@ -231,7 +229,7 @@
         }
     },
     {
-        "id":"17",
+        "id": 17,
         "label": "Nested event level 2",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1922-01-01", "duration": "2y"}],
@@ -245,7 +243,7 @@
         }
     },
         {
-        "id":"18",
+        "id": 18,
         "label": "Nested event level 2",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1922-01-01", "duration": "3y"}],
@@ -259,7 +257,7 @@
         }
     },
             {
-        "id":"19",
+        "id": 19,
         "label": "During Event",
         "tSpanType": "periodArray",
         "tSpans": [{"s": "1922-01-01", "e": "1950-01-01", "duration": "3y", "during": true}],
@@ -276,13 +274,13 @@
 
     ],
 	"relations": [
-		{"id":"1", "rel":["1", "has_part", "14" ] },
-		{"id":"2", "rel":["1", "participates_in", "13" ] },
-		{"id":"3", "rel":["4", "participates_in", "13" ] },
-		{"id":"4", "rel":["1", "has_part", "15" ] },
-		{"id":"5", "rel":["1", "has_part", "16" ] },
-		{"id":"6", "rel":["16", "has_part", "17" ] },
-		{"id":"6", "rel":["16", "has_part", "18" ] }
+		{"id":1, "rel":["1", "has_part", "14" ] },
+		{"id":2, "rel":["1", "participates_in", "13" ] },
+		{"id":3, "rel":["4", "participates_in", "13" ] },
+		{"id":4, "rel":["1", "has_part", "15" ] },
+		{"id":5, "rel":["1", "has_part", "16" ] },
+		{"id":6, "rel":["16", "has_part", "17" ] },
+		{"id":6, "rel":["16", "has_part", "18" ] }
                 
                 ]
 ,

@@ -1,7 +1,7 @@
 # rev 29 Oct 2013 kg
 # 
-data = 'pleiades_fuzz98' # pleiades_fuzz98 Dance ttspec ww2
-loc = 'laptop' # home laptop work
+data = 'ww2a' # pleiades98fuzz Dance ttspec ww2 ww2a
+loc = 'home' # home laptop work
 
 import os, re, math, codecs, pickle
 from matplotlib import pyplot
@@ -64,7 +64,7 @@ for per in newCollection['periods']:
       pointPair['x']=per['geom'][i][0]
       pointPair['y']=per['geom'][i][1]
       pointsArray.append(pointPair)
-      geomArrayRaw.append(per['geom'][i])
+      geomArrayRaw.append(per['geom'][i]) # array of pointPair x 5
    perGeom['shapes']=Polygon(geomArrayRaw)
    perGeom['id']=per['id']; perGeom['label']=per['label']
    #if len(geomArrayRaw) <5:
@@ -80,7 +80,8 @@ w2.close()
 #w3.write('ttPolys = ')
 w3.write(json.dumps(sorted(collGeomObj,key=lambda k: k['points'][0]['x'])))
 w3.close()
-pickle.dump(collGeomRaw,w4)
+pickle.dump(collShapes,w4)
+#pickle.dump(collGeomRaw,w4)
 w4.close()
 
 # make multipolygon for collection

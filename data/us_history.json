@@ -1,8 +1,8 @@
 {
     "type": "PeriodCollection",
-    "id": "pc_01",  "label": "sample period collection (simple)",
-    "author": "emeeks", "rev_date": "2013-09-07",
-    "projection": {"atom": "date", "origin": "1900-01-01", "datetype": "date", "scale": 1},
+    "id": "pc_01",  "label": "US History",
+    "author": "emeeks", "rev_date": "2013-09-17",
+    "projection": {"atom": "date", "origin": "0001-01-01", "datetype": "date", "scale": 1},
     "periods":[
     {
         "id": 1,
