@@ -23,9 +23,11 @@ To learn more, check out these and other pages in [the Wiki.](https://github.com
 * index.html - Renders a D3 timeline to a web page
 
 #####Files (Python)
-* py/ttParse.py - Parses a data file and generates temporal geometries permitting calculation of purely temporal topological relations including containment and overlap.
-* py/ajx2.py - Functions for computing intersections between Period timespans
-* ttDemo.html - Some early interactive access to Python functions
+* py/periodic9.py - Parses a data file and generates temporal geometries permitting calculation of purely temporal topological relations including containment and overlap.
+* py/ajx2.py - Functions for computing % intersect between Period timespans
+* py/ajx_summary.py - Functions for computing unions and intersects on filtered set in Period Collection
+* ttDemo02.html - Some early interactive access to Python functions and basic visualizations
+** (view at http://dh.stanford.edu/topotime/ttDemo02.html)
 
 #####Example Data
 
@@ -33,8 +35,9 @@ These files can be parsed by both timeline.js (for rendering timelines) and ttPa
 * topotime_format.json - JSON file with various supported period types
 * pleiades_98.json - 98 historic periods from the Pleiades project
 * us_history.json - The "lifespans" of the 50 US states, plus some other events
+* Plato_Buddha.json - Assertions about lifespans of two contemporaneous historical figures
 * ww2.json - A scenario of 8 events
-* Dance.json - The lifespan of George Dance the Younger (1741-1825), an architect
+* Dance_adj.json - The lifespan of George Dance the Younger (1741-1825), an architect
 * pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period("Holocene Climatic Optimum") with no defined timespan
 
 
