@@ -156,6 +156,20 @@ d3.json("data/states.topojson", function(error, us) {
     .attr("text-anchor", "end")
     .text("right")
 
+    d3.select("#legendG")
+    .append("text")
+    .attr("x", -50)
+    .attr("y", -60)
+    .attr("id", "boundingTitle")
+    .text("Click and drag on the timeline")
+
+    d3.select("#legendG")
+    .append("text")
+    .attr("x", -50)
+    .attr("y", -40)
+    .attr("id", "boundingRegion")
+    .text("to set a temporal bounding box")
+    
     })
     
     
@@ -167,6 +181,12 @@ function brushed() {
     
     var earlyDate = constraintBrush.extent()[0];    
     var lateDate = constraintBrush.extent()[1];
+    
+    d3.select("#boundingTitle")
+    .text("Current bounding box:")
+
+    d3.select("#boundingRegion")
+    .text(Math.floor((earlyDate / 365.25) - 4713) + " to " + Math.floor((lateDate / 365.25) - 4713))
     
     var prettyNumbers = d3.format("3.1f");
     var maxOverlap = lateDate - earlyDate;
