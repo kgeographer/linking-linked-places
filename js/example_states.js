@@ -21,6 +21,8 @@ function timelineViz() {
 
     var mapG = svg.append("g").attr("id", "mapG").attr("transform", "translate(0, 90)")
 
+    var legendG = svg.append("g").attr("id", "legendG").attr("transform", "translate(1070, 350)")
+
 var projection = d3.geo.albersUsa()
     .scale(1000)
     .translate([400, 400]);
@@ -123,7 +125,39 @@ d3.json("data/states.topojson", function(error, us) {
     d3.select("svg").append("g").attr("transform", "translate(0,0)").call(constraintBrush)
     .selectAll("rect").attr("height", 265).style("fill-opacity", .05)
     .style("stroke-width", "2px").style("stroke", "black").style("stroke-dasharray", "5,5");    
+
+    d3.select("#legendG").selectAll("rect.legend")
+    .data([0.1,.25,.5,.75,1])
+    .enter()
+    .append("rect").attr("width", 30).attr("height", 15)
+    .attr("x", function(d,i) {return i * 30})
+    .style("opacity", function (d) {return d})
+    .style("fill", "#990000")
+
+    d3.select("#legendG")
+    .append("text")
+    .attr("x", 0)
+    .attr("y", -5)
+    .attr("id", "legendTitle")
+    .text("Years as a state")
+
+    d3.select("#legendG")
+    .append("text")
+    .attr("x", 0)
+    .attr("y", 30)
+    .attr("id", "legendLeast")
+    .text("left")
+    
+    d3.select("#legendG")
+    .append("text")
+    .attr("x", 150)
+    .attr("y", 30)
+    .attr("id", "legendMost")
+    .attr("text-anchor", "end")
+    .text("right")
+
     })
+    
     
 
     
@@ -133,7 +167,12 @@ function brushed() {
     
     var earlyDate = constraintBrush.extent()[0];    
     var lateDate = constraintBrush.extent()[1];
+    
+    var prettyNumbers = d3.format("3.1f");
     var maxOverlap = lateDate - earlyDate;
+    d3.select("#legendLeast").text(prettyNumbers((maxOverlap / 365) * .1))
+    d3.select("#legendMost").text(prettyNumbers((maxOverlap / 365)))
+
     d3.selectAll("g.overallPeriod").each(
         function(d) {
         var thisOverlap = 0;
