@@ -41,7 +41,8 @@ d3.json("data/states.topojson", function(error, us) {
       .style("fill", "#990000")
       .attr("d", path);
 
-});    
+       resetBrush();
+}); 
 
     timelineG.selectAll("g").data(tlLayout.timePeriods())
     .enter()
@@ -121,11 +122,24 @@ d3.json("data/states.topojson", function(error, us) {
     var tlX = d3.scale.linear()
     .domain([tlLayout.periodStatistics.earliestJulian, tlLayout.periodStatistics.latestJulian]).range([30, 1250])
     
-    constraintBrush = d3.svg.brush().x(tlX).on("brush", brushed);
-    d3.select("svg").append("g").attr("transform", "translate(0,0)").call(constraintBrush)
+    constraintBrush = d3.svg.brush().x(tlX).on("brush", brushed).on("brushend", brushEnd);;
+    d3.select("svg").append("g").attr("id", "brushG").attr("transform", "translate(0,0)").call(constraintBrush)
     .selectAll("rect").attr("height", 265).style("fill-opacity", .05)
     .style("stroke-width", "2px").style("stroke", "black").style("stroke-dasharray", "5,5");    
 
+    var arc = d3.svg.arc()
+    .outerRadius(20)
+    .startAngle(0)
+    .endAngle(function(d, i) { return i ? -Math.PI : Math.PI; });
+        
+    d3.select("#brushG").selectAll(".resize").append("path")
+    .attr("transform", "translate(0,132)")
+    .attr("d", arc)
+    .style("fill", "black")
+    .style("stroke", "black")
+    .style("stroke-width", "2px")
+    .style("fill-opacity", .5)
+    
     d3.select("#legendG").selectAll("rect.legend")
     .data([0.1,.25,.5,.75,1])
     .enter()
@@ -177,8 +191,19 @@ d3.json("data/states.topojson", function(error, us) {
     
 }
 
-function brushed() {
+function resetBrush() {
     
+    var randomStart = tlLayout.periodStatistics.earliestJulian + (Math.random() * (tlLayout.periodStatistics.latestJulian - tlLayout.periodStatistics.earliestJulian))
+    var randomEnd = Math.min(tlLayout.periodStatistics.latestJulian,randomStart + (365 * 10))
+    
+	constraintBrush.extent([randomStart,randomEnd]);
+	d3.select("#brushG").call(constraintBrush.extent([randomStart,randomEnd]));
+        brushed();
+
+}
+
+
+function brushed() {
     var earlyDate = constraintBrush.extent()[0];    
     var lateDate = constraintBrush.extent()[1];
     
@@ -214,6 +239,14 @@ function brushed() {
             
         }
     )
+}
+
+function brushEnd () {
+        if (constraintBrush.empty()) {
+        constraintBrush.extent([constraintBrush.extent()[0], constraintBrush.extent()[0] + (365 * 20)])
+        d3.select("#brushG").call(constraintBrush.extent([constraintBrush.extent()[0], constraintBrush.extent()[0] + (365 * 20)]));
+        brushed();
+    }
 
 }
 
