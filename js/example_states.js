@@ -115,13 +115,21 @@ d3.json("data/states.topojson", function(error, us) {
           .style("stroke-width", 0);
           }
         });
-          
-          })
-    .append("text")
+    d3.select(this).append("text")
     .attr("class", "period")
-    .text(function(d,i) {return i + " - " + d.label})
+    .text(i + " - " + d.label)
+    .style("pointer-events", "none")
+    .style("opacity", 0)
+    .style("stroke", "white")
+    .style("stroke-width", "4px")
+    .style("stroke-opacity", .75);
+    d3.select(this).append("text")
+    .attr("class", "period")
+    .text(i + " - " + d.label)
     .style("pointer-events", "none")
     .style("opacity", 0);
+
+          })
 
     redraw();
     
@@ -238,7 +246,7 @@ function brushed() {
                 thisStroke = "#990000";
             }
             d3.select(this).selectAll("rect").style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
-            d3.selectAll("path.land").filter(function (el) {return el.properties.STATE_NAME == d.label}).style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
+            d3.selectAll("path.land").filter(function (el) {return (el.properties.STATE_NAME == d.label && (el.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (el.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (el.properties.STATE_NAME == "Maine" && d.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (el.properties.STATE_NAME == "West Virginia" && d.label == "Virginia" && constraintBrush.extent()[0] < 2401570)}).style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
             
         }
     )
@@ -385,12 +393,14 @@ function levelAdjust(incLevel) {
 function stateOver(d,i) {
     d3.select(this).style("fill", "black");
     console.log(d.properties.STATE_NAME);
-    d3.selectAll("g.overallPeriod").filter(function (el) {console.log(el.label);return d.properties.STATE_NAME == el.label}).selectAll("rect").style("fill", "black");
+    d3.selectAll("g.overallPeriod").filter(function (el) {return (d.properties.STATE_NAME == el.label && (d.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (d.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (d.properties.STATE_NAME == "Maine" && el.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (d.properties.STATE_NAME == "West Virginia" && el.label == "Virginia" && constraintBrush.extent()[0] < 2401570)}).selectAll("rect").style("fill", "black");
+    d3.selectAll("g.overallPeriod").filter(function (el) {return (d.properties.STATE_NAME == el.label && (d.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (d.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (d.properties.STATE_NAME == "Maine" && el.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (d.properties.STATE_NAME == "West Virginia" && el.label == "Virginia" && constraintBrush.extent()[0] < 2401570)}).selectAll("text").style("opacity", 1);
 }
 
 function stateOut(d,i) {
     d3.select(this).style("fill", "#990000");
     d3.selectAll("rect.period").style("fill", "#990000");
+    d3.selectAll("text.period").style("opacity", 0);
 }
 
 function periodHeight(incPeriod) {
