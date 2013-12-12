@@ -21,7 +21,7 @@ function timelineViz() {
 
     var mapG = svg.append("g").attr("id", "mapG").attr("transform", "translate(0, 90)")
 
-    var legendG = svg.append("g").attr("id", "legendG").attr("transform", "translate(1070, 350)")
+    var legendG = svg.append("g").attr("id", "legendG").attr("transform", "translate(90, 210)").style("pointer-events", "none")
 
 var projection = d3.geo.albersUsa()
     .scale(1000)
@@ -39,17 +39,23 @@ d3.json("data/states.topojson", function(error, us) {
       .append("path")
       .attr("class", "land")
       .style("fill", "#990000")
-      .attr("d", path);
+      .style("stroke", "#990000")
+      .style("stroke-width", "1px")
+      .attr("d", path)
+      .on("mouseover", stateOver)
+      .on("mouseout", stateOut)
+
 
        resetBrush();
 }); 
+
+    tlX = d3.scale.linear()
+    .domain([tlLayout.periodStatistics.earliestJulian, tlLayout.periodStatistics.latestJulian]).range([30, 800])
 
     timelineG.selectAll("g").data(tlLayout.timePeriods())
     .enter()
     .append("g")
     .attr("class", "overallPeriod")
-//    .on("mouseover", timeOver)
-//    .on("mouseout", timeOut)
     .attr("transform", function (d,i) {return "translate(0," + canvasPosition(d) + ")"})
     .each(function(d,i) {
         d3.select(this).selectAll("g.period").data(d.projectedTSpans)
@@ -117,10 +123,7 @@ d3.json("data/states.topojson", function(error, us) {
     .style("pointer-events", "none")
     .style("opacity", 0);
 
-    adjustIn(tlLayout.periodStatistics.medianS);
-    
-    var tlX = d3.scale.linear()
-    .domain([tlLayout.periodStatistics.earliestJulian, tlLayout.periodStatistics.latestJulian]).range([30, 1250])
+    redraw();
     
     constraintBrush = d3.svg.brush().x(tlX).on("brush", brushed).on("brushend", brushEnd);;
     d3.select("svg").append("g").attr("id", "brushG").attr("transform", "translate(0,0)").call(constraintBrush)
@@ -172,16 +175,18 @@ d3.json("data/states.topojson", function(error, us) {
 
     d3.select("#legendG")
     .append("text")
-    .attr("x", -50)
-    .attr("y", -60)
+    .attr("x", 0)
+    .attr("y", -50)
     .attr("id", "boundingTitle")
+    .style("font-weight", "bold")
     .text("Click and drag on the timeline")
 
     d3.select("#legendG")
     .append("text")
-    .attr("x", -50)
-    .attr("y", -40)
+    .attr("x", 0)
+    .attr("y", -30)
     .attr("id", "boundingRegion")
+    .style("font-weight", "bold")
     .text("to set a temporal bounding box")
     
     })
@@ -208,10 +213,10 @@ function brushed() {
     var lateDate = constraintBrush.extent()[1];
     
     d3.select("#boundingTitle")
-    .text("Current bounding box:")
+    .text("Period:")
 
     d3.select("#boundingRegion")
-    .text(Math.floor((earlyDate / 365.25) - 4713) + " to " + Math.floor((lateDate / 365.25) - 4713))
+    .text(Math.floor((earlyDate / 365.25) - 4712) + " to " + Math.floor((lateDate / 365.25) - 4712))
     
     var prettyNumbers = d3.format("3.1f");
     var maxOverlap = lateDate - earlyDate;
@@ -228,14 +233,12 @@ function brushed() {
             }
             var earliestPer = d3.min(d.projectedTSpans, function(p) {return p.s});
             var latestPer = d3.max(d.projectedTSpans, function(p) {return p.e});
+                var thisStroke = "black";
             if (earlyDate > earliestPer && lateDate < latestPer) {
-                d3.select(this).selectAll("rect").style("stroke-width", "0");
+                thisStroke = "#990000";
             }
-            else {
-                d3.select(this).selectAll("rect").style("stroke-width", "1px");
-            }
-            d3.select(this).selectAll("rect").style("opacity", thisOverlap / maxOverlap);
-            d3.selectAll("path.land").filter(function (el) {return el.properties.STATE_NAME == d.label}).style("opacity", thisOverlap / maxOverlap);
+            d3.select(this).selectAll("rect").style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
+            d3.selectAll("path.land").filter(function (el) {return el.properties.STATE_NAME == d.label}).style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
             
         }
     )
@@ -255,7 +258,7 @@ function redraw() {
         d3.selectAll("text.period")
             .transition()
             .duration(500)
-    .attr("x", function(d) {return (d3.min(d.projectedTSpans, function(p) {return p.s}) - xPoint) / xScale})
+    .attr("x", function(d) {return (d3.min(d.projectedTSpans, function(p) {return tlX(p.s)}))})
     .attr("y", -5)
     .style("opacity", 0);
 
@@ -276,24 +279,24 @@ function redraw() {
         d3.select(this).selectAll("line.duringends")
             .transition()
             .duration(500)
-          .attr("x1", function (g) {return (g - xPoint) / xScale})
-          .attr("x2", function (g) {return (g - xPoint) / xScale})
+          .attr("x1", function (g) {return tlX(g)})
+          .attr("x2", function (g) {return tlX(g)})
           .attr("y1", 0)
           .attr("y2", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1));
 
         d3.select(this).selectAll("line.duringline")
             .transition()
             .duration(500)
-          .attr("x1", (p.s - xPoint) / xScale)
-          .attr("x2", (p.e - xPoint) / xScale)
+          .attr("x1", tlX(p.s))
+          .attr("x2", tlX(p.e))
           .attr("y1", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1) / 2)
           .attr("y2", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1) / 2);
 
             d3.select(this).selectAll("rect.periodduring")
             .transition()
             .duration(500)
-          .attr("x", (((p.e + p.s) / 2) - (p.d / 2) - xPoint) / xScale)
-          .attr("width", ((p.d) / xScale))
+          .attr("x", tlX(((p.e + p.s) / 2) - (p.d / 2)))
+          .attr("width", tlX(p.d))
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
           .style("fill", d.estimated == true ? "lightgray" : "#990000")
           .style("stroke", "black")
@@ -306,8 +309,8 @@ function redraw() {
             d3.select(this).selectAll("rect.period")
             .transition()
             .duration(500)
-          .attr("x", (p.s - xPoint) / xScale)
-          .attr("width", ((p.e - xPoint) / xScale) - ((p.s - xPoint) / xScale) > 0 ? ((p.e - xPoint) / xScale) - ((p.s - xPoint) / xScale) : 20)
+          .attr("x", tlX(p.s))
+          .attr("width", tlX(p.e) - tlX(p.s))
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
           .style("fill", d.estimated == true ? "lightgray" : "#990000")
           .style("stroke", "black")
@@ -320,8 +323,8 @@ function redraw() {
           .selectAll("rect.periodls")
             .transition()
             .duration(500)
-          .attr("x", (p.s - xPoint) / xScale)
-          .attr("width", ((p.ls - xPoint) / xScale) - ((p.s - xPoint) / xScale) > 0 ? ((p.ls - xPoint) / xScale) - ((p.s - xPoint) / xScale) : 20 )
+          .attr("x", tlX(p.s))
+          .attr("width", tlX(p.ls) - tlX(p.s))
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
           .style("fill", "blue")
           .style("stroke", "lightgray")
@@ -334,8 +337,8 @@ function redraw() {
           .selectAll("rect.periodee")
             .transition()
             .duration(500)
-          .attr("x", (p.ee - xPoint) / xScale)
-          .attr("width", ((p.e - xPoint) / xScale) - ((p.ee - xPoint) / xScale) > 0 ? ((p.e - xPoint) / xScale) - ((p.ee - xPoint) / xScale) : 20)
+          .attr("x", tlX(p.ee))
+          .attr("width", tlX(p.ee) - tlX(p.e))
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
           .style("fill", "blue")
           .style("stroke", "lightgray")
@@ -352,50 +355,6 @@ function getJulian(incDate) {
     return Math.floor((incDate / 86400000) - (incDate.getTimezoneOffset()/1440) + 2440587.5);
 }
 
-function adjustIn(definedCenter) {
-    var svgCenter = (parseInt(d3.select("svg").style("width")) / 2);
-    var oldCenter = (svgCenter * xScale) + xPoint;
-    definedCenter = definedCenter || oldCenter;
-    xScale = xScale * 2;
-    var offSet = svgCenter - ((definedCenter - xPoint) / xScale);
-    
-    redraw();
-}
-
-function adjustOut(definedCenter) {
-    var svgCenter = (parseInt(d3.select("svg").style("width")) / 2);
-    var oldCenter = (svgCenter * xScale) + xPoint;
-    definedCenter = definedCenter || oldCenter;
-    xScale = xScale / 2;
-    var offSet = svgCenter - ((definedCenter - xPoint) / xScale);
-
-    redraw();
-}
-
-function zoomOut() {
-    if (isZooming == true) {
-        return;
-    }
-    isZooming = true;
-    var zoomTimer = setTimeout('zoomBusy()', 500);
-
-    zoomlevel++;
-    rowHeight = zoomlevel * 50;
-    redraw();
-}
-
-function zoomIn() {
-    if (isZooming == true) {
-        return;
-    }
-    isZooming = true;
-    var zoomTimer = setTimeout('zoomBusy()', 500);
-
-    zoomlevel--;
-    rowHeight = zoomlevel * 50;
-    redraw();
-}
-
 function levelAdjust(incLevel) {
     var computedStyle = {fillOpac: 0, strokeWidth: 0, strokeOpac: 0, dasharray: "1"}
     var levelDifference = incLevel - zoomlevel;
@@ -409,7 +368,7 @@ function levelAdjust(incLevel) {
         case 0:
             computedStyle.fillOpac = 1;
             computedStyle.strokeOpac = 0;
-            computedStyle.strokeWidth = 0;
+            computedStyle.strokeWidth = 1;
             computedStyle.dasharray = "0"
             break;
         
@@ -423,22 +382,15 @@ function levelAdjust(incLevel) {
     return computedStyle;
 }
 
-function timeOut(d,i) {
- d3.selectAll("g.overallPeriod").each(function(d) {var newStyle = levelAdjust(d.level);d3.select(this).selectAll("rect.tspan").style("stroke-width",newStyle.strokeWidth + "px")});
-    d3.select(this).selectAll("line").style("stroke-width","2px");
- d3.select(this).select("text").style("opacity", 0);
+function stateOver(d,i) {
+    d3.select(this).style("fill", "black");
+    console.log(d.properties.STATE_NAME);
+    d3.selectAll("g.overallPeriod").filter(function (el) {console.log(el.label);return d.properties.STATE_NAME == el.label}).selectAll("rect").style("fill", "black");
 }
 
-function timeOver(d,i) {
-    d3.select(this).selectAll("rect").style("stroke-width","2px");
-    d3.select(this).selectAll("line").style("stroke-width","1px");
-    d3.select(this).select("text").style("opacity", 1);
-    d3.selectAll("g.overallPeriod").filter(function(p) {return p.partof == d ? this : null})
-    .selectAll("rect").style("stroke-width", "1px")
-}
-
-function zoomBusy() {
-    isZooming = false;
+function stateOut(d,i) {
+    d3.select(this).style("fill", "#990000");
+    d3.selectAll("rect.period").style("fill", "#990000");
 }
 
 function periodHeight(incPeriod) {

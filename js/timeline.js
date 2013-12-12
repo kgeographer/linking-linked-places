@@ -1,7 +1,7 @@
 d3_layout_timeline = function() {
     var topLayer = 0, bottomLayer = 0, eventRelations = [], temporalProjection, eventHash = {}, tlWidth = 100, tlHeight = 100, temporalRange =[0,1], temporalType = "date", timeScale = 1, featureCollection, temporalPeriods = [], timeSegments, numLanes = 1, earliestDate = 1, latestDate = 10;
     
-    periodHash = {}, lanes = {}, stats = {};
+    var periodHash = {}, lanes = {}, stats = {};
     var relationsList = [];
     var durationHash = {d: 1, h: 1/24, w: 7, m: 365.25/12, y: 365.25};
     var temporalRelations;
