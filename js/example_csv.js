@@ -15,8 +15,8 @@ function timelineViz() {
 
     //Unless you want it in days, you have to adjust this to be the days represented in pixels
     //so xScale = 365 means 1 pixel = 1 year
-    xScale = 3.65;
-    d3.csv("topotime_sample.csv", function(data) {
+    xScale = 36.5;
+    d3.csv("data/topotime_sample.csv", function(data) {
 //    exposedData = pleiades_periods;
     exposedData = data;
 
@@ -26,11 +26,10 @@ function timelineViz() {
     timelineZoom = d3.behavior.zoom()
     .on("zoom", pan);
     
-    svg = d3.select("#vizContainer").append("svg")
-//    .attr("width", "1000px")
+    svg = d3.select("#vizContainer").append("svg").attr("height", 300)
     .call(timelineZoom);
     
-    var timelineG = svg.append("g").attr("id", "timelineG")
+    var timelineG = svg.append("g").attr("id", "timelineG").attr("transform", "translate(0,50)")
     
     timelineG.selectAll("g").data(tlLayout.timePeriods())
     .enter()
@@ -109,7 +108,7 @@ function timelineViz() {
 }
 
 function pan() {
-    d3.select("#timelineG").attr("transform", "translate("+timelineZoom.translate()[0]+","+timelineZoom.translate()[1]+")")
+    d3.select("#timelineG").attr("transform", "translate("+timelineZoom.translate()[0]+",50)")
 }
 
 function redraw() {
@@ -216,7 +215,7 @@ function adjustIn(definedCenter) {
     var offSet = svgCenter - ((definedCenter - xPoint) / xScale);
     
     timelineZoom.translate([timelineZoom.translate()[0] + (offSet),timelineZoom.translate()[1]]);
-    d3.select("#timelineG").transition().duration(500).attr("transform", "translate("+timelineZoom.translate()[0]+","+timelineZoom.translate()[1]+")")    
+    d3.select("#timelineG").transition().duration(500).attr("transform", "translate("+timelineZoom.translate()[0]+",50)")    
     redraw();
 }
 
@@ -228,7 +227,7 @@ function adjustOut(definedCenter) {
     var offSet = svgCenter - ((definedCenter - xPoint) / xScale);
 
     timelineZoom.translate([timelineZoom.translate()[0] + (offSet),timelineZoom.translate()[1]]);
-    d3.select("#timelineG").transition().duration(500).attr("transform", "translate("+timelineZoom.translate()[0]+","+timelineZoom.translate()[1]+")")
+    d3.select("#timelineG").transition().duration(500).attr("transform", "translate("+timelineZoom.translate()[0]+",50)")
     redraw();
 }
 
