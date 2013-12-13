@@ -340,3 +340,12 @@ function canvasPosition(d) {
     }
     return movingY;
 }
+
+function julianToDate(jDay) {
+    
+    var convertedDate = new Date;
+    
+    convertedDate.setTime((jDay - 2440587.5) * 86400000);
+    
+    return convertedDate
+}
