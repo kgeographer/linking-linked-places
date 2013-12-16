@@ -103,16 +103,43 @@ function timelineViz() {
         }
     }
     )
+    
+    svg.selectAll("line.axes").data([0,.5,1]).enter().append("line")
+    .attr("class", "axes")
+    .attr("x1", function(d) {return d * 800})
+    .attr("x2", function(d) {return d * 800})
+    .attr("y1", 0)
+    .attr("y2", 400)
+    .style("stroke", "black")
+    .style("stroke-width", "3px")
+    
+    updateAxis()
     })
     
 }
 
 function pan() {
     d3.select("#timelineG").attr("transform", "translate("+timelineZoom.translate()[0]+",50)")
+    updateAxis();
+}
+
+function updateAxis() {
+    
+    var svgSize = parseInt(d3.select("svg").style("width"))
+    var leftSide = ((0 - timelineZoom.translate()[0]) * xScale) + xPoint ;
+    var middlePoint = (((svgSize / 2) - timelineZoom.translate()[0]) * xScale) + xPoint ;
+    var rightSide = ((svgSize - timelineZoom.translate()[0]) * xScale) + xPoint ;
+    d3.select("#leftAxisLabel").html(julianToDate(leftSide).toLocaleDateString())
+    d3.select("#middleAxisLabel").html(julianToDate(middlePoint).toLocaleDateString())
+    d3.select("#rightAxisLabel").html(julianToDate(rightSide).toLocaleDateString())
+    
+    d3.selectAll("line.axes").attr("x1", function(d) {return d * svgSize}).attr("x2", function(d) {return d * svgSize});
+
+
 }
 
 function redraw() {
-
+    updateAxis();
         d3.selectAll("text.period")
             .transition()
             .duration(500)
@@ -215,7 +242,8 @@ function adjustIn(definedCenter) {
     var offSet = svgCenter - ((definedCenter - xPoint) / xScale);
     
     timelineZoom.translate([timelineZoom.translate()[0] + (offSet),timelineZoom.translate()[1]]);
-    d3.select("#timelineG").transition().duration(500).attr("transform", "translate("+timelineZoom.translate()[0]+",50)")    
+    d3.select("#timelineG").transition().duration(500).attr("transform", "translate("+timelineZoom.translate()[0]+",50)")
+    
     redraw();
 }
 
