@@ -1,23 +1,24 @@
 function timelineViz() {
 
+  canvas = d3.select("#controlBar").append("canvas")
+  .style("background", "white").style("border", "red 1px solid").attr("height", 30).attr("width", 1000)
+  .attr("id", "newCanvas");
+  context = canvas.node().getContext("2d");
+
+  context.fillStyle = "rgba(0, 0, 0, 0.1)";
+  context.lineWidth = 0;
+  context.strokeStyle = 'black';
+    
     rowHeight = 30;
     zoomlevel = 1;
     isZooming = false;
 
-// Very early dates require a bit more manual effort
     centerDate = new Date(0,1,1);    
-//    centerDate.setFullYear("-8000");
     
     xPoint = getJulian(centerDate);
+    xScale = 36.5 * 1.5;
 
-//  CE dates after 99CE can be entered the old-fashioned way
-//    xPoint = getJulian(new Date("100-01-01"));
-
-    //Unless you want it in days, you have to adjust this to be the days represented in pixels
-    //so xScale = 365 means 1 pixel = 1 year
-    xScale = 30.65;
-
-    d3.json("topotime_format.json", function(data) {
+    d3.json("data/topotime_format.json", function(data) {
     exposedData = data;
 
     tlLayout = new d3_layout_timeline();
@@ -26,8 +27,7 @@ function timelineViz() {
     timelineZoom = d3.behavior.zoom()
     .on("zoom", pan);
     
-    svg = d3.select("#vizContainer").append("svg")
-//    .attr("width", "1000px")
+    svg = d3.select("#vizContainer").append("svg").style("cursor", "ns-resize")
     .call(timelineZoom);
     
     var timelineG = svg.append("g").attr("id", "timelineG")
@@ -40,7 +40,7 @@ function timelineViz() {
     .attr("class", "overallPeriod")
     .on("mouseover", timeOver)
     .on("mouseout", timeOut)
-    .attr("transform", function (d,i) {return "translate(0," + canvasPosition(d) + ")"})
+    .attr("transform", function (d,i) {return "translate(0,0)"})
     .each(function(d,i) {
         d3.select(this).selectAll("g.period").data(d.projectedTSpans)
           .enter()
@@ -65,21 +65,6 @@ function timelineViz() {
                     else {
                         polygonArray.push([p.e,barHeight], [p.e, 0])
                     }
-                    
-/*
-                    if (p.ls) {
-                        polygonArray.push([0,p.s], [barHeight, p.ls])
-                    }
-                    else {
-                        polygonArray.push([0,p.s], [barHeight, p.s])
-                    }
-                    if (p.ee) {
-                        polygonArray.push([barHeight,p.ee], [0,p.e])
-                    }
-                    else {
-                        polygonArray.push([barHeight,p.e], [0,p.e])
-                    }
-                    */
 
             timelineArea = d3.svg.area()
             .x(function(d) {
@@ -93,60 +78,84 @@ function timelineViz() {
             })
             .interpolate("linear")
 
+            timelineAreaCanvas = d3.svg.line()
+            .x(function(d) {
+            return (d[0] - xPoint) / xScale
+            })
+            .y(function(d) {
+            return -(d[1] * (rowHeight - 15))
+            })
+            .interpolate("linear")
+
+            
             stackedArray.push(polygonArray);
             
-            d3.select(this)
-            .append("path")
+          d3.select(this)
+          .append("path")
           .attr("class", d.estimated == true ? "tspan period estimated" : "tspan period")
           .attr("d", timelineArea(polygonArray))
           .style("stroke", "black")
           .style("fill", "cornsilk")
           .style("opacity", 1)
           .style("stroke-width", 1);
-        });
           
-          })
+          
+        console.log(polygonArray)
+        context.beginPath();
+        context.moveTo((polygonArray[0][0] - xPoint) / xScale,polygonArray[0][1] * 30);
+        context.lineTo((polygonArray[1][0] - xPoint) / xScale,polygonArray[1][1] * 30);
+        context.lineTo((polygonArray[2][0] - xPoint) / xScale,polygonArray[2][1] * 30);
+        context.lineTo((polygonArray[3][0] - xPoint) / xScale,polygonArray[3][1] * 30);
+        context.lineTo((polygonArray[0][0] - xPoint) / xScale,polygonArray[0][1] * 30);
+        context.fill();
+
+        })
     .append("text")
     .attr("class", "period")
     .text(function(d) {return d.id + " - " + d.label})
     .style("opacity", 0);
-
-    adjustIn(tlLayout.periodStatistics.medianS);
     
-    newData = stackedArray.map(function(d) { 
-    return d.map(function(p, i) { 
-        return {x:(p[0] - xPoint) / xScale, y:p[1] * rowHeight, y0:0};
-    });
-    });
-    
-    nestData = d3.nest()
-            .key(function(d,i) { return i; })
-            .entries(newData);
-    
-    timelineStack = new d3.layout.stack().offset("wiggle");
+          })
+            var maxValue = 0;
+            var y = 0;
+            imgData = [];
+            while (y < 30) {
+                imgData[y] = context.getImageData(0, y, 1000, y+1);
+                y++;
+            }
+            pixel = [{x:0, y:0}];
+            var x = 4
+            while (x < imgData[0].data.length) {
+                if (x%4 == 3) {
+                    var meanValue = d3.mean(imgData, function(el) {return el.data[x]});
+                    if (pixel[pixel.length - 1].y != meanValue) {
+//                        pixel.push({x: parseInt(x) - 1, y: imgData.data[x-4]})
+                        pixel.push({x: parseInt(x) - 1, y: pixel[pixel.length - 1].y})
+                        pixel.push({x: parseInt(x), y: meanValue})
+                        maxValue = Math.max(maxValue, meanValue)
+                    }
+                }
+                x++;
+            }
+            
+            densityArea = d3.svg.line()
+            .x(function(d) {
+            return ((d.x / 4000) * 1000)
+            })
+            .y(function(d) {
+            return (-(d.y / maxValue) * 100)
+            })
+            .interpolate("linear")
+            d3.select("svg").append("path").attr("transform", "translate(0,400)").style("fill", "pink").style("fill-opacity", .5).style("stroke", "black").style("stroke-width", "2px").attr("d", densityArea(pixel))
 
-    stackArea = d3.svg.area()
-    .interpolate("linear")
-    .x(function(d) {return d.x})
-    .y(function(d) {return 500 - (d.y + d.y0)})
-    .y0(function(d) {return 500 - d.y0})
-    
-    svg.append("g").selectAll("path")
-    .data(timelineStack(newData))
-  .enter().append("path")
-    .style("stroke-width", 1)
-    .style("stroke", "black")
-    .style("fill", "pink")
-    .style("opacity", .75)
-    .attr("d", function(d) { return stackArea(d); })
-
-
+            d3.selectAll("g.overallPeriod").transition().duration(2000).attr("transform", function (d,i) {return "translate(0," + canvasPosition(d) + ")"})
     })
     
 }
 
+
 function pan() {
-    d3.select("#timelineG").attr("transform", "translate("+timelineZoom.translate()[0]+","+timelineZoom.translate()[1]+")")
+    d3.select("#timelineG").attr("transform", "translate(0,"+timelineZoom.translate()[1]+")")
 }
 
 function redraw() {
@@ -164,81 +173,6 @@ function redraw() {
     .duration(500)
     .attr("transform", function (d,i) {return "translate(0," + canvasPosition(d) + ")"});
 
-    d3.selectAll("g.overallPeriod")
-    .each(function(d,i) {
-        var newStyle = levelAdjust(d.level);
-        d3.select(this).selectAll("g.period")
-          .each(function(p,q) {
-        
-        if (p.d) {
-            
-        d3.select(this).selectAll("line.duringends")
-            .transition()
-            .duration(500)
-          .attr("x1", function (g) {return (g - xPoint) / xScale})
-          .attr("x2", function (g) {return (g - xPoint) / xScale})
-          .attr("y1", 0)
-          .attr("y2", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])));
-
-        d3.select(this).selectAll("line.duringline")
-            .transition()
-            .duration(500)
-          .attr("x1", (p.s - xPoint) / xScale)
-          .attr("x2", (p.e - xPoint) / xScale)
-          .attr("y1", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])) / 2)
-          .attr("y2", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])) / 2);
-
-            d3.select(this).selectAll("rect.periodduring")
-            .transition()
-            .duration(500)
-          .attr("x", (((p.e + p.s) / 2) - (p.d / 2) - xPoint) / xScale)
-          .attr("width", ((p.d) / xScale))
-          .attr("height", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])))
-          .style("stroke", "black")
-          .style("fill-opacity", newStyle.fillOpac)
-          .style("stroke-dasharray", newStyle.dasharray)
-          .style("stroke-width", newStyle.strokeWidth);
-                        
-                      }
-        else {
-            d3.select(this).selectAll("rect.period")
-            .transition()
-            .duration(500)
-          .attr("x", (p.s - xPoint) / xScale)
-          .attr("width", ((p.e - xPoint) / xScale) - ((p.s - xPoint) / xScale) > 0 ? ((p.e - xPoint) / xScale) - ((p.s - xPoint) / xScale) : 20)
-          .attr("height", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])))
-          .style("stroke", "black")
-          .style("fill-opacity", newStyle.fillOpac)
-          .style("stroke-dasharray", newStyle.dasharray)
-          .style("stroke-width", newStyle.strokeWidth);
-        }
-          if (p.ls) {
-          d3.select(this)
-          .selectAll("rect.periodls")
-            .transition()
-            .duration(500)
-          .attr("x", (p.s - xPoint) / xScale)
-          .attr("width", ((p.ls - xPoint) / xScale) - ((p.s - xPoint) / xScale) > 0 ? ((p.ls - xPoint) / xScale) - ((p.s - xPoint) / xScale) : 20 )
-          .attr("height", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])))
-          .style("fill-opacity", newStyle.fillOpac)
-          .style("stroke-dasharray", newStyle.dasharray)
-          .style("stroke-width", newStyle.strokeWidth);
-          }
-          if (p.ee) {
-          d3.select(this)
-          .selectAll("rect.periodee")
-            .transition()
-            .duration(500)
-          .attr("x", (p.ee - xPoint) / xScale)
-          .attr("width", ((p.e - xPoint) / xScale) - ((p.ee - xPoint) / xScale) > 0 ? ((p.e - xPoint) / xScale) - ((p.ee - xPoint) / xScale) : 20)
-          .attr("height", periodHeight(d) * Math.max(1,(d.lanerange[1] - d.lanerange[0])))
-          .style("stroke-dasharray", newStyle.dasharray)
-          .style("fill-opacity", newStyle.fillOpac)
-           .style("stroke-width", newStyle.strokeWidth);
-         }
-        });
-          
-          })
 }
 
 function getJulian(incDate) {
@@ -364,7 +298,7 @@ function periodHeight(incPeriod) {
 
 function canvasPosition(d) {
     var finished = false;
-    var movingY = 0;
+    var movingY = 50;
     var nextParent = d;
     while(finished == false) {
         if (nextParent.partof) {

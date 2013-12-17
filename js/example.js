@@ -17,8 +17,8 @@ function timelineViz() {
     //so xScale = 365 means 1 pixel = 1 year
     xScale = 3.65;
 //    d3.json("data/Dance_life.json", function(data) {
-    d3.json("data/us_history.json", function(data) {
-//    d3.json("data/topotime_format.json", function(data) {
+//    d3.json("data/us_history.json", function(data) {
+    d3.json("data/topotime_format.json", function(data) {
 //    exposedData = pleiades_periods;
     exposedData = data;
 
@@ -53,14 +53,14 @@ function timelineViz() {
                         .selectAll("line")
                         .data([p.s,p.e])
                         .enter()
-                        .append("line")
+                        .insert("line", "rect")
                         .attr("class", "duringends")
                         .style("stroke", "purple")
                         .style("stroke-width", "2px")
                         .style("stroke-dasharray", "5 5");
                         
                         d3.select(this)
-                        .append("line")
+                        .insert("line", "rect")
                         .attr("class", "duringline")
                         .style("stroke", "purple")
                         .style("stroke-width", "2px")
@@ -72,7 +72,7 @@ function timelineViz() {
           .style("stroke", "black")
           .attr("class", "periodduring")
           .attr("rx", 5)
-          .style("opacity", d.level * .2)
+          .style("opacity", 1)
           .style("stroke-width", 0);
 
                         
@@ -178,7 +178,8 @@ function redraw() {
           .style("stroke", "black")
           .style("fill-opacity", newStyle.fillOpac)
           .style("stroke-dasharray", newStyle.dasharray)
-          .style("stroke-width", newStyle.strokeWidth);
+          .style("stroke-width", newStyle.strokeWidth).
+          each("end", movingDuring);
                         
                       }
         else {
@@ -363,4 +364,16 @@ function canvasPosition(d) {
         }
     }
     return movingY;
+}
+
+function movingDuring() {
+    d3.select("rect.periodduring").each(startMoving)
+}
+
+function startMoving(d,i) {
+d3.select("rect.periodduring").transition().duration(3000).attr("x", function(d) {return (d.s - xPoint) / xScale}).ease("linear").each("end", keepMoving);
+}
+
+function keepMoving(d,i) {
+    d3.select("rect.periodduring").transition().duration(3000).attr("x", function(d) {return (d.e - xPoint - d.d) / xScale}).ease("linear").each("end", startMoving);    
 }
