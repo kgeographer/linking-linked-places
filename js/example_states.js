@@ -246,7 +246,8 @@ function brushed() {
                 thisStroke = "#990000";
             }
             d3.select(this).selectAll("rect").style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
-            d3.selectAll("path.land").filter(function (el) {return (el.properties.STATE_NAME == d.label && (el.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (el.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (el.properties.STATE_NAME == "Maine" && d.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (el.properties.STATE_NAME == "West Virginia" && d.label == "Virginia" && constraintBrush.extent()[0] < 2401570)}).style("opacity", thisOverlap / maxOverlap).style("stroke", thisStroke);
+            d3.selectAll("path.land").filter(function (el) {return (el.properties.STATE_NAME == d.label && (el.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (el.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (el.properties.STATE_NAME == "Maine" && d.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (el.properties.STATE_NAME == "West Virginia" && d.label == "Virginia" && constraintBrush.extent()[0] < 2401570)})
+            .style("fill-opacity", thisOverlap / maxOverlap).style("stroke-opacity", (thisOverlap / maxOverlap) * 2).style("stroke", thisStroke);
             
         }
     )
