@@ -98,9 +98,7 @@ function timelineViz() {
           .style("fill", "cornsilk")
           .style("opacity", 1)
           .style("stroke-width", 1);
-          
-          
-        console.log(polygonArray)
+
         context.beginPath();
         context.moveTo((polygonArray[0][0] - xPoint) / xScale,polygonArray[0][1] * 30);
         context.lineTo((polygonArray[1][0] - xPoint) / xScale,polygonArray[1][1] * 30);
@@ -124,7 +122,8 @@ function timelineViz() {
                 y++;
             }
             pixel = [{x:0, y:0}];
-            var x = 4
+            var x = 4;
+            var x2 = 1;
             while (x < imgData[0].data.length) {
                 if (x%4 == 3) {
                     var meanValue = d3.mean(imgData, function(el) {return el.data[x]});
@@ -134,9 +133,17 @@ function timelineViz() {
                         pixel.push({x: parseInt(x), y: meanValue})
                         maxValue = Math.max(maxValue, meanValue)
                     }
+                    var invertedMean = (255 - parseInt(meanValue));
+                context.fillStyle="rgb( " + invertedMean + ", " + invertedMean + ", " + invertedMean + ")"
+                context.fillRect(x2,0,1,30);
+                context.fill();
+                x2++;
+                
                 }
                 x++;
             }
+            
+            
             
             densityArea = d3.svg.line()
             .x(function(d) {

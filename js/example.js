@@ -15,7 +15,7 @@ function timelineViz() {
 
     //Unless you want it in days, you have to adjust this to be the days represented in pixels
     //so xScale = 365 means 1 pixel = 1 year
-    xScale = 3.65;
+    xScale = 36.5;
 //    d3.json("data/Dance_life.json", function(data) {
 //    d3.json("data/us_history.json", function(data) {
     d3.json("data/topotime_format.json", function(data) {
