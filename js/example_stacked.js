@@ -113,7 +113,7 @@ d3.selectAll("svg").remove();
         })
     .append("text")
     .attr("class", "period")
-    .text(function(d) {return d.id + " - " + d.label})
+    .text(d.id + " - " + d.label)
     .style("opacity", 0);
     
           })
