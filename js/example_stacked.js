@@ -5,7 +5,7 @@ function timelineViz() {
   .attr("id", "newCanvas");
   context = canvas.node().getContext("2d");
 
-  context.fillStyle = "rgba(0, 0, 0, 0.1)";
+  context.fillStyle = "rgba(0, 0, 0, 0.01)";
   context.lineWidth = 0;
   context.strokeStyle = 'black';
     
@@ -13,16 +13,17 @@ function timelineViz() {
     zoomlevel = 1;
     isZooming = false;
 
-    centerDate = new Date(0,1,1);    
-    
-    xPoint = getJulian(centerDate);
     xScale = 36.5 * 1.5;
 
-    d3.json("data/topotime_format.json", function(data) {
+//    d3.json("data/topotime_format.json", function(data) {
+    d3.json("data/us_history.json", function(data) {
     exposedData = data;
 
     tlLayout = new d3_layout_timeline();
     tlLayout.periodCollection(exposedData);
+    
+    xPoint = tlLayout.periodStatistics.earliestJulian;
+    xScale = (tlLayout.periodStatistics.latestJulian - tlLayout.periodStatistics.earliestJulian) / 1000;
     
     timelineZoom = d3.behavior.zoom()
     .on("zoom", pan);
@@ -124,6 +125,8 @@ function timelineViz() {
             pixel = [{x:0, y:0}];
             var x = 4;
             var x2 = 1;
+            var maxValue = d3.max(imgData, function(el) {return d3.max(el.data)})
+            
             while (x < imgData[0].data.length) {
                 if (x%4 == 3) {
                     var meanValue = d3.mean(imgData, function(el) {return el.data[x]});
@@ -131,9 +134,8 @@ function timelineViz() {
 //                        pixel.push({x: parseInt(x) - 1, y: imgData.data[x-4]})
                         pixel.push({x: parseInt(x) - 1, y: pixel[pixel.length - 1].y})
                         pixel.push({x: parseInt(x), y: meanValue})
-                        maxValue = Math.max(maxValue, meanValue)
                     }
-                    var invertedMean = (255 - parseInt(meanValue));
+                    var invertedMean = (255 - parseInt(255 * meanValue / maxValue));
                 context.fillStyle="rgb( " + invertedMean + ", " + invertedMean + ", " + invertedMean + ")"
                 context.fillRect(x2,0,1,30);
                 context.fill();
@@ -141,9 +143,9 @@ function timelineViz() {
                 
                 }
                 x++;
-            }
-            
-            
+            }            
+            pixel.push({x: 4001, y: pixel[pixel.length - 1].y})
+            pixel.push({x: 4002, y: 0})
             
             densityArea = d3.svg.line()
             .x(function(d) {
