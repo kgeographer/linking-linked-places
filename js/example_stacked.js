@@ -1,4 +1,7 @@
-function timelineViz() {
+function timelineViz(dataset) {
+
+d3.selectAll("canvas").remove();
+d3.selectAll("svg").remove();
 
   canvas = d3.select("#controlBar").append("canvas")
   .style("background", "white").style("border", "red 1px solid").attr("height", 30).attr("width", 1000)
@@ -15,8 +18,7 @@ function timelineViz() {
 
     xScale = 36.5 * 1.5;
 
-//    d3.json("data/topotime_format.json", function(data) {
-    d3.json("data/us_history.json", function(data) {
+    d3.json("data/" + dataset, function(data) {
     exposedData = data;
 
     tlLayout = new d3_layout_timeline();
