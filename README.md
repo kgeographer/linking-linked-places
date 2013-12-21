@@ -1,7 +1,7 @@
 Topotime
 ========
 
-A pragmatic JSON data format, D3 layout, and functions for representing and computing over complex temporal phenomena. It is under active development by Elijah Meeks (emeeks) and Karl Grossner (kgeographer), who welcome forks, comments and suggestions.
+A pragmatic JSON data format, D3 timeline layout, and functions for representing and computing over complex temporal phenomena. It is under active development by its instigators, Elijah Meeks [(emeeks)](https://github.com/emeeks) and Karl Grossner [(kgeographer)](https://github.com/kgeographer), who welcome forks, comments and suggestions.
 
 
 Topotime currently permits the representation of:
@@ -9,8 +9,13 @@ Topotime currently permits the representation of:
 * Singular, multipart, cyclical, and duration-defined _timespans_ in _periods_ (**tSpan** in **Period**). A Period can be any discrete temporal thing, e.g. an historical period, an event, or a lifespan (of a person, group, country).
 * The tSpan elements _start_ (**s**), _latest start_ (**ls**), _earliest end_ (**ee**), _end_ (**e**) can be ISO-8601 (YYYY-MM-DD, YYYY-MM or YYYY), or pointers to other tSpans or their individual elements. For example, **>23.s** stands for '_after the start of Period 23 in this collection_.' 
   * Uncertain temporal extents; operators for tSpan elements include: **_before_** (**<**), **_after_** (**>**), **_about_** (**~**), and **_equals_** (**=**). 
-* Estimated timespan when no tSpan is defined
-* Relations between events; so far, _part-of_, and _participates-in_. Further relations including _has-location_ are in development.
+* Further articulation of start and end ranges in  **sls** and **eee** elements, respectively.
+* An estimated timespan when no tSpan is defined
+* Relations between events. So far, _part-of_, and _participates-in_. Further relations including _has-location_ are in development.
+ 
+Topotime currently permits the computation of:
+
+* Intersections (overlap) between between a query timespan and a collection of Periods, answering questions like "what periods overlapped with the timespan \[-433, -344\] (Plato's lifespan possibilities)?" with an ordered list.
 
 To learn more, check out these and other pages in [the Wiki](https://github.com/ComputingPlace/topotime/wiki) and [the Topotime web page](dh.stanford.edu/topotime)
 
@@ -51,5 +56,5 @@ These files can be parsed by both timeline.js (for rendering timelines) and peri
 * Further example queries to temporal geometries
 
 #####Contributors
-* Elijah Meeks (emeeks; t:@Elijah_Meeks)
-* Karl Grossner (kgeographer; t:@kgeographer)
+* Elijah Meeks (emeeks; twitter:@Elijah_Meeks)
+* Karl Grossner (kgeographer; twitter:@kgeographer)
