@@ -4,26 +4,14 @@ function timelineViz() {
     zoomlevel = 1;
     isZooming = false;
 
-// Very early dates require a bit more manual effort
-    centerDate = new Date(0,1,1);    
-//    centerDate.setFullYear("-8000");
-    
-    xPoint = getJulian(centerDate);
-
-//  CE dates after 99CE can be entered the old-fashioned way
-//    xPoint = getJulian(new Date("100-01-01"));
-
-    //Unless you want it in days, you have to adjust this to be the days represented in pixels
-    //so xScale = 365 means 1 pixel = 1 year
-    xScale = 36.5;
-//    d3.json("data/Dance_life.json", function(data) {
-//    d3.json("data/us_history.json", function(data) {
     d3.json("data/topotime_format.json", function(data) {
-//    exposedData = pleiades_periods;
     exposedData = data;
 
     tlLayout = new d3_layout_timeline();
     tlLayout.periodCollection(exposedData);
+
+    xPoint = tlLayout.periodStatistics.earliestJulian;
+    xScale = (tlLayout.periodStatistics.latestJulian - tlLayout.periodStatistics.earliestJulian) / 1000;
     
     timelineZoom = d3.behavior.zoom()
     .on("zoom", pan);
@@ -71,7 +59,6 @@ function timelineViz() {
           .attr("class", "tspan period")
           .style("stroke", "black")
           .attr("class", "periodduring")
-          .attr("rx", 5)
           .style("opacity", 1)
           .style("stroke-width", 0);
 
@@ -82,8 +69,7 @@ function timelineViz() {
             .append("rect")
           .attr("class", "tspan period")
           .style("stroke", "black")
-          .attr("rx", 5)
-          .style("opacity", d.level * .2)
+          .style("opacity", d.level * 1)
           .style("stroke-width", 0);
                     }
           if (p.ls) {
@@ -92,7 +78,6 @@ function timelineViz() {
           .attr("class", "tspan periodls")
           .style("fill", "blue")
           .style("stroke", "lightgray")
-          .attr("rx", 5)
           .style("stroke-width", 0);
           }
           if (p.ee) {
@@ -101,7 +86,6 @@ function timelineViz() {
           .attr("class", "tspan periodee")
           .style("fill", "blue")
           .style("stroke", "lightgray")
-          .attr("rx", 5)
           .style("stroke-width", 0);
           }
         });
@@ -174,7 +158,7 @@ function redraw() {
           .attr("x", (((p.e + p.s) / 2) - (p.d / 2) - xPoint) / xScale)
           .attr("width", ((p.d) / xScale))
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
-          .style("fill", d.estimated == true ? "lightgray" : "red")
+          .style("fill", d.estimated == true ? "lightgray" : "darkred")
           .style("stroke", "black")
           .style("fill-opacity", newStyle.fillOpac)
           .style("stroke-dasharray", newStyle.dasharray)
@@ -189,7 +173,7 @@ function redraw() {
           .attr("x", (p.s - xPoint) / xScale)
           .attr("width", ((p.e - xPoint) / xScale) - ((p.s - xPoint) / xScale) > 0 ? ((p.e - xPoint) / xScale) - ((p.s - xPoint) / xScale) : 20)
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
-          .style("fill", d.estimated == true ? "lightgray" : "red")
+          .style("fill", d.estimated == true ? "lightgray" : "darkred")
           .style("stroke", "black")
           .style("fill-opacity", newStyle.fillOpac)
           .style("stroke-dasharray", newStyle.dasharray)
@@ -203,7 +187,7 @@ function redraw() {
           .attr("x", (p.s - xPoint) / xScale)
           .attr("width", ((p.ls - xPoint) / xScale) - ((p.s - xPoint) / xScale) > 0 ? ((p.ls - xPoint) / xScale) - ((p.s - xPoint) / xScale) : 20 )
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
-          .style("fill", "blue")
+          .style("fill", "pink")
           .style("stroke", "lightgray")
           .style("fill-opacity", newStyle.fillOpac)
           .style("stroke-dasharray", newStyle.dasharray)
@@ -217,7 +201,7 @@ function redraw() {
           .attr("x", (p.ee - xPoint) / xScale)
           .attr("width", ((p.e - xPoint) / xScale) - ((p.ee - xPoint) / xScale) > 0 ? ((p.e - xPoint) / xScale) - ((p.ee - xPoint) / xScale) : 20)
           .attr("height", periodHeight(d) * (d.lanerange[1] - d.lanerange[0] + 1))
-          .style("fill", "blue")
+          .style("fill", "pink")
           .style("stroke", "lightgray")
           .style("stroke-dasharray", newStyle.dasharray)
           .style("fill-opacity", newStyle.fillOpac)
@@ -276,7 +260,7 @@ function zoomIn() {
     var zoomTimer = setTimeout('zoomBusy()', 500);
 
     zoomlevel--;
-    rowHeight = zoomlevel * 50;
+    rowHeight = Math.max(1,zoomlevel * 50);
     redraw();
 }
 
@@ -286,21 +270,21 @@ function levelAdjust(incLevel) {
     switch(levelDifference) {
         case -1:
             computedStyle.fillOpac = 0;
-            computedStyle.strokeOpac = 1;
+            computedStyle.strokeOpac = 0;
             computedStyle.strokeWidth = 2;
             computedStyle.dasharray = "10,10"
             break;
         case 0:
             computedStyle.fillOpac = 1;
             computedStyle.strokeOpac = 0;
-            computedStyle.strokeWidth = 1;
+            computedStyle.strokeWidth = 0;
             computedStyle.dasharray = "0"
             break;
         
         case 1:
-            computedStyle.fillOpac = .5;
-            computedStyle.strokeOpac = 0;
-            computedStyle.strokeWidth = 0;
+            computedStyle.fillOpac = 1;
+            computedStyle.strokeOpac = 1;
+            computedStyle.strokeWidth = 1;
             computedStyle.dasharray = "0"            
             break;
     }
