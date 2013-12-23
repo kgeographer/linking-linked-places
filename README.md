@@ -54,6 +54,8 @@ These files can be parsed by both timeline.js (for rendering timelines) and peri
 * Further examples tied to geospatial and network data
 * Smoothed curves for 'sls' and 'eee' fuzzy bounds
 * Further example queries to temporal geometries
+* Examples that allow for interactive updating of data
+* Serious engagement with the concept of temporal projection, defining projections for reign periods, Islamic calendar, BP, etc.
 
 #####Contributors
 * Elijah Meeks (emeeks; twitter:@Elijah_Meeks)
