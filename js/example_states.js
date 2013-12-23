@@ -15,7 +15,7 @@ function timelineViz() {
     tlLayout = new d3_layout_timeline();
     tlLayout.periodCollection(exposedData);
     
-    svg = d3.select("#vizContainer").append("svg")
+    svg = d3.select("#vizContainer").append("svg").style("width", "1200px").style("height", "800px")
     
     var timelineG = svg.append("g").attr("id", "timelineG").attr("transform", "translate(0, 40)")
 
@@ -393,7 +393,6 @@ function levelAdjust(incLevel) {
 
 function stateOver(d,i) {
     d3.select(this).style("fill", "black");
-    console.log(d.properties.STATE_NAME);
     d3.selectAll("g.overallPeriod").filter(function (el) {return (d.properties.STATE_NAME == el.label && (d.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (d.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (d.properties.STATE_NAME == "Maine" && el.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (d.properties.STATE_NAME == "West Virginia" && el.label == "Virginia" && constraintBrush.extent()[0] < 2401570)}).selectAll("rect").style("fill", "black");
     d3.selectAll("g.overallPeriod").filter(function (el) {return (d.properties.STATE_NAME == el.label && (d.properties.STATE_NAME != "West Virginia" || constraintBrush.extent()[0] >= 2401570  || constraintBrush.extent()[1] >= 2401570) && (d.properties.STATE_NAME != "Maine" || constraintBrush.extent()[0] >= 2385911  || constraintBrush.extent()[1] >= 2385911)) || (d.properties.STATE_NAME == "Maine" && el.label == "Massachusetts" && constraintBrush.extent()[0] < 2385911) || (d.properties.STATE_NAME == "West Virginia" && el.label == "Virginia" && constraintBrush.extent()[0] < 2401570)}).selectAll("text").style("opacity", 1);
 }
