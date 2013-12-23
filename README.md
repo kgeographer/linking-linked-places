@@ -24,9 +24,9 @@ To learn more, check out these and other pages in [the Wiki](https://github.com/
 
 #####Files (JavaScript):
 
-* timeline.js - A D3 timeline layout
-* topo\_projection.js - Temporal projection function used for topotime data
-* example.js - Example code for using the timeline layout and displaying the processed results
+* js/timeline.js - A D3 timeline layout
+* js/topo\_projection.js - Temporal projection function used for topotime data
+* js/example.js - Example code for using the timeline layout and displaying the processed results
 * index.html - Renders a D3 timeline to a web page
 * us_states.html - Interactive timeline joined with a map
 * stacked_timelines.html - 
@@ -40,17 +40,17 @@ To learn more, check out these and other pages in [the Wiki](https://github.com/
 #####Example Data
 
 These files can be parsed by both timeline.js (for rendering timelines) and periodic.py (for other calculations)
-* topotime_format.json - Supported period/timespan types
-* pleiades98.json - 98 of 100 historic periods from the Pleiades project
-* us_history.json - The "lifespans" of the 50 US states, plus some other events
-* axial.json - Lifespans of (somewhat) contemporaneous historical figures in an "Axial Age"
-* ww2.json - A TomHanks-ish scenario of 8 events during WW2
-* dance.json - The lifespan of George Dance the Younger (1741-1825), an architect
-* pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period("Holocene Climatic Optimum") with no defined timespan
+* data/topotime_format.json - Supported period/timespan types
+* data/pleiades98.json - 98 of 100 historic periods from the Pleiades project
+* data/us_history.json - The "lifespans" of the 50 US states, plus some other events
+* data/axial.json - Lifespans of (somewhat) contemporaneous historical figures in an "Axial Age"
+* data/ww2.json - A TomHanks-ish scenario of 8 events during WW2
+* data/dance.json - The lifespan of George Dance the Younger (1741-1825), an architect
+* data/pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period("Holocene Climatic Optimum") with no defined timespan
 
 
 #####Future developments
-* Alternative JSON-LD representation of the data model
+* Alternative JSON-LD linked data) representation of the data model
 * Further examples tied to geospatial and network data
 * Smoothed curves for 'sls' and 'eee' fuzzy bounds
 * Further example queries to temporal geometries
