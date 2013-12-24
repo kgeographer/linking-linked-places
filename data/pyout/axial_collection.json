@@ -1211,12 +1211,84 @@
     {
       "id": 1,
       "rel": [
-        "",
-        "",
-        ""
+        "Gautama_Buddha",
+        "birthplace",
+        "8"
+      ]
+    },
+    {
+      "id": 2,
+      "rel": [
+        "Plato",
+        "birthplace",
+        "2"
+      ]
+    },
+    {
+      "id": 3,
+      "rel": [
+        "Confucius",
+        "birthplace",
+        "5"
+      ]
+    },
+    {
+      "id": 4,
+      "rel": [
+        "Zarathustra",
+        "birthplace",
+        "4"
+      ]
+    },
+    {
+      "id": 5,
+      "rel": [
+        "Laozi",
+        "birthplace",
+        "3"
+      ]
+    },
+    {
+      "id": 6,
+      "rel": [
+        "Homer",
+        "birthplace",
+        "9"
+      ]
+    },
+    {
+      "id": 7,
+      "rel": [
+        "Socrates",
+        "birthplace",
+        "2"
+      ]
+    },
+    {
+      "id": 8,
+      "rel": [
+        "P\u0101r\u015bva",
+        "birthplace",
+        "7"
+      ]
+    },
+    {
+      "id": 9,
+      "rel": [
+        "Heraclitus",
+        "birthplace",
+        "1"
+      ]
+    },
+    {
+      "id": 10,
+      "rel": [
+        "Mahavira",
+        "birthplace",
+        "6"
       ]
     }
   ],
-  "rev_date": "2013-12-07",
+  "rev_date": "2013-12-22",
   "type": "PeriodCollection"
 }
