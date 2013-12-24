@@ -10,9 +10,11 @@ from descartes.patch import PolygonPatch
 from matplotlib import pyplot
 from jdcal import gcal2jd, jd2gcal
 import simplejson as json
-data = 'axial' # topotime_format, pleiades98, axial, dance, us_history, ww2  
+data = 'Dance' # topotime_format, pleiades98, axial, Dance, us_history, ww2  
 loc = 'home' # home laptop work
-locationHash = {"home":"{a path}", "laptop":"{a path}", "work":"{a path}"}
+locationHash = {"home":"g:/mydocs/__repos/Topotime/", "laptop":"z:/karlg on my mac/box documents/Repos/topotime/", 
+                "work":""}
+# locationHash = {"home":"{a path}", "laptop":"{a path}", "work":"{a path}"}
 durationHash = {"d": 1, "h": 1/24, "w": 7, "m": 365.25/12, "y": 365.25};
 uncertaintyValue = 365;  
 tsOperatorHash = { "<": {"subspan": "s", "uncertaintyPoint": {"s": -1,"e": .001}}, 
