@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Topotime :: py geometry</title>
+	<link rel="stylesheet" href="css/pepper-grinder/jquery-ui-1.8.23.custom.css" />
+	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="../lib/d3v3/d3.v3.min.js"></script>
+	<script src="js/ttdemo.js"></script>
+	<script src="js/blurbhash.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/ttweb.css" />
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ <!--[if lte IE 8]>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
+	<!--<script src="data/out_geom_d3.json"></script>
+	<script src="data/polys.js"></script>-->
+</head>
+<body onload="setDates()" class="pybody">
+<div class="global-head"><a href="index.html">HOME</a></div>
+<div id="header">
+	<span id="sitetitle">Topotime</span><span id="sitesubtitle"> temporal geometry browser</span><span id="datatitle"></span>
+</div>
+<div class="ui-widget" id="left">
+	<div class="controls">
+	<p><select id="sel_case">
+		<!--# topotime_format pleiades98test Dance us_history ww2b; ORIGINAL tests: ww2a pleiades -->
+		<option value="pleiades98">Pleiades periods</option>
+		<option value="topotime_format">Topotime spec</option>
+		<option value="dance">George Dance the Younger</option>
+		<option value="us_history">Some U.S. history</option>
+		<option value="ww2">A WW II scenario</option>
+		<option value="axial" selected="selected">An Axial Age?</option>
+	</select></p>
+	</div>
+	<div class="controls">
+		<div class="d_calc">
+		<form id="calc_form">
+		<p><span class="help">start/end values: ([-]Y{1,7}[-MM][-DD])</span></p>
+		<p><label for="start">Start date </label>
+		<input id="i_start" type="text" name="start" value=""> <br/>
+		<label for="end">End date</label>
+		<input id="i_end" type="text" name="end" value=""></p>
+		<input type="submit" id="b_calc" value="Calculate intersection">
+		</form>
+		</div>
+		<div class="d_search">
+		<p><input id="i_search" type="text" value="" size="15">
+		<input type="submit" id="b_search" name="Search" value="Search" >
+		<input type="submit" id="b_reset" value="Reset" onclick=resetGeometry() ></p>
+		</div>
+	</div>
+	<div id="d_textPanel"><p id="results"></p></div>
+	<div><hr/><p style="font-size:.9em">Comments, questions, bug reports to <br/>
+	Karl Grossner, karl [dot] geog [at] gmail [dot] com</p></div>
+</div>
+<div id="right">
+	<div id="d_geomvis"></div>
+	<!--<div id="axis"><span id="axis-min">min</span><span id="axis-max">max</span></div>-->
+	<div id="d_filter-summary">summary: <span id="s_summ-result"></span></div>
+	<div>
+		<div id="d_periodlist"></div>
+		<div id="d_map"><p style="color:grey;">&nbsp;&nbsp;There <em>will</em> be a map here soon...</p></div>
+	</div>
+</div>
+<script>
+var bounder, listData
+dateHash={
+	"ww2":{"s":"1945-03-21","e":"1945-09-20"},
+	"pleiades98":{"s":"-200", "e":"100"},
+	"dance":{"s":"1761-03-21","e":"1761-09-20"},
+	"topotime_format":{"s":"1929-10-29","e":"1933-03-15"},
+	"us_history":{"s":"1778-01-01","e":"1800-01-01"},
+	"axial":{"s":"-450","e":"-430"}}
+
+function writeAxis(z) {
+  svg_visaxis.selectAll("text").remove()
+  var minxo,maxxo
+  if (z == 'filt') {
+	  minxo=minxfilt; maxxo=maxxfilt;
+  } else {minxo=minx; maxxo=maxx;}
+  syear=julianToDate((minxo*1000000)).getFullYear();
+  eyear=julianToDate((maxxo*1000000)).getFullYear();
+  svg_visaxis.append("text")
+	.attr("class", "axis")
+	.attr("x", scaleX(minxo))
+	.attr("y",112).text(syear)
+  svg_visaxis.append("text")
+	.attr("class", "axis").attr("text-anchor", "end")
+	.attr("x", scaleX(maxxo))
+	.attr("y",112).text(eyear)	
+}
+function bboxTime() {
+// draw bounding rect
+  bbx=scaleX(minxfilt); bbwidth = scaleX(maxxfilt-minxfilt)
+  svg_vis_main.append("rect")
+	.style("stroke", "black").style("stroke-width", 2)
+	.style("stroke-dasharray",("4,2"))
+	.attr("x", bbx).attr("y",10).attr("width", bbwidth).attr("height",110)/code
+}
+function julianToDate(jDay) { 
+    var convertedDate = new Date;
+    convertedDate.setTime((jDay - 2440587.5) * 86400000);
+    return convertedDate
+}
+
+function getJulian(incoming) {
+  qObj = [];
+  qDate = incoming.match(/^(\d{1,4})-(\d{1,2})-(\d{1,2})/);
+  qYear = +(incoming.match(/^-?\d{1,7}$/));
+  if (qDate) {
+    qObj=qDate.slice(1,4)
+	incDate = new Date(qObj)
+    // console.log('parse '+qObj)
+  } else if (qYear) {
+    qObj=[qYear, 1, 1]
+    incDate = new Date(qObj[0],1,1)
+    // console.log('parse '+qObj)
+  } else {
+    alert('one or both query dates are improperly formatted')
+  }
+  // console.log('incDate (processed qObj): '+incDate)
+  var jul = (Math.floor((incDate / 86400000) - (incDate.getTimezoneOffset()/1440) + 2440587.5))/1000000;
+  return jul
+}
+
+setDates = function(){
+	$('#i_start').val( dateHash[$('#sel_case').val()]['s'] );
+	$('#i_end').val( dateHash[$('#sel_case').val()]['e'] );
+}
+summGeom = function(subset) {
+	$.ajax(
+		{
+		type: "get",
+		url: "py/ajx_summ.py",
+		//dataType: "json",
+		//contentType: 'application/json',
+		data: {"periods": subset.join(","),
+				 "pCollect": $('#sel_case').val()},
+		success: function(response)
+		{
+			qr = response;
+			// need to parse this render like line ~318
+			console.log('summarization request \'qr\' returned obj w/length '+qr.length);
+			//$('#d_filter-summary').html('sent: '+ subset.join(","));
+			$('#d_filter-summary').html(response);
+			//alert()
+		}
+		,error: function(XMLHttpRequest, textStatus, errorThrown) { 
+        alert("Status: " + textStatus); alert("Error: " + errorThrown); }
+		})
+	return false;	
+}
+$('#calc_form').submit(function() {
+  filteredPeriods = [];
+  // make date strings and get Julian for them
+  qStart = $('#i_start').val();
+  qEnd = $('#i_end').val();
+  sPos = Math.floor(scaleX(getJulian(qStart)))
+  ePos = Math.floor(scaleX(getJulian(qEnd)))
+  if(bounder) {bounder.remove()}
+  bounder = svg_visaxis.append("rect")
+		.style("stroke", "black")
+		.style("stroke-dasharray", ("3, 3"))
+		.style("stroke-width", 2)
+		.style("fill", "none")
+		.attr("x", sPos)
+		.attr("y",20)
+		.attr("width",(ePos-sPos))
+		.attr("height",85);
+		//.transition()
+		//.attr("height",85)
+  console.log('got x locs from Julian numbers: '+ sPos, ePos)
+  console.log('now what?')
+  listData=legend.selectAll('text').data()
+  qFilt=listData.filter(function(d,i){
+	return ((getJulian(qStart) >= d.points[0].x &&
+			getJulian(qStart) <= d.points[d.points.length-2].x)
+	  ||	((getJulian(qEnd) >= d.points[0].x &&
+			getJulian(qEnd) <= d.points[d.points.length-2].x)))
+	})
+  legend.remove()
+  for (period in qFilt) {
+	  filteredPeriods.push(qFilt[period].id)
+  }
+  svg_vis.selectAll("polygon")
+	  .filter(function(d){return $.inArray(d.id,filteredPeriods) == -1})
+	  .attr("display","none")
+  // make new legend_q group
+  legend_q = svg_list.append("g")
+	  .attr("id","legend_query")
+	  .attr("class", "legend")
+	  .attr("height", 100)
+	  .attr("width", 100)
+	  //.attr('transform', 'translate(10,20)');
+	  
+  // display text
+  legend_q.selectAll('text')
+	  .data(qFilt)
+  .enter()
+	  .append("text")
+	  .classed("periodlist",true)
+	  .attr("x", 32)
+	  .attr("y", function(d, i){ return i * 20 + 10;})
+		   .text(function(d) {return d.label})
+	  .on("mouseover",mouseover)
+	  .on("mouseout", mouseout);
+  // display rectangles
+  legend_q 
+	  .selectAll('rect')
+	  .data(qFilt)
+  .enter()
+	  .append("rect")
+	  .attr("x", 12)
+	  .attr("y", function(d, i){ return i * 20 ;})
+	  .attr("width", 10)
+	  .attr("height", 10)
+	  .style("fill", function(d) { return color(d.css_class);})
+	  .attr("opacity",0.4);
+		
+	$('#results').html("");
+	$.ajax(
+		{
+		type: "get",
+		url: "py/ajx2.py",
+		data: {"start": qStart,
+				 "end": qEnd,
+				 "pCollect": $('#sel_case').val()
+				 },
+		//dataType: "json",
+		//success: alert(response)
+		success: function(response)
+		{
+			qr = response;
+			console.log('you did it');
+			$('#d_textPanel').html(blurbHash['results']+response);
+		}
+	})
+	return false;
+});
+
+$('#search_form').submit(function() {
+	if ($('#i_search').val() != '') {
+		filterGeometry( $('#i_search').val() );
+	} else { alert( "You didn\'t enter a search term"); }
+})
+
+var ttPolys, filtered = false, legend_q
+
+dataFile = $("#sel_case").val() // active data file
+dataLabel = $("#sel_case option:selected").text();
+// populate left panel with a blurb
+$('#d_textPanel').html(blurbHash[dataFile])
+$("#datatitle").html(dataLabel)
+$(function(){
+	$("#b_search").click( function()
+		{ filterGeometry( $('#i_search').val() ) } );
+})
+// this is on load
+d3.json("data/py/"+dataFile+"_geom_d3.json", function(error, json){
+	if (error) return console.warn(error)
+	j = json;
+	displayGeometry(json)
+	// console.log('got some data, how\'s it look?');
+})
+
+updateData = function(d) {
+	setDates()
+	svg_list.remove(); svg_vis.remove();
+	d3.json("data/py/"+d+"_geom_d3.json", function(error, json){
+		 if (error) {
+			alert('that data isn\'t available')
+		}
+		 ttgeom = json;
+		 displayGeometry(ttgeom)
+	 })
+	 $("#datatitle").html(dataLabel);
+	 $("#d_textPanel").html(blurbHash[dataFile]);
+	 $('#results').html('');
+}
+resetGeometry = function() {
+  // reset axis labels
+  writeAxis('all')
+  // display all geometry
+  svg_vis.selectAll("polygon").attr("display","block");
+  // clear search input
+  $('#i_search').val('');
+  // if there's a filtered legend, remove it
+  if(legend_q) { svg_list.remove() }
+  // if there's a bounding box, remove it
+  if(bounder) { bounder.remove() }
+  // restore initial legend
+  displayLegend(tt);
+  // clear results
+  $('#results').html('');
+  // reset stuff
+  filtered = false;
+  sPos = null; ePos = null
+	
+}
+filterGeometry = function(string){
+	filteredPeriods = []; // array sent to 2nd ajax call
+	
+	$('#results').html("");
+	// if filtered already, display all geometry first and remove filtered legend
+	if (filtered == true) {
+		svg_vis.selectAll("polygon").attr("display","block")
+		legend_q.remove()
+	} else { legend.remove() } // remove initial legend
+	
+	// turn off those geometries not matching query
+	svg_vis.selectAll("polygon")
+		.filter(function(d){return !d.label.match(string)})
+		.attr("display","none")
+	
+	// put data for matched periods in 'q'
+	q = legend.selectAll('text')
+		.filter(function(d) {return d.label.match(string)}).data()
+	
+	for (period in q) {
+		filteredPeriods.push(q[period].id)
+	}
+	minxfilt=d3.min(q, function(d,i) {
+		return d3.min(d.points, function(p) {return p.x})})
+	maxxfilt=d3.max(q, function(d,i) {
+		return d3.max(d.points, function(p) {return p.x})})
+
+	// summGeom(filteredPeriods)
+	
+	// make new legend_q group
+	legend_q = svg_list.append("g")
+		.attr("id","legend_query")
+		.attr("class", "legend")
+		.attr("height", 100)
+		.attr("width", 100)
+		//.attr('transform', 'translate(10,20)');
+		
+	// display text
+	legend_q.selectAll('text')
+		.data(q)
+	.enter()
+		.append("text")
+		.classed("periodlist",true)
+		.attr("x", 32)
+		.attr("y", function(d, i){ return i * 20 + 10;})
+			 .text(function(d) {return d.label})
+		.on("mouseover",mouseover)
+		.on("mouseout", mouseout);
+	// display rectangles
+   legend_q 
+		.selectAll('rect')
+		.data(q)
+	.enter()
+		.append("rect")
+		.attr("x", 12)
+		.attr("y", function(d, i){ return i * 20 ;})
+		.attr("width", 10)
+		.attr("height", 10)
+		.style("fill", function(d) { return color(d.css_class);})
+		.attr("opacity",0.4);
+	
+	writeAxis('filt');
+	// set flag
+	filtered = true;
+}
+
+function mouseover(d) {
+	this.style.cursor="pointer";
+	polyid=d.id;
+	svg_vis_main.selectAll("polygon")
+		.filter(function(e) { return e.id === polyid})
+		.attr("stroke-width",3).attr("stroke", "black")
+		.attr("opacity",1);
+	
+}
+function mouseout(d) {
+	svg_vis_main.selectAll("polygon")
+		.attr("opacity",0.2).attr("stroke", "none");
+}
+    
+displayLegend = function(data) {
+	// add legend   
+	svg_list= d3.select("#d_periodlist").append("svg")
+		.attr("width", 340)
+		.attr("height", 1200);
+		
+	legend = svg_list.append("g")
+	.attr("id","legend_init")
+	.attr("class", "legend")
+	.attr("height", 100)
+	.attr("width", 100)
+	//.attr('transform', 'translate(10,20)');
+          
+   legend 
+	.selectAll('rect')
+	.data(data)
+  .enter()
+	.append("rect")
+	    .attr("x", 12)
+	.attr("y", function(d, i){ return i * 20 ;})
+	.attr("width", 10)
+	.attr("height", 10)
+	.style("fill", function(d) { return color(d.css_class);})
+	.attr("opacity",0.4);
+      
+   legend.selectAll('text')
+		.data(data)
+	.enter()
+		.append("text")
+		.classed("periodlist",true)
+		.attr("x", 32)
+		.attr("y", function(d, i){ return i * 20 +10;})
+			 .text(function(d) {return d.label})
+		.on("mouseover",mouseover)
+		.on("mouseout", mouseout)
+}
+
+displayGeometry = function(ttPolys) {
+	tt=ttPolys;
+	minx=d3.min(ttPolys, function(d,i) {
+		return d3.min(d.points, function(p) {return p.x})})
+	maxx=d3.max(ttPolys, function(d,i) {
+		return d3.max(d.points, function(p) {return p.x})})
+	scaleX = d3.scale.linear()
+		.domain([minx,maxx])
+        .range([10,700]);
+	scaleY = d3.scale.linear()
+        .domain([0,1])
+        .range([100,25]);
+	scaleYme = d3.scale.linear()
+        .domain([0,1])
+        .range([25,5]);
+// the vis g and 3 sub-g	
+	svg_vis = d3.select("#d_geomvis").append("svg")
+		.attr("id", "vis")
+		.attr("width", 700)
+		.attr("height", 120);
+	svg_vis_density = svg_vis.append("g")
+		.attr("id", "visdensity")
+		.attr("width", 700)
+		.attr("height", 20);
+	svg_vis_main = svg_vis.append("g")
+		.attr("id", "vismain")
+		.attr("width", 700)
+		.attr("height", 100);
+	svg_visaxis = svg_vis.append("g")
+		.attr("id", "visaxis")
+		.attr("width", 700)
+		.attr("height", 12);
+	svg_visaxis.append("rect")
+	  .style("fill", "lightgoldenrodyellow")
+	  .attr("x", 10).attr("y",100).attr("width",700).attr("height",16)
+
+	color = d3.scale.category10();
+	colorY = d3.scale
+	  
+	svg_vis_main.selectAll("polygon")
+    .data(ttPolys)
+  .enter().append("polygon")
+	.attr("points",function(d) { 
+      return d.points.map(function(d) {
+			return [scaleX(d.x),scaleY(d.y)].join(","); }).join(" ");})
+	.attr("fill", function(d){return color(d.css_class)})
+	.attr("stroke", function(d){return color(d.css_class)})
+	.attr("stroke-width",1)
+	//.attr("opacity", 1/svg_vis_main.selectAll("polygon")[0].length)
+	.attr("opacity",0.2)
+	.attr("y", 10);
+
+	svg_vis_density.selectAll("polygon")
+    .data(ttPolys)
+  .enter().append("polygon")
+	.attr("points",function(d) { 
+      return d.points.map(function(d) {
+			return [scaleX(d.x),scaleYme(d.y)].join(","); }).join(" ");})
+	.attr("fill", "black")
+	//.attr("stroke", function(d){return color(d.label)})
+	.attr("stroke-width",2)
+	.attr("opacity", 1/svg_vis_main.selectAll("polygon")[0].length)
+	.attr("y", 10);
+	
+	displayLegend(ttPolys);
+	writeAxis('all');
+}
+
+// *** map stuff
+//mapcenter = [38.7138, -9.1394] // Lisbon 38.7138¡ N, 9.1394¡ W
+//var map = L.map('d_map').setView(mapcenter, 1);
+//L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png',
+//	{	attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade',
+//		key: '96fdfd79055c4839b4dea6ab152710d7',	styleId: 22677, maxZoom: 18
+//	}).addTo(map);
+// ***
+</script>
+</body>
+</html>

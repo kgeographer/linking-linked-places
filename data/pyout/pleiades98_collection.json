@@ -1,0 +1,4874 @@
+{
+  "author": [
+    "T. Elliot",
+    "S. Gillies"
+  ],
+  "id": "0",
+  "label": "Pleiades time periods",
+  "periods": [
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.392341,
+            0
+          ],
+          [
+            1.392341,
+            1
+          ],
+          [
+            1.410967,
+            1
+          ],
+          [
+            1.410967,
+            0
+          ],
+          [
+            1.392341,
+            0
+          ]
+        ]
+      ],
+      "id": "0",
+      "label": "Early Geometric (Greek; 900-850 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0850",
+          "s": "-0900"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1410967,
+          "s": 1392341
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.410603,
+            0
+          ],
+          [
+            1.410603,
+            1
+          ],
+          [
+            1.447492,
+            1
+          ],
+          [
+            1.447492,
+            0
+          ],
+          [
+            1.410603,
+            0
+          ]
+        ]
+      ],
+      "id": "1",
+      "label": "Middle Geometric (Greek; 850-750 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0750",
+          "s": "-0850"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1447492,
+          "s": 1410603
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.447128,
+            0
+          ],
+          [
+            1.447128,
+            1
+          ],
+          [
+            1.52054,
+            1
+          ],
+          [
+            1.52054,
+            0
+          ],
+          [
+            1.447128,
+            0
+          ]
+        ]
+      ],
+      "id": "2",
+      "label": "Archaic (Greco-Roman; 750-550 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0550",
+          "s": "-0750"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1520540,
+          "s": 1447128
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.520176,
+            0
+          ],
+          [
+            1.520176,
+            1
+          ],
+          [
+            1.600894,
+            1
+          ],
+          [
+            1.600894,
+            0
+          ],
+          [
+            1.520176,
+            0
+          ]
+        ]
+      ],
+      "id": "3",
+      "label": "Classical (Greco-Roman; 550 BC-330 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0330",
+          "s": "-0550"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1600894,
+          "s": 1520176
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.60053,
+            0
+          ],
+          [
+            1.60053,
+            1
+          ],
+          [
+            1.710466,
+            1
+          ],
+          [
+            1.710466,
+            0
+          ],
+          [
+            1.60053,
+            0
+          ]
+        ]
+      ],
+      "id": "4",
+      "label": "Hellenistic Greek",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0030",
+          "s": "-0330"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1710466,
+          "s": 1600530
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.710102,
+            0
+          ],
+          [
+            1.710102,
+            1
+          ],
+          [
+            1.830996,
+            1
+          ],
+          [
+            1.830996,
+            0
+          ],
+          [
+            1.710102,
+            0
+          ]
+        ]
+      ],
+      "id": "5",
+      "label": "Roman",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "300",
+          "s": "-0030"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1830996,
+          "s": 1710102
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.830632,
+            0
+          ],
+          [
+            1.830632,
+            1
+          ],
+          [
+            1.955179,
+            1
+          ],
+          [
+            1.955179,
+            0
+          ],
+          [
+            1.830632,
+            0
+          ]
+        ]
+      ],
+      "id": "6",
+      "label": "Late Antique (AD 300-AD 640)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "640",
+          "s": "300"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1955179,
+          "s": 1830632
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.954814,
+            0
+          ],
+          [
+            1.954814,
+            1
+          ],
+          [
+            2.252121,
+            1
+          ],
+          [
+            2.252121,
+            0
+          ],
+          [
+            1.954814,
+            0
+          ]
+        ]
+      ],
+      "id": "7",
+      "label": "Mediaeval/Byzantine (AD 641-AD 1453)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "1453",
+          "s": "640"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2252121,
+          "s": 1954814
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.958467,
+            0
+          ],
+          [
+            1.958467,
+            1
+          ],
+          [
+            2.03188,
+            1
+          ],
+          [
+            2.03188,
+            0
+          ],
+          [
+            1.958467,
+            0
+          ]
+        ]
+      ],
+      "id": "8",
+      "label": "Early Byzantine (AD 650-850)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "850",
+          "s": "650"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2031880,
+          "s": 1958467
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.341972,
+            0
+          ],
+          [
+            2.341972,
+            1
+          ],
+          [
+            2.488433,
+            1
+          ],
+          [
+            2.488433,
+            0
+          ],
+          [
+            2.341972,
+            0
+          ]
+        ]
+      ],
+      "id": "9",
+      "label": "Modern (AD 1700-Present)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "2100",
+          "s": "1700"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2488433,
+          "s": 2341972
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.031516,
+            0
+          ],
+          [
+            2.031516,
+            1
+          ],
+          [
+            2.159715,
+            1
+          ],
+          [
+            2.159715,
+            0
+          ],
+          [
+            2.031516,
+            0
+          ]
+        ]
+      ],
+      "id": "10",
+      "label": "Middle Byzantine (AD 850-1200)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "1200",
+          "s": "850"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2159715,
+          "s": 2031516
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.15935,
+            0
+          ],
+          [
+            2.15935,
+            1
+          ],
+          [
+            2.251025,
+            1
+          ],
+          [
+            2.251025,
+            0
+          ],
+          [
+            2.15935,
+            0
+          ]
+        ]
+      ],
+      "id": "11",
+      "label": "Late Byzantine Period (AD 1200-1450)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "1450",
+          "s": "1200"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2251025,
+          "s": 2159350
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.470395,
+            0
+          ],
+          [
+            -0.470395,
+            1
+          ],
+          [
+            0.077832,
+            1
+          ],
+          [
+            0.077832,
+            0
+          ],
+          [
+            -0.470395,
+            0
+          ]
+        ]
+      ],
+      "id": "12",
+      "label": "Neolithic Egypt (6000-4500 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-4500",
+          "s": "-6000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 77832,
+          "s": -470395
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.077468,
+            0
+          ],
+          [
+            0.077468,
+            1
+          ],
+          [
+            0.643958,
+            1
+          ],
+          [
+            0.643958,
+            0
+          ],
+          [
+            0.077468,
+            0
+          ]
+        ]
+      ],
+      "id": "13",
+      "label": "Predynastic Egypt (4500-2950 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2950",
+          "s": "-4500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 643958,
+          "s": 77468
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.643594,
+            0
+          ],
+          [
+            0.643594,
+            1
+          ],
+          [
+            0.746226,
+            1
+          ],
+          [
+            0.746226,
+            0
+          ],
+          [
+            0.643594,
+            0
+          ]
+        ]
+      ],
+      "id": "14",
+      "label": "Early Dynastic Egypt (2950-2670 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2670",
+          "s": "-2950"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 746226,
+          "s": 643594
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.745862,
+            0
+          ],
+          [
+            0.745862,
+            1
+          ],
+          [
+            0.929578,
+            1
+          ],
+          [
+            0.929578,
+            0
+          ],
+          [
+            0.745862,
+            0
+          ]
+        ]
+      ],
+      "id": "15",
+      "label": "Old Kingdom Egypt (2670-2168 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2168",
+          "s": "-2670"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 929578,
+          "s": 745862
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.929213,
+            0
+          ],
+          [
+            0.929213,
+            1
+          ],
+          [
+            0.987286,
+            1
+          ],
+          [
+            0.987286,
+            0
+          ],
+          [
+            0.929213,
+            0
+          ]
+        ]
+      ],
+      "id": "16",
+      "label": "First Intermediate Period Egypt (2168-2010 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2010",
+          "s": "-2168"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 987286,
+          "s": 929213
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.986922,
+            0
+          ],
+          [
+            0.986922,
+            1
+          ],
+          [
+            1.122426,
+            1
+          ],
+          [
+            1.122426,
+            0
+          ],
+          [
+            0.986922,
+            0
+          ]
+        ]
+      ],
+      "id": "17",
+      "label": "Middle Kingdom Egypt (2010-1640 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1640",
+          "s": "-2010"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1122426,
+          "s": 986922
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.122061,
+            0
+          ],
+          [
+            1.122061,
+            1
+          ],
+          [
+            1.156029,
+            1
+          ],
+          [
+            1.156029,
+            0
+          ],
+          [
+            1.122061,
+            0
+          ]
+        ]
+      ],
+      "id": "18",
+      "label": "Second Intermediate Period Egypt (1640-1548)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1548",
+          "s": "-1640"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1156029,
+          "s": 1122061
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.155664,
+            0
+          ],
+          [
+            1.155664,
+            1
+          ],
+          [
+            1.32477,
+            1
+          ],
+          [
+            1.32477,
+            0
+          ],
+          [
+            1.155664,
+            0
+          ]
+        ]
+      ],
+      "id": "19",
+      "label": "New Kingdom Egypt (1548-1086)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1086",
+          "s": "-1548"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1324770,
+          "s": 1155664
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.324406,
+            0
+          ],
+          [
+            1.324406,
+            1
+          ],
+          [
+            1.478903,
+            1
+          ],
+          [
+            1.478903,
+            0
+          ],
+          [
+            1.324406,
+            0
+          ]
+        ]
+      ],
+      "id": "20",
+      "label": "Third Intermediate Period Egypt (1086-664)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0664",
+          "s": "-1086"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1478903,
+          "s": 1324406
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.478538,
+            0
+          ],
+          [
+            1.478538,
+            1
+          ],
+          [
+            1.600164,
+            1
+          ],
+          [
+            1.600164,
+            0
+          ],
+          [
+            1.478538,
+            0
+          ]
+        ]
+      ],
+      "id": "21",
+      "label": "Late Period Egypt (664-332)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0332",
+          "s": "-0664"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1600164,
+          "s": 1478538
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.599799,
+            0
+          ],
+          [
+            1.599799,
+            1
+          ],
+          [
+            1.610391,
+            1
+          ],
+          [
+            1.610391,
+            0
+          ],
+          [
+            1.599799,
+            0
+          ]
+        ]
+      ],
+      "id": "22",
+      "label": "Macedonian Egypt (332-304 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0304",
+          "s": "-0332"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1610391,
+          "s": 1599799
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.610026,
+            0
+          ],
+          [
+            1.610026,
+            1
+          ],
+          [
+            1.710466,
+            1
+          ],
+          [
+            1.710466,
+            0
+          ],
+          [
+            1.610026,
+            0
+          ]
+        ]
+      ],
+      "id": "23",
+      "label": "Ptolemaic Egypt (304-30 BCE/BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0030",
+          "s": "-0304"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1710466,
+          "s": 1610026
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.784212,
+            0
+          ],
+          [
+            0.831694,
+            1
+          ],
+          [
+            1.405488,
+            1
+          ],
+          [
+            1.452971,
+            0
+          ],
+          [
+            0.784212,
+            0
+          ]
+        ]
+      ],
+      "id": "24",
+      "label": "Bronze Age Britain (ca. 2500 - ca. 800 BC/BCE)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0735",
+          "ee": "-0865",
+          "ls": "-2435",
+          "s": "-2565"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1452971,
+          "ee": 1405488,
+          "ls": 831694,
+          "s": 784212
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.921943,
+            0
+          ],
+          [
+            1.921943,
+            1
+          ],
+          [
+            2.110772,
+            1
+          ],
+          [
+            2.110772,
+            0
+          ],
+          [
+            1.921943,
+            0
+          ]
+        ]
+      ],
+      "id": "25",
+      "label": "Anglo-Saxon Period (550-1066 AD/CE)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "1066",
+          "s": "550"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2110772,
+          "s": 1921943
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.702325,
+            0
+          ],
+          [
+            -0.603709,
+            1
+          ],
+          [
+            0.333502,
+            1
+          ],
+          [
+            0.333502,
+            0
+          ],
+          [
+            -0.702325,
+            0
+          ]
+        ]
+      ],
+      "id": "26",
+      "label": "Ubaid period in Mesopotamia (ca. 6500 to 3800 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-3800",
+          "ls": "-6365",
+          "s": "-6635"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 333502,
+          "ls": -603709,
+          "s": -702325
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.260089,
+            0
+          ],
+          [
+            0.260089,
+            1
+          ],
+          [
+            0.625696,
+            1
+          ],
+          [
+            0.625696,
+            0
+          ],
+          [
+            0.260089,
+            0
+          ]
+        ]
+      ],
+      "id": "27",
+      "label": "4th millenium BCE",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-3000",
+          "s": "-4000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 625696,
+          "s": 260089
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -2.053722,
+            0
+          ],
+          [
+            -1.809009,
+            1
+          ],
+          [
+            0.393767,
+            1
+          ],
+          [
+            0.638479,
+            0
+          ],
+          [
+            -2.053722,
+            0
+          ]
+        ]
+      ],
+      "id": "28",
+      "label": "Neolithic Period in the Eastern Mediterranean (ca. 10",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2965",
+          "ee": "-3635",
+          "ls": "-9665",
+          "s": "-10335"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 638479,
+          "ee": 393767,
+          "ls": -1809009,
+          "s": -2053722
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.150808,
+            0
+          ],
+          [
+            -0.059497,
+            1
+          ],
+          [
+            0.762662,
+            1
+          ],
+          [
+            0.853973,
+            0
+          ],
+          [
+            -0.150808,
+            0
+          ]
+        ]
+      ],
+      "id": "29",
+      "label": "Neolithic Period on Malta (ca. 5",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2375",
+          "ee": "-2625",
+          "ls": "-4875",
+          "s": "-5125"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 853973,
+          "ee": 762662,
+          "ls": -59497,
+          "s": -150808
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.775081,
+            0
+          ],
+          [
+            0.840825,
+            1
+          ],
+          [
+            1.432882,
+            1
+          ],
+          [
+            1.498626,
+            0
+          ],
+          [
+            0.775081,
+            0
+          ]
+        ]
+      ],
+      "id": "30",
+      "label": "Bronze Age Malta (ca. 2",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0610",
+          "ee": "-0790",
+          "ls": "-2410",
+          "s": "-2590"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1498626,
+          "ee": 1432882,
+          "ls": 840825,
+          "s": 775081
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.356181,
+            1
+          ],
+          [
+            1.356181,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "31",
+      "label": "2nd Millenium BCE",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1000",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1356181,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.962485,
+            0
+          ],
+          [
+            1.962485,
+            1
+          ],
+          [
+            1.995355,
+            1
+          ],
+          [
+            1.995355,
+            0
+          ],
+          [
+            1.962485,
+            0
+          ]
+        ]
+      ],
+      "id": "32",
+      "label": "Ummayad Period (661-750CE)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "750",
+          "s": "661"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1995355,
+          "s": 1962485
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.625332,
+            0
+          ],
+          [
+            0.625332,
+            1
+          ],
+          [
+            0.990939,
+            1
+          ],
+          [
+            0.990939,
+            0
+          ],
+          [
+            0.625332,
+            0
+          ]
+        ]
+      ],
+      "id": "33",
+      "label": "Early Helladic (Mainland Greece; 3000-2000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2000",
+          "s": "-3000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 990939,
+          "s": 625332
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.137036,
+            1
+          ],
+          [
+            1.137036,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "34",
+      "label": "Middle Helladic (Mainland Greece; 2000-1600 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1600",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1137036,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.136671,
+            0
+          ],
+          [
+            1.136671,
+            1
+          ],
+          [
+            1.283133,
+            1
+          ],
+          [
+            1.283133,
+            0
+          ],
+          [
+            1.136671,
+            0
+          ]
+        ]
+      ],
+      "id": "35",
+      "label": "Late Helladic (Mainland Greece; 1600-1200 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1200",
+          "s": "-1600"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1283133,
+          "s": 1136671
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.260089,
+            0
+          ],
+          [
+            0.260089,
+            1
+          ],
+          [
+            0.808317,
+            1
+          ],
+          [
+            0.808317,
+            0
+          ],
+          [
+            0.260089,
+            0
+          ]
+        ]
+      ],
+      "id": "36",
+      "label": "Neolithic Period (British Isles; 4",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2500",
+          "s": "-4000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 808317,
+          "s": 260089
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.414255,
+            0
+          ],
+          [
+            1.443475,
+            1
+          ],
+          [
+            1.743339,
+            1
+          ],
+          [
+            1.772558,
+            0
+          ],
+          [
+            1.414255,
+            0
+          ]
+        ]
+      ],
+      "id": "37",
+      "label": "Iron Age Britain (ca. 800 BC/BCE - ca. 100 AD/CE)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "140",
+          "ee": "60",
+          "ls": "-0760",
+          "s": "-0840"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1772558,
+          "ee": 1743339,
+          "ls": 1443475,
+          "s": 1414255
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.625332,
+            0
+          ],
+          [
+            0.625332,
+            1
+          ],
+          [
+            0.990939,
+            1
+          ],
+          [
+            0.990939,
+            0
+          ],
+          [
+            0.625332,
+            0
+          ]
+        ]
+      ],
+      "id": "38",
+      "label": "3rd millennium BC",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2000",
+          "s": "-3000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 990939,
+          "s": 625332
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -4.853305,
+            0
+          ],
+          [
+            -4.853305,
+            1
+          ],
+          [
+            -1.74838,
+            1
+          ],
+          [
+            -1.74838,
+            0
+          ],
+          [
+            -4.853305,
+            0
+          ]
+        ]
+      ],
+      "id": "41",
+      "label": "Mesolithic Levant (18000-9500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-9500",
+          "s": "-18000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": -1748380,
+          "s": -4853305
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -4.853305,
+            0
+          ],
+          [
+            -4.853305,
+            1
+          ],
+          [
+            -1.565759,
+            1
+          ],
+          [
+            -1.565759,
+            0
+          ],
+          [
+            -4.853305,
+            0
+          ]
+        ]
+      ],
+      "id": "42",
+      "label": "Mesolithic Middle East (18000-9000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-9000",
+          "s": "-18000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": -1565759,
+          "s": -4853305
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -2.844471,
+            0
+          ],
+          [
+            -2.844471,
+            1
+          ],
+          [
+            -1.74838,
+            1
+          ],
+          [
+            -1.74838,
+            0
+          ],
+          [
+            -2.844471,
+            0
+          ]
+        ]
+      ],
+      "id": "43",
+      "label": "Natufian Levant (12500-9500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-9500",
+          "s": "-12500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": -1748380,
+          "s": -2844471
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -1.566123,
+            0
+          ],
+          [
+            -1.566123,
+            1
+          ],
+          [
+            -0.470031,
+            1
+          ],
+          [
+            -0.470031,
+            0
+          ],
+          [
+            -1.566123,
+            0
+          ]
+        ]
+      ],
+      "id": "44",
+      "label": "Pre-Pottery Neolithic Middle East (9000-6000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-6000",
+          "s": "-9000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": -470031,
+          "s": -1566123
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -1.566123,
+            0
+          ],
+          [
+            -1.566123,
+            1
+          ],
+          [
+            0.077832,
+            1
+          ],
+          [
+            0.077832,
+            0
+          ],
+          [
+            -1.566123,
+            0
+          ]
+        ]
+      ],
+      "id": "45",
+      "label": "Neolithic Middle East (9000-4500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-4500",
+          "s": "-9000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 77832,
+          "s": -1566123
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.543444,
+            0
+          ],
+          [
+            -0.543444,
+            1
+          ],
+          [
+            0.351764,
+            1
+          ],
+          [
+            0.351764,
+            0
+          ],
+          [
+            -0.543444,
+            0
+          ]
+        ]
+      ],
+      "id": "46",
+      "label": "Chalcolithic Mesopotamia (6200-3750 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-3750",
+          "s": "-6200"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 351764,
+          "s": -543444
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.470395,
+            0
+          ],
+          [
+            -0.470395,
+            1
+          ],
+          [
+            0.077832,
+            1
+          ],
+          [
+            0.077832,
+            0
+          ],
+          [
+            -0.470395,
+            0
+          ]
+        ]
+      ],
+      "id": "47",
+      "label": "Pottery Neolithic Middle East (6000-4500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-4500",
+          "s": "-6000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 77832,
+          "s": -470395
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.287774,
+            0
+          ],
+          [
+            -0.287774,
+            1
+          ],
+          [
+            0.771793,
+            1
+          ],
+          [
+            0.771793,
+            0
+          ],
+          [
+            -0.287774,
+            0
+          ]
+        ]
+      ],
+      "id": "48",
+      "label": "Ubaid-Early Dynastic II Mesopotamia (5500-2600 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2600",
+          "s": "-5500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 771793,
+          "s": -287774
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            -0.105153,
+            0
+          ],
+          [
+            -0.105153,
+            1
+          ],
+          [
+            0.808317,
+            1
+          ],
+          [
+            0.808317,
+            0
+          ],
+          [
+            -0.105153,
+            0
+          ]
+        ]
+      ],
+      "id": "49",
+      "label": "Chalcolithic Iran (5000-2500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2500",
+          "s": "-5000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 808317,
+          "s": -105153
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.260089,
+            0
+          ],
+          [
+            0.260089,
+            1
+          ],
+          [
+            0.643958,
+            1
+          ],
+          [
+            0.643958,
+            0
+          ],
+          [
+            0.260089,
+            0
+          ]
+        ]
+      ],
+      "id": "50",
+      "label": "Uruk Mesopotamia (4000-2950 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2950",
+          "s": "-4000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 643958,
+          "s": 260089
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.333138,
+            0
+          ],
+          [
+            0.333138,
+            1
+          ],
+          [
+            0.881366,
+            1
+          ],
+          [
+            0.881366,
+            0
+          ],
+          [
+            0.333138,
+            0
+          ]
+        ]
+      ],
+      "id": "51",
+      "label": "Old Nubian (3800-2300 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2300",
+          "s": "-3800"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 881366,
+          "s": 333138
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.515759,
+            0
+          ],
+          [
+            0.515759,
+            1
+          ],
+          [
+            0.990939,
+            1
+          ],
+          [
+            0.990939,
+            0
+          ],
+          [
+            0.515759,
+            0
+          ]
+        ]
+      ],
+      "id": "52",
+      "label": "Early Bronze Age Southern Levant (3300-2000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2000",
+          "s": "-3300"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 990939,
+          "s": 515759
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.552283,
+            0
+          ],
+          [
+            0.552283,
+            1
+          ],
+          [
+            1.524193,
+            1
+          ],
+          [
+            1.524193,
+            0
+          ],
+          [
+            0.552283,
+            0
+          ]
+        ]
+      ],
+      "id": "53",
+      "label": "Elamite Western Iran (3200-540 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0540",
+          "s": "-3200"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1524193,
+          "s": 552283
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.643594,
+            0
+          ],
+          [
+            0.643594,
+            1
+          ],
+          [
+            0.863104,
+            1
+          ],
+          [
+            0.863104,
+            0
+          ],
+          [
+            0.643594,
+            0
+          ]
+        ]
+      ],
+      "id": "54",
+      "label": "Early Dynastic Mesopotamia (2950-2350 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2350",
+          "s": "-2950"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 863104,
+          "s": 643594
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.771429,
+            0
+          ],
+          [
+            0.771429,
+            1
+          ],
+          [
+            1.027463,
+            1
+          ],
+          [
+            1.027463,
+            0
+          ],
+          [
+            0.771429,
+            0
+          ]
+        ]
+      ],
+      "id": "55",
+      "label": "Bronze Age Oman (2600-1900 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1900",
+          "s": "-2600"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1027463,
+          "s": 771429
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.807953,
+            0
+          ],
+          [
+            0.807953,
+            1
+          ],
+          [
+            0.990939,
+            1
+          ],
+          [
+            0.990939,
+            0
+          ],
+          [
+            0.807953,
+            0
+          ]
+        ]
+      ],
+      "id": "56",
+      "label": "Early Bronze Age Iran (2500-2000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2000",
+          "s": "-2500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 990939,
+          "s": 807953
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.807953,
+            0
+          ],
+          [
+            0.807953,
+            1
+          ],
+          [
+            1.17356,
+            1
+          ],
+          [
+            1.17356,
+            0
+          ],
+          [
+            0.807953,
+            0
+          ]
+        ]
+      ],
+      "id": "57",
+      "label": "Early-Middle Bronze Age Iran (2500-1500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1500",
+          "s": "-2500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1173560,
+          "s": 807953
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.868219,
+            0
+          ],
+          [
+            0.868219,
+            1
+          ],
+          [
+            0.990939,
+            1
+          ],
+          [
+            0.990939,
+            0
+          ],
+          [
+            0.868219,
+            0
+          ]
+        ]
+      ],
+      "id": "58",
+      "label": "Akkadian-Ur III Mesopotamia (2335-2000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-2000",
+          "s": "-2335"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 990939,
+          "s": 868219
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.881002,
+            0
+          ],
+          [
+            0.881002,
+            1
+          ],
+          [
+            1.137036,
+            1
+          ],
+          [
+            1.137036,
+            0
+          ],
+          [
+            0.881002,
+            0
+          ]
+        ]
+      ],
+      "id": "59",
+      "label": "Middle Nubian (2300-1600 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1600",
+          "s": "-2300"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1137036,
+          "s": 881002
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.95405,
+            0
+          ],
+          [
+            0.95405,
+            1
+          ],
+          [
+            1.027463,
+            1
+          ],
+          [
+            1.027463,
+            0
+          ],
+          [
+            0.95405,
+            0
+          ]
+        ]
+      ],
+      "id": "60",
+      "label": "Transition Early-Middle Bronze Age Southern Levant (2100-1900 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1900",
+          "s": "-2100"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1027463,
+          "s": 954050
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.082249,
+            1
+          ],
+          [
+            1.082249,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "61",
+      "label": "Early Bronze Age Anatolia (2000-1750 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1750",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1082249,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.137036,
+            1
+          ],
+          [
+            1.137036,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "62",
+      "label": "Old Babylonian/Assyrian Mesopotamia (2000-1600 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1600",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1137036,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.17356,
+            1
+          ],
+          [
+            1.17356,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "63",
+      "label": "Middle Bronze Age Iran (2000-1500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1500",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1173560,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.210084,
+            1
+          ],
+          [
+            1.210084,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "64",
+      "label": "Middle Bronze Age Southern Levant (2000-1400 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1400",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1210084,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.356181,
+            1
+          ],
+          [
+            1.356181,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "65",
+      "label": "2nd Millennium BC Egypt (2000-1000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1000",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1356181,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.356181,
+            1
+          ],
+          [
+            1.356181,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "66",
+      "label": "2nd Millennium BC Levant (2000-1000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1000",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1356181,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            0.990574,
+            0
+          ],
+          [
+            0.990574,
+            1
+          ],
+          [
+            1.484016,
+            1
+          ],
+          [
+            1.484016,
+            0
+          ],
+          [
+            0.990574,
+            0
+          ]
+        ]
+      ],
+      "id": "67",
+      "label": "Middle Bronze-Early Iron Age Iran (2000-650 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0650",
+          "s": "-2000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1484016,
+          "s": 990574
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.081885,
+            0
+          ],
+          [
+            1.081885,
+            1
+          ],
+          [
+            1.191822,
+            1
+          ],
+          [
+            1.191822,
+            0
+          ],
+          [
+            1.081885,
+            0
+          ]
+        ]
+      ],
+      "id": "68",
+      "label": "Middle Bronze Age Anatolia (1750-1450 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1450",
+          "s": "-1750"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1191822,
+          "s": 1081885
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.118409,
+            0
+          ],
+          [
+            1.118409,
+            1
+          ],
+          [
+            1.191822,
+            1
+          ],
+          [
+            1.191822,
+            0
+          ],
+          [
+            1.118409,
+            0
+          ]
+        ]
+      ],
+      "id": "69",
+      "label": "Old Hittite Anatolia (1650-1450 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1450",
+          "s": "-1650"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1191822,
+          "s": 1118409
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.136671,
+            0
+          ],
+          [
+            1.136671,
+            1
+          ],
+          [
+            1.356181,
+            1
+          ],
+          [
+            1.356181,
+            0
+          ],
+          [
+            1.136671,
+            0
+          ]
+        ]
+      ],
+      "id": "70",
+      "label": "Later 2nd Millennium BC Mesopotamia (1600-1000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1000",
+          "s": "-1600"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1356181,
+          "s": 1136671
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.136671,
+            0
+          ],
+          [
+            1.136671,
+            1
+          ],
+          [
+            1.593589,
+            1
+          ],
+          [
+            1.593589,
+            0
+          ],
+          [
+            1.136671,
+            0
+          ]
+        ]
+      ],
+      "id": "71",
+      "label": "Late Nubian (1600-350 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0350",
+          "s": "-1600"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1593589,
+          "s": 1136671
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.173196,
+            0
+          ],
+          [
+            1.173196,
+            1
+          ],
+          [
+            1.356181,
+            1
+          ],
+          [
+            1.356181,
+            0
+          ],
+          [
+            1.173196,
+            0
+          ]
+        ]
+      ],
+      "id": "72",
+      "label": "Late Bronze Age Iran (1500-1000 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1000",
+          "s": "-1500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1356181,
+          "s": 1173196
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.191458,
+            0
+          ],
+          [
+            1.191458,
+            1
+          ],
+          [
+            1.283133,
+            1
+          ],
+          [
+            1.283133,
+            0
+          ],
+          [
+            1.191458,
+            0
+          ]
+        ]
+      ],
+      "id": "73",
+      "label": "Middle Hittite Anatolia (1450-1200 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1200",
+          "s": "-1450"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1283133,
+          "s": 1191458
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.20972,
+            0
+          ],
+          [
+            1.20972,
+            1
+          ],
+          [
+            1.283133,
+            1
+          ],
+          [
+            1.283133,
+            0
+          ],
+          [
+            1.20972,
+            0
+          ]
+        ]
+      ],
+      "id": "74",
+      "label": "Late Bronze Age Southern Levant (1400-1200 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1200",
+          "s": "-1400"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1283133,
+          "s": 1209720
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.230173,
+            0
+          ],
+          [
+            1.230173,
+            1
+          ],
+          [
+            1.27875,
+            1
+          ],
+          [
+            1.27875,
+            0
+          ],
+          [
+            1.230173,
+            0
+          ]
+        ]
+      ],
+      "id": "75",
+      "label": "Egyptian/Hittite Levant (1344-1212 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-1212",
+          "s": "-1344"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1278750,
+          "s": 1230173
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.282768,
+            0
+          ],
+          [
+            1.282768,
+            1
+          ],
+          [
+            1.465754,
+            1
+          ],
+          [
+            1.465754,
+            0
+          ],
+          [
+            1.282768,
+            0
+          ]
+        ]
+      ],
+      "id": "76",
+      "label": "Early Iron Age Anatolia (1200-700 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0700",
+          "s": "-1200"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1465754,
+          "s": 1282768
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.282768,
+            0
+          ],
+          [
+            1.282768,
+            1
+          ],
+          [
+            1.465754,
+            1
+          ],
+          [
+            1.465754,
+            0
+          ],
+          [
+            1.282768,
+            0
+          ]
+        ]
+      ],
+      "id": "77",
+      "label": "Neo-Hittite Northern Levant (1200-700 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0700",
+          "s": "-1200"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1465754,
+          "s": 1282768
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.355817,
+            0
+          ],
+          [
+            1.355817,
+            1
+          ],
+          [
+            1.484016,
+            1
+          ],
+          [
+            1.484016,
+            0
+          ],
+          [
+            1.355817,
+            0
+          ]
+        ]
+      ],
+      "id": "78",
+      "label": "Early Iron Age Iran (1000-650 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0650",
+          "s": "-1000"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1484016,
+          "s": 1355817
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.392341,
+            0
+          ],
+          [
+            1.392341,
+            1
+          ],
+          [
+            1.502278,
+            1
+          ],
+          [
+            1.502278,
+            0
+          ],
+          [
+            1.392341,
+            0
+          ]
+        ]
+      ],
+      "id": "79",
+      "label": "Urartian Eastern Anatolia (900-600 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0600",
+          "s": "-0900"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1502278,
+          "s": 1392341
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.458085,
+            0
+          ],
+          [
+            1.458085,
+            1
+          ],
+          [
+            1.524193,
+            1
+          ],
+          [
+            1.524193,
+            0
+          ],
+          [
+            1.458085,
+            0
+          ]
+        ]
+      ],
+      "id": "80",
+      "label": "Neo-Assyrian/Babylonian Middle East (720-540 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0540",
+          "s": "-0720"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1524193,
+          "s": 1458085
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.46539,
+            0
+          ],
+          [
+            1.46539,
+            1
+          ],
+          [
+            1.538802,
+            1
+          ],
+          [
+            1.538802,
+            0
+          ],
+          [
+            1.46539,
+            0
+          ]
+        ]
+      ],
+      "id": "81",
+      "label": "Middle-Late Iron Age Anatolia (700-500 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0500",
+          "s": "-0700"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1538802,
+          "s": 1465390
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.506662,
+            0
+          ],
+          [
+            1.506662,
+            1
+          ],
+          [
+            1.600894,
+            1
+          ],
+          [
+            1.600894,
+            0
+          ],
+          [
+            1.506662,
+            0
+          ]
+        ]
+      ],
+      "id": "82",
+      "label": "Neo-Babylonian-Achaemenid Southern Levant (587-330 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0330",
+          "s": "-0587"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1600894,
+          "s": 1506662
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.523828,
+            0
+          ],
+          [
+            1.523828,
+            1
+          ],
+          [
+            1.600894,
+            1
+          ],
+          [
+            1.600894,
+            0
+          ],
+          [
+            1.523828,
+            0
+          ]
+        ]
+      ],
+      "id": "83",
+      "label": "Achaemenid Middle East (540-330 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0330",
+          "s": "-0540"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1600894,
+          "s": 1523828
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.523828,
+            0
+          ],
+          [
+            1.523828,
+            1
+          ],
+          [
+            1.710466,
+            1
+          ],
+          [
+            1.710466,
+            0
+          ],
+          [
+            1.523828,
+            0
+          ]
+        ]
+      ],
+      "id": "84",
+      "label": "Achaemenid-Roman Republic Middle East (540-30 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0030",
+          "s": "-0540"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1710466,
+          "s": 1523828
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.523828,
+            0
+          ],
+          [
+            1.523828,
+            1
+          ],
+          [
+            1.839762,
+            1
+          ],
+          [
+            1.839762,
+            0
+          ],
+          [
+            1.523828,
+            0
+          ]
+        ]
+      ],
+      "id": "85",
+      "label": "Achaemenid-Roman Levant (540 BC - AD 324)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "324",
+          "s": "-0540"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1839762,
+          "s": 1523828
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.60053,
+            0
+          ],
+          [
+            1.60053,
+            1
+          ],
+          [
+            1.67029,
+            1
+          ],
+          [
+            1.67029,
+            0
+          ],
+          [
+            1.60053,
+            0
+          ]
+        ]
+      ],
+      "id": "86",
+      "label": "Hellenistic Middle East (330-140 BC)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "-0140",
+          "s": "-0330"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1670290,
+          "s": 1600530
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.60053,
+            0
+          ],
+          [
+            1.60053,
+            1
+          ],
+          [
+            1.803968,
+            1
+          ],
+          [
+            1.803968,
+            0
+          ],
+          [
+            1.60053,
+            0
+          ]
+        ]
+      ],
+      "id": "87",
+      "label": "Hellenistic-Parthian Middle East (330 BC - AD 226)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "226",
+          "s": "-0330"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1803968,
+          "s": 1600530
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.60053,
+            0
+          ],
+          [
+            1.60053,
+            1
+          ],
+          [
+            1.830996,
+            1
+          ],
+          [
+            1.830996,
+            0
+          ],
+          [
+            1.60053,
+            0
+          ]
+        ]
+      ],
+      "id": "88",
+      "label": "Hellenistic-Roman Early Empire (330 BC - AD 300)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "300",
+          "s": "-0330"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1830996,
+          "s": 1600530
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.669925,
+            0
+          ],
+          [
+            1.669925,
+            1
+          ],
+          [
+            1.803968,
+            1
+          ],
+          [
+            1.803968,
+            0
+          ],
+          [
+            1.669925,
+            0
+          ]
+        ]
+      ],
+      "id": "89",
+      "label": "Parthian Middle East (140 BC - AD 226)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "226",
+          "s": "-0140"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1803968,
+          "s": 1669925
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.669925,
+            0
+          ],
+          [
+            1.669925,
+            1
+          ],
+          [
+            1.955179,
+            1
+          ],
+          [
+            1.955179,
+            0
+          ],
+          [
+            1.669925,
+            0
+          ]
+        ]
+      ],
+      "id": "90",
+      "label": "Roman Middle East (140 BC - AD 640)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "640",
+          "s": "-0140"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1955179,
+          "s": 1669925
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.669925,
+            0
+          ],
+          [
+            1.669925,
+            1
+          ],
+          [
+            2.03188,
+            1
+          ],
+          [
+            2.03188,
+            0
+          ],
+          [
+            1.669925,
+            0
+          ]
+        ]
+      ],
+      "id": "91",
+      "label": "Roman-Early Byzantine Middle East (140 BC - AD 850)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "850",
+          "s": "-0140"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2031880,
+          "s": 1669925
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.707545,
+            0
+          ],
+          [
+            1.707545,
+            1
+          ],
+          [
+            2.122825,
+            1
+          ],
+          [
+            2.122825,
+            0
+          ],
+          [
+            1.707545,
+            0
+          ]
+        ]
+      ],
+      "id": "92",
+      "label": "Roman-Umayyad Levant (37 BC - AD 1099)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "1099",
+          "s": "-0037"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2122825,
+          "s": 1707545
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.710102,
+            0
+          ],
+          [
+            1.710102,
+            1
+          ],
+          [
+            1.803968,
+            1
+          ],
+          [
+            1.803968,
+            0
+          ],
+          [
+            1.710102,
+            0
+          ]
+        ]
+      ],
+      "id": "93",
+      "label": "Roman Early Empire/Parthian Middle East (30 BC - AD 226)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "226",
+          "s": "-0030"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1803968,
+          "s": 1710102
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.710102,
+            0
+          ],
+          [
+            1.710102,
+            1
+          ],
+          [
+            1.955179,
+            1
+          ],
+          [
+            1.955179,
+            0
+          ],
+          [
+            1.710102,
+            0
+          ]
+        ]
+      ],
+      "id": "94",
+      "label": "Roman Early Empire-Late Antique (30 BC - AD 640)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "640",
+          "s": "-0030"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1955179,
+          "s": 1710102
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.816753,
+            0
+          ],
+          [
+            1.816753,
+            1
+          ],
+          [
+            1.977093,
+            1
+          ],
+          [
+            1.977093,
+            0
+          ],
+          [
+            1.816753,
+            0
+          ]
+        ]
+      ],
+      "id": "95",
+      "label": "Sassanian Middle East (AD 262-700)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "700",
+          "s": "262"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1977093,
+          "s": 1816753
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.824788,
+            0
+          ],
+          [
+            1.824788,
+            1
+          ],
+          [
+            1.84451,
+            1
+          ],
+          [
+            1.84451,
+            0
+          ],
+          [
+            1.824788,
+            0
+          ]
+        ]
+      ],
+      "id": "96",
+      "label": "Transition Roman Early Empire-Late Antique (AD 284-337)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "337",
+          "s": "284"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1844510,
+          "s": 1824788
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.830632,
+            0
+          ],
+          [
+            1.830632,
+            1
+          ],
+          [
+            1.955179,
+            1
+          ],
+          [
+            1.955179,
+            0
+          ],
+          [
+            1.830632,
+            0
+          ]
+        ]
+      ],
+      "id": "97",
+      "label": "Late Antique/Sasanian Middle East (AD 300-640)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "640",
+          "s": "300"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1955179,
+          "s": 1830632
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.830632,
+            0
+          ],
+          [
+            1.830632,
+            1
+          ],
+          [
+            2.251025,
+            1
+          ],
+          [
+            2.251025,
+            0
+          ],
+          [
+            1.830632,
+            0
+          ]
+        ]
+      ],
+      "id": "98",
+      "label": "Late Antique-Late Byzantine (AD 300-1450)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "1450",
+          "s": "300"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2251025,
+          "s": 1830632
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "HistPeriod",
+      "contingent": false,
+      "css_class": "",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.903681,
+            0
+          ],
+          [
+            1.903681,
+            1
+          ],
+          [
+            1.958831,
+            1
+          ],
+          [
+            1.958831,
+            0
+          ],
+          [
+            1.903681,
+            0
+          ]
+        ]
+      ],
+      "id": "99",
+      "label": "Proto-Byzantine (AD 500-650)",
+      "relations": [],
+      "rels": [],
+      "tSpans": [
+        {
+          "e": "650",
+          "s": "500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1958831,
+          "s": 1903681
+        }
+      ],
+      "x": 0
+    }
+  ],
+  "places": [
+    {
+      "id": "1",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Archaic Greece"
+    },
+    {
+      "id": "2",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Greece"
+    },
+    {
+      "id": "3",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Roman Empire"
+    },
+    {
+      "id": "4",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Byzantine Empire"
+    },
+    {
+      "id": "5",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "The World"
+    },
+    {
+      "id": "6",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Egypt"
+    },
+    {
+      "id": "7",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Britain"
+    },
+    {
+      "id": "8",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Anglo-Saxon Britain"
+    },
+    {
+      "id": "9",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Mesopotamia"
+    },
+    {
+      "id": "10",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Eastern Mediterranean"
+    },
+    {
+      "id": "11",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Malta"
+    },
+    {
+      "id": "12",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Ummayad Caliphate"
+    },
+    {
+      "id": "13",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "British Isles"
+    },
+    {
+      "id": "14",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Middle East"
+    },
+    {
+      "id": "15",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Oman"
+    },
+    {
+      "id": "16",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Levant"
+    },
+    {
+      "id": "17",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Iran"
+    },
+    {
+      "id": "18",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Nubian Kingdoms"
+    },
+    {
+      "id": "19",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Southern Levant"
+    },
+    {
+      "id": "20",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Anatolia"
+    },
+    {
+      "id": "21",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Syria/Baylonia"
+    },
+    {
+      "id": "22",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Greco-Roman world"
+    },
+    {
+      "id": "23",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Umayyad Levant"
+    },
+    {
+      "id": "24",
+      "location": {
+        "format": "bbox",
+        "geom": "",
+        "type": "wkt"
+      },
+      "name": "Sassanian Middle East"
+    }
+  ],
+  "projection": {
+    "atom": "date",
+    "calendar": "gregorian",
+    "datetype": "year",
+    "origin": "0001-01-01"
+  },
+  "relations": [
+    {
+      "id": 1,
+      "rel": [
+        "",
+        "has_location",
+        ""
+      ]
+    }
+  ],
+  "rev_date": "2013-09-25",
+  "type": "PeriodCollection"
+}

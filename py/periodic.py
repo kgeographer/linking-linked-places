@@ -1,33 +1,44 @@
-# ttFunc.py 29 Nov 2013
-# parses topotime_format, Dance, Pleiades
-import os, re, math, codecs
-import helper6
-from helper6 import toJul, withinSpan
+# periodic.py 23 Dec 2013 k.grossner
+# parses topotime_format, pleiades98, axial, dance, us_history, ww2
+# writeEm() generates 4 files in data/pyout incl. data+'_geom_d3.json' (labeled geometries for d3 render)
+# mimics parsing algorithm in timeline.js (e. meeks)
+# modify values of data, loc and locationHash to suit
+from __future__ import division # need to keep julians floats
+import os, sys, re, math, codecs, pickle
+from shapely.geometry import Polygon, MultiPolygon
+from descartes.patch import PolygonPatch
+from matplotlib import pyplot
 from jdcal import gcal2jd, jd2gcal
 import simplejson as json
-data = 'topotime_format' # pleiades_fuzz98 Dance topotime_format ttspec ww2
+data = 'axial' # topotime_format, pleiades98, axial, dance, us_history, ww2  
 loc = 'home' # home laptop work
-uncertaintyValue = 365;  
+locationHash = {"home":"{a path}", "laptop":"{a path}", "work":"{a path}"}
 durationHash = {"d": 1, "h": 1/24, "w": 7, "m": 365.25/12, "y": 365.25};
+uncertaintyValue = 365;  
 tsOperatorHash = { "<": {"subspan": "s", "uncertaintyPoint": {"s": -1,"e": .001}}, 
                    ">": {"subspan": "e", "uncertaintyPoint": {"s": .001, "e": 1}}, 
                    "~": {"uncertaintyPoint": {"s": -0.5, "e": -0.5}}};
 currentProcessedPeriods = []
 periodHash = {}
 newPeriods = []
-def withinSpan(dval):
-   durhash = {"d":1, "w":7, "m":30, "y":365.25}
-   try: op=re.search(r'[~]',dval).group()
-   except AttributeError: op = ''; 
-   try: num=int(re.search(r'\d+',dval).group())
-      # print 'num = '+num
-   except AttributeError: 
-      print 'need number!'
-   dwmy=re.search(r'[dwmy]',dval).group()
-   # print 'op: '+op+', num: '+str(unidecode(num))+', dmy: '+dmy
-   jdays = int(num)*durhash[dwmy]*1.1 if op != '' else int(num)*durhash[dwmy];
-   return jdays
 
+def init():
+   global atom, collection, periods, pds, newCollection, wd
+   wd = locationHash[loc]
+   os.chdir(wd)
+
+   fn=wd + 'data/' + data + '.json'
+   # read data 
+   file = codecs.open(fn,"r", "utf-8"); 
+   coll=file.read(); file.close();
+
+   collection = json.loads(coll)	# load
+   periods = collection['periods']	# isolate periods
+   pds = periods # copy for debugging
+   newCollection = collection # clone, replace periods[] later
+   atom = newCollection['projection']['atom']
+
+# make Julian date
 def toJul(d,n,m):
    ctr=0;
    #var bef, aft, abt, year, month, date, neg, dur, ref
@@ -77,18 +88,13 @@ def toJul(d,n,m):
    #else:
       #jval=jval/1000000; for scaling graphic
    return jval;
-
-
-
-def makeOne():		# estimate from nothing
-   print 'you gave me no timespan'
-   return None
-def getIdx(i):		# return index of Period id
+# return index of Period id
+def getIdx(i):		# 
    for x in xrange(len(pds)):
       if pds[x]['id'] == i:
          return x
-
-def getRef(g):		# return val of period.element (e.g. 23.s)
+# return val of period.element (e.g. 23.s)
+def getRef(g):		
    print 'you gave me ' + g.group()
    if g.group(1) in ['<','~']:
       try:
@@ -105,53 +111,60 @@ def getRef(g):		# return val of period.element (e.g. 23.s)
       except KeyError:
          new = g.group()
    return new
-
-def formatPeriodArray():  # build a period hash
+# build a period hash
+def formatPeriodArray():  
    for x in xrange(len(pds)):
       if pds[x]:
-         #pds[x].lane = -1
-         #pds[x].level = 1
-         #pds[x].lanerange = []
-         #pds[x].partof
          pds[x]['x']= 0
          pds[x]['tSpansP']= []
+         pds[x]['geom'] = []
          pds[x]['contingent'] = False
          pds[x]['estimated'] = False
          pds[x]['relations'] = []
          periodHash[pds[x]['id']] = pds[x]
-
-
-#Project the period tspans
-#for x in pds:
-   #if(pds[x]):
-      #projectTSpan(pds[x]);
+#
 def popPeriod(id):
    cpp=currentProcessedPeriods
    for index, obj in enumerate(cpp):
       if obj['id'] == id:
-         cpp.pop(index) ; print '  popped id#' + str(obj['id'])
+         cpp.pop(index) ; # print '  popped id#' + str(obj['id'])
+#
 def estimatePeriodOnTheFly(incoming):
    global dummyS, dummyMean
-   print '  in estimate ?? ' #, incomingTSpan
+   # print '  in estimate ?? ' #, incomingTSpan
    dummyS = 2400000
    dummyMean = 1000
    if 's' not in incoming:
       incoming['s']=dummyS
    if 'e' not in incoming:
       incoming['e']=incoming['s']+dummyMean
+#
+def withinSpan(dval):
+   durhash = {"d":1, "w":7, "m":30, "y":365.25}
+   try: op=re.search(r'[~]',dval).group()
+   except AttributeError: op = ''; 
+   try: num=int(re.search(r'\d+',dval).group())
+      # print 'num = '+num
+   except AttributeError: 
+      print 'need number!'
+   dwmy=re.search(r'[dwmy]',dval).group()
+   # print 'op: '+op+', num: '+str(unidecode(num))+', dmy: '+dmy
+   jdays = int(num)*durhash[dwmy]*1.1 if op != '' else int(num)*durhash[dwmy];
+   return jdays
+#
 def projectTSpan(incoming):
-   global currentProcessedPeriods, string, dummyS, dummyMean # ,oldspan
+   #global currentProcessedPeriods, string, dummyS, dummyMean, newProj,coordPairs,processedTSpan
+   global currentProcessedPeriods, string, dummyS, dummyMean
    if len(incoming['tSpansP']) > 0: return True; # already projected
-   if 'tSpans' in incoming and incoming not in currentProcessedPeriods: # test 
-      # print 'starting anyway'
+   if 'tSpans' in incoming and incoming not in currentProcessedPeriods: 
       isCyclical = False
       currentProcessedPeriods.append(incoming);
       print '*****'
       print 'period ', incoming['id'], 'tSpansP', incoming['tSpansP']
       for x in xrange(len(incoming['tSpans'])):
          # incoming['tSpans'][x]=incoming['tSpans'][x]; 
-         print '>tSpan:'+str(x)+str(incoming['tSpans'][x])
-         processedTSpan = {}
+         print '> tSpan '+str(x)+': '+str(incoming['tSpans'][x])
+         processedTSpan = {}; coordPairs = {};
          if 's' in incoming['tSpans'][x]:
             ref=re.match(r'([<>~=d])',incoming['tSpans'][x]['s'])
             if not ref: 
@@ -265,21 +278,36 @@ def projectTSpan(incoming):
                   else:
                      specificTSpan = 'ee'
                   string += (', '+specificTSpan)# ; print incoming['id'], string
-               # now have operator, targetPeriod, specificTSpan - prove it
-               # print str(incoming['id'])+ ' will process ee:'+incoming['tSpans'][x]['ls']+ ' as '+ string 
-
-               # line #; run this on the targetPeriod
+               # 
                projectTSpan(periodHash[int(targetPeriod)])
                processedTSpan['ee'] = periodHash[int(targetPeriod)]["tSpansP"][0][specificTSpan]
          
          if 'duration' in incoming['tSpans'][x] and 'during' in incoming['tSpans'][x]:
             durVal = incoming['tSpans'][x]['duration'][:-1]
-            durType = durVal[-1:]
+            durType = incoming['tSpans'][x]['duration'][-1:]
             if durType in durationHash:
                durVal = int(durVal) * durationHash[durType]
             else:
                durVal = int(durVal)
             processedTSpan['d'] = durVal
+            # need to compute the probability across entire tSpan
+            # julSpan = withinSpan(durVal); #print julSpan # go make a range
+            pct = round(durVal/(processedTSpan['e']-processedTSpan['s']),2); print pct
+            # put span dead-center for rendering (not needed for python)
+            mid = processedTSpan['e']-(processedTSpan['e']-processedTSpan['s'])/2; print mid
+            processedTSpan['ls'] = mid-(durVal/2);
+            processedTSpan['ee'] = processedTSpan['ls'] + durVal;
+            # processedTSpan normally gets pushed in 'if isCyclical == False'
+            # circumvent by adding condition there?
+            incoming['tSpansP'].append(processedTSpan);
+            # make geometry for calculations
+            # ?? during is probable from s to e; ls and ee used for rendering
+            coordPairs=[(processedTSpan['s']/1000000,0),(processedTSpan['s']/1000000,pct), \
+                        (processedTSpan['e']/1000000,pct),(processedTSpan['e']/1000000,0), \
+                        (processedTSpan['s']/1000000,0)]
+            # newPeriods[x]['geom']=coordPairs            
+            incoming['geom'].append(coordPairs);
+            
          elif 'duration' in incoming['tSpans'][x]:
             if incoming['tSpans'][x]['duration'][0] != "=":
                durVal = incoming['tSpans'][x]['duration']
@@ -316,61 +344,43 @@ def projectTSpan(incoming):
                while x < xe:
                   processedCycleTSpan = {"s": x, "e": x + durVal};
                   incoming['tSpansP'].append(processedCycleTSpan)
-                  x = x + stepVal               
-         if isCyclical == False:
-            incoming['tSpansP'].append(processedTSpan); 
-            print 'processedTSpan', processedTSpan
-            print 'pds', pds[x]['tSpansP']
-            # print '  incoming has '+str(incoming['tSpansP'])
+                  x = x + stepVal
+                  # add 310-314 for cyclical geometry
+                  coordPairs=[(processedCycleTSpan['s']/1000000,0), \
+                     (processedCycleTSpan['ls']/1000000,1) if 'ls' in processedCycleTSpan else (processedCycleTSpan['s']/1000000,1),\
+                     (processedCycleTSpan['ee']/1000000,1) if 'ee' in processedCycleTSpan else (processedCycleTSpan['e']/1000000,1),\
+                     (processedCycleTSpan['e']/1000000,0),(processedCycleTSpan['s']/1000000,0)]                
+                  incoming['geom'].append(coordPairs);                  
+         if isCyclical == False and 'during' not in incoming['tSpans'][x]:
+            # during case is handled above (hopefully)
+            incoming['tSpansP'].append(processedTSpan);
+            print '  pds', pds[x]['tSpansP']
+            print '  processedTSpan', processedTSpan
             estimatePeriodOnTheFly(incoming['tSpansP'][len(incoming['tSpansP'])-1])
+            # look here for 'sls' and 'eee'
+            foo = incoming['tSpans'][x]
+            if 'sls' in incoming['tSpans'][x]:   
+               for i in xrange(len(foo['sls'])):
+                  print ' sls >> ', foo['sls'][i]
+            if 'eee' in incoming['tSpans'][x]:   
+               for i in xrange(len(foo['eee'])):
+                  print ' eee >> ', foo['eee'][i]            
+            coordPairs=[(processedTSpan['s']/1000000,0), \
+               (processedTSpan['ls']/1000000,1) if 'ls' in processedTSpan else (processedTSpan['s']/1000000,1),\
+               (processedTSpan['ee']/1000000,1) if 'ee' in processedTSpan else (processedTSpan['e']/1000000,1),\
+               (processedTSpan['e']/1000000,0),(processedTSpan['s']/1000000,0)]                
+            incoming['geom'].append(coordPairs);
       popPeriod(incoming['id']); 
-      # print 'incoming[""tSpansP"]: ', incoming['tSpansP']
-      newProj = incoming['tSpansP']
+      # print 'incoming[""tSpansP"]: ', incoming['tSpansP']  
       newPeriods.append(incoming['tSpansP'])
    else: 
       if incoming in currentProcessedPeriods:
          popPeriod(incoming['id'])
       incoming['tSpansP'].append({})
       incoming['estimated'] = True
-      estimatePeriodOnTheFly(incoming['tSpansP'][0]) 
-   
-
+      estimatePeriodOnTheFly(incoming['tSpansP'][0])
+ 
 # ******************
-#
-def init():
-   global atom, collection, periods, pds, newCollection
-   path2='Repos/topotime/'
-   if loc == 'laptop': 
-      path1 = 'z:/karlg on my mac/box documents/'
-   elif loc == 'work':
-      path1 = 'c:/mydocs/my box files/'
-   elif loc == 'home':
-      path1 = 'g:/mydocs/my box files/'
-   wd = path1+path2
-   os.chdir(path1+path2)
-   
-   atom="date";
-   fn=wd + 'data/' + data + '.json'
-# read data 
-   file = codecs.open(fn,"r", "utf-8"); 
-   coll=file.read(); file.close();
-# result writers
-   fnw1='../ttout/'+data+'_collection.json' # collection with julian dates, geometry
-   w1 = codecs.open(wd+fnw1,"w", "utf-8"); 
-   # for rendering, calcs
-   fnw2='../ttout/'+data+'_geom_raw.json' # a raw geometries object for pyplot
-   w2 = codecs.open(wd+fnw2,"w", "utf-8");
-   fnw3='../ttout/'+data+'_geom_d3.json' # a labeled geometries object for d3
-   w3 = codecs.open(wd+fnw3,"w", "utf-8");
-   fnpickle=path1+path2+'data/'+data+'.pickle'
-   w4=codecs.open(fnpickle,"w")
-
-   collection = json.loads(coll)	# load
-   periods = collection['periods']	# isolate periods
-   pds = periods # copy for debugging
-   newCollection = collection # clone, replace periods[] later
-   atom = newCollection['projection']['atom']
-#
 def doEm():
    global pds  
    newPeriods = []
@@ -378,12 +388,99 @@ def doEm():
    for i in xrange(len(pds)):
    #for i in xrange(2):
       projectTSpan(pds[i])
-      # newPeriods.append(projectTSpan(pds[p]))
-   #for j in pds:
-      #print j['id'],j['tSpansP']
-   #return
+# ******************
+def writeEm():
+   global collGeomRaw, collGeomObj, collShapes
+   import sys
+   # result writers
+   fnw1='data/pyout/'+data+'_collection.json' # collection with julian dates, geometry
+   w1 = codecs.open(wd+fnw1,"w", "utf-8"); 
+   # for rendering, calcs
+   fnw2='data/pyout/'+data+'_geom_raw.json' # a raw geometries object for pyplot
+   w2 = codecs.open(wd+fnw2,"w", "utf-8");
+   fnw3='data/pyout/'+data+'_geom_d3.json' # a labeled geometries object for d3
+   w3 = codecs.open(wd+fnw3,"w", "utf-8");
+   fnpickle='data/pyout/'+data+'.pickle'
+   w4=codecs.open(wd+fnpickle,"w")   
+   
+   per=newCollection['periods'][0]; #i=0 
+   collGeomRaw = []; collGeomObj = []; collShapes = []
+   for per in newCollection['periods']: #[1:3]:
+      multiGeomArray = []; multiPointsObjArray = [];
+      for i in xrange(len(per['geom'])):
+         geomObj = {}; perGeom = {}
+         pointsObjArray = []; polyGeomArray = [];
+         for j in xrange(len(per['geom'][i])):
+            pointPair={}; 
+            pointPair['x']=per['geom'][i][j][0]
+            pointPair['y']=per['geom'][i][j][1]
+            pointsObjArray.append(pointPair)
+            polyGeomArray.append(per['geom'][i][j])
+         # have 5 pairs in pOA and pGA, look for 'sls' and 'eee' to add
+         if 'eee' in per['tSpans'][0]:
+            f=per['tSpans'][i]['eee']
+            print 'eee: ', f
+            place = 3 # index to insert at
+            for pair in f:
+               pointPair={}; pg = per['geom'][i]
+               pointPair['x']= pg[2][0]+pair[0]*(pg[3][0]-pg[2][0])
+               pointPair['y']= pair[1]
+               pointsObjArray.insert(place,pointPair)
+               polyGeomArray.insert(place,(pointPair['x'],pointPair['y']))
+               place+=1
+         if 'sls' in per['tSpans'][0]:
+            f=per['tSpans'][i]['sls']
+            print 'sls: ', f
+            place = 1 # index to insert at
+            for pair in f:
+               pointPair={}; pg = per['geom'][i]
+               pointPair['x']=pg[0][0]+pair[0]*(pg[1][0]-pg[0][0])
+               pointPair['y']= pair[1]
+               pointsObjArray.insert(place,pointPair)         
+               polyGeomArray.insert(place,(pointPair['x'],pointPair['y']))
+               place+=1
+               
+         multiGeomArray.append([polyGeomArray,[]])
+
+         geomObj['points'] = pointsObjArray
+         geomObj['label'] = per['label']
+         geomObj['id'] = per['id']
+         if 'css_class' in per:
+            geomObj['css_class'] = per['css_class']
+         collGeomObj.append(geomObj)
+      # what a MultiPolygon looks like
+      # a = [(0, 0), (0, 1), (1, 1), (1, 0), (0, 0)]
+      # b = [(1, 1), (1, 2), (2, 2), (2, 1), (1, 1)]      
+      # multi1 = MultiPolygon([ [a, []], [b, []] ])
+      perGeom['shapes']=MultiPolygon(multiGeomArray)
+      perGeom['id']=per['id']; perGeom['label']=per['label']
+
+      collGeomRaw.append(multiGeomArray)
+      collShapes.append(perGeom)
+   json.dump(newCollection,w1,indent=2, sort_keys=True)
+   w1.close()   
+   w2.write(json.dumps(collGeomRaw)) # for pylot
+   w2.close()
+   w3.write(json.dumps(sorted(collGeomObj,key=lambda k: k['points'][0]['x'])))
+   w3.close()
+   pickle.dump(collShapes,w4)
+   w4.close()
+   print '### <<<<<<>>>>> ###'
+   print 'objects written for '+ str(len(pds)) + ' periods in ' + data
+   print 'wrote w1:'+ data+'_collection.json (julian dates, geometry)'
+   print 'wrote w2:'+ data+'_geom_raw.json (raw geometries object for pyplot)'
+   print 'wrote w3:'+ data+'_geom_d3.json (labeled geometries for d3 render)' 
+   print 'pickled w4:'+data+'.pickle for python calcs'
+      
+#
+def checkEm():
+   for c in collShapes:
+      if len(c) >0 and not (c['shapes'].is_valid): 
+         print str(c['id']) + ' is not a valid geometry'
+      else:
+         print 'valid geometry'
+
 init()
 doEm()
-
-for j in pds:
-      print j['id'],j['tSpansP']
+writeEm()
+checkEm()

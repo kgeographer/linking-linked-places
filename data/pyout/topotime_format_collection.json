@@ -1,0 +1,1223 @@
+{
+  "actors": [
+    {
+      "id": "@vol_5713",
+      "properties": {
+        "mistresses": 103,
+        "name": "Voltaire"
+      }
+    }
+  ],
+  "author": "emeeks",
+  "id": "pc_01",
+  "label": "sample period collection (simple)",
+  "periods": [
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.415385,
+            0
+          ],
+          [
+            2.419069,
+            1
+          ],
+          [
+            2.430725,
+            1
+          ],
+          [
+            2.433406,
+            0
+          ],
+          [
+            2.415385,
+            0
+          ]
+        ]
+      ],
+      "id": 1,
+      "label": "Standard Example",
+      "properties": {
+        "census tract": 167,
+        "label": "plain example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1950-05-05",
+          "ee": "1943-01-01",
+          "ls": "1911-02-02",
+          "s": "1901-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2433406,
+          "ee": 2430725,
+          "ls": 2419069,
+          "s": 2415385
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.415385,
+            0
+          ],
+          [
+            2.415417,
+            1
+          ],
+          [
+            2.421959,
+            1
+          ],
+          [
+            2.422449,
+            0
+          ],
+          [
+            2.415385,
+            0
+          ]
+        ],
+        [
+          [
+            2.426342,
+            0
+          ],
+          [
+            2.427835,
+            1
+          ],
+          [
+            2.4373,
+            1
+          ],
+          [
+            2.4595223450000008,
+            0
+          ],
+          [
+            2.426342,
+            0
+          ]
+        ]
+      ],
+      "id": 2,
+      "label": "Multipart Example (standard, pt2 e>12 ee:1961-01-01",
+      "properties": {
+        "census tract": 167,
+        "label": "multipart example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1920-05-05",
+          "ee": "1919-01-01",
+          "ls": "1901-02-02",
+          "s": "1901-01-01"
+        },
+        {
+          "e": ">12",
+          "ee": "1961-01-01",
+          "ls": "1935-02-02",
+          "s": "1931-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2422449,
+          "ee": 2421959,
+          "ls": 2415417,
+          "s": 2415385
+        },
+        {
+          "e": 2459522.3450000007,
+          "ee": 2437300,
+          "ls": 2427835,
+          "s": 2426342
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.415385,
+            0
+          ],
+          [
+            2.415385,
+            1
+          ],
+          [
+            2.41648075,
+            1
+          ],
+          [
+            2.41648075,
+            0
+          ],
+          [
+            2.415385,
+            0
+          ]
+        ],
+        [
+          [
+            2.4190375,
+            0
+          ],
+          [
+            2.4190375,
+            1
+          ],
+          [
+            2.42013325,
+            1
+          ],
+          [
+            2.42013325,
+            0
+          ],
+          [
+            2.4190375,
+            0
+          ]
+        ],
+        [
+          [
+            2.42269,
+            0
+          ],
+          [
+            2.42269,
+            1
+          ],
+          [
+            2.42378575,
+            1
+          ],
+          [
+            2.42378575,
+            0
+          ],
+          [
+            2.42269,
+            0
+          ]
+        ],
+        [
+          [
+            2.4263425,
+            0
+          ],
+          [
+            2.4263425,
+            1
+          ],
+          [
+            2.42743825,
+            1
+          ],
+          [
+            2.42743825,
+            0
+          ],
+          [
+            2.4263425,
+            0
+          ]
+        ],
+        [
+          [
+            2.429995,
+            0
+          ],
+          [
+            2.429995,
+            1
+          ],
+          [
+            2.43109075,
+            1
+          ],
+          [
+            2.43109075,
+            0
+          ],
+          [
+            2.429995,
+            0
+          ]
+        ]
+      ],
+      "id": 3,
+      "label": "Cyclical Example",
+      "properties": {
+        "census tract": 167,
+        "label": "cyclical example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "cduration": "3y",
+          "cstep": "10y",
+          "e": "1950-05-05",
+          "ee": "1949-01-01",
+          "ls": "1901-02-02",
+          "s": "1901-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2416480.75,
+          "s": 2415385
+        },
+        {
+          "e": 2420133.25,
+          "s": 2419037.5
+        },
+        {
+          "e": 2423785.75,
+          "s": 2422690.0
+        },
+        {
+          "e": 2427438.25,
+          "s": 2426342.5
+        },
+        {
+          "e": 2431090.75,
+          "s": 2429995.0
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.415385,
+            0
+          ],
+          [
+            2.415385,
+            1
+          ],
+          [
+            2.42670775,
+            1
+          ],
+          [
+            2.42670775,
+            0
+          ],
+          [
+            2.415385,
+            0
+          ]
+        ]
+      ],
+      "id": 4,
+      "label": "Duration Example",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "31y",
+          "minduration": "28y",
+          "s": "1901-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2426707.75,
+          "s": 2415385
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": true,
+      "geom": [],
+      "id": 5,
+      "label": "Estimated Example",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpansP": [
+        {
+          "e": 2401000,
+          "s": 2400000
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.424516,
+            0
+          ],
+          [
+            2.424516,
+            1
+          ],
+          [
+            2.4252465,
+            1
+          ],
+          [
+            2.4252465,
+            0
+          ],
+          [
+            2.424516,
+            0
+          ]
+        ]
+      ],
+      "id": 6,
+      "label": "Duration",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "2y",
+          "s": "1926-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2425246.5,
+          "s": 2424516
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.433406365,
+            0
+          ],
+          [
+            2.433771365,
+            1
+          ],
+          [
+            2.4374241150000002,
+            1
+          ],
+          [
+            2.4374241150000002,
+            0
+          ],
+          [
+            2.433406365,
+            0
+          ]
+        ]
+      ],
+      "id": 7,
+      "label": "Contingent s>1.e d31y",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "11y",
+          "s": ">1.e"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2437424.115,
+          "ls": 2433771.365,
+          "s": 2433406.365
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.41502,
+            0
+          ],
+          [
+            2.415385,
+            1
+          ],
+          [
+            2.42670775,
+            1
+          ],
+          [
+            2.42707275,
+            0
+          ],
+          [
+            2.41502,
+            0
+          ]
+        ]
+      ],
+      "id": 8,
+      "label": "Contingent s<1 e>4",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": ">4",
+          "s": "<1"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2427072.75,
+          "ee": 2426707.75,
+          "ls": 2415385,
+          "s": 2415020
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.459157710000001,
+            0
+          ],
+          [
+            2.459522710000001,
+            1
+          ],
+          [
+            2.466462710000001,
+            1
+          ],
+          [
+            2.466462710000001,
+            0
+          ],
+          [
+            2.459157710000001,
+            0
+          ]
+        ]
+      ],
+      "id": 9,
+      "label": "Contingent s>12 d20y (1-off)",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "20y",
+          "s": ">12"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2466462.710000001,
+          "ls": 2459522.710000001,
+          "s": 2459157.710000001
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.4374244800000002,
+            0
+          ],
+          [
+            2.4377894800000006,
+            1
+          ],
+          [
+            2.4447294800000003,
+            1
+          ],
+          [
+            2.4447294800000003,
+            0
+          ],
+          [
+            2.4374244800000002,
+            0
+          ]
+        ]
+      ],
+      "id": 10,
+      "label": "Contingent s>7 d20y",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "20y",
+          "s": ">7"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2444729.4800000004,
+          "ls": 2437789.4800000004,
+          "s": 2437424.4800000004
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.4445469800000006,
+            0
+          ],
+          [
+            2.4449119800000005,
+            1
+          ],
+          [
+            2.4518519800000003,
+            1
+          ],
+          [
+            2.4518519800000003,
+            0
+          ],
+          [
+            2.4445469800000006,
+            0
+          ]
+        ]
+      ],
+      "id": 11,
+      "label": "Contingent s~10.e d20y",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "20y",
+          "s": "~10.e"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2451851.9800000004,
+          "ls": 2444911.9800000004,
+          "s": 2444546.9800000004
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.4518523450000007,
+            0
+          ],
+          [
+            2.4522173450000007,
+            1
+          ],
+          [
+            2.459157345000001,
+            1
+          ],
+          [
+            2.459157345000001,
+            0
+          ],
+          [
+            2.4518523450000007,
+            0
+          ]
+        ]
+      ],
+      "id": 12,
+      "label": "Contingent s>11 d20y",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "20y",
+          "s": ">11"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2459157.3450000007,
+          "ls": 2452217.3450000007,
+          "s": 2451852.3450000007
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.420133,
+            0
+          ],
+          [
+            2.420133,
+            1
+          ],
+          [
+            2.421594,
+            1
+          ],
+          [
+            2.421594,
+            0
+          ],
+          [
+            2.420133,
+            0
+          ]
+        ]
+      ],
+      "id": 13,
+      "label": "Shared event",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "4y",
+          "s": "1914-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2421594.0,
+          "s": 2420133
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.422324,
+            0
+          ],
+          [
+            2.422324,
+            1
+          ],
+          [
+            2.42415025,
+            1
+          ],
+          [
+            2.42415025,
+            0
+          ],
+          [
+            2.422324,
+            0
+          ]
+        ]
+      ],
+      "id": 14,
+      "label": "Nested event level 1",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "5y",
+          "s": "1920-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2424150.25,
+          "s": 2422324
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.424516,
+            0
+          ],
+          [
+            2.424516,
+            1
+          ],
+          [
+            2.425977,
+            1
+          ],
+          [
+            2.425977,
+            0
+          ],
+          [
+            2.424516,
+            0
+          ]
+        ]
+      ],
+      "id": 15,
+      "label": "Nested event level 1",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "4y",
+          "s": "1926-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2425977.0,
+          "s": 2424516
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.422324,
+            0
+          ],
+          [
+            2.422324,
+            1
+          ],
+          [
+            2.425246,
+            1
+          ],
+          [
+            2.425246,
+            0
+          ],
+          [
+            2.422324,
+            0
+          ]
+        ]
+      ],
+      "id": 16,
+      "label": "Nested event level 1",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "8y",
+          "s": "1920-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2425246.0,
+          "s": 2422324
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.423055,
+            0
+          ],
+          [
+            2.423055,
+            1
+          ],
+          [
+            2.4237855,
+            1
+          ],
+          [
+            2.4237855,
+            0
+          ],
+          [
+            2.423055,
+            0
+          ]
+        ]
+      ],
+      "id": 17,
+      "label": "Nested event level 2",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "2y",
+          "s": "1922-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2423785.5,
+          "s": 2423055
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.423055,
+            0
+          ],
+          [
+            2.423055,
+            1
+          ],
+          [
+            2.42415075,
+            1
+          ],
+          [
+            2.42415075,
+            0
+          ],
+          [
+            2.423055,
+            0
+          ]
+        ]
+      ],
+      "id": 18,
+      "label": "Nested event level 2",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "3y",
+          "s": "1922-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2424150.75,
+          "s": 2423055
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "life",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.423055,
+            0
+          ],
+          [
+            2.423055,
+            0.11
+          ],
+          [
+            2.433282,
+            0.11
+          ],
+          [
+            2.433282,
+            0
+          ],
+          [
+            2.423055,
+            0
+          ]
+        ]
+      ],
+      "id": 19,
+      "label": "During Event",
+      "properties": {
+        "census tract": 167,
+        "label": "duration example",
+        "nuclear missiles": 100
+      },
+      "relations": [],
+      "src": "DOI999",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "3y",
+          "during": true,
+          "e": "1950-01-01",
+          "s": "1922-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 1095.75,
+          "e": 2433282,
+          "ee": 2428716.375,
+          "ls": 2427620.625,
+          "s": 2423055
+        }
+      ],
+      "x": 0
+    }
+  ],
+  "projection": {
+    "atom": "date",
+    "datetype": "date",
+    "origin": "1900-01-01",
+    "scale": 1
+  },
+  "relations": [
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "14"
+      ]
+    },
+    {
+      "id": 2,
+      "rel": [
+        "1",
+        "participates_in",
+        "13"
+      ]
+    },
+    {
+      "id": 3,
+      "rel": [
+        "4",
+        "participates_in",
+        "13"
+      ]
+    },
+    {
+      "id": 4,
+      "rel": [
+        "1",
+        "has_part",
+        "15"
+      ]
+    },
+    {
+      "id": 5,
+      "rel": [
+        "1",
+        "has_part",
+        "16"
+      ]
+    },
+    {
+      "id": 6,
+      "rel": [
+        "16",
+        "has_part",
+        "17"
+      ]
+    },
+    {
+      "id": 6,
+      "rel": [
+        "16",
+        "has_part",
+        "18"
+      ]
+    }
+  ],
+  "rev_date": "2013-09-07",
+  "type": "PeriodCollection"
+}

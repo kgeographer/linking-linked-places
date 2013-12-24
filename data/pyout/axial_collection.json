@@ -1,0 +1,1222 @@
+{
+  "actors": [
+    {
+      "id": "@Gautama_Buddha",
+      "properties": {
+        "altName": "Lord Buddha",
+        "hadBeard": false,
+        "notes": "",
+        "prefName": "Gautama Buddha"
+      }
+    },
+    {
+      "id": "@Plato",
+      "properties": {
+        "hadBeard": true,
+        "notes": "",
+        "prefName": "Plato"
+      }
+    },
+    {
+      "id": "@Confucius",
+      "properties": {
+        "hadBeard": "unk",
+        "notes": "",
+        "prefName": "Confucius"
+      }
+    },
+    {
+      "id": "@Zarathustra",
+      "properties": {
+        "hadBeard": true,
+        "notes": "",
+        "prefName": "Zarathustra"
+      }
+    },
+    {
+      "id": "@Laozi",
+      "properties": {
+        "altName": "\u8001\u5b50",
+        "hadBeard": "unk",
+        "notes": "",
+        "prefName": "Laozi"
+      }
+    },
+    {
+      "id": "@Homer",
+      "properties": {
+        "hadBeard": "unk",
+        "notes": "",
+        "prefName": "Homer"
+      }
+    },
+    {
+      "id": "@Socrates",
+      "properties": {
+        "hadBeard": true,
+        "notes": "",
+        "prefName": "Socrates"
+      }
+    },
+    {
+      "id": "@P\u0101r\u015bva",
+      "properties": {
+        "hadBeard": "unk",
+        "notes": "",
+        "prefName": "P\u0101r\u015bva"
+      }
+    },
+    {
+      "id": "@Heraclitus",
+      "properties": {
+        "hadBeard": "unk",
+        "notes": "",
+        "prefName": "Heraclitus"
+      }
+    },
+    {
+      "id": "@Mahavira",
+      "properties": {
+        "hadBeard": "unk",
+        "notes": "",
+        "prefName": "Mahavira"
+      }
+    }
+  ],
+  "author": "kgrossner & emeeks",
+  "id": "pc_06",
+  "label": "An Axial Age?",
+  "periods": [
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "plato",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.564735,
+            0
+          ],
+          [
+            1.565101,
+            1
+          ],
+          [
+            1.594685,
+            1
+          ],
+          [
+            1.594685,
+            0
+          ],
+          [
+            1.564735,
+            0
+          ]
+        ]
+      ],
+      "id": 1,
+      "label": "Life of Plato ('trad.')",
+      "properties": {
+        "note": "'traditional (birth) date... based on a dubious interpretation of Diogenes Laertius'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Plato"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-347",
+          "ls": "-427",
+          "s": "-428"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1594685,
+          "ls": 1565101,
+          "s": 1564735
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "plato",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.566196,
+            0
+          ],
+          [
+            1.566562,
+            1
+          ],
+          [
+            1.594685,
+            1
+          ],
+          [
+            1.594685,
+            0
+          ],
+          [
+            1.566196,
+            0
+          ]
+        ]
+      ],
+      "id": 2,
+      "label": "Life of Plato (D. Nails)",
+      "properties": {
+        "note": "Nails, Debra (2002). The People of Plato: A Prosopography of Plato and Other Socratics. Hackett Publishing. ISBN 0-87220-564-9, p 246"
+      },
+      "relations": [],
+      "src": {
+        "isbn": "978-0872205642",
+        "name": "Debra Nails"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-347",
+          "ls": "-423",
+          "s": "-424"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1594685,
+          "ls": 1566562,
+          "s": 1566196
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "plato",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.564735,
+            0
+          ],
+          [
+            1.566562,
+            1
+          ],
+          [
+            1.59432,
+            1
+          ],
+          [
+            1.594685,
+            0
+          ],
+          [
+            1.564735,
+            0
+          ]
+        ]
+      ],
+      "id": 3,
+      "label": "Life of Plato (OR step function)",
+      "properties": {
+        "note": "born 'c. 428-427 or 424/423 BC', died 'c. 348/347 BC (aged c. 80)'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Plato"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-347",
+          "ee": "-348",
+          "ls": "-423",
+          "s": "-428",
+          "sls": [
+            [
+              0,
+              0.5
+            ],
+            [
+              0.2,
+              0.5
+            ],
+            [
+              0.2,
+              0.01
+            ],
+            [
+              0.8,
+              0.01
+            ],
+            [
+              0.8,
+              0.5
+            ],
+            [
+              1,
+              0.5
+            ]
+          ]
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1594685,
+          "ee": 1594320,
+          "ls": 1566562,
+          "s": 1564735
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "plato",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.563274,
+            0
+          ],
+          [
+            1.566196,
+            1
+          ],
+          [
+            1.592859,
+            1
+          ],
+          [
+            1.595781,
+            0
+          ],
+          [
+            1.563274,
+            0
+          ]
+        ]
+      ],
+      "id": 4,
+      "label": "Life of Plato (biography.com)",
+      "properties": {
+        "note": "born 'c. 428', died 'c. 348'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Biography.com",
+        "uri": "http://www.biography.com/people/plato-9442588"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-344",
+          "ee": "-352",
+          "ls": "-424",
+          "s": "-432"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1595781,
+          "ee": 1592859,
+          "ls": 1566196,
+          "s": 1563274
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "plato",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.563274,
+            0
+          ],
+          [
+            1.566196,
+            1
+          ],
+          [
+            1.594685,
+            1
+          ],
+          [
+            1.594685,
+            0
+          ],
+          [
+            1.563274,
+            0
+          ]
+        ]
+      ],
+      "id": 5,
+      "label": "Life of Plato (EGS)",
+      "properties": {
+        "note": "born 'around 428 BCE', died 'in 347'"
+      },
+      "relations": [],
+      "src": {
+        "name": "European Graduate School",
+        "uri": "http://www.egs.edu/library/plato/"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-347",
+          "ls": "-424",
+          "s": "-432"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1594685,
+          "ls": 1566196,
+          "s": 1563274
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "plato",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.56437,
+            0
+          ],
+          [
+            1.56437,
+            1
+          ],
+          [
+            1.594685,
+            1
+          ],
+          [
+            1.594685,
+            0
+          ],
+          [
+            1.56437,
+            0
+          ]
+        ]
+      ],
+      "id": 6,
+      "label": "Life of Plato (SEP)",
+      "properties": {
+        "note": "born '429 B.C.E.', died '347 B.C.E.'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Stanford Encyclopedia of Philosophy",
+        "uri": "http://www.egs.edu/library/plato/"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-347",
+          "s": "-429"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1594685,
+          "s": 1564370
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "buddha",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.542455,
+            0
+          ],
+          [
+            1.545377,
+            1
+          ],
+          [
+            1.572039,
+            1
+          ],
+          [
+            1.574961,
+            0
+          ],
+          [
+            1.542455,
+            0
+          ]
+        ]
+      ],
+      "id": 7,
+      "label": "Life of Buddha (SEP)",
+      "properties": {
+        "note": "'fl. circa 450 BCE'; died 'around 405 BCE'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Stanford Encyclopedia of Philosophy",
+        "uri": "http://plato.stanford.edu/entries/buddha/"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-401",
+          "ee": "-409",
+          "ls": "-481",
+          "s": "-489"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1574961,
+          "ee": 1572039,
+          "ls": 1545377,
+          "s": 1542455
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "buddha",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.515428,
+            0
+          ],
+          [
+            1.515428,
+            0.49
+          ],
+          [
+            1.575327,
+            0.49
+          ],
+          [
+            1.575327,
+            0
+          ],
+          [
+            1.515428,
+            0
+          ]
+        ]
+      ],
+      "id": 8,
+      "label": "Life of Buddha (Wikipedia; duration)",
+      "properties": {
+        "note": "born 'Between c. 563 BCE to 483 BCE', died 'c. 483 BCE (aged 80) or 411 and 400 BCE'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Gautama_Buddha"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "80y",
+          "during": true,
+          "e": "-400",
+          "s": "-563"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 29220.0,
+          "e": 1575327,
+          "ee": 1559987.5,
+          "ls": 1530767.5,
+          "s": 1515428
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "buddha",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.538438,
+            0
+          ],
+          [
+            1.553047,
+            1
+          ],
+          [
+            1.568022,
+            1
+          ],
+          [
+            1.582632,
+            0
+          ],
+          [
+            1.538438,
+            0
+          ]
+        ]
+      ],
+      "id": 9,
+      "label": "Life of Buddha (Cousins)",
+      "properties": {
+        "note": "'within 20 years either side of 400 BCE for the Buddha's death'"
+      },
+      "relations": [],
+      "src": {
+        "doi": "http://dx.doi.org/10.1017/S1356186300014760",
+        "name": "L.S. Cousins"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-380",
+          "ee": "-420",
+          "ls": "-460",
+          "s": "-500"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1582632,
+          "ee": 1568022,
+          "ls": 1553047,
+          "s": 1538438
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "buddha",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.514332,
+            0
+          ],
+          [
+            1.515428,
+            1
+          ],
+          [
+            1.543915,
+            1
+          ],
+          [
+            1.545011,
+            0
+          ],
+          [
+            1.514332,
+            0
+          ]
+        ]
+      ],
+      "id": 10,
+      "label": "Life of Buddha (Narain)",
+      "properties": {
+        "note": "The Date of the Historical Sakyamuni Buddha (2003) Edited by A. K. Narain. B. R. Publishing "
+      },
+      "relations": [],
+      "src": {
+        "isbn": "81-7646-353-1",
+        "name": "scholarly consensus"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-483",
+          "ee": "-486",
+          "ls": "-563",
+          "s": "-566"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1545011,
+          "ee": 1543915,
+          "ls": 1515428,
+          "s": 1514332
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "buddha",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.541725,
+            0
+          ],
+          [
+            1.545742,
+            1
+          ],
+          [
+            1.571309,
+            1
+          ],
+          [
+            1.575327,
+            0
+          ],
+          [
+            1.541725,
+            0
+          ]
+        ]
+      ],
+      "id": 11,
+      "label": "Life of Buddha ('alt. accounts')",
+      "properties": {
+        "note": "'alternate accounts'"
+      },
+      "relations": [],
+      "src": {
+        "uri": "http://en.wikipedia.org/wiki/Gautama_Buddha"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-400",
+          "ee": "-411",
+          "ls": "-480",
+          "s": "-491"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1575327,
+          "ee": 1571309,
+          "ls": 1545742,
+          "s": 1541725
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "buddha",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.496436,
+            0
+          ],
+          [
+            1.496436,
+            0.24
+          ],
+          [
+            1.617329,
+            0.24
+          ],
+          [
+            1.617329,
+            0
+          ],
+          [
+            1.496436,
+            0
+          ]
+        ]
+      ],
+      "id": 12,
+      "label": "Life of Buddha (biography.com; duration)",
+      "properties": {
+        "note": "about 80 year lifespan some time between -615 and -285"
+      },
+      "relations": [],
+      "src": {
+        "name": "biography.com",
+        "uri": "http://www.biography.com/people/buddha-9230587"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "80y",
+          "during": true,
+          "e": "-285",
+          "ee": "-315",
+          "ls": "-585",
+          "s": "-615"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 29220.0,
+          "e": 1617329,
+          "ee": 1571492.5,
+          "ls": 1542272.5,
+          "s": 1496436
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "southasia",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.400741,
+            0
+          ],
+          [
+            1.400741,
+            1
+          ],
+          [
+            1.43763,
+            1
+          ],
+          [
+            1.43763,
+            0
+          ],
+          [
+            1.400741,
+            0
+          ]
+        ]
+      ],
+      "id": 13,
+      "label": "Life of P\u0101r\u015bva (877-777 BC)",
+      "properties": {
+        "bplace": "Varanasi, India",
+        "note": "the earliest Jain leader accepted as a historical figure; twenty-third Tirthankara of Jainism"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Parsva"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-777",
+          "s": "-877"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1437630,
+          "s": 1400741
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "southasia",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.502279,
+            0
+          ],
+          [
+            1.502279,
+            1
+          ],
+          [
+            1.528941,
+            1
+          ],
+          [
+            1.528941,
+            0
+          ],
+          [
+            1.502279,
+            0
+          ]
+        ]
+      ],
+      "id": 14,
+      "label": "Life of Mahavira (599\u2013527 BC)",
+      "properties": {
+        "bplace": "Basokund (also/now known as Vardhamana)",
+        "note": "was the twenty-fourth and last tirthankara of Jainism"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Mahavira"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-527",
+          "s": "-599"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1528941,
+          "s": 1502279
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "china",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.519811,
+            0
+          ],
+          [
+            1.519811,
+            1
+          ],
+          [
+            1.546472,
+            1
+          ],
+          [
+            1.546472,
+            0
+          ],
+          [
+            1.519811,
+            0
+          ]
+        ]
+      ],
+      "id": 15,
+      "label": "Life of Confucius (551\u2013479 BC) ",
+      "properties": {
+        "bplace": "born Zou, Lu state (near present-day Qufu, Shandong Province; ",
+        "note": "a Chinese teacher, editor, politician, and philosopher of the Spring and Autumn period of Chinese history."
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Confucius"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-479",
+          "s": "-551"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1546472,
+          "s": 1519811
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "persia",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.479999,
+            0
+          ],
+          [
+            1.506296,
+            1
+          ],
+          [
+            1.508487,
+            1
+          ],
+          [
+            1.524193,
+            0
+          ],
+          [
+            1.479999,
+            0
+          ]
+        ]
+      ],
+      "id": 16,
+      "label": "Life of Zarathustra (666/588-583/551 BC) ",
+      "properties": {
+        "bplace": "the Ditya River in Airyanem Va\u0113jah (Middle Persian \u0112r\u0101n W\u0113j) ",
+        "note": "various accounts, all WIkipedia"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Zoroaster"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-540",
+          "ee": "-583",
+          "ls": "-588",
+          "s": "-660"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1524193,
+          "ee": 1508487,
+          "ls": 1506296,
+          "s": 1479999
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "china",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.502279,
+            0
+          ],
+          [
+            1.502279,
+            0.75
+          ],
+          [
+            1.538802,
+            0.75
+          ],
+          [
+            1.538802,
+            0
+          ],
+          [
+            1.502279,
+            0
+          ]
+        ]
+      ],
+      "id": 17,
+      "label": "Life of Laozi (Lao Tzu)  (fl. 6th century BCE)",
+      "properties": {
+        "bplace": " b. village of Chu Jen in the Kingdom of Ch'u",
+        "note": "a philosopher of ancient China, best known as the author of the Tao Te Ching; contemporary of Confucius?"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Laozi"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "duration": "75y",
+          "during": true,
+          "e": "-500",
+          "s": "-599"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 27393.75,
+          "e": 1538802,
+          "ee": 1534237.375,
+          "ls": 1506843.625,
+          "s": 1502279
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "greece",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.54976,
+            0
+          ],
+          [
+            1.54976,
+            1
+          ],
+          [
+            1.575692,
+            1
+          ],
+          [
+            1.575692,
+            0
+          ],
+          [
+            1.54976,
+            0
+          ]
+        ]
+      ],
+      "id": 18,
+      "label": "Life of Socrates (469-399 BCE)",
+      "properties": {
+        "bplace": "Athens, Greece",
+        "note": "contemporary of Confucius??"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Socrates"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-399",
+          "s": "-469"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1575692,
+          "s": 1549760
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "lifespan",
+      "contingent": false,
+      "css_class": "greece",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            1.524559,
+            0
+          ],
+          [
+            1.52675,
+            1
+          ],
+          [
+            1.549029,
+            1
+          ],
+          [
+            1.549029,
+            0
+          ],
+          [
+            1.524559,
+            0
+          ]
+        ]
+      ],
+      "id": 19,
+      "label": "Life of Heraclitus (535\u2013475 BCE)",
+      "properties": {
+        "bplace": "Ephesus (modern Turkey)",
+        "note": "Philosopher; Heraclitus is famous for his insistence on ever-present change in the universe, as stated in the famous saying, 'No man ever steps in the same river twice'"
+      },
+      "relations": [],
+      "src": {
+        "name": "Wikipedia",
+        "uri": "http://en.wikipedia.org/wiki/Heraclitus"
+      },
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "-472",
+          "ee": "-472",
+          "ls": "-532",
+          "s": "-538"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 1549029,
+          "ee": 1549029,
+          "ls": 1526750,
+          "s": 1524559
+        }
+      ],
+      "x": 0
+    }
+  ],
+  "projection": {
+    "atom": "year",
+    "datetype": "date",
+    "origin": "0001-01-01",
+    "scale": 1
+  },
+  "relations": [
+    {
+      "id": 1,
+      "rel": [
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "rev_date": "2013-12-07",
+  "type": "PeriodCollection"
+}
