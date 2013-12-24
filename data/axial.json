@@ -29,7 +29,7 @@
             "class": "lifespan",
             "css_class": "plato",
             "properties": {
-                "note": "'traditional (birth) date... based on a dubious interpretation of Diogenes Laertius'",
+                "note": "'traditional (birth) date... based on a dubious interpretation of Diogenes Laertius'"
             }
         },
         {
@@ -452,18 +452,87 @@
         }
     ],
     "relations": [
-        {"id":1, "rel":["Gautama_Buddha", "birthplace", "8" ] },
-        {"id":2, "rel":["Plato", "birthplace", "2" ] },
-        {"id":3, "rel":["Confucius", "birthplace", "5" ] },
-        {"id":4, "rel":["Zarathustra", "birthplace", "4" ] },
-        {"id":5, "rel":["Laozi", "birthplace", "3" ] },
-        {"id":6, "rel":["Homer", "birthplace", "9" ] },
-        {"id":7, "rel":["Socrates", "birthplace", "2" ] },
-        {"id":8, "rel":["Pārśva", "birthplace", "7" ] },
-        {"id":9, "rel":["Heraclitus", "birthplace", "1" ] },
-        {"id":10, "rel":["Mahavira", "birthplace", "6" ] }
-        
-        ],
+        {
+            "id": 1,
+            "rel": [
+                "Gautama_Buddha",
+                "birthplace",
+                "8"
+            ]
+        },
+        {
+            "id": 2,
+            "rel": [
+                "Plato",
+                "birthplace",
+                "2"
+            ]
+        },
+        {
+            "id": 3,
+            "rel": [
+                "Confucius",
+                "birthplace",
+                "5"
+            ]
+        },
+        {
+            "id": 4,
+            "rel": [
+                "Zarathustra",
+                "birthplace",
+                "4"
+            ]
+        },
+        {
+            "id": 5,
+            "rel": [
+                "Laozi",
+                "birthplace",
+                "3"
+            ]
+        },
+        {
+            "id": 6,
+            "rel": [
+                "Homer",
+                "birthplace",
+                "9"
+            ]
+        },
+        {
+            "id": 7,
+            "rel": [
+                "Socrates",
+                "birthplace",
+                "2"
+            ]
+        },
+        {
+            "id": 8,
+            "rel": [
+                "Pārśva",
+                "birthplace",
+                "7"
+            ]
+        },
+        {
+            "id": 9,
+            "rel": [
+                "Heraclitus",
+                "birthplace",
+                "1"
+            ]
+        },
+        {
+            "id": 10,
+            "rel": [
+                "Mahavira",
+                "birthplace",
+                "6"
+            ]
+        }
+    ],
     "actors": [
         {
             "id": "@Gautama_Buddha",
@@ -472,7 +541,6 @@
                 "altName": "Lord Buddha",
                 "hadBeard": false,
                 "notes": ""
-                
             }
         },
         {
@@ -481,7 +549,6 @@
                 "prefName": "Plato",
                 "hadBeard": true,
                 "notes": ""
-                
             }
         },
         {
@@ -490,7 +557,6 @@
                 "prefName": "Confucius",
                 "hadBeard": "unk",
                 "notes": ""
-                
             }
         },
         {
@@ -499,7 +565,6 @@
                 "prefName": "Zarathustra",
                 "hadBeard": true,
                 "notes": ""
-                
             }
         },
         {
@@ -509,7 +574,6 @@
                 "altName": "老子",
                 "hadBeard": "unk",
                 "notes": ""
-                
             }
         },
         {
@@ -518,7 +582,6 @@
                 "prefName": "Homer",
                 "hadBeard": "unk",
                 "notes": ""
-                
             }
         },
         {
@@ -527,7 +590,6 @@
                 "prefName": "Socrates",
                 "hadBeard": true,
                 "notes": ""
-                
             }
         },
         {
@@ -536,7 +598,6 @@
                 "prefName": "Pārśva",
                 "hadBeard": "unk",
                 "notes": ""
-                
             }
         },
         {
@@ -545,7 +606,6 @@
                 "prefName": "Heraclitus",
                 "hadBeard": "unk",
                 "notes": ""
-                
             }
         },
         {
@@ -554,7 +614,6 @@
                 "prefName": "Mahavira",
                 "hadBeard": "unk",
                 "notes": ""
-                
             }
         }
     ]
