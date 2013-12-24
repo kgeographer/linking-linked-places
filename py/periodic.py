@@ -10,7 +10,11 @@ from descartes.patch import PolygonPatch
 from matplotlib import pyplot
 from jdcal import gcal2jd, jd2gcal
 import simplejson as json
+<<<<<<< HEAD
 data = 'Dance' # topotime_format, pleiades98, axial, Dance, us_history, ww2  
+=======
+data = 'axial' # topotime_format, pleiades98, axial, Dance, us_history, ww2  
+>>>>>>> origin/master
 loc = 'home' # home laptop work
 locationHash = {"home":"g:/mydocs/__repos/Topotime/", "laptop":"z:/karlg on my mac/box documents/Repos/topotime/", 
                 "work":""}

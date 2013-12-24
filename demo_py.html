@@ -29,7 +29,7 @@
 		<!--# topotime_format pleiades98test Dance us_history ww2b; ORIGINAL tests: ww2a pleiades -->
 		<option value="pleiades98">Pleiades periods</option>
 		<option value="topotime_format">Topotime spec</option>
-		<option value="dance">George Dance the Younger</option>
+		<option value="Dance">George Dance the Younger</option>
 		<option value="us_history">Some U.S. history</option>
 		<option value="ww2">A WW II scenario</option>
 		<option value="axial" selected="selected">An Axial Age?</option>
@@ -269,7 +269,7 @@ d3.json("data/py/"+dataFile+"_geom_d3.json", function(error, json){
 updateData = function(d) {
 	setDates()
 	svg_list.remove(); svg_vis.remove();
-	d3.json("data/py/"+d+"_geom_d3.json", function(error, json){
+	d3.json("data/pyout/"+d+"_geom_d3.json", function(error, json){
 		 if (error) {
 			alert('that data isn\'t available')
 		}
@@ -486,7 +486,7 @@ displayGeometry = function(ttPolys) {
 }
 
 // *** map stuff
-//mapcenter = [38.7138, -9.1394] // Lisbon 38.7138¡ N, 9.1394¡ W
+//mapcenter = [38.7138, -9.1394] // Lisbon 38.7138ï¿½ N, 9.1394ï¿½ W
 //var map = L.map('d_map').setView(mapcenter, 1);
 //L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png',
 //	{	attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade',
