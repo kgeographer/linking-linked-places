@@ -15,7 +15,7 @@ coll = form.getvalue("pCollect")
 
 def parseQuery(s,e,c):
    global collection, query
-   if c in ('ww2','pleiades98', 'dance', 'topotime_format', 'axial', 'us_history'):
+   if c in ('ww2','pleiades98', 'Dance', 'topotime_format', 'axial', 'us_history'):
       query = dates2poly([s, e])
       # print type(query), query
       file = open('../data/py/' + c + '.pickle','U')
