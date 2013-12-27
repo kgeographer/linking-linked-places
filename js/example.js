@@ -16,7 +16,7 @@ function timelineViz() {
     timelineZoom = d3.behavior.zoom()
     .on("zoom", pan);
     
-    svg = d3.select("#vizContainer").append("svg").style("height", "800px").style("width", "1000px").call(timelineZoom);
+    svg = d3.select("#vizContainer").append("svg").style("height", "400px").style("width", "1000px").call(timelineZoom);
     
     var timelineG = svg.append("g").attr("id", "timelineG")
     
