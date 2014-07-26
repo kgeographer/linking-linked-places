@@ -1,15 +1,15 @@
  { "type": "FeatureCollection",
     "features": [
       { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
+        "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"class": "Feature"}
         },
       { "type": "Feature",
-        "label":"Life of Kertanegara",
-        "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
+        "label":"Life of Sumatrabhumi",
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
-        "properties": {"name": "Life of Kertanegara", "class": "Period"}
+        "properties": {"name": "Life of Sumatrabhumi", "class": "Period"}
         }
       ]
  }
