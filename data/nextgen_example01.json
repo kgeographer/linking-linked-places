@@ -1,18 +1,10 @@
  { "type": "FeatureCollection",
   	"id": "@id",
-<<<<<<< HEAD
  	"crs": {"type": "___", "name": "wgs84"},
  	"projection": {"atom": "year"},
    	"features": [
       { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [85.84, 20.27]},
-=======
- 	 "crs": {"type": "___", "name": "wgs84"},
- 	 "projection": {"atom": "year"},
-   "features": [
-      { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [85.84, 22.7]},
->>>>>>> FETCH_HEAD
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"class": "Feature", "name": "Bubaneshwar", "altName":"Bubaneswar"}
         },
