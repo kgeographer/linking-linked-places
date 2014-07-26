@@ -1,7 +1,5 @@
- { "type": "FeatureCollection",
-  	"id": "@id",
- 	"crs": {"type": "___", "name": "wgs84"},
- 	"projection": {"atom": "year"},
+{ "type": "FeatureCollection",
+   	"id": "coll01",
    	"features": [
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [85.84, 22.7]},
@@ -9,10 +7,9 @@
         "properties": {"class": "Feature", "name": "Bubaneshwar", "altName":"Bubaneswar"}
         },
       { "type": "Feature",
-        "label":"Life of Sumatrabhumi",
         "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
-        "properties": {"name": "Life of Sumatrabhumi", "class": "Period"}
+        "properties": { "class": "Period", "name": "Life of Sumatrabhumi"}
         }
       ]
  }
