@@ -1,23 +1,18 @@
-Next-gen Topotime 
-
-Approach 1, GeoJSON compatible
-
  { "type": "FeatureCollection",
- 	"id": "@id",
- 	"crs": {"type": "___", "name": "___"},
- 	"projection": { "atom":"year"},
-    "features": [
+  	"id": "@id",
+ 	"crs": {"type": "___", "name": "wgs84"},
+ 	"projection": {"atom": "year"},
+   	"features": [
       { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [85.84, 20.27]},
+        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
+        "properties": {"class": "Feature", "name": "Bubaneshwar", "altName":"Bubaneswar"}
+        },
+      { "type": "Feature",
+        "label":"Life of Sumatrabhumi",
         "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
-        "properties": {"prop0": "value0"}
-        },
-      { "type": "Period",
-        "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
-        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
-        "properties": {"prop0": "value0"}
+        "properties": {"name": "Life of Sumatrabhumi", "class": "Period"}
         }
       ]
  }
-
- 
