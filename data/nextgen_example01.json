@@ -1,7 +1,3 @@
-Next-gen Topotime 
-
-Approach 1, GeoJSON compatible
-
  { "type": "FeatureCollection",
  	"id": "@id",
  	"crs": {"type": "___", "name": "___"},
