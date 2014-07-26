@@ -1,9 +1,12 @@
  { "type": "FeatureCollection",
-    "features": [
+  	"id": "@id",
+ 	 "crs": {"type": "___", "name": "wgs84"},
+ 	 "projection": {"atom": "year"},
+   "features": [
       { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
+        "geometry": {"type": "Point", "coordinates": [85.84, 22.7]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
-        "properties": {"class": "Feature"}
+        "properties": {"class": "Feature", "name": "Bubaneshwar", "altName":"Bubaneswar"}
         },
       { "type": "Feature",
         "label":"Life of Sumatrabhumi",
