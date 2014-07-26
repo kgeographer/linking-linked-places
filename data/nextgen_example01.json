@@ -8,16 +8,14 @@
         "id": "feature1",
         "geometry": {
           "type": "MultiPoint", 
-          "coordinates": [[102.0, 0.5]]},
+          "coordinates": [
+           [102.0, 0.5]
+           ]
+          },
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"prop0": "value0"}
-      },
-      { "type": "Period",
-        "geometry": {"type": "Point", "coordinates": [[85.0, 20.5]]},
-        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
-        "properties": {"prop0": "value0"}
-        }
-      ]
+      }
+  ]
  }
 
  
