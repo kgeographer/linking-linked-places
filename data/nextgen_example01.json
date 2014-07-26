@@ -1,21 +1,14 @@
- { 
-  "type": "FeatureCollection",
- 	"id": "@id",
- 	"crs": {"type": "___", "name": "___"},
- 	"projection": { "atom":"year"},
-  "features": [
+ { "type": "FeatureCollection",
+    "features": [
       { "type": "Feature",
-        "id": "feature1",
-        "geometry": {
-          "type": "MultiPoint", 
-          "coordinates": [
-           [102.0, 0.5]
-           ]
-          },
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"prop0": "value0"}
-      }
-  ]
+        },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
+        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
+        "properties": {"prop0": "value0"}
+        }
+      ]
  }
-
- 
