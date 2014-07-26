@@ -5,7 +5,8 @@
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"prop0": "value0"}
         },
-      { "type": "Feature",
+      { "type": "Period",
+        "label":"Life of Srivajarman",
         "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"prop0": "value0"}
