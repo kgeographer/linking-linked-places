@@ -5,7 +5,7 @@
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
         "properties": {"class": "Feature"}
         },
-      { "type": "Period",
+      { "type": "Feature",
         "label":"Life of Kertanegara",
         "geometry": {"type": "Point", "coordinates": [85.0, 20.5]},
         "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
