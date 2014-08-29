@@ -33,8 +33,8 @@ To learn more, check out these and other pages in [the Wiki](https://github.com/
 * data_from_csv.html - Demonstrates parsing of topotime data written in CSV
 
 #####Files (Python)
-* py/periodic.py - Parses a topotime data file and generates temporal geometries in 3 formats (\*.pickle used by ajx2.py for calculating intersections; \*\_geom_d3.json for rendering in D3).
-* py/ajx2.py - Functions for computing % intersect between Period timespans
+* py/periodic-0.1.py - Parses a topotime data file and generates temporal geometries in 3 formats (\*.pickle used by ajax-0.1.py for calculating intersections; \*\_geom_d3.json for rendering in D3).
+* py/ajax-0.1.py - Functions for computing % intersect between Period timespans
 * demo_py.html - Some interactive access to Python functions and basic visualizations of temporal geometry
 
 #####Example Data
