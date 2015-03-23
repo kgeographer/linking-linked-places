@@ -12,7 +12,8 @@ from jdcal import gcal2jd, jd2gcal
 import simplejson as json
 data = 'axial' # topotime_format, pleiades98, axial, Dance, us_history, ww2  
 loc = 'home' # home laptop work
-# locationHash = {"home":"{a path}", "laptop":"{a path}", "work":"{a path}"}
+locationHash = {"home":"/Users/karlg/Documents/Repos/Topotime/", 
+    "laptop":"{a path}", "work":"{a path}"}
 durationHash = {"d": 1, "h": 1/24, "w": 7, "m": 365.25/12, "y": 365.25};
 uncertaintyValue = 365;  
 tsOperatorHash = { "<": {"subspan": "s", "uncertaintyPoint": {"s": -1,"e": .001}}, 
@@ -88,11 +89,13 @@ def toJul(d,n,m):
    #else:
       #jval=jval/1000000; for scaling graphic
    return jval;
+   
 # return index of Period id
 def getIdx(i):		# 
    for x in xrange(len(pds)):
       if pds[x]['id'] == i:
          return x
+         
 # return val of period.element (e.g. 23.s)
 def getRef(g):		
    print 'you gave me ' + g.group()
@@ -111,6 +114,7 @@ def getRef(g):
       except KeyError:
          new = g.group()
    return new
+   
 # build a period hash
 def formatPeriodArray():  
    for x in xrange(len(pds)):
