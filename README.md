@@ -1,5 +1,5 @@
-Topotime
-========
+Topotime (v0.2 tt-geojson)
+==========================
 
 A pragmatic JSON data format, D3 timeline layout, and functions for representing and computing over complex temporal phenomena. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome. Its instigators were Karl Grossner [(kgeographer)](https://github.com/kgeographer) and Elijah Meeks [(emeeks)](https://github.com/emeeks).
 
