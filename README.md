@@ -1,10 +1,11 @@
 Topotime (v0.2 tt-geojson)
 ==========================
 
-A pragmatic JSON data format, D3 timeline layout, and functions for representing and computing over complex temporal phenomena. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome. Its instigators were Karl Grossner [(kgeographer)](https://github.com/kgeographer) and Elijah Meeks [(emeeks)](https://github.com/emeeks).
+Topotime is a pragmatic JSON data format, D3 timeline layout, and functions for representing and computing over complex temporal phenomena. Topotime v0.2 turns sharply from v0.1, by extending the data model to include space and time co-equally, and by altering essential parts of the data format to mimic GeoJSON-LD. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome.
 
-
-Topotime currently permits the representation of:
+Like GeoJSON and GeoJSON-LD, Topotime represents collections of geographic features. It differs from those formats in a few respects:
+* Features are typed, as essentially spatial things (Place) or temporal things (Period). Many geographic features are "event-like"
+* All Features have one or more spatial-temporal Context, consisting of a Geometry, a Timespan, or both
 
 * Singular, multipart, cyclical, and duration-defined _timespans_ in _periods_ (**tSpan** in **Period**). A Period can be any discrete temporal thing, e.g. an historical period, an event, or a lifespan (of a person, group, country).
 * The tSpan elements _start_ (**s**), _latest start_ (**ls**), _earliest end_ (**ee**), _end_ (**e**) can be ISO-8601 (YYYY-MM-DD, YYYY-MM or YYYY), or pointers to other tSpans or their individual elements. For example, **>23.s** stands for '_after the start of Period 23 in this collection_.' 
