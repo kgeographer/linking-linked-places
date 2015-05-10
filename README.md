@@ -1,64 +1,42 @@
 Topotime (v0.2 tt-geojson)
 ==========================
 
-Topotime is a pragmatic JSON data format, D3 timeline layout, and functions for representing and computing over complex temporal phenomena. Topotime v0.2 turns sharply from v0.1, by extending the data model to include space and time co-equally, and by altering essential parts of the data format to mimic GeoJSON-LD. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome.
+[__DRAFT__]
 
-Like GeoJSON and GeoJSON-LD, Topotime represents collections of geographic features. It differs from those formats in a few respects:
-* Features are typed, as essentially spatial things (Place) or temporal things (Period). Many geographic features are "event-like"
-* All Features have one or more spatial-temporal Context, consisting of a Geometry, a Timespan, or both
+Topotime is a data model, pragmatic JSON data format, D3 timeline layout, and functions for representing and computing over complex spatial-temporal phenomena, particularly for historical applications. Whereas Topotime v0.1 was focused on time, Topotime v0.2 models the spatial and temporal attributes of geographic features co-equally, and adopts the basic form of GeoJSON and GeoJSON-LD. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome.
 
-* Singular, multipart, cyclical, and duration-defined _timespans_ in _periods_ (**tSpan** in **Period**). A Period can be any discrete temporal thing, e.g. an historical period, an event, or a lifespan (of a person, group, country).
-* The tSpan elements _start_ (**s**), _latest start_ (**ls**), _earliest end_ (**ee**), _end_ (**e**) can be ISO-8601 (YYYY-MM-DD, YYYY-MM or YYYY), or pointers to other tSpans or their individual elements. For example, **>23.s** stands for '_after the start of Period 23 in this collection_.' 
-  * Uncertain temporal extents; operators for tSpan elements include: **_before_** (**<**), **_after_** (**>**), **_about_** (**~**), and **_equals_** (**=**). 
-* Further articulated start and end ranges in  **sls** and **eee** elements, respectively.
-* An estimated timespan when no tSpan is defined
-* Relations between events. So far, _part-of_, and _participates-in_. Further relations including _has-location_ are in development.
- 
-Topotime currently permits the computation of:
+##Compatibility
+The interpretation of data in Topotime format in order to render maps and timelines, and to compute over temporal expressions, will require software written specifically for that purpose. Topotime v0.1 has some D3 Javascript code and Python functions to work with the earlier format. Updating those to fit the new model is the work before us. It seems likely a 'lite' form of Topotime that can be read by any GeoJSON parser (ignoring time expressions) will be desirable middle ground.
 
-* Intersections (overlap) between between a query timespan and a collection of Periods, answering questions like "what periods overlapped with the timespan \[-433, -344\] (Plato's lifespan possibilities)?" with an ordered list.
+##Basics
+Like GeoJSON and GeoJSON-LD, Topotime represents collections of geographic features in a FeatureCollection. It differs from those formats in a few important respects:
 
-To learn more, check out these and other pages in [the Wiki](https://github.com/ComputingPlace/topotime/wiki) and [the Topotime web page](dh.stanford.edu/topotime)
+* Features can be either essentially spatial things (Place) or temporal things (Period). We are trying to accommodate the fact that many geographic features are "event-like" (e.g. crimes, tweets, journeys/trajectories) or otherwise inherently temporal (country boundaries, flows of anything over an interval, etc.). In fact **__all__** geographic features have temporal attributes, whether have the data or use them for a particular application or not. Likewise, many temporal things are inherently spatial (historical periods, e.g. Bronze Age Britain); all events occur somewhere. 
+* All Features have a set of one or more spatial-temporal Contexts, each consisting of a Geometry, a Timespan, or both.
+* Any number of Properties can be associated with a Feature (like GeoJSON) as well as with a Context.
 
-* [Topotime v 0.1 Specification (wiki)](https://github.com/ComputingPlace/topotime/wiki/Topotime-v-0.1-specification)
-* [Live examples (web page)] (http://dh.stanford.edu/topotime/)
+The **Geometry** object in a Topotime **Context** takes the same form as GeoJSON, having a type such as Point, Polyline, or Multipolygon, and a set of sets of coordinate pairs, of any complexity and resolution.
 
-#####Files (JavaScript):
+The **When** object in a Topotime **Context** is a set of **Timespan**s, each of which can be singular, multipart, cyclical, or duration-defined. **Timespan**s can be defined in terms of:
 
-* js/timeline.js - A D3 timeline layout
-* js/topo\_projection.js - Temporal projection function used for topotime data
-* js/example.js - Example code for using the timeline layout and displaying the processed results
-* index.html - Renders a D3 timeline to a web page
-* us_states.html - Interactive timeline joined with a map
-* stacked_timelines.html - 
-* data_from_csv.html - Demonstrates parsing of topotime data written in CSV
+* a _start_ (**s**) and a _duration_ (**d**), or 
+* a _start_ (**s**), _end_ (**e**), and optional _latest start_ (**ls**) and _earliest end_ (**ee**) expressions
+* further articulation start and end ranges by means of any number of intermediary **sls** and **eee** expressions, respectively.
 
-#####Files (Python)
-* py/periodic-0.1.py - Parses a topotime data file and generates temporal geometries in 3 formats (\*.pickle used by ajax-0.1.py for calculating intersections; \*\_geom_d3.json for rendering in D3).
-* py/ajax-0.1.py - Functions for computing % intersect between Period timespans
-* demo_py.html - Some interactive access to Python functions and basic visualizations of temporal geometry
+Values for the _start_, _latest-start_, earliest-end, and _end_ expressions can be:
 
-#####Example Data
+* ISO-8601 (YYYY-MM-DD, YYYY-MM or YYYY), or pointers to other **Feature**s in the **FeatureCollection**
+* prefixed by one of 4 operators, **_before_** (**<**), **_after_** (**>**), **_about_** (**~**), and **_equals_** (**=**)
 
-These files can be parsed by both timeline.js (for rendering timelines) and periodic.py (for other calculations)
-* data/topotime_format.json - Supported period/timespan types
-* data/pleiades98.json - 98 of 100 historic periods from the Pleiades project
-* data/us_history.json - The "lifespans" of the 50 US states, plus some other events
-* data/axial.json - Lifespans of (somewhat) contemporaneous historical figures in an "Axial Age"
-* data/ww2.json - A TomHanks-ish scenario of 8 events during WW2, demonstrates 'sls' and 'eee' elements.
-* data/dance.json - The lifespan of George Dance the Younger (1741-1825), an architect
-* data/pleiades\_periods.json - pleiades\_periods.csv converted into a JSON object with the addition of an extra period("Holocene Climatic Optimum") with no defined timespan
-* data/pyout/*.json, *.pickle - generated by py/periodic.py
+For example:
 
+* **~1635-01** stands for 'around January, 1653 CE'
+* **>23.s** stands for 'after the start of Feature 23 in this collection.'
 
-#####Future developments
-* Alternative JSON-LD (linked data) representation of the data model
-* Further examples tied to geospatial and network data
-* Smoothed curves for 'sls' and 'eee' fuzzy bounds
-* Further example queries to temporal geometries
-* Examples that allow for interactive updating of data
-* Serious engagement with the concept of temporal projection, defining projections for reign periods, Islamic calendar, BP, etc.
+##Relations
+
+Relations between features can be expressed as properties, referencing ontologies such as CIDOC-CRM, or any other  vocabulary. De-referencing and interpretation of such properties will rely on external libraries and software beyond the scope of this work.
 
 #####Contributors
-* Elijah Meeks (emeeks; twitter:@Elijah_Meeks)
 * Karl Grossner (kgeographer; twitter:@kgeographer)
+* Elijah Meeks (emeeks; twitter:@Elijah_Meeks)
