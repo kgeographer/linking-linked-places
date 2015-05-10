@@ -1,15 +1,97 @@
 Next-gen Topotime 
 
-Approach 1, GeoJSON compatible (Period ignored)
+Approach 3
 
-{
+ {
+  "@context": "http://settingpattern.org/setting.jsonld",
   "type": "FeatureCollection",
-  "features": []
-}
+  "id": @id,
+  "crs": {"type": "___", "name": "___"},
+  "projection": { "wgs84" },
+  "features": [
+      { "type": "Feature",
+        "id": @id,
+        "properties": {"name": "Massachusetts", "description": "modern extent", "src": "___"},
+        "geometry": {"type": "MultiPolygon", "coordinates": [[...],[  ]]},
+        "when": [ {"type":"Interval", "s": "1630" } ],
+        "settings": [
+          { "geometry": {"type": "MultiPolygon", "coordinates": [[...],[  ]]},
+            "when": [ {"type":"Interval", "s": "1630", "e": "1691" } ],
+            "properties": {"name": "Massachusetts Bay Colony", "prop2": "___"}
+          }, {
+            "geometry": {"type": "MultiPolygon", "coordinates": [[...],[  ]]},
+            "when": [ {"type":"Interval", "s": "1691", "e": "1776" } ],
+            "properties": {"name": "Province of Massachusetts Bay", "prop2": "___"}
+          }, {
+            "geometry": {"type": "MultiPolygon", "coordinates": [[.   ..],[  ]]},
+            "when": [ {"type":"Interval", "s": "1776" } ],
+            "properties": {"name": "Commonwealth of Massachusetts", "prop2": "___"}
+          }
+        ]
+      }, { 
+        "type": "Feature",
+        "id": @id,
+        "properties": {"name": "Colonial America", "description": "maximal extent", src": "___"},
+        "geometry": {"type": "MultiPolygon", "coordinates": [[...],[...]]},
+        "when": [ {"type":"Interval", "s": "1607-05-14", "e": "1776-07-03"} ],
+        "settings": [
+          { "geometry": {"type": "MultiPolygon", "coordinates": [[...][...]]},
+            "when": [ {"type":"Interval", "s":"1607-05-14", "e":"1625" } ],
+            "properties": {"description": "original extent of Virginia"}
+          },{ 
+            "geometry": {"type": "MultiPolygon", "coordinates": [[...][...]]},
+            "when": [ {"type":"Interval", "s":"1607-05-14", "e":"1626" } ],
+            "properties": {"description": "establishment of New York"}
+        }
+    ]
+ }
+
+
+
+Approach 2, not GeoJSON compatible; accommodates trajectories
+
+ {
+  "@context": "http://settingpattern.org/setting.jsonld",
+  "type": "FeatureCollection",
+ 	"id": @id,
+ 	"crs": {"type": "___", "name": "___"},
+ 	"projection": { "wgs84" },
+  "features": [
+      { "type": "GeoFeature",
+      	"id": @id,
+        "properties": {"label": "Massachusetts", "src": "___"},
+      	"contexts": [
+		    { "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5],[  ]]},
+		      "when": [ {"type":"Interval", "s": "1630", "e": "1691" } ],
+		      "properties": {"name": "Massachusetts Bay Colony", "prop2": "___"}
+		    }, {
+		      "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5],[  ]]},
+		      "when": [ {"type":"Interval", "s": "1691", "e": "1776" } ],
+		      "properties": {"name": "Province of Massachusetts Bay", "prop2": "___"}
+		    }, {
+          "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5],[  ]]},
+		      "when": [ {"type":"Interval", "s": "1776" } ],
+		      "properties": {"name": "Commonwealth of Massachusetts", "prop2": "___"}
+		    }
+      	]
+      }, { 
+      	"type": "Period",
+        "id": @id,
+        "contexts": [
+        { "type": "",
+          "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5][  ]]},
+          "when": [ {"type":"Interval", 
+              "s":"__", "ls":"__", "ee":"__", "e":"__" }, { "[...]" } ],
+          "properties": {"name": "Colonial America"}
+        },{ }
+        ]
+ }
+
+Approach 1, GeoJSON compatible (Period ignored)
 
 { 
   "type": "FeatureCollection",
- 	"id": "@id",
+  "id": "@id",
   "crs": {
     "type": "name",
     "properties": {
@@ -42,35 +124,5 @@ Approach 1, GeoJSON compatible (Period ignored)
     ]
  }
 
- Approach 2, not GeoJSON compatible; accommodates trajectories
 
- { "type": "FeatureCollection",
- 	"id": @id,
- 	"crs": {"type": ___, "name": ___},
- 	"projection": { "wgs84" },
-    "features": [
-      { "type": "Feature",
-      	"id": @id,
-      	"label": "Massachusetts"
-      	"contexts": [
-		    { "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5],[...]]},
-		      "when": [ {"s": "1630", "e": "1691" } ],
-		      "properties": {"name": "Massachusetts Bay Colony"}
-		    }, {
-		      "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5],[...]]},
-		      "when": [ {"s": "1691", "e": "1776" } ],
-		      "properties": {"name": "Province of Massachusetts Bay"}
-		    }, {
-		      "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5],[...]]},
-		      "when": [ {"s": "1776" } ],
-		      "properties": {"name": "Commonwealth of Massachusetts"}
-		    }
-      	]
-      }, { 
-      	"type": "Period",
-        "geometry": {"type": "MultiPolygon", "coordinates": [[102.0, 0.5][...]]},
-        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" }, { "[...]" } ]
-        "properties": {"name": "Colonial America"}
-        }
-      ]
- }
+
