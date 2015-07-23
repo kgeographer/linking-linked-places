@@ -8,6 +8,8 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software fun
 [Example data file](https://github.com/kgeographer/topotime/data/multi-type.json)
 
 [Documentation (wiki)](https://github.com/kgeographer/topotime/wiki) 
+=======
+[v0.2 documentation (wiki)](https://github.com/kgeographer/topotime/wiki) 
 
 [Example software and data for v0.1](http://dh.stanford.edu/topotime). 
 
