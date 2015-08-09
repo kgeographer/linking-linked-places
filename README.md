@@ -9,7 +9,7 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software for
 
 [Toy trajectory and areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/multi-type.json)
 
-[PeriodO collection (p0tns5v)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/periodo-out_p0tns5v.json); Local Responses to Colonization in the Iron Age Mediterranean, Hodos (2006): http://n2t.net/ark:/99152/p0tns5v
+[PeriodO collection (p0tns5v)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/periodo-out_p0tns5v.json); Local Responses to Colonization in the Iron Age Mediterranean, Hodos (2006); source: http://n2t.net/ark:/99152/p0tns5v
 
 [v0.2 documentation (wiki)](https://github.com/kgeographer/topotime/wiki) 
 
