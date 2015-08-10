@@ -1,0 +1,155 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Asian Elephant",
+                "desc": "elephant",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.29408,
+                    38.63473
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bactrian Camel",
+                "desc": "camel",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.28679,
+                    38.63368
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Black Rhinoceros",
+                "desc": "black rhino",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.29323,
+                    38.63408
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cafe Restroom",
+                "desc": "cafe restroom",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.29019,
+                    38.63533
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Polar Bear",
+                "desc": "polar bear",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.28976,
+                    38.63677
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "California Sea Lion",
+                "desc": "sea lion",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.28948,
+                    38.63496
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cheetah",
+                "desc": "cheetah",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.29458,
+                    38.63421
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Grizzley Bear",
+                "desc": "grizzly bear",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.29083,
+                    38.63633
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jaguar",
+                "desc": "jaguar",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.28715,
+                    38.63395
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lion",
+                "desc": "African lions live in a number of different habitats: grassy plains, open woodlands, semi-desert areas, even high mountains.",
+                "sym": "Waypoint"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.28769,
+                    38.63347
+                ]
+            }
+        }
+    ]
+}
