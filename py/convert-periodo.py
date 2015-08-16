@@ -1,8 +1,8 @@
 import json, os, re, codecs
 from settings import *
 os.chdir(wd)
-import ttutil
-from ttutil import Feature, FeatureCollection, Geometry #, \
+import ttutil_periodo
+from ttutil_periodo import Feature, FeatureCollection, Geometry #, \
      #findCountry, makeShape, parseWhen
 from shapely.geometry import  \
      mapping, shape, MultiPolygon, Polygon
