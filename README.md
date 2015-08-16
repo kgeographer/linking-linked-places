@@ -8,25 +8,29 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software for
 ###Example data files/maps (in progress)
 
 **Euratlas time-indexed admin units** [1]  
-[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/pyout/tt-euro_poland.geojson.json)  
+[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/topotime/tt-euro_poland.geojson.json)  
 
 **PeriodO collections**  
-Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/periodo-out_p0tns5v.json); PeriodO source: http://n2t.net/ark:/99152/p0tns5v
+Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo-out_p0tns5v.json); PeriodO source: http://n2t.net/ark:/99152/p0tns5v
 
-**Itineraries ('toy' and otherwise)**  
-[The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/itinerary.json)  
-[A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/multi-type.json)  
+**Itineraries**  
+[The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/itinerary.json)  
+[A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/multi-type.json)  
+
+
+____________
+###Documentation
+**v0.2**  
+GitHub [wiki](https://github.com/kgeographer/topotime/wiki) 
+
+**v0.1**  
+Example [software and data](http://dh.stanford.edu/topotime)
+
+**related blog posts**
 
 
 ____________
-###v0.2 documentation  
-wiki: (https://github.com/kgeographer/topotime/wiki) 
-____________
-
-Example [software and data](http://dh.stanford.edu/topotime) for v0.1. 
-
-____________
-[1] Data licensed from Euratlas 
+[1] Data licensed from [Euratlas](http://www.euratlas.net/history/europe/) 
 
 **Contributors**   
 Karl Grossner (*kgeographer*; twitter:@kgeographer); Elijah Meeks (v0.1; *emeeks*)
