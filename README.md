@@ -21,13 +21,13 @@ Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] 
 ____________
 ###Documentation
 **v0.2**  
-GitHub [wiki](https://github.com/kgeographer/topotime/wiki) 
+GitHub docs in progress [wiki](https://github.com/kgeographer/topotime/wiki) 
 
 **v0.1**  
 Example [software and data](http://dh.stanford.edu/topotime)
 
-**related blog posts**
-
+**related blog posts**  
+[kgeographer.org](http://kgeographer.com/wp/category/time/topotime/)
 
 ____________
 [1] Data licensed from [Euratlas](http://www.euratlas.net/history/europe/) 
