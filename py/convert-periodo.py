@@ -30,45 +30,78 @@ def makeShape(code): #takes a 2-letter code
       p=MultiPolygon(shape(geom))
    return p
 
-def parseWhen(start,stop):
+def parseWhen(start,stop,label):
    ts = {}
    ts['start'] = start
    ts['end'] = stop
+   ts['label'] = label
    #print(ts)
    return ts
 
+def buildGeometry(coverages):
+   multi = []
+   for cov in coverages:
+      multi.append(makeShape( cov['iso3166'] ))
+   merged = unary_union(multi)
+   return mapping(merged)['coordinates']
+
+def findFeature(obj,attrib):
+   for x in obj.features:
+      if x.geometry['properties']['countries'] == attrib:
+         print('got it')
+         return x
+   else:
+      print('nope')
+      x = None
+
+   
+
 for x in range(len(files)):
    pcoll = files[x]
-   fn=basedir+'data/periodo/'+files[x]+'.jsonld'
-   w1 = codecs.open(basedir+'data/pyout/tt-periodo_'+pcoll+'.json','w','utf-8')
+   fn=basedir+'data/in/periodo/'+files[x]+'.jsonld'
+   w1 = codecs.open(basedir+'data/out/tt-periodo_'+pcoll+'.json','w','utf-8')
    
    with open(fn) as f:
       data = json.load(f)['definitions']
-
-   c = FeatureCollection(pcoll)
-      
+   # new empty FeatureCollection
+   fc = FeatureCollection(pcoll)
+   allCoverages = []
+   counter = 0
+   # add Feature for each distinct geometry in data 
    for key,val in data.items():
-      pstart = data[key]['start']
-      pstop = data[key]['stop']
+      counter += 1
+      # set of 1 or more countries
       sc = data[key]['spatialCoverage']
-      try:
-         sd = data[key]['spatialCoverageDescription']
-      except:
-         sd = "none"
-      f = Feature(data[key]['id'], data[key]['originalLabel'], "Feature")
-      f.geometry['geometries'][0]['when']['timespans'] \
-         .append(parseWhen(pstart,pstop))
-      props = f.geometry['geometries'][0]['properties']
-      props['spatialCoverageDescription'] = sd
-      multi = []
-      for s in sc:
-         multi.append(makeShape( s['iso3166'] )) 
-         props['spatialCoverage'].append(s)
-      # print(multi) 
-      merged = unary_union(multi)
-      f.geometry['geometries'][0]['coordinates'] = \
-         mapping(merged)['coordinates']
-      c.features.append(f); print(str(len(c.features))+' features added')
-      
-   w1.write(c.to_JSON())
-   w1.close()
+      # isolate & store labels to find distinct
+      geo = []
+      for y in range(len(sc)):
+         geo.append(sc[y]['label'])
+      if sorted(geo) in allCoverages:
+         print('found '+str(sorted(geo)) +' from def. '+str(key)+ \
+               ', find Feature and add when')
+         f = findFeature(fc,sorted(geo))
+         f.when['timespans'].append(parseWhen(pstart, pstop, \
+               data[key]['originalLabel']))
+      else:
+         allCoverages.append(sorted(geo))
+         try:
+            sd = data[key]['spatialCoverageDescription']
+         except:
+            sd = "none"
+         # print('new coverage for '+sd+', create Feature from ' + str(sc))
+         f = Feature(data[key]['id'], data[key]['originalLabel'], "Feature")
+         f.geometry['properties']['countries'] = sorted(geo)
+         f.geometry['properties']['spatialCoverage'] = sc
+         f.geometry['properties']['spatialCoverageDescription'] = sd
+         f.geometry['coordinates'] = (buildGeometry(sc))
+         # get full periodo temporal objects
+         pstart = data[key]['start']
+         pstop = data[key]['stop'] 
+         f.when['timespans'].append(parseWhen(pstart,pstop,data[key]['originalLabel']))
+         # add complete feature
+         fc.features.append(f); print(str(len(fc.features))+' features added')
+         
+   w1.write(fc.to_JSON())
+   w1.close()         
+   print(str(counter) + ' definitions')
+   print(str(len(allCoverages)) + ' features made')

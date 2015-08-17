@@ -21,12 +21,14 @@ class Feature(object):
          "featureType": ftype}
       self.when = {"timespans": []}
       self.geometry = \
-         {"type":"MultiPolygon", \
-          "coordinates": [],
-          "properties": {"spatialCoverageDescription": "", \
-                         "spatialCoverage": [] }          
-          }   
-   
+         {"type":"GeometryCollection", \
+          "geometries":[ \
+             {"when": {"timespans": [] }, \
+              "type": "MultiPolygon",
+              "properties": {"spatialCoverageDescription": "", \
+                             "spatialCoverage": [] }, \
+              "coordinates": []
+              }]}      
    def addProperty(self,key):
       self.properties[key] = properties[key]
 
