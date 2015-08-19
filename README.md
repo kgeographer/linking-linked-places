@@ -25,7 +25,7 @@ ____________
 
 - GitHub docs in progress [wiki](https://github.com/kgeographer/topotime/wiki)
 
-- Data format [pattern examples](https://github.com/kgeographer/topotime/blob/tt-geojson/spec-outlines.txt)
+- Data format [pattern examples](https://github.com/kgeographer/topotime/blob/tt-geojson/spec-outlines_18Aug2015.md)
 
 **v0.1**  
 Example [software and data](http://dh.stanford.edu/topotime)
