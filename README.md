@@ -8,15 +8,15 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software for
 ###Example data files/maps (in progress)
 
 **Euratlas time-indexed admin units** [1]  
-[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/tt-euro_poland.geojson.json)  
+[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/euro_poland.tt.json)  
 
 **PeriodO collections**  
 Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo_p0tns5v.tt.json); PeriodO source: http://n2t.net/ark:/99152/p0tns5v
 
 
 **Itineraries**  
-[The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/itinerary.json)  
-[A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/multi-type.json)  
+[The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/itinerary.tt.json)  
+[A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/multi-type.tt.json)  
 
 
 ____________
