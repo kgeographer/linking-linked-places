@@ -23,20 +23,19 @@
               "id": "fc123_001",
               "label": "Departed Chang'an"
             },
-            "when": [
+            "when": {"timespans":[
               {
-                "during": {
-                  "label": "in 629 C.E.",
-                  "start": {
-                    "earliest": "0629-01-01"
-                  },
-                  "end": {
-                    "latest": "0629-12-31"
-                  },
-                  "duration": "1d"
-                }
+                "label": "in 629 C.E.",
+                "type": "during",
+                "start": {
+                  "earliest": "0629-01-01"
+                },
+                "end": {
+                  "latest": "0629-12-31"
+                },
+                "duration": "1d"
               }
-            ]
+            ]}     
           },
           {
             "type": "MultiLineString",
@@ -56,20 +55,19 @@
               "id": "fc123_002",
               "label": "Chang'an to Liangzhou"
             },
-            "when": [
+            "when": {"timespans":[
               {
-                "during": {
-                  "label": "in 629 C.E.",
-                  "start": {
-                    "earliest": "0629-01-01"
-                  },
-                  "end": {
-                    "latest": "0629-12-31"
-                  },
-                  "duration": "?d"
-                }
+                "label": "in 629 C.E.",
+                "type": "during",
+                "start": {
+                  "earliest": "0629-01-01"
+                },
+                "end": {
+                  "latest": "0629-12-31"
+                },
+                "duration": "?d"
               }
-            ]
+            ]}
           },
           {
             "type": "Point",
@@ -81,20 +79,19 @@
               "id": "fc123_003",
               "label": "Stayed 1 month in Liangzhou"
             },
-            "when": [
+            "when": {"timespans":[
               {
-                "during": {
-                  "label": "in 629 C.E.",
-                  "start": {
-                    "earliest": "0629-01-01"
-                  },
-                  "end": {
-                    "latest": "0629-12-31"
-                  },
-                  "duration": "1m"
-                }
+                "label": "in 629 C.E.",
+                "type": "during",
+                "start": {
+                  "earliest": "0629-01-01"
+                },
+                "end": {
+                  "latest": "0629-12-31"
+                },
+                "duration": "1m"
               }
-            ]
+            ]}
           },
           {
             "type": "MultiLineString",
@@ -114,20 +111,19 @@
               "id": "fc123_004",
               "label": "Liangzhou to An-hsi (Yuanquan)"
             },
-            "when": [
+            "when": {"timespans":[
               {
-                "during": {
-                  "label": "in 629 C.E.",
-                  "start": {
-                    "earliest": "0629-01-01"
-                  },
-                  "end": {
-                    "latest": "0629-12-31"
-                  },
-                  "duration": "?d"
-                }
+                "label": "in 629 C.E.",
+                "type": "during",
+                "start": {
+                  "earliest": "0629-01-01"
+                },
+                "end": {
+                  "latest": "0629-12-31"
+                },
+                "duration": "?d"
               }
-            ]
+            ]}
           },
           {
             "type": "Point",
@@ -139,20 +135,19 @@
               "id": "fc123_005",
               "label": "Acquired supplies in An-hsi (Yuanquan)"
             },
-            "when": [
+            "when": {"timespans":[
               {
-                "during": {
-                  "label": "in 629 C.E.",
-                  "start": {
-                    "earliest": "0629-01-01"
-                  },
-                  "end": {
-                    "latest": "0629-12-31"
-                  },
-                  "duration": "?d"
-                }
+                "label": "in 629 C.E.",
+                "type": "during",
+                "start": {
+                  "earliest": "0629-01-01"
+                },
+                "end": {
+                  "latest": "0629-12-31"
+                },
+                "duration": "?d"
               }
-            ]
+            ]}
           }
         ]
       }

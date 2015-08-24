@@ -9,11 +9,11 @@ from shapely.geometry import  \
 from shapely.ops import unary_union
 # PeriodO collections
 files = ['p0tns5v','p0dntkb','p0vhct4','p0zmdxz']
-# files = ['p0tns5v']
+# files = ['p0vhct4']
 src = 'http://n2t.net/ark:/99152/' # periodo URI prefix
 
 # load countries to grab country geom by 2-letter code
-countries = json.loads(codecs.open(basedir+'geo/world_slimmed.json','r','utf8').read())['features']
+countries = json.loads(codecs.open(base_dir+'geo/world_slimmed.json','r','utf8').read())['features']
 
 def findCountry(code):
    for c in countries:
@@ -30,12 +30,26 @@ def makeShape(code): #takes a 2-letter code
       p=MultiPolygon(shape(geom))
    return p
 
-def parseWhen(start,stop,label):
+def existsYear(y):
+   if y['in'].get('year') is not None:
+      return True
+   else:
+      return False
+   
+def parseWhen(start,end,label):   
    ts = {}
-   ts['start'] = start
-   ts['end'] = stop
+   s = {"earliest":start['in']['earliestYear'], \
+           "latest": start['in']['latestYear']} if not existsYear(pstart) \
+         else {"earliest":start['in']['year']}
+   # print(s)
+   e = {"earliest":end['in']['earliestYear'],
+           "latest":end['in']['latestYear']}  if not existsYear(pstop) \
+         else {"latest":end['in']['year']}    
+   ts['start'] = s
+   ts['end'] = e
    ts['label'] = label
-   #print(ts)
+   ts['type'] = 'throughout'
+   # print(ts)
    return ts
 
 def buildGeometry(coverages):
@@ -58,8 +72,8 @@ def findFeature(obj,attrib):
 
 for x in range(len(files)):
    pcoll = files[x]
-   fn=basedir+'data/in/periodo/'+files[x]+'.jsonld'
-   w1 = codecs.open(basedir+'data/out/tt-periodo_'+pcoll+'.json','w','utf-8')
+   fn=base_dir+'data/in/periodo/'+files[x]+'.jsonld'
+   w1 = codecs.open(base_dir+'data/out/periodo_'+pcoll+'.tt.json','w','utf-8')
    
    with open(fn) as f:
       data = json.load(f)['definitions']
@@ -69,13 +83,15 @@ for x in range(len(files)):
    counter = 0
    # add Feature for each distinct geometry in data 
    for key,val in data.items():
+      # keys: p0vhct4j2w4 (early/late); p0vhct49h3g (year)
       counter += 1
       # set of 1 or more countries
       sc = data[key]['spatialCoverage']
       # isolate & store labels to find distinct
       geo = []
       for y in range(len(sc)):
-         geo.append(sc[y]['label'])
+         geo.append(sc[y]['iso3166'])
+      # only write distinct geometry once
       if sorted(geo) in allCoverages:
          print('found '+str(sorted(geo)) +' from def. '+str(key)+ \
                ', find Feature and add when')

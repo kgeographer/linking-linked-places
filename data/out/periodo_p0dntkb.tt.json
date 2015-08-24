@@ -2820,7 +2820,7 @@
         ],
         "properties": {
           "countries": [
-            "Sicily"
+            "IT"
           ],
           "spatialCoverage": [
             {
@@ -2845,60 +2845,45 @@
         "timespans": [
           {
             "end": {
-              "in": {
-                "earliestYear": "-0599",
-                "latestYear": "-0566"
-              },
-              "label": "beginning of the 6th century B.C."
+              "earliest": "-0599",
+              "latest": "-0566"
             },
             "label": {
               "ita-latn": "Fase I"
             },
             "start": {
-              "in": {
-                "earliestYear": "-0666",
-                "latestYear": "-0633"
-              },
-              "label": "mid 7th century B.C."
-            }
+              "earliest": "-0666",
+              "latest": "-0633"
+            },
+            "type": "throughout"
           },
           {
             "end": {
-              "in": {
-                "earliestYear": "-0599",
-                "latestYear": "-0566"
-              },
-              "label": "beginning of the 6th century B.C."
+              "earliest": "-0599",
+              "latest": "-0566"
             },
             "label": {
               "ita-latn": "Fase II"
             },
             "start": {
-              "in": {
-                "earliestYear": "-0666",
-                "latestYear": "-0633"
-              },
-              "label": "mid 7th century B.C."
-            }
+              "earliest": "-0666",
+              "latest": "-0633"
+            },
+            "type": "throughout"
           },
           {
             "end": {
-              "in": {
-                "earliestYear": "-0599",
-                "latestYear": "-0566"
-              },
-              "label": "beginning of the 6th century B.C."
+              "earliest": "-0599",
+              "latest": "-0566"
             },
             "label": {
               "ita-latn": "Fase III"
             },
             "start": {
-              "in": {
-                "earliestYear": "-0666",
-                "latestYear": "-0633"
-              },
-              "label": "mid 7th century B.C."
-            }
+              "earliest": "-0666",
+              "latest": "-0633"
+            },
+            "type": "throughout"
           }
         ]
       }

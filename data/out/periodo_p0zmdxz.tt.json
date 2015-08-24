@@ -676,7 +676,7 @@
         ],
         "properties": {
           "countries": [
-            "Ras Shamra"
+            "SY"
           ],
           "spatialCoverage": [
             {
@@ -691,9 +691,9 @@
       },
       "properties": {
         "featureType": "Feature",
-        "id": "p0zmdxz5fx6",
+        "id": "p0zmdxz65fd",
         "label": {
-          "eng-latn": "Early Bronze Age"
+          "eng-latn": "Middle Bronze Age"
         }
       },
       "type": "Feature",
@@ -701,156 +701,120 @@
         "timespans": [
           {
             "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
-            },
-            "label": {
-              "eng-latn": "Early Bronze Age"
-            },
-            "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
-          },
-          {
-            "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
-            },
-            "label": {
-              "eng-latn": "Pre-pottery Neolithic"
-            },
-            "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
-          },
-          {
-            "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
-            },
-            "label": {
-              "eng-latn": "\"Ubaid\""
-            },
-            "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
-          },
-          {
-            "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
-            },
-            "label": {
-              "eng-latn": "Pottery Neolithic"
-            },
-            "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
-          },
-          {
-            "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
-            },
-            "label": {
-              "eng-latn": "Late Bronze Age"
-            },
-            "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
-          },
-          {
-            "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
+              "latest": "-1649"
             },
             "label": {
               "eng-latn": "Middle Bronze Age"
             },
             "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
           },
           {
             "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
+              "latest": "-1649"
             },
             "label": {
-              "eng-latn": "Roman period"
+              "eng-latn": "\"Ubaid\""
             },
             "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
           },
           {
             "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
+              "latest": "-1649"
+            },
+            "label": {
+              "eng-latn": "Pottery Neolithic"
+            },
+            "start": {
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "latest": "-1649"
+            },
+            "label": {
+              "eng-latn": "Pre-pottery Neolithic"
+            },
+            "start": {
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "latest": "-1649"
+            },
+            "label": {
+              "eng-latn": "Late Bronze Age"
+            },
+            "start": {
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "latest": "-1649"
             },
             "label": {
               "eng-latn": "\"Halaf\" Chalcolithic"
             },
             "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
           },
           {
             "end": {
-              "in": {
-                "year": "-2199"
-              },
-              "label": "Ca. 2200 B.C.E."
+              "latest": "-1649"
+            },
+            "label": {
+              "eng-latn": "Early Bronze Age"
+            },
+            "start": {
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "latest": "-1649"
+            },
+            "label": {
+              "eng-latn": "Roman period"
+            },
+            "start": {
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "latest": "-1649"
             },
             "label": {
               "eng-latn": "Persian period"
             },
             "start": {
-              "in": {
-                "year": "-2999"
-              },
-              "label": "Ca. 3000 B.C.E."
-            }
+              "earliest": "-1999",
+              "latest": "-1666"
+            },
+            "type": "throughout"
           }
         ]
       }
