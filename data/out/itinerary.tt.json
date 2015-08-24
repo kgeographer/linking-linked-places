@@ -15,10 +15,7 @@
         "geometries": [
           {
             "type": "Point",
-            "coordinates": [
-              108.9,
-              34.2667
-            ],
+            "coordinates": [ 108.9, 34.2667 ],
             "properties": {
               "id": "fc123_001",
               "label": "Departed Chang'an"
@@ -40,16 +37,7 @@
           {
             "type": "MultiLineString",
             "coordinates": [
-              [
-                [
-                  108.9,
-                  34.2667
-                ],
-                [
-                  102.642,
-                  37.9283
-                ]
-              ]
+              [[ 108.9, 34.2667 ],[ 102.642,37.9283]]
             ],
             "properties": {
               "id": "fc123_002",
@@ -71,10 +59,7 @@
           },
           {
             "type": "Point",
-            "coordinates": [
-              102.642,
-              37.9283
-            ],
+            "coordinates": [ 102.642, 37.9283 ],
             "properties": {
               "id": "fc123_003",
               "label": "Stayed 1 month in Liangzhou"
@@ -96,16 +81,7 @@
           {
             "type": "MultiLineString",
             "coordinates": [
-              [
-                [
-                  102.642,
-                  37.9283
-                ],
-                [
-                  95.8,
-                  40.5
-                ]
-              ]
+              [[102.642, 37.9283],[95.8,40.5]]
             ],
             "properties": {
               "id": "fc123_004",
@@ -127,10 +103,7 @@
           },
           {
             "type": "Point",
-            "coordinates": [
-              95.8,
-              40.5
-            ],
+            "coordinates": [95.8,40.5],
             "properties": {
               "id": "fc123_005",
               "label": "Acquired supplies in An-hsi (Yuanquan)"
