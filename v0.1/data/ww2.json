@@ -1,0 +1,18 @@
+{	
+	"type": "PeriodCollection",
+	"id": "0", "label": "Some examples",
+	"rev_date": "2013-10-12", "author": [{"name":"@kgeographer"}],
+	"projection": {"datetype": "date", "atom": "date", "origin": "0001-01-01", "calendar": "gregorian", "scale": 1},
+	"periods": [
+		{"id": 7, "label": "marriage", "tSpans": [{"s": "<0.s","ee":"1945-11-01","e":"1946"}] },
+		{"id": 3, "label": "Battle of Britain", "tSpans": [{"s": "1940-10-07", "e":"1940-10-31"}] },
+		{"id": 4, "label": "Battle of Bologna", "tSpans": [{"s": "1945-04-09", "e":"1945-04-21"}] },
+		{"id": 6, "label": "Affair with Bolognese", "tSpans": [{"s": "1945-04-09", "ls":"1945-04-10","ee":"1945-04-20","e":"1945-04-21"}] },
+		{"id": 0, "label": "~2 yr stint in WW II", "tSpans": [{"s": "1941-12-08", "e": "1945-09-02", "duration": "2y", "during": true}] },
+		{"id": 1, "label": "6 mo. hospital, 1946", "tSpans": [{"s": "1946-01-01", "e": "1946-12-31", "duration": "6m", "during": true}] },
+		{"id": 2, "label": "6 mo. hospital, mid-40s", "tSpans": [{"s": "1946-01-01", "e":"1947-12-31", "duration": "6m", "during": true}] },
+		{"id": 5, "label": "Missing 4 days during Battle of Bologna", "tSpans": [{"s": "1945-04-09", "e":"1945-04-21", "duration": "4d", "during": true}] }		
+  ],
+	"relations": [],
+	"actors": []
+}

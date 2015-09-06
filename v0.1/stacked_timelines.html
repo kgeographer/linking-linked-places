@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Temporal Density with Topotime</title>
+  <meta charset="utf-8" />
+</head>
+<style>
+.duringline, .duringends {
+  stroke: darkgray;
+  stroke-width: 2px;
+  stroke-dasharray: 5 5;
+}
+
+.shortPeriod {
+  fill: orange;
+}
+
+.periodls, .periodee {
+  rx: 5;
+  fill: red;
+  stroke: black;
+
+}
+
+text.period {
+  pointer-events: none;
+}
+
+rect.period {
+  fill: green;
+}
+
+rect.period.estimated {
+  fill: yellow;
+}
+
+rect.periodduring {
+  rx: 10;
+  fill: purple;
+}
+
+rect.periodduring.estimated {
+  fill: darkred;
+}
+
+
+</style>
+
+<body onload="timelineViz('topotime_format.json')">
+  <div>
+    <select onchange="timelineViz(this.options[this.selectedIndex].value)">
+      <option value="topotime_format.json">Topotime Format</option>
+      <option value="us_history.json">US States</option>
+      <option value="axial.json">Axial Age</option>
+      <option value="Dance.json">Life of George Dance</option>
+      <option value="ww2.json">WWII Scenario</option>
+      </select>
+<p style="width:600px;">Temporal Density</p>
+  </div>
+  <div id="controlbar">
+  </div>
+  <div id="vizcontainer">
+    <div id="routemodal" class="modal"></div>
+    <div id="sitemodal" class="modal"></div>
+  </div>
+  <footer>
+<script src="js/d3.v3.min.js" type="text/javascript">
+</script> <script src="js/timeline.js" type="text/javascript">
+</script> <script src="js/example_stacked.js" type="text/javascript">
+</script> <script src="js/topo_projection.js" type="text/javascript">
+</script>
+  </footer>
+</body>
+</html>

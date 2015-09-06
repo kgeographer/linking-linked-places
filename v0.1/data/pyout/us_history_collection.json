@@ -1,0 +1,3198 @@
+{
+  "author": "emeeks",
+  "id": "pc_01",
+  "label": "sample period collection (simple)",
+  "periods": [
+    {
+      "contingent": false,
+      "css_class": "national",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.369915,
+            0
+          ],
+          [
+            2.372532,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.369915,
+            0
+          ]
+        ]
+      ],
+      "id": 1,
+      "label": "United States of America",
+      "properties": {},
+      "relations": [],
+      "src": "none",
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "ls": "1783-09-03",
+          "s": "1776-07-04"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "ls": 2372532,
+          "s": 2369915
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374088,
+            0
+          ],
+          [
+            2.374088,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.374088,
+            0
+          ]
+        ]
+      ],
+      "id": 5,
+      "label": "Delaware",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1787-12-07"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374088
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.373728,
+            0
+          ],
+          [
+            2.373728,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.373728,
+            0
+          ]
+        ]
+      ],
+      "id": 6,
+      "label": "Pennsylvania",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1786-12-12"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2373728
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374099,
+            0
+          ],
+          [
+            2.374099,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.374099,
+            0
+          ]
+        ]
+      ],
+      "id": 7,
+      "label": "New Jersey",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1787-12-18"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374099
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374114,
+            0
+          ],
+          [
+            2.374114,
+            1
+          ],
+          [
+            2.400794,
+            1
+          ],
+          [
+            2.400794,
+            0
+          ],
+          [
+            2.374114,
+            0
+          ]
+        ],
+        [
+          [
+            2.404258,
+            0
+          ],
+          [
+            2.404258,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.404258,
+            0
+          ]
+        ]
+      ],
+      "id": 8,
+      "label": "Georgia",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-1-19",
+          "s": "1788-1-2"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1870-7-15"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400794,
+          "s": 2374114
+        },
+        {
+          "e": 2456657,
+          "s": 2404258
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374121,
+            0
+          ],
+          [
+            2.374121,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.374121,
+            0
+          ]
+        ]
+      ],
+      "id": 9,
+      "label": "Connecticut",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1788-01-09"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374121
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374149,
+            0
+          ],
+          [
+            2.374149,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.374149,
+            0
+          ]
+        ]
+      ],
+      "id": 10,
+      "label": "Massachusetts",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1788-02-06"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374149
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.3742,
+            0
+          ],
+          [
+            2.3742,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.3742,
+            0
+          ]
+        ]
+      ],
+      "id": 11,
+      "label": "Maryland",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1788-03-28"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374200
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374256,
+            0
+          ],
+          [
+            2.374256,
+            1
+          ],
+          [
+            2.400764,
+            1
+          ],
+          [
+            2.400764,
+            0
+          ],
+          [
+            2.374256,
+            0
+          ]
+        ],
+        [
+          [
+            2.403522,
+            0
+          ],
+          [
+            2.403522,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403522,
+            0
+          ]
+        ]
+      ],
+      "id": 12,
+      "label": "South Carolina",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1860-12-20",
+          "s": "1788-05-23"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1868-7-9"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400764,
+          "s": 2374256
+        },
+        {
+          "e": 2456657,
+          "s": 2403522
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374285,
+            0
+          ],
+          [
+            2.374285,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.374285,
+            0
+          ]
+        ]
+      ],
+      "id": 13,
+      "label": "New Hampshire",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1788-06-21"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374285
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374289,
+            0
+          ],
+          [
+            2.374289,
+            1
+          ],
+          [
+            2.400882,
+            1
+          ],
+          [
+            2.400882,
+            0
+          ],
+          [
+            2.374289,
+            0
+          ]
+        ],
+        [
+          [
+            2.404088,
+            0
+          ],
+          [
+            2.404088,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.404088,
+            0
+          ]
+        ]
+      ],
+      "id": 14,
+      "label": "Virginia",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-4-17",
+          "s": "1788-06-25"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1870-1-26"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400882,
+          "s": 2374289
+        },
+        {
+          "e": 2456657,
+          "s": 2404088
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.37432,
+            0
+          ],
+          [
+            2.37432,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.37432,
+            0
+          ]
+        ]
+      ],
+      "id": 15,
+      "label": "New York",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1788-07-26"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374320
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374803,
+            0
+          ],
+          [
+            2.374803,
+            1
+          ],
+          [
+            2.400916,
+            1
+          ],
+          [
+            2.400916,
+            0
+          ],
+          [
+            2.374803,
+            0
+          ]
+        ],
+        [
+          [
+            2.403517,
+            0
+          ],
+          [
+            2.403517,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403517,
+            0
+          ]
+        ]
+      ],
+      "id": 16,
+      "label": "North Carolina",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-5-21",
+          "s": "1789-11-21"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1868-7-4"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400916,
+          "s": 2374803
+        },
+        {
+          "e": 2456657,
+          "s": 2403517
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.374992,
+            0
+          ],
+          [
+            2.374992,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.374992,
+            0
+          ]
+        ]
+      ],
+      "id": 17,
+      "label": "Rhode Island",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1790-05-29"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2374992
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.375271,
+            0
+          ],
+          [
+            2.375271,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.375271,
+            0
+          ]
+        ]
+      ],
+      "id": 18,
+      "label": "Vermont",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1791-3-4"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2375271
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.375726,
+            0
+          ],
+          [
+            2.375726,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.375726,
+            0
+          ]
+        ]
+      ],
+      "id": 19,
+      "label": "Kentucky",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1792-6-1"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2375726
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.377187,
+            0
+          ],
+          [
+            2.377187,
+            1
+          ],
+          [
+            2.400901,
+            1
+          ],
+          [
+            2.400901,
+            0
+          ],
+          [
+            2.377187,
+            0
+          ]
+        ],
+        [
+          [
+            2.402806,
+            0
+          ],
+          [
+            2.402806,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.402806,
+            0
+          ]
+        ]
+      ],
+      "id": 20,
+      "label": "Tennessee",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-5-6",
+          "s": "1796-6-1"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1866-7-24"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400901,
+          "s": 2377187
+        },
+        {
+          "e": 2456657,
+          "s": 2402806
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.37965,
+            0
+          ],
+          [
+            2.37965,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.37965,
+            0
+          ]
+        ]
+      ],
+      "id": 21,
+      "label": "Ohio",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1803-3-1"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2379650
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.382998,
+            0
+          ],
+          [
+            2.382998,
+            1
+          ],
+          [
+            2.400801,
+            1
+          ],
+          [
+            2.400801,
+            0
+          ],
+          [
+            2.382998,
+            0
+          ]
+        ],
+        [
+          [
+            2.403522,
+            0
+          ],
+          [
+            2.403522,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403522,
+            0
+          ]
+        ]
+      ],
+      "id": 22,
+      "label": "Louisiana",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-1-26",
+          "s": "1812-4-30"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1868-7-9"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400801,
+          "s": 2382998
+        },
+        {
+          "e": 2456657,
+          "s": 2403522
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.384684,
+            0
+          ],
+          [
+            2.384684,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.384684,
+            0
+          ]
+        ]
+      ],
+      "id": 23,
+      "label": "Indiana",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1816-12-11"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2384684
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.385048,
+            0
+          ],
+          [
+            2.385048,
+            1
+          ],
+          [
+            2.400784,
+            1
+          ],
+          [
+            2.400784,
+            0
+          ],
+          [
+            2.385048,
+            0
+          ]
+        ],
+        [
+          [
+            2.404116,
+            0
+          ],
+          [
+            2.404116,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.404116,
+            0
+          ]
+        ]
+      ],
+      "id": 24,
+      "label": "Mississippi",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-1-9",
+          "s": "1817-12-10"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1870-2-23"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400784,
+          "s": 2385048
+        },
+        {
+          "e": 2456657,
+          "s": 2404116
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.385406,
+            0
+          ],
+          [
+            2.385406,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.385406,
+            0
+          ]
+        ]
+      ],
+      "id": 25,
+      "label": "Illinois",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1818-12-3"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2385406
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.385782,
+            0
+          ],
+          [
+            2.385782,
+            1
+          ],
+          [
+            2.400786,
+            1
+          ],
+          [
+            2.400786,
+            0
+          ],
+          [
+            2.385782,
+            0
+          ]
+        ],
+        [
+          [
+            2.403526,
+            0
+          ],
+          [
+            2.403526,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403526,
+            0
+          ]
+        ]
+      ],
+      "id": 26,
+      "label": "Alabama",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-1-11",
+          "s": "1819-12-14"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1868-7-13"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400786,
+          "s": 2385782
+        },
+        {
+          "e": 2456657,
+          "s": 2403526
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.385874,
+            0
+          ],
+          [
+            2.385874,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.385874,
+            0
+          ]
+        ]
+      ],
+      "id": 27,
+      "label": "Maine",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1820-3-15"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2385874
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.386387,
+            0
+          ],
+          [
+            2.386387,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.386387,
+            0
+          ]
+        ]
+      ],
+      "id": 28,
+      "label": "Missouri",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1821-8-10"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2386387
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.39181,
+            0
+          ],
+          [
+            2.39181,
+            1
+          ],
+          [
+            2.400901,
+            1
+          ],
+          [
+            2.400901,
+            0
+          ],
+          [
+            2.39181,
+            0
+          ]
+        ],
+        [
+          [
+            2.403505,
+            0
+          ],
+          [
+            2.403505,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403505,
+            0
+          ]
+        ]
+      ],
+      "id": 29,
+      "label": "Arkansas",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-5-6",
+          "s": "1836-6-15"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1868-6-22"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400901,
+          "s": 2391810
+        },
+        {
+          "e": 2456657,
+          "s": 2403505
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.392035,
+            0
+          ],
+          [
+            2.392035,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.392035,
+            0
+          ]
+        ]
+      ],
+      "id": 30,
+      "label": "Michigan",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1837-1-26"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2392035
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.394993,
+            0
+          ],
+          [
+            2.394993,
+            1
+          ],
+          [
+            2.400785,
+            1
+          ],
+          [
+            2.400785,
+            0
+          ],
+          [
+            2.394993,
+            0
+          ]
+        ],
+        [
+          [
+            2.403508,
+            0
+          ],
+          [
+            2.403508,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403508,
+            0
+          ]
+        ]
+      ],
+      "id": 31,
+      "label": "Florida",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-1-10",
+          "s": "1845-3-3"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1868-6-25"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400785,
+          "s": 2394993
+        },
+        {
+          "e": 2456657,
+          "s": 2403508
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.395294,
+            0
+          ],
+          [
+            2.395294,
+            1
+          ],
+          [
+            2.400807,
+            1
+          ],
+          [
+            2.400807,
+            0
+          ],
+          [
+            2.395294,
+            0
+          ]
+        ],
+        [
+          [
+            2.404151,
+            0
+          ],
+          [
+            2.404151,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.404151,
+            0
+          ]
+        ]
+      ],
+      "id": 32,
+      "label": "Texas",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "1861-2-1",
+          "s": "1845-12-29"
+        },
+        {
+          "e": "2013-12-31",
+          "s": "1870-3-30"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2400807,
+          "s": 2395294
+        },
+        {
+          "e": 2456657,
+          "s": 2404151
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.395658,
+            0
+          ],
+          [
+            2.395658,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.395658,
+            0
+          ]
+        ]
+      ],
+      "id": 33,
+      "label": "Iowa",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1846-12-28"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2395658
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.396176,
+            0
+          ],
+          [
+            2.396176,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.396176,
+            0
+          ]
+        ]
+      ],
+      "id": 34,
+      "label": "Wisconsin",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1848-5-29"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2396176
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.396279,
+            0
+          ],
+          [
+            2.396279,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.396279,
+            0
+          ]
+        ]
+      ],
+      "id": 35,
+      "label": "California",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1848-9-9"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2396279
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.39981,
+            0
+          ],
+          [
+            2.39981,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.39981,
+            0
+          ]
+        ]
+      ],
+      "id": 36,
+      "label": "Minnesota",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1858-5-11"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2399810
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.400089,
+            0
+          ],
+          [
+            2.400089,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.400089,
+            0
+          ]
+        ]
+      ],
+      "id": 37,
+      "label": "Oregon",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1859-2-14"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2400089
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.400804,
+            0
+          ],
+          [
+            2.400804,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.400804,
+            0
+          ]
+        ]
+      ],
+      "id": 38,
+      "label": "Kansas",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1861-1-29"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2400804
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.401676,
+            0
+          ],
+          [
+            2.401676,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.401676,
+            0
+          ]
+        ]
+      ],
+      "id": 39,
+      "label": "West Virginia",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1863-6-20"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2401676
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.401676,
+            0
+          ],
+          [
+            2.401676,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.401676,
+            0
+          ]
+        ]
+      ],
+      "id": 40,
+      "label": "Nevada",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1863-6-20"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2401676
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.403026,
+            0
+          ],
+          [
+            2.403026,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.403026,
+            0
+          ]
+        ]
+      ],
+      "id": 41,
+      "label": "Nebraska",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1867-3-1"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2403026
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.406467,
+            0
+          ],
+          [
+            2.406467,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.406467,
+            0
+          ]
+        ]
+      ],
+      "id": 42,
+      "label": "Colorado",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1876-8-1"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2406467
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.411308,
+            0
+          ],
+          [
+            2.411308,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.411308,
+            0
+          ]
+        ]
+      ],
+      "id": 43,
+      "label": "North Dakota",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1889-11-2"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2411308
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.411308,
+            0
+          ],
+          [
+            2.411308,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.411308,
+            0
+          ]
+        ]
+      ],
+      "id": 44,
+      "label": "South Dakota",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1889-11-2"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2411308
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.411314,
+            0
+          ],
+          [
+            2.411314,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.411314,
+            0
+          ]
+        ]
+      ],
+      "id": 45,
+      "label": "Montana",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1889-11-8"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2411314
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.411317,
+            0
+          ],
+          [
+            2.411317,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.411317,
+            0
+          ]
+        ]
+      ],
+      "id": 46,
+      "label": "Washington",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1889-11-11"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2411317
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.411551,
+            0
+          ],
+          [
+            2.411551,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.411551,
+            0
+          ]
+        ]
+      ],
+      "id": 47,
+      "label": "Idaho",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1890-7-3"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2411551
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.411558,
+            0
+          ],
+          [
+            2.411558,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.411558,
+            0
+          ]
+        ]
+      ],
+      "id": 48,
+      "label": "Wyoming",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1890-7-10"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2411558
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.413562,
+            0
+          ],
+          [
+            2.413562,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.413562,
+            0
+          ]
+        ]
+      ],
+      "id": 49,
+      "label": "Utah",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1896-1-4"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2413562
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.417895,
+            0
+          ],
+          [
+            2.417895,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.417895,
+            0
+          ]
+        ]
+      ],
+      "id": 50,
+      "label": "Oklahoma",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1907-11-16"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2417895
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.419407,
+            0
+          ],
+          [
+            2.419407,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.419407,
+            0
+          ]
+        ]
+      ],
+      "id": 51,
+      "label": "New Mexico",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1912-1-6"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2419407
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.419446,
+            0
+          ],
+          [
+            2.419446,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.419446,
+            0
+          ]
+        ]
+      ],
+      "id": 52,
+      "label": "Arizona",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1912-2-14"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2419446
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.436571,
+            0
+          ],
+          [
+            2.436571,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.436571,
+            0
+          ]
+        ]
+      ],
+      "id": 53,
+      "label": "Alaska",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1959-1-3"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2436571
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "css_class": "state",
+      "css_color": "#555555",
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.436801,
+            0
+          ],
+          [
+            2.436801,
+            1
+          ],
+          [
+            2.456657,
+            1
+          ],
+          [
+            2.456657,
+            0
+          ],
+          [
+            2.436801,
+            0
+          ]
+        ]
+      ],
+      "id": 54,
+      "label": "Hawaii",
+      "properties": {},
+      "relations": [],
+      "tSpanType": "periodArray",
+      "tSpans": [
+        {
+          "e": "2013-12-31",
+          "s": "1959-8-21"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2456657,
+          "s": 2436801
+        }
+      ],
+      "x": 0
+    }
+  ],
+  "projection": {
+    "atom": "date",
+    "datetype": "date",
+    "origin": "1750-01-01",
+    "scale": 1
+  },
+  "relations": [
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "5"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "6"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "7"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "8"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "9"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "10"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "11"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "12"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "13"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "14"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "15"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "16"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "17"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "18"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "19"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "20"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "21"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "22"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "23"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "24"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "25"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "26"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "27"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "28"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "29"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "30"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "31"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "32"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "33"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "34"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "35"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "36"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "37"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "38"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "39"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "40"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "41"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "42"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "43"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "44"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "45"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "46"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "47"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "48"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "49"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "50"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "51"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "52"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "53"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "has_part",
+        "54"
+      ]
+    }
+  ],
+  "rev_date": "2013-09-07",
+  "type": "PeriodCollection"
+}

@@ -1,0 +1,15 @@
+{ "type": "FeatureCollection",
+   	"id": "coll01",
+   	"features": [
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [85.84, 22.7]},
+        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
+        "properties": {"class": "Feature", "name": "Bubaneshwar", "altName":"Bubaneswar"}
+        },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
+        "when": [ {"s":"__", "ls":"__", "ee":"__", "e":"__" } ],
+        "properties": { "class": "Period", "name": "Life of Sumatrabhumi"}
+        }
+      ]
+ }

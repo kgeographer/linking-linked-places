@@ -1,0 +1,9 @@
+"id","label","s","ls","ee","e","duration","cstep","cduration","css_class","widgets","profession","highlights","during"
+313,"One thing",1923-05-05,,,1955-12-23,,,,"lifespan",245,"blue","raw, pique",
+820,"Another",1928-01-15,1928-05-25,,1960-06-01,,,,"lifespan",11,"blue","lily, berm",
+821,"A third thing",">820",,,,"20y",,,"movement",645,"blue",,
+822,"Something Else","<313",,,">820",,"5y","3m","outburst",123,"parrot","opal",
+823,"A variation",1920-11-11,,1971-01-01,1971-12-31,,,,"lifespan",4,"parrot","kudzu, raw",
+10019,"Some other variation","<820.ls",,,1965-04-12,,,,"lifespan",15,"blue","lulu, passport",
+10030,"Yet another thing",">10019",,,,"100y","15y","11m","outburst",0,"parrot","violin, umpire",""
+10031,"One very last thing",1923-05-05,,,1955-12-23,"20y",,,"outburst",0,"parrot","violin, umpire",1

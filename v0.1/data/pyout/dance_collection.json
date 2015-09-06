@@ -1,0 +1,1504 @@
+{
+  "author": [
+    {
+      "name": "Unk. (from N. Coleman)"
+    }
+  ],
+  "id": "0",
+  "label": "Life of George Dance The Younger",
+  "periods": [
+    {
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.356947,
+            0
+          ],
+          [
+            2.357311,
+            1
+          ],
+          [
+            2.387627,
+            1
+          ],
+          [
+            2.387991,
+            0
+          ],
+          [
+            2.356947,
+            0
+          ]
+        ]
+      ],
+      "id": 0,
+      "label": "George Dance the Younger's Life",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1825-12-31",
+          "ee": "1825-01-01",
+          "ls": "1741-12-31",
+          "s": "1741-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2387991,
+          "ee": 2387627,
+          "ls": 2357311,
+          "s": 2356947
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.356947,
+            0
+          ],
+          [
+            2.356947,
+            0.01
+          ],
+          [
+            2.357311,
+            0.01
+          ],
+          [
+            2.357311,
+            0
+          ],
+          [
+            2.356947,
+            0
+          ]
+        ]
+      ],
+      "id": 1,
+      "label": "Birth of G. Dance the Younger",
+      "relations": [],
+      "tSpans": [
+        {
+          "duration": "2d",
+          "during": true,
+          "e": "1741-12-31",
+          "s": "1741-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 2,
+          "e": 2357311,
+          "ee": 2357130.0,
+          "ls": 2357128.0,
+          "s": 2356947
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.387627,
+            0
+          ],
+          [
+            2.387627,
+            0.01
+          ],
+          [
+            2.387991,
+            0.01
+          ],
+          [
+            2.387991,
+            0
+          ],
+          [
+            2.387627,
+            0
+          ]
+        ]
+      ],
+      "id": 2,
+      "label": "Death of G. Dance the Younger",
+      "relations": [],
+      "tSpans": [
+        {
+          "duration": "2d",
+          "during": true,
+          "e": "1825-12-31",
+          "s": "1825-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 2,
+          "e": 2387991,
+          "ee": 2387810.0,
+          "ls": 2387808.0,
+          "s": 2387627
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.366808,
+            0
+          ],
+          [
+            2.366808,
+            0.01
+          ],
+          [
+            2.367173,
+            0.01
+          ],
+          [
+            2.367173,
+            0
+          ],
+          [
+            2.366808,
+            0
+          ]
+        ]
+      ],
+      "id": 3,
+      "label": "Founding of Royal Academy",
+      "relations": [],
+      "tSpans": [
+        {
+          "duration": "2d",
+          "during": true,
+          "e": "1768-12-31",
+          "s": "1768-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 2,
+          "e": 2367173,
+          "ee": 2366991.5,
+          "ls": 2366989.5,
+          "s": 2366808
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.375209,
+            0
+          ],
+          [
+            2.375209,
+            0.01
+          ],
+          [
+            2.375573,
+            0.01
+          ],
+          [
+            2.375573,
+            0
+          ],
+          [
+            2.375209,
+            0
+          ]
+        ]
+      ],
+      "id": 4,
+      "label": "Founding of Architects' Club",
+      "relations": [],
+      "tSpans": [
+        {
+          "duration": "2d",
+          "during": true,
+          "e": "1791-12-31",
+          "s": "1791-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 2,
+          "e": 2375573,
+          "ee": 2375392.0,
+          "ls": 2375390.0,
+          "s": 2375209
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.377766,
+            0
+          ],
+          [
+            2.377766,
+            0.01
+          ],
+          [
+            2.37813,
+            0.01
+          ],
+          [
+            2.37813,
+            0
+          ],
+          [
+            2.377766,
+            0
+          ]
+        ]
+      ],
+      "id": 5,
+      "label": "G. Dance appointed prof. of Architecture at RA",
+      "relations": [],
+      "tSpans": [
+        {
+          "duration": "2d",
+          "during": true,
+          "e": "1798-12-31",
+          "s": "1798-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 2,
+          "e": 2378130,
+          "ee": 2377949.0,
+          "ls": 2377947.0,
+          "s": 2377766
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.380687,
+            0
+          ],
+          [
+            2.380687,
+            0.01
+          ],
+          [
+            2.381051,
+            0.01
+          ],
+          [
+            2.381051,
+            0
+          ],
+          [
+            2.380687,
+            0
+          ]
+        ]
+      ],
+      "id": 6,
+      "label": "G. Dance resigns from RA",
+      "relations": [],
+      "tSpans": [
+        {
+          "duration": "2d",
+          "during": true,
+          "e": "1806-12-31",
+          "s": "1806-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "d": 2,
+          "e": 2381051,
+          "ee": 2380870.0,
+          "ls": 2380868.0,
+          "s": 2380687
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.36349,
+            0
+          ],
+          [
+            2.36352,
+            1
+          ],
+          [
+            2.365712,
+            1
+          ],
+          [
+            2.366077,
+            0
+          ],
+          [
+            2.36349,
+            0
+          ]
+        ]
+      ],
+      "id": 7,
+      "label": "George Dance The Younger's European Adventure",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": ">14",
+          "ee": "1764-12-31",
+          "ls": "1758-12-31",
+          "s": "1758-12-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2366077,
+          "ee": 2365712,
+          "ls": 2363520,
+          "s": 2363490
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.36349,
+            0
+          ],
+          [
+            2.36349,
+            1
+          ],
+          [
+            2.36352,
+            1
+          ],
+          [
+            2.36352,
+            0
+          ],
+          [
+            2.36349,
+            0
+          ]
+        ]
+      ],
+      "id": 8,
+      "label": "departs Gravesend",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1758-12-31",
+          "s": "1758-12-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2363520,
+          "s": 2363490
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.363521,
+            0
+          ],
+          [
+            2.3636,
+            1
+          ],
+          [
+            2.36363,
+            1
+          ],
+          [
+            2.36364,
+            0
+          ],
+          [
+            2.363521,
+            0
+          ]
+        ]
+      ],
+      "id": 17,
+      "label": "resides in Florence",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1759-04-30",
+          "ee": "1759-04-20",
+          "ls": "1759-03-21",
+          "s": "1759-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2363640,
+          "ee": 2363630,
+          "ls": 2363600,
+          "s": 2363521
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.363641,
+            0
+          ],
+          [
+            2.363671,
+            1
+          ],
+          [
+            2.364361,
+            1
+          ],
+          [
+            2.364361,
+            0
+          ],
+          [
+            2.363641,
+            0
+          ]
+        ],
+        [
+          [
+            2.364372,
+            0
+          ],
+          [
+            2.364402,
+            1
+          ],
+          [
+            2.365072,
+            1
+          ],
+          [
+            2.365101,
+            0
+          ],
+          [
+            2.364372,
+            0
+          ]
+        ],
+        [
+          [
+            2.365133,
+            0
+          ],
+          [
+            2.365162,
+            1
+          ],
+          [
+            2.365437,
+            1
+          ],
+          [
+            2.365498,
+            0
+          ],
+          [
+            2.365133,
+            0
+          ]
+        ]
+      ],
+      "id": 9,
+      "label": "resides in Rome",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1761-04-20",
+          "ls": "1759-05-31",
+          "s": "1759-05-01"
+        },
+        {
+          "e": "1763-04-30",
+          "ee": "1763-04-01",
+          "ls": "1761-05-31",
+          "s": "1761-05-01"
+        },
+        {
+          "e": "1764-05-31",
+          "ee": "1764-03-31",
+          "ls": "1763-06-30",
+          "s": "1763-06-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2364361,
+          "ls": 2363671,
+          "s": 2363641
+        },
+        {
+          "e": 2365101,
+          "ee": 2365072,
+          "ls": 2364402,
+          "s": 2364372
+        },
+        {
+          "e": 2365498,
+          "ee": 2365437,
+          "ls": 2365162,
+          "s": 2365133
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.364361,
+            0
+          ],
+          [
+            2.364361,
+            1
+          ],
+          [
+            2.364372,
+            1
+          ],
+          [
+            2.364402,
+            0
+          ],
+          [
+            2.364361,
+            0
+          ]
+        ]
+      ],
+      "id": 10,
+      "label": "resides in Anzio",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1761-05-31",
+          "ee": "1761-05-01",
+          "s": "1761-04-20"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2364402,
+          "ee": 2364372,
+          "s": 2364361
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.365072,
+            0
+          ],
+          [
+            2.365101,
+            1
+          ],
+          [
+            2.365133,
+            1
+          ],
+          [
+            2.365162,
+            0
+          ],
+          [
+            2.365072,
+            0
+          ]
+        ]
+      ],
+      "id": 11,
+      "label": "recuperates in Anzio",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1763-06-30",
+          "ee": "1763-06-01",
+          "ls": "1763-04-30",
+          "s": "1763-04-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2365162,
+          "ee": 2365133,
+          "ls": 2365101,
+          "s": 2365072
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.365499,
+            0
+          ],
+          [
+            2.365499,
+            1
+          ],
+          [
+            2.365528,
+            1
+          ],
+          [
+            2.365528,
+            0
+          ],
+          [
+            2.365499,
+            0
+          ]
+        ]
+      ],
+      "id": 12,
+      "label": "resides in Naples",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1764-06-30",
+          "s": "1764-06-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2365528,
+          "s": 2365499
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.365529,
+            0
+          ],
+          [
+            2.365529,
+            1
+          ],
+          [
+            2.365671,
+            1
+          ],
+          [
+            2.365671,
+            0
+          ],
+          [
+            2.365529,
+            0
+          ]
+        ]
+      ],
+      "id": 13,
+      "label": "arrives in Paris",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1764-11-20",
+          "s": "1764-07-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2365671,
+          "s": 2365529
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.365672,
+            0
+          ],
+          [
+            2.365672,
+            1
+          ],
+          [
+            2.365712,
+            1
+          ],
+          [
+            2.365712,
+            0
+          ],
+          [
+            2.365672,
+            0
+          ]
+        ]
+      ],
+      "id": 14,
+      "label": "arrives in London",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1764-12-31",
+          "s": "1764-11-21"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2365712,
+          "s": 2365672
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.361695,
+            0
+          ],
+          [
+            2.362558,
+            1
+          ],
+          [
+            2.365022,
+            1
+          ],
+          [
+            2.365027,
+            0
+          ],
+          [
+            2.361695,
+            0
+          ]
+        ]
+      ],
+      "id": 15,
+      "label": "Seven Years' War",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1763-02-15",
+          "ee": "1763-02-10",
+          "ls": "1756-05-13",
+          "s": "1754-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2365027,
+          "ee": 2365022,
+          "ls": 2362558,
+          "s": 2361695
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Event",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.365702,
+            0
+          ],
+          [
+            2.365702,
+            1
+          ],
+          [
+            2.365703,
+            1
+          ],
+          [
+            2.365703,
+            0
+          ],
+          [
+            2.365702,
+            0
+          ]
+        ]
+      ],
+      "id": 16,
+      "label": "elected to the Accademia degli Arcadi in Rome (not present)",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1764-12-22",
+          "s": "1764-12-21"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2365703,
+          "s": 2365702
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Span",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.366808,
+            0
+          ],
+          [
+            2.366808,
+            1
+          ],
+          [
+            2.376304,
+            1
+          ],
+          [
+            2.376304,
+            0
+          ],
+          [
+            2.366808,
+            0
+          ]
+        ]
+      ],
+      "id": 18,
+      "label": "employ, City of London clerk of works",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1793-12-31",
+          "s": "1768-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2376304,
+          "s": 2366808
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Span",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.376305,
+            0
+          ],
+          [
+            2.376305,
+            1
+          ],
+          [
+            2.387626,
+            1
+          ],
+          [
+            2.387991,
+            0
+          ],
+          [
+            2.376305,
+            0
+          ]
+        ]
+      ],
+      "id": 19,
+      "label": "employ, Merchant Taylors' Company, Master",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1825-12-31",
+          "ee": "1824-12-31",
+          "s": "1794-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2387991,
+          "ee": 2387626,
+          "s": 2376305
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Span",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.377766,
+            0
+          ],
+          [
+            2.377766,
+            1
+          ],
+          [
+            2.380717,
+            1
+          ],
+          [
+            2.381051,
+            0
+          ],
+          [
+            2.377766,
+            0
+          ]
+        ]
+      ],
+      "id": 20,
+      "label": "employ, Royal Academy, prof. of Architecture",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1806-12-31",
+          "ee": "1806-01-31",
+          "s": "1798-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2381051,
+          "ee": 2380717,
+          "s": 2377766
+        }
+      ],
+      "x": 0
+    },
+    {
+      "class": "Span",
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.366808,
+            0
+          ],
+          [
+            2.366808,
+            1
+          ],
+          [
+            2.387627,
+            1
+          ],
+          [
+            2.387627,
+            0
+          ],
+          [
+            2.366808,
+            0
+          ]
+        ]
+      ],
+      "id": 21,
+      "label": "member, Royal Academy",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1825-01-01",
+          "ee": "1825-01-01",
+          "s": "1768-01-01"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2387627,
+          "ee": 2387627,
+          "s": 2366808
+        }
+      ],
+      "x": 0
+    },
+    {
+      "contingent": false,
+      "estimated": false,
+      "geom": [
+        [
+          [
+            2.358315,
+            0
+          ],
+          [
+            2.358408,
+            1
+          ],
+          [
+            2.358772,
+            1
+          ],
+          [
+            2.358953,
+            0
+          ],
+          [
+            2.358315,
+            0
+          ]
+        ]
+      ],
+      "id": 22,
+      "label": "example",
+      "relations": [],
+      "tSpans": [
+        {
+          "e": "1746-06-30",
+          "ee": "1745-12-31",
+          "eee": [
+            [
+              0.2,
+              0.35
+            ],
+            [
+              0.7,
+              0.2
+            ],
+            [
+              0.9,
+              0.08
+            ]
+          ],
+          "ls": "1745-01-01",
+          "s": "1744-09-30"
+        }
+      ],
+      "tSpansP": [
+        {
+          "e": 2358953,
+          "ee": 2358772,
+          "ls": 2358408,
+          "s": 2358315
+        }
+      ],
+      "x": 0
+    }
+  ],
+  "projection": {
+    "atom": "date",
+    "calendar": "gregorian",
+    "datetype": "date",
+    "origin": "1900-01-01",
+    "scale": 1
+  },
+  "relations": [
+    {
+      "id": 0,
+      "rel": [
+        "0",
+        "occurred_at",
+        "<agg(loc(events(0-21)))>"
+      ]
+    },
+    {
+      "id": 1,
+      "rel": [
+        "1",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 2,
+      "rel": [
+        "2",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 3,
+      "rel": [
+        "3",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 4,
+      "rel": [
+        "4",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 5,
+      "rel": [
+        "5",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 6,
+      "rel": [
+        "6",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 7,
+      "rel": [
+        "7",
+        "occurred_at",
+        "<agg(loc(events(8-14, 17)))>"
+      ]
+    },
+    {
+      "id": 8,
+      "rel": [
+        "8",
+        "occurred_at",
+        "Gravesend, England"
+      ]
+    },
+    {
+      "id": 17,
+      "rel": [
+        "17",
+        "occurred_at",
+        "Florence, Italy"
+      ]
+    },
+    {
+      "id": 9,
+      "rel": [
+        "9",
+        "occurred_at",
+        "77 Strada Felice, Rome, Italy"
+      ]
+    },
+    {
+      "id": 10,
+      "rel": [
+        "10",
+        "occurred_at",
+        "Anzio, Italy"
+      ]
+    },
+    {
+      "id": 11,
+      "rel": [
+        "11",
+        "occurred_at",
+        "Anzio, Italy"
+      ]
+    },
+    {
+      "id": 12,
+      "rel": [
+        "12",
+        "occurred_at",
+        "Naples, Italy"
+      ]
+    },
+    {
+      "id": 13,
+      "rel": [
+        "13",
+        "occurred_at",
+        "Paris, France"
+      ]
+    },
+    {
+      "id": 14,
+      "rel": [
+        "14",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 15,
+      "rel": [
+        "15",
+        "occurred_at",
+        "<agg(look it up on Wikipedia)>"
+      ]
+    },
+    {
+      "id": 16,
+      "rel": [
+        "16",
+        "occurred_at",
+        "London, England"
+      ]
+    },
+    {
+      "id": 17,
+      "rel": [
+        "0",
+        "has_part",
+        "1"
+      ]
+    },
+    {
+      "id": 18,
+      "rel": [
+        "0",
+        "has_part",
+        "2"
+      ]
+    },
+    {
+      "id": 19,
+      "rel": [
+        "0",
+        "has_part",
+        "3"
+      ]
+    },
+    {
+      "id": 20,
+      "rel": [
+        "0",
+        "has_part",
+        "4"
+      ]
+    },
+    {
+      "id": 21,
+      "rel": [
+        "0",
+        "has_part",
+        "5"
+      ]
+    },
+    {
+      "id": 22,
+      "rel": [
+        "0",
+        "has_part",
+        "6"
+      ]
+    },
+    {
+      "id": 23,
+      "rel": [
+        "0",
+        "has_part",
+        "7"
+      ]
+    },
+    {
+      "id": 24,
+      "rel": [
+        "0",
+        "has_part",
+        "16"
+      ]
+    },
+    {
+      "id": 25,
+      "rel": [
+        "0",
+        "has_part",
+        "18"
+      ]
+    },
+    {
+      "id": 26,
+      "rel": [
+        "0",
+        "has_part",
+        "19"
+      ]
+    },
+    {
+      "id": 27,
+      "rel": [
+        "0",
+        "has_part",
+        "20"
+      ]
+    },
+    {
+      "id": 28,
+      "rel": [
+        "0",
+        "has_part",
+        "21"
+      ]
+    },
+    {
+      "id": 29,
+      "rel": [
+        "7",
+        "has_part",
+        "8"
+      ]
+    },
+    {
+      "id": 30,
+      "rel": [
+        "7",
+        "has_part",
+        "9"
+      ]
+    },
+    {
+      "id": 31,
+      "rel": [
+        "7",
+        "has_part",
+        "10"
+      ]
+    },
+    {
+      "id": 32,
+      "rel": [
+        "7",
+        "has_part",
+        "11"
+      ]
+    },
+    {
+      "id": 33,
+      "rel": [
+        "7",
+        "has_part",
+        "12"
+      ]
+    },
+    {
+      "id": 34,
+      "rel": [
+        "7",
+        "has_part",
+        "13"
+      ]
+    },
+    {
+      "id": 35,
+      "rel": [
+        "7",
+        "has_part",
+        "14"
+      ]
+    },
+    {
+      "id": 36,
+      "rel": [
+        "7",
+        "has_part",
+        "17"
+      ]
+    }
+  ],
+  "rev_date": "2013-11-29",
+  "type": "PeriodCollection"
+}
