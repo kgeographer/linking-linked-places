@@ -3,6 +3,7 @@
 # writeEm() generates 4 files in data/pyout incl. data+'_geom_d3.json' (labeled geometries for d3 render)
 # mimics parsing algorithm in timeline.js (e. meeks)
 # modify values of data, loc and locationHash to suit
+from settings import *
 from __future__ import division # need to keep julians floats
 import os, sys, re, math, codecs, pickle
 from shapely.geometry import Polygon, MultiPolygon
@@ -11,8 +12,6 @@ from matplotlib import pyplot
 from jdcal import gcal2jd, jd2gcal
 import simplejson as json
 data = 'axial' # topotime_format, pleiades98, axial, Dance, us_history, ww2  
-loc = 'home' # home laptop work
-# locationHash = {"home":"{a path}", "laptop":"{a path}", "work":"{a path}"}
 durationHash = {"d": 1, "h": 1/24, "w": 7, "m": 365.25/12, "y": 365.25};
 uncertaintyValue = 365;  
 tsOperatorHash = { "<": {"subspan": "s", "uncertaintyPoint": {"s": -1,"e": .001}}, 
@@ -24,7 +23,7 @@ newPeriods = []
 
 def init():
    global atom, collection, periods, pds, newCollection, wd
-   wd = locationHash[loc]
+   wd = base_dir # from local_settings
    os.chdir(wd)
 
    fn=wd + 'data/' + data + '.json'
@@ -84,7 +83,7 @@ def toJul(d,n,m):
          #print 'not a span, d='+d+', n='+n+', m='+m; 
          jval = None;
    if jval == None:
-      print d, m, n+' resulted in None'
+      print(d, m, n+' resulted in None')
    #else:
       #jval=jval/1000000; for scaling graphic
    return jval;
@@ -476,9 +475,9 @@ def writeEm():
 def checkEm():
    for c in collShapes:
       if len(c) >0 and not (c['shapes'].is_valid): 
-         print str(c['id']) + ' is not a valid geometry'
+         print(str(c['id']) + ' is not a valid geometry')
       else:
-         print 'valid geometry'
+         print('valid geometry')
 
 init()
 doEm()

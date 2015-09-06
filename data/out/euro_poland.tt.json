@@ -301,7 +301,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Slav Polan Lordships"
       },
       "type": "Feature",
       "when": {
@@ -849,7 +850,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Lordships of the Polans and Vistulans"
       },
       "type": "Feature",
       "when": {
@@ -1925,7 +1927,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Duchy of Poland"
       },
       "type": "Feature",
       "when": {
@@ -2265,7 +2268,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Principality of Polotsk"
       },
       "type": "Feature",
       "when": {
@@ -4233,7 +4237,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Kingdom of Poland"
       },
       "type": "Feature",
       "when": {
@@ -5613,7 +5618,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Principality of Polotsk"
       },
       "type": "Feature",
       "when": {
@@ -6413,7 +6419,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Principality of Polotsk"
       },
       "type": "Feature",
       "when": {
@@ -11269,7 +11276,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "United Kingdom of Poland and Lithuania"
       },
       "type": "Feature",
       "when": {
@@ -16829,7 +16837,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Kingdom of Poland"
       },
       "type": "Feature",
       "when": {
@@ -24785,7 +24794,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Commonwealth of the Crown of the Polish Kingdom and the Grand Duchy of Lithuania"
       },
       "type": "Feature",
       "when": {
@@ -33123,7 +33133,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Commonwealth of the Crown of the Polish Kingdom and the Grand Duchy of Lithuania"
       },
       "type": "Feature",
       "when": {
@@ -37327,7 +37338,8 @@
         "type": "GeometryCollection"
       },
       "properties": {
-        "featureType": "Sovereign states: Poland 800-2000"
+        "featureType": "sovereign_state",
+        "label": "Republic of Poland"
       },
       "type": "Feature",
       "when": {
@@ -37336,8 +37348,8 @@
     }
   ],
   "properties": {
-    "id": "poland.geojson",
-    "label": "Admin bounds collection: poland.geojson"
+    "id": "euro_poland",
+    "label": "Admin bounds collection: euro_poland"
   },
   "type": "FeatureCollection"
 }

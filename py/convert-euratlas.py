@@ -3,14 +3,14 @@ import json, os, re, codecs
 # set wd in a local_settings.py file
 from settings import *
 os.chdir(wd)
-import ttutil_geojson
-from ttutil_geojson import Feature, FeatureCollection, Geometry #, \
+import ttutil_euratlas
+from ttutil_euratlas import Feature, FeatureCollection, Geometry #, \
       #findCountry, makeShape, parseWhen
 from shapely.geometry import  \
      mapping, shape, MultiPolygon, Polygon
 from shapely.ops import unary_union
 # MultiPolygon shapefiles
-files = ['poland.geojson']
+files = ['euro_poland']
 src = 'Euratlas' # TODO copyright
 
 def parseWhen(year):   
@@ -27,8 +27,8 @@ def parseWhen(year):
 
 for x in range(len(files)):
    pcoll = files[x]
-   fn=basedir+'data/euratlas/'+files[x]
-   w1 = codecs.open(basedir+'data/pyout/euro_'+ \
+   fn=base_dir+'data/in/euratlas/'+files[x]+'.geojson'
+   w1 = codecs.open(base_dir+'data/out/'+ \
                     pcoll+'.tt.json','w','utf-8')
 
    with codecs.open(fn,mode='r',encoding='utf8') as f:
@@ -42,7 +42,7 @@ for x in range(len(files)):
       egeom = data[y]['geometry']
       # when object
       timespan = parseWhen(eprops['year'])
-      f = Feature("Sovereign states: Poland 800-2000") # the Euratlas term
+      f = Feature(eprops['long_name']) # the Euratlas label
       f.geometry['geometries'][0] = egeom
       f.geometry['geometries'][0]['when'] = ({"timespans":[timespan]})
       # transfer all properties verbatim

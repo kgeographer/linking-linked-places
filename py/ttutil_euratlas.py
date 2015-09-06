@@ -15,9 +15,10 @@ class FeatureCollection(object):
                         sort_keys=True, indent=2)
 
 class Feature(object):
-   def __init__(self, ftype):
+   def __init__(self, label):
       self.type = "Feature"
-      self.properties = { "featureType": ftype}
+      self.properties = { "featureType": 'sovereign_state', \
+                          "label": label }
       self.when = {"timespans": []}
       self.geometry = \
          {"type":"GeometryCollection", \
