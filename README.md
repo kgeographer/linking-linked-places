@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-Topotime (v0.1, a start)
-=======================
-=======
 Topotime v0.2 (tt-geojson)
 ==========================
->>>>>>> tt-geojson
 
 __topo__ (_from Greek τοπο-, a combining form of **τόπος** place_)
 
@@ -16,7 +11,7 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software for
 [Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/euro_poland.tt.json)  
 
 **PeriodO collections**  
-Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo_p0tns5v.tt.json); PeriodO source: http://n2t.net/ark:/99152/p0tns5v
+Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo_p0tns5v.tt.json); PeriodO data source: http://n2t.net/ark:/99152/p0tns5v
 
 
 **Itineraries**  
