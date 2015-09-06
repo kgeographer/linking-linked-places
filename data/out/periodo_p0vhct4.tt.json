@@ -3014,9 +3014,9 @@
           ],
           "spatialCoverage": [
             {
-              "id": "http://dbpedia.org/resource/Turkey",
+              "id": "http://dbpedia.org/resource/Gordium",
               "iso3166": "TR",
-              "label": "Turkey"
+              "label": "Gordion"
             }
           ],
           "spatialCoverageDescription": "none"
@@ -3025,9 +3025,9 @@
       },
       "properties": {
         "featureType": "Feature",
-        "id": "p0vhct48rsx",
+        "id": "p0vhct4j2w4",
         "label": {
-          "eng-latn": "Early Iron Age"
+          "eng-latn": "Roman"
         }
       },
       "type": "Feature",
@@ -3035,157 +3035,209 @@
         "timespans": [
           {
             "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Early Iron Age"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Late Bronze Age"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Initial Early Phrygian"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Medieval"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Middle Bronze Age"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Early Phrygian"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Early Phrygian Destruction"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Later Hellenistic"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Early Bronze Age"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
-            },
-            "label": {
-              "eng-latn": "Early Hellenistic"
-            },
-            "start": {
-              "earliest": "-1179"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-0949"
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
             },
             "label": {
               "eng-latn": "Roman"
             },
             "start": {
-              "earliest": "-1179"
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
             },
             "type": "throughout"
           },
           {
             "end": {
-              "latest": "-0949"
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Early Phrygian"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
             },
             "label": {
               "eng-latn": "Late Phrygian"
             },
             "start": {
-              "earliest": "-1179"
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
             },
             "type": "throughout"
           },
           {
             "end": {
-              "latest": "-0949"
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Initial Early Phrygian"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Early Hellenistic"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Early Bronze Age"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Later Hellenistic"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Middle Bronze Age"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Early Iron Age"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
             },
             "label": {
               "eng-latn": "Middle Phrygian"
             },
             "start": {
-              "earliest": "-1179"
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Medieval"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Late Bronze Age"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "0401",
+              "label": "5th century AD",
+              "latest": "0500"
+            },
+            "label": {
+              "eng-latn": "Early Phrygian Destruction"
+            },
+            "start": {
+              "earliest": "0001",
+              "label": "Early 1st century AD",
+              "latest": "0034"
             },
             "type": "throughout"
           }

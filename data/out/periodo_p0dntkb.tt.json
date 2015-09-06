@@ -2835,9 +2835,9 @@
       },
       "properties": {
         "featureType": "Feature",
-        "id": "p0dntkbcv4m",
+        "id": "p0dntkbc6tn",
         "label": {
-          "ita-latn": "Fase I"
+          "ita-latn": "Fase II"
         }
       },
       "type": "Feature",
@@ -2845,43 +2845,49 @@
         "timespans": [
           {
             "end": {
-              "earliest": "-0599",
-              "latest": "-0566"
-            },
-            "label": {
-              "ita-latn": "Fase I"
-            },
-            "start": {
-              "earliest": "-0666",
-              "latest": "-0633"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "earliest": "-0599",
-              "latest": "-0566"
+              "earliest": "-0499",
+              "label": "beginning of the 5th century B.C.",
+              "latest": "-0466"
             },
             "label": {
               "ita-latn": "Fase II"
             },
             "start": {
-              "earliest": "-0666",
-              "latest": "-0633"
+              "earliest": "-0599",
+              "label": "beginning of the 6th century B.C.",
+              "latest": "-0566"
             },
             "type": "throughout"
           },
           {
             "end": {
-              "earliest": "-0599",
-              "latest": "-0566"
+              "earliest": "-0499",
+              "label": "beginning of the 5th century B.C.",
+              "latest": "-0466"
             },
             "label": {
               "ita-latn": "Fase III"
             },
             "start": {
-              "earliest": "-0666",
-              "latest": "-0633"
+              "earliest": "-0599",
+              "label": "beginning of the 6th century B.C.",
+              "latest": "-0566"
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "earliest": "-0499",
+              "label": "beginning of the 5th century B.C.",
+              "latest": "-0466"
+            },
+            "label": {
+              "ita-latn": "Fase I"
+            },
+            "start": {
+              "earliest": "-0599",
+              "label": "beginning of the 6th century B.C.",
+              "latest": "-0566"
             },
             "type": "throughout"
           }

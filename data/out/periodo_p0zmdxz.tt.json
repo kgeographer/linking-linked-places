@@ -691,9 +691,9 @@
       },
       "properties": {
         "featureType": "Feature",
-        "id": "p0zmdxz65fd",
+        "id": "p0zmdxzn9g9",
         "label": {
-          "eng-latn": "Middle Bronze Age"
+          "eng-latn": "Roman period"
         }
       },
       "type": "Feature",
@@ -701,118 +701,127 @@
         "timespans": [
           {
             "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "Middle Bronze Age"
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "\"Ubaid\""
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "Pottery Neolithic"
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "Pre-pottery Neolithic"
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "Late Bronze Age"
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "\"Halaf\" Chalcolithic"
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
-            },
-            "label": {
-              "eng-latn": "Early Bronze Age"
-            },
-            "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "latest": "-1649"
+              "label": "1 B.C.E.",
+              "latest": "0000"
             },
             "label": {
               "eng-latn": "Roman period"
             },
             "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
+              "earliest": "-0099",
+              "label": "100 B.C.E."
             },
             "type": "throughout"
           },
           {
             "end": {
-              "latest": "-1649"
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "Middle Bronze Age"
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "Pottery Neolithic"
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "\"Ubaid\""
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "Late Bronze Age"
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "\"Halaf\" Chalcolithic"
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "Pre-pottery Neolithic"
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
+            },
+            "label": {
+              "eng-latn": "Early Bronze Age"
+            },
+            "start": {
+              "earliest": "-0099",
+              "label": "100 B.C.E."
+            },
+            "type": "throughout"
+          },
+          {
+            "end": {
+              "label": "1 B.C.E.",
+              "latest": "0000"
             },
             "label": {
               "eng-latn": "Persian period"
             },
             "start": {
-              "earliest": "-1999",
-              "latest": "-1666"
+              "earliest": "-0099",
+              "label": "100 B.C.E."
             },
             "type": "throughout"
           }

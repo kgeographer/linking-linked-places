@@ -30,21 +30,36 @@ def makeShape(code): #takes a 2-letter code
       p=MultiPolygon(shape(geom))
    return p
 
+# is temporal expression single year?
 def existsYear(y):
    if y['in'].get('year') is not None:
+      return True
+   else:
+      return False
+
+# does temporal expression have label?
+def existsLabel(l):
+   if l.get('label') is not None:
       return True
    else:
       return False
    
 def parseWhen(start,end,label):   
    ts = {}
+   
+   # build start expression
    s = {"earliest":start['in']['earliestYear'], \
-           "latest": start['in']['latestYear']} if not existsYear(pstart) \
+           "latest": start['in']['latestYear']} \
+      if not existsYear(pstart) \
          else {"earliest":start['in']['year']}
-   # print(s)
+   if existsLabel(start): s['label'] = start['label']
+   
+   # build end expression
    e = {"earliest":end['in']['earliestYear'],
            "latest":end['in']['latestYear']}  if not existsYear(pstop) \
-         else {"latest":end['in']['year']}    
+         else {"latest":end['in']['year']}
+   if existsLabel(end): e['label'] = end['label']
+   
    ts['start'] = s
    ts['end'] = e
    ts['label'] = label
@@ -69,7 +84,7 @@ def findFeature(obj,attrib):
       x = None
 
    
-
+# write Topotime for each file
 for x in range(len(files)):
    pcoll = files[x]
    fn=base_dir+'data/in/periodo/'+files[x]+'.jsonld'
