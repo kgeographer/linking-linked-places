@@ -59,7 +59,7 @@ def toJul(d,n,m):
          else: jval = gcal2jd(int(month.group(1)),int(month.group(2)),31)[0]+ \
             gcal2jd(int(month.group(1)),int(month.group(2)),31)[1];
       else:
-         print 'not year or month - no way to make span';
+         print('not year or month - no way to make span')
       return jval; 
    else : # sDate or eDate (start or end)
       if year: 

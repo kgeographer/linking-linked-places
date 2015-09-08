@@ -1,7 +1,16 @@
 {
   "features": [
     {
+      "type": "Feature",
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Slav Polan Lordships"
+        },
+      "when": {
+        "timespans": []
+        },
       "geometry": {
+        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -297,16 +306,7 @@
               ]
             }
           }
-        ],
-        "type": "GeometryCollection"
-      },
-      "properties": {
-        "featureType": "sovereign_state",
-        "label": "Slav Polan Lordships"
-      },
-      "type": "Feature",
-      "when": {
-        "timespans": []
+        ]
       }
     },
     {

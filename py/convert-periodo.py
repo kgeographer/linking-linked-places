@@ -9,7 +9,7 @@ from shapely.geometry import  \
 from shapely.ops import unary_union
 # PeriodO collections
 files = ['p0tns5v','p0dntkb','p0vhct4','p0zmdxz']
-# files = ['p0vhct4']
+# files = ['p0dntkb']
 src = 'http://n2t.net/ark:/99152/' # periodo URI prefix
 
 # load countries to grab country geom by 2-letter code
@@ -105,7 +105,10 @@ for x in range(len(files)):
       # isolate & store labels to find distinct
       geo = []
       for y in range(len(sc)):
-         geo.append(sc[y]['iso3166'])
+         geo.append(sc[y]['iso3166'])         # get full periodo temporal objects
+      pstart = data[key]['start']
+      pstop = data[key]['stop'] 
+      parseWhen(pstart,pstop,'')
       # only write distinct geometry once
       if sorted(geo) in allCoverages:
          print('found '+str(sorted(geo)) +' from def. '+str(key)+ \
@@ -125,9 +128,6 @@ for x in range(len(files)):
          f.geometry['properties']['spatialCoverage'] = sc
          f.geometry['properties']['spatialCoverageDescription'] = sd
          f.geometry['coordinates'] = (buildGeometry(sc))
-         # get full periodo temporal objects
-         pstart = data[key]['start']
-         pstop = data[key]['stop'] 
          f.when['timespans'].append(parseWhen(pstart,pstop,data[key]['originalLabel']))
          # add complete feature
          fc.features.append(f); print(str(len(fc.features))+' features added')

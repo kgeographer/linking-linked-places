@@ -1,5 +1,6 @@
 # verify, read and interpret a topotime data file
 import json, os, re, codecs
+import datetime
 from collections import Counter
 from settings import *
 os.chdir(wd)
@@ -11,7 +12,7 @@ from shapely.geometry import  \
 #from shapely.ops import unary_union
 # PeriodO collections
 files = ['itinerary', 'multi-type','periodo_p0zmdxz','periodo_p0tns5v','periodo_p0vhct4', \
-         'periodo_p0dntkb','euro_poland']
+         'periodo_p0dntkb','euro_poland','periodo_tester']
 
 def all_same(items):
    return all(x == items[1] for x in items)
@@ -21,8 +22,14 @@ def all_same(items):
 #/ open a results file
 #/ w1 = codecs.open(basedir+'data/out/tt-periodo_'+pcoll+'.json','w','utf-8')
 
+def coalesce(dict,el):
+   if el in dict:
+      return dict[el]
+   else:
+      return ''
+   
 #/ load a file
-fn = base_dir+'data/out/'+files[6]+'.tt.json'
+fn = base_dir+'data/out/'+files[7]+'.tt.json'
 
 with open(fn) as fc:
    geomArray = []
@@ -31,15 +38,29 @@ with open(fn) as fc:
       geomType = f['geometry']['type']
       geomArray.append(f['geometry']['type'])
       if geomType != 'GeometryCollection':
-         # it's a single geom w >=1 when
+         # it's a single geom w/ 'when'
          timespans = f['when']['timespans']
+         for t in timespans:
+            if not 'start' in t:
+               raise ValueError('Ack! No start, no can do')
+            else:
+               s = [str(t.get('start')['earliest']), \
+                    str(coalesce(t.get('start'),'latest'))]   
+            e = ['',str(datetime.date.today())] if not 'end' in t else \
+               [str(coalesce(t.get('end'),'earliest')), str(t.get('end')['latest'])]              
+            print(s,e)
+            
+            
          print(f['properties']['id'], timespans)
       else: # it's a GeometryCollection
          for g in f['geometry']['geometries']:
             geomArray.append(g['type'])
             timespans = g['when']['timespans']
-            print(g['properties']['id'], \
-                  timespans)
+            for t in timespans:
+               s = t['start']; e = t['end']
+               print(s,e)
+               #print(g['properties']['id'], \
+                  #timespans)
    elements = Counter(geomArray)
    print('\n***\nCollection summary: ')
    for e in elements.keys(): 

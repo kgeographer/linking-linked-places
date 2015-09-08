@@ -6351,14 +6351,28 @@
       },
       "properties": {
         "featureType": "Feature",
-        "id": "p0tns5v946v",
+        "id": "p0tns5vkwc5",
         "label": {
-          "eng-latn": "Assyrian Imperial"
+          "eng-latn": "Iron Age I (Early Iron Age)"
         }
       },
       "type": "Feature",
       "when": {
         "timespans": [
+          {
+            "end": {
+              "label": "900 BC",
+              "latest": "-0899"
+            },
+            "label": {
+              "eng-latn": "Iron Age I (Early Iron Age)"
+            },
+            "start": {
+              "earliest": "-1099",
+              "label": "1100 BC"
+            },
+            "type": "throughout"
+          },
           {
             "end": {
               "label": "610 BC",
@@ -6375,31 +6389,15 @@
           },
           {
             "end": {
-              "label": "610 BC",
-              "latest": "-0609"
+              "label": "600 BC",
+              "latest": "-0599"
             },
             "label": {
               "eng-latn": "Iron Age II (Middle Iron Age)"
             },
             "start": {
-              "earliest": "-0929",
-              "label": "930 BC"
-            },
-            "type": "throughout"
-          },
-          {
-            "end": {
-              "earliest": "-0599",
-              "label": "sixth century BC",
-              "latest": "-0500"
-            },
-            "label": {
-              "eng-latn": "Iron Age I (Early Iron Age)"
-            },
-            "start": {
-              "earliest": "-1199",
-              "label": "twelfth century BC",
-              "latest": "-1100"
+              "earliest": "-0899",
+              "label": "900 BC"
             },
             "type": "throughout"
           }
@@ -11587,17 +11585,17 @@
           },
           {
             "end": {
-              "earliest": "-0599",
-              "label": "sixth century BC",
-              "latest": "-0500"
+              "earliest": "-0033",
+              "label": "end of the first century BC",
+              "latest": "0000"
             },
             "label": {
               "eng-latn": "Iron Age"
             },
             "start": {
-              "earliest": "-1199",
-              "label": "twelfth century BC",
-              "latest": "-1100"
+              "earliest": "-0399",
+              "label": "fourth century BC",
+              "latest": "-0300"
             },
             "type": "throughout"
           }
