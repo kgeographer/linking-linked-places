@@ -9,6 +9,7 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software for
 #### *_Bag of Features approach_*
 **Itineraries (from Orbis Initiative repo)**  
 [Venitian Incanto Trade: Voyages, 1283-1453 CE](https://github.com/kgeographer/oi/blob/master/data/incanto_segments_r.geojson)  
+[Venitian Incanto Trade: Single voyage (Venice-Armenia, 1301 CE)](https://github.com/kgeographer/oi/blob/master/data/segments_r_sample.geojson)  
 [Venitian Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/oi/blob/master/data/incanto_places.geojson)  
 The Pilgrimage of Xuanzang, 629-646 CE
 
