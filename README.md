@@ -3,18 +3,19 @@ Topotime v0.2 (tt-geojson)
 
 __topo__ (_from Greek τοπο-, a combining form of **τόπος** place_)
 
-Topotime is a data model, JSON data format, D3 timeline layout, and software for representing and computing over complex spatial-temporal phenomena (places, periods, and events), particularly for historical applications where extents are uncertain. Whereas Topotime v0.1 focused on time, Topotime v0.2 will model the spatial and temporal attributes of geographic features co-equally, as an extension to _GeoJSON_ and _GeoJSON-LD_. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome.
+Topotime is a data model, JSON data format, D3 timeline layout, and software for representing and computing over complex spatial-temporal phenomena (places, periods, and events), particularly for historical applications where extents are uncertain. Whereas Topotime v0.1 focused on time, Topotime v0.2 will model the spatial and temporal attributes of geographic features co-equally, as an extension to _GeoJSON_. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome.
 
 ###Example data files/maps (in progress)
 #### *_Bag of Features approach_*
-**Itineraries**  
-Venitian Incanto Trade, 1283-1453 CE  
+**Itineraries (from Orbis Initiative repo)**  
+[Venitian Incanto Trade: Voyages, 1283-1453 CE](https://github.com/kgeographer/oi/data/incanto_segments_r.geojson)  
+[Venitian Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/oi/data/incanto_places.geojson)  
 The Pilgrimage of Xuanzang, 629-646 CE
 
 ____________
 #### *_GeometryCollection approach_*
 **Euratlas time-indexed admin units** [1]  
-[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/euro_poland.tt.json)  
+[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/euro_poland.tt.json)
 
 **PeriodO collections**  
 Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo_p0tns5v.tt.json); PeriodO data source: http://n2t.net/ark:/99152/p0tns5v

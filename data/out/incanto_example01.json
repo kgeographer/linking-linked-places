@@ -1,5 +1,8 @@
 {
   "type": "FeatureCollection",
+  "id": "oi_incanto-1005",
+  "title": "Incanto Trade: Venice-Armenia, 1301 CE",
+  "@type": "Maritime Voyage",
   "crs": {
     "type": "name",
     "properties": {
