@@ -7,11 +7,16 @@ Topotime is a data model, JSON data format, D3 timeline layout, and software for
 
 ###Example data files/maps (in progress)
 #### *_Bag of Features approach_*
-**Itineraries (from Orbis Initiative repo)**  
-[Venitian Incanto Trade: Voyages, 1283-1453 CE](https://github.com/kgeographer/oi/blob/master/data/incanto_segments_r.geojson)  
-[Venitian Incanto Trade: Single voyage (Venice-Armenia, 1301 CE)](https://github.com/kgeographer/oi/blob/master/data/segments_r_sample.geojson)  
-[Venitian Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/oi/blob/master/data/incanto_places.geojson)  
-The Pilgrimage of Xuanzang, 629-646 CE
+**Itineraries (from Orbis Initiative repo)**     
+[The Pilgrimage of Xuanzang, 629-646 CE](https://github.com/kgeographer/oi/blob/master/data/xuanzang_way-collection.geojson)  
+[Incanto Trade: 1 voyage, w/places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_1voyage-w-places.geojson)  
+[Incanto Trade: 1 voyage, no places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_1yoyage-no-places.geojson)  
+[Incanto Trade: 840 voyages in 3523 segments, 1283-1453 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_840voyages.geojson)  
+[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/oi/blob/master/data/incanto_places.geojson)  
+
+Flows:  
+[Incanto Trade: Total ships per segment, 1282-1453](https://github.com/kgeographer/oi/blob/master/data/incanto_total-ships.geojson)  
+[Incanto Trade: Total ships per segment (w/places), 1282-1453](https://github.com/kgeographer/oi/blob/master/data/incanto_flow-features-w-places.geojson)
 
 ____________
 #### *_GeometryCollection approach_*
