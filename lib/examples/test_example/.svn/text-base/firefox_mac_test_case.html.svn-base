@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Firefox Mac offsetWidth bug</title>
+
+</head>
+<body>
+<div id="body" style="font-family: Helvetica, Arial, sans serif; font-size: 8pt;">
+    <h1>Firefox (Mac) bug</h1>
+    
+    <p>On Firefox (Mac), many of the labels in <a href='http://simile-widgets.googlecode.com/svn/timeline/trunk/src/webapp/examples/jfk/jfk.html'>Timeline widgets</a> are wrapped. None of the labels are wrapped on Firefox (Windows), Safari (Mac or Windows), IE 7 or Chrome (Windows) </p>
+    <p>The specific bug: (only occurs with Firefox / Mac)
+    <ol>
+    <li>Use font Helvetica with size 8pt</li>
+    <li>fill a div with text. The div has style position = absolute.</li>
+    <li>let w = the div's offsetWidth value</li>
+    <li>In a second div, set its width to w</li>
+    <li>Fill the second div with the exact same text</li>
+    <li><b>Problem:</b> On Firefox / Mac, the second div is not wide enough and it wraps the text</li>
+    </ol>
+   
+<b>Test case: neither line below should be wrapped. But the second one is on Firefox/Mac. The test is fine on other browsers..</b>
+
+    <div id="testdiv1"></div>
+    <div><p><br/> <br/></p></div>
+    <div id="testdiv2">This is a test</div>
+    <script>
+        var div1 = document.getElementById("testdiv1");
+        var visible_div = document.getElementById("testdiv2");
+        
+        var text = "This is a test. It is only a test";
+          
+        div1.style.position = 'absolute';
+        div1.innerHTML = text;
+        
+        visible_div.style.width = div1.offsetWidth + "px";        
+        visible_div.innerHTML = text;
+    </script>
+
+
+<p>
+See the source of this page for more info. It is short and sweet.
+</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>tttest.html</title>
+    <script>
+     Timeline_ajax_url="js/timeline_2.3.0/timeline_ajax/simile-ajax-api.js";
+     Timeline_urlPrefix='js/timeline_2.3.0/timeline_js/';
+     Timeline_parameters='bundle=true';
+    </script>
+    <script src="js/timeline_2.3.0/timeline_js/timeline-api.js" type="text/javascript"> </script>
+    <script src="js/tttest.js" type="text/javascript"> </script>
+    <link rel='stylesheet' href='css/tttest.css' type='text/css' /> <!-- load your css after Timeline's -->
+    <script src="js/topotime-map.js"></script>
+  </head>
+  <body onload="initTimeline();" onresize="onResize();">
+    <div id="content">
+      <div id="map"></div>
+      <div id="tl" class="timeline-default" ></div>
+    </div>
+
+    <div id="footer"> </div>
+  </body>
+  <!-- <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script> -->
+
+</html>
+<!-- <p>This test uses <a href="test.js">JSON data</a>.</p>
+<p>It demonstrates use of various event attributes <i>color</i>, <i>textColor</i>, <i>tapeImage</i>, and <i>tapeRepeat</i>. <a href='http://code.google.com/p/simile-widgets/wiki/Timeline_EventSources'>Details</a></p>
+<p>Test numbers:
+  <ol>
+      <li>Only start date</li>
+      <li>Start and end dates. Combinations of isDuration</li>
+      <li>Red tapes. Events without titles. Start and end dates. Combinations of isDuration</li>
+      <li>Caption and tapeImage attributes. The striped tape. Hover over the label or tape to view the caption.</li>
+      <li>Really long labels. They should not wrap</li>
+      <li>Permutations of bad dates. Test that error messages are shown in all browsers including IE</li>
+      <li>Event has classname attribute. CSS is used to modify the event's display. For event with classname of special_event, use css selectors:
+      <ul><li>.tape-special_event for the tape in a main band</li>
+          <li>.label-special_event for the label</li>
+          <li>.icon-special_event for the icon</li>
+          <li>.highlight-special_event for the highlight div</li>
+          <li>In addition to the above, the elements also have a class of just special_event. So the selector .special_event can be used generically for all of the above elements, depending on your goals.</li>
+          <li>The events in the overview band will have class .small-special_event for the tape or tick.</li>
+      </ul>
+  </ol>
+
+  Additional features demonstrated:
+  <ul>
+    <li>Default Timeline <i>Theme</i> is modified (see html file source).</li>
+    <li>Modified theme: thicker event tapes and increased track size appropriately to match.</li>
+    <li>Modified theme: Popup bubble dimensions set explicitly.</li>
+  </ul>
+</p>
+
+<p>Timeline version <span id='tl_ver'></span>.</p>
+<script>Timeline.writeVersion('tl_ver')</script>
+
+<p>Stripe courtesy of <a href='http://www.stripegenerator.com/'>Stripe Generator</a>. -->

@@ -1,0 +1,19 @@
+/* tttest.css */
+html, body { height: 100%;}
+
+#content {
+  position:relative;
+}
+
+#map {
+  min-height: 65%;
+  background: aliceblue;
+}
+
+#tl {
+  height: 30%;
+  /*position: absolute;
+  bottom: 0;*/
+}
+
+.special_event {font-variant: small-caps; font-weight: bold;}

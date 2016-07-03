@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <title>SIMILE | Timeline | Examples | Test Example 2</title>
+    <link rel='stylesheet' href='../styles.css' type='text/css' />
+
+    <!-- ############################################################################ -->
+    <!-- To use this file on your own system, replace ../../api/timeline-api.js with  -->
+    <!--     http://api.simile-widgets.org/timeline/2.3.1/timeline-api.js          -->
+    <!-- (where 2.3.1 is the current release number.)                                 -->
+    <script src="../../api/timeline-api.js?bundle=true" type="text/javascript"></script>
+
+    <script>
+        var tl;
+        function onLoad() {
+            var tl_el = document.getElementById("tl");
+            var eventSource1 = new Timeline.DefaultEventSource();
+            var eventSource2 = new Timeline.DefaultEventSource();
+            
+            var theme1 = Timeline.ClassicTheme.create();
+            theme1.autoWidth = true; // Set the Timeline's "width" automatically.
+                                     // Set autoWidth on the Timeline's first band's theme,
+                                     // will affect all bands.
+            theme1.timeline_start = new Date(Date.UTC(1850, 0, 1));
+            theme1.timeline_stop  = new Date(Date.UTC(4480, 0, 1));
+            
+            // create a second theme for the second band because we want it to
+            // have different settings
+            var theme2 = Timeline.ClassicTheme.create();
+            // increase tape height
+            theme2.event.tape.height = 6; // px
+            theme2.event.track.height = theme2.event.tape.height + 6;
+
+            var d = Timeline.DateTime.parseGregorianDateTime("1900")
+            var bandInfos = [
+                Timeline.createBandInfo({
+                    width:          45, // set to a minimum, autoWidth will then adjust
+                    intervalUnit:   Timeline.DateTime.DECADE, 
+                    intervalPixels: 200,
+                    eventSource:    eventSource1,
+                    date:           d,
+                    theme:          theme1,
+                    layout:         'original'  // original, overview, detailed
+                }),
+                Timeline.createBandInfo({
+                    width:          45, // set to a minimum, autoWidth will then adjust
+                    intervalUnit:   Timeline.DateTime.DECADE, 
+                    intervalPixels: 40,
+                    eventSource:    eventSource2,
+                    date:           d,
+                    theme:          theme2,
+                    layout:         'original'  // original, overview, detailed
+                }),
+                Timeline.createBandInfo({
+                    width:          25, // set to a minimum, autoWidth will then adjust
+                    intervalUnit:   Timeline.DateTime.CENTURY, 
+                    intervalPixels: 50,
+                    eventSource:    eventSource2,
+                    date:           d,
+                    theme:          theme2,
+                    layout:         'overview',  // original, overview, detailed
+                    syncWith:       0,
+                    highlight:      true
+                })
+            ];
+            bandInfos[1].syncWith = 0;
+            bandInfos[2].syncWith = 0;
+            bandInfos[2].highlight = true;
+            
+            // For each of the bands, add a decorator at the start and end 
+            // of the Timeline. The decorators have to extend quite a way into
+            // the past and future since those times can be visible on the
+            // low resolution band (the third band)
+            for (var i = 0; i < bandInfos.length; i++) {
+                bandInfos[i].decorators = [
+                    new Timeline.SpanHighlightDecorator({
+                        startDate:  "1", // The year 1 Common Era
+                        endDate:    new Date(Date.UTC(1850, 0, 1)),
+                        cssClass:   "timeline-ether-bg", // use same color as background
+                        inFront:    true, // we want this decorator to be in front
+                        theme:      theme1
+                    }),
+                    new Timeline.SpanHighlightDecorator({
+                        startDate:  "Fri Jan 1 4480 00:00:00 GMT",
+                        endDate:    "Fri Jan 1 8000 00:00:00 GMT",
+                        cssClass:   "timeline-ether-bg",
+                        inFront:    true, // we want this decorator to be in front
+                        theme:      theme1
+                    })
+                ];
+            }
+            // Nota bena: The JS Date function interprets years of < 100 as 
+            // being years since 1900. So Date(0, 0, 1) is the same as Date(1900, 0, 1)
+                                    
+            // Asynchronous Callback functions. Called after data arrives.
+            function load_json1(json, url) {
+              // Called with first json file from server
+              // Also initiates loading of second Band
+              
+              eventSource1.loadJSON(json, url);
+              // stop browser caching of data during testing by appending time
+              tl.loadJSON("cubism2.js?"+ (new Date().getTime()), load_json2);
+            };
+
+            function load_json2(json, url) {
+              // Called with second json file from server
+              eventSource2.loadJSON(json, url);
+              // Also (now that all events have been loaded), automatically re-size
+              tl.finishedEventLoading(); // Automatically set new size of the div 
+            };
+            
+            
+            // create the Timeline
+            // Strategy: Initiate Ajax call for first band's data, then have its callback
+            // initiate Ajax call for second band's data. Then have its callback 
+            // automagically resize the overall Timeline since we will then have all
+            // the data.
+            tl = Timeline.create(tl_el, bandInfos, Timeline.HORIZONTAL);
+            
+            // stop browser caching of data during testing by appending time
+            tl.loadJSON("cubism1.js?"+ (new Date().getTime()), load_json1);
+        }
+
+        function centerTimeline(year) {
+            tl.getBand(0).setCenterVisibleDate(new Date(year, 0, 1));
+        }
+        
+        var resizeTimerID = null;
+        function onResize() {
+            if (resizeTimerID == null) {
+                resizeTimerID = window.setTimeout(function() {
+                    resizeTimerID = null;
+                    tl.layout();
+                }, 500);
+            }
+        }
+    </script>
+  </head>
+  <body onload="onLoad();" onresize="onResize();">
+    <ul id="path">
+      <li><a href="/" title="Home">SIMILE Widgets</a></li>
+      <li><a href="../../" title="Timeline">Timeline</a></li>
+      <li><a href="../" title="Examples">Examples</a></li>
+      <li><span>Test Example 2</span></li>
+    </ul>
+  
+    <div id="header">
+      <h1>Test Example 2</h1>
+    </div>
+  
+    <div id="content">
+      <p><b>Demonstrates:</b>
+        <ul>
+          <li>Automatic sizing of the Timeline band "widths." (For a horizontal Timeline, a band's "width"
+            is the height of the band on the screen.)
+            <ul>
+              <li>Note how the middle band is automatically made taller since its scale
+                is larger and the event tapes are thicker, thus requiring more space for the events.</li>
+              <li>Use mouse-wheel, arrow keys or links to move to 4400 (additional events which require a larger Timeline).
+                Note how the Timeline enlarges when about 4200 becomes visible on screen. The size increase is animated.</li>
+            </ul>
+          </li>
+          <li>Changing the default theme</li>
+          <li>Loading two different event files sequentially.</li>
+          <li>Timeline starts at 1850 and ends at 4480
+        </ul>
+      
+        Move Timeline: &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:centerTimeline(1900);">1900</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:centerTimeline(4400);">4400</a>
+      
+        <p>Timeline version <span id='tl_ver'></span>.</p>
+        <script>Timeline.writeVersion('tl_ver')</script>
+      <p>
+    
+    
+      <!-- ############################################## -->
+      <!-- ###                                        ### -->
+      <!-- ### NOTE: This Timeline's width will be    ### -->
+      <!-- ###       set automatically. Initial       ### -->
+      <!-- ###       value will be replaced. Start    ### -->
+      <!-- ###       with a min of 200 so "loading"   ### -->
+      <!-- ###       popup can be seen. Or start with ### -->
+      <!-- ###       value near the automatic value   ### -->
+      <!-- ###       to minimize motion on the screen ### -->
+      <!-- ###                                        ### -->
+      <!-- ############################################## -->
+      <div id="tl" class="timeline-default" style="height:300px;"></div>
+    </div>
+    
+    <div id="footer">
+      Copyright &copy; <a href="http://web.mit.edu/">Massachusetts Institute of Technology</a> and Contributors 2006-2009 ~ Some rights reserved
+    </div>
+  </body>
+</html>
