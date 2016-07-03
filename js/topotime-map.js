@@ -3,6 +3,7 @@ $(function() {
 });
 
 function startMap(){
+  console.log('starting a damned map')
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
   // AWMC tiles in mapbox
   var map = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
