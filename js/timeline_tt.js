@@ -1,5 +1,6 @@
 var tl;
 function initTimeline() {
+// function initTimeline(placedata) {
   var eventSource = new Timeline.DefaultEventSource(0);
   // Example of changing the theme from the defaults
   // The default theme is defined in
@@ -8,21 +9,21 @@ function initTimeline() {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
-  var d = Timeline.DateTime.parseGregorianDateTime("1920")
+  var d = Timeline.DateTime.parseGregorianDateTime("1900")
   var bandInfos = [
       Timeline.createBandInfo({
-          width:          "80%",
+          width:          "75%",
           intervalUnit:   Timeline.DateTime.DECADE,
-          intervalPixels: 200,
+          intervalPixels: 50,
           eventSource:    eventSource,
           date:           d,
           theme:          theme,
           layout:         'original'  // original, overview, detailed
       }),
       Timeline.createBandInfo({
-          width:          "20%",
+          width:          "25%",
           intervalUnit:   Timeline.DateTime.CENTURY,
-          intervalPixels: 200,
+          intervalPixels: 120,
           eventSource:    eventSource,
           date:           d,
           theme:          theme,
@@ -35,9 +36,17 @@ function initTimeline() {
   tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
   // Adding the date to the url stops browser caching of data during testing or if
   // the data source is a dynamic query...
-  tl.loadJSON("data/test.tt.json?"+ (new Date().getTime()), function(json, url) {
+
+  // tl.loadJSON("data/test.tt.json?"+ (new Date().getTime()), function(json, url) {
+  //     eventSource.loadJSON(json, url);
+  // });
+
+  // tl.loadJSON("data/euro_poland.tl.json?"+ (new Date().getTime()), function(json, url) {
+  tl.loadJSON("data/euro_poland.tl.json", function(json, url) {
       eventSource.loadJSON(json, url);
   });
+
+  // tl.loadJSON(placedata);
 
 }
 

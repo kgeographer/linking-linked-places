@@ -1930,7 +1930,7 @@
           {
             "label": "in 1000",
             "start": {
-              "earliest": "950-01-01"
+              "earliest": "0950-01-01"
             },
             "end": {
               "latest": "1050-12-31"
@@ -4251,6 +4251,11 @@
     },
     {
       "type": "Feature",
+      "properties": {
+        "id": "pol06",
+        "featureType": "sovereign_state",
+        "label": "Principality of Polotsk"
+      },
       "geometry": {
         "type": "GeometryCollection",
         "geometries": [
@@ -5611,11 +5616,7 @@
           }
         ]
       },
-      "properties": {
-        "id": "pol06",
-      "featureType": "sovereign_state",
-        "label": "Principality of Polotsk"
-      },
+
       "when": {
         "timespans": [
           {
@@ -11289,6 +11290,12 @@
       }
     },
     {
+      "type": "Feature",
+      "properties": {
+        "id": "pol09",
+        "featureType": "sovereign_state",
+        "label": "Kingdom of Poland"
+      },
       "geometry": {
         "type": "GeometryCollection",
         "geometries": [
@@ -16829,12 +16836,6 @@
           }
         ]
       },
-      "properties": {
-        "id": "pol09",
-        "featureType": "sovereign_state",
-        "label": "Kingdom of Poland"
-      },
-      "type": "Feature",
       "when": {
         "timespans": [
           {
@@ -24795,12 +24796,12 @@
       "when": {
         "timespans": [
           {
-            "label": "in 1600",
+            "label": "1569-1795",
             "start": {
-              "earliest": "1550-01-01"
+              "earliest": "1569-07-01"
             },
             "end": {
-              "latest": "1650-12-31"
+              "latest": "1795-10-"
             }
           }
         ]
@@ -24811,7 +24812,7 @@
       "properties": {
         "id": "pol11",
         "featureType": "sovereign_state",
-        "label": "Commonwealth of the Crown of the Polish Kingdom and the Grand Duchy of Lithuania"
+        "label": "Republic of Poland (second)"
       },
       "geometry": {
         "type": "GeometryCollection",
@@ -33134,12 +33135,12 @@
       "when": {
         "timespans": [
           {
-            "label": "in 1700",
+            "label": "post-WW1 re-establish",
             "start": {
-              "earliest": "1650-01-01"
+              "earliest": "1918-11"
             },
               "end": {
-              "latest": "1750-12-31"
+              "latest": "1989"
             }
           }
         ]
@@ -33147,6 +33148,11 @@
     },
     {
       "type": "Feature",
+      "properties": {
+        "id": "pol12",
+        "featureType": "sovereign_state",
+        "label": "Republic of Poland (third)"
+      },
       "geometry": {
         "type": "GeometryCollection",
         "geometries": [
@@ -37331,20 +37337,15 @@
           }
         ]
       },
-      "properties": {
-        "id": "pol12",
-        "featureType": "sovereign_state",
-        "label": "Republic of Poland"
-      },
       "when": {
         "timespans": [
           {
-            "label": "in 2000",
+            "label": "post-Soviet",
             "start": {
-              "earliest": "1950-01-01"
+              "earliest": "1989-09-13"
             },
             "end": {
-              "latest": "2050-12-31"
+              "latest": "2017-01-01"
             }
           }
         ]
