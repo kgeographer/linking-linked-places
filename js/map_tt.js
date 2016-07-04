@@ -14,11 +14,36 @@ function startMap(){
     .on('ready', function(){
       ttfeats = featureLayer._geojson.features;
       featureLayer.eachLayer(function(layer){
-        // console.log(layer.featureLayer)
+        // build temporal object and pass to timeline
+
         layer.bindPopup(layer.feature.properties.label);
       })
     })
     .addTo(ttmap);
 
+  var krakow = L.marker([50.0647, 19.9450])
+    .bindPopup("<b>Kraków</b><br/>a part of many places")
+    .addTo(ttmap).openPopup();
+
+  initTimeline();
   // ttfeats = featureLayer._geojson;
 }
+
+// open popup
+// featureLayer._layers[92].openPopup()
+// style
+// featureLayer._layers[92].setStyle({fillColor :'blue'})
+
+// event format
+// {
+// 'dateTimeFormat': 'iso8601',
+// 'events' :
+//   [
+//     {'start': '1900', 'latestStart': '1901', 'earliestEnd': '1903', 'end': '1902',
+//     'title': 'Test 6g: Bad dates: earliestEnd > end',
+//     'description': 'Test 6g: Bad dates: earliestEnd > end',
+//     'durationEvent': true, 'image':'<url>', 'link':'<url>'
+//     },
+//     {}
+//   ]
+// }
