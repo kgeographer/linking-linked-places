@@ -42,8 +42,6 @@ ____________
 **v0.1**  
 Example [software and data](http://dh.stanford.edu/topotime)
 
-**related blog posts**  
-[kgeographer.org](http://kgeographer.com/wp/category/time/topotime/)
 
 ____________
 [1] Data licensed from [Euratlas](http://www.euratlas.net/history/europe/)

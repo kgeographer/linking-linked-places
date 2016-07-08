@@ -1,4 +1,9 @@
 {
+  "type": "FeatureCollection",
+  "properties": {
+    "id": "p0tns5v",
+    "label": "PeriodO collection: p0tns5v"
+  },
   "features": [
     {
       "geometry": {
@@ -2833,6 +2838,7 @@
         },
         "type": "MultiPolygon"
       },
+      "type": "Feature",
       "properties": {
         "featureType": "Feature",
         "id": "p0tns5vjgfz",
@@ -2840,7 +2846,6 @@
           "eng-latn": "Iron Age"
         }
       },
-      "type": "Feature",
       "when": {
         "timespans": [
           {
@@ -6349,6 +6354,7 @@
         },
         "type": "MultiPolygon"
       },
+      "type": "Feature",
       "properties": {
         "featureType": "Feature",
         "id": "p0tns5v946v",
@@ -6356,7 +6362,6 @@
           "eng-latn": "Assyrian Imperial"
         }
       },
-      "type": "Feature",
       "when": {
         "timespans": [
           {
@@ -20044,10 +20049,5 @@
         ]
       }
     }
-  ],
-  "properties": {
-    "id": "p0tns5v",
-    "label": "PeriodO collection: p0tns5v"
-  },
-  "type": "FeatureCollection"
+  ]
 }
