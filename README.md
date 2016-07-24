@@ -23,19 +23,21 @@ We are experimenting with two approaches for adding **"when"** information to Fe
 * the "_GeometryCollection_" approach: geometry type for each Feature is GeometryCollection, and for each **geometry** in the GeometryCollection, **when** is a sibling element of **type**, **coordinates**, and an optional **properties**.
 
 #### *_Bag of Features approach_*
-Itineraries (from Orbis Initiative repo):  
+Gazetteer records:  
+[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_places.geojson)  
+
+Itineraries:  
 [The Pilgrimage of Xuanzang, 629-646 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/xuanzang_way-collection.geojson)  
 [Incanto Trade: 1 voyage, w/places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_1voyage-w-places.geojson)  
 [Incanto Trade: 1 voyage, no places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_1yoyage-no-places.geojson)  
-[Incanto Trade: 840 voyages in 3523 segments, 1283-1453 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_840voyages.geojson)  
-[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_places.geojson)  
+[Incanto Trade: 840 voyages in 3523 segments, 1283-1453 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_840voyages.geojson)   
 
 Flows:  
 [Incanto Trade: Total ships per segment, 1282-1453](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_total-ships.geojson)  
 [Incanto Trade: Total ships per segment (w/places), 1282-1453](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_flow-features-w-places.geojson)
 
-PeriodO collections [2]:  
-Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/periodo_p0tns5v.tt.json); Source retrieved from http://n2t.net/ark:/99152/p0tns5v
+Historical periods:  
+Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/periodo_p0tns5v.tt.json); Source retrieved from **PeriodO** [2] http://n2t.net/ark:/99152/p0tns5v
 ____________
 #### *_GeometryCollection approach_*
 Euratlas time-indexed admin units [1]:  
