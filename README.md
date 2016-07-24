@@ -1,13 +1,29 @@
-Topotime v0.2 (tt-geojson)
+Topotime (0.2)
 ==========================
 
-__topo__ (_from Greek τοπο-, a combining form of **τόπος** place_)
+**topo** (_from Greek τοπο-, a combining form of **τόπος** place_)
 
-Topotime is a data model, JSON data format, D3 timeline layout, and software for representing and computing over complex spatial-temporal phenomena (places, periods, and events), particularly for historical applications where extents are uncertain. Whereas Topotime v0.1 focused on time, Topotime v0.2 will model the spatial and temporal attributes of geographic features co-equally, as an extension to _GeoJSON_. It is under active development, and forks, comments, suggestions, and reasonably polite brickbats are welcome.
+**Topotime** is a digital humanities project that will operationalize a four dimensional conceptual model of geographic phenomena for geo-historical information systems (_Settings_), by extending the existing GeoJSON data format standard and developing open-source software to utilize it.
+
+The project's planned work products include:
+
+* **GeoJSON-T**, adding temporal ("when") objects to GeoJSON, making it suitable for representing:
+	* historical gazetteer records
+	* attestations of historical geographic movement, such as journeys, routes, and flows of commodities, people, and information
+* **Topotime.js**, a JavaScript library for rendering GeoJSON-T data to a web map linked to a traditional timeline and/or _temporal geometry_ visualizations. Its dependencies will include the Leaflet, Simile Timeline, and D3 libraries, as well as...
+* **Topotime.py**, a Python program for generating _temporal geometries_ from GeoJSON&#8209;T data
+
+All of these are under active development, so the contents of this repo are dynamic "works-in-progress." Comments, suggestions, and reasonably polite brickbats are welcome.
 
 ###Example data files/maps (in progress)
+
+We are experimenting with two approaches for adding **"when"** information to FeatureCollections in GeoJSON&#8209;T. So far, each appears to suit one or more use cases; examples in development are listed below.
+
+* the "_Bag of Features_" approach: **when** as a sibling element of **type**, **geometry**, and **properties** for each Feature,  and
+* the "_GeometryCollection_" approach: geometry type for each Feature is GeometryCollection, and for each **geometry** in the GeometryCollection, **when** is a sibling element of **type**, **coordinates**, and an optional **properties**.
+
 #### *_Bag of Features approach_*
-**Itineraries (from Orbis Initiative repo)**     
+Itineraries (from Orbis Initiative repo):  
 [The Pilgrimage of Xuanzang, 629-646 CE](https://github.com/kgeographer/oi/blob/master/data/xuanzang_way-collection.geojson)  
 [Incanto Trade: 1 voyage, w/places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_1voyage-w-places.geojson)  
 [Incanto Trade: 1 voyage, no places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_1yoyage-no-places.geojson)  
@@ -20,14 +36,14 @@ Flows:
 
 ____________
 #### *_GeometryCollection approach_*
-**Euratlas time-indexed admin units** [1]  
+Euratlas time-indexed admin units [1]:  
 [Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/euro_poland.tt.json)
 
-**PeriodO collections**  
+PeriodO collections [2]:  
 Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo_p0tns5v.tt.json); PeriodO data source: http://n2t.net/ark:/99152/p0tns5v
 
 
-**Itineraries**  
+Itineraries:  
 [The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/itinerary.tt.json)  
 [A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/multi-type.tt.json)  
 ____________
@@ -44,7 +60,8 @@ Example [software and data](http://dh.stanford.edu/topotime)
 
 
 ____________
-[1] Data licensed from [Euratlas](http://www.euratlas.net/history/europe/)
+[1] Data licensed from [Euratlas](http://www.euratlas.net/history/europe/)  
+[2] The [**PeriodO project**](http://perio.do/) is building a gazetteer of scholarly definitions of historical, art-historical, and archaeological periodsproject
 
 **Contributors**   
 Karl Grossner (*kgeographer*; twitter:@kgeographer); Elijah Meeks (v0.1; *emeeks*)
