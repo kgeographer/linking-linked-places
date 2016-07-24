@@ -24,28 +24,26 @@ We are experimenting with two approaches for adding **"when"** information to Fe
 
 #### *_Bag of Features approach_*
 Itineraries (from Orbis Initiative repo):  
-[The Pilgrimage of Xuanzang, 629-646 CE](https://github.com/kgeographer/oi/blob/master/data/xuanzang_way-collection.geojson)  
-[Incanto Trade: 1 voyage, w/places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_1voyage-w-places.geojson)  
-[Incanto Trade: 1 voyage, no places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_1yoyage-no-places.geojson)  
-[Incanto Trade: 840 voyages in 3523 segments, 1283-1453 CE  ](https://github.com/kgeographer/oi/blob/master/data/incanto_840voyages.geojson)  
-[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/oi/blob/master/data/incanto_places.geojson)  
+[The Pilgrimage of Xuanzang, 629-646 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/xuanzang_way-collection.geojson)  
+[Incanto Trade: 1 voyage, w/places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_1voyage-w-places.geojson)  
+[Incanto Trade: 1 voyage, no places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_1yoyage-no-places.geojson)  
+[Incanto Trade: 840 voyages in 3523 segments, 1283-1453 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_840voyages.geojson)  
+[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_places.geojson)  
 
 Flows:  
-[Incanto Trade: Total ships per segment, 1282-1453](https://github.com/kgeographer/oi/blob/master/data/incanto_total-ships.geojson)  
-[Incanto Trade: Total ships per segment (w/places), 1282-1453](https://github.com/kgeographer/oi/blob/master/data/incanto_flow-features-w-places.geojson)
+[Incanto Trade: Total ships per segment, 1282-1453](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_total-ships.geojson)  
+[Incanto Trade: Total ships per segment (w/places), 1282-1453](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_flow-features-w-places.geojson)
 
+PeriodO collections [2]:  
+Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/periodo_p0tns5v.tt.json); Source retrieved from http://n2t.net/ark:/99152/p0tns5v
 ____________
 #### *_GeometryCollection approach_*
 Euratlas time-indexed admin units [1]:  
-[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/euro_poland.tt.json)
-
-PeriodO collections [2]:  
-Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/periodo_p0tns5v.tt.json); PeriodO data source: http://n2t.net/ark:/99152/p0tns5v
-
+[Poland and related sovereign states, 800-2000 CE](https://github.com/kgeographer/topotime/blob/master/data/GeometryCollection/euro_poland.tt.json)
 
 Itineraries:  
-[The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/itinerary.tt.json)  
-[A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/tt-geojson/data/out/multi-type.tt.json)  
+[The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/master/data/GeometryCollection/itinerary.tt.json)  
+[A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/master/data/GeometryCollection/multi-type.tt.json)  
 ____________
 ____________
 ###Documentation

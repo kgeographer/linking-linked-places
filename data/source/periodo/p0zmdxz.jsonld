@@ -1,0 +1,362 @@
+{
+  "definitions": {
+    "p0zmdxz5fx6": {
+      "id": "p0zmdxz5fx6",
+      "originalLabel": {
+        "eng-latn": "Early Bronze Age"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "year": "-2199"
+        },
+        "label": "Ca. 2200 B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Early Bronze Age",
+      "start": {
+        "in": {
+          "year": "-2999"
+        },
+        "label": "Ca. 3000 B.C.E."
+      }
+    },
+    "p0zmdxzf369": {
+      "id": "p0zmdxzf369",
+      "originalLabel": {
+        "eng-latn": "Pre-pottery Neolithic"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "year": "-6999"
+        },
+        "label": "Ca. 7000 B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Pre-pottery Neolithic",
+      "start": {
+        "in": {
+          "year": "-7499"
+        },
+        "label": "Ca. 7500 B.C.E."
+      }
+    },
+    "p0zmdxzhvxb": {
+      "id": "p0zmdxzhvxb",
+      "originalLabel": {
+        "eng-latn": "Persian period"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "earliestYear": "-0399",
+          "latestYear": "-0300"
+        },
+        "label": "4th century B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Persian period",
+      "start": {
+        "in": {
+          "earliestYear": "-0499",
+          "latestYear": "-0400"
+        },
+        "label": "5th century B.C.E."
+      }
+    },
+    "p0zmdxzmdt8": {
+      "id": "p0zmdxzmdt8",
+      "originalLabel": {
+        "eng-latn": "Pottery Neolithic"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "year": "-5999"
+        },
+        "label": "Ca. 6000 B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Pottery Neolithic",
+      "start": {
+        "in": {
+          "year": "-6999"
+        },
+        "label": "Ca. 7000 B.C.E."
+      }
+    },
+    "p0zmdxzbnh8": {
+      "stop": {
+        "in": {
+          "earliestYear": "-3999",
+          "latestYear": "-3000"
+        },
+        "label": "4th millennium B.C.E."
+      },
+      "start": {
+        "in": {
+          "earliestYear": "-3999",
+          "latestYear": "-3000"
+        },
+        "label": "4th millennium B.C.E."
+      },
+      "originalLabel": {
+        "eng-latn": "\"Ubaid\""
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "\"Ubaid\"",
+      "alternateLabel": {
+        "eng-latn": [
+          "Ubaid"
+        ]
+      },
+      "type": "PeriodDefinition",
+      "id": "p0zmdxzbnh8"
+    },
+    "p0zmdxzn9g9": {
+      "id": "p0zmdxzn9g9",
+      "originalLabel": {
+        "eng-latn": "Roman period"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "year": "0000"
+        },
+        "label": "1 B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Roman period",
+      "start": {
+        "in": {
+          "year": "-0099"
+        },
+        "label": "100 B.C.E."
+      }
+    },
+    "p0zmdxz65fd": {
+      "id": "p0zmdxz65fd",
+      "originalLabel": {
+        "eng-latn": "Middle Bronze Age"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "year": "-1649"
+        },
+        "label": "Ca. 1650 B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Middle Bronze Age",
+      "start": {
+        "in": {
+          "earliestYear": "-1999",
+          "latestYear": "-1666"
+        },
+        "label": "Beginning of 2nd millennium B.C.E."
+      }
+    },
+    "p0zmdxzj35q": {
+      "id": "p0zmdxzj35q",
+      "originalLabel": {
+        "eng-latn": "Late Bronze Age"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "stop": {
+        "in": {
+          "earliestYear": "-1189",
+          "latestYear": "-0084"
+        },
+        "label": "Ca. 1190/85 B.C.E."
+      },
+      "type": "PeriodDefinition",
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "Late Bronze Age",
+      "start": {
+        "in": {
+          "year": "-1599"
+        },
+        "label": "Ca. 1600 B.C.E."
+      }
+    },
+    "p0zmdxzd9wg": {
+      "stop": {
+        "in": {
+          "earliestYear": "-3999",
+          "latestYear": "-3000"
+        },
+        "label": "4th millennium B.C.E."
+      },
+      "start": {
+        "in": {
+          "year": "-5999"
+        },
+        "label": "Ca. 6000 B.C.E."
+      },
+      "originalLabel": {
+        "eng-latn": "\"Halaf\" Chalcolithic"
+      },
+      "spatialCoverage": [
+        {
+          "id": "http://dbpedia.org/resource/Ugarit",
+          "label": "Ras Shamra",
+          "iso3166": "SY"
+        }
+      ],
+      "spatialCoverageDescription": "Ras Shamra",
+      "label": "\"Halaf\" Chalcolithic",
+      "alternateLabel": {
+        "eng-latn": [
+          "Halaf Chalcolithic"
+        ]
+      },
+      "type": "PeriodDefinition",
+      "id": "p0zmdxzd9wg"
+    }
+  },
+  "id": "p0zmdxz",
+  "source": {
+    "locator": "page 24",
+    "partOf": {
+      "creators": [
+        {
+          "id": "http://viaf.org/viaf/75011781",
+          "name": "Yon, Marguerite."
+        }
+      ],
+      "yearPublished": 2006,
+      "title": "The city of Ugarit at Tell Ras Shamra",
+      "id": "http://www.worldcat.org/oclc/63390787"
+    }
+  },
+  "type": "PeriodCollection",
+  "@context": {
+    "@base": "http://n2t.net/ark:/99152/",
+    "PeriodCollection": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "PeriodDefinition": "http://www.w3.org/2004/02/skos/core#Concept",
+    "abstract": "http://purl.org/dc/terms/abstract",
+    "alternateLabel": {
+      "@container": "@language",
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "contributors": "http://purl.org/dc/terms/contributor",
+    "creators": "http://purl.org/dc/terms/creator",
+    "dateAccessed": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "definitions": {
+      "@container": "@index",
+      "@reverse": "http://www.w3.org/2004/02/skos/core#inScheme"
+    },
+    "earliestYear": "periodo:earliestYear",
+    "editorialNote": "http://www.w3.org/2004/02/skos/core#note",
+    "id": "@id",
+    "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
+    "inDataset": {
+      "@id": "http://rdfs.org/ns/void#inDataset",
+      "@type": "@id"
+    },
+    "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "latestYear": "periodo:latestYear",
+    "locator": "http://purl.org/ontology/bibo/locator",
+    "name": "http://xmlns.com/foaf/0.1/name",
+    "note": "http://www.w3.org/2004/02/skos/core#note",
+    "originalLabel": {
+      "@container": "@language",
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "partOf": {
+      "@id": "http://purl.org/dc/terms/isPartOf",
+      "@type": "@id"
+    },
+    "periodCollections": {
+      "@container": "@index",
+      "@id": "http://www.w3.org/2000/01/rdf-schema#member"
+    },
+    "periodo": "http://n2t.net/ark:/99152/p0v#",
+    "primaryTopicOf": {
+      "@id": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "http://www.w3.org/2002/07/owl#sameAs",
+      "@type": "@id"
+    },
+    "source": "http://purl.org/dc/terms/source",
+    "spatialCoverage": "http://purl.org/dc/terms/spatial",
+    "spatialCoverageDescription": "periodo:spatialCoverageDescription",
+    "start": "http://www.w3.org/2006/time#intervalStartedBy",
+    "stop": "http://www.w3.org/2006/time#intervalFinishedBy",
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "url": {
+      "@id": "http://xmlns.com/foaf/0.1/page",
+      "@type": "@id"
+    },
+    "year": {
+      "@id": "http://www.w3.org/2006/time#year",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "yearPublished": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    }
+  }
+}
