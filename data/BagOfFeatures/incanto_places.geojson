@@ -11,8 +11,8 @@
 },
 "type": "FeatureCollection",
 "id": "incanto_sites",
-"title": "Venitian Incanto Trade Gazetteer",
-"description": "Sites in Venitian Incanto Trade Data",
+"title": "Venetian Incanto Trade Gazetteer",
+"description": "Sites in Venetian Incanto Trade Data",
 "bbox": [],
 "features": [
     {
@@ -20,9 +20,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Civita.Vecchia"
     },
@@ -117,9 +117,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Marseille"
     },
@@ -214,9 +214,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Constantinople"
     },
@@ -311,9 +311,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Jerusalem"
     },
@@ -408,9 +408,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "London"
     },
@@ -505,9 +505,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Anvers"
     },
@@ -602,9 +602,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Acre"
     },
@@ -699,9 +699,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Agde"
     },
@@ -796,9 +796,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Abydos"
     },
@@ -893,9 +893,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Bône"
     },
@@ -990,9 +990,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Babylone"
     },
@@ -1087,9 +1087,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Bruges"
     },
@@ -1184,9 +1184,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Beyrouth"
     },
@@ -1281,9 +1281,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Cadix"
     },
@@ -1378,9 +1378,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Caffa"
     },
@@ -1475,9 +1475,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Chios"
     },
@@ -1572,9 +1572,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Caput.Doble"
     },
@@ -1669,9 +1669,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Corfou"
     },
@@ -1766,9 +1766,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Cotrone"
     },
@@ -1863,9 +1863,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Djerba"
     },
@@ -1960,9 +1960,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Durazzo"
     },
@@ -2057,9 +2057,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Gaete"
     },
@@ -2154,9 +2154,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Genoa"
     },
@@ -2251,9 +2251,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Jaffa"
     },
@@ -2348,9 +2348,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Lisbon"
     },
@@ -2445,9 +2445,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Limassol"
     },
@@ -2542,9 +2542,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Laodicée"
     },
@@ -2639,9 +2639,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Malaga"
     },
@@ -2736,9 +2736,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Messine"
     },
@@ -2833,9 +2833,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Modon"
     },
@@ -2930,9 +2930,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Nicosie"
     },
@@ -3027,9 +3027,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Napoli"
     },
@@ -3124,9 +3124,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Alexandrie"
     },
@@ -3221,9 +3221,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Barcelone"
     },
@@ -3318,9 +3318,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Thessalonique"
     },
@@ -3415,9 +3415,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Tortosa"
     },
@@ -3512,9 +3512,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Valencia"
     },
@@ -3609,9 +3609,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Zara"
     },
@@ -3706,9 +3706,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Alger"
     },
@@ -3803,9 +3803,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Bougie"
     },
@@ -3900,9 +3900,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Cembalo"
     },
@@ -3997,9 +3997,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Damas"
     },
@@ -4094,9 +4094,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Clarence"
     },
@@ -4191,9 +4191,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Maurocastron"
     },
@@ -4288,9 +4288,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Istrie"
     },
@@ -4385,9 +4385,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Palerme"
     },
@@ -4482,9 +4482,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Patras"
     },
@@ -4579,9 +4579,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Paphos"
     },
@@ -4676,9 +4676,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Pise"
     },
@@ -4773,9 +4773,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Pula"
     },
@@ -4870,9 +4870,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Rhodes"
     },
@@ -4967,9 +4967,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Reggio.Calabre"
     },
@@ -5064,9 +5064,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sevilla"
     },
@@ -5161,9 +5161,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Syracuse"
     },
@@ -5258,9 +5258,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Tenedos"
     },
@@ -5355,9 +5355,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Trebizonde"
     },
@@ -5452,9 +5452,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Tunis"
     },
@@ -5549,9 +5549,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Venice"
     },
@@ -5646,9 +5646,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Tripoli.Libye"
     },
@@ -5743,9 +5743,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sinope"
     },
@@ -5840,9 +5840,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Collioure"
     },
@@ -5937,9 +5937,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Caput.Martin"
     },
@@ -6034,9 +6034,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Bayonne"
     },
@@ -6131,9 +6131,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Montpellier"
     },
@@ -6228,9 +6228,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Aigues.Mortes"
     },
@@ -6325,9 +6325,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Black.Sea"
     },
@@ -6422,9 +6422,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Armenia"
     },
@@ -6519,9 +6519,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Buca.maris.maioris"
     },
@@ -6616,9 +6616,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Cap.Malee"
     },
@@ -6713,9 +6713,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Buca.Culfil"
     },
@@ -6810,9 +6810,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Coron"
     },
@@ -6907,9 +6907,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Crete"
     },
@@ -7004,9 +7004,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Cyprus"
     },
@@ -7101,9 +7101,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Brabant"
     },
@@ -7198,9 +7198,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Flanders"
     },
@@ -7295,9 +7295,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "England"
     },
@@ -7392,9 +7392,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Famagosta"
     },
@@ -7489,9 +7489,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Dune"
     },
@@ -7586,9 +7586,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Gallipoli"
     },
@@ -7683,9 +7683,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Grenade"
     },
@@ -7780,9 +7780,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Locum.Buccari"
     },
@@ -7877,9 +7877,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Majorque"
     },
@@ -7974,9 +7974,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Middlebourg"
     },
@@ -8071,9 +8071,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Negrepont"
     },
@@ -8168,9 +8168,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Oran"
     },
@@ -8265,9 +8265,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Portus.Camere"
     },
@@ -8362,9 +8362,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Vospero"
     },
@@ -8459,9 +8459,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Calabre"
     },
@@ -8556,9 +8556,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Romanie"
     },
@@ -8653,9 +8653,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Episkopi"
     },
@@ -8750,9 +8750,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Barbarie"
     },
@@ -8847,9 +8847,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Catalugna"
     },
@@ -8944,9 +8944,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "One"
     },
@@ -9041,9 +9041,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Ligurie"
     },
@@ -9138,9 +9138,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Monemvasia"
     },
@@ -9235,9 +9235,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Piombino"
     },
@@ -9332,9 +9332,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Provato"
     },
@@ -9429,9 +9429,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Rama"
     },
@@ -9526,9 +9526,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Ragusa"
     },
@@ -9623,9 +9623,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Rovigno"
     },
@@ -9720,9 +9720,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sandwich"
     },
@@ -9817,9 +9817,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Salines"
     },
@@ -9914,9 +9914,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "San.Lucar"
     },
@@ -10011,9 +10011,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Savona"
     },
@@ -10108,9 +10108,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sclavonie"
     },
@@ -10205,9 +10205,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sfax"
     },
@@ -10302,9 +10302,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sicily"
     },
@@ -10399,9 +10399,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Simisso"
     },
@@ -10496,9 +10496,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Sluis"
     },
@@ -10593,9 +10593,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Southampton"
     },
@@ -10690,9 +10690,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Tana"
     },
@@ -10787,9 +10787,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Syria"
     },
@@ -10884,9 +10884,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Talamone"
     },
@@ -10981,9 +10981,9 @@
     "type": "Feature",
     "id": "undetermined",
     "properties": {
-      "snippet": "Unknown; 550 BC - AD 640",
+      "snippet": "",
       "link": "http://orbisinitiative.org/places/",
-      "description": "settlement centroid",
+      "description": "",
       "location_precision": "precise",
       "title": "Tripoli.Syria"
     },

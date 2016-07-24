@@ -3,13 +3,13 @@ Topotime (0.2)
 
 **topo** (_from Greek τοπο-, a combining form of **τόπος** place_)
 
-**Topotime** is a digital humanities project that will operationalize a four dimensional conceptual model of geographic phenomena for geo-historical information systems (_Settings_), by extending the existing GeoJSON data format standard and developing open-source software to utilize it.
+**Topotime** is a digital humanities project aiming to join Place and Period (space and time) in conceptual models, data formats, and software for geo-historical research. We are developing an experimental extension to the [GeoJSON data format standard](http://geojson.org/geojson-spec.html), and open-source software to utilize it.
 
 The project's planned work products include:
 
-* **GeoJSON-T**, adding temporal ("when") objects to GeoJSON, making it suitable for representing:
+* **GeoJSON-T**, adding temporal ("when") elements to GeoJSON, making it suitable for representing
 	* historical gazetteer records
-	* attestations of historical geographic movement, such as journeys, routes, and flows of commodities, people, and information
+	* attestations of historical geographic movement, such as journeys, routes, and flows (e.g. of commodities, people, or information)
 * **Topotime.js**, a JavaScript library for rendering GeoJSON-T data to a web map linked to a traditional timeline and/or _temporal geometry_ visualizations. Its dependencies will include the Leaflet, Simile Timeline, and D3 libraries, as well as...
 * **Topotime.py**, a Python program for generating _temporal geometries_ from GeoJSON&#8209;T data
 
@@ -23,9 +23,6 @@ We are experimenting with two approaches for adding **"when"** information to Fe
 * the "_GeometryCollection_" approach: geometry type for each Feature is GeometryCollection, and for each **geometry** in the GeometryCollection, **when** is a sibling element of **type**, **coordinates**, and an optional **properties**.
 
 #### *_Bag of Features approach_*
-Gazetteer records:  
-[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_places.geojson)  
-
 Itineraries:  
 [The Pilgrimage of Xuanzang, 629-646 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/xuanzang_way-collection.geojson)  
 [Incanto Trade: 1 voyage, w/places (Venice-Armenia), 1301 CE  ](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_1voyage-w-places.geojson)  
@@ -47,6 +44,12 @@ Itineraries:
 [The Pilgrimage of Xuanzang (partial)] (https://github.com/kgeographer/topotime/blob/master/data/GeometryCollection/itinerary.tt.json)  
 [A short faux itinerary and 2 areas](https://github.com/kgeographer/topotime/blob/master/data/GeometryCollection/multi-type.tt.json)  
 ____________
+#### Misc other
+
+Gazetteer records (Pleiades format, NOT GeoJSON-T):  
+[Incanto Trade: Places, 1283-1453 CE](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_places.geojson)  
+
+
 ____________
 ###Documentation
 **v0.2**  
