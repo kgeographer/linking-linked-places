@@ -15,7 +15,7 @@ The project's planned work products include:
 
 All of these are under active development, so the contents of this repo are dynamic "works-in-progress." Comments, suggestions, and reasonably polite brickbats are welcome.
 
-###Example data files/maps (in progress)
+###Example GeoJSON-T data files/maps (in progress)
 
 We are experimenting with two approaches for adding **"when"** information to FeatureCollections in GeoJSON&#8209;T. So far, each appears to suit one or more use cases; examples in development are listed below.
 
