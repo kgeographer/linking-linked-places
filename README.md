@@ -37,7 +37,7 @@ Flows:
 [Incanto Trade: Total ships per segment (w/places), 1282-1453](https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/incanto_flow-features-w-places.geojson)
 
 Historical periods:  
-Hodos (2006). [_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/periodo_p0tns5v.tt.json); Source retrieved from **PeriodO** [2] http://n2t.net/ark:/99152/p0tns5v
+[_Local Responses to Colonization in the Iron Age Mediterranean_] (https://github.com/kgeographer/topotime/blob/master/data/BagOfFeatures/periodo_p0tns5v.tt.json); Hodos (2006). Source retrieved from **PeriodO** [2] http://n2t.net/ark:/99152/p0tns5v
 ____________
 #### *_GeometryCollection approach_*
 Euratlas time-indexed admin units [1]:  

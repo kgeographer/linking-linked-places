@@ -2,5 +2,6 @@ README.md.new
 /venv
 /dev
 py/local_settings.py
-
-
+/misc
+/nextgen
+/geodata
