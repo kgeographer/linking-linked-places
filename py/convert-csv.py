@@ -27,7 +27,7 @@ c = FeatureCollection('OI_001',"Incanto trade journeys", "M. Fournier", 2014 )
 print(c.to_JSON())
 
 # create node/place features
-for x in range(0,2): #len(nodes)):
+for x in range(0,20): #len(nodes)):
    # new empty labeled feature
    node = nodes[x].split('|') # make array
    feat = nodeFeature(node[2])
@@ -46,7 +46,7 @@ for x in range(0,2): #len(nodes)):
 print(c.to_JSON())
 
 # create edge/path features   
-for x in range(0,5): #len(edges))
+for x in range(0,20): #len(edges))
    trajid = -1
    edge = edges[x].split('|') # make array
    if(edge[0] != trajid):
