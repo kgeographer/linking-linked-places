@@ -19,14 +19,14 @@ nodes = codecs.open(file_n,mode='r',encoding='utf8').readlines()[1:]
 edges = codecs.open(file_e,mode='r',encoding='utf8').readlines()[1:]
 
 #w1 = codecs.open('../data/'+output_type+'/'+project+'-journeys.json','w','utf-8')
-w1 = codecs.open('../data/'+output_type+'/'+project+'-journeys100.json','w','utf-8')
+w1 = codecs.open('../data/'+output_type+'/'+project+'-journeys50.json','w','utf-8')
 
 # new empty collection: id, label, provenance, date
 c = FeatureCollection('OI_001',"Incanto trade journeys", "M. Fournier", 2014 ) 
 print(c.to_JSON())
 
 # create node/place features
-for x in range(0,100): 
+for x in range(0,50): 
 #for x in range(len(nodes)):
    # new empty labeled feature
    node = nodes[x].split('|') # make array
@@ -43,7 +43,7 @@ for x in range(0,100):
 #print(c.to_JSON())
 
 # create edge/path features   
-for x in range(0,100): 
+for x in range(0,50): 
 #for x in range(len(edges)):
    trajid = -1
    edge = edges[x].split('|') # make array
