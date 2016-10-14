@@ -1,10 +1,4 @@
 {
-  "properties": {
-    "id": "OI_001",
-    "pub_date": 2014,
-    "provenance": "M. Fournier",
-    "label": "Incanto trade journeys"
-  },
   "features": [
     {
       "geometry": {
@@ -14,17 +8,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "501325",
+        "featureType": "place",
         "label": "Abydos",
-        "orbis_id": "60001",
         "placename": "Abydos",
-        "featureType": "place"
+        "orbis_id": "60001"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -34,17 +28,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "678010",
+        "featureType": "place",
         "label": "Acre",
-        "orbis_id": "60002",
         "placename": "Acre",
-        "featureType": "place"
+        "orbis_id": "60002"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -54,17 +48,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "147985",
+        "featureType": "place",
         "label": "Agde",
-        "orbis_id": "60003",
         "placename": "Agde",
-        "featureType": "place"
+        "orbis_id": "60003"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -74,17 +68,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
-        "label": "Aigues-Mortes",
-        "orbis_id": "60004",
-        "placename": "Aigues.Mortes",
         "geonames_id": "3038493",
-        "featureType": "place"
+        "featureType": "place",
+        "label": "Aigues-Mortes",
+        "placename": "Aigues.Mortes",
+        "orbis_id": "60004"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -94,17 +88,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "727070",
+        "featureType": "place",
         "label": "Alexandria",
-        "orbis_id": "60005",
         "placename": "Alexandrie",
-        "featureType": "place"
+        "orbis_id": "60005"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -114,18 +108,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
-        "orbis_id": "60006",
-        "featureType": "place",
         "pleiades_id": "295276",
-        "placename": "Alger",
         "geonames_id": "2507480",
-        "label": "Alger"
+        "featureType": "place",
+        "label": "Alger",
+        "placename": "Alger",
+        "orbis_id": "60006"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -135,17 +129,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "306090",
+        "featureType": "place",
         "label": "Annaba",
-        "orbis_id": "60013",
         "placename": "B\u00f4ne",
-        "featureType": "place"
+        "orbis_id": "60013"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -155,17 +149,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "108747",
+        "featureType": "place",
         "label": "Antwerp",
-        "orbis_id": "60007",
         "placename": "Anvers",
-        "featureType": "place"
+        "orbis_id": "60007"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -175,16 +169,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Armenia",
-        "orbis_id": "60008",
         "placename": "Armenia",
-        "featureType": "place"
+        "orbis_id": "60008"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -194,17 +188,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "893951",
+        "featureType": "place",
         "label": "Babylone",
-        "orbis_id": "60009",
         "placename": "Babylone",
-        "featureType": "place"
+        "orbis_id": "60009"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -214,16 +208,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Barbarie",
-        "orbis_id": "60113",
         "placename": "Barbarie",
-        "featureType": "place"
+        "orbis_id": "60113"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -233,17 +227,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "246343",
+        "featureType": "place",
         "label": "Barcelona",
-        "orbis_id": "60110",
         "placename": "Barcelone",
-        "featureType": "place"
+        "orbis_id": "60110"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -253,17 +247,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
-        "label": "Bayonne",
-        "orbis_id": "60010",
-        "placename": "Bayonne",
         "geonames_id": "3034475",
-        "featureType": "place"
+        "featureType": "place",
+        "label": "Bayonne",
+        "placename": "Bayonne",
+        "orbis_id": "60010"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -273,17 +267,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "678060",
+        "featureType": "place",
         "label": "Beirut",
-        "orbis_id": "60011",
         "placename": "Beyrouth",
-        "featureType": "place"
+        "orbis_id": "60011"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -293,16 +287,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Black Sea",
-        "orbis_id": "60012",
         "placename": "Black.Sea",
-        "featureType": "place"
+        "orbis_id": "60012"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -312,16 +306,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Brabant",
-        "orbis_id": "60015",
         "placename": "Brabant",
-        "featureType": "place"
+        "orbis_id": "60015"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -331,17 +325,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "108830",
+        "featureType": "place",
         "label": "Brugge",
-        "orbis_id": "60016",
         "placename": "Bruges",
-        "featureType": "place"
+        "orbis_id": "60016"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -351,16 +345,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Buca Culfil",
-        "orbis_id": "60017",
         "placename": "Buca.Culfil",
-        "featureType": "place"
+        "orbis_id": "60017"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -370,16 +364,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Buca Maris Maioris",
-        "orbis_id": "60018",
         "placename": "Buca.maris.maioris",
-        "featureType": "place"
+        "orbis_id": "60018"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -389,17 +383,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "305142",
+        "featureType": "place",
         "label": "B\u00e9ja\u00efa",
-        "orbis_id": "60014",
         "placename": "Bougie",
-        "featureType": "place"
+        "orbis_id": "60014"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -409,17 +403,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "256177",
+        "featureType": "place",
         "label": "Cadix",
-        "orbis_id": "60019",
         "placename": "Cadix",
-        "featureType": "place"
+        "orbis_id": "60019"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -429,17 +423,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "854743",
+        "featureType": "place",
         "label": "Caffa",
-        "orbis_id": "60020",
         "placename": "Caffa",
-        "featureType": "place"
+        "orbis_id": "60020"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -449,16 +443,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Calabre",
-        "orbis_id": "60112",
         "placename": "Calabre",
-        "featureType": "place"
+        "orbis_id": "60112"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -468,16 +462,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Cap Mal\u00e9e",
-        "orbis_id": "60021",
         "placename": "Cap.Malee",
-        "featureType": "place"
+        "orbis_id": "60021"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -487,17 +481,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "79646",
+        "featureType": "place",
         "label": "Caput Doble",
-        "orbis_id": "60023",
         "placename": "Caput.Doble",
-        "featureType": "place"
+        "orbis_id": "60023"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -507,16 +501,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Caput Martin",
-        "orbis_id": "60022",
         "placename": "Caput.Martin",
-        "featureType": "place"
+        "orbis_id": "60022"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -526,16 +520,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Catalonia",
-        "orbis_id": "60111",
         "placename": "Catalugna",
-        "featureType": "place"
+        "orbis_id": "60111"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -545,17 +539,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "226770",
+        "featureType": "place",
         "label": "Cembalo",
-        "orbis_id": "60024",
         "placename": "Cembalo",
-        "featureType": "place"
+        "orbis_id": "60024"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -565,17 +559,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "550496",
+        "featureType": "place",
         "label": "Chios",
-        "orbis_id": "60025",
         "placename": "Chios",
-        "featureType": "place"
+        "orbis_id": "60025"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -585,17 +579,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "514076",
+        "featureType": "place",
         "label": "Civita Vecchia",
-        "orbis_id": "60026",
         "placename": "Civita.Vecchia",
-        "featureType": "place"
+        "orbis_id": "60026"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -605,16 +599,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Collioure",
-        "orbis_id": "60028",
         "placename": "Collioure",
-        "featureType": "place"
+        "orbis_id": "60028"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -624,17 +618,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "520998",
+        "featureType": "place",
         "label": "Constantinople",
-        "orbis_id": "60029",
         "placename": "Constantinople",
-        "featureType": "place"
+        "orbis_id": "60029"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -644,17 +638,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "530834",
+        "featureType": "place",
         "label": "Corfu",
-        "orbis_id": "60030",
         "placename": "Corfou",
-        "featureType": "place"
+        "orbis_id": "60030"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -664,16 +658,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Coron",
-        "orbis_id": "60031",
         "placename": "Coron",
-        "featureType": "place"
+        "orbis_id": "60031"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -683,16 +677,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Crete",
-        "orbis_id": "60033",
         "placename": "Crete",
-        "featureType": "place"
+        "orbis_id": "60033"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -702,17 +696,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "452317",
+        "featureType": "place",
         "label": "Crotone",
-        "orbis_id": "60032",
         "placename": "Cotrone",
-        "featureType": "place"
+        "orbis_id": "60032"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -722,16 +716,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Cyprus",
-        "orbis_id": "60034",
         "placename": "Cyprus",
-        "featureType": "place"
+        "orbis_id": "60034"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -741,17 +735,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "678106",
+        "featureType": "place",
         "label": "Damas",
-        "orbis_id": "60035",
         "placename": "Damas",
-        "featureType": "place"
+        "orbis_id": "60035"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -761,17 +755,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "344383",
+        "featureType": "place",
         "label": "Djerba",
-        "orbis_id": "60036",
         "placename": "Djerba",
-        "featureType": "place"
+        "orbis_id": "60036"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -781,17 +775,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
-        "label": "Dune",
-        "orbis_id": "60037",
-        "placename": "Dune",
         "geonames_id": "3020686",
-        "featureType": "place"
+        "featureType": "place",
+        "label": "Dune",
+        "placename": "Dune",
+        "orbis_id": "60037"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -801,17 +795,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "481818",
+        "featureType": "place",
         "label": "Durazzo",
-        "orbis_id": "60038",
         "placename": "Durazzo",
-        "featureType": "place"
+        "orbis_id": "60038"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -821,16 +815,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "England",
-        "orbis_id": "60039",
         "placename": "England",
-        "featureType": "place"
+        "orbis_id": "60039"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -840,16 +834,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Episkopi",
-        "orbis_id": "60040",
         "placename": "Episkopi",
-        "featureType": "place"
+        "orbis_id": "60040"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -859,17 +853,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
-        "label": "Famagosta",
-        "orbis_id": "60041",
-        "placename": "Famagosta",
         "geonames_id": "146617",
-        "featureType": "place"
+        "featureType": "place",
+        "label": "Famagosta",
+        "placename": "Famagosta",
+        "orbis_id": "60041"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -879,16 +873,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Flanders",
-        "orbis_id": "60042",
         "placename": "Flanders",
-        "featureType": "place"
+        "orbis_id": "60042"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -898,17 +892,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "432734",
+        "featureType": "place",
         "label": "Gaeta",
-        "orbis_id": "60043",
         "placename": "Gaete",
-        "featureType": "place"
+        "orbis_id": "60043"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -918,16 +912,16 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
+        "featureType": "place",
         "label": "Gallipoli",
-        "orbis_id": "60044",
         "placename": "Gallipoli",
-        "featureType": "place"
+        "orbis_id": "60044"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -937,17 +931,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "383664",
+        "featureType": "place",
         "label": "Genoa",
-        "orbis_id": "60045",
         "placename": "Genoa",
-        "featureType": "place"
+        "orbis_id": "60045"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -957,17 +951,17 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
         "pleiades_id": "570390",
+        "featureType": "place",
         "label": "Glarentza",
-        "orbis_id": "60027",
         "placename": "Clarence",
-        "featureType": "place"
+        "orbis_id": "60027"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
@@ -977,22 +971,29 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "properties": {
-        "label": "Granada",
-        "orbis_id": "60046",
-        "placename": "Grenade",
         "geonames_id": "2517117",
-        "featureType": "place"
+        "featureType": "place",
+        "label": "Granada",
+        "placename": "Grenade",
+        "orbis_id": "60046"
       },
       "when": {
         "timespans": []
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60076",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -1253,19 +1254,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60076",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1001",
         "featureType": "journey"
@@ -1273,21 +1266,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1283-01-01"
-            },
             "end": {
               "latest": "1283-12-31"
             },
-            "label": "in 1283"
+            "label": "in 1283",
+            "start": {
+              "earliest": "1283-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60076",
+              "target": "60029",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -1862,19 +1863,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60029",
-              "source": "60076",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1001",
         "featureType": "journey"
@@ -1882,21 +1875,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1283-01-01"
-            },
             "end": {
               "latest": "1283-12-31"
             },
-            "label": "in 1283"
+            "label": "in 1283",
+            "start": {
+              "earliest": "1283-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60033",
+              "ships": "2"
+            },
             "coordinates": [
               [
                 [
@@ -2449,19 +2450,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60104",
-              "ships": "2",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1002",
         "featureType": "journey"
@@ -2469,21 +2462,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1300-01-01"
-            },
             "end": {
               "latest": "1300-12-31"
             },
-            "label": "in 1300"
+            "label": "in 1300",
+            "start": {
+              "earliest": "1300-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60060",
+              "ships": "3"
+            },
             "coordinates": [
               [
                 [
@@ -2904,19 +2905,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60060",
-              "source": "60104",
-              "ships": "3",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1004",
         "featureType": "journey"
@@ -2924,21 +2917,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60060",
+              "target": "60033",
+              "ships": "3"
+            },
             "coordinates": [
               [
                 [
@@ -3123,19 +3124,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60060",
-              "ships": "3",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1004",
         "featureType": "journey"
@@ -3143,21 +3136,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "3",
+              "days": "5",
+              "source": "60033",
+              "target": "60034",
+              "ships": "3"
+            },
             "coordinates": [
               [
                 [
@@ -3542,19 +3543,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60034",
-              "source": "60033",
-              "ships": "3",
-              "sequence": "3",
-              "days": "5"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1004",
         "featureType": "journey"
@@ -3562,21 +3555,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "4",
+              "days": "8",
+              "source": "60034",
+              "target": "60008",
+              "ships": "3"
+            },
             "coordinates": [
               [
                 [
@@ -3701,19 +3702,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60008",
-              "source": "60034",
-              "ships": "3",
-              "sequence": "4",
-              "days": "8"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1004",
         "featureType": "journey"
@@ -3721,21 +3714,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60017",
+              "ships": "10"
+            },
             "coordinates": [
               [
                 [
@@ -4116,19 +4117,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60017",
-              "source": "60104",
-              "ships": "10",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1005",
         "featureType": "journey"
@@ -4136,21 +4129,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60017",
+              "target": "60070",
+              "ships": "10"
+            },
             "coordinates": [
               [
                 [
@@ -4207,19 +4208,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60070",
-              "source": "60017",
-              "ships": "10",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1005",
         "featureType": "journey"
@@ -4227,130 +4220,130 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
-            "coordinates": [
-              [
-                [
-                  21.6636654,
-                  36.79075104
-                ],
-                [
-                  21.5636654,
-                  36.89075104
-                ],
-                [
-                  21.4636654,
-                  36.99075104
-                ],
-                [
-                  21.3636654,
-                  37.09075104
-                ],
-                [
-                  21.2636654,
-                  37.19075104
-                ],
-                [
-                  21.1636654,
-                  37.29075104
-                ],
-                [
-                  21.0636654,
-                  37.39075104
-                ],
-                [
-                  21.0636654,
-                  37.49075104
-                ],
-                [
-                  21.0636654,
-                  37.59075104
-                ],
-                [
-                  21.0636654,
-                  37.69075104
-                ],
-                [
-                  21.0636654,
-                  37.79075104
-                ],
-                [
-                  21.0636654,
-                  37.89075104
-                ],
-                [
-                  21.1636654,
-                  37.99075104
-                ],
-                [
-                  21.2636654,
-                  38.09075104
-                ],
-                [
-                  21.3636654,
-                  38.19075104
-                ],
-                [
-                  21.4636654,
-                  38.29075104
-                ],
-                [
-                  21.5636654,
-                  38.19075104
-                ],
-                [
-                  21.6636654,
-                  38.19075104
-                ]
-              ],
-              [
-                [
-                  21.6636654,
-                  36.79075104
-                ],
-                [
-                  21.709883,
-                  36.813244
-                ]
-              ],
-              [
-                [
-                  21.6636654,
-                  38.19075104
-                ],
-                [
-                  21.723553,
-                  38.247043
-                ]
-              ]
-            ],
             "properties": {
-              "target": "60060",
+              "sequence": "3",
+              "days": "1",
               "source": "60070",
-              "ships": "10",
-              "sequence": "3",
-              "days": "1"
+              "target": "60060",
+              "ships": "10"
             },
+            "coordinates": [
+              [
+                [
+                  21.6636654,
+                  36.79075104
+                ],
+                [
+                  21.5636654,
+                  36.89075104
+                ],
+                [
+                  21.4636654,
+                  36.99075104
+                ],
+                [
+                  21.3636654,
+                  37.09075104
+                ],
+                [
+                  21.2636654,
+                  37.19075104
+                ],
+                [
+                  21.1636654,
+                  37.29075104
+                ],
+                [
+                  21.0636654,
+                  37.39075104
+                ],
+                [
+                  21.0636654,
+                  37.49075104
+                ],
+                [
+                  21.0636654,
+                  37.59075104
+                ],
+                [
+                  21.0636654,
+                  37.69075104
+                ],
+                [
+                  21.0636654,
+                  37.79075104
+                ],
+                [
+                  21.0636654,
+                  37.89075104
+                ],
+                [
+                  21.1636654,
+                  37.99075104
+                ],
+                [
+                  21.2636654,
+                  38.09075104
+                ],
+                [
+                  21.3636654,
+                  38.19075104
+                ],
+                [
+                  21.4636654,
+                  38.29075104
+                ],
+                [
+                  21.5636654,
+                  38.19075104
+                ],
+                [
+                  21.6636654,
+                  38.19075104
+                ]
+              ],
+              [
+                [
+                  21.6636654,
+                  36.79075104
+                ],
+                [
+                  21.709883,
+                  36.813244
+                ]
+              ],
+              [
+                [
+                  21.6636654,
+                  38.19075104
+                ],
+                [
+                  21.723553,
+                  38.247043
+                ]
+              ]
+            ],
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1005",
         "featureType": "journey"
@@ -4358,21 +4351,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "4",
+              "days": "1",
+              "source": "60060",
+              "target": "60033",
+              "ships": "10"
+            },
             "coordinates": [
               [
                 [
@@ -4557,19 +4558,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60060",
-              "ships": "10",
-              "sequence": "4",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1005",
         "featureType": "journey"
@@ -4577,21 +4570,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "5",
+              "days": "1",
+              "source": "60033",
+              "target": "60034",
+              "ships": "10"
+            },
             "coordinates": [
               [
                 [
@@ -4976,19 +4977,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60034",
-              "source": "60033",
-              "ships": "10",
-              "sequence": "5",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1005",
         "featureType": "journey"
@@ -4996,21 +4989,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "6",
+              "days": "1",
+              "source": "60034",
+              "target": "60008",
+              "ships": "10"
+            },
             "coordinates": [
               [
                 [
@@ -5135,19 +5136,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60008",
-              "source": "60034",
-              "ships": "10",
-              "sequence": "6",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1005",
         "featureType": "journey"
@@ -5155,21 +5148,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60033",
+              "ships": "5"
+            },
             "coordinates": [
               [
                 [
@@ -5722,19 +5723,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60104",
-              "ships": "5",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1006",
         "featureType": "journey"
@@ -5742,21 +5735,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60033",
+              "target": "60008",
+              "ships": "5"
+            },
             "coordinates": [
               [
                 [
@@ -6217,19 +6218,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60008",
-              "source": "60033",
-              "ships": "5",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1006",
         "featureType": "journey"
@@ -6237,21 +6230,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60017",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -6632,19 +6633,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60017",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1007",
         "featureType": "journey"
@@ -6652,21 +6645,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60017",
+              "target": "60070",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -6723,19 +6724,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60070",
-              "source": "60017",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1007",
         "featureType": "journey"
@@ -6743,21 +6736,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60033",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -7310,19 +7311,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1008",
         "featureType": "journey"
@@ -7330,21 +7323,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60033",
+              "target": "60005",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -7585,19 +7586,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60005",
-              "source": "60033",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1008",
         "featureType": "journey"
@@ -7605,21 +7598,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1301-01-01"
-            },
             "end": {
               "latest": "1301-12-31"
             },
-            "label": "in 1301"
+            "label": "in 1301",
+            "start": {
+              "earliest": "1301-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60070",
+              "ships": "12"
+            },
             "coordinates": [
               [
                 [
@@ -8028,19 +8029,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60070",
-              "source": "60104",
-              "ships": "12",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1009",
         "featureType": "journey"
@@ -8048,21 +8041,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60070",
+              "target": "60060",
+              "ships": "12"
+            },
             "coordinates": [
               [
                 [
@@ -8159,19 +8160,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60060",
-              "source": "60070",
-              "ships": "12",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1009",
         "featureType": "journey"
@@ -8179,21 +8172,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "3",
+              "days": "1",
+              "source": "60060",
+              "target": "60031",
+              "ships": "12"
+            },
             "coordinates": [
               [
                 [
@@ -8262,19 +8263,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60031",
-              "source": "60060",
-              "ships": "12",
-              "sequence": "3",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1009",
         "featureType": "journey"
@@ -8282,21 +8275,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "4",
+              "days": "1",
+              "source": "60031",
+              "target": "60033",
+              "ships": "12"
+            },
             "coordinates": [
               [
                 [
@@ -8473,19 +8474,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60031",
-              "ships": "12",
-              "sequence": "4",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1009",
         "featureType": "journey"
@@ -8493,21 +8486,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "5",
+              "days": "1",
+              "source": "60033",
+              "target": "60034",
+              "ships": "12"
+            },
             "coordinates": [
               [
                 [
@@ -8892,19 +8893,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60034",
-              "source": "60033",
-              "ships": "12",
-              "sequence": "5",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1009",
         "featureType": "journey"
@@ -8912,21 +8905,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "6",
+              "days": "1",
+              "source": "60034",
+              "target": "60008",
+              "ships": "12"
+            },
             "coordinates": [
               [
                 [
@@ -9051,19 +9052,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60008",
-              "source": "60034",
-              "ships": "12",
-              "sequence": "6",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1009",
         "featureType": "journey"
@@ -9071,21 +9064,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60029",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -9806,19 +9807,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60029",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1010",
         "featureType": "journey"
@@ -9826,21 +9819,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1302-01-01"
-            },
             "end": {
               "latest": "1302-12-31"
             },
-            "label": "in 1302"
+            "label": "in 1302",
+            "start": {
+              "earliest": "1302-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60038",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -10177,19 +10178,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60038",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1011",
         "featureType": "journey"
@@ -10197,21 +10190,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60038",
+              "target": "60030",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -10304,19 +10305,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60030",
-              "source": "60038",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1011",
         "featureType": "journey"
@@ -10324,21 +10317,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "3",
+              "days": "1",
+              "source": "60030",
+              "target": "60027",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -10439,19 +10440,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60027",
-              "source": "60030",
-              "ships": "1",
-              "sequence": "3",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1011",
         "featureType": "journey"
@@ -10459,21 +10452,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "4",
+              "days": "1",
+              "source": "60027",
+              "target": "60029",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -10850,19 +10851,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60029",
-              "source": "60027",
-              "ships": "1",
-              "sequence": "4",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1011",
         "featureType": "journey"
@@ -10870,21 +10863,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60038",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -11221,19 +11222,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60038",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1012",
         "featureType": "journey"
@@ -11241,21 +11234,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60038",
+              "target": "60030",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -11348,19 +11349,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60030",
-              "source": "60038",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1012",
         "featureType": "journey"
@@ -11368,21 +11361,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "3",
+              "days": "1",
+              "source": "60030",
+              "target": "60027",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -11483,19 +11484,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60027",
-              "source": "60030",
-              "ships": "1",
-              "sequence": "3",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1012",
         "featureType": "journey"
@@ -11503,21 +11496,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "4",
+              "days": "1",
+              "source": "60027",
+              "target": "60029",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -11894,19 +11895,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60029",
-              "source": "60027",
-              "ships": "1",
-              "sequence": "4",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1012",
         "featureType": "journey"
@@ -11914,21 +11907,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1303-01-01"
-            },
             "end": {
               "latest": "1303-12-31"
             },
-            "label": "in 1303"
+            "label": "in 1303",
+            "start": {
+              "earliest": "1303-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60033",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -12481,19 +12482,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1013",
         "featureType": "journey"
@@ -12501,21 +12494,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1304-01-01"
-            },
             "end": {
               "latest": "1304-12-31"
             },
-            "label": "in 1304"
+            "label": "in 1304",
+            "start": {
+              "earliest": "1304-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60064",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -13088,19 +13089,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60064",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1014",
         "featureType": "journey"
@@ -13108,21 +13101,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1305-01-01"
-            },
             "end": {
               "latest": "1305-12-31"
             },
-            "label": "in 1305"
+            "label": "in 1305",
+            "start": {
+              "earliest": "1305-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60064",
+              "target": "60029",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -13347,19 +13348,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60029",
-              "source": "60064",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1014",
         "featureType": "journey"
@@ -13367,21 +13360,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1305-01-01"
-            },
             "end": {
               "latest": "1305-12-31"
             },
-            "label": "in 1305"
+            "label": "in 1305",
+            "start": {
+              "earliest": "1305-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60005",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -14126,19 +14127,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60005",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1015",
         "featureType": "journey"
@@ -14146,21 +14139,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1305-01-01"
-            },
             "end": {
               "latest": "1305-12-31"
             },
-            "label": "in 1305"
+            "label": "in 1305",
+            "start": {
+              "earliest": "1305-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60029",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -14881,19 +14882,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60029",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1016",
         "featureType": "journey"
@@ -14901,21 +14894,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1306-01-01"
-            },
             "end": {
               "latest": "1306-12-31"
             },
-            "label": "in 1306"
+            "label": "in 1306",
+            "start": {
+              "earliest": "1306-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60029",
+              "target": "60012",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -15148,19 +15149,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60012",
-              "source": "60029",
-              "ships": "1",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1016",
         "featureType": "journey"
@@ -15168,21 +15161,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1306-01-01"
-            },
             "end": {
               "latest": "1306-12-31"
             },
-            "label": "in 1306"
+            "label": "in 1306",
+            "start": {
+              "earliest": "1306-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60005",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -15927,19 +15928,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60005",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1017",
         "featureType": "journey"
@@ -15947,21 +15940,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1306-01-01"
-            },
             "end": {
               "latest": "1306-12-31"
             },
-            "label": "in 1306"
+            "label": "in 1306",
+            "start": {
+              "earliest": "1306-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60034",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -16870,19 +16871,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60034",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1018",
         "featureType": "journey"
@@ -16890,21 +16883,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1307-01-01"
-            },
             "end": {
               "latest": "1307-12-31"
             },
-            "label": "in 1307"
+            "label": "in 1307",
+            "start": {
+              "earliest": "1307-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60034",
+              "ships": "4"
+            },
             "coordinates": [
               [
                 [
@@ -17813,19 +17814,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60034",
-              "source": "60104",
-              "ships": "4",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1019",
         "featureType": "journey"
@@ -17833,21 +17826,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1307-01-01"
-            },
             "end": {
               "latest": "1307-12-31"
             },
-            "label": "in 1307"
+            "label": "in 1307",
+            "start": {
+              "earliest": "1307-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60034",
+              "target": "60008",
+              "ships": "4"
+            },
             "coordinates": [
               [
                 [
@@ -17972,19 +17973,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60008",
-              "source": "60034",
-              "ships": "4",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1019",
         "featureType": "journey"
@@ -17992,21 +17985,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1307-01-01"
-            },
             "end": {
               "latest": "1307-12-31"
             },
-            "label": "in 1307"
+            "label": "in 1307",
+            "start": {
+              "earliest": "1307-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "3",
+              "days": "1",
+              "source": "60008",
+              "target": "60093",
+              "ships": "4"
+            },
             "coordinates": [
               [
                 [
@@ -18159,19 +18160,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60093",
-              "source": "60008",
-              "ships": "4",
-              "sequence": "3",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1019",
         "featureType": "journey"
@@ -18179,21 +18172,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1307-01-01"
-            },
             "end": {
               "latest": "1307-12-31"
             },
-            "label": "in 1307"
+            "label": "in 1307",
+            "start": {
+              "earliest": "1307-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60005",
+              "ships": "1"
+            },
             "coordinates": [
               [
                 [
@@ -18938,19 +18939,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60005",
-              "source": "60104",
-              "ships": "1",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1020",
         "featureType": "journey"
@@ -18958,21 +18951,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1307-01-01"
-            },
             "end": {
               "latest": "1307-12-31"
             },
-            "label": "in 1307"
+            "label": "in 1307",
+            "start": {
+              "earliest": "1307-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60034",
+              "ships": "2"
+            },
             "coordinates": [
               [
                 [
@@ -19881,19 +19882,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60034",
-              "source": "60104",
-              "ships": "2",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1021",
         "featureType": "journey"
@@ -19901,21 +19894,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1308-01-01"
-            },
             "end": {
               "latest": "1308-12-31"
             },
-            "label": "in 1308"
+            "label": "in 1308",
+            "start": {
+              "earliest": "1308-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60034",
+              "target": "60093",
+              "ships": "2"
+            },
             "coordinates": [
               [
                 [
@@ -20040,19 +20041,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60093",
-              "source": "60034",
-              "ships": "2",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1021",
         "featureType": "journey"
@@ -20060,21 +20053,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1308-01-01"
-            },
             "end": {
               "latest": "1308-12-31"
             },
-            "label": "in 1308"
+            "label": "in 1308",
+            "start": {
+              "earliest": "1308-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "1",
+              "days": "1",
+              "source": "60104",
+              "target": "60033",
+              "ships": "5"
+            },
             "coordinates": [
               [
                 [
@@ -20627,19 +20628,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60033",
-              "source": "60104",
-              "ships": "5",
-              "sequence": "1",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1022",
         "featureType": "journey"
@@ -20647,21 +20640,29 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1312-01-01"
-            },
             "end": {
               "latest": "1312-12-31"
             },
-            "label": "in 1312"
+            "label": "in 1312",
+            "start": {
+              "earliest": "1312-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     },
     {
       "geometry": {
         "geometries": [
           {
+            "properties": {
+              "sequence": "2",
+              "days": "1",
+              "source": "60033",
+              "target": "60005",
+              "ships": "5"
+            },
             "coordinates": [
               [
                 [
@@ -20902,19 +20903,11 @@
                 ]
               ]
             ],
-            "properties": {
-              "target": "60005",
-              "source": "60033",
-              "ships": "5",
-              "sequence": "2",
-              "days": "1"
-            },
             "type": "MultiLineString"
           }
         ],
         "type": "GeometryCollection"
       },
-      "type": "Feature",
       "properties": {
         "id": "1022",
         "featureType": "journey"
@@ -20922,17 +20915,24 @@
       "when": {
         "timespans": [
           {
-            "start": {
-              "earliest": "1312-01-01"
-            },
             "end": {
               "latest": "1312-12-31"
             },
-            "label": "in 1312"
+            "label": "in 1312",
+            "start": {
+              "earliest": "1312-01-01"
+            }
           }
         ]
-      }
+      },
+      "type": "Feature"
     }
   ],
+  "properties": {
+    "id": "OI_001",
+    "provenance": "M. Fournier",
+    "label": "Incanto trade journeys",
+    "pub_date": 2014
+  },
   "type": "FeatureCollection"
 }

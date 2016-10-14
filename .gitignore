@@ -2,6 +2,7 @@ README.md.new
 /venv
 /dev
 py/local_settings.py
+py/__pycache__
 /misc
 /nextgen
 /geodata
