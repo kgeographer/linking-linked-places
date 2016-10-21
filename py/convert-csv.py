@@ -15,8 +15,8 @@ project = 'incanto'
 output_type = 'GeometryCollection' # BagOfFeatures or GeometryCollection
 data_type = 'journeys'
 
-# expects sites (nodes) and segments (edges) files in project folder
-file_n = '../data/source/'+project+'/sites.csv' # nodes/places
+# expects places (nodes) and segments (edges) files in project folder
+file_n = '../data/source/'+project+'/places.csv' # nodes/places
 file_e = '../data/source/'+project+'/segments.csv' # edges/paths
 nodes = codecs.open(file_n,mode='r',encoding='utf8').readlines()[1:]
 edges = codecs.open(file_e,mode='r',encoding='utf8').readlines()[1:]
