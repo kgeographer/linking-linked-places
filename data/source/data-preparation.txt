@@ -1,0 +1,15 @@
+Data Preparation
+
+-	see codebook for field descriptions
+
+- create 2 csv files (delimited with ';'), one for places, the other for segments
+	- the script will build a GeoJSON-T file from both
+	-	e.g. $ python makeroutes.py places.csv segments.csv myroutes
+
+- at this experimental stage, it is presumed routes will be mapped and rendered on a timeline
+	- therefore, geometry for both places and segments and "when" or "follows" values for segments are required
+
+- each file has several mandatory columns, followed by any number of "properties" columns
+	- values are not required for some columns (* = not required)
+	- mandatory for places: [collection;place_id;toponym;gazetteer_uri;gazetteer_label;lng;lat]
+	- mandatory for segments: [collection;route_id;segment_id;source;target;label;geometry;when;next]

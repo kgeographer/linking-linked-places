@@ -1,0 +1,25 @@
+CODEBOOK
+
+PLACES
+note: each place in a GeoJSON-T FeatureCollection for routes refers to some gazetteer entry
+
+collection
+place_id
+toponym
+gazetteer_uri
+gazetteer_label
+lng
+lat
+
+SEGMENTS
+note: the directionality implied by 'source/target' is an artifact of network terminology, not relevant here
+
+collection:	code name for FeatureCollection
+route_id:	if multiple routes, id for each; otherwise blenk
+segment_id:	unique identifier
+source:	id of either place node
+target:	id of other place node
+label:	usually "place1label-place2label"
+geometry:	a GeoJSON expression
+when:	up to 4 comma-delimited ISO-8601 expressions (start, latest start, earliest end, end)
+next:	if directional, segment_id of next in sequence

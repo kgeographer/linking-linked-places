@@ -7,3 +7,7 @@ py/__pycache__
 /nextgen
 /geodata
 /old
+/notes
+~*.*
+*.xlsx
+.DS_Store
