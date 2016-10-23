@@ -1,0 +1,69 @@
+collection;place_id;toponym;gazetteer_uri;gazetteer_label;lng;lat;geonames_id;status;comment;source
+xuanzang;367086;Ajanta;http://geonames.org/1279179;Ajanta Caves;75.75275531;20.53237101;1279179;;;Wri98
+xuanzang;348070;Aksu;http://geonames.org/1529660;Aksu;80.34729588;41.20859264;1529660;;;Wri98
+xuanzang;367091;Andarab;http://geonames.org/1148671;Anḏaṟāb;67.08765628;35.79892351;1148671;;;Wri98
+xuanzang;367081;An-his;http://geonames.org/1529004;Yuanquan;95.83147413;40.49605269;1529004;;;Wri98
+xuanzang;367108;Assam;;;92.99280879;26.61932794;;;;Wri98
+xuanzang;360498;Attock;http://geonames.org/1184249;Attock City;72.36522883;33.76352101;1184249;;;Wri98
+xuanzang;355631;Ayodhya;http://geonames.org/1278094;Ayodhya;82.19801109;26.80035299;1278094;;;Wri98
+xuanzang;367102;Bairata;;;76.1791307;27.43189313;;;;Wri98
+xuanzang;345485;Balkh;http://geonames.org/1147290;;66.89211509;36.76518216;1147290;;;Wri98
+xuanzang;367085;Bamiyan;http://geonames.org/1147242;Bāmīān;67.82488474;34.82493073;1147242;;;Wri98
+xuanzang;355463;Bharukaccha;http://geonames.org/1276100;Bharūch;72.98013824;21.71737322;1276100;;;Wri98
+xuanzang;355388;Bodh Gaya;http://geonames.org/1275389;Bodh Gaya;84.99200623;24.69574718;1275389;;;Wri98
+xuanzang;348203;Chang'an;http://geonames.org/1790630;Xi'an;108.9423866;34.26009687;1790630;;;Wri98
+xuanzang;367090;Charkhlik;http://geonames.org/1280122;Ruoqiang;88.14137374;39.05742751;1280122;;;Wri98
+xuanzang;360476;Charsadda;http://geonames.org/1181439;Chārsadda;71.73171026;34.15289208;1181439;;;Wri98
+xuanzang;367089;Cherchen;http://geonames.org/1280249;Qiemo;85.56840396;38.10974875;1280249;;;Wri98
+xuanzang;355104;Chinabhukti;http://geonames.org/1271883;Fīrozpur;74.61368586;30.91679793;1271883;;;Wri98
+xuanzang;367084;Darel;http://geonames.org/7096609;Darēl;73.7358931;35.56878532;7096609;;;Wri98
+xuanzang;367113;Dhanakataka;http://geonames.org/1278718;Amarāvati;80.3667;16.5833;1278718;;;Wri98
+xuanzang;345479;Faizabad;http://geonames.org/1142170;Faizabad;70.57709716;37.11867493;1142170;;;Wri98
+xuanzang;348065;Hami;http://geonames.org/1529484;Hami;93.51435621;42.83428565;1529484;;;Wri98
+xuanzang;367109;Irana;;;86.20629004;25.29743813;;;;Wri98
+xuanzang;354824;Jalandhara;http://geonames.org/1268782;Jalandhar;75.58346538;31.31752077;1268782;;;Wri98
+xuanzang;354770;Kancipuram;http://geonames.org/1268159;Kānchipuram;79.70752922;12.82137942;1268159;;;Wri98
+xuanzang;354759;Kanyakubja;http://geonames.org/1268011;Kannauj;79.9465728;26.99920304;1268011;;;Wri98
+xuanzang;367103;Kapilavastu;;;83.052627;27.54823278;;;;Wri98
+xuanzang;367083;Kapisi;http://geonames.org/7054036;Bagrām;69.73313235;34.88850216;7054036;;;Wri98
+xuanzang;367087;Karashahr;http://geonames.org/1529031;Yanqi;86.65110391;42.02804251;1529031;;;Wri98
+xuanzang;348056;Kashgar;http://geonames.org/1280849;Kashi;75.99772452;39.4664917;1280849;;;Wri98
+xuanzang;367088;Kausambi;http://geonames.org/1267401;Kaushambi;81.39864004;25.3637343;1267401;;;Wri98
+xuanzang;348058;Khotan;http://geonames.org/1281019;Hotan;79.8816831;37.12422169;1281019;;;Wri98
+xuanzang;348063;Kucha;http://geonames.org/1529363;Kuqa;83.15207331;41.70435101;1529363;;;Wri98
+xuanzang;345465;Kunduz;http://geonames.org/1135689;Kondūz;68.91922128;36.74100478;1135689;;;Wri98
+xuanzang;367104;Kusinagara;;;83.89122334;26.74251508;;;;Wri98
+xuanzang;367082;Liangzhou;http://geonames.org/1803936;Wuwei;102.6608675;37.91380943;1803936;;;Wri98
+xuanzang;367097;Loulan;http://geonames.org/1529336;Loulan Yiji;90.07035644;39.94472019;1529336;;;Wri98
+xuanzang;367095;Lumbini;http://geonames.org/1282839;Rummin-dei;83.27330907;27.47624178;1282839;;;Wri98
+xuanzang;354407;Mathura;http://geonames.org/1263364;Mathura;77.68034147;27.5076451;1263364;;;Wri98
+xuanzang;354448;Matipura;http://geonames.org/1263879;Mandāwar;78.11612001;29.53042494;1263879;;;Wri98
+xuanzang;360317;Multan;http://geonames.org/1169825;Multān;71.46697581;30.19092625;1169825;;;Wri98
+xuanzang;345473;Nagarahara;http://geonames.org/1139715;Nagarahara;70.53383057;34.39448905;1139715;;;Wri98
+xuanzang;367096;Nalanda;http://geonames.org/1262080;Nālanda;85.44455141;25.13582199;1262080;;;Wri98
+xuanzang;354254;Nasik;http://geonames.org/1261731;Nāsik;73.78794098;20.00228288;1261731;;;Wri98
+xuanzang;367098;Niya;http://geonames.org/1280555;Minfeng;82.68201795;37.06585746;1280555;;;Wri98
+xuanzang;367110;Parvata;;;74.77270128;32.89152204;;;;Wri98
+xuanzang;354119;Pataliputra;http://geonames.org/1260086;Patna;85.1307875;25.61284236;1260086;;;Wri98
+xuanzang;360292;Peshawar;http://geonames.org/1168197;Peshāwar;71.54607967;34.0044938;1168197;;;Wri98
+xuanzang;355730;Prayaga;http://geonames.org/1278994;Allahābād;81.85103182;25.47032409;1278994;;;Wri98
+xuanzang;360248;Sakala;http://geonames.org/1164909;Siālkot;74.52893935;32.50759019;1164909;;;Wri98
+xuanzang;366553;Samarkand;http://geonames.org/1216265;Samarqand;66.97906618;39.65193346;1216265;;;Wri98
+xuanzang;367111;Samatata;;;91.73421281;22.65767709;;;;Wri98
+xuanzang;367093;Sankasya;http://geonames.org/1257373;Sankāsya;79.17747036;27.35810002;1257373;;;Wri98
+xuanzang;367094;Sarnath and Varanasi;http://geonames.org/1257137;Sārnāth;82.9926302;25.30492789;1257137;;;Wri98
+xuanzang;367092;Shabaz Gharhi;http://geonames.org/7074006;Garhi Shāhbāz;72.20274168;34.35398255;7074006;;;Wri98
+xuanzang;353703;Shrinigar;http://geonames.org/1255634;Srīnagar;74.822721;34.08822817;1255634;;;Wri98
+xuanzang;367105;Sravasti;;;82.03730207;27.51107562;;;;Wri98
+xuanzang;367106;Srughna;;;77.26754215;30.12123215;;;;Wri98
+xuanzang;353661;Tamrallipti;http://geonames.org/1255046;Tamlūk;87.92145786;22.29160038;1255046;;;Wri98
+xuanzang;366587;Tashkent;http://geonames.org/1512569;Tashkent;69.23584522;41.27924331;1512569;;;Wri98
+xuanzang;367099;Tashkurghan;http://geonames.org/1279901;Taxkorgan;75.24466904;37.77941666;1279901;;;Wri98
+xuanzang;367101;Taxila;http://geonames.org/1163715;Taxila;72.80406816;33.74393121;1163715;;;Wri98
+xuanzang;367112;The Jade Gate;;;93.867;40.35;;;;Wri98
+xuanzang;357565;Tokmak;http://geonames.org/1527199;Tokmok;75.2938856;42.85215218;1527199;;;Wri98
+xuanzang;367100;Tun-huang;http://geonames.org/1529531;Dunhuang;94.63484003;40.10775394;1529531;;;Wri98
+xuanzang;348060;Turfan;http://geonames.org/1529114;Turpan;89.11996706;42.96932584;1529114;;;Wri98
+xuanzang;353566;Ujjayini;http://geonames.org/1253914;Ujjain;74.72923051;23.54393477;1253914;;;Wri98
+xuanzang;367107;Vaisali;;;85.02433061;26.04169101;;;;Wri98
+xuanzang;348053;Yarkand;http://geonames.org/1280037;Shache;77.24126154;38.53397137;1280037;;;Wri98

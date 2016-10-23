@@ -1,7 +1,8 @@
-1	incanto_journeys
-2	incanto_flows
-3	vicarello
-4	courier
-5	xuanzang
-6 roundabout
-7	amber
+id  id_series dataset provider
+1 1000  incanto_journeys  M. Fournier
+2 2000  incanto_flows M. Fournier
+3 3000  vicarello R. Simon
+4 4000  courier L. Berman
+5 5000  xuanzang  R. Mostern, W. Thorpe
+6 6000  roundabout  K. Grossner
+7 7000  amber "To the Ends of the Earth"

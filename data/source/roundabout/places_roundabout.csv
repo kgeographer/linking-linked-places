@@ -1,0 +1,29 @@
+collection;place_id;toponym;gazetteer_uri;gazetteer_label;lng;lat;comment;nights;geonames_id
+ra;ra0001;Palo Alto, CA;http://www.geonames.org/5380748;Palo Alto;-122.14302;37.44188;;;5380748
+ra;ra0002;Fernley, NV;http://www.geonames.org/5504003;Fernley;-119.25183;39.60797;;1;5504003
+ra;ra0003;Delta, UT;http://www.geonames.org/5538080;Delta;-112.57717;39.35218;;1;5538080
+ra;ra0004;Craig, CO;http://www.geonames.org/5576064;Craig;-107.54645;40.51525;;1;5576064
+ra;ra0005;Fort Collins, CO;http://www.geonames.org/5577147;Fort Collins;-105.08442;40.58526;;1;5577147
+ra;ra0006;Denver, CO;http://www.geonames.org/5419384;Denver;-104.9847;39.73915;;4;5419384
+ra;ra0007;Cambridge, MA;http://www.geonames.org/4931972;Cambridge;-71.10561;42.3751;;3;4931972
+ra;ra0008;Paris, France;http://www.geonames.org/2988507;Paris;2.3488;48.85341;;;2988507
+ra;ra0009;Bourg-en-Bresse, France;http://www.geonames.org/3031009;Bourg-en-Bresse;5.2258;46.20574;;1;3031009
+ra;ra0010;Milan, Italy;http://www.geonames.org/3173435;Milan;9.18951;45.46427;;1;3173435
+ra;ra0011;Rijeka, Croatia;http://www.geonames.org/3191648;Rijeka;14.40917;45.34306;;2;3191648
+ra;ra0012;Zagreb, Croatia;http://www.geonames.org/3186886;Zagreb;15.97798;45.81444;;2;3186886
+ra;ra0013;Sarajevo, Bosnia and Herzegovina;http://www.geonames.org/3191281;Sarajevo;18.35644;43.84864;;2;3191281
+ra;ra0014;Mostar, Bosnia and Herzegovina;http://www.geonames.org/3194828;Mostar;17.80806;43.34333;;2;3194828
+ra;ra0015;Dubrovnik, Croatia;http://www.geonames.org/3201047;Dubrovnik;18.09216;42.64807;;4;3201047
+ra;ra0016;Kotor, Montenegro;http://www.geonames.org/3197538;Kotor;18.76825;42.42067;;;3197538
+ra;ra0017;Split, Croatia;http://www.geonames.org/3190261;Split;16.43915;43.50891;;3;3190261
+ra;ra0018;Trogir, Croatia;http://www.geonames.org/3188763;Trogir;16.250493;43.516829;;;3188763
+ra;ra0019;Solin, Croatia;http://www.geonames.org/3190359;Solin;16.49314;43.5432;;;3190359
+ra;ra0020;Ancona, Italy;http://www.geonames.org/3183089;Ancona;13.50337;43.5942;;;3183089
+ra;ra0021;Ascoli Piceno, Italy;http://www.geonames.org/3182749;Ascoli Piceno;13.57395;42.85351;;61;3182749
+ra;ra0022;Madrid, Spain;http://www.geonames.org/3117735;Madrid;-3.70256;40.4165;;;3117735
+ra;ra0023;Edinburgh, Scotland;http://www.geonames.org/2650225;Edinburgh;-3.19648;55.95206;;;2650225
+ra;ra0024;Bangkok, Thailand;http://www.geonames.org/1609350;Bangkok;100.50144;13.75398;;;1609350
+ra;ra0025;Korenica, Croatia;http://www.geonames.org/3189076;Korenica;15.70972;44.7439;;;3189076
+ra;ra0026;Sarnano, Italy;http://www.geonames.org/3167119;Sarnano;13.29818;43.03475;;;3167119
+ra;ra0027;Grottammare, Italy;http://www.geonames.org/3175771;Grottammare;13.86765;42.98182;;;3175771
+ra;ra0028;Offida, Italy;http://www.geonames.org/3172104;Offida;13.69773;42.93499;;;3172104
