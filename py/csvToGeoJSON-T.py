@@ -6,9 +6,10 @@ import os, sys, csv, json, codecs
 # TODO should we de-duplicate?
 
 def init():
-    global proj, reader_p, reader_s, fout
-    proj = 'incanto'
-    data = 'incanto-j'
+    global proj, reader_p, reader_s, fout, features
+    # courier, incanto-j, incanto-f, vicarello, xuanzang, roundabout
+    proj = 'roundabout'
+    data = 'roundabout'
     
     finp = codecs.open('data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -23,10 +24,9 @@ def init():
     if not reader_p.fieldnames[:7] == ['collection', 'place_id', 'toponym', 'gazetteer_uri', 'gazetteer_label', 'lng', 'lat']:
         sys.exit('core field names incorrect: ' + str(reader_p.fieldnames))
     
-#print('Project: ' + proj)
-#print(str(len(rows_p) - 1) + ' places')
-#print(str(len(rows_s) - 1) + ' segments')
-
+    print('Project: ' + proj)
+    #print(str(len(list(reader_p)) - 1) + ' places; ' + str(len(list(reader_s)) - 1) + ' segments')
+    
 
 def createPlaces():
     
@@ -63,7 +63,6 @@ def createPlaces():
 
 init()
 createPlaces()
-
 
     #print(json.dumps(places))
         #if row['lat'] and row['lng']:    
