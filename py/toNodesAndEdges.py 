@@ -1,3 +1,5 @@
+# r. simon 20Sep2016
+
 import csv, json
 
 # TODO should we de-duplicate?
