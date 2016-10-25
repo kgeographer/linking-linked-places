@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "367086",
+    "label": "Ajanta",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1279179",
+      "gazetteer_label": "Ajanta Caves",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1279179"
+    },
+    "geometry": {
+      "coordinates": [
+        75.75275531,
+        20.53237101
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348070",
+    "label": "Aksu",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529660",
+      "gazetteer_label": "Aksu",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529660"
+    },
+    "geometry": {
+      "coordinates": [
+        80.34729588,
+        41.20859264
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367091",
+    "label": "Andarab",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1148671",
+      "gazetteer_label": "An\u1e0fa\u1e5f\u0101b",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1148671"
+    },
+    "geometry": {
+      "coordinates": [
+        67.08765628,
+        35.79892351
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367081",
+    "label": "An-his",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529004",
+      "gazetteer_label": "Yuanquan",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529004"
+    },
+    "geometry": {
+      "coordinates": [
+        95.83147413,
+        40.49605269
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367108",
+    "label": "Assam",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        92.99280879,
+        26.61932794
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "360498",
+    "label": "Attock",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1184249",
+      "gazetteer_label": "Attock City",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1184249"
+    },
+    "geometry": {
+      "coordinates": [
+        72.36522883,
+        33.76352101
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "355631",
+    "label": "Ayodhya",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1278094",
+      "gazetteer_label": "Ayodhya",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1278094"
+    },
+    "geometry": {
+      "coordinates": [
+        82.19801109,
+        26.80035299
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367102",
+    "label": "Bairata",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        76.1791307,
+        27.43189313
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "345485",
+    "label": "Balkh",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1147290",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1147290"
+    },
+    "geometry": {
+      "coordinates": [
+        66.89211509,
+        36.76518216
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367085",
+    "label": "Bamiyan",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1147242",
+      "gazetteer_label": "B\u0101m\u012b\u0101n",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1147242"
+    },
+    "geometry": {
+      "coordinates": [
+        67.82488474,
+        34.82493073
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "355463",
+    "label": "Bharukaccha",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1276100",
+      "gazetteer_label": "Bhar\u016bch",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1276100"
+    },
+    "geometry": {
+      "coordinates": [
+        72.98013824,
+        21.71737322
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "355388",
+    "label": "Bodh Gaya",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1275389",
+      "gazetteer_label": "Bodh Gaya",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1275389"
+    },
+    "geometry": {
+      "coordinates": [
+        84.99200623,
+        24.69574718
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348203",
+    "label": "Chang'an",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1790630",
+      "gazetteer_label": "Xi'an",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1790630"
+    },
+    "geometry": {
+      "coordinates": [
+        108.9423866,
+        34.26009687
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367090",
+    "label": "Charkhlik",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1280122",
+      "gazetteer_label": "Ruoqiang",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1280122"
+    },
+    "geometry": {
+      "coordinates": [
+        88.14137374,
+        39.05742751
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "360476",
+    "label": "Charsadda",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1181439",
+      "gazetteer_label": "Ch\u0101rsadda",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1181439"
+    },
+    "geometry": {
+      "coordinates": [
+        71.73171026,
+        34.15289208
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367089",
+    "label": "Cherchen",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1280249",
+      "gazetteer_label": "Qiemo",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1280249"
+    },
+    "geometry": {
+      "coordinates": [
+        85.56840396,
+        38.10974875
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "355104",
+    "label": "Chinabhukti",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1271883",
+      "gazetteer_label": "F\u012brozpur",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1271883"
+    },
+    "geometry": {
+      "coordinates": [
+        74.61368586,
+        30.91679793
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367084",
+    "label": "Darel",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "7096609",
+      "gazetteer_label": "Dar\u0113l",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/7096609"
+    },
+    "geometry": {
+      "coordinates": [
+        73.7358931,
+        35.56878532
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367113",
+    "label": "Dhanakataka",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1278718",
+      "gazetteer_label": "Amar\u0101vati",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1278718"
+    },
+    "geometry": {
+      "coordinates": [
+        80.3667,
+        16.5833
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "345479",
+    "label": "Faizabad",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1142170",
+      "gazetteer_label": "Faizabad",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1142170"
+    },
+    "geometry": {
+      "coordinates": [
+        70.57709716,
+        37.11867493
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348065",
+    "label": "Hami",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529484",
+      "gazetteer_label": "Hami",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529484"
+    },
+    "geometry": {
+      "coordinates": [
+        93.51435621,
+        42.83428565
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367109",
+    "label": "Irana",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        86.20629004,
+        25.29743813
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354824",
+    "label": "Jalandhara",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1268782",
+      "gazetteer_label": "Jalandhar",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1268782"
+    },
+    "geometry": {
+      "coordinates": [
+        75.58346538,
+        31.31752077
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354770",
+    "label": "Kancipuram",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1268159",
+      "gazetteer_label": "K\u0101nchipuram",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1268159"
+    },
+    "geometry": {
+      "coordinates": [
+        79.70752922,
+        12.82137942
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354759",
+    "label": "Kanyakubja",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1268011",
+      "gazetteer_label": "Kannauj",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1268011"
+    },
+    "geometry": {
+      "coordinates": [
+        79.9465728,
+        26.99920304
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367103",
+    "label": "Kapilavastu",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        83.052627,
+        27.54823278
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367083",
+    "label": "Kapisi",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "7054036",
+      "gazetteer_label": "Bagr\u0101m",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/7054036"
+    },
+    "geometry": {
+      "coordinates": [
+        69.73313235,
+        34.88850216
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367087",
+    "label": "Karashahr",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529031",
+      "gazetteer_label": "Yanqi",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529031"
+    },
+    "geometry": {
+      "coordinates": [
+        86.65110391,
+        42.02804251
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348056",
+    "label": "Kashgar",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1280849",
+      "gazetteer_label": "Kashi",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1280849"
+    },
+    "geometry": {
+      "coordinates": [
+        75.99772452,
+        39.4664917
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367088",
+    "label": "Kausambi",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1267401",
+      "gazetteer_label": "Kaushambi",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1267401"
+    },
+    "geometry": {
+      "coordinates": [
+        81.39864004,
+        25.3637343
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348058",
+    "label": "Khotan",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1281019",
+      "gazetteer_label": "Hotan",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1281019"
+    },
+    "geometry": {
+      "coordinates": [
+        79.8816831,
+        37.12422169
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348063",
+    "label": "Kucha",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529363",
+      "gazetteer_label": "Kuqa",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529363"
+    },
+    "geometry": {
+      "coordinates": [
+        83.15207331,
+        41.70435101
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "345465",
+    "label": "Kunduz",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1135689",
+      "gazetteer_label": "Kond\u016bz",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1135689"
+    },
+    "geometry": {
+      "coordinates": [
+        68.91922128,
+        36.74100478
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367104",
+    "label": "Kusinagara",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        83.89122334,
+        26.74251508
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367082",
+    "label": "Liangzhou",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1803936",
+      "gazetteer_label": "Wuwei",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1803936"
+    },
+    "geometry": {
+      "coordinates": [
+        102.6608675,
+        37.91380943
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367097",
+    "label": "Loulan",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529336",
+      "gazetteer_label": "Loulan Yiji",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529336"
+    },
+    "geometry": {
+      "coordinates": [
+        90.07035644,
+        39.94472019
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367095",
+    "label": "Lumbini",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1282839",
+      "gazetteer_label": "Rummin-dei",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1282839"
+    },
+    "geometry": {
+      "coordinates": [
+        83.27330907,
+        27.47624178
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354407",
+    "label": "Mathura",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1263364",
+      "gazetteer_label": "Mathura",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1263364"
+    },
+    "geometry": {
+      "coordinates": [
+        77.68034147,
+        27.5076451
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354448",
+    "label": "Matipura",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1263879",
+      "gazetteer_label": "Mand\u0101war",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1263879"
+    },
+    "geometry": {
+      "coordinates": [
+        78.11612001,
+        29.53042494
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "360317",
+    "label": "Multan",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1169825",
+      "gazetteer_label": "Mult\u0101n",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1169825"
+    },
+    "geometry": {
+      "coordinates": [
+        71.46697581,
+        30.19092625
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "345473",
+    "label": "Nagarahara",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1139715",
+      "gazetteer_label": "Nagarahara",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1139715"
+    },
+    "geometry": {
+      "coordinates": [
+        70.53383057,
+        34.39448905
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367096",
+    "label": "Nalanda",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1262080",
+      "gazetteer_label": "N\u0101landa",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1262080"
+    },
+    "geometry": {
+      "coordinates": [
+        85.44455141,
+        25.13582199
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354254",
+    "label": "Nasik",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1261731",
+      "gazetteer_label": "N\u0101sik",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1261731"
+    },
+    "geometry": {
+      "coordinates": [
+        73.78794098,
+        20.00228288
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367098",
+    "label": "Niya",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1280555",
+      "gazetteer_label": "Minfeng",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1280555"
+    },
+    "geometry": {
+      "coordinates": [
+        82.68201795,
+        37.06585746
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367110",
+    "label": "Parvata",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        74.77270128,
+        32.89152204
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "354119",
+    "label": "Pataliputra",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1260086",
+      "gazetteer_label": "Patna",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1260086"
+    },
+    "geometry": {
+      "coordinates": [
+        85.1307875,
+        25.61284236
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "360292",
+    "label": "Peshawar",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1168197",
+      "gazetteer_label": "Pesh\u0101war",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1168197"
+    },
+    "geometry": {
+      "coordinates": [
+        71.54607967,
+        34.0044938
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "355730",
+    "label": "Prayaga",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1278994",
+      "gazetteer_label": "Allah\u0101b\u0101d",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1278994"
+    },
+    "geometry": {
+      "coordinates": [
+        81.85103182,
+        25.47032409
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "360248",
+    "label": "Sakala",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1164909",
+      "gazetteer_label": "Si\u0101lkot",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1164909"
+    },
+    "geometry": {
+      "coordinates": [
+        74.52893935,
+        32.50759019
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "366553",
+    "label": "Samarkand",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1216265",
+      "gazetteer_label": "Samarqand",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1216265"
+    },
+    "geometry": {
+      "coordinates": [
+        66.97906618,
+        39.65193346
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367111",
+    "label": "Samatata",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        91.73421281,
+        22.65767709
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367093",
+    "label": "Sankasya",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1257373",
+      "gazetteer_label": "Sank\u0101sya",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1257373"
+    },
+    "geometry": {
+      "coordinates": [
+        79.17747036,
+        27.35810002
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367094",
+    "label": "Sarnath and Varanasi",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1257137",
+      "gazetteer_label": "S\u0101rn\u0101th",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1257137"
+    },
+    "geometry": {
+      "coordinates": [
+        82.9926302,
+        25.30492789
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367092",
+    "label": "Shabaz Gharhi",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "7074006",
+      "gazetteer_label": "Garhi Sh\u0101hb\u0101z",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/7074006"
+    },
+    "geometry": {
+      "coordinates": [
+        72.20274168,
+        34.35398255
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "353703",
+    "label": "Shrinigar",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1255634",
+      "gazetteer_label": "Sr\u012bnagar",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1255634"
+    },
+    "geometry": {
+      "coordinates": [
+        74.822721,
+        34.08822817
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367105",
+    "label": "Sravasti",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        82.03730207,
+        27.51107562
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367106",
+    "label": "Srughna",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        77.26754215,
+        30.12123215
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "353661",
+    "label": "Tamrallipti",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1255046",
+      "gazetteer_label": "Taml\u016bk",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1255046"
+    },
+    "geometry": {
+      "coordinates": [
+        87.92145786,
+        22.29160038
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "366587",
+    "label": "Tashkent",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1512569",
+      "gazetteer_label": "Tashkent",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1512569"
+    },
+    "geometry": {
+      "coordinates": [
+        69.23584522,
+        41.27924331
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367099",
+    "label": "Tashkurghan",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1279901",
+      "gazetteer_label": "Taxkorgan",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1279901"
+    },
+    "geometry": {
+      "coordinates": [
+        75.24466904,
+        37.77941666
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367101",
+    "label": "Taxila",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1163715",
+      "gazetteer_label": "Taxila",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1163715"
+    },
+    "geometry": {
+      "coordinates": [
+        72.80406816,
+        33.74393121
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367112",
+    "label": "The Jade Gate",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        93.867,
+        40.35
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "357565",
+    "label": "Tokmak",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1527199",
+      "gazetteer_label": "Tokmok",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1527199"
+    },
+    "geometry": {
+      "coordinates": [
+        75.2938856,
+        42.85215218
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367100",
+    "label": "Tun-huang",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529531",
+      "gazetteer_label": "Dunhuang",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529531"
+    },
+    "geometry": {
+      "coordinates": [
+        94.63484003,
+        40.10775394
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348060",
+    "label": "Turfan",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1529114",
+      "gazetteer_label": "Turpan",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1529114"
+    },
+    "geometry": {
+      "coordinates": [
+        89.11996706,
+        42.96932584
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "353566",
+    "label": "Ujjayini",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1253914",
+      "gazetteer_label": "Ujjain",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1253914"
+    },
+    "geometry": {
+      "coordinates": [
+        74.72923051,
+        23.54393477
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "367107",
+    "label": "Vaisali",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "",
+      "gazetteer_label": "",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": ""
+    },
+    "geometry": {
+      "coordinates": [
+        85.02433061,
+        26.04169101
+      ],
+      "type": "Point"
+    }
+  },
+  {
+    "id": "348053",
+    "label": "Yarkand",
+    "type": "Feature",
+    "properties": {
+      "geonames_id": "1280037",
+      "gazetteer_label": "Shache",
+      "collection": "xuanzang",
+      "status": "",
+      "comment": "",
+      "source": "Wri98",
+      "gazetteer_uri": "http://geonames.org/1280037"
+    },
+    "geometry": {
+      "coordinates": [
+        77.24126154,
+        38.53397137
+      ],
+      "type": "Point"
+    }
+  }
+]

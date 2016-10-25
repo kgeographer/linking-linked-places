@@ -1,0 +1,562 @@
+[
+  {
+    "label": "Palo Alto, CA",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Palo Alto",
+      "gazetteer_uri": "http://www.geonames.org/5380748",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "5380748",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.14302,
+        37.44188
+      ]
+    },
+    "id": "ra0001"
+  },
+  {
+    "label": "Fernley, NV",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Fernley",
+      "gazetteer_uri": "http://www.geonames.org/5504003",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "5504003",
+      "nights": "1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -119.25183,
+        39.60797
+      ]
+    },
+    "id": "ra0002"
+  },
+  {
+    "label": "Delta, UT",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Delta",
+      "gazetteer_uri": "http://www.geonames.org/5538080",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "5538080",
+      "nights": "1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -112.57717,
+        39.35218
+      ]
+    },
+    "id": "ra0003"
+  },
+  {
+    "label": "Craig, CO",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Craig",
+      "gazetteer_uri": "http://www.geonames.org/5576064",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "5576064",
+      "nights": "1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -107.54645,
+        40.51525
+      ]
+    },
+    "id": "ra0004"
+  },
+  {
+    "label": "Fort Collins, CO",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Fort Collins",
+      "gazetteer_uri": "http://www.geonames.org/5577147",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "5577147",
+      "nights": "1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -105.08442,
+        40.58526
+      ]
+    },
+    "id": "ra0005"
+  },
+  {
+    "label": "Denver, CO",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Denver",
+      "gazetteer_uri": "http://www.geonames.org/5419384",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "5419384",
+      "nights": "4"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -104.9847,
+        39.73915
+      ]
+    },
+    "id": "ra0006"
+  },
+  {
+    "label": "Cambridge, MA",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Cambridge",
+      "gazetteer_uri": "http://www.geonames.org/4931972",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "4931972",
+      "nights": "3"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -71.10561,
+        42.3751
+      ]
+    },
+    "id": "ra0007"
+  },
+  {
+    "label": "Paris, France",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Paris",
+      "gazetteer_uri": "http://www.geonames.org/2988507",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "2988507",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3488,
+        48.85341
+      ]
+    },
+    "id": "ra0008"
+  },
+  {
+    "label": "Bourg-en-Bresse, France",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Bourg-en-Bresse",
+      "gazetteer_uri": "http://www.geonames.org/3031009",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3031009",
+      "nights": "1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        5.2258,
+        46.20574
+      ]
+    },
+    "id": "ra0009"
+  },
+  {
+    "label": "Milan, Italy",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Milan",
+      "gazetteer_uri": "http://www.geonames.org/3173435",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3173435",
+      "nights": "1"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        9.18951,
+        45.46427
+      ]
+    },
+    "id": "ra0010"
+  },
+  {
+    "label": "Rijeka, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Rijeka",
+      "gazetteer_uri": "http://www.geonames.org/3191648",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3191648",
+      "nights": "2"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.40917,
+        45.34306
+      ]
+    },
+    "id": "ra0011"
+  },
+  {
+    "label": "Zagreb, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Zagreb",
+      "gazetteer_uri": "http://www.geonames.org/3186886",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3186886",
+      "nights": "2"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.97798,
+        45.81444
+      ]
+    },
+    "id": "ra0012"
+  },
+  {
+    "label": "Sarajevo, Bosnia and Herzegovina",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Sarajevo",
+      "gazetteer_uri": "http://www.geonames.org/3191281",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3191281",
+      "nights": "2"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.35644,
+        43.84864
+      ]
+    },
+    "id": "ra0013"
+  },
+  {
+    "label": "Mostar, Bosnia and Herzegovina",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Mostar",
+      "gazetteer_uri": "http://www.geonames.org/3194828",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3194828",
+      "nights": "2"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.80806,
+        43.34333
+      ]
+    },
+    "id": "ra0014"
+  },
+  {
+    "label": "Dubrovnik, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Dubrovnik",
+      "gazetteer_uri": "http://www.geonames.org/3201047",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3201047",
+      "nights": "4"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.09216,
+        42.64807
+      ]
+    },
+    "id": "ra0015"
+  },
+  {
+    "label": "Kotor, Montenegro",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Kotor",
+      "gazetteer_uri": "http://www.geonames.org/3197538",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3197538",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.76825,
+        42.42067
+      ]
+    },
+    "id": "ra0016"
+  },
+  {
+    "label": "Split, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Split",
+      "gazetteer_uri": "http://www.geonames.org/3190261",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3190261",
+      "nights": "3"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.43915,
+        43.50891
+      ]
+    },
+    "id": "ra0017"
+  },
+  {
+    "label": "Trogir, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Trogir",
+      "gazetteer_uri": "http://www.geonames.org/3188763",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3188763",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.250493,
+        43.516829
+      ]
+    },
+    "id": "ra0018"
+  },
+  {
+    "label": "Solin, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Solin",
+      "gazetteer_uri": "http://www.geonames.org/3190359",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3190359",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.49314,
+        43.5432
+      ]
+    },
+    "id": "ra0019"
+  },
+  {
+    "label": "Ancona, Italy",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Ancona",
+      "gazetteer_uri": "http://www.geonames.org/3183089",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3183089",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.50337,
+        43.5942
+      ]
+    },
+    "id": "ra0020"
+  },
+  {
+    "label": "Ascoli Piceno, Italy",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Ascoli Piceno",
+      "gazetteer_uri": "http://www.geonames.org/3182749",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3182749",
+      "nights": "61"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.57395,
+        42.85351
+      ]
+    },
+    "id": "ra0021"
+  },
+  {
+    "label": "Madrid, Spain",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Madrid",
+      "gazetteer_uri": "http://www.geonames.org/3117735",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3117735",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -3.70256,
+        40.4165
+      ]
+    },
+    "id": "ra0022"
+  },
+  {
+    "label": "Edinburgh, Scotland",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Edinburgh",
+      "gazetteer_uri": "http://www.geonames.org/2650225",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "2650225",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -3.19648,
+        55.95206
+      ]
+    },
+    "id": "ra0023"
+  },
+  {
+    "label": "Bangkok, Thailand",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Bangkok",
+      "gazetteer_uri": "http://www.geonames.org/1609350",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "1609350",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.50144,
+        13.75398
+      ]
+    },
+    "id": "ra0024"
+  },
+  {
+    "label": "Korenica, Croatia",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Korenica",
+      "gazetteer_uri": "http://www.geonames.org/3189076",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3189076",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.70972,
+        44.7439
+      ]
+    },
+    "id": "ra0025"
+  },
+  {
+    "label": "Sarnano, Italy",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Sarnano",
+      "gazetteer_uri": "http://www.geonames.org/3167119",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3167119",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.29818,
+        43.03475
+      ]
+    },
+    "id": "ra0026"
+  },
+  {
+    "label": "Grottammare, Italy",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Grottammare",
+      "gazetteer_uri": "http://www.geonames.org/3175771",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3175771",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.86765,
+        42.98182
+      ]
+    },
+    "id": "ra0027"
+  },
+  {
+    "label": "Offida, Italy",
+    "type": "Feature",
+    "properties": {
+      "gazetteer_label": "Offida",
+      "gazetteer_uri": "http://www.geonames.org/3172104",
+      "comment": "",
+      "collection": "ra",
+      "geonames_id": "3172104",
+      "nights": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.69773,
+        42.93499
+      ]
+    },
+    "id": "ra0028"
+  }
+]
