@@ -1,4 +1,4 @@
-[
+{"type":"FeatureCollection", "features":[
   {
     "label": "Palo Alto, CA",
     "type": "Feature",
@@ -559,4 +559,4 @@
     },
     "id": "ra0028"
   }
-]
+]}
