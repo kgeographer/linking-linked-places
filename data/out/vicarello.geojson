@@ -1,0 +1,2732 @@
+[
+  {
+    "geometry": {
+      "coordinates": [
+        -6.2944,
+        36.5284
+      ],
+      "type": "Point"
+    },
+    "id": "vb0106",
+    "properties": {
+      "tags": "summary, route1",
+      "gazetteer_label": "Gadeira/Gades/Col. Augusta Gaditana",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256177",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "GADES"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -6.1613,
+        36.6271
+      ],
+      "type": "Point"
+    },
+    "id": "vb0104",
+    "properties": {
+      "tags": "item, route1",
+      "gazetteer_label": "Ad Portum/Gaditanus Portus",
+      "place_category": "",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/255955",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD PORTVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -6.1815,
+        36.7865
+      ],
+      "type": "Point"
+    },
+    "id": "vb0103",
+    "properties": {
+      "tags": "item, route1",
+      "gazetteer_label": "(H)Asta/Col. Hasta Regia/Ligystine?",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256193",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "HASTAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -5.8293,
+        36.9901
+      ],
+      "type": "Point"
+    },
+    "id": "vb0102",
+    "properties": {
+      "tags": "item, route1",
+      "gazetteer_label": "U(r)gia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256501",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "VGIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -6.0045,
+        37.2738
+      ],
+      "type": "Point"
+    },
+    "id": "vb0101",
+    "properties": {
+      "tags": "item, route1",
+      "gazetteer_label": "Orippo",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256343",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ORIPPVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -5.9963,
+        37.3826
+      ],
+      "type": "Point"
+    },
+    "id": "vb0100",
+    "properties": {
+      "tags": "item, route1",
+      "gazetteer_label": "Hispalis/Col. Romula",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256210",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "HISPALIM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -5.6507,
+        37.4696
+      ],
+      "type": "Point"
+    },
+    "id": "vb0099",
+    "properties": {
+      "tags": "item, route 2",
+      "gazetteer_label": "Carmo",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256058",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CARMONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -5.3163,
+        37.5158
+      ],
+      "type": "Point"
+    },
+    "id": "vb0098",
+    "properties": {
+      "tags": "item, route 2",
+      "gazetteer_label": "Obulcula",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256332",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "OBVCLAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -5.08,
+        37.5409
+      ],
+      "type": "Point"
+    },
+    "id": "vb0097",
+    "properties": {
+      "tags": "item, route 2",
+      "gazetteer_label": "Astigi/Col. Augusta Firma",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/255996",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ASTIGIM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -4.9246,
+        37.6786
+      ],
+      "type": "Point"
+    },
+    "id": "vb0096",
+    "properties": {
+      "tags": "item",
+      "gazetteer_label": "Untitled",
+      "place_category": "MAN_MADE_STRUCTURE",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/257485",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD ARAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -4.7792,
+        37.8847
+      ],
+      "type": "Point"
+    },
+    "id": "vb0095",
+    "properties": {
+      "tags": "item, route 2",
+      "gazetteer_label": "Corduba/Col. Patricia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/256128",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CORDVBAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -4.6545,
+        37.9417
+      ],
+      "type": "Point"
+    },
+    "id": "vb0094",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ad Decumum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "X",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/255952",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD X"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -4.3819,
+        38.026
+      ],
+      "type": "Point"
+    },
+    "id": "vb0093",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Epora",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265893",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "EPORAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -4.148,
+        38.0613
+      ],
+      "type": "Point"
+    },
+    "id": "vb0092",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "(S)Ucia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/266051",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "VCIESEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -3.9195,
+        38.005
+      ],
+      "type": "Point"
+    },
+    "id": "vb0091",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ad Novlas",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265777",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD NOVLAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -3.6236,
+        38.0358
+      ],
+      "type": "Point"
+    },
+    "id": "vb0090",
+    "properties": {
+      "tags": "item",
+      "gazetteer_label": "Castulo",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265855",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CASTVLONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -3.3154,
+        38.1847
+      ],
+      "type": "Point"
+    },
+    "id": "vb0089",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ad Morum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265774",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD MORVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -3.1035,
+        38.3422
+      ],
+      "type": "Point"
+    },
+    "id": "vb0088",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ad Duo Solaria",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265769",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "II SOLARIA"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -2.9275,
+        38.5474
+      ],
+      "type": "Point"
+    },
+    "id": "vb0087",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Mariana",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265965",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "MARIANA"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -2.6948,
+        38.6922
+      ],
+      "type": "Point"
+    },
+    "id": "vb0086",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Mentesa",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265969",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "MENTESAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -2.3551,
+        38.9416
+      ],
+      "type": "Point"
+    },
+    "id": "vb0085",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Libisosa",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265949",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "LIBISOSAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -2.0343,
+        38.9249
+      ],
+      "type": "Point"
+    },
+    "id": "vb0084",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Parietinae",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265999",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "PARIETINIS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -1.729,
+        38.9189
+      ],
+      "type": "Point"
+    },
+    "id": "vb0083",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Saltigi",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/266025",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SALTIGIM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -1.2307,
+        38.746
+      ],
+      "type": "Point"
+    },
+    "id": "vb0082",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ad Palem?",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXXII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265779",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD PALEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.9874,
+        38.7087
+      ],
+      "type": "Point"
+    },
+    "id": "vb0081",
+    "properties": {
+      "tags": "item",
+      "gazetteer_label": "Ad Aras",
+      "place_category": "",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265766",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD ARAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.5156,
+        38.9888
+      ],
+      "type": "Point"
+    },
+    "id": "vb0080",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Saetabis",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/266018",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SAETABIM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.4356,
+        39.1894
+      ],
+      "type": "Point"
+    },
+    "id": "vb0079",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Sucro",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/266052",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SVCRONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.3768,
+        39.4702
+      ],
+      "type": "Point"
+    },
+    "id": "vb0078",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Valentia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/266090",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "VALENTIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.2759,
+        39.6762
+      ],
+      "type": "Point"
+    },
+    "id": "vb0077",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Saguntum/Arse",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/266021",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SAGYNTVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.1201,
+        39.9675
+      ],
+      "type": "Point"
+    },
+    "id": "vb0076",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ad Novlas",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265778",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD NOVLAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        0.0903,
+        40.2629
+      ],
+      "type": "Point"
+    },
+    "id": "vb0075",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Ildum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/265920",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ILDVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        0.4231,
+        40.4187
+      ],
+      "type": "Point"
+    },
+    "id": "vb0074",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Indibilis",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246439",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "INTIBILIM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        0.5238,
+        40.8151
+      ],
+      "type": "Point"
+    },
+    "id": "vb0073",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Dertosa/Hibera Iulia Ilercavonia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246369",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "DERTOSAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        0.8689,
+        40.9661
+      ],
+      "type": "Point"
+    },
+    "id": "vb0072",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Sub Saltu",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXXVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246665",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SVB SALTVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.2581,
+        41.1192
+      ],
+      "type": "Point"
+    },
+    "id": "vb0071",
+    "properties": {
+      "tags": "item, route3",
+      "gazetteer_label": "Col. Tarraco",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246349",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "TARRACONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.5149,
+        41.204
+      ],
+      "type": "Point"
+    },
+    "id": "vb0070",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Palfuriana",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246551",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "PALFVRIANAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.6479,
+        41.3106
+      ],
+      "type": "Point"
+    },
+    "id": "vb0069",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Antistiana",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246166",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ANTISTIANAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.9277,
+        41.4736
+      ],
+      "type": "Point"
+    },
+    "id": "vb0068",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "(Ad) Fines",
+      "place_category": "",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246135",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD FINES"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.1229,
+        41.5631
+      ],
+      "type": "Point"
+    },
+    "id": "vb0067",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Arrago(na)",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246192",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ARRAGONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.3309,
+        41.5827
+      ],
+      "type": "Point"
+    },
+    "id": "vb0066",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Praetorium?",
+      "place_category": "",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246576",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SEMPRONIANA"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.6355,
+        41.7465
+      ],
+      "type": "Point"
+    },
+    "id": "vb0065",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Seterrae",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246652",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SETERRAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.8083,
+        41.8382
+      ],
+      "type": "Point"
+    },
+    "id": "vb0064",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Aquae Voconiae",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246174",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AQVIS VOCONTIS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.8256,
+        41.9873
+      ],
+      "type": "Point"
+    },
+    "id": "vb0063",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Gerunda",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246406",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "GERVNDAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.9048,
+        42.0947
+      ],
+      "type": "Point"
+    },
+    "id": "vb0062",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Cinniana",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246335",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CILNIANAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.9667,
+        42.2754
+      ],
+      "type": "Point"
+    },
+    "id": "vb0061",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Iuncaria",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246449",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "IVNCARIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.869,
+        42.4723
+      ],
+      "type": "Point"
+    },
+    "id": "vb0060",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Ad Pyrenaeum/Summus Pyrenaeus",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246139",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "IN PYRAENEVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.9452,
+        42.7087
+      ],
+      "type": "Point"
+    },
+    "id": "vb0059",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Col. Ruscino",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246348",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "RVSCINONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.8718,
+        42.7687
+      ],
+      "type": "Point"
+    },
+    "id": "vb0058",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Combusta",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246351",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "COMBVSTA"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.0036,
+        43.1847
+      ],
+      "type": "Point"
+    },
+    "id": "vb0057",
+    "properties": {
+      "tags": "item, route4",
+      "gazetteer_label": "Col. Narbo Martius",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXXII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/246347",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "NARBONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.2178,
+        43.3416
+      ],
+      "type": "Point"
+    },
+    "id": "vb0056",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Col. Baeterrae",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148056",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "BAETERRAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.4206,
+        43.3951
+      ],
+      "type": "Point"
+    },
+    "id": "vb0055",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Araura/Cessero",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/147997",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CESSERONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.7024,
+        43.5115
+      ],
+      "type": "Point"
+    },
+    "id": "vb0054",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Forum Domitii",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148081",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FORVM DOMITI"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.8967,
+        43.6408
+      ],
+      "type": "Point"
+    },
+    "id": "vb0053",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Sextantio",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148202",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SEXTANTIONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.1495,
+        43.7154
+      ],
+      "type": "Point"
+    },
+    "id": "vb0052",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Ambrussum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/147990",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AMBRVSSVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.3596,
+        43.8349
+      ],
+      "type": "Point"
+    },
+    "id": "vb0051",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Nemausus",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148142",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "NEMAVSVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.6446,
+        43.8099
+      ],
+      "type": "Point"
+    },
+    "id": "vb0050",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Ugernum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148223",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "VGERNVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.6227,
+        43.6759
+      ],
+      "type": "Point"
+    },
+    "id": "vb0049",
+    "properties": {
+      "tags": "item",
+      "gazetteer_label": "Theline/Col. Arelate/Constantina",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148217",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ARELATA"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.6981,
+        43.7667
+      ],
+      "type": "Point"
+    },
+    "id": "vb0048",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Ernaginum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148074",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ERGNAGINVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.8329,
+        43.7735
+      ],
+      "type": "Point"
+    },
+    "id": "vb0047",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Glanum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148093",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CLANVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.0364,
+        43.8363
+      ],
+      "type": "Point"
+    },
+    "id": "vb0046",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Cabellio",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148027",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CABELLIONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.3972,
+        43.8761
+      ],
+      "type": "Point"
+    },
+    "id": "vb0045",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Apta Iulia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/147993",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "APTAM IVLIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.5962,
+        43.8576
+      ],
+      "type": "Point"
+    },
+    "id": "vb0044",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Catuiacia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/148041",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CATVIACIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.8672,
+        43.9462
+      ],
+      "type": "Point"
+    },
+    "id": "vb0043",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Alaunium",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/157800",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ALAVNIVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.9432,
+        44.1947
+      ],
+      "type": "Point"
+    },
+    "id": "vb0042",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Segustero",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/157925",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SEGVSTERONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.944,
+        44.386
+      ],
+      "type": "Point"
+    },
+    "id": "vb0041",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Alabonte",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167628",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ALABONTEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        6.0798,
+        44.5596
+      ],
+      "type": "Point"
+    },
+    "id": "vb0040",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Vappincum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167954",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "VAPPINCVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        6.276,
+        44.5444
+      ],
+      "type": "Point"
+    },
+    "id": "vb0039",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Caturigomagus",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167701",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CATVRIGOMAGVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        6.4951,
+        44.5623
+      ],
+      "type": "Point"
+    },
+    "id": "vb0038",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Eburodunum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167750",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "EBVRODVNVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        6.5799,
+        44.7505
+      ],
+      "type": "Point"
+    },
+    "id": "vb0037",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Rama",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167881",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "RAMAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        6.6342,
+        44.8969
+      ],
+      "type": "Point"
+    },
+    "id": "vb0036",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Brigantio",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167691",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "BRIGANTIVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        6.7234,
+        44.931
+      ],
+      "type": "Point"
+    },
+    "id": "vb0035",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Druantium/*Alpis Cottia/Summae Alpes",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167743",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "DRVANTIVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        7.0454,
+        45.1374
+      ],
+      "type": "Point"
+    },
+    "id": "vb0034",
+    "properties": {
+      "tags": "item",
+      "gazetteer_label": "Segusio",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/167919",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "SEGVSIONEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        7.3319,
+        45.1188
+      ],
+      "type": "Point"
+    },
+    "id": "vb0033",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Ocelum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383720",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "OCELVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        7.6854,
+        45.0734
+      ],
+      "type": "Point"
+    },
+    "id": "vb0032",
+    "properties": {
+      "tags": "item, route5",
+      "gazetteer_label": "Augusta Taurinorum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383580",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "TAVRINIS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        7.9694,
+        45.1911
+      ],
+      "type": "Point"
+    },
+    "id": "vb0031",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Quadrata",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383753",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "QVADRATA"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        8.2974,
+        45.1931
+      ],
+      "type": "Point"
+    },
+    "id": "vb0030",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Rigomagus",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383759",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "RIGOMAGVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        8.6111,
+        45.1921
+      ],
+      "type": "Point"
+    },
+    "id": "vb0029",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Cuttiae",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383630",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CVTTIAS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        8.7938,
+        45.1227
+      ],
+      "type": "Point"
+    },
+    "id": "vb0028",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Laumellum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383690",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "LAVMELLVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        9.1566,
+        45.1859
+      ],
+      "type": "Point"
+    },
+    "id": "vb0027",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Ticinum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383798",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "TICINVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        9.5266,
+        45.1574
+      ],
+      "type": "Point"
+    },
+    "id": "vb0026",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Lambrum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383685",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "PLAMBRVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        9.6966,
+        45.0528
+      ],
+      "type": "Point"
+    },
+    "id": "vb0025",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Placentia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383741",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "PLACENTIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        9.911,
+        44.9281
+      ],
+      "type": "Point"
+    },
+    "id": "vb0024",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Florenti(ol)a",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383649",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FLORENTIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.328,
+        44.8015
+      ],
+      "type": "Point"
+    },
+    "id": "vb0023",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Parma",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383737",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "PARMAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.6308,
+        44.6977
+      ],
+      "type": "Point"
+    },
+    "id": "vb0022",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Regium Lepidum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383755",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "LEPIDVM REGIVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.9252,
+        44.6471
+      ],
+      "type": "Point"
+    },
+    "id": "vb0021",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Mutina",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/383715",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "MVTINAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        11.3418,
+        44.4946
+      ],
+      "type": "Point"
+    },
+    "id": "vb0020",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Felsina/Bononia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393421",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "BONONIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        11.4747,
+        44.4421
+      ],
+      "type": "Point"
+    },
+    "id": "vb0019",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Claterna",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "X",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393405",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CLATERNVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        11.7111,
+        44.3535
+      ],
+      "type": "Point"
+    },
+    "id": "vb0018",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Forum Cornelii",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393424",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FORVM CORNELI"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        11.8845,
+        44.2859
+      ],
+      "type": "Point"
+    },
+    "id": "vb0017",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Faventia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "X",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393420",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FAVENTIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.0427,
+        44.2212
+      ],
+      "type": "Point"
+    },
+    "id": "vb0016",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Forum Livii",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "X",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393426",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FORVM LIVI"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.2429,
+        44.1391
+      ],
+      "type": "Point"
+    },
+    "id": "vb0015",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Caesena",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393397",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "CESENAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.5703,
+        44.0596
+      ],
+      "type": "Point"
+    },
+    "id": "vb0014",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Ariminum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/393379",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ARIMINVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.9146,
+        43.911
+      ],
+      "type": "Point"
+    },
+    "id": "vb0013",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Pisaurum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413256",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "PISAVRVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.0181,
+        43.8443
+      ],
+      "type": "Point"
+    },
+    "id": "vb0012",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Fanum Fortunae",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "VIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413129",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FANVM FORTVNAE"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.8291,
+        43.6974
+      ],
+      "type": "Point"
+    },
+    "id": "vb0011",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Forum Sempronii",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413149",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "FORVM SEMPRONI"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.6485,
+        43.5468
+      ],
+      "type": "Point"
+    },
+    "id": "vb0010",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Cales",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413058",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD CALEM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.6693,
+        43.4035
+      ],
+      "type": "Point"
+    },
+    "id": "vb0009",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Ad Aesim",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/412989",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "HESIM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.7621,
+        43.2957
+      ],
+      "type": "Point"
+    },
+    "id": "vb0008",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Helvillum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "X",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413167",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "HELVILLVM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.7915,
+        43.1135
+      ],
+      "type": "Point"
+    },
+    "id": "vb0007",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Nuceria",
+      "place_category": "",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XV",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/456102",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "NVCERIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.6094,
+        42.9349
+      ],
+      "type": "Point"
+    },
+    "id": "vb0006",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Mevania",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XIX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413200",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "MEVANIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.5318,
+        42.7509
+      ],
+      "type": "Point"
+    },
+    "id": "vb0005",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Vicus Martis",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVI",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413380",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD MARTIS"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.5156,
+        42.5176
+      ],
+      "type": "Point"
+    },
+    "id": "vb0004",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Nequinum/Narnia",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XVIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413225",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "NARNIAM"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.4663,
+        42.4136
+      ],
+      "type": "Point"
+    },
+    "id": "vb0003",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Ocriculum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/413231",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "OCRICLO"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.4768,
+        42.1484
+      ],
+      "type": "Point"
+    },
+    "id": "vb0002",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Ad Vicesimum",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XXIIII",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/412998",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "AD XX"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.4843,
+        41.8926
+      ],
+      "type": "Point"
+    },
+    "id": "vb0001",
+    "properties": {
+      "tags": "item,route6",
+      "gazetteer_label": "Roma",
+      "place_category": "SETTLEMENT",
+      "status": "VERIFIED",
+      "document_part": "Vicarello Beaker 1",
+      "comment": "XX",
+      "img_all": "",
+      "img_y": "",
+      "img_x": "",
+      "gazetteer_uri": "http://pleiades.stoa.org/places/423025",
+      "source": "",
+      "collection": "vb"
+    },
+    "type": "Feature",
+    "label": "ROMAM"
+  }
+]

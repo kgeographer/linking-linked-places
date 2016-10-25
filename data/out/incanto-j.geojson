@@ -1,0 +1,2396 @@
+[
+  {
+    "geometry": {
+      "coordinates": [
+        26.405553,
+        40.190912
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[26.405553,40.190912]",
+      "collection": "incanto",
+      "gazetteer_label": "Abydos",
+      "geonames_id": "",
+      "pleiades_id": "501325",
+      "gazetteer_uri": "http://topotime.org/places/60001",
+      "notes": ""
+    },
+    "id": "60001",
+    "type": "Feature",
+    "label": "Abydos"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.072046,
+        32.918629
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.072046,32.918629]",
+      "collection": "incanto",
+      "gazetteer_label": "Acre",
+      "geonames_id": "",
+      "pleiades_id": "678010",
+      "gazetteer_uri": "http://topotime.org/places/60002",
+      "notes": ""
+    },
+    "id": "60002",
+    "type": "Feature",
+    "label": "Acre"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.468434,
+        43.314327
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.468434,43.314327]",
+      "collection": "incanto",
+      "gazetteer_label": "Agde",
+      "geonames_id": "",
+      "pleiades_id": "147985",
+      "gazetteer_uri": "http://topotime.org/places/60003",
+      "notes": ""
+    },
+    "id": "60003",
+    "type": "Feature",
+    "label": "Agde"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.193333,
+        43.5675
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[4.193333,43.5675]",
+      "collection": "incanto",
+      "gazetteer_label": "Aigues-Mortes",
+      "geonames_id": "3038493",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60004",
+      "notes": ""
+    },
+    "id": "60004",
+    "type": "Feature",
+    "label": "Aigues.Mortes"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        29.894432,
+        31.205574
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[29.894432,31.205574]",
+      "collection": "incanto",
+      "gazetteer_label": "Alexandria",
+      "geonames_id": "",
+      "pleiades_id": "727070",
+      "gazetteer_uri": "http://topotime.org/places/60005",
+      "notes": ""
+    },
+    "id": "60005",
+    "type": "Feature",
+    "label": "Alexandrie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.068616,
+        36.787242
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.068616,36.787242]",
+      "collection": "incanto",
+      "gazetteer_label": "Alger",
+      "geonames_id": "2507480",
+      "pleiades_id": "295276",
+      "gazetteer_uri": "http://topotime.org/places/60006",
+      "notes": ""
+    },
+    "id": "60006",
+    "type": "Feature",
+    "label": "Alger"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        7.747497,
+        36.88176
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[7.747497,36.88176]",
+      "collection": "incanto",
+      "gazetteer_label": "Annaba",
+      "geonames_id": "",
+      "pleiades_id": "306090",
+      "gazetteer_uri": "http://topotime.org/places/60013",
+      "notes": ""
+    },
+    "id": "60013",
+    "type": "Feature",
+    "label": "B\u00f4ne"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        4.4,
+        51.216667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[4.4,51.216667]",
+      "collection": "incanto",
+      "gazetteer_label": "Antwerp",
+      "geonames_id": "",
+      "pleiades_id": "108747",
+      "gazetteer_uri": "http://topotime.org/places/60007",
+      "notes": ""
+    },
+    "id": "60007",
+    "type": "Feature",
+    "label": "Anvers"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.791048,
+        36.767346
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.791048,36.767346]",
+      "collection": "incanto",
+      "gazetteer_label": "Armenia",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60008",
+      "notes": "A country"
+    },
+    "id": "60008",
+    "type": "Feature",
+    "label": "Armenia"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        44.42,
+        32.542
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[44.42,32.542]",
+      "collection": "incanto",
+      "gazetteer_label": "Babylone",
+      "geonames_id": "",
+      "pleiades_id": "893951",
+      "gazetteer_uri": "http://topotime.org/places/60009",
+      "notes": ""
+    },
+    "id": "60009",
+    "type": "Feature",
+    "label": "Babylone"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.11,
+        36.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[1.11,36.5]",
+      "collection": "incanto",
+      "gazetteer_label": "Barbarie",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60113",
+      "notes": "A region? Barbary Coast"
+    },
+    "id": "60113",
+    "type": "Feature",
+    "label": "Barbarie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.183333,
+        41.383333
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[2.183333,41.383333]",
+      "collection": "incanto",
+      "gazetteer_label": "Barcelona",
+      "geonames_id": "",
+      "pleiades_id": "246343",
+      "gazetteer_uri": "http://topotime.org/places/60110",
+      "notes": ""
+    },
+    "id": "60110",
+    "type": "Feature",
+    "label": "Barcelone"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -1.474326,
+        43.49288
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-1.474326,43.49288]",
+      "collection": "incanto",
+      "gazetteer_label": "Bayonne",
+      "geonames_id": "3034475",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60010",
+      "notes": ""
+    },
+    "id": "60010",
+    "type": "Feature",
+    "label": "Bayonne"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.505065,
+        33.899231
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.505065,33.899231]",
+      "collection": "incanto",
+      "gazetteer_label": "Beirut",
+      "geonames_id": "",
+      "pleiades_id": "678060",
+      "gazetteer_uri": "http://topotime.org/places/60011",
+      "notes": ""
+    },
+    "id": "60011",
+    "type": "Feature",
+    "label": "Beyrouth"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        34.0,
+        43.0
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[34,43]",
+      "collection": "incanto",
+      "gazetteer_label": "Black Sea",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60012",
+      "notes": "A sea"
+    },
+    "id": "60012",
+    "type": "Feature",
+    "label": "Black.Sea"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.53,
+        51.53
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.53,51.53]",
+      "collection": "incanto",
+      "gazetteer_label": "Brabant",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60015",
+      "notes": "?"
+    },
+    "id": "60015",
+    "type": "Feature",
+    "label": "Brabant"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.216667,
+        51.2
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.216667,51.2]",
+      "collection": "incanto",
+      "gazetteer_label": "Brugge",
+      "geonames_id": "",
+      "pleiades_id": "108830",
+      "gazetteer_uri": "http://topotime.org/places/60016",
+      "notes": ""
+    },
+    "id": "60016",
+    "type": "Feature",
+    "label": "Bruges"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        21.0,
+        38.2
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[21,38.2]",
+      "collection": "incanto",
+      "gazetteer_label": "Buca Culfil",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60017",
+      "notes": "?"
+    },
+    "id": "60017",
+    "type": "Feature",
+    "label": "Buca.Culfil"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        29.129,
+        41.226
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[29.129,41.226]",
+      "collection": "incanto",
+      "gazetteer_label": "Buca Maris Maioris",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60018",
+      "notes": "?"
+    },
+    "id": "60018",
+    "type": "Feature",
+    "label": "Buca.maris.maioris"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.096867,
+        36.753741
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[5.096867,36.753741]",
+      "collection": "incanto",
+      "gazetteer_label": "B\u00e9ja\u00efa",
+      "geonames_id": "",
+      "pleiades_id": "305142",
+      "gazetteer_uri": "http://topotime.org/places/60014",
+      "notes": ""
+    },
+    "id": "60014",
+    "type": "Feature",
+    "label": "Bougie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -6.283333,
+        36.533333
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-6.283333,36.533333]",
+      "collection": "incanto",
+      "gazetteer_label": "Cadix",
+      "geonames_id": "",
+      "pleiades_id": "256177",
+      "gazetteer_uri": "http://topotime.org/places/60019",
+      "notes": "Theodosia"
+    },
+    "id": "60019",
+    "type": "Feature",
+    "label": "Cadix"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.40311,
+        45.026756
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.40311,45.026756]",
+      "collection": "incanto",
+      "gazetteer_label": "Caffa",
+      "geonames_id": "",
+      "pleiades_id": "854743",
+      "gazetteer_uri": "http://topotime.org/places/60020",
+      "notes": ""
+    },
+    "id": "60020",
+    "type": "Feature",
+    "label": "Caffa"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        16.45752,
+        38.993572
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[16.45752,38.993572]",
+      "collection": "incanto",
+      "gazetteer_label": "Calabre",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60112",
+      "notes": "Calabria, a region of S. Italy"
+    },
+    "id": "60112",
+    "type": "Feature",
+    "label": "Calabre"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        23.198611,
+        36.438056
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[23.198611,36.438056]",
+      "collection": "incanto",
+      "gazetteer_label": "Cap Mal\u00e9e",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60021",
+      "notes": ""
+    },
+    "id": "60021",
+    "type": "Feature",
+    "label": "Cap.Malee"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.32,
+        51.12
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[1.32,51.12]",
+      "collection": "incanto",
+      "gazetteer_label": "Caput Doble",
+      "geonames_id": "",
+      "pleiades_id": "79646",
+      "gazetteer_uri": "http://topotime.org/places/60023",
+      "notes": "Modern Dover"
+    },
+    "id": "60023",
+    "type": "Feature",
+    "label": "Caput.Doble"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.0,
+        50.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[1,50.5]",
+      "collection": "incanto",
+      "gazetteer_label": "Caput Martin",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60022",
+      "notes": ""
+    },
+    "id": "60022",
+    "type": "Feature",
+    "label": "Caput.Martin"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.466667,
+        41.816667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[1.466667,41.816667]",
+      "collection": "incanto",
+      "gazetteer_label": "Catalonia",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60111",
+      "notes": "A region"
+    },
+    "id": "60111",
+    "type": "Feature",
+    "label": "Catalugna"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        33.6,
+        44.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[33.6,44.5]",
+      "collection": "incanto",
+      "gazetteer_label": "Cembalo",
+      "geonames_id": "",
+      "pleiades_id": "226770",
+      "gazetteer_uri": "http://topotime.org/places/60024",
+      "notes": "Symbolen Limen"
+    },
+    "id": "60024",
+    "type": "Feature",
+    "label": "Cembalo"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        26.04135,
+        38.42938
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[26.04135,38.42938]",
+      "collection": "incanto",
+      "gazetteer_label": "Chios",
+      "geonames_id": "",
+      "pleiades_id": "550496",
+      "gazetteer_uri": "http://topotime.org/places/60025",
+      "notes": ""
+    },
+    "id": "60025",
+    "type": "Feature",
+    "label": "Chios"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        11.787671,
+        42.092341
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[11.787671,42.092341]",
+      "collection": "incanto",
+      "gazetteer_label": "Civita Vecchia",
+      "geonames_id": "",
+      "pleiades_id": "514076",
+      "gazetteer_uri": "http://topotime.org/places/60026",
+      "notes": ""
+    },
+    "id": "60026",
+    "type": "Feature",
+    "label": "Civita.Vecchia"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.081389,
+        42.526667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.081389,42.526667]",
+      "collection": "incanto",
+      "gazetteer_label": "Collioure",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60028",
+      "notes": ""
+    },
+    "id": "60028",
+    "type": "Feature",
+    "label": "Collioure"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        28.958939,
+        40.988729
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[28.958939,40.988729]",
+      "collection": "incanto",
+      "gazetteer_label": "Constantinople",
+      "geonames_id": "",
+      "pleiades_id": "520998",
+      "gazetteer_uri": "http://topotime.org/places/60029",
+      "notes": ""
+    },
+    "id": "60029",
+    "type": "Feature",
+    "label": "Constantinople"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        19.771744,
+        39.718361
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[19.771744,39.718361]",
+      "collection": "incanto",
+      "gazetteer_label": "Corfu",
+      "geonames_id": "",
+      "pleiades_id": "530834",
+      "gazetteer_uri": "http://topotime.org/places/60030",
+      "notes": "Corcyra"
+    },
+    "id": "60030",
+    "type": "Feature",
+    "label": "Corfou"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        21.940778,
+        36.964036
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[21.940778,36.964036]",
+      "collection": "incanto",
+      "gazetteer_label": "Coron",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60031",
+      "notes": "?"
+    },
+    "id": "60031",
+    "type": "Feature",
+    "label": "Coron"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        25.0,
+        35.2
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[25,35.2]",
+      "collection": "incanto",
+      "gazetteer_label": "Crete",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60033",
+      "notes": "An island"
+    },
+    "id": "60033",
+    "type": "Feature",
+    "label": "Crete"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        17.116667,
+        39.083333
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[17.116667,39.083333]",
+      "collection": "incanto",
+      "gazetteer_label": "Crotone",
+      "geonames_id": "",
+      "pleiades_id": "452317",
+      "gazetteer_uri": "http://topotime.org/places/60032",
+      "notes": ""
+    },
+    "id": "60032",
+    "type": "Feature",
+    "label": "Cotrone"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        33.239826,
+        35.019082
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[33.239826,35.019082]",
+      "collection": "incanto",
+      "gazetteer_label": "Cyprus",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60034",
+      "notes": "An island"
+    },
+    "id": "60034",
+    "type": "Feature",
+    "label": "Cyprus"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        36.298378,
+        33.512199
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[36.298378,33.512199]",
+      "collection": "incanto",
+      "gazetteer_label": "Damas",
+      "geonames_id": "",
+      "pleiades_id": "678106",
+      "gazetteer_uri": "http://topotime.org/places/60035",
+      "notes": "Damascus"
+    },
+    "id": "60035",
+    "type": "Feature",
+    "label": "Damas"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.85,
+        33.8
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[10.85,33.8]",
+      "collection": "incanto",
+      "gazetteer_label": "Djerba",
+      "geonames_id": "",
+      "pleiades_id": "344383",
+      "gazetteer_uri": "http://topotime.org/places/60036",
+      "notes": "Girba"
+    },
+    "id": "60036",
+    "type": "Feature",
+    "label": "Djerba"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.32,
+        51.05
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[2.32,51.05]",
+      "collection": "incanto",
+      "gazetteer_label": "Dune",
+      "geonames_id": "3020686",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60037",
+      "notes": "Dunkirk?"
+    },
+    "id": "60037",
+    "type": "Feature",
+    "label": "Dune"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        19.469128,
+        41.303976
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[19.469128,41.303976]",
+      "collection": "incanto",
+      "gazetteer_label": "Durazzo",
+      "geonames_id": "",
+      "pleiades_id": "481818",
+      "gazetteer_uri": "http://topotime.org/places/60038",
+      "notes": "Dyrrachium"
+    },
+    "id": "60038",
+    "type": "Feature",
+    "label": "Durazzo"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.116667,
+        51.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-0.116667,51.5]",
+      "collection": "incanto",
+      "gazetteer_label": "England",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60039",
+      "notes": "A country"
+    },
+    "id": "60039",
+    "type": "Feature",
+    "label": "England"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        32.874638,
+        34.660148
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[32.874638,34.660148]",
+      "collection": "incanto",
+      "gazetteer_label": "Episkopi",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60040",
+      "notes": "probably Kourion"
+    },
+    "id": "60040",
+    "type": "Feature",
+    "label": "Episkopi"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        33.95,
+        35.116667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[33.95,35.116667]",
+      "collection": "incanto",
+      "gazetteer_label": "Famagosta",
+      "geonames_id": "146617",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60041",
+      "notes": ""
+    },
+    "id": "60041",
+    "type": "Feature",
+    "label": "Famagosta"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.67,
+        51.14
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.67,51.14]",
+      "collection": "incanto",
+      "gazetteer_label": "Flanders",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60042",
+      "notes": "A region"
+    },
+    "id": "60042",
+    "type": "Feature",
+    "label": "Flanders"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.575845,
+        41.220392
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[13.575845,41.220392]",
+      "collection": "incanto",
+      "gazetteer_label": "s",
+      "geonames_id": "",
+      "pleiades_id": "432734",
+      "gazetteer_uri": "http://topotime.org/places/60043",
+      "notes": "Caieta"
+    },
+    "id": "60043",
+    "type": "Feature",
+    "label": "Gaete"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        26.455,
+        40.367222
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[26.455,40.367222]",
+      "collection": "incanto",
+      "gazetteer_label": "Gallipoli",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60044",
+      "notes": "A peninsular region"
+    },
+    "id": "60044",
+    "type": "Feature",
+    "label": "Gallipoli"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        8.932778,
+        44.411111
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[8.932778,44.411111]",
+      "collection": "incanto",
+      "gazetteer_label": "Genoa",
+      "geonames_id": "",
+      "pleiades_id": "383664",
+      "gazetteer_uri": "http://topotime.org/places/60045",
+      "notes": ""
+    },
+    "id": "60045",
+    "type": "Feature",
+    "label": "Genoa"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        21.160558,
+        37.934105
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[21.160558,37.934105]",
+      "collection": "incanto",
+      "gazetteer_label": "Glarentza",
+      "geonames_id": "",
+      "pleiades_id": "570390",
+      "gazetteer_uri": "http://topotime.org/places/60027",
+      "notes": "Kyllene"
+    },
+    "id": "60027",
+    "type": "Feature",
+    "label": "Clarence"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -3.600833,
+        37.178056
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-3.600833,37.178056]",
+      "collection": "incanto",
+      "gazetteer_label": "Granada",
+      "geonames_id": "2517117",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60046",
+      "notes": ""
+    },
+    "id": "60046",
+    "type": "Feature",
+    "label": "Grenade"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -1.661114,
+        35.177762
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-1.661114,35.177762]",
+      "collection": "incanto",
+      "gazetteer_label": "Honaine",
+      "geonames_id": "2493812",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60066",
+      "notes": ""
+    },
+    "id": "60066",
+    "type": "Feature",
+    "label": "One"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.9,
+        45.28
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[13.9,45.28]",
+      "collection": "incanto",
+      "gazetteer_label": "Istrie",
+      "geonames_id": "3175397",
+      "pleiades_id": "197304",
+      "gazetteer_uri": "http://topotime.org/places/60107",
+      "notes": "A peninsula in Craotia"
+    },
+    "id": "60107",
+    "type": "Feature",
+    "label": "Istrie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        34.756943,
+        32.054303
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[34.756943,32.054303]",
+      "collection": "incanto",
+      "gazetteer_label": "Jaffa",
+      "geonames_id": "",
+      "pleiades_id": "687931",
+      "gazetteer_uri": "http://topotime.org/places/60047",
+      "notes": "Ioppe"
+    },
+    "id": "60047",
+    "type": "Feature",
+    "label": "Jaffa"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.216667,
+        31.783333
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.216667,31.783333]",
+      "collection": "incanto",
+      "gazetteer_label": "Jerusalem",
+      "geonames_id": "",
+      "pleiades_id": "687928",
+      "gazetteer_uri": "http://topotime.org/places/60048",
+      "notes": ""
+    },
+    "id": "60048",
+    "type": "Feature",
+    "label": "Jerusalem"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.769889,
+        35.513174
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.769889,35.513174]",
+      "collection": "incanto",
+      "gazetteer_label": "Laodic\u00e9e",
+      "geonames_id": "",
+      "pleiades_id": "668290",
+      "gazetteer_uri": "http://topotime.org/places/60049",
+      "notes": "Laodicea"
+    },
+    "id": "60049",
+    "type": "Feature",
+    "label": "Laodic\u00e9e"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        33.041446,
+        34.639816
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[33.041446,34.639816]",
+      "collection": "incanto",
+      "gazetteer_label": "Lemesos",
+      "geonames_id": "",
+      "pleiades_id": "707587",
+      "gazetteer_uri": "http://topotime.org/places/60050",
+      "notes": "Neapolis/Theodosias"
+    },
+    "id": "60050",
+    "type": "Feature",
+    "label": "Limassol"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        8.734722,
+        44.455556
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[8.734722,44.455556]",
+      "collection": "incanto",
+      "gazetteer_label": "Ligurie",
+      "geonames_id": "3174725",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60109",
+      "notes": "A province"
+    },
+    "id": "60109",
+    "type": "Feature",
+    "label": "Ligurie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -9.122201,
+        38.702488
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-9.122201,38.702488]",
+      "collection": "incanto",
+      "gazetteer_label": "Lisbon",
+      "geonames_id": "",
+      "pleiades_id": "256338",
+      "gazetteer_uri": "http://topotime.org/places/60051",
+      "notes": ""
+    },
+    "id": "60051",
+    "type": "Feature",
+    "label": "Lisbon"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.140964,
+        39.923538
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.140964,39.923538]",
+      "collection": "incanto",
+      "gazetteer_label": "Locum Buccari",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60052",
+      "notes": "??"
+    },
+    "id": "60052",
+    "type": "Feature",
+    "label": "Locum.Buccari"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.085691,
+        51.507059
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-0.085691,51.507059]",
+      "collection": "incanto",
+      "gazetteer_label": "London",
+      "geonames_id": "",
+      "pleiades_id": "79574",
+      "gazetteer_uri": "http://topotime.org/places/60053",
+      "notes": ""
+    },
+    "id": "60053",
+    "type": "Feature",
+    "label": "London"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -4.41506,
+        36.72095
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-4.41506,36.72095]",
+      "collection": "incanto",
+      "gazetteer_label": "Malaga",
+      "geonames_id": "",
+      "pleiades_id": "265963",
+      "gazetteer_uri": "http://topotime.org/places/60055",
+      "notes": ""
+    },
+    "id": "60055",
+    "type": "Feature",
+    "label": "Malaga"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        2.998611,
+        39.58539
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[2.998611,39.58539]",
+      "collection": "incanto",
+      "gazetteer_label": "Mallorca",
+      "geonames_id": "2514239",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60054",
+      "notes": "An iskand"
+    },
+    "id": "60054",
+    "type": "Feature",
+    "label": "Majorque"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        5.369889,
+        43.296346
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[5.369889,43.296346]",
+      "collection": "incanto",
+      "gazetteer_label": "Marseille",
+      "geonames_id": "",
+      "pleiades_id": "148127",
+      "gazetteer_uri": "http://topotime.org/places/60056",
+      "notes": "Massalia"
+    },
+    "id": "60056",
+    "type": "Feature",
+    "label": "Marseille"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        30.316667,
+        46.166667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[30.316667,46.166667]",
+      "collection": "incanto",
+      "gazetteer_label": "Maurocastron",
+      "geonames_id": "",
+      "pleiades_id": "226800",
+      "gazetteer_uri": "http://topotime.org/places/60057",
+      "notes": "Tyras/Ophioussa"
+    },
+    "id": "60057",
+    "type": "Feature",
+    "label": "Maurocastron"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        15.560811,
+        38.192865
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[15.560811,38.192865]",
+      "collection": "incanto",
+      "gazetteer_label": "Messina",
+      "geonames_id": "",
+      "pleiades_id": "462538",
+      "gazetteer_uri": "http://topotime.org/places/60058",
+      "notes": "Zancle/Messana"
+    },
+    "id": "60058",
+    "type": "Feature",
+    "label": "Messine"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.605556,
+        51.494444
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.605556,51.494444]",
+      "collection": "incanto",
+      "gazetteer_label": "Middlebourg",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60059",
+      "notes": "Dutch town, no geonames id"
+    },
+    "id": "60059",
+    "type": "Feature",
+    "label": "Middlebourg"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        21.709883,
+        36.813244
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[21.709883,36.813244]",
+      "collection": "incanto",
+      "gazetteer_label": "Modon",
+      "geonames_id": "",
+      "pleiades_id": "570483",
+      "gazetteer_uri": "http://topotime.org/places/60060",
+      "notes": "Methone"
+    },
+    "id": "60060",
+    "type": "Feature",
+    "label": "Modon"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        23.055625,
+        36.687586
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[23.055625,36.687586]",
+      "collection": "incanto",
+      "gazetteer_label": "Monemvasia",
+      "geonames_id": "256795",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60061",
+      "notes": "Founded 6th c."
+    },
+    "id": "60061",
+    "type": "Feature",
+    "label": "Monemvasia"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.877222,
+        43.611944
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.877222,43.611944]",
+      "collection": "incanto",
+      "gazetteer_label": "Montpellier",
+      "geonames_id": "2992166",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60062",
+      "notes": ""
+    },
+    "id": "60062",
+    "type": "Feature",
+    "label": "Montpellier"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        14.258106,
+        40.825345
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[14.258106,40.825345]",
+      "collection": "incanto",
+      "gazetteer_label": "Napoli",
+      "geonames_id": "",
+      "pleiades_id": "433014",
+      "gazetteer_uri": "http://topotime.org/places/60063",
+      "notes": ""
+    },
+    "id": "60063",
+    "type": "Feature",
+    "label": "Napoli"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        23.769356,
+        38.572494
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[23.769356,38.572494]",
+      "collection": "incanto",
+      "gazetteer_label": "Negrepont",
+      "geonames_id": "262565",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60064",
+      "notes": "An island, Euboea"
+    },
+    "id": "60064",
+    "type": "Feature",
+    "label": "Negrepont"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        33.35,
+        35.167
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[33.35,35.167]",
+      "collection": "incanto",
+      "gazetteer_label": "Nicosie",
+      "geonames_id": "146268",
+      "pleiades_id": "462392",
+      "gazetteer_uri": "http://topotime.org/places/60065",
+      "notes": "Nicosia"
+    },
+    "id": "60065",
+    "type": "Feature",
+    "label": "Nicosie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.651005,
+        35.709941
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-0.651005,35.709941]",
+      "collection": "incanto",
+      "gazetteer_label": "Oran",
+      "geonames_id": "2485926",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60067",
+      "notes": "Founded 10c."
+    },
+    "id": "60067",
+    "type": "Feature",
+    "label": "Oran"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.368583,
+        38.120398
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[13.368583,38.120398]",
+      "collection": "incanto",
+      "gazetteer_label": "Palermo",
+      "geonames_id": "",
+      "pleiades_id": "462410",
+      "gazetteer_uri": "http://topotime.org/places/60068",
+      "notes": "Panormus"
+    },
+    "id": "60068",
+    "type": "Feature",
+    "label": "Palerme"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        32.410604,
+        34.754114
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[32.410604,34.754114]",
+      "collection": "incanto",
+      "gazetteer_label": "Paphos",
+      "geonames_id": "",
+      "pleiades_id": "707596",
+      "gazetteer_uri": "http://topotime.org/places/60069",
+      "notes": ""
+    },
+    "id": "60069",
+    "type": "Feature",
+    "label": "Paphos"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        21.723553,
+        38.247043
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[21.723553,38.247043]",
+      "collection": "incanto",
+      "gazetteer_label": "Patras",
+      "geonames_id": "",
+      "pleiades_id": "570567",
+      "gazetteer_uri": "http://topotime.org/places/60070",
+      "notes": "Patrae"
+    },
+    "id": "60070",
+    "type": "Feature",
+    "label": "Patras"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.559041,
+        42.934297
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[10.559041,42.934297]",
+      "collection": "incanto",
+      "gazetteer_label": "Piombino",
+      "geonames_id": "3170674",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60071",
+      "notes": ""
+    },
+    "id": "60071",
+    "type": "Feature",
+    "label": "Piombino"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.404239,
+        43.716667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[10.404239,43.716667]",
+      "collection": "incanto",
+      "gazetteer_label": "Pisa",
+      "geonames_id": "",
+      "pleiades_id": "403253",
+      "gazetteer_uri": "http://topotime.org/places/60072",
+      "notes": ""
+    },
+    "id": "60072",
+    "type": "Feature",
+    "label": "Pise"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.9,
+        51.26
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[1.9,51.26]",
+      "collection": "incanto",
+      "gazetteer_label": "Portus Camere",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60073",
+      "notes": "??"
+    },
+    "id": "60073",
+    "type": "Feature",
+    "label": "Portus.Camere"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.36,
+        44.95
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.36,44.95]",
+      "collection": "incanto",
+      "gazetteer_label": "Provato",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60074",
+      "notes": "??Crimea"
+    },
+    "id": "60074",
+    "type": "Feature",
+    "label": "Provato"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.831458,
+        44.869725
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[13.831458,44.869725]",
+      "collection": "incanto",
+      "gazetteer_label": "Pula",
+      "geonames_id": "",
+      "pleiades_id": "197448",
+      "gazetteer_uri": "http://topotime.org/places/60075",
+      "notes": ""
+    },
+    "id": "60075",
+    "type": "Feature",
+    "label": "Pula"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        18.103544,
+        42.640699
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[18.103544,42.640699]",
+      "collection": "incanto",
+      "gazetteer_label": "Ragusa",
+      "geonames_id": "3201047",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60076",
+      "notes": "Modern Dubrovnik?"
+    },
+    "id": "60076",
+    "type": "Feature",
+    "label": "Ragusa"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        34.866667,
+        31.933333
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[34.866667,31.933333]",
+      "collection": "incanto",
+      "gazetteer_label": "Rama",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60077",
+      "notes": "??"
+    },
+    "id": "60077",
+    "type": "Feature",
+    "label": "Rama"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        15.66194,
+        38.11139
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[15.66194,38.11139]",
+      "collection": "incanto",
+      "gazetteer_label": "Reggio Calabre",
+      "geonames_id": "",
+      "pleiades_id": "452416",
+      "gazetteer_uri": "http://topotime.org/places/60078",
+      "notes": ""
+    },
+    "id": "60078",
+    "type": "Feature",
+    "label": "Reggio.Calabre"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        28.231354,
+        36.452487
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[28.231354,36.452487]",
+      "collection": "incanto",
+      "gazetteer_label": "Rhodes",
+      "geonames_id": "",
+      "pleiades_id": "590030",
+      "gazetteer_uri": "http://topotime.org/places/60079",
+      "notes": ""
+    },
+    "id": "60079",
+    "type": "Feature",
+    "label": "Rhodes"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        24.0,
+        39.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[24,39.5]",
+      "collection": "incanto",
+      "gazetteer_label": "Romanie",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60080",
+      "notes": "??"
+    },
+    "id": "60080",
+    "type": "Feature",
+    "label": "Romanie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.633333,
+        45.083333
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[13.633333,45.083333]",
+      "collection": "incanto",
+      "gazetteer_label": "Rovigno",
+      "geonames_id": "3191518",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60114",
+      "notes": ""
+    },
+    "id": "60114",
+    "type": "Feature",
+    "label": "Rovigno"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        33.629167,
+        34.916667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[33.629167,34.916667]",
+      "collection": "incanto",
+      "gazetteer_label": "Salines",
+      "geonames_id": "146400",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60081",
+      "notes": "Modern Larnaca, Cyprus"
+    },
+    "id": "60081",
+    "type": "Feature",
+    "label": "Salines"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        1.339153,
+        51.239233
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[1.339153,51.239233]",
+      "collection": "incanto",
+      "gazetteer_label": "Sandwich",
+      "geonames_id": "2638542",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60083",
+      "notes": ""
+    },
+    "id": "60083",
+    "type": "Feature",
+    "label": "Sandwich"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -6.22755,
+        36.5969
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-6.22755,36.5969]",
+      "collection": "incanto",
+      "gazetteer_label": "Sanlucar de Barrameda",
+      "geonames_id": "2511306",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60082",
+      "notes": ""
+    },
+    "id": "60082",
+    "type": "Feature",
+    "label": "San.Lucar"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        8.479161,
+        44.296439
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[8.479161,44.296439]",
+      "collection": "incanto",
+      "gazetteer_label": "Savona",
+      "geonames_id": "3167022",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60084",
+      "notes": ""
+    },
+    "id": "60084",
+    "type": "Feature",
+    "label": "Savona"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        15.0,
+        44.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[15,44.5]",
+      "collection": "incanto",
+      "gazetteer_label": "Sclavonie",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60108",
+      "notes": "??"
+    },
+    "id": "60108",
+    "type": "Feature",
+    "label": "Sclavonie"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -5.990519,
+        37.388205
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-5.990519,37.388205]",
+      "collection": "incanto",
+      "gazetteer_label": "Sevilla",
+      "geonames_id": "",
+      "pleiades_id": "256210",
+      "gazetteer_uri": "http://topotime.org/places/60085",
+      "notes": "Hispalis"
+    },
+    "id": "60085",
+    "type": "Feature",
+    "label": "Sevilla"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.76107,
+        34.705987
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[10.76107,34.705987]",
+      "collection": "incanto",
+      "gazetteer_label": "Sfax",
+      "geonames_id": "2467454",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60086",
+      "notes": "Site of Thaenae"
+    },
+    "id": "60086",
+    "type": "Feature",
+    "label": "Sfax"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        14.192778,
+        37.6425
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[14.192778,37.6425]",
+      "collection": "incanto",
+      "gazetteer_label": "Sicily",
+      "geonames_id": "2523118",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60087",
+      "notes": "An island"
+    },
+    "id": "60087",
+    "type": "Feature",
+    "label": "Sicily"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        36.360351,
+        41.301751
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[36.360351,41.301751]",
+      "collection": "incanto",
+      "gazetteer_label": "Simisso",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60088",
+      "notes": "Modern Samsun"
+    },
+    "id": "60088",
+    "type": "Feature",
+    "label": "Simisso"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.130209,
+        42.011466
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.130209,42.011466]",
+      "collection": "incanto",
+      "gazetteer_label": "Sinop",
+      "geonames_id": "",
+      "pleiades_id": "857321",
+      "gazetteer_uri": "http://topotime.org/places/60089",
+      "notes": ""
+    },
+    "id": "60089",
+    "type": "Feature",
+    "label": "Sinope"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        15.284872,
+        37.048459
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[15.284872,37.048459]",
+      "collection": "incanto",
+      "gazetteer_label": "Siracusa",
+      "geonames_id": "",
+      "pleiades_id": "362503",
+      "gazetteer_uri": "http://topotime.org/places/60092",
+      "notes": "Syracusae"
+    },
+    "id": "60092",
+    "type": "Feature",
+    "label": "Syracuse"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        3.5,
+        51.35
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[3.5,51.35]",
+      "collection": "incanto",
+      "gazetteer_label": "Sluis",
+      "geonames_id": "2747117",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60090",
+      "notes": ""
+    },
+    "id": "60090",
+    "type": "Feature",
+    "label": "Sluis"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -1.395278,
+        50.915
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-1.395278,50.915]",
+      "collection": "incanto",
+      "gazetteer_label": "Southampton",
+      "geonames_id": "2637487",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60091",
+      "notes": ""
+    },
+    "id": "60091",
+    "type": "Feature",
+    "label": "Southampton"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        36.4,
+        33.5
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[36.4,33.5]",
+      "collection": "incanto",
+      "gazetteer_label": "Syria",
+      "geonames_id": "163843",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60093",
+      "notes": "A country"
+    },
+    "id": "60093",
+    "type": "Feature",
+    "label": "Syria"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        11.152551,
+        42.558556
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[11.152551,42.558556]",
+      "collection": "incanto",
+      "gazetteer_label": "Talamonis",
+      "geonames_id": "3165971",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60094",
+      "notes": "Formerly Telamon"
+    },
+    "id": "60094",
+    "type": "Feature",
+    "label": "Talamone"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        39.335434,
+        47.268109
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[39.335434,47.268109]",
+      "collection": "incanto",
+      "gazetteer_label": "Tana",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60095",
+      "notes": ""
+    },
+    "id": "60095",
+    "type": "Feature",
+    "label": "Tana"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        26.0225,
+        39.816667
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[26.0225,39.816667]",
+      "collection": "incanto",
+      "gazetteer_label": "Tenedos",
+      "geonames_id": "",
+      "pleiades_id": "550912",
+      "gazetteer_uri": "http://topotime.org/places/60096",
+      "notes": ""
+    },
+    "id": "60096",
+    "type": "Feature",
+    "label": "Tenedos"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        22.945876,
+        40.637805
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[22.945876,40.637805]",
+      "collection": "incanto",
+      "gazetteer_label": "Thessaloniki",
+      "geonames_id": "",
+      "pleiades_id": "491741",
+      "gazetteer_uri": "http://topotime.org/places/60097",
+      "notes": ""
+    },
+    "id": "60097",
+    "type": "Feature",
+    "label": "Thessalonique"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        0.521016,
+        40.814375
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[0.521016,40.814375]",
+      "collection": "incanto",
+      "gazetteer_label": "Tortosa",
+      "geonames_id": "",
+      "pleiades_id": "246369",
+      "gazetteer_uri": "http://topotime.org/places/60098",
+      "notes": "Dertosa"
+    },
+    "id": "60098",
+    "type": "Feature",
+    "label": "Tortosa"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        39.757274,
+        41.004318
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[39.757274,41.004318]",
+      "collection": "incanto",
+      "gazetteer_label": "Trabzon",
+      "geonames_id": "",
+      "pleiades_id": "857359",
+      "gazetteer_uri": "http://topotime.org/places/60099",
+      "notes": ""
+    },
+    "id": "60099",
+    "type": "Feature",
+    "label": "Trebizonde"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        13.178665,
+        32.901336
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[13.178665,32.901336]",
+      "collection": "incanto",
+      "gazetteer_label": "Tripoli (Libya)",
+      "geonames_id": "",
+      "pleiades_id": "344456",
+      "gazetteer_uri": "http://topotime.org/places/60100",
+      "notes": "Oea"
+    },
+    "id": "60100",
+    "type": "Feature",
+    "label": "Tripoli.Libye"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        35.816817,
+        34.458094
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[35.816817,34.458094]",
+      "collection": "incanto",
+      "gazetteer_label": "Tripoli (Syria)",
+      "geonames_id": "266826",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60101",
+      "notes": "In Lebanon, actually"
+    },
+    "id": "60101",
+    "type": "Feature",
+    "label": "Tripoli.Syria"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        10.165785,
+        36.79745
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[10.165785,36.79745]",
+      "collection": "incanto",
+      "gazetteer_label": "Tunis",
+      "geonames_id": "2464470",
+      "pleiades_id": "315233",
+      "gazetteer_uri": "http://topotime.org/places/60102",
+      "notes": "Tunes"
+    },
+    "id": "60102",
+    "type": "Feature",
+    "label": "Tunis"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        -0.291123,
+        39.424686
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[-0.291123,39.424686]",
+      "collection": "incanto",
+      "gazetteer_label": "Valentia",
+      "geonames_id": "2509954",
+      "pleiades_id": "266090",
+      "gazetteer_uri": "http://topotime.org/places/60103",
+      "notes": ""
+    },
+    "id": "60103",
+    "type": "Feature",
+    "label": "Valencia"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        12.3319,
+        45.4398
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[12.3319,45.4398]",
+      "collection": "incanto",
+      "gazetteer_label": "Venice",
+      "geonames_id": "3164603",
+      "pleiades_id": "818739154",
+      "gazetteer_uri": "http://topotime.org/places/60104",
+      "notes": ""
+    },
+    "id": "60104",
+    "type": "Feature",
+    "label": "Venice"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        36.48,
+        45.36
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[36.48,45.36]",
+      "collection": "incanto",
+      "gazetteer_label": "Vospero",
+      "geonames_id": "",
+      "pleiades_id": "",
+      "gazetteer_uri": "http://topotime.org/places/60105",
+      "notes": "??"
+    },
+    "id": "60105",
+    "type": "Feature",
+    "label": "Vospero"
+  },
+  {
+    "geometry": {
+      "coordinates": [
+        15.217873,
+        44.121441
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "geometry": "[15.217873,44.121441]",
+      "collection": "incanto",
+      "gazetteer_label": "Zara",
+      "geonames_id": "",
+      "pleiades_id": "197312",
+      "gazetteer_uri": "http://topotime.org/places/60106",
+      "notes": "Iader"
+    },
+    "id": "60106",
+    "type": "Feature",
+    "label": "Zara"
+  }
+]
