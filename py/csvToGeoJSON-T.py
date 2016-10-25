@@ -13,7 +13,8 @@ def init():
     
     finp = codecs.open('data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
-    fout = codecs.open('data/out/'+data+'.json', 'w', 'utf8')
+    fout = codecs.open('data/out/'+data+'.geojson', 'w', 'utf8')
+    fout.write('{"type":"FeatureCollection", "features":')
     
     reader_p = csv.DictReader(finp, delimiter=';')
     #reader_p = csv.DictReader(filter(lambda row: row[0]!='#', finp), delimiter=';')
@@ -59,10 +60,12 @@ def createPlaces():
         places.append(feat)
     
     fout.write(json.dumps(places,indent=2))
+    fout.write('}')
     fout.close()
 
 init()
 createPlaces()
+
 
     #print(json.dumps(places))
         #if row['lat'] and row['lng']:    

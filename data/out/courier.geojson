@@ -1,4 +1,4 @@
-[
+{"type":"FeatureCollection", "features":[
   {
     "properties": {
       "gazetteer_uri": "",
@@ -19739,4 +19739,4 @@
       ]
     }
   }
-]
+]}
