@@ -1,3 +1,10 @@
+# title: The Pilgramage of Xuanzang, 629-645CE
+# places: places_xuanzang.csv
+# timespan: [629,,,645,]
+# pub_date: 2010
+# contributors: [Whitney Thorpe; Karl Grossner]
+# description: Data originally extracted by W. Thorpe from Wriggens, S. (2003) 'The Silk Road journey with Xuanzang', Basic Books; edited by Grossner 2010
+# uri:
 collection;route_id;segment_id;source;target;label;geometry;timespan;duration;follows;notes
 xuanzang;5001;5001-1;348203;367082;Xuanzang journey: Chang'an-Liangzhou;;0629;;;At the age of 27 Xuanzang left Chang'an (modern day Xian) China on a 16 year pilgrimage to India in search of original Buddhist texts and scriptures in the year 629 C.E. Chang'an was the capital of the Tang Dynasty at the time. The Tang Dynasty Emperor Taizong had made an imperial decree restricting travel outside China. Emperor Taizong was not sympathetic to Buddhists at the time, so Xuanzang had to begin his journey in the dead of night. In 645 C.E. when Xuanzang returned, he became a confidant and advisor to Emperor Taizong. He also became one of the most revered Chinese legendary figures. His legend extends into Buddhism, art, literary fields, and as a cultural figure. Xuanzang's pilgrimage also highlights the important role the Silk Road played in the diffusion of more than goods; it was a network of routes that culture, religion, and ideas spread out across Eurasia on.
 xuanzang;5001;5001-2;367082;367112;Xuanzang journey: Liangzhou - An-hsi;;0629;;20527;

@@ -1,8 +1,12 @@
 courier data issues
+25 Oct 2016
 
-- CHGIS_IDs in geodata don't correspond to TGAZ record
+- geometry in shapefile does not match that of TGAZ record for CHGIS_ID
+  - Lex: station is not a place (settlement), i.e. not TGAZ record
+    rather it is in or near that place (or should be)
+    currently there are discrepancies
 - route segments between SYS_IDs 745 and 84 have no intermediary nodes/places; 742, 744, 745 & 746 are missing nodes
-- this data seems to be a route system; we don't know particular course taken
+- this data is a route system; we don't know particular course taken
 
 the edge ends offset from these nodes are beyond tolerance (corrected in my copy)
-623, 775, 627, 715, 742, 745, 638, 744, 709, 637, 379, 746, 579, 
+623, 775, 627, 715, 742, 745, 638, 744, 709, 637, 379, 746, 579,

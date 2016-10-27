@@ -1,3 +1,8 @@
+# title: Roundabout, a circumnavigation of the globe, 2016-2017CE
+# pub_date: 2016
+# timespan: [2016-09-10,,,2017-05,end date uncertain]
+# contributors: [K. Grossner]
+# description: An 8-month sojourn of geohumanities computing and tourism
 collection;route_id;segment_id;source;target;label;geometry;timespan;duration;follows;mode
 ra;6001;6001-1;ra0001;ra0002;Palo Alto > Fernley;[[-122.14302,37.44188],[-119.25183,39.60797]];2016-09-10;;;auto
 ra;6001;6001-2;ra0002;ra0003;Fernley > Delta;[[-119.25183,39.60797],[-112.57717,39.35218]];2016-09-11;;6001-1;auto
