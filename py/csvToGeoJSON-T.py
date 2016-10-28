@@ -10,8 +10,8 @@ def init():
     dir = os.getcwd() + '/data/'
     global proj, reader_p, reader_s, finp, fins, fout, collection, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'incanto'
-    data = 'incanto-f'
+    proj = 'xuanzang'
+    data = 'xuanzang'
     
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -57,6 +57,8 @@ def init():
 
     if not reader_p.fieldnames[:7] == req_p:
         sys.exit('core place field names incorrect. You have: \n' + str(reader_p.fieldnames))
+        
+    # TODO test segments columns, offer options
     #fins.seek(0)
     #if not reader_s.fieldnames[:10] == req_s:
         ##sys.exit('core segment field names incorrect. You have: \n' + str(reader_s.fieldnames))
@@ -139,7 +141,7 @@ def createSegments():
         else:
             g['when'] = {"timespan": row['timespan'].split(','),
                          "duration": row['duration'],
-                         "follows": row['follows']}
+                         "follows": row['follows'] if 'follows' in reader_s.fieldnames else 'n/a'}
             
         # core properties
         g['properties'] = {
