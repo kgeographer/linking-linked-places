@@ -1,4 +1,22 @@
 {
+  "when": {
+    "timespan": [
+      "629",
+      "",
+      "",
+      "645",
+      ""
+    ]
+  },
+  "attributes": {
+    "title": "The Pilgramage of Xuanzang, 629-645CE",
+    "contributors": "[Whitney Thorpe",
+    "uri": "",
+    "timespan": "[629,,,645,]",
+    "pub_date": "2010",
+    "places": "places_xuanzang.csv",
+    "description": "Data originally extracted by W. Thorpe from Wriggens, S. (2003) 'The Silk Road journey with Xuanzang', Basic Books"
+  },
   "type": "FeatureCollection",
   "features": [
     {
@@ -9,18 +27,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Ajanta",
-      "id": "367086",
       "properties": {
-        "status": "",
         "geonames_id": "1279179",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1279179",
+        "status": "",
         "gazetteer_label": "Ajanta Caves"
-      }
+      },
+      "type": "Feature",
+      "id": "367086"
     },
     {
       "geometry": {
@@ -30,18 +48,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Aksu",
-      "id": "348070",
       "properties": {
-        "status": "",
         "geonames_id": "1529660",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529660",
+        "status": "",
         "gazetteer_label": "Aksu"
-      }
+      },
+      "type": "Feature",
+      "id": "348070"
     },
     {
       "geometry": {
@@ -51,18 +69,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Andarab",
-      "id": "367091",
       "properties": {
-        "status": "",
         "geonames_id": "1148671",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1148671",
+        "status": "",
         "gazetteer_label": "An\u1e0fa\u1e5f\u0101b"
-      }
+      },
+      "type": "Feature",
+      "id": "367091"
     },
     {
       "geometry": {
@@ -72,18 +90,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "An-his",
-      "id": "367081",
       "properties": {
-        "status": "",
         "geonames_id": "1529004",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529004",
+        "status": "",
         "gazetteer_label": "Yuanquan"
-      }
+      },
+      "type": "Feature",
+      "id": "367081"
     },
     {
       "geometry": {
@@ -93,18 +111,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Assam",
-      "id": "367108",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367108"
     },
     {
       "geometry": {
@@ -114,18 +132,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Attock",
-      "id": "360498",
       "properties": {
-        "status": "",
         "geonames_id": "1184249",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1184249",
+        "status": "",
         "gazetteer_label": "Attock City"
-      }
+      },
+      "type": "Feature",
+      "id": "360498"
     },
     {
       "geometry": {
@@ -135,18 +153,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Ayodhya",
-      "id": "355631",
       "properties": {
-        "status": "",
         "geonames_id": "1278094",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1278094",
+        "status": "",
         "gazetteer_label": "Ayodhya"
-      }
+      },
+      "type": "Feature",
+      "id": "355631"
     },
     {
       "geometry": {
@@ -156,18 +174,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Bairata",
-      "id": "367102",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367102"
     },
     {
       "geometry": {
@@ -177,18 +195,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Balkh",
-      "id": "345485",
       "properties": {
-        "status": "",
         "geonames_id": "1147290",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1147290",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "345485"
     },
     {
       "geometry": {
@@ -198,18 +216,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Bamiyan",
-      "id": "367085",
       "properties": {
-        "status": "",
         "geonames_id": "1147242",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1147242",
+        "status": "",
         "gazetteer_label": "B\u0101m\u012b\u0101n"
-      }
+      },
+      "type": "Feature",
+      "id": "367085"
     },
     {
       "geometry": {
@@ -219,18 +237,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Bharukaccha",
-      "id": "355463",
       "properties": {
-        "status": "",
         "geonames_id": "1276100",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1276100",
+        "status": "",
         "gazetteer_label": "Bhar\u016bch"
-      }
+      },
+      "type": "Feature",
+      "id": "355463"
     },
     {
       "geometry": {
@@ -240,18 +258,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Bodh Gaya",
-      "id": "355388",
       "properties": {
-        "status": "",
         "geonames_id": "1275389",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1275389",
+        "status": "",
         "gazetteer_label": "Bodh Gaya"
-      }
+      },
+      "type": "Feature",
+      "id": "355388"
     },
     {
       "geometry": {
@@ -261,18 +279,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Chang'an",
-      "id": "348203",
       "properties": {
-        "status": "",
         "geonames_id": "1790630",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1790630",
+        "status": "",
         "gazetteer_label": "Xi'an"
-      }
+      },
+      "type": "Feature",
+      "id": "348203"
     },
     {
       "geometry": {
@@ -282,18 +300,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Charkhlik",
-      "id": "367090",
       "properties": {
-        "status": "",
         "geonames_id": "1280122",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1280122",
+        "status": "",
         "gazetteer_label": "Ruoqiang"
-      }
+      },
+      "type": "Feature",
+      "id": "367090"
     },
     {
       "geometry": {
@@ -303,18 +321,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Charsadda",
-      "id": "360476",
       "properties": {
-        "status": "",
         "geonames_id": "1181439",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1181439",
+        "status": "",
         "gazetteer_label": "Ch\u0101rsadda"
-      }
+      },
+      "type": "Feature",
+      "id": "360476"
     },
     {
       "geometry": {
@@ -324,18 +342,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Cherchen",
-      "id": "367089",
       "properties": {
-        "status": "",
         "geonames_id": "1280249",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1280249",
+        "status": "",
         "gazetteer_label": "Qiemo"
-      }
+      },
+      "type": "Feature",
+      "id": "367089"
     },
     {
       "geometry": {
@@ -345,18 +363,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Chinabhukti",
-      "id": "355104",
       "properties": {
-        "status": "",
         "geonames_id": "1271883",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1271883",
+        "status": "",
         "gazetteer_label": "F\u012brozpur"
-      }
+      },
+      "type": "Feature",
+      "id": "355104"
     },
     {
       "geometry": {
@@ -366,18 +384,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Darel",
-      "id": "367084",
       "properties": {
-        "status": "",
         "geonames_id": "7096609",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/7096609",
+        "status": "",
         "gazetteer_label": "Dar\u0113l"
-      }
+      },
+      "type": "Feature",
+      "id": "367084"
     },
     {
       "geometry": {
@@ -387,18 +405,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Dhanakataka",
-      "id": "367113",
       "properties": {
-        "status": "",
         "geonames_id": "1278718",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1278718",
+        "status": "",
         "gazetteer_label": "Amar\u0101vati"
-      }
+      },
+      "type": "Feature",
+      "id": "367113"
     },
     {
       "geometry": {
@@ -408,18 +426,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Faizabad",
-      "id": "345479",
       "properties": {
-        "status": "",
         "geonames_id": "1142170",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1142170",
+        "status": "",
         "gazetteer_label": "Faizabad"
-      }
+      },
+      "type": "Feature",
+      "id": "345479"
     },
     {
       "geometry": {
@@ -429,18 +447,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Hami",
-      "id": "348065",
       "properties": {
-        "status": "",
         "geonames_id": "1529484",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529484",
+        "status": "",
         "gazetteer_label": "Hami"
-      }
+      },
+      "type": "Feature",
+      "id": "348065"
     },
     {
       "geometry": {
@@ -450,18 +468,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Irana",
-      "id": "367109",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367109"
     },
     {
       "geometry": {
@@ -471,18 +489,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Jalandhara",
-      "id": "354824",
       "properties": {
-        "status": "",
         "geonames_id": "1268782",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1268782",
+        "status": "",
         "gazetteer_label": "Jalandhar"
-      }
+      },
+      "type": "Feature",
+      "id": "354824"
     },
     {
       "geometry": {
@@ -492,18 +510,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kancipuram",
-      "id": "354770",
       "properties": {
-        "status": "",
         "geonames_id": "1268159",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1268159",
+        "status": "",
         "gazetteer_label": "K\u0101nchipuram"
-      }
+      },
+      "type": "Feature",
+      "id": "354770"
     },
     {
       "geometry": {
@@ -513,18 +531,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kanyakubja",
-      "id": "354759",
       "properties": {
-        "status": "",
         "geonames_id": "1268011",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1268011",
+        "status": "",
         "gazetteer_label": "Kannauj"
-      }
+      },
+      "type": "Feature",
+      "id": "354759"
     },
     {
       "geometry": {
@@ -534,18 +552,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kapilavastu",
-      "id": "367103",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367103"
     },
     {
       "geometry": {
@@ -555,18 +573,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kapisi",
-      "id": "367083",
       "properties": {
-        "status": "",
         "geonames_id": "7054036",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/7054036",
+        "status": "",
         "gazetteer_label": "Bagr\u0101m"
-      }
+      },
+      "type": "Feature",
+      "id": "367083"
     },
     {
       "geometry": {
@@ -576,18 +594,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Karashahr",
-      "id": "367087",
       "properties": {
-        "status": "",
         "geonames_id": "1529031",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529031",
+        "status": "",
         "gazetteer_label": "Yanqi"
-      }
+      },
+      "type": "Feature",
+      "id": "367087"
     },
     {
       "geometry": {
@@ -597,18 +615,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kashgar",
-      "id": "348056",
       "properties": {
-        "status": "",
         "geonames_id": "1280849",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1280849",
+        "status": "",
         "gazetteer_label": "Kashi"
-      }
+      },
+      "type": "Feature",
+      "id": "348056"
     },
     {
       "geometry": {
@@ -618,18 +636,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kausambi",
-      "id": "367088",
       "properties": {
-        "status": "",
         "geonames_id": "1267401",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1267401",
+        "status": "",
         "gazetteer_label": "Kaushambi"
-      }
+      },
+      "type": "Feature",
+      "id": "367088"
     },
     {
       "geometry": {
@@ -639,18 +657,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Khotan",
-      "id": "348058",
       "properties": {
-        "status": "",
         "geonames_id": "1281019",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1281019",
+        "status": "",
         "gazetteer_label": "Hotan"
-      }
+      },
+      "type": "Feature",
+      "id": "348058"
     },
     {
       "geometry": {
@@ -660,18 +678,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kucha",
-      "id": "348063",
       "properties": {
-        "status": "",
         "geonames_id": "1529363",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529363",
+        "status": "",
         "gazetteer_label": "Kuqa"
-      }
+      },
+      "type": "Feature",
+      "id": "348063"
     },
     {
       "geometry": {
@@ -681,18 +699,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kunduz",
-      "id": "345465",
       "properties": {
-        "status": "",
         "geonames_id": "1135689",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1135689",
+        "status": "",
         "gazetteer_label": "Kond\u016bz"
-      }
+      },
+      "type": "Feature",
+      "id": "345465"
     },
     {
       "geometry": {
@@ -702,18 +720,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Kusinagara",
-      "id": "367104",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367104"
     },
     {
       "geometry": {
@@ -723,18 +741,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Liangzhou",
-      "id": "367082",
       "properties": {
-        "status": "",
         "geonames_id": "1803936",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1803936",
+        "status": "",
         "gazetteer_label": "Wuwei"
-      }
+      },
+      "type": "Feature",
+      "id": "367082"
     },
     {
       "geometry": {
@@ -744,18 +762,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Loulan",
-      "id": "367097",
       "properties": {
-        "status": "",
         "geonames_id": "1529336",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529336",
+        "status": "",
         "gazetteer_label": "Loulan Yiji"
-      }
+      },
+      "type": "Feature",
+      "id": "367097"
     },
     {
       "geometry": {
@@ -765,18 +783,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Lumbini",
-      "id": "367095",
       "properties": {
-        "status": "",
         "geonames_id": "1282839",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1282839",
+        "status": "",
         "gazetteer_label": "Rummin-dei"
-      }
+      },
+      "type": "Feature",
+      "id": "367095"
     },
     {
       "geometry": {
@@ -786,18 +804,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Mathura",
-      "id": "354407",
       "properties": {
-        "status": "",
         "geonames_id": "1263364",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1263364",
+        "status": "",
         "gazetteer_label": "Mathura"
-      }
+      },
+      "type": "Feature",
+      "id": "354407"
     },
     {
       "geometry": {
@@ -807,18 +825,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Matipura",
-      "id": "354448",
       "properties": {
-        "status": "",
         "geonames_id": "1263879",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1263879",
+        "status": "",
         "gazetteer_label": "Mand\u0101war"
-      }
+      },
+      "type": "Feature",
+      "id": "354448"
     },
     {
       "geometry": {
@@ -828,18 +846,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Multan",
-      "id": "360317",
       "properties": {
-        "status": "",
         "geonames_id": "1169825",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1169825",
+        "status": "",
         "gazetteer_label": "Mult\u0101n"
-      }
+      },
+      "type": "Feature",
+      "id": "360317"
     },
     {
       "geometry": {
@@ -849,18 +867,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Nagarahara",
-      "id": "345473",
       "properties": {
-        "status": "",
         "geonames_id": "1139715",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1139715",
+        "status": "",
         "gazetteer_label": "Nagarahara"
-      }
+      },
+      "type": "Feature",
+      "id": "345473"
     },
     {
       "geometry": {
@@ -870,18 +888,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Nalanda",
-      "id": "367096",
       "properties": {
-        "status": "",
         "geonames_id": "1262080",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1262080",
+        "status": "",
         "gazetteer_label": "N\u0101landa"
-      }
+      },
+      "type": "Feature",
+      "id": "367096"
     },
     {
       "geometry": {
@@ -891,18 +909,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Nasik",
-      "id": "354254",
       "properties": {
-        "status": "",
         "geonames_id": "1261731",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1261731",
+        "status": "",
         "gazetteer_label": "N\u0101sik"
-      }
+      },
+      "type": "Feature",
+      "id": "354254"
     },
     {
       "geometry": {
@@ -912,18 +930,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Niya",
-      "id": "367098",
       "properties": {
-        "status": "",
         "geonames_id": "1280555",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1280555",
+        "status": "",
         "gazetteer_label": "Minfeng"
-      }
+      },
+      "type": "Feature",
+      "id": "367098"
     },
     {
       "geometry": {
@@ -933,18 +951,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Parvata",
-      "id": "367110",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367110"
     },
     {
       "geometry": {
@@ -954,18 +972,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Pataliputra",
-      "id": "354119",
       "properties": {
-        "status": "",
         "geonames_id": "1260086",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1260086",
+        "status": "",
         "gazetteer_label": "Patna"
-      }
+      },
+      "type": "Feature",
+      "id": "354119"
     },
     {
       "geometry": {
@@ -975,18 +993,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Peshawar",
-      "id": "360292",
       "properties": {
-        "status": "",
         "geonames_id": "1168197",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1168197",
+        "status": "",
         "gazetteer_label": "Pesh\u0101war"
-      }
+      },
+      "type": "Feature",
+      "id": "360292"
     },
     {
       "geometry": {
@@ -996,18 +1014,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Prayaga",
-      "id": "355730",
       "properties": {
-        "status": "",
         "geonames_id": "1278994",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1278994",
+        "status": "",
         "gazetteer_label": "Allah\u0101b\u0101d"
-      }
+      },
+      "type": "Feature",
+      "id": "355730"
     },
     {
       "geometry": {
@@ -1017,18 +1035,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Sakala",
-      "id": "360248",
       "properties": {
-        "status": "",
         "geonames_id": "1164909",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1164909",
+        "status": "",
         "gazetteer_label": "Si\u0101lkot"
-      }
+      },
+      "type": "Feature",
+      "id": "360248"
     },
     {
       "geometry": {
@@ -1038,18 +1056,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Samarkand",
-      "id": "366553",
       "properties": {
-        "status": "",
         "geonames_id": "1216265",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1216265",
+        "status": "",
         "gazetteer_label": "Samarqand"
-      }
+      },
+      "type": "Feature",
+      "id": "366553"
     },
     {
       "geometry": {
@@ -1059,18 +1077,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Samatata",
-      "id": "367111",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367111"
     },
     {
       "geometry": {
@@ -1080,18 +1098,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Sankasya",
-      "id": "367093",
       "properties": {
-        "status": "",
         "geonames_id": "1257373",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1257373",
+        "status": "",
         "gazetteer_label": "Sank\u0101sya"
-      }
+      },
+      "type": "Feature",
+      "id": "367093"
     },
     {
       "geometry": {
@@ -1101,18 +1119,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Sarnath and Varanasi",
-      "id": "367094",
       "properties": {
-        "status": "",
         "geonames_id": "1257137",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1257137",
+        "status": "",
         "gazetteer_label": "S\u0101rn\u0101th"
-      }
+      },
+      "type": "Feature",
+      "id": "367094"
     },
     {
       "geometry": {
@@ -1122,18 +1140,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Shabaz Gharhi",
-      "id": "367092",
       "properties": {
-        "status": "",
         "geonames_id": "7074006",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/7074006",
+        "status": "",
         "gazetteer_label": "Garhi Sh\u0101hb\u0101z"
-      }
+      },
+      "type": "Feature",
+      "id": "367092"
     },
     {
       "geometry": {
@@ -1143,18 +1161,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Shrinigar",
-      "id": "353703",
       "properties": {
-        "status": "",
         "geonames_id": "1255634",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1255634",
+        "status": "",
         "gazetteer_label": "Sr\u012bnagar"
-      }
+      },
+      "type": "Feature",
+      "id": "353703"
     },
     {
       "geometry": {
@@ -1164,18 +1182,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Sravasti",
-      "id": "367105",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367105"
     },
     {
       "geometry": {
@@ -1185,18 +1203,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Srughna",
-      "id": "367106",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367106"
     },
     {
       "geometry": {
@@ -1206,18 +1224,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Tamrallipti",
-      "id": "353661",
       "properties": {
-        "status": "",
         "geonames_id": "1255046",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1255046",
+        "status": "",
         "gazetteer_label": "Taml\u016bk"
-      }
+      },
+      "type": "Feature",
+      "id": "353661"
     },
     {
       "geometry": {
@@ -1227,18 +1245,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Tashkent",
-      "id": "366587",
       "properties": {
-        "status": "",
         "geonames_id": "1512569",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1512569",
+        "status": "",
         "gazetteer_label": "Tashkent"
-      }
+      },
+      "type": "Feature",
+      "id": "366587"
     },
     {
       "geometry": {
@@ -1248,18 +1266,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Tashkurghan",
-      "id": "367099",
       "properties": {
-        "status": "",
         "geonames_id": "1279901",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1279901",
+        "status": "",
         "gazetteer_label": "Taxkorgan"
-      }
+      },
+      "type": "Feature",
+      "id": "367099"
     },
     {
       "geometry": {
@@ -1269,18 +1287,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Taxila",
-      "id": "367101",
       "properties": {
-        "status": "",
         "geonames_id": "1163715",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1163715",
+        "status": "",
         "gazetteer_label": "Taxila"
-      }
+      },
+      "type": "Feature",
+      "id": "367101"
     },
     {
       "geometry": {
@@ -1290,18 +1308,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "The Jade Gate",
-      "id": "367112",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367112"
     },
     {
       "geometry": {
@@ -1311,18 +1329,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Tokmak",
-      "id": "357565",
       "properties": {
-        "status": "",
         "geonames_id": "1527199",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1527199",
+        "status": "",
         "gazetteer_label": "Tokmok"
-      }
+      },
+      "type": "Feature",
+      "id": "357565"
     },
     {
       "geometry": {
@@ -1332,18 +1350,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Tun-huang",
-      "id": "367100",
       "properties": {
-        "status": "",
         "geonames_id": "1529531",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529531",
+        "status": "",
         "gazetteer_label": "Dunhuang"
-      }
+      },
+      "type": "Feature",
+      "id": "367100"
     },
     {
       "geometry": {
@@ -1353,18 +1371,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Turfan",
-      "id": "348060",
       "properties": {
-        "status": "",
         "geonames_id": "1529114",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1529114",
+        "status": "",
         "gazetteer_label": "Turpan"
-      }
+      },
+      "type": "Feature",
+      "id": "348060"
     },
     {
       "geometry": {
@@ -1374,18 +1392,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Ujjayini",
-      "id": "353566",
       "properties": {
-        "status": "",
         "geonames_id": "1253914",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1253914",
+        "status": "",
         "gazetteer_label": "Ujjain"
-      }
+      },
+      "type": "Feature",
+      "id": "353566"
     },
     {
       "geometry": {
@@ -1395,18 +1413,18 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Vaisali",
-      "id": "367107",
       "properties": {
-        "status": "",
         "geonames_id": "",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "",
+        "status": "",
         "gazetteer_label": ""
-      }
+      },
+      "type": "Feature",
+      "id": "367107"
     },
     {
       "geometry": {
@@ -1416,24 +1434,35 @@
         ],
         "type": "Point"
       },
-      "type": "Feature",
       "label": "Yarkand",
-      "id": "348053",
       "properties": {
-        "status": "",
         "geonames_id": "1280037",
         "collection": "xuanzang",
         "source": "Wri98",
         "comment": "",
         "gazetteer_uri": "http://geonames.org/1280037",
+        "status": "",
         "gazetteer_label": "Shache"
-      }
+      },
+      "type": "Feature",
+      "id": "348053"
     },
     {
       "geometry": {
         "type": "GeometryCollection",
         "geometries": [
           {
+            "when": {
+              "follows": "",
+              "duration": "?",
+              "timespan": [
+                "[0629-01-01",
+                "",
+                "",
+                "0629-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1446,26 +1475,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-1",
-              "notes": "At the age of 27 Xuanzang left Chang'an (modern day Xian) China on a 16 year pilgrimage to India in search of original Buddhist texts and scriptures in the year 629 C.E. Chang'an was the capital of the Tang Dynasty at the time. The Tang Dynasty Emperor Taizong had made an imperial decree restricting travel outside China. Emperor Taizong was not sympathetic to Buddhists at the time, so Xuanzang had to begin his journey in the dead of night. In 645 C.E. when Xuanzang returned, he became a confidant and advisor to Emperor Taizong. He also became one of the most revered Chinese legendary figures. His legend extends into Buddhism, art, literary fields, and as a cultural figure. Xuanzang's pilgrimage also highlights the important role the Silk Road played in the diffusion of more than goods",
               "source": "348203",
+              "notes": "At the age of 27 Xuanzang left Chang'an (modern day Xian) China on a 16 year pilgrimage to India in search of original Buddhist texts and scriptures in the year 629 C.E. Chang'an was the capital of the Tang Dynasty at the time. The Tang Dynasty Emperor Taizong had made an imperial decree restricting travel outside China. Emperor Taizong was not sympathetic to Buddhists at the time, so Xuanzang had to begin his journey in the dead of night. In 645 C.E. when Xuanzang returned, he became a confidant and advisor to Emperor Taizong. He also became one of the most revered Chinese legendary figures. His legend extends into Buddhism, art, literary fields, and as a cultural figure. Xuanzang's pilgrimage also highlights the important role the Silk Road played in the diffusion of more than goods",
               "label": "Xuanzang journey: Chang'an-Liangzhou",
-              "follows": "",
-              "target": "367082"
-            },
+              "target": "367082",
+              "segment_id": "5001-1",
+              "follows": ""
+            }
+          },
+          {
             "when": {
+              "follows": "20527",
+              "duration": "?",
               "timespan": [
                 "[0629-01-01",
                 "",
                 "",
                 "0629-12-31",
                 "]"
-              ],
-              "follows": "",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1478,26 +1507,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-2",
-              "notes": "",
               "source": "367082",
+              "notes": "",
               "label": "Xuanzang journey: Liangzhou - An-hsi",
-              "follows": "20527",
-              "target": "367112"
-            },
+              "target": "367112",
+              "segment_id": "5001-2",
+              "follows": "20527"
+            }
+          },
+          {
             "when": {
+              "follows": "20528",
+              "duration": "?",
               "timespan": [
                 "[0629-01-01",
                 "",
                 "",
                 "0629-12-31",
                 "]"
-              ],
-              "follows": "20527",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1510,26 +1539,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-3",
-              "notes": "Xuanzang aquired supplies in An-hsi for the next leg of his trip, a 200 mile journey though the Gobi Desert to the oasis town of Hami.",
               "source": "367112",
+              "notes": "Xuanzang aquired supplies in An-hsi for the next leg of his trip, a 200 mile journey though the Gobi Desert to the oasis town of Hami.",
               "label": "Xuanzang journey: An-hsi - Jade Gate",
-              "follows": "20528",
-              "target": "367081"
-            },
+              "target": "367081",
+              "segment_id": "5001-3",
+              "follows": "20528"
+            }
+          },
+          {
             "when": {
+              "follows": "20529",
+              "duration": "?",
               "timespan": [
                 "[0629-01-01",
                 "",
                 "",
                 "0629-12-31",
                 "]"
-              ],
-              "follows": "20528",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1542,26 +1571,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-4",
-              "notes": "Xuanzang had some troubles getting past the watchtowers in this region (See Episode 2). He had aquired a companion named Bandha who was supposed to help guide him past the Jade Gate.",
               "source": "367081",
+              "notes": "Xuanzang had some troubles getting past the watchtowers in this region (See Episode 2). He had aquired a companion named Bandha who was supposed to help guide him past the Jade Gate.",
               "label": "Xuanzang journey: Jae Gate - Hami",
-              "follows": "20529",
-              "target": "348065"
-            },
+              "target": "348065",
+              "segment_id": "5001-4",
+              "follows": "20529"
+            }
+          },
+          {
             "when": {
+              "follows": "20530",
+              "duration": "?",
               "timespan": [
                 "[0629-01-01",
                 "",
                 "",
                 "0629-12-31",
                 "]"
-              ],
-              "follows": "20529",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1574,26 +1603,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-5",
-              "notes": "From Hami Xuanzang was escorted to Turfan by a an envoy sent by the King of Turfan who had heard of his approach. Oasis towns like Hami, stationed along the Silk Road, were the places that acted as relay stations for the spread of religion, as well as goods on the Silk Road.",
               "source": "348065",
+              "notes": "From Hami Xuanzang was escorted to Turfan by a an envoy sent by the King of Turfan who had heard of his approach. Oasis towns like Hami, stationed along the Silk Road, were the places that acted as relay stations for the spread of religion, as well as goods on the Silk Road.",
               "label": "Xuanzang journey: Hami-Turfan",
-              "follows": "20530",
-              "target": "348060"
-            },
-            "when": {
-              "timespan": [
-                "[0629-01-01",
-                "",
-                "",
-                "0629-12-31",
-                "]"
-              ],
-              "follows": "20530",
-              "duration": "?"
+              "target": "348060",
+              "segment_id": "5001-5",
+              "follows": "20530"
             }
           },
           {
+            "when": {
+              "follows": "20531",
+              "duration": "?",
+              "timespan": [
+                "[0630-01-01",
+                "",
+                "",
+                "0630-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1606,26 +1635,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-6",
-              "notes": "Xuanzang and his caravan were confronted by bandits after crossing the Qoltag Mountains while travelling towards Karashahr. They were able to bribe the bandits into doing them no harm.",
               "source": "348060",
+              "notes": "Xuanzang and his caravan were confronted by bandits after crossing the Qoltag Mountains while travelling towards Karashahr. They were able to bribe the bandits into doing them no harm.",
               "label": "Xuanzang journey: Turfan-Karashahr",
-              "follows": "20531",
-              "target": "367087"
-            },
+              "target": "367087",
+              "segment_id": "5001-6",
+              "follows": "20531"
+            }
+          },
+          {
             "when": {
+              "follows": "20532",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20531",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1638,26 +1667,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-7",
-              "notes": "After a 200 mile journey from Turfan, Xuanzang's caravan reached Karashahr (modern day Yanqi). Here he noted ten monasteries containing nearly 2,000 Buddhist monks. The monks were of the Hinayana school of Buddhism. he only stayed in Karashahr for one night before continuing on.",
               "source": "367087",
+              "notes": "After a 200 mile journey from Turfan, Xuanzang's caravan reached Karashahr (modern day Yanqi). Here he noted ten monasteries containing nearly 2,000 Buddhist monks. The monks were of the Hinayana school of Buddhism. he only stayed in Karashahr for one night before continuing on.",
               "label": "Xuanzang journey: Karashahr-Kucha",
-              "follows": "20532",
-              "target": "348063"
-            },
+              "target": "348063",
+              "segment_id": "5001-7",
+              "follows": "20532"
+            }
+          },
+          {
             "when": {
+              "follows": "20533",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20532",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1670,26 +1699,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-8",
-              "notes": "Xuanzang travelled to Kucha after leaving Karasharh. Xuanzang and his caravan of travelers experienced what many other travelers often experienced on the Silk Road: bandits. Yet again, he and his caravan were met by a band of about 2,000 Turkish bandits two days out of Kucha. They gave Xuanzang's caravan no trouble, and the caravan eventually reached Aksu. The routes on the Silk Road connecting strings of oasis towns were prime locations for bandits. Travelers and merchants could not traverse the middle of the desert, or stay in the mountains, so they were forced to take the routes using each oasis to resupply. Bandits knew this, and took advantage of the geography of the Silk Road in regions where it was advantageous to them.",
               "source": "348063",
+              "notes": "Xuanzang travelled to Kucha after leaving Karasharh. Xuanzang and his caravan of travelers experienced what many other travelers often experienced on the Silk Road: bandits. Yet again, he and his caravan were met by a band of about 2,000 Turkish bandits two days out of Kucha. They gave Xuanzang's caravan no trouble, and the caravan eventually reached Aksu. The routes on the Silk Road connecting strings of oasis towns were prime locations for bandits. Travelers and merchants could not traverse the middle of the desert, or stay in the mountains, so they were forced to take the routes using each oasis to resupply. Bandits knew this, and took advantage of the geography of the Silk Road in regions where it was advantageous to them.",
               "label": "Xuanzang journey: Kucha-Aksu",
-              "follows": "20533",
-              "target": "348070"
-            },
+              "target": "348070",
+              "segment_id": "5001-8",
+              "follows": "20533"
+            }
+          },
+          {
             "when": {
+              "follows": "20534",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20533",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1702,26 +1731,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-9",
-              "notes": "After losing one third of his caravan in his seven day trek across the Tien Shan Mountains on the Bedal Pass, Xuanzang made it to Tokmak, where the Great Khan of the Western Turks was staying.",
               "source": "348070",
+              "notes": "After losing one third of his caravan in his seven day trek across the Tien Shan Mountains on the Bedal Pass, Xuanzang made it to Tokmak, where the Great Khan of the Western Turks was staying.",
               "label": "Xuanzang journey: Aksu-Tokmak",
-              "follows": "20534",
-              "target": "357565"
-            },
+              "target": "357565",
+              "segment_id": "5001-9",
+              "follows": "20534"
+            }
+          },
+          {
             "when": {
+              "follows": "20535",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20534",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1734,26 +1763,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-10",
-              "notes": "Between Tokmak and Tashkent Xuanzang crossed the area known as the land of ten thousand springs. The area is lush, with many springs, rivers, streams lending to its vibrant aray of trees, shrubs and grasses.",
               "source": "357565",
+              "notes": "Between Tokmak and Tashkent Xuanzang crossed the area known as the land of ten thousand springs. The area is lush, with many springs, rivers, streams lending to its vibrant aray of trees, shrubs and grasses.",
               "label": "Xuanzang journey: Tokmak-Tashkent",
-              "follows": "20535",
-              "target": "366587"
-            },
+              "target": "366587",
+              "segment_id": "5001-10",
+              "follows": "20535"
+            }
+          },
+          {
             "when": {
+              "follows": "20536",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20535",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1766,26 +1795,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-11",
-              "notes": "",
               "source": "366587",
+              "notes": "",
               "label": "Xuanzang journey: Tashkent-Samarkand",
-              "follows": "20536",
-              "target": "366553"
-            },
+              "target": "366553",
+              "segment_id": "5001-11",
+              "follows": "20536"
+            }
+          },
+          {
             "when": {
+              "follows": "20537",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20536",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1798,26 +1827,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-12",
-              "notes": "",
               "source": "366553",
+              "notes": "",
               "label": "Xuanzang journey: Samarkand-Kunduz",
-              "follows": "20537",
-              "target": "345465"
-            },
+              "target": "345465",
+              "segment_id": "5001-12",
+              "follows": "20537"
+            }
+          },
+          {
             "when": {
+              "follows": "20538",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20537",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1830,26 +1859,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-13",
-              "notes": "",
               "source": "345465",
+              "notes": "",
               "label": "Xuanzang journey: Kunduz-Balkh",
-              "follows": "20538",
-              "target": "345485"
-            },
+              "target": "345485",
+              "segment_id": "5001-13",
+              "follows": "20538"
+            }
+          },
+          {
             "when": {
+              "follows": "20539",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20538",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1862,26 +1891,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-14",
-              "notes": "After struggling greatly through the snowy Hindu Kush mountains, Xuanzang and his company reached the Bamiyan Valley. There were 10 monasteries and several thousand monks belonging to Hinayana Buddhism. The king met him as he entered the city, where Xuanzang noted the heavy clothing and fur the people wore to protect themselves from the cold. It is here that Xuanzang encountered the giant Buddhas carved into the cliff walls and described them in his narrative. The descriptions may have served for some giant sculptures of Buddhas in China that were built after Xuanzang's return. Xuanzang stayed in Bamiyan for a month before continuing on towards Kapisi.",
               "source": "345485",
+              "notes": "After struggling greatly through the snowy Hindu Kush mountains, Xuanzang and his company reached the Bamiyan Valley. There were 10 monasteries and several thousand monks belonging to Hinayana Buddhism. The king met him as he entered the city, where Xuanzang noted the heavy clothing and fur the people wore to protect themselves from the cold. It is here that Xuanzang encountered the giant Buddhas carved into the cliff walls and described them in his narrative. The descriptions may have served for some giant sculptures of Buddhas in China that were built after Xuanzang's return. Xuanzang stayed in Bamiyan for a month before continuing on towards Kapisi.",
               "label": "Xuanzang journey: Balkh-Bamiyan",
-              "follows": "20539",
-              "target": "367085"
-            },
+              "target": "367085",
+              "segment_id": "5001-14",
+              "follows": "20539"
+            }
+          },
+          {
             "when": {
+              "follows": "20540",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20539",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1894,26 +1923,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-15",
-              "notes": "After nearly being lost in a snowstorm in the Black Mountains, Xuanzang luckily finds some hunters who guide him to Kapisi. There were 100 monasteries and over 6,000 Mayahanist Buddhist monks. Xuanzang took part of a five day religious assembly, much like a debate, which revealed that he had mastered nealry all the schools of Buddhism, not just his own. Kapisi is the first stop on his journey where he meets Jains and Hindus.",
               "source": "367085",
+              "notes": "After nearly being lost in a snowstorm in the Black Mountains, Xuanzang luckily finds some hunters who guide him to Kapisi. There were 100 monasteries and over 6,000 Mayahanist Buddhist monks. Xuanzang took part of a five day religious assembly, much like a debate, which revealed that he had mastered nealry all the schools of Buddhism, not just his own. Kapisi is the first stop on his journey where he meets Jains and Hindus.",
               "label": "Xuanzang journey: Bamiyan-Kapisi",
-              "follows": "20540",
-              "target": "367083"
-            },
+              "target": "367083",
+              "segment_id": "5001-15",
+              "follows": "20540"
+            }
+          },
+          {
             "when": {
+              "follows": "20541",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20540",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1926,26 +1955,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-16",
-              "notes": "",
               "source": "367083",
+              "notes": "",
               "label": "Xuanzang journey: Kapisi-Nagarahara",
-              "follows": "20541",
-              "target": "345473"
-            },
+              "target": "345473",
+              "segment_id": "5001-16",
+              "follows": "20541"
+            }
+          },
+          {
             "when": {
+              "follows": "20542",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20541",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1958,26 +1987,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-17",
-              "notes": "Xuanzang traversed the Khyber Pass to reach Peshawar, this time he did not meet with bandits or harsh weather. He noted that the city was fairly desolate, with maybe one thousand families living in one corner of the city. He does find the area rich in Buddhist lore, and sites. There were once around 1,000 Buddhist monasteries, all empty and in ruins at the time of his visit. he also found many stupas in ruin. In Peshawar he noted about 100 Hindu temples, an example of how religion was changing in this area. Xuanzang visited several places associated with Buddhist legends, including a Pipal tree.",
               "source": "345473",
+              "notes": "Xuanzang traversed the Khyber Pass to reach Peshawar, this time he did not meet with bandits or harsh weather. He noted that the city was fairly desolate, with maybe one thousand families living in one corner of the city. He does find the area rich in Buddhist lore, and sites. There were once around 1,000 Buddhist monasteries, all empty and in ruins at the time of his visit. he also found many stupas in ruin. In Peshawar he noted about 100 Hindu temples, an example of how religion was changing in this area. Xuanzang visited several places associated with Buddhist legends, including a Pipal tree.",
               "label": "Xuanzang journey: Nagarahara-Peshawar",
-              "follows": "20542",
-              "target": "360292"
-            },
+              "target": "360292",
+              "segment_id": "5001-17",
+              "follows": "20542"
+            }
+          },
+          {
             "when": {
+              "follows": "20543",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20542",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -1990,26 +2019,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-18",
-              "notes": "Xuanzang detours through Charsadda to visit a Stupa commemorating a Buddhist story in which Buddha gives his eyes for charity.",
               "source": "360292",
+              "notes": "Xuanzang detours through Charsadda to visit a Stupa commemorating a Buddhist story in which Buddha gives his eyes for charity.",
               "label": "Xuanzang journey: Pehawar-Charsadda",
-              "follows": "20543",
-              "target": "360476"
-            },
+              "target": "360476",
+              "segment_id": "5001-18",
+              "follows": "20543"
+            }
+          },
+          {
             "when": {
+              "follows": "20544",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20543",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2022,26 +2051,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-19",
-              "notes": "",
               "source": "360476",
+              "notes": "",
               "label": "Xuanzang journey: Charsadda-Shabaz Gharhi",
-              "follows": "20544",
-              "target": "367092"
-            },
+              "target": "367092",
+              "segment_id": "5001-19",
+              "follows": "20544"
+            }
+          },
+          {
             "when": {
+              "follows": "20545",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20544",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2054,26 +2083,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-20",
-              "notes": "",
               "source": "367092",
+              "notes": "",
               "label": "Xuanzang journey: Shabaz Gharhi-Darel",
-              "follows": "20545",
-              "target": "367084"
-            },
+              "target": "367084",
+              "segment_id": "5001-20",
+              "follows": "20545"
+            }
+          },
+          {
             "when": {
+              "follows": "20546",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20545",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2086,26 +2115,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-21",
-              "notes": "Xuanzang detoured from the direct route to India to head up the Swat valley, where 18,000 monks had once lived. During his pilgrimage he found very many monks, as Buddhism was in a state of decline in all of India. Xuanzang collected several Sutras while in the area.He eventually retraced his steps back down the valley and continued on toward Attock.",
               "source": "367084",
+              "notes": "Xuanzang detoured from the direct route to India to head up the Swat valley, where 18,000 monks had once lived. During his pilgrimage he found very many monks, as Buddhism was in a state of decline in all of India. Xuanzang collected several Sutras while in the area.He eventually retraced his steps back down the valley and continued on toward Attock.",
               "label": "Xuanzang journey: Darel-Attock",
-              "follows": "20546",
-              "target": "360498"
-            },
+              "target": "360498",
+              "segment_id": "5001-21",
+              "follows": "20546"
+            }
+          },
+          {
             "when": {
+              "follows": "20547",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20546",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2118,26 +2147,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-22",
-              "notes": "Xuanzang crossed the Indus river somewhere near Attock. Xuanzang mentions those trying to leave India carrying precious Indian goods would capsize in the river. \"Its stream is extremely clear and rapid. Poisonous dragons and evil spirits dwell beneath this river in great numbers. Those who cross this river carrying with them rare gems of India, or celebrated flowers, or Sariras, the boat is suddenly overwhelmed by the waves.\" Hwui Li",
               "source": "360498",
+              "notes": "Xuanzang crossed the Indus river somewhere near Attock. Xuanzang mentions those trying to leave India carrying precious Indian goods would capsize in the river. \"Its stream is extremely clear and rapid. Poisonous dragons and evil spirits dwell beneath this river in great numbers. Those who cross this river carrying with them rare gems of India, or celebrated flowers, or Sariras, the boat is suddenly overwhelmed by the waves.\" Hwui Li",
               "label": "Xuanzang journey: Attock-Taxila",
-              "follows": "20547",
-              "target": "367101"
-            },
+              "target": "367101",
+              "segment_id": "5001-22",
+              "follows": "20547"
+            }
+          },
+          {
             "when": {
+              "follows": "20548",
+              "duration": "?",
               "timespan": [
                 "[0630-01-01",
                 "",
                 "",
                 "0630-12-31",
                 "]"
-              ],
-              "follows": "20547",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2150,26 +2179,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-23",
-              "notes": "",
               "source": "367101",
+              "notes": "",
               "label": "Xuanzang journey: Taxila-Shrinigar",
-              "follows": "20548",
-              "target": "353703"
-            },
-            "when": {
-              "timespan": [
-                "[0630-01-01",
-                "",
-                "",
-                "0630-12-31",
-                "]"
-              ],
-              "follows": "20548",
-              "duration": "?"
+              "target": "353703",
+              "segment_id": "5001-23",
+              "follows": "20548"
             }
           },
           {
+            "when": {
+              "follows": "20549",
+              "duration": "?",
+              "timespan": [
+                "[0633-01-01",
+                "",
+                "",
+                "0633-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2182,26 +2211,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-24",
-              "notes": "",
               "source": "353703",
+              "notes": "",
               "label": "Xuanzang journey: Shrinigar-Sakala",
-              "follows": "20549",
-              "target": "360248"
-            },
+              "target": "360248",
+              "segment_id": "5001-24",
+              "follows": "20549"
+            }
+          },
+          {
             "when": {
+              "follows": "20550",
+              "duration": "?",
               "timespan": [
                 "[0633-01-01",
                 "",
                 "",
                 "0633-12-31",
                 "]"
-              ],
-              "follows": "20549",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2214,26 +2243,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-25",
-              "notes": "Just outside Sakala, Xuanzang and his caravan encountered a band of 50 robbers who took their clothes and goods. The robbers then chased the group into a dired marsh with their swords drawn. A young monk helps Xuanzang escape, and the pair runs for help. Around 80 people from the nearby village assembled with weapons and followed Xuanzang and the young monk back to the marsh where the robbers were. The robbers fled, and the caravan was saved. \\nAs the caravan was saddened and lamenting their misfortune they notice Xuanzang is in good spirits. \"How is it that that the Master (Xuanzang) alone does not share in our sorrow, but is able to keep a smile on his face?\" Answering he said: \"The greatest gift which living creatures posses, is life. If life is safe, what need we care about the rest?\" Hwui-Li",
               "source": "360248",
+              "notes": "Just outside Sakala, Xuanzang and his caravan encountered a band of 50 robbers who took their clothes and goods. The robbers then chased the group into a dired marsh with their swords drawn. A young monk helps Xuanzang escape, and the pair runs for help. Around 80 people from the nearby village assembled with weapons and followed Xuanzang and the young monk back to the marsh where the robbers were. The robbers fled, and the caravan was saved. \\nAs the caravan was saddened and lamenting their misfortune they notice Xuanzang is in good spirits. \"How is it that that the Master (Xuanzang) alone does not share in our sorrow, but is able to keep a smile on his face?\" Answering he said: \"The greatest gift which living creatures posses, is life. If life is safe, what need we care about the rest?\" Hwui-Li",
               "label": "Xuanzang journey: Sakala-Chinabhukti",
-              "follows": "20550",
-              "target": "355104"
-            },
-            "when": {
-              "timespan": [
-                "[0633-01-01",
-                "",
-                "",
-                "0633-12-31",
-                "]"
-              ],
-              "follows": "20550",
-              "duration": "?"
+              "target": "355104",
+              "segment_id": "5001-25",
+              "follows": "20550"
             }
           },
           {
+            "when": {
+              "follows": "20551",
+              "duration": "?",
+              "timespan": [
+                "[0634-01-01",
+                "",
+                "",
+                "0634-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2246,26 +2275,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-26",
-              "notes": "",
               "source": "355104",
+              "notes": "",
               "label": "Xuanzang journey: Chinabhukti-Jalandhara",
-              "follows": "20551",
-              "target": "354824"
-            },
+              "target": "354824",
+              "segment_id": "5001-26",
+              "follows": "20551"
+            }
+          },
+          {
             "when": {
+              "follows": "20552",
+              "duration": "?",
               "timespan": [
                 "[0634-01-01",
                 "",
                 "",
                 "0634-12-31",
                 "]"
-              ],
-              "follows": "20551",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2278,26 +2307,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-27",
-              "notes": "",
               "source": "354824",
+              "notes": "",
               "label": "Xuanzang journey: Jalandhara-Bairata",
-              "follows": "20552",
-              "target": "367102"
-            },
+              "target": "367102",
+              "segment_id": "5001-27",
+              "follows": "20552"
+            }
+          },
+          {
             "when": {
+              "follows": "20553",
+              "duration": "?",
               "timespan": [
                 "[0634-01-01",
                 "",
                 "",
                 "0634-12-31",
                 "]"
-              ],
-              "follows": "20552",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2310,26 +2339,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-28",
-              "notes": "",
               "source": "367102",
+              "notes": "",
               "label": "Xuanzang journey: Bairata-Mathura",
-              "follows": "20553",
-              "target": "354407"
-            },
+              "target": "354407",
+              "segment_id": "5001-28",
+              "follows": "20553"
+            }
+          },
+          {
             "when": {
+              "follows": "20554",
+              "duration": "?",
               "timespan": [
                 "[0634-01-01",
                 "",
                 "",
                 "0634-12-31",
                 "]"
-              ],
-              "follows": "20553",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2342,26 +2371,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-29",
-              "notes": "",
               "source": "354407",
+              "notes": "",
               "label": "Xuanzang journey: Mathura-Srughna",
-              "follows": "20554",
-              "target": "367106"
-            },
-            "when": {
-              "timespan": [
-                "[0634-01-01",
-                "",
-                "",
-                "0634-12-31",
-                "]"
-              ],
-              "follows": "20554",
-              "duration": "?"
+              "target": "367106",
+              "segment_id": "5001-29",
+              "follows": "20554"
             }
           },
           {
+            "when": {
+              "follows": "20555",
+              "duration": "?",
+              "timespan": [
+                "[0635-01-01",
+                "",
+                "",
+                "0635-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2374,26 +2403,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-30",
-              "notes": "",
               "source": "367106",
+              "notes": "",
               "label": "Xuanzang journey: Srughna-Matipura",
-              "follows": "20555",
-              "target": "354448"
-            },
+              "target": "354448",
+              "segment_id": "5001-30",
+              "follows": "20555"
+            }
+          },
+          {
             "when": {
+              "follows": "20556",
+              "duration": "?",
               "timespan": [
                 "[0635-01-01",
                 "",
                 "",
                 "0635-12-31",
                 "]"
-              ],
-              "follows": "20555",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2406,26 +2435,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-31",
-              "notes": "",
               "source": "354448",
+              "notes": "",
               "label": "Xuanzang journey: Matipura-Sankasya",
-              "follows": "20556",
-              "target": "367093"
-            },
+              "target": "367093",
+              "segment_id": "5001-31",
+              "follows": "20556"
+            }
+          },
+          {
             "when": {
+              "follows": "20557",
+              "duration": "?",
               "timespan": [
                 "[0635-01-01",
                 "",
                 "",
                 "0635-12-31",
                 "]"
-              ],
-              "follows": "20556",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2438,26 +2467,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-32",
-              "notes": "",
               "source": "367093",
+              "notes": "",
               "label": "Xuanzang journey: Sankasya-Kanyakubja",
-              "follows": "20557",
-              "target": "354759"
-            },
-            "when": {
-              "timespan": [
-                "[0635-01-01",
-                "",
-                "",
-                "0635-12-31",
-                "]"
-              ],
-              "follows": "20557",
-              "duration": "?"
+              "target": "354759",
+              "segment_id": "5001-32",
+              "follows": "20557"
             }
           },
           {
+            "when": {
+              "follows": "20558",
+              "duration": "?",
+              "timespan": [
+                "[0636-01-01",
+                "",
+                "",
+                "0636-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2470,26 +2499,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-33",
-              "notes": "After traipsing through dense jungles filled with elephants and other wild beast, Xuanzang reached Kausambi. Kausambi is the location of a Buddhist legend. King Udayana had a sandalwood image of the Buddha carved while the Buddha was in heaven preaching to his mother. When the Buddha returned to earth, the staue rose and saluted Buddha. Xuanzang had his third image of Buddha made here. It was a replica of the image from the temple.",
               "source": "354759",
+              "notes": "After traipsing through dense jungles filled with elephants and other wild beast, Xuanzang reached Kausambi. Kausambi is the location of a Buddhist legend. King Udayana had a sandalwood image of the Buddha carved while the Buddha was in heaven preaching to his mother. When the Buddha returned to earth, the staue rose and saluted Buddha. Xuanzang had his third image of Buddha made here. It was a replica of the image from the temple.",
               "label": "Xuanzang journey: Kanyakubja-Kausambi",
-              "follows": "20558",
-              "target": "367088"
-            },
+              "target": "367088",
+              "segment_id": "5001-33",
+              "follows": "20558"
+            }
+          },
+          {
             "when": {
+              "follows": "20559",
+              "duration": "?",
               "timespan": [
                 "[0636-01-01",
                 "",
                 "",
                 "0636-12-31",
                 "]"
-              ],
-              "follows": "20558",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2502,26 +2531,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-34",
-              "notes": "",
               "source": "367088",
+              "notes": "",
               "label": "Xuanzang journey: Kausambi-Ayodhya",
-              "follows": "20559",
-              "target": "355631"
-            },
+              "target": "355631",
+              "segment_id": "5001-34",
+              "follows": "20559"
+            }
+          },
+          {
             "when": {
+              "follows": "20560",
+              "duration": "?",
               "timespan": [
                 "[0636-01-01",
                 "",
                 "",
                 "0636-12-31",
                 "]"
-              ],
-              "follows": "20559",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2534,26 +2563,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-35",
-              "notes": "",
               "source": "355631",
+              "notes": "",
               "label": "Xuanzang journey: Ayodhya-Srvasti",
-              "follows": "20560",
-              "target": "367105"
-            },
+              "target": "367105",
+              "segment_id": "5001-35",
+              "follows": "20560"
+            }
+          },
+          {
             "when": {
+              "follows": "20561",
+              "duration": "?",
               "timespan": [
                 "[0636-01-01",
                 "",
                 "",
                 "0636-12-31",
                 "]"
-              ],
-              "follows": "20560",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2566,26 +2595,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-36",
-              "notes": "Xuanzang reached Kapilavastu after travelling through a semi tropical forested region filled with deserted monasteries. Kapilavastu was the kingdom where the buddha grew up.",
               "source": "367105",
+              "notes": "Xuanzang reached Kapilavastu after travelling through a semi tropical forested region filled with deserted monasteries. Kapilavastu was the kingdom where the buddha grew up.",
               "label": "Xuanzang journey: Sravasti-Kapilavastu",
-              "follows": "20561",
-              "target": "367103"
-            },
+              "target": "367103",
+              "segment_id": "5001-36",
+              "follows": "20561"
+            }
+          },
+          {
             "when": {
+              "follows": "20562",
+              "duration": "?",
               "timespan": [
                 "[0636-01-01",
                 "",
                 "",
                 "0636-12-31",
                 "]"
-              ],
-              "follows": "20561",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2598,26 +2627,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-37",
-              "notes": "",
               "source": "367103",
+              "notes": "",
               "label": "Xuanzang journey: Kapilavastu-Lumbini",
-              "follows": "20562",
-              "target": "367095"
-            },
+              "target": "367095",
+              "segment_id": "5001-37",
+              "follows": "20562"
+            }
+          },
+          {
             "when": {
+              "follows": "20563",
+              "duration": "?",
               "timespan": [
                 "[0636-01-01",
                 "",
                 "",
                 "0636-12-31",
                 "]"
-              ],
-              "follows": "20562",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2630,26 +2659,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-38",
-              "notes": "",
               "source": "367095",
+              "notes": "",
               "label": "Xuanzang journey: Lumbini-Kusinagara",
-              "follows": "20563",
-              "target": "367104"
-            },
-            "when": {
-              "timespan": [
-                "[0636-01-01",
-                "",
-                "",
-                "0636-12-31",
-                "]"
-              ],
-              "follows": "20563",
-              "duration": "?"
+              "target": "367104",
+              "segment_id": "5001-38",
+              "follows": "20563"
             }
           },
           {
+            "when": {
+              "follows": "20564",
+              "duration": "?",
+              "timespan": [
+                "[0637-01-01",
+                "",
+                "",
+                "0637-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2662,26 +2691,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-39",
-              "notes": "",
               "source": "367104",
+              "notes": "",
               "label": "Xuanzang journey: Kusinagara-Sarnath and Varanasi",
-              "follows": "20564",
-              "target": "367094"
-            },
+              "target": "367094",
+              "segment_id": "5001-39",
+              "follows": "20564"
+            }
+          },
+          {
             "when": {
+              "follows": "20565",
+              "duration": "?",
               "timespan": [
                 "[0637-01-01",
                 "",
                 "",
                 "0637-12-31",
                 "]"
-              ],
-              "follows": "20564",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2694,26 +2723,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-40",
-              "notes": "",
               "source": "367094",
+              "notes": "",
               "label": "Xuanzang journey: Sarnath and Varanasi-Vaisali",
-              "follows": "20565",
-              "target": "367107"
-            },
+              "target": "367107",
+              "segment_id": "5001-40",
+              "follows": "20565"
+            }
+          },
+          {
             "when": {
+              "follows": "20566",
+              "duration": "?",
               "timespan": [
                 "[0637-01-01",
                 "",
                 "",
                 "0637-12-31",
                 "]"
-              ],
-              "follows": "20565",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2726,26 +2755,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-41",
-              "notes": "",
               "source": "367107",
+              "notes": "",
               "label": "Xuanzang journey: Vaisali-Pataliputra",
-              "follows": "20566",
-              "target": "354119"
-            },
+              "target": "354119",
+              "segment_id": "5001-41",
+              "follows": "20566"
+            }
+          },
+          {
             "when": {
+              "follows": "20567",
+              "duration": "?",
               "timespan": [
                 "[0637-01-01",
                 "",
                 "",
                 "0637-12-31",
                 "]"
-              ],
-              "follows": "20566",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2758,26 +2787,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-42",
-              "notes": "",
               "source": "354119",
+              "notes": "",
               "label": "Xuanzang journey: Pataliputra-Bodh Gaya",
-              "follows": "20567",
-              "target": "355388"
-            },
+              "target": "355388",
+              "segment_id": "5001-42",
+              "follows": "20567"
+            }
+          },
+          {
             "when": {
+              "follows": "20568",
+              "duration": "?",
               "timespan": [
                 "[0637-01-01",
                 "",
                 "",
                 "0637-12-31",
                 "]"
-              ],
-              "follows": "20567",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2790,26 +2819,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-43",
-              "notes": "",
               "source": "355388",
+              "notes": "",
               "label": "Xuanzang journey: Bodh Gaya-Nalanda",
-              "follows": "20568",
-              "target": "367096"
-            },
+              "target": "367096",
+              "segment_id": "5001-43",
+              "follows": "20568"
+            }
+          },
+          {
             "when": {
+              "follows": "20569",
+              "duration": "?",
               "timespan": [
                 "[0637-01-01",
                 "",
                 "",
                 "0637-12-31",
                 "]"
-              ],
-              "follows": "20568",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2822,58 +2851,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-44",
-              "notes": "",
               "source": "367096",
+              "notes": "",
               "label": "Xuanzang journey: Nalanda-Irana",
-              "follows": "20569",
-              "target": "367109"
-            },
-            "when": {
-              "timespan": [
-                "[0637-01-01",
-                "",
-                "",
-                "0637-12-31",
-                "]"
-              ],
-              "follows": "20569",
-              "duration": "?"
+              "target": "367109",
+              "segment_id": "5001-44",
+              "follows": "20569"
             }
           },
           {
-            "coordinates": [
-              [
-                0,
-                0
-              ],
-              [
-                1,
-                1
-              ]
-            ],
-            "type": "LineString",
-            "properties": {
-              "segment_id": "5001-45",
-              "notes": "",
-              "source": "367109",
-              "label": "Xuanzang journey: Irana-Assam",
-              "follows": "20570",
-              "target": "367108"
-            },
             "when": {
+              "follows": "20570",
+              "duration": "?",
               "timespan": [
                 "[0638-01-01",
                 "",
                 "",
                 "0638-12-31",
                 "]"
-              ],
-              "follows": "20570",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2886,26 +2883,58 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-46",
+              "source": "367109",
               "notes": "",
+              "label": "Xuanzang journey: Irana-Assam",
+              "target": "367108",
+              "segment_id": "5001-45",
+              "follows": "20570"
+            }
+          },
+          {
+            "when": {
+              "follows": "20571",
+              "duration": "?",
+              "timespan": [
+                "[0639-01-01",
+                "",
+                "",
+                "0639-12-31",
+                "]"
+              ]
+            },
+            "coordinates": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "type": "LineString",
+            "properties": {
               "source": "367108",
+              "notes": "",
               "label": "Xuanzang journey: Assam-Samatata",
-              "follows": "20571",
-              "target": "367111"
-            },
+              "target": "367111",
+              "segment_id": "5001-46",
+              "follows": "20571"
+            }
+          },
+          {
             "when": {
+              "follows": "20610",
+              "duration": "?",
               "timespan": [
                 "[0639-01-01",
                 "",
                 "",
                 "0639-12-31",
                 "]"
-              ],
-              "follows": "20571",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2918,26 +2947,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-47",
-              "notes": "",
               "source": "367111",
+              "notes": "",
               "label": "Xuanzang journey: Samatata-Tamrallipti",
-              "follows": "20610",
-              "target": "353661"
-            },
+              "target": "353661",
+              "segment_id": "5001-47",
+              "follows": "20610"
+            }
+          },
+          {
             "when": {
+              "follows": "20572",
+              "duration": "?",
               "timespan": [
                 "[0639-01-01",
                 "",
                 "",
                 "0639-12-31",
                 "]"
-              ],
-              "follows": "20610",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2950,26 +2979,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-48",
-              "notes": "",
               "source": "353661",
+              "notes": "",
               "label": "Xuanzang journey: Tamrallipti-Dhanakataka",
-              "follows": "20572",
-              "target": "367113"
-            },
+              "target": "367113",
+              "segment_id": "5001-48",
+              "follows": "20572"
+            }
+          },
+          {
             "when": {
+              "follows": "20573",
+              "duration": "?",
               "timespan": [
                 "[0639-01-01",
                 "",
                 "",
                 "0639-12-31",
                 "]"
-              ],
-              "follows": "20572",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -2982,58 +3011,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-49",
-              "notes": "",
               "source": "367113",
+              "notes": "",
               "label": "Xuanzang journey: Dhanakataka-Kancipuram",
-              "follows": "20573",
-              "target": "354770"
-            },
-            "when": {
-              "timespan": [
-                "[0639-01-01",
-                "",
-                "",
-                "0639-12-31",
-                "]"
-              ],
-              "follows": "20573",
-              "duration": "?"
+              "target": "354770",
+              "segment_id": "5001-49",
+              "follows": "20573"
             }
           },
           {
-            "coordinates": [
-              [
-                0,
-                0
-              ],
-              [
-                1,
-                1
-              ]
-            ],
-            "type": "LineString",
-            "properties": {
-              "segment_id": "5001-50",
-              "notes": "",
-              "source": "354770",
-              "label": "Xuanzang journey: Kancipuram-Nasik",
-              "follows": "20574",
-              "target": "354254"
-            },
             "when": {
+              "follows": "20574",
+              "duration": "?",
               "timespan": [
                 "[0640-01-01",
                 "",
                 "",
                 "0640-12-31",
                 "]"
-              ],
-              "follows": "20574",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3046,26 +3043,58 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-51",
+              "source": "354770",
               "notes": "",
+              "label": "Xuanzang journey: Kancipuram-Nasik",
+              "target": "354254",
+              "segment_id": "5001-50",
+              "follows": "20574"
+            }
+          },
+          {
+            "when": {
+              "follows": "20575",
+              "duration": "?",
+              "timespan": [
+                "[0641-01-01",
+                "",
+                "",
+                "0641-12-31",
+                "]"
+              ]
+            },
+            "coordinates": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "type": "LineString",
+            "properties": {
               "source": "354254",
+              "notes": "",
               "label": "Xuanzang journey: Nasik-Ajanta",
-              "follows": "20575",
-              "target": "367086"
-            },
+              "target": "367086",
+              "segment_id": "5001-51",
+              "follows": "20575"
+            }
+          },
+          {
             "when": {
+              "follows": "20576",
+              "duration": "?",
               "timespan": [
                 "[0641-01-01",
                 "",
                 "",
                 "0641-12-31",
                 "]"
-              ],
-              "follows": "20575",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3078,26 +3107,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-52",
-              "notes": "",
               "source": "367086",
+              "notes": "",
               "label": "Xuanzang journey: Ajanta-Bharukaccha",
-              "follows": "20576",
-              "target": "355463"
-            },
+              "target": "355463",
+              "segment_id": "5001-52",
+              "follows": "20576"
+            }
+          },
+          {
             "when": {
+              "follows": "20577",
+              "duration": "?",
               "timespan": [
                 "[0641-01-01",
                 "",
                 "",
                 "0641-12-31",
                 "]"
-              ],
-              "follows": "20576",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3110,26 +3139,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-53",
-              "notes": "Xuanzang's route is very unclear in this region. He probably was following the ancient trade routes, where Buddhist monasteries were often located. He stopped in Ujjayini, where not far from the capital there was an Asoka-raja stupa, where Asoka constructed his hell.",
               "source": "355463",
+              "notes": "Xuanzang's route is very unclear in this region. He probably was following the ancient trade routes, where Buddhist monasteries were often located. He stopped in Ujjayini, where not far from the capital there was an Asoka-raja stupa, where Asoka constructed his hell.",
               "label": "Xuanzang journey: Bharukaccha-Ujjayini",
-              "follows": "20577",
-              "target": "353566"
-            },
+              "target": "353566",
+              "segment_id": "5001-53",
+              "follows": "20577"
+            }
+          },
+          {
             "when": {
+              "follows": "20578",
+              "duration": "?",
               "timespan": [
                 "[0641-01-01",
                 "",
                 "",
                 "0641-12-31",
                 "]"
-              ],
-              "follows": "20577",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3142,26 +3171,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-54",
-              "notes": "",
               "source": "353566",
+              "notes": "",
               "label": "Xuanzang journey: Ujjayini-Multan",
-              "follows": "20578",
-              "target": "360317"
-            },
+              "target": "360317",
+              "segment_id": "5001-54",
+              "follows": "20578"
+            }
+          },
+          {
             "when": {
+              "follows": "20579",
+              "duration": "?",
               "timespan": [
                 "[0641-01-01",
                 "",
                 "",
                 "0641-12-31",
                 "]"
-              ],
-              "follows": "20578",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3174,26 +3203,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-55",
-              "notes": "",
               "source": "360317",
+              "notes": "",
               "label": "Xuanzang journey: Multan-Parvata",
-              "follows": "20579",
-              "target": "367110"
-            },
-            "when": {
-              "timespan": [
-                "[0641-01-01",
-                "",
-                "",
-                "0641-12-31",
-                "]"
-              ],
-              "follows": "20579",
-              "duration": "?"
+              "target": "367110",
+              "segment_id": "5001-55",
+              "follows": "20579"
             }
           },
           {
+            "when": {
+              "follows": "20580",
+              "duration": "?",
+              "timespan": [
+                "[0642-01-01",
+                "",
+                "",
+                "0642-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3206,26 +3235,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-56",
-              "notes": "Xuanzang spent two months in Parvata before returning to Nalanda. His route back to Nalanda is uncertain. Xuanzang noted that near the capital of Parvata was a monastery with 100 monks. It was an important place because some Buddhist masters had composed some of their Sutras and Sastras in the location.",
               "source": "367110",
+              "notes": "Xuanzang spent two months in Parvata before returning to Nalanda. His route back to Nalanda is uncertain. Xuanzang noted that near the capital of Parvata was a monastery with 100 monks. It was an important place because some Buddhist masters had composed some of their Sutras and Sastras in the location.",
               "label": "Xuanzang journey: Parvata-Nalanda",
-              "follows": "20580",
-              "target": "367096"
-            },
+              "target": "367096",
+              "segment_id": "5001-56",
+              "follows": "20580"
+            }
+          },
+          {
             "when": {
+              "follows": "20581",
+              "duration": "?",
               "timespan": [
                 "[0642-01-01",
                 "",
                 "",
                 "0642-12-31",
                 "]"
-              ],
-              "follows": "20580",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3238,26 +3267,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-57",
-              "notes": "",
               "source": "367096",
+              "notes": "",
               "label": "Xuanzang journey: Nalanda-Assam",
-              "follows": "20581",
-              "target": "367108"
-            },
+              "target": "367108",
+              "segment_id": "5001-57",
+              "follows": "20581"
+            }
+          },
+          {
             "when": {
+              "follows": "20582",
+              "duration": "?",
               "timespan": [
                 "[0642-01-01",
                 "",
                 "",
                 "0642-12-31",
                 "]"
-              ],
-              "follows": "20581",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3270,26 +3299,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-58",
-              "notes": "",
               "source": "367108",
+              "notes": "",
               "label": "Xuanzang journey: Assam-Kanyakubja",
-              "follows": "20582",
-              "target": "354759"
-            },
+              "target": "354759",
+              "segment_id": "5001-58",
+              "follows": "20582"
+            }
+          },
+          {
             "when": {
+              "follows": "20583",
+              "duration": "?",
               "timespan": [
                 "[0642-01-01",
                 "",
                 "",
                 "0642-12-31",
                 "]"
-              ],
-              "follows": "20582",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3302,26 +3331,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-59",
-              "notes": "Xuanzang accompanies King Harsha to Prayaga to celebrate his sixth Quinquennial Almsgiving. The king gave away all his possessions, then his vassals retrieve his goods. Offerings were also made to Buddha, and the Sun God.",
               "source": "354759",
+              "notes": "Xuanzang accompanies King Harsha to Prayaga to celebrate his sixth Quinquennial Almsgiving. The king gave away all his possessions, then his vassals retrieve his goods. Offerings were also made to Buddha, and the Sun God.",
               "label": "Xuanzang journey: Kanyakubja-Prayaga",
-              "follows": "20583",
-              "target": "355730"
-            },
-            "when": {
-              "timespan": [
-                "[0642-01-01",
-                "",
-                "",
-                "0642-12-31",
-                "]"
-              ],
-              "follows": "20583",
-              "duration": "?"
+              "target": "355730",
+              "segment_id": "5001-59",
+              "follows": "20583"
             }
           },
           {
+            "when": {
+              "follows": "20584",
+              "duration": "?",
+              "timespan": [
+                "[0643-01-01",
+                "",
+                "",
+                "0643-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3334,26 +3363,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-60",
-              "notes": "Xuanzang passes through Jalandhara once again on his return trip to Chang'an. Xuanzang was joined by 100 monks carrying sciptures and images.",
               "source": "355730",
+              "notes": "Xuanzang passes through Jalandhara once again on his return trip to Chang'an. Xuanzang was joined by 100 monks carrying sciptures and images.",
               "label": "Xuanzang journey: Prayaga-Jalandhara",
-              "follows": "20584",
-              "target": "354824"
-            },
+              "target": "354824",
+              "segment_id": "5001-60",
+              "follows": "20584"
+            }
+          },
+          {
             "when": {
+              "follows": "20585",
+              "duration": "?",
               "timespan": [
                 "[0643-01-01",
                 "",
                 "",
                 "0643-12-31",
                 "]"
-              ],
-              "follows": "20584",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3366,26 +3395,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-61",
-              "notes": "Xuanzang passed through Taxila on his journey home. He was heading toward the Indus River, where he lost many manuscripts and texts in crossing.",
               "source": "354824",
+              "notes": "Xuanzang passed through Taxila on his journey home. He was heading toward the Indus River, where he lost many manuscripts and texts in crossing.",
               "label": "Xuanzang journey: Jalandhara-Taxila",
-              "follows": "20585",
-              "target": "367101"
-            },
-            "when": {
-              "timespan": [
-                "[0643-01-01",
-                "",
-                "",
-                "0643-12-31",
-                "]"
-              ],
-              "follows": "20585",
-              "duration": "?"
+              "target": "367101",
+              "segment_id": "5001-61",
+              "follows": "20585"
             }
           },
           {
+            "when": {
+              "follows": "20586",
+              "duration": "?",
+              "timespan": [
+                "[0644-01-01",
+                "",
+                "",
+                "0644-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3398,26 +3427,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-62",
-              "notes": "Xuanzang rode into Attock/Hund on the magnificent elephant King Harsha had given him for his journey home. Xuanzang crossed the Indus on his elephant, while all the Sacred books, images and holy relics from the land of India he had collected were on a boat. \"And now when the boat was in the mid-stream, all at once the winds ans the waters commingling, caused the waves to rise, and the boat, violently tossed, was almost swallowed up. The gaurdian of the books, filled with terror, fell into the water, but was finally rescued by the passengers",
               "source": "367101",
+              "notes": "Xuanzang rode into Attock/Hund on the magnificent elephant King Harsha had given him for his journey home. Xuanzang crossed the Indus on his elephant, while all the Sacred books, images and holy relics from the land of India he had collected were on a boat. \"And now when the boat was in the mid-stream, all at once the winds ans the waters commingling, caused the waves to rise, and the boat, violently tossed, was almost swallowed up. The gaurdian of the books, filled with terror, fell into the water, but was finally rescued by the passengers",
               "label": "Xuanzang journey: Taxila-Attock",
-              "follows": "20586",
-              "target": "360498"
-            },
+              "target": "360498",
+              "segment_id": "5001-62",
+              "follows": "20586"
+            }
+          },
+          {
             "when": {
+              "follows": "20587",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20586",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3430,26 +3459,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-63",
-              "notes": "",
               "source": "360498",
+              "notes": "",
               "label": "Xuanzang journey: Attock-Nagarahara",
-              "follows": "20587",
-              "target": "345473"
-            },
+              "target": "345473",
+              "segment_id": "5001-63",
+              "follows": "20587"
+            }
+          },
+          {
             "when": {
+              "follows": "20588",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20587",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3462,26 +3491,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-64",
-              "notes": "",
               "source": "345473",
+              "notes": "",
               "label": "Xuanzang journey: Nagarahara-Kapisi",
-              "follows": "20588",
-              "target": "367083"
-            },
+              "target": "367083",
+              "segment_id": "5001-64",
+              "follows": "20588"
+            }
+          },
+          {
             "when": {
+              "follows": "20589",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20588",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3494,26 +3523,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-65",
-              "notes": "Xuanzang reached Andarab after a diffucult crossing of the Hindu Kush Mountains. In Andarab there were 3 monasteries where Xuanzang rested for 5 days before continuing on. \\n\"After seven days they reached a great mountain top",
               "source": "367083",
+              "notes": "Xuanzang reached Andarab after a diffucult crossing of the Hindu Kush Mountains. In Andarab there were 3 monasteries where Xuanzang rested for 5 days before continuing on. \\n\"After seven days they reached a great mountain top",
               "label": "Xuanzang journey: Kapisi-Andarab",
-              "follows": "20589",
-              "target": "367091"
-            },
+              "target": "367091",
+              "segment_id": "5001-65",
+              "follows": "20589"
+            }
+          },
+          {
             "when": {
+              "follows": "20590",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20589",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3526,26 +3555,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-66",
-              "notes": "Xuanzang stopped in Kunduz again on his way home to China. He stayed one month waiting on copies of texts he had lost in the Indus River.",
               "source": "367091",
+              "notes": "Xuanzang stopped in Kunduz again on his way home to China. He stayed one month waiting on copies of texts he had lost in the Indus River.",
               "label": "Xuanzang journey: Andarab-Kunduz",
-              "follows": "20590",
-              "target": "345465"
-            },
+              "target": "345465",
+              "segment_id": "5001-66",
+              "follows": "20590"
+            }
+          },
+          {
             "when": {
+              "follows": "20591",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20590",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3558,26 +3587,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-67",
-              "notes": "Xuanzang stopped for one month in Faizabad because the passes of the Pamirs were still covered in snow. There were several monasteries here, and the area was abundant in ruby mines.",
               "source": "345465",
+              "notes": "Xuanzang stopped for one month in Faizabad because the passes of the Pamirs were still covered in snow. There were several monasteries here, and the area was abundant in ruby mines.",
               "label": "Xuanzang journey: Kunduz-Faizabad",
-              "follows": "20591",
-              "target": "345479"
-            },
+              "target": "345479",
+              "segment_id": "5001-67",
+              "follows": "20591"
+            }
+          },
+          {
             "when": {
+              "follows": "20592",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20591",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3590,26 +3619,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-68",
-              "notes": "",
               "source": "345479",
+              "notes": "",
               "label": "Xuanzang journey: Faizabad-Tashkurghan",
-              "follows": "20592",
-              "target": "367099"
-            },
+              "target": "367099",
+              "segment_id": "5001-68",
+              "follows": "20592"
+            }
+          },
+          {
             "when": {
+              "follows": "20593",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20592",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3622,26 +3651,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-69",
-              "notes": "Xuanzang stopped in Tashkurghan for one month before continuing on towards Kashgar oasis. Xuanzang was impressed by the king, who honored Buddhism. Not long after leaving Tashkurghan, Xuanzang's elephant drowned in a river after the carvan was attacked by bandits. \\n\"The Master of the Law (Xuanzang) remained in this country for 20 days or so, and then going north-east for five days he fell in with a band of robbers",
               "source": "367099",
+              "notes": "Xuanzang stopped in Tashkurghan for one month before continuing on towards Kashgar oasis. Xuanzang was impressed by the king, who honored Buddhism. Not long after leaving Tashkurghan, Xuanzang's elephant drowned in a river after the carvan was attacked by bandits. \\n\"The Master of the Law (Xuanzang) remained in this country for 20 days or so, and then going north-east for five days he fell in with a band of robbers",
               "label": "Xuanzang journey: Tashkurghan-Kashgar",
-              "follows": "20593",
-              "target": "348056"
-            },
+              "target": "348056",
+              "segment_id": "5001-69",
+              "follows": "20593"
+            }
+          },
+          {
             "when": {
+              "follows": "20594",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20593",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3654,26 +3683,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-70",
-              "notes": "After crossing a mountain range, Xuanzang reaches Yarkand. \\n\"To the south of this country there is a high mountain in which there are a number of niches like chambers",
               "source": "348056",
+              "notes": "After crossing a mountain range, Xuanzang reaches Yarkand. \\n\"To the south of this country there is a high mountain in which there are a number of niches like chambers",
               "label": "Xuanzang journey: Kashgar-Yarkand",
-              "follows": "20594",
-              "target": "348053"
-            },
+              "target": "348053",
+              "segment_id": "5001-70",
+              "follows": "20594"
+            }
+          },
+          {
             "when": {
+              "follows": "20595",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20594",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3686,26 +3715,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-71",
-              "notes": "",
               "source": "348053",
+              "notes": "",
               "label": "Xuanzang journey: Yarkand-Khotan",
-              "follows": "20595",
-              "target": "348058"
-            },
+              "target": "348058",
+              "segment_id": "5001-71",
+              "follows": "20595"
+            }
+          },
+          {
             "when": {
+              "follows": "20596",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20595",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3718,26 +3747,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-72",
-              "notes": "",
               "source": "348058",
+              "notes": "",
               "label": "Xuanzang journey: Khotan-Niya",
-              "follows": "20596",
-              "target": "367098"
-            },
+              "target": "367098",
+              "segment_id": "5001-72",
+              "follows": "20596"
+            }
+          },
+          {
             "when": {
+              "follows": "20597",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20596",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3750,26 +3779,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-73",
-              "notes": "Xuanzang briefly passes through Niya before trekking through the merciless drifitng sands of the desert where there is no water or vegetation.",
               "source": "367098",
+              "notes": "Xuanzang briefly passes through Niya before trekking through the merciless drifitng sands of the desert where there is no water or vegetation.",
               "label": "Xuanzang journey: Niya-Cherchen",
-              "follows": "20597",
-              "target": "367089"
-            },
+              "target": "367089",
+              "segment_id": "5001-73",
+              "follows": "20597"
+            }
+          },
+          {
             "when": {
+              "follows": "20598",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20597",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3782,26 +3811,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-74",
-              "notes": "Xuanzang reaches Cherchen, another oasis town on the route back to Chang'an. He took respite from the forceful desert winds, blowing sans, and lack of water here. \\n\"Eastward of this again is the desert of drifting sand, without water or vegetation, burning hot, and subject to the evil poisonous fiendsand imps. There is no road, and travellers in coming and going have only to look for the deserted bones of men and cattle as their guide.\" Hwui-Li",
               "source": "367089",
+              "notes": "Xuanzang reaches Cherchen, another oasis town on the route back to Chang'an. He took respite from the forceful desert winds, blowing sans, and lack of water here. \\n\"Eastward of this again is the desert of drifting sand, without water or vegetation, burning hot, and subject to the evil poisonous fiendsand imps. There is no road, and travellers in coming and going have only to look for the deserted bones of men and cattle as their guide.\" Hwui-Li",
               "label": "Xuanzang journey: Cherchen-Charkhlik",
-              "follows": "20598",
-              "target": "367090"
-            },
+              "target": "367090",
+              "segment_id": "5001-74",
+              "follows": "20598"
+            }
+          },
+          {
             "when": {
+              "follows": "20599",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20598",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3814,26 +3843,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-75",
-              "notes": "Xuanzang stopped at this oasis located on the southern Silk Road route on the Taklamakan Desert. Oases such as Charkhlik were places to resupply and rest, after battling through the torturous desert landscapes.",
               "source": "367090",
+              "notes": "Xuanzang stopped at this oasis located on the southern Silk Road route on the Taklamakan Desert. Oases such as Charkhlik were places to resupply and rest, after battling through the torturous desert landscapes.",
               "label": "Xuanzang journey: Charkhlik-Loulan",
-              "follows": "20599",
-              "target": "367097"
-            },
+              "target": "367097",
+              "segment_id": "5001-75",
+              "follows": "20599"
+            }
+          },
+          {
             "when": {
+              "follows": "20600",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20599",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3846,26 +3875,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-76",
-              "notes": "",
               "source": "367097",
+              "notes": "",
               "label": "Xuanzang journey: Loulan-Tun-huang",
-              "follows": "20600",
-              "target": "367100"
-            },
+              "target": "367100",
+              "segment_id": "5001-76",
+              "follows": "20600"
+            }
+          },
+          {
             "when": {
+              "follows": "20601",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20600",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3878,26 +3907,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-77",
-              "notes": "",
               "source": "367100",
+              "notes": "",
               "label": "Xuanzang journey: Tun-huan - Liangzhou",
-              "follows": "20601",
-              "target": "367082"
-            },
-            "when": {
-              "timespan": [
-                "[0644-01-01",
-                "",
-                "",
-                "0644-12-31",
-                "]"
-              ],
-              "follows": "20601",
-              "duration": "?"
+              "target": "367082",
+              "segment_id": "5001-77",
+              "follows": "20601"
             }
           },
           {
+            "when": {
+              "follows": "20602",
+              "duration": "?",
+              "timespan": [
+                "[0645-01-01",
+                "",
+                "",
+                "0645-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3910,26 +3939,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-78",
-              "notes": "Xuanzang briefly passed through Liangzhou again on his journey back to Chang'an.",
               "source": "367082",
+              "notes": "Xuanzang briefly passed through Liangzhou again on his journey back to Chang'an.",
               "label": "Xuanzang journey: Liangzhou-An-hsi",
-              "follows": "20602",
-              "target": "367081"
-            },
+              "target": "367081",
+              "segment_id": "5001-78",
+              "follows": "20602"
+            }
+          },
+          {
             "when": {
+              "follows": "20603",
+              "duration": "?",
               "timespan": [
                 "[0645-01-01",
                 "",
                 "",
                 "0645-12-31",
                 "]"
-              ],
-              "follows": "20602",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3942,26 +3971,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-79",
-              "notes": "Xuanzang returned through this town on the edge of the Gobi Desert on the last leg of his trip back to Chang'an.",
               "source": "367081",
+              "notes": "Xuanzang returned through this town on the edge of the Gobi Desert on the last leg of his trip back to Chang'an.",
               "label": "Xuanzang journey: An-hsi-Jade Gate",
-              "follows": "20603",
-              "target": "367112"
-            },
+              "target": "367112",
+              "segment_id": "5001-79",
+              "follows": "20603"
+            }
+          },
+          {
             "when": {
+              "follows": "20604",
+              "duration": "?",
               "timespan": [
                 "[0645-01-01",
                 "",
                 "",
                 "0645-12-31",
                 "]"
-              ],
-              "follows": "20603",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -3974,26 +4003,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-80",
-              "notes": "Xuanzang passed back through the Jade Gate in 645 CE on his return to Chang'an. This time he did not have to hide during the day and travel at night. Xuanzang was heading toward a heros welcome in his hometown.",
               "source": "367112",
+              "notes": "Xuanzang passed back through the Jade Gate in 645 CE on his return to Chang'an. This time he did not have to hide during the day and travel at night. Xuanzang was heading toward a heros welcome in his hometown.",
               "label": "Xuanzang journey: Jade Gate-Chang'an",
-              "follows": "20604",
-              "target": "348203"
-            },
-            "when": {
-              "timespan": [
-                "[0645-01-01",
-                "",
-                "",
-                "0645-12-31",
-                "]"
-              ],
-              "follows": "20604",
-              "duration": "?"
+              "target": "348203",
+              "segment_id": "5001-80",
+              "follows": "20604"
             }
           },
           {
+            "when": {
+              "follows": "20605",
+              "duration": "?",
+              "timespan": [
+                "[0644-01-01",
+                "",
+                "",
+                "0644-12-31",
+                "]"
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -4006,58 +4035,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-81",
-              "notes": "",
               "source": "367097",
-              "label": "Xuanzang journey: Loulan-Jade Gate",
-              "follows": "20605",
-              "target": "367112"
-            },
-            "when": {
-              "timespan": [
-                "[0644-01-01",
-                "",
-                "",
-                "0644-12-31",
-                "]"
-              ],
-              "follows": "20605",
-              "duration": "?"
-            }
-          },
-          {
-            "coordinates": [
-              [
-                0,
-                0
-              ],
-              [
-                1,
-                1
-              ]
-            ],
-            "type": "LineString",
-            "properties": {
-              "segment_id": "5001-82",
               "notes": "",
-              "source": "367112",
-              "label": "Xuanzang journey: Jade Gate-Tun-huan",
-              "follows": "20601",
-              "target": "367100"
-            },
+              "label": "Xuanzang journey: Loulan-Jade Gate",
+              "target": "367112",
+              "segment_id": "5001-81",
+              "follows": "20605"
+            }
+          },
+          {
             "when": {
+              "follows": "20601",
+              "duration": "?",
               "timespan": [
                 "[0644-01-01",
                 "",
                 "",
                 "0644-12-31",
                 "]"
-              ],
-              "follows": "20601",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -4070,26 +4067,58 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-83",
-              "notes": "Xuanzang briefly passed through Liangzhou again on his journey back to Chang'an.",
+              "source": "367112",
+              "notes": "",
+              "label": "Xuanzang journey: Jade Gate-Tun-huan",
+              "target": "367100",
+              "segment_id": "5001-82",
+              "follows": "20601"
+            }
+          },
+          {
+            "when": {
+              "follows": "20602",
+              "duration": "?",
+              "timespan": [
+                "[0645-01-01",
+                "",
+                "",
+                "0645-12-31",
+                "]"
+              ]
+            },
+            "coordinates": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "type": "LineString",
+            "properties": {
               "source": "367100",
+              "notes": "Xuanzang briefly passed through Liangzhou again on his journey back to Chang'an.",
               "label": "Xuanzang journey: Tun-huan - An-hsi",
-              "follows": "20602",
-              "target": "367081"
-            },
+              "target": "367081",
+              "segment_id": "5001-83",
+              "follows": "20602"
+            }
+          },
+          {
             "when": {
+              "follows": "20603",
+              "duration": "?",
               "timespan": [
                 "[0645-01-01",
                 "",
                 "",
                 "0645-12-31",
                 "]"
-              ],
-              "follows": "20602",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -4102,26 +4131,26 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-84",
-              "notes": "Xuanzang returned through this town on the edge of the Gobi Desert on the last leg of his trip back to Chang'an.",
               "source": "367081",
+              "notes": "Xuanzang returned through this town on the edge of the Gobi Desert on the last leg of his trip back to Chang'an.",
               "label": "Xuanzang journey: An-hsi-Liangzhou",
-              "follows": "20603",
-              "target": "367082"
-            },
+              "target": "367082",
+              "segment_id": "5001-84",
+              "follows": "20603"
+            }
+          },
+          {
             "when": {
+              "follows": "20604",
+              "duration": "?",
               "timespan": [
                 "[0645-01-01",
                 "",
                 "",
                 "0645-12-31",
                 "]"
-              ],
-              "follows": "20603",
-              "duration": "?"
-            }
-          },
-          {
+              ]
+            },
             "coordinates": [
               [
                 0,
@@ -4134,51 +4163,22 @@
             ],
             "type": "LineString",
             "properties": {
-              "segment_id": "5001-85",
-              "notes": "Xuanzang passed back through the Jade Gate in 645 CE on his return to Chang'an. This time he did not have to hide during the day and travel at night. Xuanzang was heading toward a heros welcome in his hometown.",
               "source": "367082",
+              "notes": "Xuanzang passed back through the Jade Gate in 645 CE on his return to Chang'an. This time he did not have to hide during the day and travel at night. Xuanzang was heading toward a heros welcome in his hometown.",
               "label": "Xuanzang journey: Liangzhou-Chang'an",
-              "follows": "20604",
-              "target": "348203"
-            },
-            "when": {
-              "timespan": [
-                "[0645-01-01",
-                "",
-                "",
-                "0645-12-31",
-                "]"
-              ],
-              "follows": "20604",
-              "duration": "?"
+              "target": "348203",
+              "segment_id": "5001-85",
+              "follows": "20604"
             }
           }
         ]
       },
+      "when": {},
       "type": "Feature",
       "properties": {
-        "collection": "xuanzang",
-        "route_id": "5001"
-      },
-      "when": {}
+        "route_id": "5001",
+        "collection": "xuanzang"
+      }
     }
-  ],
-  "attributes": {
-    "pub_date": "2010",
-    "timespan": "[629,,,645,]",
-    "places": "places_xuanzang.csv",
-    "description": "Data originally extracted by W. Thorpe from Wriggens, S. (2003) 'The Silk Road journey with Xuanzang', Basic Books",
-    "uri": "",
-    "contributors": "[Whitney Thorpe",
-    "title": "The Pilgramage of Xuanzang, 629-645CE"
-  },
-  "when": {
-    "timespan": [
-      "629",
-      "",
-      "",
-      "645",
-      ""
-    ]
-  }
+  ]
 }
