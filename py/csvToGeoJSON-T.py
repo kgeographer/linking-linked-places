@@ -114,7 +114,17 @@ def createSegments():
     def yearToSpan(yr):
         year = '[' + yr + '-01-01,,,' + yr + '-12-31,]' if yr else ''
         return year
-        
+    def makeLine(row):
+        d = collection['features']
+        try:
+            p1 = next((x['geometry']['coordinates'] for x in d if x['id'] == row['source']), None)
+        except:
+            sys.exit('source id ' + p1 + ' not found')
+        try:
+            p2 = next((x['geometry']['coordinates'] for x in d if x['id'] == row['target']), None)
+        except:
+            sys.exit('target id ' + p1 + ' not found')
+            
     def toGeometry(row):
         # geometry within GeometryCollection, with when and n properties
         
@@ -122,7 +132,7 @@ def createSegments():
             # no geometry given, left to JavaScript
             g = { 
             "type":"LineString",
-            "coordinates":  [[0,0],[1,1]]
+            "coordinates":  makeLine()
             }   
         elif row['geometry'][0] == '{':
             # geometry is a GeoJSON object, start with that
@@ -192,13 +202,25 @@ init()
 createPlaces()
 createSegments()
 
-        
+
+d=collection['features']
+
+#for key,val in enumerate(d):
+    #if d['geometry']['type'] == 'Point':
+        #print(d)
+
+
+
+for x in d:
+    if x['geometry']['type'] == 'Point':
+        print(x['id'])
+
 
         # add remaining non-core properties
         #props = reader_p.fieldnames[7:]
         
         #for x in range(len(props)):
-            #feat['properties'][props[x]] = row[props[x]]
+            #feat['properties'][props[x]] = row[props[x]
             
         #places.append(feat)
 
