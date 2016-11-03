@@ -1,3 +1,5 @@
+// concatenated map_tt.js, timeline_tt.js
+// 3 Nov 2016
 
 $(function() {
   startMap();
