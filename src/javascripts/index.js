@@ -45,9 +45,10 @@ var mapStyles = {
     }
   }
 function startMap(){
+  // whassup
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
   // AWMC tiles in mapbox
-  ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+  let ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
       // .setView([0, 0], 3);
       .setView([50.064191736659104, 15.556640624999998], 4);
   featureLayer = L.mapbox.featureLayer()
