@@ -1,0 +1,3 @@
+questions
+
+- Is a named ancient road, like Via Salaria, a historical_route? seems like it should be, although one might argue it is strictly a "way." So, a segment may be associated with (traverse) a way (physical path with type and geometry) or not.
