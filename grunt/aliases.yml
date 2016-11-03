@@ -1,0 +1,22 @@
+
+compile:
+  # - jade
+  - browserify
+  - less
+
+compile:min:
+  - compile
+  - uglify
+  - cssmin
+
+server:
+  - connect
+  - watch
+
+deploy:
+  - compile:min
+  - gh-pages
+
+default:
+  - compile
+  - server
