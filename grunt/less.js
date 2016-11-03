@@ -7,8 +7,8 @@ module.exports = {
   },
 
   dist: {
-    // src: 'src/stylesheets/*',
-    src: 'src/stylesheets/index.less',
+    src: 'src/stylesheets/*',
+    // src: 'src/stylesheets/index.less',
     dest: '<%= site %>/style.css'
   }
 

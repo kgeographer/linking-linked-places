@@ -1,6 +1,7 @@
 var tl;
-function initTimeline() {
-// function initTimeline(placedata) {
+
+function initTimeline(foo) {
+  console.log(foo)
   var eventSource = new Timeline.DefaultEventSource(0);
   // Example of changing the theme from the defaults
   // The default theme is defined in
@@ -44,10 +45,10 @@ function initTimeline() {
   // tl.loadJSON("data/euro_poland.tl.json?"+ (new Date().getTime()), function(json, url) {
   tl.loadJSON("data/euro_poland.tl.json", function(json, url) {
       eventSource.loadJSON(json, url);
-  });
+    }
+  );
 
   // tl.loadJSON(placedata);
-
 }
 
 var resizeTimerID = null;
