@@ -1,4 +1,5 @@
-
+require('leaflet-ajax');
+// require('leaflet', 'leaflet-ajax');
 $(function() {
   startMap();
 });
@@ -66,6 +67,7 @@ function onResize() {
 
 window.idToFeature = {places:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
+window.myLayer = {}
 
 function validateWhen(place){
   // does Topotime place record have valid when object?
@@ -105,26 +107,35 @@ var mapStyles = {
     }
   }
 function startMap(){
-  L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
-  // AWMC tiles in mapbox
-  let ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
-      // .setView([0, 0], 3);
+  let ttmap = L.map('map')
+  // let ttmap = L.map('map', 'isawnyu.map-knmctlkh')
       .setView([50.064191736659104, 15.556640624999998], 4);
-  let featureLayer = L.mapbox.featureLayer()
-    .loadURL('data/polands.tt_feature-when.json')
-    .on('ready', function(){
-      let ttfeats = featureLayer._geojson.features;
-      featureLayer.eachLayer(function(layer){
-        // console.log(layer)
-        // event = buildEvent(layer.feature);
-        // build temporal object and pass to timeline
-        eventsObj.events.push(buildEvent(layer.feature));
-        idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
-        layer.setStyle(mapStyles.areas)
-        layer.bindPopup(layer.feature.properties.label);
-      })
-    })
+  // L.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
+  // AWMC tiles in mapbox
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'isawnyu.map-knmctlkh',
+    accessToken: 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw'
+  }).addTo(ttmap);
+  myLayer = L.geoJson.ajax('data/polands.tt_feature-when.json')
     .addTo(ttmap);
+
+  // let featureLayer = L.featureLayer()
+  //   .loadURL('data/polands.tt_feature-when.json')
+  //   .on('ready', function(){
+  //     let ttfeats = featureLayer._geojson.features;
+  //     featureLayer.eachLayer(function(layer){
+  //       // console.log(layer)
+  //       // event = buildEvent(layer.feature);
+  //       // build temporal object and pass to timeline
+  //       eventsObj.events.push(buildEvent(layer.feature));
+  //       idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
+  //       layer.setStyle(mapStyles.areas)
+  //       layer.bindPopup(layer.feature.properties.label);
+  //     })
+  //   })
+  //   .addTo(ttmap);
   console.log('eventsObj',eventsObj)
 
   var krakow = L.marker([50.0647, 19.9450])

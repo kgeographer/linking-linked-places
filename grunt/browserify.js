@@ -23,7 +23,7 @@ module.exports = {
 
   dist: {
     // src: 'src/javascripts/*',
-    src: ['src/javascripts/timeline_tt.js','src/javascripts/map_tt.js'],
+    src: ['src/javascripts/map_tt.js'],
     dest: '<%= site %>/script.js'
   }
 
