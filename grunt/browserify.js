@@ -7,7 +7,8 @@ module.exports = {
     transform: [
 
       ['babelify', {
-        presets: ['es2015', 'stage-1']
+        presets: ['stage-1']
+        // presets: ['es2015', 'stage-1']
       }],
 
       ['brfs']
@@ -22,7 +23,6 @@ module.exports = {
   },
 
   dist: {
-    // src: 'src/javascripts/*',
     src: ['src/javascripts/map_tt.js'],
     dest: '<%= site %>/script.js'
   }

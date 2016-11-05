@@ -133,6 +133,7 @@
 	z-index: 800;
 	}
 /* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+/* KG: whassup here */
 .leaflet-overlay-pane svg {
 	-moz-user-select: none;
 	}

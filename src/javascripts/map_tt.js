@@ -1,9 +1,11 @@
 require('mapbox.js')
 // require('leaflet-ajax');
-// require('leaflet', 'leaflet-ajax');
+
 $(function() {
-  startMap();
+  // startMapL(); // Leaflet
+  startMapM(); // Mapbox
 });
+
 function initTimeline(foo) {
   console.log('in initTimeline()', foo)
   var eventSource = new Timeline.DefaultEventSource(0);
@@ -69,6 +71,7 @@ function onResize() {
 window.idToFeature = {places:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
+window.ttfeatures = []
 
 function validateWhen(place){
   // does Topotime place record have valid when object?
@@ -98,61 +101,67 @@ function buildEvent(place){
   return event;
   // console.log('got place,'+place+', building event')
 }
+
 var mapStyles = {
   areas: {
       "color": "#993333",
       "weight": 1,
       "opacity": .8,
       "fillColor": "orange",
-      "fillOpacity": 0.3
+      "fillOpacity": 0.3,
     }
   }
-function startMap(){
-  L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
-  // let ttmap = L.map('map')
-  // AWMC tiles in mapbox
-  let ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
-      .setView([50.064191736659104, 15.556640624999998], 4);
-  // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  //   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  //   maxZoom: 18,
-  //   id: 'isawnyu.map-knmctlkh',
-  //   accessToken: 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw'
-  // }).addTo(ttmap);
 
-  // myLayer = L.geoJson.ajax('data/polands.tt_feature-when.json')
-  //   .addTo(ttmap);
-
-  let featureLayer = L.mapbox.featureLayer()
-    .loadURL('data/polands.tt_feature-when.json')
-    .on('ready', function(){
-      let ttfeats = featureLayer._geojson.features;
-      featureLayer.eachLayer(function(layer){
-        // console.log(layer)
-        // event = buildEvent(layer.feature);
-        // build temporal object and pass to timeline
-        eventsObj.events.push(buildEvent(layer.feature));
-        idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
-        layer.setStyle(mapStyles.areas)
-        layer.bindPopup(layer.feature.properties.label);
-      })
-    })
-    .addTo(ttmap);
-  console.log('eventsObj',eventsObj)
-
-  // var krakow = L.marker([50.0647, 19.9450])
-  var krakow = L.marker(new L.LatLng(50.0647, 19.9450), {
-    icon: L.mapbox.marker.icon({
-        'marker-color': '006600'
-      })
-    })
-    .bindPopup("<span style='width:95%;'><b>Kraków</b><br/>lay within several places over time")
-    // +"<p style='font-size:.9em;''><b>Name variants</b>: <em>Carcovia,Cracau,Cracaû,Cracovia,Cracovie,Cracow,"+
-    // "<br/>Cracòvia,Cracóvia,Gorad Krakau,KRK,Kraka,Krakau</em></p></span>")
-    .addTo(ttmap).openPopup();
+function startMapL(){
+  let ttmap = L.map('map')
+    .setView([50.064191736659104, 15.556640624999998], 4);
+  window.featureLayer = L.geoJson.ajax('data/polands.tt_feature-when.json',{
+    onEachFeature: function(feature, layer){
+      layer.bindPopup('foo, dammit')
+    }
+  })
+  .addTo(ttmap);
 
   initTimeline(eventsObj);
 }
+
+function startMapM(){
+  L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
+  // AWMC tiles in mapbox
+  let ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+      // .setView([0, 0], 3);
+      .setView([50.064191736659104, 15.556640624999998], 4);
+  let featureLayer = L.mapbox.featureLayer()
+    .loadURL('data/polands.tt_feature-when.json')
+    .on('ready', function(){
+      ttfeatures = featureLayer._geojson.features;
+      featureLayer.eachLayer(function(layer){
+        layer.setStyle(mapStyles.areas)
+        layer.bindPopup(layer.feature.properties.label);
+        // build temporal object and pass to timeline
+        eventsObj.events.push(buildEvent(layer.feature));
+        idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
+      })
+    })
+    .addTo(ttmap);
+
+  initTimeline(eventsObj);
+}
+console.log('eventsObj',eventsObj)
+
+// var krakow = L.marker(new L.LatLng(50.0647, 19.9450), {
+//   icon: L.mapbox.marker.icon({
+//       'marker-color': '009900',
+//       'zIndexOffset': -1000
+//     })
+//   })
+//   .bindPopup("<span style='width:95%;'><b>Kraków</b><br/>lay within several places over time")
+//   // +"<p style='font-size:.9em;''><b>Name variants</b>: <em>Carcovia,Cracau,Cracaû,Cracovia,Cracovie,Cracow,"+
+//   // "<br/>Cracòvia,Cracóvia,Gorad Krakau,KRK,Kraka,Krakau</em></p></span>")
+//   .addTo(ttmap);
+  // .addTo(ttmap).openPopup();
+
+
 
 // open popup
 // featureLayer._layers[92].openPopup()
