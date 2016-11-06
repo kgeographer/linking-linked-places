@@ -1,6 +1,7 @@
 # convert time-indexed admin boundary MultiPolygon shapefiles
 import json, os, re, codecs
 # set wd in a local_settings.py file
+wd = os.getcwd()
 from settings import *
 os.chdir(wd)
 import ttutil_euratlas
@@ -27,8 +28,10 @@ def parseWhen(year):
 
 for x in range(len(files)):
    pcoll = files[x]
-   fn=base_dir+'data/in/euratlas/'+files[x]+'.geojson'
-   w1 = codecs.open(base_dir+'data/out/'+ \
+   fn='../data/source/euratlas/'+files[x]+'.geojson'
+   #fn=base_dir+'data/in/euratlas/'+files[x]+'.geojson'
+   #w1 = codecs.open(base_dir+'data/out/'+ \
+   w1 = codecs.open('../data/out/'+ \
                     pcoll+'.tt.json','w','utf-8')
 
    with codecs.open(fn,mode='r',encoding='utf8') as f:

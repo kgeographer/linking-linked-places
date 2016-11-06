@@ -2,13 +2,13 @@ require('mapbox.js')
 // require('leaflet-ajax');
 
 $(function() {
-  // startMapL(); // Leaflet
-  startMapM(); // Mapbox
+  startMapM('polands'); // Leaflet
 });
 
-function initTimeline(foo) {
-  console.log('in initTimeline()', foo)
-  var eventSource = new Timeline.DefaultEventSource(0);
+window.initTimeline = function(events) {
+  // let sourceFile = 'data/' + file
+  // console.log('in initTimeline()', events)
+  window.eventSrc = new Timeline.DefaultEventSource(0);
   // Example of changing the theme from the defaults
   // The default theme is defined in
   // http://simile-widgets.googlecode.com/svn/timeline/tags/latest/src/webapp/api/scripts/themes.js
@@ -22,7 +22,7 @@ function initTimeline(foo) {
           width:          "75%",
           intervalUnit:   Timeline.DateTime.DECADE,
           intervalPixels: 50,
-          eventSource:    eventSource,
+          eventSource:    eventSrc,
           date:           d,
           theme:          theme,
           layout:         'original'  // original, overview, detailed
@@ -31,7 +31,7 @@ function initTimeline(foo) {
           width:          "25%",
           intervalUnit:   Timeline.DateTime.CENTURY,
           intervalPixels: 120,
-          eventSource:    eventSource,
+          eventSource:    eventSrc,
           date:           d,
           theme:          theme,
           layout:         'overview'  // original, overview, detailed
@@ -40,21 +40,9 @@ function initTimeline(foo) {
   bandInfos[1].syncWith = 0;
   bandInfos[1].highlight = true;
 
-  let tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
-  // Adding the date to the url stops browser caching of data during testing or if
-  // the data source is a dynamic query...
-
-  // tl.loadJSON("data/test.tt.json?"+ (new Date().getTime()), function(json, url) {
-  //     eventSource.loadJSON(json, url);
-  // });
-
-  // tl.loadJSON("data/euro_poland.tl.json?"+ (new Date().getTime()), function(json, url) {
-  tl.loadJSON("data/euro_poland.tl.json", function(json, url) {
-      eventSource.loadJSON(json, url);
-    }
-  );
-
-  // tl.loadJSON(placedata);
+  tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
+  // no idea why it needs a dummy url
+  eventSrc.loadJSON(events, 'dummyUrl');
 }
 
 var resizeTimerID = null;
@@ -68,16 +56,19 @@ function onResize() {
     }
 }
 
+
 window.idToFeature = {places:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
 window.ttfeatures = []
+window.tl = {}
 
 function validateWhen(place){
   // does Topotime place record have valid when object?
 }
 
 function buildEvent(place){
+  // console.log(place)
   // need validate function here
   // if(validateWhen(place)==true {})
   var event = {};
@@ -113,6 +104,7 @@ var mapStyles = {
   }
 
 function startMapL(){
+  // Leaflet style
   let ttmap = L.map('map')
     .setView([50.064191736659104, 15.556640624999998], 4);
   window.featureLayer = L.geoJson.ajax('data/polands.tt_feature-when.json',{
@@ -125,14 +117,16 @@ function startMapL(){
   initTimeline(eventsObj);
 }
 
-function startMapM(){
+function startMapM(dataset){
+  // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
   // AWMC tiles in mapbox
   let ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
       // .setView([0, 0], 3);
       .setView([50.064191736659104, 15.556640624999998], 4);
   let featureLayer = L.mapbox.featureLayer()
-    .loadURL('data/polands.tt_feature-when.json')
+    //polands.tt_feature-when.json
+    .loadURL('data/' + dataset + '.geojson')
     .on('ready', function(){
       ttfeatures = featureLayer._geojson.features;
       featureLayer.eachLayer(function(layer){
@@ -142,12 +136,13 @@ function startMapM(){
         eventsObj.events.push(buildEvent(layer.feature));
         idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
       })
+      initTimeline(eventsObj);
     })
     .addTo(ttmap);
 
-  initTimeline(eventsObj);
+  // initTimeline(eventsObj);
 }
-console.log('eventsObj',eventsObj)
+// console.log('eventsObj',eventsObj)
 
 // var krakow = L.marker(new L.LatLng(50.0647, 19.9450), {
 //   icon: L.mapbox.marker.icon({

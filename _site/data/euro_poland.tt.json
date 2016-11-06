@@ -1,19 +1,7 @@
 {
-  "type": "FeatureCollection",
-  "properties": {
-    "id": "euro_poland",
-    "label": "Admin bounds collection: euro_poland"
-  },
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol01",
-        "featureType": "sovereign_state",
-        "label": "Slav Polan Lordships"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -295,33 +283,34 @@
               "year": 800
             },
             "type": "MultiPolygon",
-            "when": { }
-          }
-        ]
-      },
-      "when": {
-        "timespans": [
-          {
-            "label": "in 800",
-            "start": {
-              "earliest": "0750-01-01"
-            },
-            "end": {
-              "latest": "0850-12-31"
+            "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "0850-12-31"
+                  },
+                  "label": "in 800",
+                  "start": {
+                    "earliest": "0750-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
+      },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Slav Polan Lordships"
+      },
+      "type": "Feature",
+      "when": {
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol02",
-        "featureType": "sovereign_state",
-        "label": "Lordships of the Polans and Vistulans"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -844,33 +833,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "0950-12-31"
+                  },
+                  "label": "in 900",
+                  "start": {
+                    "earliest": "0850-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Lordships of the Polans and Vistulans"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 900",
-            "start": {
-              "earliest": "0850-01-01"
-            },
-            "end": {
-              "latest": "0950-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol03",
-        "featureType": "sovereign_state",
-        "label": "Duchy of Poland"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -1921,33 +1910,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1050-12-31"
+                  },
+                  "label": "in 1000",
+                  "start": {
+                    "earliest": "950-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Duchy of Poland"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 1000",
-            "start": {
-              "earliest": "0950-01-01"
-            },
-            "end": {
-              "latest": "1050-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol04",
-        "featureType": "sovereign_state",
-        "label": "Principality of Polotsk"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -2262,33 +2251,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1150-12-31"
+                  },
+                  "label": "in 1100",
+                  "start": {
+                    "earliest": "1050-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Principality of Polotsk"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 1100",
-            "start": {
-              "earliest": "1050-01-01"
-            },
-            "end": {
-              "latest": "1150-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol05",
-        "featureType": "sovereign_state",
-        "label": "Kingdom of Poland"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -4231,33 +4220,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1150-12-31"
+                  },
+                  "label": "in 1100",
+                  "start": {
+                    "earliest": "1050-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Kingdom of Poland"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 1100",
-            "start": {
-              "earliest": "1050-01-01"
-            },
-            "end": {
-              "latest": "1150-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol06",
-        "featureType": "sovereign_state",
-        "label": "Principality of Polotsk"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -5612,34 +5601,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1250-12-31"
+                  },
+                  "label": "in 1200",
+                  "start": {
+                    "earliest": "1150-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
-
-      "when": {
-        "timespans": [
-          {
-            "label": "in 1200",
-            "start": {
-              "earliest": "1150-01-01"
-            },
-            "end": {
-              "latest": "1250-12-31"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": {
-        "id": "pol07",
         "featureType": "sovereign_state",
         "label": "Principality of Polotsk"
       },
+      "type": "Feature",
+      "when": {
+        "timespans": []
+      }
+    },
+    {
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -6414,31 +6402,32 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1350-12-31"
+                  },
+                  "label": "in 1300",
+                  "start": {
+                    "earliest": "1250-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Principality of Polotsk"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 1300",
-            "start": {
-              "earliest": "1250-01-01"
-            },
-            "end": {
-              "latest": "1350-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol08",
-        "featureType": "sovereign_state",
-        "label": "United Kingdom of Poland and Lithuania"
-      },
       "geometry": {
         "geometries": [
           {
@@ -11270,34 +11259,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1450-12-31"
+                  },
+                  "label": "in 1400",
+                  "start": {
+                    "earliest": "1350-01-01"
+                  }
+                }
+              ]
             }
           }
         ],
         "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "United Kingdom of Poland and Lithuania"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 1400",
-            "start": {
-              "earliest": "1350-01-01"
-            },
-            "end": {
-              "latest": "1450-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol09",
-        "featureType": "sovereign_state",
-        "label": "Kingdom of Poland"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -16832,33 +16820,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1550-12-31"
+                  },
+                  "label": "in 1500",
+                  "start": {
+                    "earliest": "1450-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Kingdom of Poland"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "in 1500",
-            "start": {
-              "earliest": "1450-01-01"
-            },
-            "end": {
-              "latest": "1550-12-31"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol10",
-        "featureType": "sovereign_state",
-        "label": "Commonwealth of the Crown of the Polish Kingdom and the Grand Duchy of Lithuania"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -24789,33 +24777,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1650-12-31"
+                  },
+                  "label": "in 1600",
+                  "start": {
+                    "earliest": "1550-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Commonwealth of the Crown of the Polish Kingdom and the Grand Duchy of Lithuania"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "1569-1795",
-            "start": {
-              "earliest": "1569-07-01"
-            },
-            "end": {
-              "latest": "1795-10-"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol11",
-        "featureType": "sovereign_state",
-        "label": "Republic of Poland (second)"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -33128,33 +33116,33 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "1750-12-31"
+                  },
+                  "label": "in 1700",
+                  "start": {
+                    "earliest": "1650-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Commonwealth of the Crown of the Polish Kingdom and the Grand Duchy of Lithuania"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "post-WW1 re-establish",
-            "start": {
-              "earliest": "1918-11"
-            },
-              "end": {
-              "latest": "1989"
-            }
-          }
-        ]
+        "timespans": []
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "id": "pol12",
-        "featureType": "sovereign_state",
-        "label": "Republic of Poland (third)"
-      },
       "geometry": {
-        "type": "GeometryCollection",
         "geometries": [
           {
             "coordinates": [
@@ -37333,23 +37321,35 @@
             },
             "type": "MultiPolygon",
             "when": {
+              "timespans": [
+                {
+                  "end": {
+                    "latest": "2050-12-31"
+                  },
+                  "label": "in 2000",
+                  "start": {
+                    "earliest": "1950-01-01"
+                  }
+                }
+              ]
             }
           }
-        ]
+        ],
+        "type": "GeometryCollection"
       },
+      "properties": {
+        "featureType": "sovereign_state",
+        "label": "Republic of Poland"
+      },
+      "type": "Feature",
       "when": {
-        "timespans": [
-          {
-            "label": "post-Soviet",
-            "start": {
-              "earliest": "1989-09-13"
-            },
-            "end": {
-              "latest": "2017-01-01"
-            }
-          }
-        ]
+        "timespans": []
       }
     }
-  ]
+  ],
+  "properties": {
+    "id": "euro_poland",
+    "label": "Admin bounds collection: euro_poland"
+  },
+  "type": "FeatureCollection"
 }
