@@ -2,7 +2,8 @@ require('mapbox.js')
 // require('leaflet-ajax');
 
 $(function() {
-  startMapM('polands'); // Leaflet
+  startMapM('xuanzang');
+  // startMapM('polands');
 });
 
 window.initTimeline = function(events) {
@@ -64,7 +65,8 @@ function onResize() {
 window.idToFeature = {places:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
-window.ttfeatures = []
+window.pointFeatures = []
+window.lineFeatures = []
 window.tl = {}
 
 function validateWhen(place){
@@ -87,14 +89,28 @@ function buildEvent(place){
   event['durationEvent'] = "true";
   event['link'] = "";
   event['image'] = "";
-  // event['durationEvent'] = place.when.timespans[0].during;
-  //     {'start': '1900', 'latestStart': '1901', 'earliestEnd': '1903', 'end': '1902',
-  //     'title': 'Test 6g: Bad dates: earliestEnd > end',
-  //     'description': 'Test 6g: Bad dates: earliestEnd > end',
-  //     'durationEvent': true, 'image':'<url>', 'link':'<url>'
-  //     },
+
   return event;
-  // console.log('got place,'+place+', building event')
+}
+
+function buildSegmentEvent(place){
+  console.log(place, ' in buildSegmentEvent()')
+  // need validate function here
+  // if(validateWhen(place)==true {})
+  var event = {};
+  event['id'] = place.properties.id;
+  event['title'] = place.properties.label;
+  event['description'] = !place.properties.description ? "" : place.properties.description;
+  // assuming valid; we know it's there in toy example
+  event['start'] = place.when.timespans[0].start.earliest;
+  event['latestStart'] = !place.when.timespans[0].start.latest ? "" :place.when.timespans[0].start.latest;
+  event['end'] = place.when.timespans[0].end.latest;
+  event['earliestEnd'] = !place.when.timespans[0].end.latest ? "" :place.when.timespans[0].end.latest;
+  event['durationEvent'] = "true";
+  event['link'] = "";
+  event['image'] = "";
+
+  return event;
 }
 
 var mapStyles = {
@@ -104,8 +120,22 @@ var mapStyles = {
       "opacity": .8,
       "fillColor": "orange",
       "fillOpacity": 0.3,
-    }
+    },
+  points: {
+    "color": "#000",
+    "fillColor": "#990000",
+    "marker-size": "small",
+    "marker-color": "#006600"
   }
+}
+var geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
 
 function startMapL(){
   // Leaflet style
@@ -124,31 +154,114 @@ function startMapL(){
 function startMapM(dataset){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
+
   // AWMC tiles in mapbox
-  let ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
-      // .setView([0, 0], 3);
-      .setView([50.064191736659104, 15.556640624999998], 4);
+  window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+      .setView([34.6694, 89.1650], 4); // xuanzang
+      // .setView([50.06419, 15.55664], 4); // poland
+
   let featureLayer = L.mapbox.featureLayer()
     //polands.tt_feature-when.json
     .loadURL('data/' + dataset + '.geojson')
     .on('ready', function(){
-      ttfeatures = featureLayer._geojson.features;
+      // ttfeatures = featureLayer._geojson.features;
       featureLayer.eachLayer(function(layer){
-        // console.log(layer.feature.properties)
-        layer.setStyle(mapStyles.areas)
-        layer.bindPopup(layer.feature.properties.label);
-        // build temporal object and pass to timeline
-        eventsObj.events.push(buildEvent(layer.feature));
-        idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
-      })
-      initTimeline(eventsObj);
-      // initTimeline('');
-    })
-    .addTo(ttmap);
+        let geomF = layer.feature.geometry
+        let whenF = layer.feature.when
+        // put places features pointFeatures array
+        if(geomF.type == 'Point') {
+            let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
+            let placeFeature = new L.CircleMarker(latlng, {
+              color: '#000',
+              fillColor: '#ff0000',
+              radius: 4,
+              fillOpacity: 0.8,
+              weight: 1
+            })
+            placeFeature.bindPopup(layer.feature.properties.label)
+            pointFeatures.push(placeFeature)
+        }
+        // the rest are routes with segments in a GeometryCollection
+        else if(geomF.type == 'GeometryCollection') {
+          for(i=0;i<geomF.geometries.length;i++) {
+            //* build temporal object and pass to timeline
+            let when = geomF.geometries[i].when
+            // eventsObj.events.push(buildSegmentEvent(layer.feature));
 
-  // initTimeline(eventsObj);
-}
-// console.log('eventsObj',eventsObj)
+            //* render linestring paths
+            // let segmentFeature = 
+
+            // segmentFeature.bindPopup(writePopup(layer.properties))
+            // lineFeatures.push(segmentFeature)
+          }
+        } else {
+          console.log(whenF == undefined ? 'whenF undef' : whenF)
+        }
+        // console.log(whenF)
+        // console.log('whenF', whenF == undefined ? 'undef': whenF.length === 0 ? 'empty' : whenF)
+      })
+
+      window.places = L.featureGroup(pointFeatures)
+        .addTo(ttmap)
+      window.segments = L.featureGroup(lineFeatures)
+    })
+        // if (whenF != {}) {
+        //   // feature has single timeline event
+        //   eventsObj.events.push(buildEvent(layer.feature));
+        // } else {
+        //   // timeline event for each segments
+        //   for (seg in geomF.geometries) {
+        //     console.log(seg.when)
+        //     console.log('buildEvent() for each segment')
+        //   }
+        // }
+
+/* xuanzang
+        "when": {
+          "follows": "20604",
+          "duration": "?",
+          "timespan": [
+            "[0645-01-01",
+            "",
+            "",
+            "0645-12-31",
+            "]"
+          ]
+        }
+*/
+
+/* polands
+        "when": {
+          "timespans": [
+            {
+              "label": "in 800",
+              "start": {
+                "earliest": "0750-01-01"
+              },
+              "end": {
+                "latest": "0850-12-31"
+              }
+            }
+          ]
+        }
+*/
+        // if (geomF.type ='GeometryCollection') {
+        //   console.log('collection w/', geomF.geometries.length, ' segments; when = ', whenF)
+        // }
+        // console.log(layer.feature.when)
+        // console.log()
+
+
+        // build temporal object and pass to timeline
+        // eventsObj.events.push(buildEvent(layer.feature));
+    //     idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
+    //   })
+    //   initTimeline(eventsObj);
+    //   // initTimeline('');
+    // })
+    // .addTo(ttmap);
+
+// }
 
 // var krakow = L.marker(new L.LatLng(50.0647, 19.9450), {
 //   icon: L.mapbox.marker.icon({
@@ -181,4 +294,4 @@ function startMapM(dataset){
 //     },
 //     {}
 //   ]
-// }
+}
