@@ -41,7 +41,11 @@ window.initTimeline = function(events) {
   bandInfos[1].highlight = true;
 
   tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
-  // no idea why it needs a dummy url
+  // from a file
+  // tl.loadJSON("data/euro_poland.tl.json", function(json, url) {
+  //   eventSrc.loadJSON(json, url);
+  // });
+  // from the dynamic object; no idea why it needs a dummy url
   eventSrc.loadJSON(events, 'dummyUrl');
 }
 
@@ -80,7 +84,7 @@ function buildEvent(place){
   event['latestStart'] = !place.when.timespans[0].start.latest ? "" :place.when.timespans[0].start.latest;
   event['end'] = place.when.timespans[0].end.latest;
   event['earliestEnd'] = !place.when.timespans[0].end.latest ? "" :place.when.timespans[0].end.latest;
-  event['durationEvent'] = "";
+  event['durationEvent'] = "true";
   event['link'] = "";
   event['image'] = "";
   // event['durationEvent'] = place.when.timespans[0].during;
@@ -130,6 +134,7 @@ function startMapM(dataset){
     .on('ready', function(){
       ttfeatures = featureLayer._geojson.features;
       featureLayer.eachLayer(function(layer){
+        // console.log(layer.feature.properties)
         layer.setStyle(mapStyles.areas)
         layer.bindPopup(layer.feature.properties.label);
         // build temporal object and pass to timeline
@@ -137,6 +142,7 @@ function startMapM(dataset){
         idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
       })
       initTimeline(eventsObj);
+      // initTimeline('');
     })
     .addTo(ttmap);
 
