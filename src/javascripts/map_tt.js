@@ -20,6 +20,10 @@ window.tl = {}
 
 $(function() {
   startMapM(searchParams['d'])
+  $("#menu").click(function(){
+    $("#data").toggle("fast")
+  })
+  $(".data-header").html(searchParams['d'])
 });
 
 window.initTimeline = function(events) {
