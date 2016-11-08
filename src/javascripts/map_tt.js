@@ -1,18 +1,26 @@
 require('mapbox.js')
 querystring = require('querystring')
 var url = require('url'),
-  querystring = require('querystring')
+  querystring = require('querystring'),
+  ctr = require('@turf/centroid'),
+  buf = require('@turf/buffer')
 window.parsedUrl = url.parse(window.location.href, true, true)
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
+window.q = querystring;
+window.cent = ctr
+window.buff = buf
 // require('leaflet-ajax');
+// expose so I can debug the damned thing
+window.idToFeature = {places:{}}
+window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
+window.myLayer = {}
+window.pointFeatures = []
+window.lineFeatures = []
+window.tl = {}
 
 $(function() {
   startMapM(searchParams['d'])
-  // startMapM('roundabout');
-  // startMapM('xuanzang');
-  // startMapM('polands');
 });
-window.q = querystring;
 
 window.initTimeline = function(events) {
   // let sourceFile = 'data/' + file
@@ -68,14 +76,6 @@ function onResize() {
         }, 500);
     }
 }
-
-
-window.idToFeature = {places:{}}
-window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
-window.myLayer = {}
-window.pointFeatures = []
-window.lineFeatures = []
-window.tl = {}
 
 function validateWhen(place){
   // does Topotime place record have valid when object?
@@ -139,8 +139,14 @@ var mapStyles = {
       "color": "#FB2E35",
       "weight": 2,
       "opacity": 0.6
+  },
+  segments: {
+      "color": "green",
+      "weight": 3,
+      "opacity": 0.6
   }
 }
+
 var geojsonMarkerOptions = {
     radius: 8,
     fillColor: "#ff7800",
@@ -150,20 +156,9 @@ var geojsonMarkerOptions = {
     fillOpacity: 0.8
 };
 
-function startMapL(){
-  // Leaflet style
-  let ttmap = L.map('map')
-    .setView([50.064191736659104, 15.556640624999998], 4);
-  window.featureLayer = L.geoJson.ajax('data/polands.tt_feature-when.json',{
-    onEachFeature: function(feature, layer){
-      layer.bindPopup('foo, dammit')
-    }
-  })
-  .addTo(ttmap);
-
-  initTimeline(eventsObj);
+function writePopup(layer) {
+  console.log(layer)
 }
-
 function startMapM(dataset){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
@@ -174,7 +169,7 @@ function startMapM(dataset){
   /*  read a single FeatureCollection of
       Places (geometry.type == Point), and
       Routes (geometry.type == GeometryCollection or undefined)
-        route geometry.geometries[i] == LineString or MultiLineString
+        - route geometry.geometries[i] == LineString or MultiLineString
   */
   let featureLayer = L.mapbox.featureLayer()
     .loadURL('data/' + dataset + '.geojson')
@@ -188,24 +183,48 @@ function startMapM(dataset){
             let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
             let placeFeature = new L.CircleMarker(latlng, {
               color: '#000',
-              fillColor: '#ff0000',
+              fillColor: '#ffff00',
               radius: 4,
               fillOpacity: 0.8,
               weight: 1
             })
-            placeFeature.bindPopup(layer.feature.properties.label)
+            placeFeature.bindPopup(layer.feature.properties.gazetteer_label)
             pointFeatures.push(placeFeature)
         }
         // the rest are routes with segments in a GeometryCollection
         else if(geomF.type == 'GeometryCollection') {
-          console.log('layer w/GeometryCollection', layer)
-          segmentFeature = new L.GeoJSON(layer.feature, {
-              style: mapStyles.lines
-            }).bindPopup("a segment")
-          console.log('feature from layer', segmentFeature)
-          lineFeatures.push(segmentFeature)
+          // console.log('layer.feature', layer.feature)
+
+          // single feature -> NOT GOOD
+          // allSegments = new L.GeoJSON(layer.feature, {
+          //     style: mapStyles.lines
+          //   }).bindPopup('a segment')
+          // lineFeatures.push(allSegments)
+
+          //* TODO: create feature for each geometry
+          for(i in geomF.geometries) {
+            // console.log(geomF.geometries[i])
+              let feat = {
+                "type":"Feature",
+                "geometry": {
+                  "type":geomF.geometries[i].type,
+                  "coordinates":geomF.geometries[i].coordinates
+                  },
+                "when":geomF.geometries[i].when,
+                "properties": geomF.geometries[i].properties
+              }
+              // console.log('feat', feat)
+              segment = new L.GeoJSON(feat, {
+                  style: mapStyles.segments
+                }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
+                  feat.properties.segment_id+')')
+              lineFeatures.push(segment)
+          }
+          // console.log('lineFeatures[0]',lineFeatures[0])
+
+          //* build temporal object and pass to timeline
           // for(i=0; i<geomF.geometries.length; i++) {
-          //   //* build temporal object and pass to timeline
+          //
           //   let when = geomF.geometries[i].when
           //   // eventsObj.events.push(buildSegmentEvent(layer.feature));
           //   let where = geomF.geometries[i].coordinates
@@ -287,19 +306,6 @@ function startMapM(dataset){
 
 // }
 
-// var krakow = L.marker(new L.LatLng(50.0647, 19.9450), {
-//   icon: L.mapbox.marker.icon({
-//       'marker-color': '009900',
-//       'zIndexOffset': -1000
-//     })
-//   })
-//   .bindPopup("<span style='width:95%;'><b>Kraków</b><br/>lay within several places over time")
-//   // +"<p style='font-size:.9em;''><b>Name variants</b>: <em>Carcovia,Cracau,Cracaû,Cracovia,Cracovie,Cracow,"+
-//   // "<br/>Cracòvia,Cracóvia,Gorad Krakau,KRK,Kraka,Krakau</em></p></span>")
-//   .addTo(ttmap);
-  // .addTo(ttmap).openPopup();
-
-
 
 // open popup
 // featureLayer._layers[92].openPopup()
@@ -319,3 +325,16 @@ function startMapM(dataset){
 //     {}
 //   ]
 }
+// function startMapL(){
+//   // Leaflet style
+//   let ttmap = L.map('map')
+//     .setView([50.064191736659104, 15.556640624999998], 4);
+//   window.featureLayer = L.geoJson.ajax('data/polands.tt_feature-when.json',{
+//     onEachFeature: function(feature, layer){
+//       layer.bindPopup('foo, dammit')
+//     }
+//   })
+//   .addTo(ttmap);
+//
+//   initTimeline(eventsObj);
+// }

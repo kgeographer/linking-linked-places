@@ -20,8 +20,8 @@ def init():
     #fins = codecs.open(dir+'source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
     #fout = codecs.open(dir+'out/'+data+'.geojson', 'w', 'utf8')
 
-    #fouta = codecs.open(dir+'out/'+data+'.geojson', 'a', 'utf8')
-
+    #fouta = codecs.open(dir+'out/'+data+'.geojson', 'a', 'utf8')    
+    
     # TODO: option for separate places and segments files (xuanzang is example)
     #foutp = codecs.open('../data/out/'+data+'_places.geojson', 'w', 'utf8')
     #fouts = codecs.open('../data/out/'+data+'_segments.geojson', 'w', 'utf8')
@@ -116,14 +116,19 @@ def createSegments():
         return year
     def makeLine(row):
         d = collection['features']
+        coords = []
         try:
             p1 = next((x['geometry']['coordinates'] for x in d if x['id'] == row['source']), None)
+            coords.append(p1)
         except:
             sys.exit('source id ' + p1 + ' not found')
         try:
             p2 = next((x['geometry']['coordinates'] for x in d if x['id'] == row['target']), None)
+            coords.append(p2)
         except:
             sys.exit('target id ' + p1 + ' not found')
+        print(coords)
+        return coords
 
     def toGeometry(row):
         # geometry within GeometryCollection, with when and n properties
@@ -132,7 +137,7 @@ def createSegments():
             # no geometry given, left to JavaScript
             g = {
             "type":"LineString",
-            "coordinates":  makeLine()
+            "coordinates":  makeLine(row)
             }
         elif row['geometry'][0] == '{':
             # geometry is a GeoJSON object, start with that
@@ -170,7 +175,7 @@ def createSegments():
 
 
     for idx, row in enumerate(reader_s):
-        print('route_id is ' + row['route_id'])
+        #print('route_id is ' + row['route_id'])
         if row['route_id'] != routeidx:
             # first row for a route
             feat = {"type":"Feature",
@@ -191,9 +196,9 @@ def createSegments():
             # add geometry + properties for each segment within a route
             feat['geometry']['geometries'].append(toGeometry(row))
             counter += 1
-            print('new geometry ', counter)
+            print('new geometry ', row['segment_id'])
 
-        print(counter)
+        #print(counter)
 
     fout.write(json.dumps(collection,indent=2))
     fout.close()
@@ -203,7 +208,7 @@ createPlaces()
 createSegments()
 
 
-d=collection['features']
+#d=collection['features']
 
 #for key,val in enumerate(d):
     #if d['geometry']['type'] == 'Point':
@@ -211,9 +216,9 @@ d=collection['features']
 
 
 
-for x in d:
-    if x['geometry']['type'] == 'Point':
-        print(x['id'])
+#for x in d:
+    #if x['geometry']['type'] == 'Point':
+        #print(x['id'])
 
 
         # add remaining non-core properties
