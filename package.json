@@ -12,7 +12,8 @@
     "leaflet": "^1.0.1",
     "leaflet-ajax": "^2.1.0",
     "lodash": "^4.16.6",
-    "mapbox.js": "^3.0.0"
+    "mapbox.js": "^3.0.0",
+    "querystring": "^0.2.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",

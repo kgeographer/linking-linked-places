@@ -1,10 +1,18 @@
 require('mapbox.js')
+querystring = require('querystring')
+var url = require('url'),
+  querystring = require('querystring')
+window.parsedUrl = url.parse(window.location.href, true, true)
+window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // require('leaflet-ajax');
 
 $(function() {
-  startMapM('xuanzang');
+  startMapM(searchParams['d'])
+  // startMapM('roundabout');
+  // startMapM('xuanzang');
   // startMapM('polands');
 });
+window.q = querystring;
 
 window.initTimeline = function(events) {
   // let sourceFile = 'data/' + file
@@ -126,6 +134,11 @@ var mapStyles = {
     "fillColor": "#990000",
     "marker-size": "small",
     "marker-color": "#006600"
+  },
+  lines: {
+      "color": "#FB2E35",
+      "weight": 2,
+      "opacity": 0.6
   }
 }
 var geojsonMarkerOptions = {
@@ -157,14 +170,16 @@ function startMapM(dataset){
 
   // AWMC tiles in mapbox
   window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
-      .setView([34.6694, 89.1650], 4); // xuanzang
-      // .setView([50.06419, 15.55664], 4); // poland
 
+  /*  read a single FeatureCollection of
+      Places (geometry.type == Point), and
+      Routes (geometry.type == GeometryCollection or undefined)
+        route geometry.geometries[i] == LineString or MultiLineString
+  */
   let featureLayer = L.mapbox.featureLayer()
-    //polands.tt_feature-when.json
     .loadURL('data/' + dataset + '.geojson')
     .on('ready', function(){
-      // ttfeatures = featureLayer._geojson.features;
+      // build separate L.featureGroup for points & lines
       featureLayer.eachLayer(function(layer){
         let geomF = layer.feature.geometry
         let whenF = layer.feature.when
@@ -183,17 +198,26 @@ function startMapM(dataset){
         }
         // the rest are routes with segments in a GeometryCollection
         else if(geomF.type == 'GeometryCollection') {
-          for(i=0;i<geomF.geometries.length;i++) {
-            //* build temporal object and pass to timeline
-            let when = geomF.geometries[i].when
-            // eventsObj.events.push(buildSegmentEvent(layer.feature));
-
-            //* render linestring paths
-            // let segmentFeature = 
-
-            // segmentFeature.bindPopup(writePopup(layer.properties))
-            // lineFeatures.push(segmentFeature)
-          }
+          console.log('layer w/GeometryCollection', layer)
+          segmentFeature = new L.GeoJSON(layer.feature, {
+              style: mapStyles.lines
+            }).bindPopup("a segment")
+          console.log('feature from layer', segmentFeature)
+          lineFeatures.push(segmentFeature)
+          // for(i=0; i<geomF.geometries.length; i++) {
+          //   //* build temporal object and pass to timeline
+          //   let when = geomF.geometries[i].when
+          //   // eventsObj.events.push(buildSegmentEvent(layer.feature));
+          //   let where = geomF.geometries[i].coordinates
+          //   //* render linestring paths
+          //   // console.log(geomF.geometries[i])
+          //   let segmentFeature = new L.GeoJSON(where, {
+          //     style: mapStyles.lines
+          //   })
+          //   segmentFeature.bindPopup("a segment")
+          //   // segmentFeature.bindPopup(writePopup(layer.properties))
+          //   lineFeatures.push(segmentFeature)
+          // }
         } else {
           console.log(whenF == undefined ? 'whenF undef' : whenF)
         }
@@ -201,9 +225,9 @@ function startMapM(dataset){
         // console.log('whenF', whenF == undefined ? 'undef': whenF.length === 0 ? 'empty' : whenF)
       })
 
-      window.places = L.featureGroup(pointFeatures)
-        .addTo(ttmap)
-      window.segments = L.featureGroup(lineFeatures)
+      window.places = L.featureGroup(pointFeatures).addTo(ttmap)
+      ttmap.fitBounds(places.getBounds())
+      window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
     })
         // if (whenF != {}) {
         //   // feature has single timeline event
