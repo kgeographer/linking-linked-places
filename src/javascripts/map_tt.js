@@ -10,7 +10,7 @@ window.q = querystring;
 window.cent = ctr
 window.buff = buf
 // require('leaflet-ajax');
-// expose so I can debug the damned thing
+// expose for debugging
 window.idToFeature = {places:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
@@ -37,11 +37,13 @@ window.initTimeline = function(events) {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
-  var d = Timeline.DateTime.parseGregorianDateTime("1900")
+  var d = Timeline.DateTime.parseGregorianDateTime("0639")
+  // var d = Timeline.DateTime.parseGregorianDateTime("1900")
   var bandInfos = [
       Timeline.createBandInfo({
           width:          "75%",
-          intervalUnit:   Timeline.DateTime.DECADE,
+          intervalUnit:   Timeline.DateTime.YEAR,
+          // intervalUnit:   Timeline.DateTime.DECADE,
           intervalPixels: 50,
           eventSource:    eventSrc,
           date:           d,
@@ -50,7 +52,8 @@ window.initTimeline = function(events) {
       }),
       Timeline.createBandInfo({
           width:          "25%",
-          intervalUnit:   Timeline.DateTime.CENTURY,
+          intervalUnit:   Timeline.DateTime.DECADE,
+          // intervalUnit:   Timeline.DateTime.CENTURY,
           intervalPixels: 120,
           eventSource:    eventSrc,
           date:           d,
@@ -106,22 +109,22 @@ function buildEvent(place){
 }
 
 function buildSegmentEvent(place){
-  console.log(place, ' in buildSegmentEvent()')
+  // console.log(' in buildSegmentEvent()',place)
   // need validate function here
   // if(validateWhen(place)==true {})
   var event = {};
-  event['id'] = place.properties.id;
+  event['id'] = place.properties.segment_id;
   event['title'] = place.properties.label;
   event['description'] = !place.properties.description ? "" : place.properties.description;
   // assuming valid; we know it's there in toy example
-  event['start'] = place.when.timespans[0].start.earliest;
-  event['latestStart'] = !place.when.timespans[0].start.latest ? "" :place.when.timespans[0].start.latest;
-  event['end'] = place.when.timespans[0].end.latest;
-  event['earliestEnd'] = !place.when.timespans[0].end.latest ? "" :place.when.timespans[0].end.latest;
-  event['durationEvent'] = "true";
+  event['start'] = place.when.timespan[0];
+  event['latestStart'] = place.when.timespan[1] == "" ? "" :place.when.timespan[1];
+  event['earliestEnd'] = place.when.timespan[2] == "" ? "" :place.when.timespan[2];
+  event['end'] = place.when.timespan[3] == "" ? "" :place.when.timespan[3];
+  event['durationEvent'] = "false";
   event['link'] = "";
   event['image'] = "";
-
+  console.log(event)
   return event;
 }
 
@@ -198,23 +201,17 @@ function startMapM(dataset){
         // the rest are routes with segments in a GeometryCollection
         else if(geomF.type == 'GeometryCollection') {
           // console.log('layer.feature', layer.feature)
-
-          // single feature -> NOT GOOD
-          // allSegments = new L.GeoJSON(layer.feature, {
-          //     style: mapStyles.lines
-          //   }).bindPopup('a segment')
-          // lineFeatures.push(allSegments)
-
           //* TODO: create feature for each geometry
           for(i in geomF.geometries) {
             // console.log(geomF.geometries[i])
+              let whenObj = geomF.geometries[i].when
               let feat = {
                 "type":"Feature",
                 "geometry": {
                   "type":geomF.geometries[i].type,
                   "coordinates":geomF.geometries[i].coordinates
                   },
-                "when":geomF.geometries[i].when,
+                "when": whenObj,
                 "properties": geomF.geometries[i].properties
               }
               // console.log('feat', feat)
@@ -222,46 +219,30 @@ function startMapM(dataset){
                   style: mapStyles.segments
                 }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
                   feat.properties.segment_id+')')
-              lineFeatures.push(segment)
-          }
-          // console.log('lineFeatures[0]',lineFeatures[0])
 
-          //* build temporal object and pass to timeline
-          // for(i=0; i<geomF.geometries.length; i++) {
-          //
-          //   let when = geomF.geometries[i].when
-          //   // eventsObj.events.push(buildSegmentEvent(layer.feature));
-          //   let where = geomF.geometries[i].coordinates
-          //   //* render linestring paths
-          //   // console.log(geomF.geometries[i])
-          //   let segmentFeature = new L.GeoJSON(where, {
-          //     style: mapStyles.lines
-          //   })
-          //   segmentFeature.bindPopup("a segment")
-          //   // segmentFeature.bindPopup(writePopup(layer.properties))
-          //   lineFeatures.push(segmentFeature)
-          // }
+              lineFeatures.push(segment)
+              //* build event object for timeline
+              if (whenObj != {}) {
+                eventsObj.events.push(buildSegmentEvent(feat)); }
+              else {
+                // timeline event for each segments
+                for (seg in geomF.geometries) {
+                  console.log(seg.when)
+                  console.log('buildEvent() for each segment')
+                }
+              }
+          }
         } else {
           console.log(whenF == undefined ? 'whenF undef' : whenF)
         }
-        // console.log(whenF)
-        // console.log('whenF', whenF == undefined ? 'undef': whenF.length === 0 ? 'empty' : whenF)
       })
 
       window.places = L.featureGroup(pointFeatures).addTo(ttmap)
       ttmap.fitBounds(places.getBounds())
       window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
+      initTimeline(eventsObj)
     })
-        // if (whenF != {}) {
-        //   // feature has single timeline event
-        //   eventsObj.events.push(buildEvent(layer.feature));
-        // } else {
-        //   // timeline event for each segments
-        //   for (seg in geomF.geometries) {
-        //     console.log(seg.when)
-        //     console.log('buildEvent() for each segment')
-        //   }
-        // }
+
 
 /* xuanzang
         "when": {
