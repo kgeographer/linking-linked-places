@@ -4,6 +4,7 @@
   "description": "merging place and period in various ways",
   "main": "Gruntfile.js",
   "dependencies": {
+    "@turf": "^3.0.14",
     "bootstrap": "^3.3.7",
     "brfs": "^1.4.3",
     "d3": "^4.3.0",
@@ -14,7 +15,7 @@
     "lodash": "^4.16.6",
     "mapbox.js": "^3.0.0",
     "querystring": "^0.2.0",
-    "@turf": "^3.0.14"
+    "typeahead": "^0.2.2"
   },
   "devDependencies": {
     "babel": "^6.5.2",

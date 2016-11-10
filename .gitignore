@@ -8,5 +8,4 @@ py/local_settings.py
 py/__pycache__
 
 ~*.*
-*.xlsx
 .DS_Store

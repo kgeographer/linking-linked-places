@@ -37,12 +37,12 @@ window.initTimeline = function(events) {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
-  var d = Timeline.DateTime.parseGregorianDateTime("0639")
+  var d = Timeline.DateTime.parseGregorianDateTime("0630-10-01")
   // var d = Timeline.DateTime.parseGregorianDateTime("1900")
   var bandInfos = [
       Timeline.createBandInfo({
           width:          "75%",
-          intervalUnit:   Timeline.DateTime.YEAR,
+          intervalUnit:   Timeline.DateTime.WEEK,
           // intervalUnit:   Timeline.DateTime.DECADE,
           intervalPixels: 50,
           eventSource:    eventSrc,
@@ -52,7 +52,7 @@ window.initTimeline = function(events) {
       }),
       Timeline.createBandInfo({
           width:          "25%",
-          intervalUnit:   Timeline.DateTime.DECADE,
+          intervalUnit:   Timeline.DateTime.MONTH,
           // intervalUnit:   Timeline.DateTime.CENTURY,
           intervalPixels: 120,
           eventSource:    eventSrc,
@@ -121,10 +121,10 @@ function buildSegmentEvent(place){
   event['latestStart'] = place.when.timespan[1] == "" ? "" :place.when.timespan[1];
   event['earliestEnd'] = place.when.timespan[2] == "" ? "" :place.when.timespan[2];
   event['end'] = place.when.timespan[3] == "" ? "" :place.when.timespan[3];
-  event['durationEvent'] = "false";
+  event['durationEvent'] = "true";
   event['link'] = "";
   event['image'] = "";
-  console.log(event)
+  // console.log(event)
   return event;
 }
 
@@ -165,6 +165,10 @@ var geojsonMarkerOptions = {
 
 function writePopup(layer) {
   console.log(layer)
+}
+function summarizeEvents(eventsObj){
+  // get bounds, midpoint, granularity
+  // multi-day, -week, -month, -year
 }
 function startMapM(dataset){
   // mapbox.js (non-gl)
@@ -236,7 +240,7 @@ function startMapM(dataset){
           console.log(whenF == undefined ? 'whenF undef' : whenF)
         }
       })
-
+      console.log(summarizeEvents(eventsObj))
       window.places = L.featureGroup(pointFeatures).addTo(ttmap)
       ttmap.fitBounds(places.getBounds())
       window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
