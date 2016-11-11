@@ -10,8 +10,8 @@ def init():
     dir = os.getcwd() + '/data/'
     global proj, reader_p, reader_s, finp, fins, fout, collection, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'xuanzang'
-    data = 'xuanzang'
+    proj = 'incanto'
+    data = 'incanto-j'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -87,6 +87,7 @@ def createPlaces():
                 "geometry":toPoint(row), \
                 "properties": { \
                     "collection": row['collection'], \
+                    "toponym": row['toponym'], \
                     "gazetteer_uri": row['gazetteer_uri'], \
                     "gazetteer_label": row['gazetteer_label']
                 }
@@ -151,12 +152,13 @@ def createSegments():
             }
 
         # build when object
-        if 0 <= len(row['timespan']) <= 5:
-            g['when'] = yearToSpan(row['timespan'])
-        else:
-            g['when'] = {"timespan": row['timespan'].split(','),
-                         "duration": row['duration'],
-                         "follows": row['follows'] if 'follows' in reader_s.fieldnames else 'n/a'}
+        #if 0 <= len(row['timespan']) <= 5:
+            #g['when'] = yearToSpan(row['timespan'])
+        #else:
+        g['when'] = {"timespan": yearToSpan(row['timespan']) if 0 <= len(row['timespan']) <= 5 else \
+                                            row['timespan'].split(','),
+                     "duration": row['duration'],
+                     "follows": row['follows'] if 'follows' in reader_s.fieldnames else 'n/a'}
 
         # core properties
         g['properties'] = {

@@ -5243,16 +5243,16 @@
   ],
   "when": {
     "timespan": [
-      "200",
+      "0200",
       "",
       "",
-      "400",
+      "0400",
       "around 200 - 400 CE"
     ]
   },
   "attributes": {
-    "uri": "[http://commons.pelagios.org/2013/10/iwp2-pelagios-and-the-beakers-of-vicarello/",
-    "timespan": "[200,,,400,around 200 - 400 CE]",
+    "uri": "http://commons.pelagios.org/2013/10/iwp2-pelagios-and-the-beakers-of-vicarello/",
+    "timespan": "200,,,400,around 200 - 400 CE",
     "author": "Anonymous",
     "places": "places_vicarello.csv",
     "title": "Vicarello Beakers",

@@ -28,7 +28,7 @@ $(function() {
 
 window.initTimeline = function(events) {
   // let sourceFile = 'data/' + file
-  // console.log('in initTimeline()', events)
+  // console.log('in initTimeline()', JSON.stringify(events.events[0]))
   window.eventSrc = new Timeline.DefaultEventSource(0);
   // Example of changing the theme from the defaults
   // The default theme is defined in
@@ -37,13 +37,16 @@ window.initTimeline = function(events) {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
-  var d = Timeline.DateTime.parseGregorianDateTime("0630-10-01")
-  // var d = Timeline.DateTime.parseGregorianDateTime("1900")
+  // var d = Timeline.DateTime.parseGregorianDateTime("2016-10-01")
+  var d = Timeline.DateTime.parseGregorianDateTime("0300-01-01")
   var bandInfos = [
       Timeline.createBandInfo({
           width:          "75%",
-          intervalUnit:   Timeline.DateTime.WEEK,
-          // intervalUnit:   Timeline.DateTime.DECADE,
+          // intervalUnit:   Timeline.DateTime.DAY,
+          // intervalUnit:   Timeline.DateTime.YEAR,
+          intervalUnit:   Timeline.DateTime.DECADE,
+          // intervalUnit:   Timeline.DateTime.WEEK,
+          // intervalUnit:   Timeline.DateTime.CENTURY,
           intervalPixels: 50,
           eventSource:    eventSrc,
           date:           d,
@@ -52,8 +55,11 @@ window.initTimeline = function(events) {
       }),
       Timeline.createBandInfo({
           width:          "25%",
-          intervalUnit:   Timeline.DateTime.MONTH,
-          // intervalUnit:   Timeline.DateTime.CENTURY,
+          // intervalUnit:   Timeline.DateTime.WEEK,
+          // intervalUnit:   Timeline.DateTime.DECADE,
+          // intervalUnit:   Timeline.DateTime.MONTH,
+          intervalUnit:   Timeline.DateTime.CENTURY,
+          // intervalUnit:   Timeline.DateTime.MILLENIUM,
           intervalPixels: 120,
           eventSource:    eventSrc,
           date:           d,
@@ -124,7 +130,25 @@ function buildSegmentEvent(place){
   event['durationEvent'] = "true";
   event['link'] = "";
   event['image'] = "";
-  // console.log(event)
+  // console.log('event',JSON.stringify(event))
+  return event;
+}
+function buildCollectionPeriod(coll){
+  window.ts = coll.when.timespan
+  // console.log(' in buildCollectionPeriod()',ts)
+  var event = {};
+  event['id'] = 'LinkedPlaces001';
+  event['title'] = 'valid period, '+coll.attributes.title;
+  event['description'] = ts[4];
+  event['start'] = ts[0];
+  event['latestStart'] = ts[1] == "" ? "" :ts[1];
+  event['earliestEnd'] = ts[2] == "" ? "" :ts[2];
+  event['end'] = ts[3] == "" ? "" :ts[3];
+  event['durationEvent'] = "true";
+  event['link'] = "";
+  // event['link'] = coll.attributes.uri;
+  event['image'] = "";
+  console.log('event', JSON.stringify(event))
   return event;
 }
 
@@ -169,6 +193,7 @@ function writePopup(layer) {
 function summarizeEvents(eventsObj){
   // get bounds, midpoint, granularity
   // multi-day, -week, -month, -year
+  console.log(eventsObj)
 }
 function startMapM(dataset){
   // mapbox.js (non-gl)
@@ -185,6 +210,8 @@ function startMapM(dataset){
   let featureLayer = L.mapbox.featureLayer()
     .loadURL('data/' + dataset + '.geojson')
     .on('ready', function(){
+      console.log(featureLayer)
+      window.collection = featureLayer._geojson
       // build separate L.featureGroup for points & lines
       featureLayer.eachLayer(function(layer){
         let geomF = layer.feature.geometry
@@ -199,7 +226,7 @@ function startMapM(dataset){
               fillOpacity: 0.8,
               weight: 1
             })
-            placeFeature.bindPopup(layer.feature.properties.gazetteer_label)
+            placeFeature.bindPopup(layer.feature.properties.toponym)
             pointFeatures.push(placeFeature)
         }
         // the rest are routes with segments in a GeometryCollection
@@ -219,28 +246,33 @@ function startMapM(dataset){
                 "properties": geomF.geometries[i].properties
               }
               // console.log('feat', feat)
+              // console.log('whenObj', whenObj)
               segment = new L.GeoJSON(feat, {
                   style: mapStyles.segments
                 }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
                   feat.properties.segment_id+')')
 
               lineFeatures.push(segment)
+
               //* build event object for timeline
-              if (whenObj != {}) {
+              if (whenObj != {} && whenObj != '') {
                 eventsObj.events.push(buildSegmentEvent(feat)); }
               else {
-                // timeline event for each segments
-                for (seg in geomF.geometries) {
-                  console.log(seg.when)
-                  console.log('buildEvent() for each segment')
-                }
+                // make one period for timeline
+                console.log('no segment when')
+                // eventsObj.events.push(buildCollectionPeriod(collection))
               }
+          }
+          if(eventsObj.events.length == 0) {
+            // needs a period
+            eventsObj.events.push(buildCollectionPeriod(collection))
+            // console.log(eventsObj)
           }
         } else {
           console.log(whenF == undefined ? 'whenF undef' : whenF)
         }
       })
-      console.log(summarizeEvents(eventsObj))
+      // console.log(summarizeEvents(eventsObj))
       window.places = L.featureGroup(pointFeatures).addTo(ttmap)
       ttmap.fitBounds(places.getBounds())
       window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
