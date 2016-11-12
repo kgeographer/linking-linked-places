@@ -38,6 +38,7 @@ window.midpoint = function(ts,type) {
   }
   return mid
 }
+
 window.initTimeline = function(events) {
   console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
@@ -50,30 +51,28 @@ window.initTimeline = function(events) {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
+  let cfg = tlConfig[searchParams['d']]
   // var d = Timeline.DateTime.parseGregorianDateTime("2016-10-01")
   var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
+  // DAY, WEEK, MONTH, YEAR, DECADE, CENTURY
   var bandInfos = [
       Timeline.createBandInfo({
-          width:          "75%",
-          // intervalUnit:   Timeline.DateTime.DAY,
-          intervalUnit:   Timeline.DateTime.YEAR,
-          // intervalUnit:   Timeline.DateTime.DECADE,
-          // intervalUnit:   Timeline.DateTime.WEEK,
-          // intervalUnit:   Timeline.DateTime.CENTURY,
-          intervalPixels: 50,
+          width:          cfg.width1,
+          // width:          "75%",
+          intervalUnit:   eval('Timeline.DateTime.'+cfg.intUnit1),
+          // intervalPixels: 50,
+          intervalPixels: cfg.intPixels1,
           eventSource:    eventSrc,
           date:           d,
           theme:          theme,
           layout:         'original'  // original, overview, detailed
       }),
       Timeline.createBandInfo({
-          width:          "25%",
-          // intervalUnit:   Timeline.DateTime.WEEK,
-          // intervalUnit:   Timeline.DateTime.DECADE,
-          // intervalUnit:   Timeline.DateTime.MONTH,
-          intervalUnit:   Timeline.DateTime.CENTURY,
-          // intervalUnit:   Timeline.DateTime.MILLENIUM,
-          intervalPixels: 120,
+          width:          cfg.width2,
+          // width:          "25%",
+          intervalUnit:   eval('Timeline.DateTime.'+cfg.intUnit2),
+          intervalPixels: cfg.intPixels2,
+          // intervalPixels: 120,
           eventSource:    eventSrc,
           date:           d,
           theme:          theme,
@@ -161,7 +160,7 @@ function buildCollectionPeriod(coll){
   event['link'] = "";
   // event['link'] = coll.attributes.uri;
   event['image'] = "";
-  console.log('event', JSON.stringify(event))
+  // console.log('event', JSON.stringify(event))
   tlMidpoint = midpoint(ts,'start')
   return event;
 }
@@ -285,8 +284,8 @@ function startMapM(dataset){
           if(eventsObj.events.length == 0) {
             // needs a period
             eventsObj.events.push(buildCollectionPeriod(collection))
-            console.log('buid',buildCollectionPeriod(collection))
-            console.log('period eventsObj', eventsObj.events[0])
+            // console.log('build',buildCollectionPeriod(collection))
+            // console.log('period eventsObj', eventsObj.events[0])
           }
         } else {
           console.log(whenF == undefined ? 'whenF undef' : whenF)
