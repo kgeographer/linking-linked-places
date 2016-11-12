@@ -17,6 +17,7 @@ window.myLayer = {}
 window.pointFeatures = []
 window.lineFeatures = []
 window.tl = {}
+window.tlMidpoint = ''
 
 $(function() {
   startMapM(searchParams['d'])
@@ -26,7 +27,19 @@ $(function() {
   $(".data-header").html(searchParams['d'])
 });
 
+window.midpoint = function(ts,type) {
+  // console.log('midpoint()',ts,type)
+  if(type == 'start') {
+    var mid = new Date(ts[0])
+  } else if(type == 'mid') {
+    let start = new Date(ts[0])
+    let end = ts[3] == ('' || undefined) ? new Date(Date.now()) : new Date(ts[3])
+    var mid = new Date((start.getTime() + end.getTime()) / 2);
+  }
+  return mid
+}
 window.initTimeline = function(events) {
+  console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
   // console.log('in initTimeline()', JSON.stringify(events.events[0]))
   window.eventSrc = new Timeline.DefaultEventSource(0);
@@ -38,13 +51,13 @@ window.initTimeline = function(events) {
   theme.event.bubble.height = 300;
 
   // var d = Timeline.DateTime.parseGregorianDateTime("2016-10-01")
-  var d = Timeline.DateTime.parseGregorianDateTime("0300-01-01")
+  var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
   var bandInfos = [
       Timeline.createBandInfo({
           width:          "75%",
           // intervalUnit:   Timeline.DateTime.DAY,
-          // intervalUnit:   Timeline.DateTime.YEAR,
-          intervalUnit:   Timeline.DateTime.DECADE,
+          intervalUnit:   Timeline.DateTime.YEAR,
+          // intervalUnit:   Timeline.DateTime.DECADE,
           // intervalUnit:   Timeline.DateTime.WEEK,
           // intervalUnit:   Timeline.DateTime.CENTURY,
           intervalPixels: 50,
@@ -130,12 +143,12 @@ function buildSegmentEvent(place){
   event['durationEvent'] = "true";
   event['link'] = "";
   event['image'] = "";
-  // console.log('event',JSON.stringify(event))
+
   return event;
 }
+
 function buildCollectionPeriod(coll){
   window.ts = coll.when.timespan
-  // console.log(' in buildCollectionPeriod()',ts)
   var event = {};
   event['id'] = 'LinkedPlaces001';
   event['title'] = 'valid period, '+coll.attributes.title;
@@ -149,6 +162,7 @@ function buildCollectionPeriod(coll){
   // event['link'] = coll.attributes.uri;
   event['image'] = "";
   console.log('event', JSON.stringify(event))
+  tlMidpoint = midpoint(ts,'start')
   return event;
 }
 
@@ -211,11 +225,18 @@ function startMapM(dataset){
     .loadURL('data/' + dataset + '.geojson')
     .on('ready', function(){
       console.log(featureLayer)
+      // get Collection attributes
       window.collection = featureLayer._geojson
+      // set timeline midpoint
+      tlMidpoint = midpoint(collection.when.timespan,'mid')
+
       // build separate L.featureGroup for points & lines
       featureLayer.eachLayer(function(layer){
         let geomF = layer.feature.geometry
         let whenF = layer.feature.when
+        /*  feature cases:
+            Place if(geomF.type == 'Point')
+        */
         // put places features pointFeatures array
         if(geomF.type == 'Point') {
             let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
@@ -255,18 +276,17 @@ function startMapM(dataset){
               lineFeatures.push(segment)
 
               //* build event object for timeline
-              if (whenObj != {} && whenObj != '') {
-                eventsObj.events.push(buildSegmentEvent(feat)); }
-              else {
-                // make one period for timeline
-                console.log('no segment when')
-                // eventsObj.events.push(buildCollectionPeriod(collection))
+              if (whenObj != ({} || '')) {
+                if (collection.attributes.segmentType == 'journey') {
+                  eventsObj.events.push(buildSegmentEvent(feat));
+                }
               }
           }
           if(eventsObj.events.length == 0) {
             // needs a period
             eventsObj.events.push(buildCollectionPeriod(collection))
-            // console.log(eventsObj)
+            console.log('buid',buildCollectionPeriod(collection))
+            console.log('period eventsObj', eventsObj.events[0])
           }
         } else {
           console.log(whenF == undefined ? 'whenF undef' : whenF)

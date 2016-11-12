@@ -1,5 +1,6 @@
 # title: The Pilgramage of Xuanzang, 629-645CE
 # places: places_xuanzang.csv
+# segmentType: journey
 # timespan: [629,,,645,]
 # pub_date: 2010
 # contributors: [Whitney Thorpe; Karl Grossner]
