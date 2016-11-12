@@ -127,23 +127,23 @@ function buildEvent(place){
   return event;
 }
 
-function buildSegmentEvent(place){
-  // console.log(' in buildSegmentEvent()',place)
+function buildSegmentEvent(feat){
+  console.log(' in buildSegmentEvent()',feat.when.timespan)
   // need validate function here
   // if(validateWhen(place)==true {})
   var event = {};
-  event['id'] = place.properties.segment_id;
-  event['title'] = place.properties.label;
-  event['description'] = !place.properties.description ? "" : place.properties.description;
+  event['id'] = feat.properties.segment_id;
+  event['title'] = feat.properties.label;
+  event['description'] = !feat.properties.description ? "" : feat.properties.description;
   // assuming valid; we know it's there in toy example
-  event['start'] = place.when.timespan[0];
-  event['latestStart'] = place.when.timespan[1] == "" ? "" :place.when.timespan[1];
-  event['earliestEnd'] = place.when.timespan[2] == "" ? "" :place.when.timespan[2];
-  event['end'] = place.when.timespan[3] == "" ? "" :place.when.timespan[3];
+  event['start'] = feat.when.timespan[0];
+  event['latestStart'] = feat.when.timespan[1] == "" ? "" :feat.when.timespan[1];
+  event['earliestEnd'] = feat.when.timespan[2] == "" ? "" :feat.when.timespan[2];
+  event['end'] = feat.when.timespan[3] == "" ? "" :feat.when.timespan[3];
   event['durationEvent'] = "true";
   event['link'] = "";
   event['image'] = "";
-
+  // console.log('built ', event)
   return event;
 }
 

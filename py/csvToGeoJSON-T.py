@@ -113,8 +113,9 @@ def createSegments():
     routeidx = 0
 
     def yearToSpan(yr):
-        year = '[' + yr + '-01-01,,,' + yr + '-12-31,]' if yr else ''
-        return year
+        #year = '[' + yr + '-01-01,,,' + yr + '-12-31,]' if yr else ''
+        year = yr + '-01-01,,,' + yr + '-12-31,' if yr else ''
+        return year.split(',')
     def makeLine(row):
         d = collection['features']
         coords = []
@@ -160,6 +161,7 @@ def createSegments():
                      "duration": row['duration'],
                      "follows": row['follows'] if 'follows' in reader_s.fieldnames else 'n/a'}
 
+        #print(g['when'])
         # core properties
         g['properties'] = {
             "segment_id": (row['segment_id'] if 'segment_id' in reader_s.fieldnames else '') ,
@@ -193,12 +195,12 @@ def createSegments():
             routeidx = row['route_id']
             collection['features'].append(feat)
             counter += 1
-            print('new feature: ',counter)
+            #print('new feature: ',counter)
         else:
             # add geometry + properties for each segment within a route
             feat['geometry']['geometries'].append(toGeometry(row))
             counter += 1
-            print('new geometry ', row['segment_id'])
+            #print('new geometry ', row['segment_id'])
 
         #print(counter)
 
