@@ -17,20 +17,46 @@ html, body { height: 100%; margin:0; padding:0;}
   width:100%;
   background: aliceblue;
 }
-
-#data {
+.mypanel {
   position:absolute;
-  top: 8px;
+  z-index: 5;
   bottom: 21%;
-  right: 0;
   width: 250px;
-  background: beige;
+  font-family: Verdana, Geneva, sans-serif;
   h3 {
-    margin-top: 4px;
+    margin: 4px 0;
     text-align: center;
     color: #336699;
   }
 }
+.search {
+  left: 0;
+  top: 68px;
+  background: gainsboro;
+}
+#data {
+  top: 8px;
+  right: 0;
+  background: beige;
+}
+#data_abstract {
+  position: relative;
+  margin: 0 4px 6px;
+  background: #fff;
+  padding: 4px;
+  font-size: .7em;
+}
+#data_inset {
+  position: relative;
+  height: 65%;
+  margin: 0 4px 0;
+  background: #fff;
+  padding: 4px;
+  font-size: .7em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#data_inset.table {width: 250px;}
 #menu {
   position:absolute;
   top: 10px;

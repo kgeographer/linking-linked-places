@@ -1,23 +1,28 @@
-require('mapbox.js')
-querystring = require('querystring')
 var url = require('url'),
-  querystring = require('querystring'),
-  ctr = require('@turf/centroid'),
-  buf = require('@turf/buffer')
+    mb = require('mapbox.js'),
+    querystring = require('querystring'),
+    typeahead = require('typeahead')
+
+// require('@turf/centroid')
+// require('@turf/buffer')
+// import $ from 'jquery'
+// import bs from 'bootstrap'
+// t = require('bootstrap')
 window.parsedUrl = url.parse(window.location.href, true, true)
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
-window.q = querystring;
-window.cent = ctr
-window.buff = buf
+// window.q = querystring;
+// window.cent = ctr
+// window.buff = buf
 // require('leaflet-ajax');
 // expose for debugging
-window.idToFeature = {places:{}}
+window.idToFeature = {places:{}, segments:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
 window.pointFeatures = []
 window.lineFeatures = []
 window.tl = {}
 window.tlMidpoint = ''
+window.dataRows = ''
 
 $(function() {
   startMapM(searchParams['d'])
@@ -25,6 +30,15 @@ $(function() {
     $("#data").toggle("fast")
   })
   $(".data-header").html(searchParams['d'])
+
+  $('.typeahead').typeahead({
+    minLength: 3,
+    highlight: true
+  },
+  {
+    name: 'my-dataset',
+    source: mySource
+  });
 });
 
 window.midpoint = function(ts,type) {
@@ -127,7 +141,7 @@ function buildEvent(place){
 }
 
 function buildSegmentEvent(feat){
-  console.log(' in buildSegmentEvent()',feat.when.timespan)
+  // console.log(' in buildSegmentEvent()',feat.when.timespan)
   // need validate function here
   // if(validateWhen(place)==true {})
   var event = {};
@@ -208,12 +222,20 @@ function summarizeEvents(eventsObj){
   // multi-day, -week, -month, -year
   console.log(eventsObj)
 }
+function makeAbstract(attribs){
+  let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
+    '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'+
+    '<p>'+attribs.description+'</p>'
+  return html
+}
+
 function startMapM(dataset){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
 
   // AWMC tiles in mapbox
-  window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+  window.ttmap = L.mapbox.map('map') // don't load basemap
+  // window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
 
   /*  read a single FeatureCollection of
       Places (geometry.type == Point), and
@@ -223,9 +245,10 @@ function startMapM(dataset){
   let featureLayer = L.mapbox.featureLayer()
     .loadURL('data/' + dataset + '.geojson')
     .on('ready', function(){
-      console.log(featureLayer)
+      // console.log(featureLayer)
       // get Collection attributes
       window.collection = featureLayer._geojson
+      $("#data_abstract").html(makeAbstract(collection.attributes))
       // set timeline midpoint
       tlMidpoint = midpoint(collection.when.timespan,'mid')
 
@@ -239,21 +262,25 @@ function startMapM(dataset){
         // put places features pointFeatures array
         if(geomF.type == 'Point') {
             let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
-            let placeFeature = new L.CircleMarker(latlng, {
+            var placeFeature = new L.CircleMarker(latlng, {
               color: '#000',
               fillColor: '#ffff00',
               radius: 4,
               fillOpacity: 0.8,
               weight: 1
             })
+            // console.log(placeFeature)
             placeFeature.bindPopup(layer.feature.properties.toponym)
             pointFeatures.push(placeFeature)
+            var pid = layer.feature.properties.place_id
+            idToFeature.places[pid] = placeFeature
         }
         // the rest are routes with segments in a GeometryCollection
         else if(geomF.type == 'GeometryCollection') {
           // console.log('layer.feature', layer.feature)
           //* TODO: create feature for each geometry
-          for(i in geomF.geometries) {
+          dataRows = '<table><hr><td>id</td><td>label</td></hr>'
+          for(let i in geomF.geometries) {
             // console.log(geomF.geometries[i])
               let whenObj = geomF.geometries[i].when
               let feat = {
@@ -267,12 +294,17 @@ function startMapM(dataset){
               }
               // console.log('feat', feat)
               // console.log('whenObj', whenObj)
-              segment = new L.GeoJSON(feat, {
+              var segment = new L.GeoJSON(feat, {
                   style: mapStyles.segments
                 }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
                   feat.properties.segment_id+')')
 
               lineFeatures.push(segment)
+              var sid = feat.properties.segment_id
+              idToFeature.segments[sid] = segment
+
+              dataRows += '<tr><td>'+sid+'</td>'+
+                '<td>'+feat.properties.label+'</td></tr>'
 
               //* build event object for timeline
               if (whenObj != ({} || '')) {
@@ -291,6 +323,7 @@ function startMapM(dataset){
           console.log(whenF == undefined ? 'whenF undef' : whenF)
         }
       })
+      $("#data_inset").html(dataRows+'</table>')
       // console.log(summarizeEvents(eventsObj))
       window.places = L.featureGroup(pointFeatures).addTo(ttmap)
       ttmap.fitBounds(places.getBounds())
