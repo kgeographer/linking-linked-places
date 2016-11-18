@@ -7,7 +7,7 @@ module.exports = {
   },
 
   dist: {
-    src: ['src/stylesheets/index.less'],
+    src: ['src/stylesheets/index.less','src/stylesheets/typeahead.css'],
     dest: '<%= site %>/style.css'
   }
 

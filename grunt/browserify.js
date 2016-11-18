@@ -1,5 +1,4 @@
 
-
 module.exports = {
 
   options: {
@@ -8,7 +7,8 @@ module.exports = {
 
       ['babelify', {
         // presets: ['stage-1']
-        presets: ['es2015', 'stage-1']
+        presets: ['es2015']
+        // presets: ['latest']
       }],
 
       ['brfs']
@@ -23,7 +23,8 @@ module.exports = {
   },
 
   dist: {
-    src: ['src/javascripts/map_tt.js','src/javascripts/lookahead.js'],
+    // src: ['src/javascripts/map_tt.js','src/javascripts/lookahead.js'],
+    src: ['src/javascripts/map_tt.js'],
     dest: '<%= site %>/script.js'
   }
 

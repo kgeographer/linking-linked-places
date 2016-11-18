@@ -1,13 +1,16 @@
 var url = require('url'),
-    mb = require('mapbox.js'),
-    querystring = require('querystring'),
-    typeahead = require('typeahead')
+    $ = require('jquery'),
+    querystring = require('querystring')
+require('bootstrap')
+require('mapbox.js')
 
+// import 'lib/typeahead';
+import './bloodhound.js';
+
+// window.typeahead = typeahead;
 // require('@turf/centroid')
 // require('@turf/buffer')
-// import $ from 'jquery'
-// import bs from 'bootstrap'
-// t = require('bootstrap')
+
 window.parsedUrl = url.parse(window.location.href, true, true)
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // window.q = querystring;
@@ -31,14 +34,14 @@ $(function() {
   })
   $(".data-header").html(searchParams['d'])
 
-  $('.typeahead').typeahead({
-    minLength: 3,
-    highlight: true
-  },
-  {
-    name: 'my-dataset',
-    source: mySource
-  });
+  // $('.typeahead').typeahead({
+  //   minLength: 3,
+  //   highlight: true
+  // },
+  // {
+  //   name: 'my-dataset',
+  //   source: mySource
+  // });
 });
 
 window.midpoint = function(ts,type) {
