@@ -35,6 +35,8 @@ $('#bloodhound .typeahead').typeahead({
 
 $(".typeahead").on("typeahead:select", function(e,obj){
   console.log(obj)
+  $("#results h3").html(obj.toponym)
+  $("#results_inset").html("<p><b>Alt name(s)</b>: " + obj.altnames + "</p>")
   // $('.typeahead').typeahead('val')
   // value = $('input.search-input').val();
   // console.log(data)

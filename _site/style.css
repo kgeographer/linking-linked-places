@@ -19,21 +19,26 @@ body {
   background: aliceblue;
 }
 #bloodhound {
-  padding: 8px;
+  width: 80%;
+  margin: 4px 18px;
 }
-.mypanel {
+#results {
+  width: 90%;
+  margin: 0 auto;
+}
+.panel {
   position: absolute;
   z-index: 5;
   bottom: 21%;
   width: 250px;
   font-family: Verdana, Geneva, sans-serif;
 }
-.mypanel h3 {
+.panel h3 {
   margin: 4px 0;
   text-align: center;
   color: #336699;
 }
-.search {
+.left-panel {
   left: 40px;
   top: 10px;
   background: gainsboro;
@@ -97,7 +102,7 @@ body {
 .typeahead,
 .tt-query,
 .tt-hint {
-  width: 200px;
+  width: 180px;
   height: 20px;
   padding: 4px 12px;
   font-size: 14px;
@@ -123,7 +128,7 @@ body {
   color: #999;
 }
 .tt-menu {
-  width: 200px;
+  width: 180px;
   margin: 6px 0;
   padding: 3px 0;
   background-color: #fff;

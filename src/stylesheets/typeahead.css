@@ -1,7 +1,7 @@
 .typeahead,
 .tt-query,
 .tt-hint {
-  width: 200px;
+  width: 180px;
   height: 20px;
   padding: 4px 12px;
   font-size: 14px;
@@ -32,7 +32,7 @@
 }
 
 .tt-menu {
-  width: 200px;
+  width: 180px;
   margin: 6px 0;
   padding: 3px 0;
   background-color: #fff;
