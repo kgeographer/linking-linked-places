@@ -237,8 +237,8 @@ function startMapM(dataset){
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
 
   // AWMC tiles in mapbox
-  window.ttmap = L.mapbox.map('map') // don't load basemap
-  // window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+  // window.ttmap = L.mapbox.map('map') // don't load basemap
+  window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
 
   /*  read a single FeatureCollection of
       Places (geometry.type == Point), and
