@@ -6,8 +6,8 @@ require('mapbox.js')
 
 // import 'lib/typeahead';
 import './bloodhound.js';
+// import '../../node_modules/bootstrap/js/dropdown.js'
 
-// window.typeahead = typeahead;
 // require('@turf/centroid')
 // require('@turf/buffer')
 
@@ -33,7 +33,12 @@ $(function() {
     $("#data").toggle("fast")
   })
   $(".data-header").html(searchParams['d'])
-
+  $('.dropdown-menu a').click(function(e){
+    e.preventDefault()
+    console.log($(this).attr('set'))
+    let dest = 'http://'+location.host+'/?d='+$(this).attr('set')
+    location.href = dest
+  });
   // $('.typeahead').typeahead({
   //   minLength: 3,
   //   highlight: true
