@@ -273,7 +273,10 @@ function startMapM(dataset){
               weight: 1
             })
             // console.log(placeFeature)
-            placeFeature.bindPopup(layer.feature.properties.toponym)
+            placeFeature.bindPopup(layer.feature.properties.toponym+
+              '<br/><a href="'+layer.feature.properties.gazetteer_uri+
+              '" target="_blank">gazetteer record</a>'
+              )
             pointFeatures.push(placeFeature)
             var pid = layer.feature.properties.place_id
             idToFeature.places[pid] = placeFeature

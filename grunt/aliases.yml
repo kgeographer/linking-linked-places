@@ -6,7 +6,7 @@ compile:
 
 compile:min:
   - compile
-  # - uglify
+  - uglify
   - cssmin
 
 server:
