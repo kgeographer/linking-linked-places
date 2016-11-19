@@ -1,20 +1,16 @@
-var thestates = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
-  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
-  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
-  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
-  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
-  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
-  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
-  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
-  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
-];
-var states = new Bloodhound({
-  datumTokenizer: Bloodhound.tokenizers.whitespace,
+require('handlebars')
+
+var toponyms = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace(['toponym','altnames']),
+  // datumTokenizer: Bloodhound.tokenizers.whitespace,
   queryTokenizer: Bloodhound.tokenizers.whitespace,
-  // `states` is an array of state names defined in "The Basics"
-  local: thestates
+  local: placenames
   // local: states
 });
+
+// var source   = $("#place-template").html();
+var template = Handlebars.compile($("#place-template").html());
+
 
 $('#bloodhound .typeahead').typeahead({
   hint: true,
@@ -22,6 +18,24 @@ $('#bloodhound .typeahead').typeahead({
   minLength: 1
 },
 {
-  name: 'states',
-  source: states
+  name: 'places',
+  limit: 10,
+  display: 'value',
+  // display: 'label',
+  source: toponyms,
+  templates: {
+    empty: [
+      '<div class="empty-message">',
+        'no matches',
+      '</div>'
+      ].join('\n'),
+    suggestion: template
+  }
 });
+
+$(".typeahead").on("typeahead:select", function(e,obj){
+  console.log(obj)
+  // $('.typeahead').typeahead('val')
+  // value = $('input.search-input').val();
+  // console.log(data)
+})

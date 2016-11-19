@@ -34,8 +34,8 @@ body {
   color: #336699;
 }
 .search {
-  left: 0;
-  top: 68px;
+  left: 40px;
+  top: 10px;
   background: gainsboro;
 }
 #data {
