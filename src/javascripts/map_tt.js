@@ -35,8 +35,9 @@ $(function() {
   $(".data-header").html(searchParams['d'])
   $('.dropdown-menu a').click(function(e){
     e.preventDefault()
-    console.log($(this).attr('set'))
-    let dest = 'http://'+location.host+location.pathname+'?d='+$(this).attr('set')
+    // console.log($(this).attr('set'))
+    let dest = 'https://'+location.host+location.pathname+'?d='+$(this).attr('set')
+    // console.log(dest)
     location.href = dest
   });
   // $('.typeahead').typeahead({
