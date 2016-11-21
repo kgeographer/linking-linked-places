@@ -4,9 +4,9 @@ var url = require('url'),
 require('bootstrap')
 require('mapbox.js')
 
-// import 'lib/typeahead';
+// import add'l app JavaScript
 import './bloodhound.js';
-// import '../../node_modules/bootstrap/js/dropdown.js'
+import './elastic.js';
 
 // require('@turf/centroid')
 // require('@turf/buffer')
@@ -35,10 +35,7 @@ $(function() {
   $(".data-header").html(searchParams['d'])
   $('.dropdown-menu a').click(function(e){
     e.preventDefault()
-    // console.log($(this).attr('set'))
-    let dest = 'https://'+location.host+location.pathname+'?d='+$(this).attr('set')
-    // console.log(dest)
-    location.href = dest
+    location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
   });
 });
 
@@ -55,7 +52,7 @@ window.midpoint = function(ts,type) {
 }
 
 window.initTimeline = function(events) {
-  console.log('tlMidpoint',tlMidpoint)
+  // console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
   // console.log('in initTimeline()', JSON.stringify(events.events[0]))
   window.eventSrc = new Timeline.DefaultEventSource(0);
