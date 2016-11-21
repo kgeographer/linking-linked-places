@@ -40,14 +40,6 @@ $(function() {
     // console.log(dest)
     location.href = dest
   });
-  // $('.typeahead').typeahead({
-  //   minLength: 3,
-  //   highlight: true
-  // },
-  // {
-  //   name: 'my-dataset',
-  //   source: mySource
-  // });
 });
 
 window.midpoint = function(ts,type) {
@@ -243,8 +235,8 @@ function startMapM(dataset){
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
 
   // AWMC tiles in mapbox
-  // window.ttmap = L.mapbox.map('map') // don't load basemap
   window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+  // window.ttmap = L.mapbox.map('map') // don't load basemap
 
   /*  read a single FeatureCollection of
       Places (geometry.type == Point), and
@@ -342,7 +334,7 @@ function startMapM(dataset){
       window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
       initTimeline(eventsObj)
     })
-
+}
 
 /* xuanzang
         "when": {
@@ -409,17 +401,3 @@ function startMapM(dataset){
 //     },
 //     {}
 //   ]
-}
-// function startMapL(){
-//   // Leaflet style
-//   let ttmap = L.map('map')
-//     .setView([50.064191736659104, 15.556640624999998], 4);
-//   window.featureLayer = L.geoJson.ajax('data/polands.tt_feature-when.json',{
-//     onEachFeature: function(feature, layer){
-//       layer.bindPopup('foo, dammit')
-//     }
-//   })
-//   .addTo(ttmap);
-//
-//   initTimeline(eventsObj);
-// }
