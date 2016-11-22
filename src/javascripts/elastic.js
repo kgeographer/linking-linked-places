@@ -14,19 +14,40 @@ client.ping({
   }
 });
 
-client.search({
-  index: 'oi',
-  type: 'places',
-  body: {
-    query: {
-      match: {
-        label: 'Paris'
-      }
-    }
+// Load in our dependencies
+var ElasticsearchCompletion = require('elasticsearch-completion');
+
+// Initialize our query completion mechanism
+var esCompletion = new ElasticsearchCompletion([
+  'toponym',
+  'gazetteer_label'
+]);
+
+// Bind our typeahead
+$('#bloodhound').typeahead({
+  minLength: 0,
+  highlight: true
+}, {
+  name: 'elasticsearch',
+  source: function (query, syncResults) {
+    // Resolve and return matching queries
+    syncResults(esCompletion.match(query));
   }
-}).then(function (resp) {
-    var hits = resp.hits.hits;
-    console.log('hits: ', hits)
-}, function (err) {
-    console.trace(err.message);
 });
+
+// client.search({
+//   index: 'oi',
+//   type: 'places',
+//   body: {
+//     query: {
+//       match: {
+//         label: 'france'
+//       }
+//     }
+//   }
+// }).then(function (resp) {
+//     window.hits = resp.hits.hits;
+//     console.log('hits: ', hits)
+// }, function (err) {
+//     console.trace(err.message);
+// });

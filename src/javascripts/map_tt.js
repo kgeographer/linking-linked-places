@@ -6,7 +6,7 @@ require('mapbox.js')
 
 // import add'l app JavaScript
 import './bloodhound.js';
-import './elastic.js';
+// import './elastic.js';
 
 // require('@turf/centroid')
 // require('@turf/buffer')

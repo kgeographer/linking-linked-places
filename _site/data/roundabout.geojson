@@ -4,33 +4,25 @@
       "2016-09-10",
       "",
       "",
-      "2016-10-25",
+      "2017-10-28",
       "end date uncertain"
     ]
-  },
-  "attributes": {
-    "contributors": "[K. Grossner]",
-    "pub_date": "2016",
-    "timespan": "[2016-09-10,,,2017-05,end date uncertain]",
-    "description": "An 8-month sojourn of geohumanities computing and tourism",
-    "title": "Roundabout, a circumnavigation of the globe, 2016-2017CE",
-    "segmentType": "journey"
   },
   "type": "FeatureCollection",
   "features": [
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Palo Alto",
-        "geonames_id": "5380748",
-        "nights": "",
-        "toponym": "Palo Alto, CA",
-        "gazetteer_uri": "http://www.geonames.org/5380748"
-      },
-      "id": "ra0001",
       "label": "Palo Alto, CA",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/5380748",
+        "comment": "",
+        "toponym": "Palo Alto, CA",
+        "gazetteer_label": "Palo Alto",
+        "geonames_id": "5380748"
+      },
       "type": "Feature",
+      "id": "ra0001",
       "geometry": {
         "coordinates": [
           -122.14302,
@@ -40,18 +32,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Fernley",
-        "geonames_id": "5504003",
-        "nights": "1",
-        "toponym": "Fernley, NV",
-        "gazetteer_uri": "http://www.geonames.org/5504003"
-      },
-      "id": "ra0002",
       "label": "Fernley, NV",
+      "properties": {
+        "nights": "1",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/5504003",
+        "comment": "",
+        "toponym": "Fernley, NV",
+        "gazetteer_label": "Fernley",
+        "geonames_id": "5504003"
+      },
       "type": "Feature",
+      "id": "ra0002",
       "geometry": {
         "coordinates": [
           -119.25183,
@@ -61,18 +53,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Delta",
-        "geonames_id": "5538080",
-        "nights": "1",
-        "toponym": "Delta, UT",
-        "gazetteer_uri": "http://www.geonames.org/5538080"
-      },
-      "id": "ra0003",
       "label": "Delta, UT",
+      "properties": {
+        "nights": "1",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/5538080",
+        "comment": "",
+        "toponym": "Delta, UT",
+        "gazetteer_label": "Delta",
+        "geonames_id": "5538080"
+      },
       "type": "Feature",
+      "id": "ra0003",
       "geometry": {
         "coordinates": [
           -112.57717,
@@ -82,18 +74,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Craig",
-        "geonames_id": "5576064",
-        "nights": "1",
-        "toponym": "Craig, CO",
-        "gazetteer_uri": "http://www.geonames.org/5576064"
-      },
-      "id": "ra0004",
       "label": "Craig, CO",
+      "properties": {
+        "nights": "1",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/5576064",
+        "comment": "",
+        "toponym": "Craig, CO",
+        "gazetteer_label": "Craig",
+        "geonames_id": "5576064"
+      },
       "type": "Feature",
+      "id": "ra0004",
       "geometry": {
         "coordinates": [
           -107.54645,
@@ -103,18 +95,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Fort Collins",
-        "geonames_id": "5577147",
-        "nights": "1",
-        "toponym": "Fort Collins, CO",
-        "gazetteer_uri": "http://www.geonames.org/5577147"
-      },
-      "id": "ra0005",
       "label": "Fort Collins, CO",
+      "properties": {
+        "nights": "1",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/5577147",
+        "comment": "",
+        "toponym": "Fort Collins, CO",
+        "gazetteer_label": "Fort Collins",
+        "geonames_id": "5577147"
+      },
       "type": "Feature",
+      "id": "ra0005",
       "geometry": {
         "coordinates": [
           -105.08442,
@@ -124,18 +116,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Denver",
-        "geonames_id": "5419384",
-        "nights": "4",
-        "toponym": "Denver, CO",
-        "gazetteer_uri": "http://www.geonames.org/5419384"
-      },
-      "id": "ra0006",
       "label": "Denver, CO",
+      "properties": {
+        "nights": "4",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/5419384",
+        "comment": "",
+        "toponym": "Denver, CO",
+        "gazetteer_label": "Denver",
+        "geonames_id": "5419384"
+      },
       "type": "Feature",
+      "id": "ra0006",
       "geometry": {
         "coordinates": [
           -104.9847,
@@ -145,18 +137,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Cambridge",
-        "geonames_id": "4931972",
-        "nights": "3",
-        "toponym": "Cambridge, MA",
-        "gazetteer_uri": "http://www.geonames.org/4931972"
-      },
-      "id": "ra0007",
       "label": "Cambridge, MA",
+      "properties": {
+        "nights": "3",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/4931972",
+        "comment": "",
+        "toponym": "Cambridge, MA",
+        "gazetteer_label": "Cambridge",
+        "geonames_id": "4931972"
+      },
       "type": "Feature",
+      "id": "ra0007",
       "geometry": {
         "coordinates": [
           -71.10561,
@@ -166,18 +158,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Paris",
-        "geonames_id": "2988507",
-        "nights": "",
-        "toponym": "Paris, France",
-        "gazetteer_uri": "http://www.geonames.org/2988507"
-      },
-      "id": "ra0008",
       "label": "Paris, France",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/2988507",
+        "comment": "",
+        "toponym": "Paris, France",
+        "gazetteer_label": "Paris",
+        "geonames_id": "2988507"
+      },
       "type": "Feature",
+      "id": "ra0008",
       "geometry": {
         "coordinates": [
           2.3488,
@@ -187,18 +179,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Bourg-en-Bresse",
-        "geonames_id": "3031009",
-        "nights": "1",
-        "toponym": "Bourg-en-Bresse, France",
-        "gazetteer_uri": "http://www.geonames.org/3031009"
-      },
-      "id": "ra0009",
       "label": "Bourg-en-Bresse, France",
+      "properties": {
+        "nights": "1",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3031009",
+        "comment": "",
+        "toponym": "Bourg-en-Bresse, France",
+        "gazetteer_label": "Bourg-en-Bresse",
+        "geonames_id": "3031009"
+      },
       "type": "Feature",
+      "id": "ra0009",
       "geometry": {
         "coordinates": [
           5.2258,
@@ -208,18 +200,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Milan",
-        "geonames_id": "3173435",
-        "nights": "1",
-        "toponym": "Milan, Italy",
-        "gazetteer_uri": "http://www.geonames.org/3173435"
-      },
-      "id": "ra0010",
       "label": "Milan, Italy",
+      "properties": {
+        "nights": "1",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3173435",
+        "comment": "",
+        "toponym": "Milan, Italy",
+        "gazetteer_label": "Milan",
+        "geonames_id": "3173435"
+      },
       "type": "Feature",
+      "id": "ra0010",
       "geometry": {
         "coordinates": [
           9.18951,
@@ -229,18 +221,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Rijeka",
-        "geonames_id": "3191648",
-        "nights": "2",
-        "toponym": "Rijeka, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3191648"
-      },
-      "id": "ra0011",
       "label": "Rijeka, Croatia",
+      "properties": {
+        "nights": "2",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3191648",
+        "comment": "",
+        "toponym": "Rijeka, Croatia",
+        "gazetteer_label": "Rijeka",
+        "geonames_id": "3191648"
+      },
       "type": "Feature",
+      "id": "ra0011",
       "geometry": {
         "coordinates": [
           14.40917,
@@ -250,18 +242,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Zagreb",
-        "geonames_id": "3186886",
-        "nights": "2",
-        "toponym": "Zagreb, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3186886"
-      },
-      "id": "ra0012",
       "label": "Zagreb, Croatia",
+      "properties": {
+        "nights": "2",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3186886",
+        "comment": "",
+        "toponym": "Zagreb, Croatia",
+        "gazetteer_label": "Zagreb",
+        "geonames_id": "3186886"
+      },
       "type": "Feature",
+      "id": "ra0012",
       "geometry": {
         "coordinates": [
           15.97798,
@@ -271,18 +263,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Sarajevo",
-        "geonames_id": "3191281",
-        "nights": "2",
-        "toponym": "Sarajevo, Bosnia and Herzegovina",
-        "gazetteer_uri": "http://www.geonames.org/3191281"
-      },
-      "id": "ra0013",
       "label": "Sarajevo, Bosnia and Herzegovina",
+      "properties": {
+        "nights": "2",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3191281",
+        "comment": "",
+        "toponym": "Sarajevo, Bosnia and Herzegovina",
+        "gazetteer_label": "Sarajevo",
+        "geonames_id": "3191281"
+      },
       "type": "Feature",
+      "id": "ra0013",
       "geometry": {
         "coordinates": [
           18.35644,
@@ -292,18 +284,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Mostar",
-        "geonames_id": "3194828",
-        "nights": "2",
-        "toponym": "Mostar, Bosnia and Herzegovina",
-        "gazetteer_uri": "http://www.geonames.org/3194828"
-      },
-      "id": "ra0014",
       "label": "Mostar, Bosnia and Herzegovina",
+      "properties": {
+        "nights": "2",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3194828",
+        "comment": "",
+        "toponym": "Mostar, Bosnia and Herzegovina",
+        "gazetteer_label": "Mostar",
+        "geonames_id": "3194828"
+      },
       "type": "Feature",
+      "id": "ra0014",
       "geometry": {
         "coordinates": [
           17.80806,
@@ -313,18 +305,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Dubrovnik",
-        "geonames_id": "3201047",
-        "nights": "4",
-        "toponym": "Dubrovnik, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3201047"
-      },
-      "id": "ra0015",
       "label": "Dubrovnik, Croatia",
+      "properties": {
+        "nights": "4",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3201047",
+        "comment": "",
+        "toponym": "Dubrovnik, Croatia",
+        "gazetteer_label": "Dubrovnik",
+        "geonames_id": "3201047"
+      },
       "type": "Feature",
+      "id": "ra0015",
       "geometry": {
         "coordinates": [
           18.09216,
@@ -334,18 +326,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Kotor",
-        "geonames_id": "3197538",
-        "nights": "",
-        "toponym": "Kotor, Montenegro",
-        "gazetteer_uri": "http://www.geonames.org/3197538"
-      },
-      "id": "ra0016",
       "label": "Kotor, Montenegro",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3197538",
+        "comment": "",
+        "toponym": "Kotor, Montenegro",
+        "gazetteer_label": "Kotor",
+        "geonames_id": "3197538"
+      },
       "type": "Feature",
+      "id": "ra0016",
       "geometry": {
         "coordinates": [
           18.76825,
@@ -355,18 +347,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Split",
-        "geonames_id": "3190261",
-        "nights": "3",
-        "toponym": "Split, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3190261"
-      },
-      "id": "ra0017",
       "label": "Split, Croatia",
+      "properties": {
+        "nights": "3",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3190261",
+        "comment": "",
+        "toponym": "Split, Croatia",
+        "gazetteer_label": "Split",
+        "geonames_id": "3190261"
+      },
       "type": "Feature",
+      "id": "ra0017",
       "geometry": {
         "coordinates": [
           16.43915,
@@ -376,18 +368,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Trogir",
-        "geonames_id": "3188763",
-        "nights": "",
-        "toponym": "Trogir, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3188763"
-      },
-      "id": "ra0018",
       "label": "Trogir, Croatia",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3188763",
+        "comment": "",
+        "toponym": "Trogir, Croatia",
+        "gazetteer_label": "Trogir",
+        "geonames_id": "3188763"
+      },
       "type": "Feature",
+      "id": "ra0018",
       "geometry": {
         "coordinates": [
           16.250493,
@@ -397,18 +389,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Solin",
-        "geonames_id": "3190359",
-        "nights": "",
-        "toponym": "Solin, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3190359"
-      },
-      "id": "ra0019",
       "label": "Solin, Croatia",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3190359",
+        "comment": "",
+        "toponym": "Solin, Croatia",
+        "gazetteer_label": "Solin",
+        "geonames_id": "3190359"
+      },
       "type": "Feature",
+      "id": "ra0019",
       "geometry": {
         "coordinates": [
           16.49314,
@@ -418,18 +410,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Ancona",
-        "geonames_id": "3183089",
-        "nights": "",
-        "toponym": "Ancona, Italy",
-        "gazetteer_uri": "http://www.geonames.org/3183089"
-      },
-      "id": "ra0020",
       "label": "Ancona, Italy",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3183089",
+        "comment": "",
+        "toponym": "Ancona, Italy",
+        "gazetteer_label": "Ancona",
+        "geonames_id": "3183089"
+      },
       "type": "Feature",
+      "id": "ra0020",
       "geometry": {
         "coordinates": [
           13.50337,
@@ -439,18 +431,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Ascoli Piceno",
-        "geonames_id": "3182749",
-        "nights": "61",
-        "toponym": "Ascoli Piceno, Italy",
-        "gazetteer_uri": "http://www.geonames.org/3182749"
-      },
-      "id": "ra0021",
       "label": "Ascoli Piceno, Italy",
+      "properties": {
+        "nights": "61",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3182749",
+        "comment": "",
+        "toponym": "Ascoli Piceno, Italy",
+        "gazetteer_label": "Ascoli Piceno",
+        "geonames_id": "3182749"
+      },
       "type": "Feature",
+      "id": "ra0021",
       "geometry": {
         "coordinates": [
           13.57395,
@@ -460,18 +452,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Madrid",
-        "geonames_id": "3117735",
-        "nights": "",
-        "toponym": "Madrid, Spain",
-        "gazetteer_uri": "http://www.geonames.org/3117735"
-      },
-      "id": "ra0022",
       "label": "Madrid, Spain",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3117735",
+        "comment": "",
+        "toponym": "Madrid, Spain",
+        "gazetteer_label": "Madrid",
+        "geonames_id": "3117735"
+      },
       "type": "Feature",
+      "id": "ra0022",
       "geometry": {
         "coordinates": [
           -3.70256,
@@ -481,18 +473,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Edinburgh",
-        "geonames_id": "2650225",
-        "nights": "",
-        "toponym": "Edinburgh, Scotland",
-        "gazetteer_uri": "http://www.geonames.org/2650225"
-      },
-      "id": "ra0023",
       "label": "Edinburgh, Scotland",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/2650225",
+        "comment": "",
+        "toponym": "Edinburgh, Scotland",
+        "gazetteer_label": "Edinburgh",
+        "geonames_id": "2650225"
+      },
       "type": "Feature",
+      "id": "ra0023",
       "geometry": {
         "coordinates": [
           -3.19648,
@@ -502,18 +494,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Bangkok",
-        "geonames_id": "1609350",
-        "nights": "",
-        "toponym": "Bangkok, Thailand",
-        "gazetteer_uri": "http://www.geonames.org/1609350"
-      },
-      "id": "ra0024",
       "label": "Bangkok, Thailand",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/1609350",
+        "comment": "",
+        "toponym": "Bangkok, Thailand",
+        "gazetteer_label": "Bangkok",
+        "geonames_id": "1609350"
+      },
       "type": "Feature",
+      "id": "ra0024",
       "geometry": {
         "coordinates": [
           100.50144,
@@ -523,18 +515,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Korenica",
-        "geonames_id": "3189076",
-        "nights": "",
-        "toponym": "Korenica, Croatia",
-        "gazetteer_uri": "http://www.geonames.org/3189076"
-      },
-      "id": "ra0025",
       "label": "Korenica, Croatia",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3189076",
+        "comment": "",
+        "toponym": "Korenica, Croatia",
+        "gazetteer_label": "Korenica",
+        "geonames_id": "3189076"
+      },
       "type": "Feature",
+      "id": "ra0025",
       "geometry": {
         "coordinates": [
           15.70972,
@@ -544,18 +536,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Sarnano",
-        "geonames_id": "3167119",
-        "nights": "",
-        "toponym": "Sarnano, Italy",
-        "gazetteer_uri": "http://www.geonames.org/3167119"
-      },
-      "id": "ra0026",
       "label": "Sarnano, Italy",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3167119",
+        "comment": "",
+        "toponym": "Sarnano, Italy",
+        "gazetteer_label": "Sarnano",
+        "geonames_id": "3167119"
+      },
       "type": "Feature",
+      "id": "ra0026",
       "geometry": {
         "coordinates": [
           13.29818,
@@ -565,18 +557,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Grottammare",
-        "geonames_id": "3175771",
-        "nights": "",
-        "toponym": "Grottammare, Italy",
-        "gazetteer_uri": "http://www.geonames.org/3175771"
-      },
-      "id": "ra0027",
       "label": "Grottammare, Italy",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3175771",
+        "comment": "",
+        "toponym": "Grottammare, Italy",
+        "gazetteer_label": "Grottammare",
+        "geonames_id": "3175771"
+      },
       "type": "Feature",
+      "id": "ra0027",
       "geometry": {
         "coordinates": [
           13.86765,
@@ -586,18 +578,18 @@
       }
     },
     {
-      "properties": {
-        "collection": "ra",
-        "comment": "",
-        "gazetteer_label": "Offida",
-        "geonames_id": "3172104",
-        "nights": "",
-        "toponym": "Offida, Italy",
-        "gazetteer_uri": "http://www.geonames.org/3172104"
-      },
-      "id": "ra0028",
       "label": "Offida, Italy",
+      "properties": {
+        "nights": "",
+        "collection": "ra",
+        "gazetteer_uri": "http://www.geonames.org/3172104",
+        "comment": "",
+        "toponym": "Offida, Italy",
+        "gazetteer_label": "Offida",
+        "geonames_id": "3172104"
+      },
       "type": "Feature",
+      "id": "ra0028",
       "geometry": {
         "coordinates": [
           13.69773,
@@ -611,19 +603,11 @@
         "collection": "ra",
         "route_id": "6001"
       },
-      "when": {},
       "type": "Feature",
+      "when": {},
       "geometry": {
         "geometries": [
           {
-            "properties": {
-              "target": "ra0002",
-              "label": "Palo Alto > Fernley",
-              "segment_id": "6001-1",
-              "source": "ra0001",
-              "follows": "",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 -122.14302,
@@ -634,24 +618,24 @@
                 39.60797
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "",
+              "duration": "",
               "timespan": [
                 "2016-09-10"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-1",
+              "label": "Palo Alto > Fernley",
+              "source": "ra0001",
+              "mode": "auto",
+              "follows": "",
+              "target": "ra0002"
+            }
           },
           {
-            "properties": {
-              "target": "ra0003",
-              "label": "Fernley > Delta",
-              "segment_id": "6001-2",
-              "source": "ra0002",
-              "follows": "6001-1",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 -119.25183,
@@ -662,24 +646,24 @@
                 39.35218
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-1",
+              "duration": "",
               "timespan": [
                 "2016-09-11"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-2",
+              "label": "Fernley > Delta",
+              "source": "ra0002",
+              "mode": "auto",
+              "follows": "6001-1",
+              "target": "ra0003"
+            }
           },
           {
-            "properties": {
-              "target": "ra0004",
-              "label": "Delta > Craig",
-              "segment_id": "6001-3",
-              "source": "ra0003",
-              "follows": "6001-2",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 -112.57717,
@@ -690,24 +674,24 @@
                 40.51525
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-2",
+              "duration": "",
               "timespan": [
                 "2016-09-12"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-3",
+              "label": "Delta > Craig",
+              "source": "ra0003",
+              "mode": "auto",
+              "follows": "6001-2",
+              "target": "ra0004"
+            }
           },
           {
-            "properties": {
-              "target": "ra0005",
-              "label": "Craig > Fort Collins",
-              "segment_id": "6001-4",
-              "source": "ra0004",
-              "follows": "6001-3",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 -107.54645,
@@ -718,24 +702,24 @@
                 40.58526
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-3",
+              "duration": "",
               "timespan": [
                 "2016-09-13"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-4",
+              "label": "Craig > Fort Collins",
+              "source": "ra0004",
+              "mode": "auto",
+              "follows": "6001-3",
+              "target": "ra0005"
+            }
           },
           {
-            "properties": {
-              "target": "ra0006",
-              "label": "Fort Collins > Denver",
-              "segment_id": "6001-5",
-              "source": "ra0005",
-              "follows": "6001-4",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 -105.08442,
@@ -746,24 +730,24 @@
                 39.73915
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-4",
+              "duration": "",
               "timespan": [
                 "2016-09-14"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-5",
+              "label": "Fort Collins > Denver",
+              "source": "ra0005",
+              "mode": "auto",
+              "follows": "6001-4",
+              "target": "ra0006"
+            }
           },
           {
-            "properties": {
-              "target": "ra0007",
-              "label": "Denver > Cambridge",
-              "segment_id": "6001-6",
-              "source": "ra0006",
-              "follows": "6001-5",
-              "mode": "air"
-            },
             "coordinates": [
               [
                 -104.9847,
@@ -774,24 +758,24 @@
                 42.3751
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-5",
+              "duration": "",
               "timespan": [
                 "2016-09-18"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-6",
+              "label": "Denver > Cambridge",
+              "source": "ra0006",
+              "mode": "air",
+              "follows": "6001-5",
+              "target": "ra0007"
+            }
           },
           {
-            "properties": {
-              "target": "ra0008",
-              "label": "Cambridge > Paris",
-              "segment_id": "6001-7",
-              "source": "ra0007",
-              "follows": "6001-6",
-              "mode": "air"
-            },
             "coordinates": [
               [
                 -71.10561,
@@ -802,24 +786,24 @@
                 48.85341
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-6",
+              "duration": "",
               "timespan": [
                 "2016-09-21"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-7",
+              "label": "Cambridge > Paris",
+              "source": "ra0007",
+              "mode": "air",
+              "follows": "6001-6",
+              "target": "ra0008"
+            }
           },
           {
-            "properties": {
-              "target": "ra0009",
-              "label": "Paris > Bourg-en-Bresse",
-              "segment_id": "6001-8",
-              "source": "ra0008",
-              "follows": "6001-7",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 2.3488,
@@ -830,24 +814,24 @@
                 46.20574
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-7",
+              "duration": "",
               "timespan": [
                 "2016-09-22"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-8",
+              "label": "Paris > Bourg-en-Bresse",
+              "source": "ra0008",
+              "mode": "auto",
+              "follows": "6001-7",
+              "target": "ra0009"
+            }
           },
           {
-            "properties": {
-              "target": "ra0010",
-              "label": "Bourg-en-Bresse > Milan",
-              "segment_id": "6001-9",
-              "source": "ra0009",
-              "follows": "6001-8",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 5.2258,
@@ -858,24 +842,24 @@
                 45.46427
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-8",
+              "duration": "",
               "timespan": [
                 "2016-09-23"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-9",
+              "label": "Bourg-en-Bresse > Milan",
+              "source": "ra0009",
+              "mode": "auto",
+              "follows": "6001-8",
+              "target": "ra0010"
+            }
           },
           {
-            "properties": {
-              "target": "ra0011",
-              "label": "Milan > Rijeka",
-              "segment_id": "6001-10",
-              "source": "ra0010",
-              "follows": "6001-9",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 9.18951,
@@ -886,24 +870,24 @@
                 45.34306
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-9",
+              "duration": "",
               "timespan": [
                 "2016-09-24"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-10",
+              "label": "Milan > Rijeka",
+              "source": "ra0010",
+              "mode": "auto",
+              "follows": "6001-9",
+              "target": "ra0011"
+            }
           },
           {
-            "properties": {
-              "target": "ra0012",
-              "label": "Rijeka > Zagreb",
-              "segment_id": "6001-11",
-              "source": "ra0011",
-              "follows": "6001-10",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 14.40917,
@@ -914,24 +898,24 @@
                 45.81444
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-10",
+              "duration": "",
               "timespan": [
                 "2016-09-26"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-11",
+              "label": "Rijeka > Zagreb",
+              "source": "ra0011",
+              "mode": "auto",
+              "follows": "6001-10",
+              "target": "ra0012"
+            }
           },
           {
-            "properties": {
-              "target": "ra0025",
-              "label": "Zagreb > Korenica",
-              "segment_id": "6001-12",
-              "source": "ra0012",
-              "follows": "6001-11",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 15.97798,
@@ -942,24 +926,24 @@
                 44.7439
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-11",
+              "duration": "",
               "timespan": [
                 "2016-09-28"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-12",
+              "label": "Zagreb > Korenica",
+              "source": "ra0012",
+              "mode": "auto",
+              "follows": "6001-11",
+              "target": "ra0025"
+            }
           },
           {
-            "properties": {
-              "target": "ra0013",
-              "label": "Korenica > Sarajevo",
-              "segment_id": "6001-13",
-              "source": "ra0025",
-              "follows": "6001-12",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 15.70972,
@@ -970,24 +954,24 @@
                 43.84864
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-12",
+              "duration": "",
               "timespan": [
                 "2016-09-30"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-13",
+              "label": "Korenica > Sarajevo",
+              "source": "ra0025",
+              "mode": "auto",
+              "follows": "6001-12",
+              "target": "ra0013"
+            }
           },
           {
-            "properties": {
-              "target": "ra0014",
-              "label": "Sarajevo > Mostar",
-              "segment_id": "6001-14",
-              "source": "ra0013",
-              "follows": "6001-13",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 18.35644,
@@ -998,24 +982,24 @@
                 43.34333
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-13",
+              "duration": "",
               "timespan": [
                 "2016-10-02"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-14",
+              "label": "Sarajevo > Mostar",
+              "source": "ra0013",
+              "mode": "auto",
+              "follows": "6001-13",
+              "target": "ra0014"
+            }
           },
           {
-            "properties": {
-              "target": "ra0015",
-              "label": "Mostar > Dubrovnik",
-              "segment_id": "6001-15",
-              "source": "ra0014",
-              "follows": "6001-14",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 17.80806,
@@ -1026,80 +1010,80 @@
                 42.64807
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-14",
+              "duration": "",
               "timespan": [
                 "2016-10-04"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-15",
+              "label": "Mostar > Dubrovnik",
+              "source": "ra0014",
+              "mode": "auto",
+              "follows": "6001-14",
+              "target": "ra0015"
+            }
           },
           {
+            "coordinates": [
+              [
+                18.09216,
+                42.64807
+              ],
+              [
+                18.76825,
+                42.42067
+              ]
+            ],
+            "type": "LineString",
+            "when": {
+              "follows": "6001-15",
+              "duration": "",
+              "timespan": [
+                "2016-10-06"
+              ]
+            },
             "properties": {
-              "target": "ra0016",
-              "label": "Dubrovnik > Kotor",
               "segment_id": "6001-16",
+              "label": "Dubrovnik > Kotor",
               "source": "ra0015",
+              "mode": "auto",
               "follows": "6001-15",
-              "mode": "auto"
-            },
+              "target": "ra0016"
+            }
+          },
+          {
             "coordinates": [
-              [
-                18.09216,
-                42.64807
-              ],
               [
                 18.76825,
                 42.42067
+              ],
+              [
+                18.09216,
+                42.64807
               ]
             ],
+            "type": "LineString",
             "when": {
+              "follows": "6001-16",
               "duration": "",
-              "follows": "6001-15",
               "timespan": [
                 "2016-10-06"
               ]
             },
-            "type": "LineString"
-          },
-          {
             "properties": {
-              "target": "ra0015",
-              "label": "Kotor > Dubrovnik",
               "segment_id": "6001-17",
+              "label": "Kotor > Dubrovnik",
               "source": "ra0016",
+              "mode": "auto",
               "follows": "6001-16",
-              "mode": "auto"
-            },
-            "coordinates": [
-              [
-                18.76825,
-                42.42067
-              ],
-              [
-                18.09216,
-                42.64807
-              ]
-            ],
-            "when": {
-              "duration": "",
-              "follows": "6001-16",
-              "timespan": [
-                "2016-10-06"
-              ]
-            },
-            "type": "LineString"
+              "target": "ra0015"
+            }
           },
           {
-            "properties": {
-              "target": "ra0017",
-              "label": "Dubrovnik > Split",
-              "segment_id": "6001-18",
-              "source": "ra0015",
-              "follows": "6001-17",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 18.09216,
@@ -1110,80 +1094,80 @@
                 43.50891
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-17",
+              "duration": "",
               "timespan": [
                 "2016-10-08"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-18",
+              "label": "Dubrovnik > Split",
+              "source": "ra0015",
+              "mode": "auto",
+              "follows": "6001-17",
+              "target": "ra0017"
+            }
           },
           {
+            "coordinates": [
+              [
+                16.43915,
+                43.50891
+              ],
+              [
+                16.250493,
+                43.516829
+              ]
+            ],
+            "type": "LineString",
+            "when": {
+              "follows": "6001-18",
+              "duration": "",
+              "timespan": [
+                "2016-10-11"
+              ]
+            },
             "properties": {
-              "target": "ra0018",
-              "label": "Split > Trogir",
               "segment_id": "6001-19",
+              "label": "Split > Trogir",
               "source": "ra0017",
+              "mode": "auto",
               "follows": "6001-18",
-              "mode": "auto"
-            },
+              "target": "ra0018"
+            }
+          },
+          {
             "coordinates": [
-              [
-                16.43915,
-                43.50891
-              ],
               [
                 16.250493,
                 43.516829
+              ],
+              [
+                16.49314,
+                43.5432
               ]
             ],
+            "type": "LineString",
             "when": {
+              "follows": "6001-19",
               "duration": "",
-              "follows": "6001-18",
               "timespan": [
                 "2016-10-11"
               ]
             },
-            "type": "LineString"
-          },
-          {
             "properties": {
-              "target": "ra0019",
-              "label": "Trogir > Solin",
               "segment_id": "6001-20",
+              "label": "Trogir > Solin",
               "source": "ra0018",
+              "mode": "auto",
               "follows": "6001-19",
-              "mode": "auto"
-            },
-            "coordinates": [
-              [
-                16.250493,
-                43.516829
-              ],
-              [
-                16.49314,
-                43.5432
-              ]
-            ],
-            "when": {
-              "duration": "",
-              "follows": "6001-19",
-              "timespan": [
-                "2016-10-11"
-              ]
-            },
-            "type": "LineString"
+              "target": "ra0019"
+            }
           },
           {
-            "properties": {
-              "target": "ra0017",
-              "label": "Solin > Split",
-              "segment_id": "6001-21",
-              "source": "ra0019",
-              "follows": "6001-20",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 16.49314,
@@ -1194,24 +1178,24 @@
                 43.50891
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-20",
+              "duration": "",
               "timespan": [
                 "2016-10-11"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-21",
+              "label": "Solin > Split",
+              "source": "ra0019",
+              "mode": "auto",
+              "follows": "6001-20",
+              "target": "ra0017"
+            }
           },
           {
-            "properties": {
-              "target": "ra0020",
-              "label": "Split > Ancona",
-              "segment_id": "6001-22",
-              "source": "ra0017",
-              "follows": "6001-21",
-              "mode": "ferry"
-            },
             "coordinates": [
               [
                 16.43915,
@@ -1222,24 +1206,24 @@
                 43.5942
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-21",
+              "duration": "",
               "timespan": [
                 "2016-10-11"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-22",
+              "label": "Split > Ancona",
+              "source": "ra0017",
+              "mode": "ferry",
+              "follows": "6001-21",
+              "target": "ra0020"
+            }
           },
           {
-            "properties": {
-              "target": "ra0021",
-              "label": "Ancona > Ascoli Piceno",
-              "segment_id": "6001-23",
-              "source": "ra0020",
-              "follows": "6001-22",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 13.50337,
@@ -1250,80 +1234,80 @@
                 42.85351
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-22",
+              "duration": "",
               "timespan": [
                 "2016-10-12"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-23",
+              "label": "Ancona > Ascoli Piceno",
+              "source": "ra0020",
+              "mode": "auto",
+              "follows": "6001-22",
+              "target": "ra0021"
+            }
           },
           {
+            "coordinates": [
+              [
+                13.57395,
+                42.85351
+              ],
+              [
+                13.29818,
+                43.03475
+              ]
+            ],
+            "type": "LineString",
+            "when": {
+              "follows": "6001-23",
+              "duration": "",
+              "timespan": [
+                "2016-10-19"
+              ]
+            },
             "properties": {
-              "target": "ra0026",
-              "label": "Ascoli Piceno > Sarnano",
               "segment_id": "6001-24",
+              "label": "Ascoli Piceno > Sarnano",
               "source": "ra0021",
+              "mode": "auto",
               "follows": "6001-23",
-              "mode": "auto"
-            },
+              "target": "ra0026"
+            }
+          },
+          {
             "coordinates": [
-              [
-                13.57395,
-                42.85351
-              ],
               [
                 13.29818,
                 43.03475
+              ],
+              [
+                13.86765,
+                42.98182
               ]
             ],
+            "type": "LineString",
             "when": {
+              "follows": "6001-24",
               "duration": "",
-              "follows": "6001-23",
               "timespan": [
                 "2016-10-19"
               ]
             },
-            "type": "LineString"
-          },
-          {
             "properties": {
-              "target": "ra0027",
-              "label": "Sarnano > Grottammare",
               "segment_id": "6001-25",
+              "label": "Sarnano > Grottammare",
               "source": "ra0026",
+              "mode": "auto",
               "follows": "6001-24",
-              "mode": "auto"
-            },
-            "coordinates": [
-              [
-                13.29818,
-                43.03475
-              ],
-              [
-                13.86765,
-                42.98182
-              ]
-            ],
-            "when": {
-              "duration": "",
-              "follows": "6001-24",
-              "timespan": [
-                "2016-10-19"
-              ]
-            },
-            "type": "LineString"
+              "target": "ra0027"
+            }
           },
           {
-            "properties": {
-              "target": "ra0028",
-              "label": "Grottammare > Offida",
-              "segment_id": "6001-26",
-              "source": "ra0027",
-              "follows": "6001-25",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 13.86765,
@@ -1334,24 +1318,24 @@
                 42.93499
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-25",
+              "duration": "",
               "timespan": [
                 "2016-10-19"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-26",
+              "label": "Grottammare > Offida",
+              "source": "ra0027",
+              "mode": "auto",
+              "follows": "6001-25",
+              "target": "ra0028"
+            }
           },
           {
-            "properties": {
-              "target": "ra0021",
-              "label": "Offida > Ascoli Piceno",
-              "segment_id": "6001-27",
-              "source": "ra0028",
-              "follows": "6001-26",
-              "mode": "auto"
-            },
             "coordinates": [
               [
                 13.69773,
@@ -1362,18 +1346,34 @@
                 42.85351
               ]
             ],
+            "type": "LineString",
             "when": {
-              "duration": "",
               "follows": "6001-26",
+              "duration": "",
               "timespan": [
                 "2016-10-19"
               ]
             },
-            "type": "LineString"
+            "properties": {
+              "segment_id": "6001-27",
+              "label": "Offida > Ascoli Piceno",
+              "source": "ra0028",
+              "mode": "auto",
+              "follows": "6001-26",
+              "target": "ra0021"
+            }
           }
         ],
         "type": "GeometryCollection"
       }
     }
-  ]
+  ],
+  "attributes": {
+    "description": "An 8-month sojourn of geohumanities computing and tourism",
+    "pub_date": "2016",
+    "timespan": "[2016-09-10,,,2017-10-28,end date uncertain]",
+    "contributors": "[K. Grossner]",
+    "title": "Roundabout, a circumnavigation of the globe, 2016-2017CE",
+    "segmentType": "journey"
+  }
 }

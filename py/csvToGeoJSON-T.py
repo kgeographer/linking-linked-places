@@ -1,6 +1,6 @@
 # csvToGeoJSON-T.py
-# read places and segments csv, output GeoJSON-T for routes
-# 2016-10-26 k. grossner
+# read places and segments csv, output GeoJSON-T for routes, JSONlines for Elasticsearch
+# 2016-11-22 k. grossner
 
 import os, sys, csv, json, codecs, re
 # TODO should we de-duplicate?
@@ -8,27 +8,23 @@ import os, sys, csv, json, codecs, re
 
 def init():
     dir = os.getcwd() + '/data/'
-    global proj, reader_p, reader_s, finp, fins, fout, collection, routeidx
+    global proj, reader_p, reader_s, finp, fins, fout, foutp, collection, collectionAttributes, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
     proj = 'courier'
     data = 'courier'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
-    fout = codecs.open('../_site/data/'+data+'.geojson', 'w', 'utf8')
-    #finp = codecs.open(dir+'source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
-    #fins = codecs.open(dir+'source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
-    #fout = codecs.open(dir+'out/'+data+'.geojson', 'w', 'utf8')
-
-    #fouta = codecs.open(dir+'out/'+data+'.geojson', 'a', 'utf8')    
+    fout = codecs.open('../_site/data/'+data+'.geojson', 'w', 'utf8')  
+    
+    # output places only for index
+    foutp = codecs.open('../_site/data/'+proj+'.jsonl', 'w', 'utf8')
     
     # TODO: option for separate places and segments files (xuanzang is example)
     #foutp = codecs.open('../data/out/'+data+'_places.geojson', 'w', 'utf8')
     #fouts = codecs.open('../data/out/'+data+'_segments.geojson', 'w', 'utf8')
 
-    #reader_p = csv.DictReader(finp, delimiter=';')
     reader_p = csv.DictReader(filter(lambda row: row[0]!='#', finp), delimiter=';')
-    #reader_s = csv.DictReader(fins, delimiter=';')
     reader_s = csv.DictReader(filter(lambda row: row[0]!='#', fins), delimiter=';')
 
     # required fields
@@ -65,12 +61,11 @@ def init():
         #sys.exit('core segment field names incorrect.')
 
     #fins.seek(0)
-    print('Project: ' + proj)
-    #print(str(len(list(reader_p)) - 1) + ' places; ' + str(len(list(reader_s)) - 1) + ' segments')
+    print('Project: ' + proj + ', Data: ' + data)
 
 
 def createPlaces():
-
+    
     places = []
 
     def toPoint(row):
@@ -79,7 +74,11 @@ def createPlaces():
             'coordinates': [ float(row['lng']), float(row['lat']) ]
             #'coordinates': [ row['lng'], row['lat'] ]
         }
-
+    def parseNames(row):
+        arr = row['gazetteer_label'].split('/') if row['gazetteer_label'] != '' else []
+        arr.append(row['toponym'])
+        return arr
+    
     for idx, row in enumerate(reader_p):
         feat = {"type":"Feature", \
                 "id": row['place_id'], \
@@ -99,12 +98,44 @@ def createPlaces():
         for x in range(len(props)):
             feat['properties'][props[x]] = row[props[x]]
 
-        #places.append(feat)
         collection['features'].append(feat)
-
-    #fout.write(json.dumps(places,indent=2))
-    #fout.write('}')
-    #fout.close()
+        
+    # write places to separate file for index
+    # does not perform conflation now, will be manual
+    # only mimics Pelagios
+    
+    finp.seek(0) # resets dict.reader
+    next(reader_p, None) # skip header
+    for row in reader_p:
+        place = {
+            "id": row['place_id'],
+            "representative_title": row['toponym'],
+            "representative_geometry": "",
+            "representative_point": [float(row['lng']),float(row['lat'])],
+            "temporal_bounds_union": collectionAttributes['timespan'][1:-1].split(','),
+            "suggest": parseNames(row),
+            "is_conflation_of": [{
+                "uri": row['gazetteer_uri'],
+                "source_gazetteer": row['collection'],
+                "title": row['toponym'],
+                "descriptions": [{"description":"", "language":""}],
+                "names": [{"name":row['toponym'], "language":""}],
+                "temporal_bounds": "",
+                "place_types":"",
+                "close_matches":"",
+                "exact_matches":""
+              }]
+            }
+        places.append(place)
+        #print(json.dumps(place))
+    # pretty print
+    #foutp.write(json.dumps(places,indent=2))
+    
+    # JSONlines for index
+    for x in range(len(places)):
+        foutp.write(json.dumps(places[x]) + '\n')
+        
+    foutp.close()
 
 def createSegments():
 
@@ -210,43 +241,3 @@ def createSegments():
 init()
 createPlaces()
 createSegments()
-
-
-#d=collection['features']
-
-#for key,val in enumerate(d):
-    #if d['geometry']['type'] == 'Point':
-        #print(d)
-
-
-
-#for x in d:
-    #if x['geometry']['type'] == 'Point':
-        #print(x['id'])
-
-
-        # add remaining non-core properties
-        #props = reader_p.fieldnames[7:]
-
-        #for x in range(len(props)):
-            #feat['properties'][props[x]] = row[props[x]
-
-        #places.append(feat)
-
-
-# use if generating segments from places only
-#def toLine(fromRow, toRow):
-    #return {
-        #'type': 'MultiLineString',
-        #'coordinates': [[ [ float(fromRow[4]), float(fromRow[3]) ], [ float(toRow[4]), float(toRow[3]) ] ]]
-    #}
-
-#print(json.dumps({
-    #'type': 'FeatureCollection',
-    #'id': proj,
-    #'label': collection_label,
-    #'provenance': provenance,
-    #'pub_date': pub_date,
-    #'when': collection_when,
-    #'features': createPlaces() + createSegments()
-#}))
