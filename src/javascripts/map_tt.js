@@ -37,6 +37,7 @@ $(function() {
     e.preventDefault()
     location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
   });
+
 });
 
 window.midpoint = function(ts,type) {
