@@ -41,7 +41,6 @@ $(function() {
 });
 
 window.midpoint = function(ts,type) {
-  // console.log('midpoint()',ts,type)
   if(type == 'start') {
     var mid = new Date(ts[0])
   } else if(type == 'mid') {
@@ -49,6 +48,7 @@ window.midpoint = function(ts,type) {
     let end = ts[3] == ('' || undefined) ? new Date(Date.now()) : new Date(ts[3])
     var mid = new Date((start.getTime() + end.getTime()) / 2);
   }
+  console.log(mid)
   return mid
 }
 
