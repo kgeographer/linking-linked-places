@@ -25,6 +25,10 @@ function prepare(query, settings) {
   return settings;
 }
 
+// account for collection names in data
+var collections = {"ra":"roundabout","courier":"courier","incanto":"incanto-f",
+  "vb":"vicarello","xuanzang":"xuanzang"}
+
 var toponyms = new Bloodhound({
   datumTokenizer: function(datum) {
     return Bloodhound.tokenizers.whitespace(datum.value);
@@ -35,10 +39,11 @@ var toponyms = new Bloodhound({
     url: 'http://localhost:9200/linkedplaces/_suggest?source=' +
         encodeURIComponent('{"foo":{"prefix":"%QUERY","completion":{"field":"suggest"}}}'),
     transform: function(response) {
-      console.log(response.foo[0].options)
       return $.map(response.foo[0].options, function(place) {
+        // console.log(place)
         return {
-          value: place.text
+          value: place._source.representative_title +
+            ' (' + place._source.is_conflation_of[0].source_gazetteer + ')'
         };
       });
     }
@@ -97,9 +102,12 @@ $('#bloodhound .typeahead').typeahead({
 });
 
 $(".typeahead").on("typeahead:select", function(e,obj){
-  console.log(obj)
-  $("#results h3").html(obj.toponym)
-  $("#results_inset").html("<p><b>Alt name(s)</b>: " + obj.altnames + "</p>")
+  $("#results h3").html(obj.value)
+  var re = /\((.*)\)/;
+  let collection = collections[re.exec(obj.value)[1]]
+  console.log('obj',collection)
+  location.href = location.origin+location.pathname+'?d='+collection
+  // $("#results_inset").html("<p><b>Alt name(s)</b>: " + obj.altnames + "</p>")
   // $('.typeahead').typeahead('val')
   // value = $('input.search-input').val();
   // console.log(data)
