@@ -99,6 +99,11 @@ body {
   font-size: .8em;
 }
 
+.gaz-entries li {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #336699;
+}
 .typeahead,
 .tt-query,
 .tt-hint {

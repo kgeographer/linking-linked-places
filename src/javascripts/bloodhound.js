@@ -63,12 +63,18 @@ $(".typeahead").on("typeahead:select", function(e,obj){
   let collection = collections[re.exec(obj.value)]
   var html = "<ul class='gaz-entries'>";
   for(let i=0;i<obj.data.length;i++){
-    html += "<li>"+obj.data[i].title+" ("+collections[obj.data[i].source_gazetteer]+")</li>"
+    var project = collections[obj.data[i].source_gazetteer]
+    html += "<li value="+project+">"+obj.data[i].title+" ("+project+")</li>"
   }
   html += "</ul>"
   $("#results_inset").html(html)
+  $(".gaz-entries li").click(function(e){
+    e.preventDefault()
+    console.log('clicked', this.getAttribute('value'))
+    location.href = location.origin+location.pathname+'?d='+this.getAttribute('value')
+  })
   $(".typeahead.tt-input")[0].value = '';
-  // location.href = location.origin+location.pathname+'?d='+collection
+  //
 })
 
 

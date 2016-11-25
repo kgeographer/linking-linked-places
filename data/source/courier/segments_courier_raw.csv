@@ -1,0 +1,1041 @@
+id;source;target;label;geom;maj_minor;src
+29;142;143;LONGGANG Hebei (龙冈驿) - ZHONGQIUYI Hebei (中丘驿);{"type":"MultiLineString","coordinates":[[[114.511863708496,37.2950019836426],[114.494262695312,37.0663566589355]]]};1;
+30;142;507;LONGGANG Hebei (龙冈驿) - LINMINGYI Hebei (临铭驿);{"type":"MultiLineString","coordinates":[[[114.494262695313,37.0663566589355],[114.499619,36.936829]]]};1;1903 atlas
+32;137;140;YECHENG Henan (邺城驿) - CIZHOU Hebei (磁州);{"type":"MultiLineString","coordinates":[[[114.374244689941,36.3590431213379],[114.345497131348,36.0983428955078]]]};1;
+33;137;139;YECHENG Henan (邺城驿) - YIGOU Henan (宜沟);{"type":"MultiLineString","coordinates":[[[114.345497131348,36.0983428955078],[114.352691650391,35.9255180358887]]]};1;
+34;128;139;QIMEN Henan (淇门驿) - YIGOU Henan (宜沟);{"type":"MultiLineString","coordinates":[[[114.352691650391,35.9255180358887],[114.194366455078,35.6064491271973]]]};1;
+35;127;128;WEIYUANYI Henan (卫源驿) - QIMEN Henan (淇门驿);{"type":"MultiLineString","coordinates":[[[114.194366455078,35.6064491271973],[114.070266723633,35.4103851318359]]]};1;
+36;127;129;WEIYUANYI Henan (卫源驿) - LITINGYI Henan (廪廷驿);{"type":"MultiLineString","coordinates":[[[114.070266723633,35.4103851318359],[114.194686889648,35.1427612304688]]]};1;MDYZK
+37;134;144;ZHENNING Hebei (镇宁驿) - HENGSHANYI Hebei (恒山驿);{"type":"MultiLineString","coordinates":[[[114.56364440918,38.1401100158691],[114.307723999023,38.0831108093262]]]};2;MDYZK
+38;126;134;XINGSHAN Hebei (陉山驿) - ZHENNING Hebei (镇宁驿);{"type":"MultiLineString","coordinates":[[[114.307723999023,38.0831108093262],[114.017784118652,38.006160736084]]]};2;MDYZK
+39;117;126;BAIJING Shanxi (柏井驿) - XINGSHAN Hebei (陉山驿);{"type":"MultiLineString","coordinates":[[[114.017784118652,38.006160736084],[113.805000305176,37.8194427490236]]]};2;MDYZK
+40;114;117;PINGTANYI Shanxi (平潭驿) - BAIJING Shanxi (柏井驿);{"type":"MultiLineString","coordinates":[[[113.805000305176,37.8194427490236],[113.622268676758,37.8020362854004]]]};2;MDYZK
+41;110;114;QINQUANYI Shanxi (芹泉驿) - PINGTANYI Shanxi (平潭驿);{"type":"MultiLineString","coordinates":[[[113.622268676758,37.8020362854004],[113.2743,37.8696020000001]]]};2;MDYZK
+42;103;110;TAI'AN Shanxi (太安驿) - QINQUANYI Shanxi (芹泉驿);{"type":"MultiLineString","coordinates":[[[113.2743,37.8696020000001],[113.16870880127,37.8867835998536]]]};2;MDYZK
+43;91;103;MINGQIAN Shanxi (鸣谦驿) - TAI'AN Shanxi (太安驿);{"type":"MultiLineString","coordinates":[[[113.16870880127,37.8867835998535],[112.697799682617,37.7678604125977]]]};2;MDYZK
+44;89;91;LINFENYI Shanxi (临汾驿) - MINGQIAN Shanxi (鸣谦驿);{"type":"MultiLineString","coordinates":[[[112.697799682617,37.7678604125977],[112.478928,37.727589]]]};2;MDYZK
+45;164;170;LAISHUI Hebei (涞水) - ZHULUYI Hebei (逐鹿驿);{"type":"MultiLineString","coordinates":[[[115.968147277832,39.4872207641603],[115.707802,39.391743]]]};1;1903 atlas
+46;147;495;GUANGCHANG Hebei (广昌) - LIANGGEZHUANG Hebei (梁各庄);{"type":"MultiLineString","coordinates":[[[115.400124,39.3835370000001],[114.688774108887,39.3540153503417]]]};1;1903 atlas
+47;130;147;TAIBAI Shanxi (太白驿) - GUANGCHANG Hebei (广昌);{"type":"MultiLineString","coordinates":[[[114.688774108887,39.3540153503418],[114.229217529297,39.437744140625]]]};1;MDYZK
+48;122;130;WANGJIAZHUANG Shanxi (王家庄驿) - TAIBAI Shanxi (太白驿);{"type":"MultiLineString","coordinates":[[[114.229217529297,39.4377441406251],[113.916412,39.4309390000002]]]};1;MDYZK
+49;105;602;FANZHI Shanxi (繁峙) - SHAJIANYI Shanxi (砂涧驿);{"type":"MultiLineString","coordinates":[[[113.544609,39.2751500000001],[113.272003173828,39.189998626709]]]};1;MDYZK
+50;98;105;YANMEN Shanxi (雁门驿) - FANZHI Shanxi (繁峙);{"type":"MultiLineString","coordinates":[[[113.272003173828,39.189998626709],[112.949043273926,39.0603904724121]]]};1;MDYZK
+51;93;98;YUANPING Shanxi (原平驿) - YANMEN Shanxi (雁门驿);{"type":"MultiLineString","coordinates":[[[112.949043273926,39.0603904724121],[112.712097167969,38.7266006469727]]]};1;MDYZK
+52;89;603;LINFENYI Shanxi (临汾驿) - JIUYUANYI Shanxi (九原驿);{"type":"MultiLineString","coordinates":[[[112.731201,38.3985630000001],[112.478928,37.727589]]]};1;MDYZK
+53;182;186;DONGGUANG Hebei (东光驿) - ANDE Shandong (安德);{"type":"MultiLineString","coordinates":[[[116.258102416992,37.6880073547363],[116.287414550781,37.4516448974609]]]};1;MDYZK
+54;184;186;TAIPING Shandong (太平驿) - ANDE Shandong (安德);{"type":"MultiLineString","coordinates":[[[116.287414550781,37.4516448974609],[116.275787353516,37.151123046875]]]};1;MDYZK
+55;180;184;YUQIU Shandong (鱼丘驿) - TAIPING Shandong (太平驿);{"type":"MultiLineString","coordinates":[[[116.275787353516,37.151123046875],[116.231002807617,36.8616218566895]]]};1;MDYZK
+56;180;181;YUQIU Shandong (鱼丘驿) - CHISHAN Shandong (茌山驿);{"type":"MultiLineString","coordinates":[[[116.231002807617,36.8616218566895],[116.250228881836,36.5866165161133]]]};1;MDYZK
+57;181;652;CHISHAN Shandong (茌山驿) - TONGCHENGYI Shandong (铜城驿);{"type":"MultiLineString","coordinates":[[[116.250228881836,36.5866165161133],[116.239425,36.3295860000001]]]};1;MDYZK
+58;187;653;DONGYUAN Shandong (东原驿) - JIUXIANYI Shandong (旧县驿);{"type":"MultiLineString","coordinates":[[[116.236664,36.1210210000001],[116.299171447754,35.910343170166]]]};1;MDYZK
+59;187;190;DONGYUAN Shandong (东原驿) - XINQIAO Shandong (新桥驿);{"type":"MultiLineString","coordinates":[[[116.299171447754,35.910343170166],[116.485557556152,35.7298545837402]]]};1;MDYZK
+60;196;651;CHANGPINGYI Shandong (昌平驿) - XINJIAYI Shandong (新嘉驿);{"type":"MultiLineString","coordinates":[[[116.669609,35.6504020000001],[116.823699951172,35.556697845459]]]};1;MDYZK
+61;196;199;CHANGPINGYI Shandong (昌平驿) - ZHU Shandong (邾城驿);{"type":"MultiLineString","coordinates":[[[116.823699951172,35.556697845459],[116.968437194824,35.4038200378418]]]};1;
+62;199;203;ZHU Shandong (邾城驿) - TENGYANG Shandong (滕阳驿);{"type":"MultiLineString","coordinates":[[[116.968437194824,35.4038200378418],[117.158164978027,35.0860900878906]]]};1;MDYZ1K
+63;203;204;TENGYANG Shandong (滕阳驿) - LIGUOJIAN Jiangsu (利国监驿);{"type":"MultiLineString","coordinates":[[[117.158164978027,35.0860900878906],[117.187683105469,34.2696342468262]]]};1;
+64;200;204;SUIYANGYI Anhui (睢阳驿) - LIGUOJIAN Jiangsu (利国监驿);{"type":"MultiLineString","coordinates":[[[117.187683105469,34.2696342468262],[116.971397399902,33.6423683166504]]]};1;
+65;200;208;SUIYANGYI Anhui (睢阳驿) - GUZHENYI Anhui (固镇驿);{"type":"MultiLineString","coordinates":[[[116.971397399902,33.6423683166504],[117.311707,33.3145750000002]]]};1;MDYZK
+66;207;208;WANGZHUAN Anhui (王庄驿) - GUZHENYI Anhui (固镇驿);{"type":"MultiLineString","coordinates":[[[117.311707,33.3145750000002],[117.462586001148,33.1059719971698]]]};1;MDYZK
+67;207;655;WANGZHUAN Anhui (王庄驿) - HAOLIANGYI Anhui (濠梁驿);{"type":"MultiLineString","coordinates":[[[117.462586001148,33.1059719971698],[117.537746,32.8653480000002]]]};1;
+68;209;212;HONGXIN Anhui (红心驿) - CHIHE Anhui (池河驿);{"type":"MultiLineString","coordinates":[[[117.64022100121,32.9016339967412],[117.948669001243,32.5189859958938]]]};1;MDYZK
+69;212;217;CHIHE Anhui (池河驿) - DALIUSHU Anhui (大柳树驿);{"type":"MultiLineString","coordinates":[[[117.948669001243,32.5189859958938],[118.304161071777,32.3169937133789]]]};1;MDYZK
+70;217;220;DALIUSHU Anhui (大柳树驿) - JIANGDONGYI Jiangsu (江东驿);{"type":"MultiLineString","coordinates":[[[118.304161071777,32.3169937133789],[118.617599487305,32.064868927002]]]};1;
+71;220;224;JIANGDONGYI Jiangsu (江东驿) - JIANGNINGYI Jiangsu (江宁驿);{"type":"MultiLineString","coordinates":[[[118.617599487305,32.064868927002],[118.768989562988,32.052562713623]]]};1;
+72;210;655;DINGYUAN Anhui (定远) - HAOLIANGYI Anhui (濠梁驿);{"type":"MultiLineString","coordinates":[[[117.537746,32.8653480000002],[117.675689697266,32.5302467346193]]]};1;MDYZK
+73;205;656;JINDOUYI Anhui (金斗驿) - HUCHENGYI Anhui (护城驿);{"type":"MultiLineString","coordinates":[[[117.571381001543,32.0650669971639],[117.276458740234,31.8644561767579]]]};1;MDYZK
+74;197;658;SHUCHENG Anhui (舒城驿) - SANGOUYI Anhui (三沟驿);{"type":"MultiLineString","coordinates":[[[116.975045,31.5028980000001],[116.938537597656,31.4564476013183]]]};1;MDYZK
+75;197;661;SHUCHENG Anhui (舒城驿) - MEIXINYI Anhui (梅心驿);{"type":"MultiLineString","coordinates":[[[116.938537597656,31.4564476013183],[117.02015,31.3403730000001]]]};1;MDYZK
+76;192;195;LIUPU Shandong (刘普驿) - YANCHENG Shandong (宴城驿);{"type":"MultiLineString","coordinates":[[[116.652389526367,36.9453582763672],[116.780632019043,36.7010765075684]]]};1;MDYZK
+77;234;236;YANGZHOU Jiangsu (扬州府) - JINGKOU Jiangsu (京口驿);{"type":"MultiLineString","coordinates":[[[119.437187194824,32.3912696838379],[119.444290161133,32.2064895629883]]]};1;
+78;236;239;JINGKOU Jiangsu (京口驿) - YUNYANG Jiangsu (云阳驿);{"type":"MultiLineString","coordinates":[[[119.444290161133,32.2064895629883],[119.569854736328,31.9958019256592]]]};1;MDYZK
+79;239;242;YUNYANG Jiangsu (云阳驿) - PILING Jiangsu (毗陵驿);{"type":"MultiLineString","coordinates":[[[119.569854736328,31.9958019256592],[119.952301025391,31.7827835083008]]]};1;MDYZK
+80;242;245;PILING Jiangsu (毗陵驿) - XISHAN Jiangsu (锡山驿);{"type":"MultiLineString","coordinates":[[[119.952301025391,31.7827835083008],[120.297668457031,31.574613571167]]]};1;MDYZK
+81;245;247;XISHAN Jiangsu (锡山驿) - GUSUYI Jiangsu (姑苏驿);{"type":"MultiLineString","coordinates":[[[120.297668457031,31.574613571167],[120.618621826172,31.3127098083496]]]};1;MDYZK
+82;247;248;GUSUYI Jiangsu (姑苏驿) - PINGWANG Jiangsu (平望驿);{"type":"MultiLineString","coordinates":[[[120.618621826172,31.3127098083496],[120.630812958443,30.9840259779037]]]};1;MDYZK
+83;248;249;PINGWANG Jiangsu (平望驿) - XISHUI Zhejiang (西水驿);{"type":"MultiLineString","coordinates":[[[120.630812958443,30.9840259779037],[120.753204345703,30.7674694061279]]]};1;MDYZK
+84;246;249;ZAOLIN Zhejiang (皂林驿) - XISHUI Zhejiang (西水驿);{"type":"MultiLineString","coordinates":[[[120.753204345703,30.7674694061279],[120.418739318848,30.5304470062256]]]};1;
+85;243;246;WUSHAN Zhejiang (吴山驿) - ZAOLIN Zhejiang (皂林驿);{"type":"MultiLineString","coordinates":[[[120.418739318848,30.5304470062256],[120.297332977998,30.4315379824767]]]};1;
+86;243;244;WUSHAN Zhejiang (吴山驿) - WULIN Zhejiang (武林驿);{"type":"MultiLineString","coordinates":[[[120.297332977998,30.4315379824767],[120.16862487793,30.2941246032715]]]};1;
+87;241;244;HUIJIANG Zhejiang (会江驿) - WULIN Zhejiang (武林驿);{"type":"MultiLineString","coordinates":[[[120.16862487793,30.2941246032715],[119.94775390625,30.0534343719482]]]};1;
+88;240;241;TONGJIANG Zhejiang (桐江驿) - HUIJIANG Zhejiang (会江驿);{"type":"MultiLineString","coordinates":[[[119.94775390625,30.0534343719482],[119.664939880371,29.8024578094482]]]};1;
+89;238;240;FUCHUN Zhejiang (富春驿) - TONGJIANG Zhejiang (桐江驿);{"type":"MultiLineString","coordinates":[[[119.664939880371,29.8024578094482],[119.49885559082,29.5444812774658]]]};1;
+90;237;238;GUSHUI Zhejiang (濲水驿) - FUCHUN Zhejiang (富春驿);{"type":"MultiLineString","coordinates":[[[119.49885559082,29.5444812774658],[119.478851318359,29.2044525146484]]]};1;
+91;230;237;TINGBU Zhejiang (亭步驿) - GUSHUI Zhejiang (濲水驿);{"type":"MultiLineString","coordinates":[[[119.478851318359,29.2044525146484],[119.172378540039,29.0347881317139]]]};1;
+92;226;230;SHANGHANG Zhejiang (上航驿) - TINGBU Zhejiang (亭步驿);{"type":"MultiLineString","coordinates":[[[119.172378540039,29.0347881317139],[118.867645263672,28.9568214416504]]]};1;
+93;226;919;SHANGHANG Zhejiang (上航驿) - CHANGSHANYI Zhejiang (常山驿);{"type":"MultiLineString","coordinates":[[[118.867645263672,28.9568214416505],[118.502663,28.903732]]]};1;
+94;919;920;CHANGSHANYI Zhejiang (常山驿) - CAOPINGYI Jiangxi (草平驿);{"type":"MultiLineString","coordinates":[[[118.502663,28.903732],[118.344015,28.8124770000001]]]};1;
+95;218;911;CHENGXIYI Fujian (城西驿) - YEFANGYI Fujian (叶坊驿);{"type":"MultiLineString","coordinates":[[[118.221629003813,27.1677459969581],[118.323783874512,27.0388641357422]]]};1;
+96;218;910;CHENGXIYI Fujian (城西驿) - TAIPINGYI Fujian (太平驿);{"type":"MultiLineString","coordinates":[[[118.323783874512,27.0388641357422],[118.290583,26.9105930000002]]]};1;
+97;215;887;JIANPUYI Fujian (剑浦驿) - CHAYANGYI Fujian (茶洋驿);{"type":"MultiLineString","coordinates":[[[118.16918182373,26.64217376709],[118.409354,26.5142730000001]]]};1;
+98;222;888;HUANGTIAN Fujian (黄田驿) - SHUIKOUYI Fujian (水口驿);{"type":"MultiLineString","coordinates":[[[118.675102233887,26.4289093017579],[118.761289378539,26.3591759546095]]]};1;
+99;228;233;BAISHA Fujian (白沙驿) - SANSHAN Fujian (三山驿);{"type":"MultiLineString","coordinates":[[[119.08115400477,26.2090169945714],[119.321578979492,26.07395362854]]]};1;
+100;198;662;LVTING Anhui (吕亭驿) - TAOCHONGYI Anhui (陶冲驿);{"type":"MultiLineString","coordinates":[[[116.938606262207,31.0522804260253],[116.790157,30.922533]]]};1;MDYZK
+101;191;663;QINGKOU Anhui (青口驿) - XIAOCHIYI Anhui (小池驿);{"type":"MultiLineString","coordinates":[[[116.567199707031,30.6303462982178],[116.395973000847,30.5246699992475]]]};1;MDYZK
+102;176;183;FENGXIANGYI Anhui (枫香驿) - TAIHU Anhui (太湖);{"type":"MultiLineString","coordinates":[[[116.265075683594,30.4200592041017],[116.216667175293,30.3666667938232]]]};1;MDYZK
+103;664;169;SUSONG Anhui (宿松) - TINGQIAN Hubei (亭前驿);{"type":"MultiLineString","coordinates":[[[116.114196777344,30.1512126922607],[115.934936523438,30.0792007446289]]]};1;MDYZK
+104;169;171;TINGQIAN Hubei (亭前驿) - XUNYANG Jiangxi (浔阳驿);{"type":"MultiLineString","coordinates":[[[115.934936523438,30.0792007446289],[115.985679626465,29.7223644256592]]]};1;
+105;171;863;XUNYANG Jiangxi (浔阳驿) - KUANGLUYI Jiangxi (匡庐驿);{"type":"MultiLineString","coordinates":[[[115.985679626465,29.7223644256592],[116.041122,29.4534860000001]]]};1;
+106;165;166;DE'AN Jiangxi (德安) - JIANCHANG Jiangxi (建昌);{"type":"MultiLineString","coordinates":[[[115.745025634766,29.3305644989014],[115.761817932129,29.0878314971924]]]};1;
+107;166;168;JIANCHANG Jiangxi (建昌) - NANPU Jiangxi (南浦驿);{"type":"MultiLineString","coordinates":[[[115.761817932129,29.0878314971924],[115.897720336914,28.6748962402344]]]};1;
+108;168;866;NANPU Jiangxi (南浦驿) - SHICHAYI Jiangxi (市汊驿);{"type":"MultiLineString","coordinates":[[[115.897720336914,28.6748962402344],[115.836689,28.4112890000001]]]};1;
+109;161;867;XIAOTAN Jiangxi (萧滩驿) - JIANJIANGYI Jiangxi (剑江驿);{"type":"MultiLineString","coordinates":[[[115.785782,28.1977540000001],[115.398986816406,28.0155696868897]]]};1;
+110;160;161;JINCHUAN Jiangxi (金川驿) - XIAOTAN Jiangxi (萧滩驿);{"type":"MultiLineString","coordinates":[[[115.398986816406,28.0155696868896],[115.383399963379,27.759880065918]]]};1;
+111;159;160;YUXIA Jiangxi (玉峡驿) - JINCHUAN Jiangxi (金川驿);{"type":"MultiLineString","coordinates":[[[115.383399963379,27.759880065918],[115.147277832031,27.553689956665]]]};1;
+112;157;873;JISHUIYI Jiangxi (吉水) - BAISHAYI Jiangxi (白沙驿);{"type":"MultiLineString","coordinates":[[[115.093897,27.3275160000001],[115.132247924805,27.2143669128418]]]};1;
+113;155;157;LUOCHUAN Jiangxi (螺川驿) - JISHUIYI Jiangxi (吉水);{"type":"MultiLineString","coordinates":[[[115.132247924805,27.2143669128418],[114.97127532959,27.1032390594482]]]};1;
+114;153;155;BAIXIAYI Jiangxi (白下驿) - LUOCHUAN Jiangxi (螺川驿);{"type":"MultiLineString","coordinates":[[[114.97127532959,27.1032390594482],[114.894874572754,26.7921028137207]]]};1;
+115;150;153;WUYUN Jiangxi (五云驿) - BAIXIAYI Jiangxi (白下驿);{"type":"MultiLineString","coordinates":[[[114.894874572754,26.7921028137207],[114.779678344727,26.4617691040039]]]};1;
+116;154;875;SHUIXIYI Jiangxi (水西驿) - YOUZHENYI Jiangxi (攸镇驿);{"type":"MultiLineString","coordinates":[[[114.905495,26.1298120000001],[114.932479858398,25.8470001220704]]]};1;
+117;148;154;NANYE Jiangxi (南埜驿) - SHUIXIYI Jiangxi (水西驿);{"type":"MultiLineString","coordinates":[[[114.932479858398,25.8470001220703],[114.745162963867,25.6585712432861]]]};1;
+118;148;876;NANYE Jiangxi (南埜驿) - XIAOXIYI Jiangxi (小溪驿);{"type":"MultiLineString","coordinates":[[[114.745162963867,25.6585712432862],[114.550178000074,25.4853459999677]]]};1;
+119;133;138;LINGJIANG Guangdong (凌江驿) - HENGPUYI Jiangxi (横浦驿);{"type":"MultiLineString","coordinates":[[[114.350570678711,25.3999538421631],[114.302085876465,25.1188430786133]]]};1;1903 atlas
+120;133;362;LINGJIANG Guangdong (凌江驿) - SHIXING Guangdong (始兴);{"type":"MultiLineString","coordinates":[[[114.302085876465,25.1188430786133],[114.063148,24.945763]]]};1;1903 atlas
+121;101;109;ANYUAN Guangdong (安远驿) - YINGDE Guangdong (英德);{"type":"MultiLineString","coordinates":[[[113.402076721191,24.1729373931885],[113.022132873535,23.7207279205322]]]};1;1903 atlas
+122;96;101;XI'NAN Guangdong (西南驿) - ANYUAN Guangdong (安远驿);{"type":"MultiLineString","coordinates":[[[113.022132873535,23.7207279205322],[112.886070251465,23.1658687591553]]]};1;
+123;96;104;XI'NAN Guangdong (西南驿) - WUYANG Guangdong (五羊驿);{"type":"MultiLineString","coordinates":[[[112.886070251465,23.1658687591553],[113.256065368652,23.1346244812012]]]};1;
+124;120;127;XINZHONG Henan (新中驿) - WEIYUANYI Henan (卫源驿);{"type":"MultiLineString","coordinates":[[[114.070266723633,35.4103851318359],[113.86824798584,35.3099403381348]]]};1;
+125;115;579;GUANCHENGYI Henan (管城驿) - SUNINGYI Henan (索亭驿);{"type":"MultiLineString","coordinates":[[[113.534416,34.8743630000001],[113.641311645508,34.7580757141113]]]};1;1903 atlas
+126;115;118;GUANCHENGYI Henan (管城驿) - GUODIAN Henan (郭店驿);{"type":"MultiLineString","coordinates":[[[113.641311645508,34.7580757141113],[113.719085693359,34.3973236083984]]]};1;MDYZK
+127;123;124;LINYING Henan (临颖驿) - YANCHENG Henan (郾城驿);{"type":"MultiLineString","coordinates":[[[113.960639953613,33.8086051940918],[113.965698242188,33.5822105407715]]]};1;MDYZK
+128;124;125;YANCHENG Henan (郾城驿) - XIPING Henan (西平驿);{"type":"MultiLineString","coordinates":[[[113.965698242188,33.5822105407715],[114.015533447266,33.3890571594238]]]};1;MDYZK
+129;125;584;XIPING Henan (西平驿) - SHANGCAIYI Henan (上蔡驿);{"type":"MultiLineString","coordinates":[[[114.015533447266,33.3890571594239],[114.259353,33.2672390000001]]]};1;MDYZK
+130;584;585;SHANGCAIYI Henan (上蔡驿) - RUYANGYI Henan (汝阳驿);{"type":"MultiLineString","coordinates":[[[114.259353,33.2672390000001],[114.344248503716,33.0048160607228]]]};1;MDYZK
+131;585;586;RUYANGYI Henan (汝阳驿) - ZHENYANG Henan (真阳县);{"type":"MultiLineString","coordinates":[[[114.344248503716,33.0048160607228],[114.38121,32.6091190000001]]]};2;MDYZK
+132;116;119;DE'ANFU Hubei (德安府) - YUNMENG Hubei (云梦);{"type":"MultiLineString","coordinates":[[[113.686897277832,31.2526092529297],[113.733299255371,31.0200290679932]]]};2;MDYZK
+133;119;682;YUNMENG Hubei (云梦) - LIUJIAYI Hubei (刘家驿);{"type":"MultiLineString","coordinates":[[[113.733299255371,31.0200290679932],[113.810852,30.764212]]]};2;MDYZK
+134;682;684;LIUJIAYI Hubei (刘家驿) - CAIDIANYI Hubei (蔡店驿);{"type":"MultiLineString","coordinates":[[[113.810852,30.764212],[114.025635,30.580984]]]};1;MDYZK
+135;131;684;HANYANGFU Hubei (汉阳府) - CAIDIANYI Hubei (蔡店驿);{"type":"MultiLineString","coordinates":[[[114.025635,30.580984],[114.261924743652,30.5443744659424]]]};1;MDYZK
+136;131;135;HANYANGFU Hubei (汉阳府) - WUCHANGFU Hubei (武昌府);{"type":"MultiLineString","coordinates":[[[114.261924743652,30.5443744659424],[114.319190979004,30.5413856506348]]]};1;MDYZK
+137;135;692;WUCHANGFU Hubei (武昌府) - DONGHUYI Hubei (东湖驿);{"type":"MultiLineString","coordinates":[[[114.319190979004,30.5413856506348],[114.402428,30.3534050000001]]]};1;MDYZK
+138;121;691;FENGSHANYI Hubei (凤山驿) - GUANTANGYI Hubei (官塘驿);{"type":"MultiLineString","coordinates":[[[114.084274,29.8072170000001],[113.874610900879,29.7083530426025]]]};1;MDYZK
+139;106;359;LINXIANG Hunan (临湘) - YUNXI Hunan (云谿驿);{"type":"MultiLineString","coordinates":[[[113.292869567871,29.5881385803224],[113.263153000004,29.4730489999962]]]};2;
+140;97;99;XIANGTANYI Hunan (湘潭驿) - LINXIANGYI Hunan (临湘驿);{"type":"MultiLineString","coordinates":[[[112.978134155273,28.1981983184814],[112.911262512207,27.8726978302002]]]};1;MDYZK
+141;94;695;HUANGBAO Hunan (黄堡驿) - HUANGHUAYI Hunan (皇华驿);{"type":"MultiLineString","coordinates":[[[112.885614598816,27.3825111997162],[112.852416992188,27.2456455230713]]]};1;MDYZK
+142;90;94;LINCHENGYI Hunan (临丞驿) - HUANGBAO Hunan (黄堡驿);{"type":"MultiLineString","coordinates":[[[112.852416992188,27.2456455230713],[112.597038269043,26.9016170501709]]]};1;MDYZK
+143;79;697;SANWUYI Hunan (三吾驿) - PAISHANYI Hunan (排山驿);{"type":"MultiLineString","coordinates":[[[112.227511,26.7927830000002],[111.855895996094,26.5916919708251]]]};1;MDYZK
+144;72;698;LINGLING Hunan (零陵) - SANWUYI Hunan (三吾驿);{"type":"MultiLineString","coordinates":[[[111.584228,26.443543],[111.612564086914,26.2103385925293]]]};1;
+145;67;72;CHENGNAN Guangxi (城南驿) - LINGLING Hunan (零陵);{"type":"MultiLineString","coordinates":[[[111.612564086914,26.2103385925293],[111.065002441406,25.9318141937256]]]};1;
+146;65;67;BAIYUNYI Guangxi (白云驿) - CHENGNAN Guangxi (城南驿);{"type":"MultiLineString","coordinates":[[[111.065002441406,25.9318141937256],[110.665870666504,25.6131324768066]]]};1;
+147;62;65;DALONG Guangxi (大龙驿) - BAIYUNYI Guangxi (白云驿);{"type":"MultiLineString","coordinates":[[[110.665870666504,25.6131324768066],[110.383689880371,25.4632034301758]]]};1;
+148;61;62;DONGJIANG Guangxi (东江驿) - DALONG Guangxi (大龙驿);{"type":"MultiLineString","coordinates":[[[110.383689880371,25.4632034301758],[110.286262512207,25.2800598144531]]]};1;
+149;111;118;QINGYING Henan (清颖驿) - GUODIAN Henan (郭店驿);{"type":"MultiLineString","coordinates":[[[113.719085693359,34.3973236083984],[113.467056274414,34.1624908447266]]]};1;MDYZK
+150;111;112;QINGYING Henan (清颖驿) - XINCHENG Henan (新城驿);{"type":"MultiLineString","coordinates":[[[113.467056274414,34.1624908447266],[113.472366333008,33.8536911010742]]]};1;MDYZK
+151;107;112;ZHISHUI Henan (滍水驿) - XINCHENG Henan (新城驿);{"type":"MultiLineString","coordinates":[[[113.472366333008,33.8536911010742],[113.345527648926,33.6233024597168]]]};1;MDYZK
+152;100;107;ZHEYANG Henan (赭阳驿) - ZHISHUI Henan (滍水驿);{"type":"MultiLineString","coordinates":[[[113.345527648926,33.6233024597168],[112.99250793457,33.2600784301758]]]};1;
+153;92;100;BOWANG Henan (博望驿) - ZHEYANG Henan (赭阳驿);{"type":"MultiLineString","coordinates":[[[112.99250793457,33.2600784301758],[112.711799621582,33.1642913818359]]]};1;MDYZK
+154;87;592;TUANYANG Henan (湍阳驿) - LINSHUIYI Henan (林水驿);{"type":"MultiLineString","coordinates":[[[112.511,32.7550000000001],[112.358428955078,32.5248718261719]]]};1;MDYZK
+155;87;669;TUANYANG Henan (湍阳驿) - LVYANYI Hubei (吕堰驿);{"type":"MultiLineString","coordinates":[[[112.358428955078,32.5248718261719],[112.228928,32.265553]]]};1;MDYZK
+156;81;85;HANJIANGYI Hubei (汉江驿) - YANCHENG Hubei (鄢城驿);{"type":"MultiLineString","coordinates":[[[112.155862,32.0202830000001],[112.260131835938,31.7107009887696]]]};1;
+157;85;671;YANCHENG Hubei (鄢城驿) - LIYANGYI Hubei (丽阳驿);{"type":"MultiLineString","coordinates":[[[112.260131835938,31.7107009887696],[112.318733,31.4335310000001]]]};1;MDYZK
+158;82;672;JINGNAN Hubei (荆南驿) - JIANYANGYI Hubei (建阳驿);{"type":"MultiLineString","coordinates":[[[112.180946,30.6917460000001],[112.190773010254,30.3504447937012]]]};1;
+159;82;674;JINGNAN Hubei (荆南驿) - BAISHAYI Hubei (白沙驿);{"type":"MultiLineString","coordinates":[[[112.190773010254,30.3504447937012],[112.270240343068,30.1919207076714]]]};1;MDYZK
+160;76;80;LANJIANGYI Hunan (兰江驿) - CHANLING Hubei (孱陵驿);{"type":"MultiLineString","coordinates":[[[112.078102111816,29.9145011901855],[111.756988525391,29.6401519775391]]]};1;
+161;74;675;DALONG Hunan (大龙驿) - DALONGYI Hunan (大龙驿);{"type":"MultiLineString","coordinates":[[[111.752823,29.2116179999997],[111.691299438477,29.0348072052003]]]};1;MDYZK
+162;70;74;TAOYUAN Hunan (桃源驿) - DALONG Hunan (大龙驿);{"type":"MultiLineString","coordinates":[[[111.691299438477,29.0348072052002],[111.477767944336,28.9015979766846]]]};1;
+163;63;965;YIRONGYI Hunan (怡容驿) - CHENYANGYI Hunan (辰阳驿);{"type":"MultiLineString","coordinates":[[[110.396965026855,28.4581909179687],[110.39209,28.440548]]]};1;
+164;962;963;HUAIHUAYI Hunan (怀化驿) - SHANTANGYI Hunan (山塘驿);{"type":"MultiLineString","coordinates":[[[110.214518,27.8893199999998],[110.112259,27.620098]]]};1;
+165;51;53;PINGXI Guizhou (平溪驿) - HUANGZHOU Hunan (晃州驿);{"type":"MultiLineString","coordinates":[[[109.198509216309,27.3817043304443],[108.911544799805,27.2359313964844]]]};1;
+166;50;51;QINGLANG Guizhou (清浪卫) - PINGXI Guizhou (平溪驿);{"type":"MultiLineString","coordinates":[[[108.911544799805,27.2359313964844],[108.730377197266,27.1266841888428]]]};1;
+167;47;50;ZHENYUAN Guizhou (镇远驿) - QINGLANG Guizhou (清浪卫);{"type":"MultiLineString","coordinates":[[[108.730377197266,27.1266841888428],[108.418449401855,27.0542640686035]]]};1;
+168;45;47;PIANQIAO Guizhou (偏桥驿) - ZHENYUAN Guizhou (镇远驿);{"type":"MultiLineString","coordinates":[[[108.418449401855,27.0542640686035],[108.118927001953,27.0372734069824]]]};1;
+169;38;45;QINGPING Guizhou (清平驿) - PIANQIAO Guizhou (偏桥驿);{"type":"MultiLineString","coordinates":[[[108.118927001953,27.0372734069825],[107.78897857666,26.658317565918]]]};1;
+170;35;38;XINTIAN Guizhou (新添驿) - QINGPING Guizhou (清平驿);{"type":"MultiLineString","coordinates":[[[107.78897857666,26.658317565918],[107.239624023438,26.5856456756592]]]};1;
+171;32;35;LONGLI Guizhou (龙里驿) - XINTIAN Guizhou (新添驿);{"type":"MultiLineString","coordinates":[[[107.239624023438,26.5856456756592],[106.981063842773,26.4583358764648]]]};1;
+172;29;32;HUANGHUA Guizhou (贵州驿) - LONGLI Guizhou (龙里驿);{"type":"MultiLineString","coordinates":[[[106.981063842773,26.4583358764648],[106.709114074707,26.5807781219482]]]};1;
+173;25;29;WEIQING Guizhou (威清驿) - HUANGHUA Guizhou (贵州驿);{"type":"MultiLineString","coordinates":[[[106.709114074707,26.5807781219482],[106.467620849609,26.5560493469238]]]};1;
+174;24;25;PINGBA Guizhou (平坝驿) - WEIQING Guizhou (威清驿);{"type":"MultiLineString","coordinates":[[[106.467620849609,26.5560493469238],[106.260856628418,26.4177875518799]]]};1;
+175;22;24;PULIYI Guizhou (普利驿) - PINGBA Guizhou (平坝驿);{"type":"MultiLineString","coordinates":[[[106.260856628418,26.4177875518799],[105.927864074707,26.2432441711426]]]};1;
+176;20;22;ANZHUANG Guizhou (安庄驿) - PULIYI Guizhou (普利驿);{"type":"MultiLineString","coordinates":[[[105.927864074707,26.2432441711426],[105.763557434082,26.0545959472656]]]};1;
+177;18;20;CHACHENG Guizhou (查城) - ANZHUANG Guizhou (安庄驿);{"type":"MultiLineString","coordinates":[[[105.763557434082,26.0545959472656],[105.485824584961,25.9102077484131]]]};1;
+178;17;18;WEIJIUYI Guizhou (尾酒驿) - CHACHENG Guizhou (查城);{"type":"MultiLineString","coordinates":[[[105.485824584961,25.9102077484131],[105.215881347656,25.8334693908691]]]};1;
+179;15;17;XINXING Guizhou (新兴驿) - WEIJIUYI Guizhou (尾酒驿);{"type":"MultiLineString","coordinates":[[[105.215881347656,25.8334693908691],[104.952079772949,25.7884101867676]]]};1;
+180;13;15;PU'AN Guizhou (普安) - XINXING Guizhou (新兴驿);{"type":"MultiLineString","coordinates":[[[104.952079772949,25.7884101867676],[104.649894714355,25.7931423187256]]]};1;
+181;13;251;PU'AN Guizhou (普安) - BAISHUISI Yunnan (白水司);{"type":"MultiLineString","coordinates":[[[104.649894714355,25.7931423187257],[104.011978,25.6571450000001]]]};1;
+182;4;5;MALONG Yunnan (马龙) - NANNING XIAN Yunnan (南宁县);{"type":"MultiLineString","coordinates":[[[103.796775817871,25.4958438873291],[103.580207824707,25.4284343719482]]]};1;
+183;2;4;YANGLIN Yunnan (杨林) - MALONG Yunnan (马龙);{"type":"MultiLineString","coordinates":[[[103.580207824707,25.4284343719482],[103.06189,25.220108]]]};1;
+184;1;2;YUNNANFU Yunnan (云南府) - YANGLIN Yunnan (杨林);{"type":"MultiLineString","coordinates":[[[103.06189,25.220108],[102.710350036621,25.0459136962891]]]};1;
+185;88;623;XUGOU Shanxi (徐沟) - TONGGEYI Shanxi (同戈驿);{"type":"MultiLineString","coordinates":[[[112.509769,37.5958639999974],[112.508995056152,37.5571823120118]]]};1;MDYZK
+186;86;624;QIXIAN Shanxi (祁县) - JIALINGYI Shanxi (贾令驿);{"type":"MultiLineString","coordinates":[[[112.356949,37.4152530000002],[112.315299987793,37.353816986084]]]};1;MDYZK
+187;84;86;HONGSHANYI Shanxi (洪善驿) - QIXIAN Shanxi (祁县);{"type":"MultiLineString","coordinates":[[[112.315299987793,37.353816986084],[112.216796875,37.2842483520508]]]};1;MDYZK
+188;78;84;YITANG Shanxi (义棠驿) - HONGSHANYI Shanxi (洪善驿);{"type":"MultiLineString","coordinates":[[[112.216796875,37.2842483520507],[111.912163,37.0264740000001]]]};1;MDYZK
+189;77;78;RUISHI Shanxi (瑞石驿) - YITANG Shanxi (义棠驿);{"type":"MultiLineString","coordinates":[[[111.912163,37.0264740000001],[111.776214599609,36.8421516418458]]]};1;MDYZK
+190;75;625;HUOSHAN Shanxi (霍山驿) - RENYI Shanxi (仁义驿);{"type":"MultiLineString","coordinates":[[[111.766853,36.745735],[111.728080749512,36.5638236999512]]]};1;MDYZK
+191;73;75;PUJIANYI Shanxi (普涧驿) - HUOSHAN Shanxi (霍山驿);{"type":"MultiLineString","coordinates":[[[111.728080749512,36.5638236999512],[111.682914733887,36.2593994140625]]]};1;
+192;71;73;JIANXIONG Shanxi (建雄驿) - PUJIANYI Shanxi (普涧驿);{"type":"MultiLineString","coordinates":[[[111.682914733887,36.2593994140625],[111.515434265137,36.0780372619629]]]};1;
+193;69;71;MENGCHENGYI Shanxi (蒙城驿) - JIANXIONG Shanxi (建雄驿);{"type":"MultiLineString","coordinates":[[[111.515434265137,36.0780372619629],[111.449478,35.792095]]]};1;MDYZK
+194;68;626;SUCHUANYI Shanxi (涑川驿) - HOUSHANYI Shanxi (霍山驿);{"type":"MultiLineString","coordinates":[[[111.338074,35.6088640000001],[111.217208862305,35.3577232360841]]]};1;MDYZK
+195;66;68;HONGZHI Shanxi (泓芝驿) - SUCHUANYI Shanxi (涑川驿);{"type":"MultiLineString","coordinates":[[[111.217208862305,35.3577232360841],[110.952011944873,35.0663732397762]]]};1;MDYZK
+196;64;66;FANQIAOYI Shanxi (樊桥驿) - HONGZHI Shanxi (泓芝驿);{"type":"MultiLineString","coordinates":[[[110.952011944873,35.0663732397762],[110.596001,35.0560000000002]]]};1;MDYZK
+197;64;563;FANQIAOYI Shanxi (樊桥驿) - HEDONGYI Shanxi (河东驿);{"type":"MultiLineString","coordinates":[[[110.596001,35.0560000000002],[110.332305908203,34.8351287841797]]]};1;MDYZK
+198;60;563;TONGGUAN Shaanxi (潼关驿) - HEDONGYI Shanxi (河东驿);{"type":"MultiLineString","coordinates":[[[110.332305908203,34.8351287841797],[110.273651123047,34.5988082885742]]]};1;MDYZK
+199;57;60;TONGJIN Shaanxi (潼津驿) - TONGGUAN Shaanxi (潼关驿);{"type":"MultiLineString","coordinates":[[[110.273651123047,34.5988082885742],[110.089363098145,34.5683097839355]]]};1;
+200;56;57;HUASHAN Shaanxi (华山驿) - TONGJIN Shaanxi (潼津驿);{"type":"MultiLineString","coordinates":[[[110.089363098145,34.5683097839355],[110.078399658203,34.5344314575195]]]};1;
+201;55;56;FENGYUAN Shaanxi (丰原驿) - HUASHAN Shaanxi (华山驿);{"type":"MultiLineString","coordinates":[[[110.078399658203,34.5344314575195],[109.501235961914,34.5029983520508]]]};1;
+202;54;55;XINFENG Shaanxi (新丰驿) - FENGYUAN Shaanxi (丰原驿);{"type":"MultiLineString","coordinates":[[[109.501235961914,34.5029983520508],[109.238296508789,34.4314117431641]]]};1;
+203;52;54;JINGZHAO Shaanxi (京兆驿) - XINFENG Shaanxi (新丰驿);{"type":"MultiLineString","coordinates":[[[109.238296508789,34.4314117431641],[108.944206237793,34.2666053771973]]]};1;
+204;52;786;JINGZHAO Shaanxi (京兆驿) - WEISHUIYI Shaanxi (渭水驿);{"type":"MultiLineString","coordinates":[[[108.944206237793,34.2666053771973],[108.709946,34.3390540000001]]]};2;
+205;46;49;WEISHENG Shaanxi (威胜驿) - DIANZHANG Shaanxi (店张);{"type":"MultiLineString","coordinates":[[[108.527099609375,34.428539276123],[108.23560333252,34.5303001403809]]]};2;
+206;42;46;YONG'AN Shaanxi (永安驿) - WEISHENG Shaanxi (威胜驿);{"type":"MultiLineString","coordinates":[[[108.23560333252,34.5303001403809],[108.043968200684,34.8127479553223]]]};2;
+207;42;43;YONG'AN Shaanxi (永安驿) - XINPING Shaanxi (新平驿);{"type":"MultiLineString","coordinates":[[[108.043968200684,34.8127479553223],[108.077987670898,35.0396575927734]]]};2;
+208;39;43;YILUYI Shaanxi (宜禄驿) - XINPING Shaanxi (新平驿);{"type":"MultiLineString","coordinates":[[[108.077987670898,35.0396575927734],[107.789321899414,35.2054405212402]]]};2;
+209;36;39;WAYUN Gansu (瓦云驿) - YILUYI Shaanxi (宜禄驿);{"type":"MultiLineString","coordinates":[[[107.789321899414,35.2054405212402],[107.363388061523,35.3288078308105]]]};2;
+210;34;36;BAISHUI Gansu (白水驿) - WAYUN Gansu (瓦云驿);{"type":"MultiLineString","coordinates":[[[107.363388061523,35.3288078308105],[106.975792,35.4294170000003]]]};2;
+211;28;34;GAOPING Gansu (高平驿) - BAISHUI Gansu (白水驿);{"type":"MultiLineString","coordinates":[[[106.975792,35.4294170000003],[106.685661315918,35.5358467102053]]]};2;
+212;27;28;WATING Ningxia (瓦亭驿) - GAOPING Gansu (高平驿);{"type":"MultiLineString","coordinates":[[[106.685661315918,35.5358467102053],[106.319969,35.6913910000003]]]};2;
+213;23;27;LONGCHENG Ningxia (隆城驿) - WATING Ningxia (瓦亭驿);{"type":"MultiLineString","coordinates":[[[106.319969,35.6913910000003],[106.12223815918,35.6170921325684]]]};2;
+214;19;23;JINGYANG Gansu (泾阳驿) - LONGCHENG Ningxia (隆城驿);{"type":"MultiLineString","coordinates":[[[106.12223815918,35.6170921325684],[105.728820800781,35.524097442627]]]};2;
+215;19;806;JINGYANG Gansu (泾阳驿) - QINGJIAYI Gansu (青家驿);{"type":"MultiLineString","coordinates":[[[105.728820800781,35.524097442627],[105.434918,35.7024800000002]]]};2;
+216;16;807;BAONINGYI Gansu (保宁驿) - XIGONGYI Gansu (西巩驿);{"type":"MultiLineString","coordinates":[[[105.056137084961,35.6941986083985],[104.846504,35.6580090000001]]]};2;
+217;9;12;QINGSHUI Gansu (清水驿) - YANSHOUYI Gansu (延寿驿);{"type":"MultiLineString","coordinates":[[[104.620307922363,35.5750923156738],[104.107872009277,35.8468208312988]]]};2;
+218;7;709;LANQUANYI Gansu (兰泉驿) - DINGYUANYI Gansu (定远驿);{"type":"MultiLineString","coordinates":[[[104.003593,35.9742280000005],[103.847137451172,36.0470314025881]]]};2;
+219;48;786;BAIQU Shaanxi (白渠驿) - WEISHUIYI Shaanxi (渭水驿);{"type":"MultiLineString","coordinates":[[[108.709946,34.3390540000001],[108.482604980469,34.2987213134766]]]};1;
+220;44;48;TAICHENGYI Shaanxi (邰城驿) - BAIQU Shaanxi (白渠驿);{"type":"MultiLineString","coordinates":[[[108.482604980469,34.2987213134766],[108.105102539062,34.3320541381836]]]};1;
+221;40;44;FENGQUAN Shaanxi (凤泉驿) - TAICHENGYI Shaanxi (邰城驿);{"type":"MultiLineString","coordinates":[[[108.105102539062,34.3320541381836],[107.868492126465,34.3618240356445]]]};1;
+222;37;40;QIZHOU Shaanxi (岐周驿) - FENGQUAN Shaanxi (凤泉驿);{"type":"MultiLineString","coordinates":[[[107.868492126465,34.3618240356445],[107.627090454102,34.4396362304688]]]};1;
+223;37;787;QIZHOU Shaanxi (岐周驿) - QIYANGYI Shaanxi (岐阳驿);{"type":"MultiLineString","coordinates":[[[107.627090454102,34.4396362304687],[107.385918,34.522518]]]};1;
+224;33;793;CHENCANG Shaanxi (陈仓驿) - DONGHEQIAOYI Shaanxi (东河桥驿);{"type":"MultiLineString","coordinates":[[[107.14038848877,34.3818702697754],[106.946062,34.2344860000001]]]};1;
+225;31;809;BAOCHENG Shaanxi (褒城) - MADAOYI Shaanxi (马道驿);{"type":"MultiLineString","coordinates":[[[106.927345,33.619236],[106.969261169434,33.2003898620605]]]};1;
+226;30;31;MIANXIAN Shaanxi (勉县) - BAOCHENG Shaanxi (褒城);{"type":"MultiLineString","coordinates":[[[106.969261169434,33.2003898620605],[106.774803161621,33.1379013061523]]]};1;
+227;811;812;JINNIUYI Shaanxi (金牛驿) - YANGPINGYI Shaanxi (阳平驿);{"type":"MultiLineString","coordinates":[[[106.38165,33.074981],[106.291878,33.0430640000001]]]};1;
+228;21;816;WENJINYI Sichuan (问津驿) - SHAHEYI Sichuan (沙河驿);{"type":"MultiLineString","coordinates":[[[105.852608,32.5485270000001],[105.832992553711,32.4438896179199]]]};1;
+229;10;470;XINDU Sichuan (新都驿) - HANZHOU Sichuan (汉州);{"type":"MultiLineString","coordinates":[[[104.283066,30.9813100000001],[104.160545349121,30.8313903808594]]]};1;
+230;8;10;JINGUANYI Sichuan (锦官驿) - XINDU Sichuan (新都驿);{"type":"MultiLineString","coordinates":[[[104.160545349121,30.8313903808594],[104.077995300293,30.6503849029541]]]};1;
+231;6;251;ZHANYI Yunnan (沾益) - BAISHUISI Yunnan (白水司);{"type":"MultiLineString","coordinates":[[[104.011978,25.657145],[103.822113037109,25.6099281311035]]]};1;
+232;2;3;YANGLIN Yunnan (杨林) - XUNDIAN GUCHENG Yunnan (寻甸);{"type":"MultiLineString","coordinates":[[[103.06189,25.220108],[103.253716,25.562204]]]};2;1903 atlas
+233;3;265;XUNDIAN GUCHENG Yunnan (寻甸) - DONGCHUAN Yunnan (东川);{"type":"MultiLineString","coordinates":[[[103.253715515137,25.5622043609619],[103.29464,26.420563]]]};2;1903 atlas
+234;266;857;XUANWEI Yunnan (宣威) - PUDEGUIYI Guizhou (普德归驿);{"type":"MultiLineString","coordinates":[[[103.883331298828,26.533332824707],[104.106407,26.2188420000001]]]};2;1903 atlas
+235;5;261;NANNING XIAN Yunnan (南宁县) - LULIANG Yunnan (陆良);{"type":"MultiLineString","coordinates":[[[103.796775817871,25.4958438873291],[103.662529,25.032265]]]};2;1903 atlas
+236;260;261;ZHAOKUA Yunnan (赵卡) - LULIANG Yunnan (陆良);{"type":"MultiLineString","coordinates":[[[103.662529,25.032265],[103.695703580733,24.8491421589225]]]};2;1903 atlas
+237;259;260;MILE Yunnan (弥勒) - ZHAOKUA Yunnan (赵卡);{"type":"MultiLineString","coordinates":[[[103.695703580733,24.8491421589225],[103.433205,24.409359]]]};2;1903 atlas
+238;258;259;ZHUYUAN Yunnan (竹园) - MILE Yunnan (弥勒);{"type":"MultiLineString","coordinates":[[[103.433205,24.409359],[103.410736,24.111174]]]};2;1903 atlas
+239;257;258;AMI ZHOU Yunnan (阿迷州) - ZHUYUAN Yunnan (竹园);{"type":"MultiLineString","coordinates":[[[103.410736,24.111174],[103.23381,23.714905]]]};2;1903 atlas
+240;253;257;MENGZI Yunnan (蒙自) - AMI ZHOU Yunnan (阿迷州);{"type":"MultiLineString","coordinates":[[[103.23381,23.714905],[103.39257,23.369949]]]};2;1903 atlas
+241;253;254;MENGZI Yunnan (蒙自) - MATANG Yunnan (马塘);{"type":"MultiLineString","coordinates":[[[103.39257,23.369949],[104.060753,23.499567]]]};2;1903 atlas
+242;254;255;MATANG Yunnan (马塘) - KAIHUA Yunnan (开化);{"type":"MultiLineString","coordinates":[[[104.060753,23.499567],[104.23555,23.376131]]]};2;1903 atlas
+243;255;256;KAIHUA Yunnan (开化) - MABAIGUAN Yunnan (马白关);{"type":"MultiLineString","coordinates":[[[104.23555,23.376131],[104.395963,23.021482]]]};2;1903 atlas
+244;252;253;HEKOU Yunnan (河口) - MENGZI Yunnan (蒙自);{"type":"MultiLineString","coordinates":[[[103.39257,23.369949],[103.960906996729,22.5112079983605]]]};2;1903 atlas
+245;257;262;AMI ZHOU Yunnan (阿迷州) - POXI Yunnan (婆兮);{"type":"MultiLineString","coordinates":[[[103.23381,23.714905],[103.098052978516,24.2230548858643]]]};2;1903 atlas
+246;262;263;POXI Yunnan (婆兮) - LUFENG Yunnan (禄丰);{"type":"MultiLineString","coordinates":[[[103.098052978516,24.2230548858643],[103.097245994899,24.5631509959097]]]};2;1903 atlas
+247;263;264;LUFENG Yunnan (禄丰) - YILIANG Yunnan (宜良);{"type":"MultiLineString","coordinates":[[[103.097245994899,24.5631509959096],[103.141975,24.911066]]]};2;1903 atlas
+248;1;264;YUNNANFU Yunnan (云南府) - YILIANG Yunnan (宜良);{"type":"MultiLineString","coordinates":[[[103.141975,24.911066],[102.710350036621,25.0459136962891]]]};2;1903 atlas
+249;1;267;YUNNANFU Yunnan (云南府) - KUNYANG Yunnan (昆阳);{"type":"MultiLineString","coordinates":[[[102.710350036621,25.0459136962891],[102.599739,24.673285]]]};2;1903 atlas
+250;267;268;KUNYANG Yunnan (昆阳) - XINXING Yunnan (新兴);{"type":"MultiLineString","coordinates":[[[102.599738995107,24.6732849940093],[102.537323,24.355511]]]};2;1903 atlas
+251;268;269;XINXING Yunnan (新兴) - HEXI Yunnan (河西);{"type":"MultiLineString","coordinates":[[[102.537323,24.355511],[102.639282,24.141741]]]};2;1903 atlas
+252;269;270;HEXI Yunnan (河西) - TONGHAI Yunnan (通海);{"type":"MultiLineString","coordinates":[[[102.639282,24.141741],[102.755608,24.106071]]]};2;1903 atlas
+253;270;275;TONGHAI Yunnan (通海) - LIN'ANFU Yunnan (临安);{"type":"MultiLineString","coordinates":[[[102.755608,24.106071],[102.822311,23.624552]]]};2;1903 atlas
+254;271;275;SHIPING Yunnan (石屏) - LIN'ANFU Yunnan (临安);{"type":"MultiLineString","coordinates":[[[102.822311,23.624552],[102.488258,23.719015]]]};2;1903 atlas
+255;271;272;SHIPING Yunnan (石屏) - YUANJIANG Yunnan (元江);{"type":"MultiLineString","coordinates":[[[102.488258,23.719015],[102.006424,23.604008]]]};2;1903 atlas
+256;272;273;YUANJIANG Yunnan (元江) - TALANG Yunnan (他郎);{"type":"MultiLineString","coordinates":[[[102.006424,23.604008],[101.694001615928,23.4391395305765]]]};2;1903 atlas
+257;273;276;TALANG Yunnan (他郎) - MOHEI Yunnan (磨黑);{"type":"MultiLineString","coordinates":[[[101.688468652368,23.4460660446462],[101.169305256848,23.1616028473682]]]};2;1903 atlas
+258;274;276;NING'ER Yunnan (宁洱) - MOHEI Yunnan (磨黑);{"type":"MultiLineString","coordinates":[[[101.169305256848,23.1616028473682],[101.035989338541,23.0706016465361]]]};2;1903 atlas
+259;274;277;NING'ER Yunnan (宁洱) - SHIGAO Yunnan (石膏);{"type":"MultiLineString","coordinates":[[[101.035989338541,23.0706016465361],[101.076692694722,23.0010728182501]]]};2;1903 atlas
+260;277;278;SHIGAO Yunnan (石膏) - PU'ER Yunnan (普洱);{"type":"MultiLineString","coordinates":[[[101.076692694722,23.0010728182501],[100.975433017753,22.7934299846482]]]};2;1903 atlas
+261;1;279;YUNNANFU Yunnan (云南府) - ANNING Yunnan (安宁);{"type":"MultiLineString","coordinates":[[[102.710350036621,25.0459136962891],[102.474121,24.918442]]]};2;1903 atlas
+262;279;280;ANNING Yunnan (安宁) - LUFENG Yunnan (禄丰);{"type":"MultiLineString","coordinates":[[[102.474121,24.918442],[102.080101,25.147398]]]};2;1903 atlas
+263;280;281;LUFENG Yunnan (禄丰) - LUFENG Yunnan (禄丰);{"type":"MultiLineString","coordinates":[[[102.080101,25.147398],[101.753387,25.171421]]]};2;1903 atlas
+264;281;282;LUFENG Yunnan (禄丰) - CHUXIONG Yunnan (楚雄);{"type":"MultiLineString","coordinates":[[[101.753387,25.171421],[101.542862,25.033066]]]};2;1903 atlas
+265;282;283;CHUXIONG Yunnan (楚雄) - ZHENNAN Yunnan (镇南驿);{"type":"MultiLineString","coordinates":[[[101.542862,25.033066],[101.276962,25.196548]]]};2;1903 atlas
+266;283;284;ZHENNAN Yunnan (镇南驿) - YUNNANYI Yunnan (镇南驿);{"type":"MultiLineString","coordinates":[[[101.276962,25.196548],[100.558983,25.479092]]]};2;1903 atlas
+267;284;285;YUNNANYI Yunnan (镇南驿) - ZHAOZHOU Yunnan (赵州);{"type":"MultiLineString","coordinates":[[[100.558983,25.479092],[100.312897,25.585171]]]};2;1903 atlas
+268;285;290;ZHAOZHOU Yunnan (赵州) - XIAGUAN Yunnan (下关);{"type":"MultiLineString","coordinates":[[[100.312897,25.585171],[100.226288,25.5904669999999]]]};2;1903 atlas
+269;286;287;TAIHEYI Yunnan (太和驿) - DENGCHUAN Yunnan (邓川);{"type":"MultiLineString","coordinates":[[[100.164444,25.69783],[100.100213,25.994296]]]};2;1903 atlas
+270;287;288;DENGCHUAN Yunnan (邓川) - HEQING Yunnan (鹤庆);{"type":"MultiLineString","coordinates":[[[100.100213,25.994296],[100.179276,26.559418]]]};2;1903 atlas
+271;288;289;HEQING Yunnan (鹤庆) - LIJIANG Yunnan (丽江);{"type":"MultiLineString","coordinates":[[[100.179276,26.559418],[100.235985,26.874634]]]};2;1903 atlas
+272;286;290;TAIHEYI Yunnan (太和驿) - XIAGUAN Yunnan (下关);{"type":"MultiLineString","coordinates":[[[100.226288,25.5904669999999],[100.164444,25.69783]]]};2;1903 atlas
+273;290;291;XIAGUAN Yunnan (下关) - YONGPING Yunnan (永平);{"type":"MultiLineString","coordinates":[[[100.226288,25.5904669999999],[99.5193410000001,25.463171]]]};2;1903 atlas
+274;291;292;YONGPING Yunnan (永平) - YONGCHANG Yunnan (永昌);{"type":"MultiLineString","coordinates":[[[99.5193410000001,25.463171],[99.166862,25.112436]]]};2;1903 atlas
+275;292;293;YONGCHANG Yunnan (永昌) - TENGYUE Yunnan (腾越);{"type":"MultiLineString","coordinates":[[[99.166862,25.112436],[98.4949800000001,25.0243490000001]]]};2;1903 atlas
+276;293;294;TENGYUE Yunnan (腾越) - LONGLING Yunnan (龙陵);{"type":"MultiLineString","coordinates":[[[98.4949800000001,25.0243490000001],[98.690384,24.5901910000001]]]};2;1903 atlas
+277;290;295;XIAGUAN Yunnan (下关) - MENGHUA Yunnan (蒙化);{"type":"MultiLineString","coordinates":[[[100.226288,25.5904669999999],[100.308884,25.2300339999999]]]};2;1903 atlas
+278;254;296;MATANG Yunnan (马塘) - GUANGNAN Yunnan (广南);{"type":"MultiLineString","coordinates":[[[104.060753,23.499567],[105.061996,24.052822]]]};2;1903 atlas
+279;296;297;GUANGNAN Yunnan (广南) - BOSAI Guangxi (博赛驿);{"type":"MultiLineString","coordinates":[[[105.061996,24.052822],[106.611679,23.9045390000001]]]};2;1903 atlas
+280;297;298;BOSAI Guangxi (博赛驿) - NABOYI Guangxi (那波);{"type":"MultiLineString","coordinates":[[[106.611679,23.9045390000001],[106.815802999802,23.7298579999305]]]};2;1903 atlas
+281;298;299;NABOYI Guangxi (那波) - TIANZHOU Guangxi (田州);{"type":"MultiLineString","coordinates":[[[106.815802999802,23.7298579999305],[106.908669,23.73387]]]};2;1903 atlas
+282;299;300;TIANZHOU Guangxi (田州) - PINGMA Guangxi (平马驿);{"type":"MultiLineString","coordinates":[[[106.908669,23.73387],[107.114159,23.605627]]]};2;1903 atlas
+283;300;301;PINGMA Guangxi (平马驿) - GUOHUA Guangxi (果花州);{"type":"MultiLineString","coordinates":[[[107.114159,23.605627],[107.410622,23.4177280000001]]]};2;1903 atlas
+284;301;302;GUOHUA Guangxi (果花州) - LONG'AN Guangxi (隆安);{"type":"MultiLineString","coordinates":[[[107.410622,23.4177280000001],[107.684952,23.178167]]]};2;1903 atlas
+285;302;303;LONG'AN Guangxi (隆安) - NANNING Guangxi (南宁府);{"type":"MultiLineString","coordinates":[[[107.684952,23.178167],[108.312073,22.806145]]]};2;1903 atlas
+286;309;310;WUXUAN Guangxi (武宣) - XIANGZHOU Guangxi (象州);{"type":"MultiLineString","coordinates":[[[109.655029,23.5967410000001],[109.682457,23.9580550000001]]]};2;1903 atlas
+287;310;311;XIANGZHOU Guangxi (象州) - LIUZHOU Guangxi (柳州);{"type":"MultiLineString","coordinates":[[[109.682457,23.9580550000001],[109.404396,24.3099880000001]]]};2;1903 atlas
+288;311;316;LIUZHOU Guangxi (柳州) - YIYANGYI Guangxi (宜阳驿);{"type":"MultiLineString","coordinates":[[[109.404396,24.3099880000001],[108.655884,24.4907299999999]]]};2;1903 atlas
+289;311;312;LIUZHOU Guangxi (柳州) - LIUCHENG Guangxi (柳城);{"type":"MultiLineString","coordinates":[[[109.404396,24.3099880000001],[109.260117,24.527336]]]};2;1903 atlas
+290;312;313;LIUCHENG Guangxi (柳城) - RONGXIAN Guangxi (融县);{"type":"MultiLineString","coordinates":[[[109.260117,24.527336],[109.248543,25.0654430000001]]]};2;1903 atlas
+291;313;322;RONGXIAN Guangxi (融县) - RONG’AN Guangxi (融安);{"type":"MultiLineString","coordinates":[[[109.248543,25.0654430000001],[109.388168,25.2178570000002]]]};2;1903 atlas
+292;314;322;HUAIYUAN Guangxi (怀远) - RONG’AN Guangxi (融安);{"type":"MultiLineString","coordinates":[[[109.388168,25.2178570000002],[109.435958,25.3732300000001]]]};2;1903 atlas
+293;314;315;HUAIYUAN Guangxi (怀远) - GUNI Guangxi (古泥);{"type":"MultiLineString","coordinates":[[[109.435958,25.3732300000001],[109.595757,25.785355]]]};2;1903 atlas
+294;318;319;LUORONG Guangxi (洛容) - HENGTANGYI Guangxi (横塘驿);{"type":"MultiLineString","coordinates":[[[109.6091,24.41452],[109.736626,24.4853669999999]]]};2;1903 atlas
+295;319;320;HENGTANGYI Guangxi (横塘驿) - YONGFU Guangxi (永福);{"type":"MultiLineString","coordinates":[[[109.736626,24.4853669999999],[109.981149764645,24.9817334058971]]]};2;1903 atlas
+296;320;321;YONGFU Guangxi (永福) - SUQIAO Guangxi (苏桥驿);{"type":"MultiLineString","coordinates":[[[109.981149764645,24.9817334058971],[110.055511,25.107773]]]};2;1903 atlas
+297;61;321;DONGJIANG Guangxi (东江驿) - SUQIAO Guangxi (苏桥驿);{"type":"MultiLineString","coordinates":[[[110.055511,25.107773],[110.286262512207,25.2800598144532]]]};2;1903 atlas
+298;316;323;YIYANGYI Guangxi (宜阳驿) - HUAIYUANZHEN Guangxi (怀远镇);{"type":"MultiLineString","coordinates":[[[108.655884,24.4907299999999],[108.464844,24.56666]]]};2;1903 atlas
+299;317;323;SI'EN Guangxi (思恩) - HUAIYUANZHEN Guangxi (怀远镇);{"type":"MultiLineString","coordinates":[[[108.464844,24.56666],[108.256378,24.829609]]]};2;1903 atlas
+300;61;324;DONGJIANG Guangxi (东江驿) - LEITANGYI Guangxi (雷塘驿);{"type":"MultiLineString","coordinates":[[[110.286263,25.28006],[110.28701,25.0036660000001]]]};2;1903 atlas
+301;324;325;LEITANGYI Guangxi (雷塘驿) - YANGSHUO Guangxi (阳朔);{"type":"MultiLineString","coordinates":[[[110.28701,25.0036660000001],[110.483627,24.7777580000001]]]};2;1903 atlas
+302;325;326;YANGSHUO Guangxi (阳朔) - ZHAOJINYI Guangxi (昭津驿);{"type":"MultiLineString","coordinates":[[[110.483627,24.7777580000001],[110.6465,24.6357270000001]]]};2;1903 atlas
+303;335;336;DAWUXU Guangxi (大乌) - DANZHU Guangxi (丹竹);{"type":"MultiLineString","coordinates":[[[110.524315,23.476589],[110.509669780096,23.3881684479161]]]};2;1903 atlas
+304;334;335;BAIMAXU Guangxi (白马) - DAWUXU Guangxi (大乌);{"type":"MultiLineString","coordinates":[[[110.509669780096,23.3881684479161],[110.588886,23.465922]]]};2;1903 atlas
+305;331;332;RONGXIAN Guangxi (容县) - TENGXIAN Guangxi (藤县);{"type":"MultiLineString","coordinates":[[[110.904282,23.373119],[110.551033,22.863588]]]};2;1903 atlas
+306;330;331;BEILIU Guangxi (北流) - RONGXIAN Guangxi (容县);{"type":"MultiLineString","coordinates":[[[110.551033,22.863588],[110.347519,22.714184]]]};2;1903 atlas
+307;329;330;YULIN Guangxi (郁林) - BEILIU Guangxi (北流);{"type":"MultiLineString","coordinates":[[[110.347519,22.714184],[110.145882,22.632095]]]};2;1903 atlas
+308;317;341;SI'EN Guangxi (思恩) - LIBO Guizhou (荔波);{"type":"MultiLineString","coordinates":[[[108.256378,24.829609],[107.878403,25.41436]]]};2;1903 atlas
+309;341;342;LIBO Guizhou (荔波) - LAIYUANYI Guizhou (来远驿);{"type":"MultiLineString","coordinates":[[[107.878403,25.41436],[107.542747,25.8290730000001]]]};2;1903 atlas
+310;35;342;XINTIAN Guizhou (新添驿) - LAIYUANYI Guizhou (来远驿);{"type":"MultiLineString","coordinates":[[[107.542747,25.8290730000001],[107.239624023438,26.5856456756593]]]};2;1903 atlas
+311;53;343;HUANGZHOU Hunan (晃州驿) - YUANSHUIYI Hunan (沅水驿);{"type":"MultiLineString","coordinates":[[[109.684082,27.447302],[109.198509216309,27.3817043304444]]]};1;
+312;29;348;HUANGHUA Guizhou (贵州驿) - XIUWEN Guizhou (修文);{"type":"MultiLineString","coordinates":[[[106.709114074707,26.5807781219482],[106.591927,26.8429970000001]]]};2;1903 atlas
+313;347;348;KAIZHOU Guizhou (开州驿) - XIUWEN Guizhou (修文);{"type":"MultiLineString","coordinates":[[[106.591927,26.8429970000001],[106.967384,27.0588550000001]]]};2;1903 atlas
+314;346;347;ZUNYI Guizhou (遵义) - KAIZHOU Guizhou (开州驿);{"type":"MultiLineString","coordinates":[[[106.967384,27.0588550000001],[106.931602,27.6956210000001]]]};2;1903 atlas
+315;346;345;ZUNYI Guizhou (遵义) - SONGKANYI Guizhou (松坎);{"type":"MultiLineString","coordinates":[[[106.931602,27.6956210000001],[106.851364,28.5428300000001]]]};2;1903 atlas
+316;344;345;QIJIANG Chongqing (綦江) - SONGKANYI Guizhou (松坎);{"type":"MultiLineString","coordinates":[[[106.851364,28.5428300000001],[106.639313,29.0252590000001]]]};2;1903 atlas
+317;350;351;HONGJIANG Hunan (洪江驿) - QIANYANG Hunan (黔阳);{"type":"MultiLineString","coordinates":[[[109.9916,27.1127760000001],[109.811852,27.1951290000001]]]};2;1903 atlas
+318;343;351;YUANSHUIYI Hunan (沅水驿) - QIANYANG Hunan (黔阳);{"type":"MultiLineString","coordinates":[[[109.811852,27.1951290000001],[109.684082,27.447302]]]};2;1903 atlas
+319;349;350;WUGANG Hunan (武冈) - HONGJIANG Hunan (洪江驿);{"type":"MultiLineString","coordinates":[[[109.9916,27.1127760000001],[110.622292,26.7307050000001]]]};2;1903 atlas
+320;350;353;HONGJIANG Hunan (洪江驿) - HUITONG Hunan (会同);{"type":"MultiLineString","coordinates":[[[109.9916,27.1127760000001],[109.713547,26.8614920000001]]]};2;1903 atlas
+321;352;353;JINGZHOU Hunan (靖州) - HUITONG Hunan (会同);{"type":"MultiLineString","coordinates":[[[109.713547,26.8614920000001],[109.694778,26.5757600000001]]]};2;1903 atlas
+322;102;358;YUEYANG Hunan (岳阳驿) - DAJINGYI Hunan (大荆驿);{"type":"MultiLineString","coordinates":[[[113.262848,28.9623780000001],[113.09765625,29.3712596893311]]]};1;MDYZK
+323;102;968;YUEYANG Hunan (岳阳驿) - CHENGLINGJIYI Hunan (城陵矶驿);{"type":"MultiLineString","coordinates":[[[113.150040000003,29.4337789999971],[113.09765625,29.3712596893311]]]};1;MDYZK
+324;360;690;GANGKOUYI Hubei (港口驿) - CHANG'ANYI Hunan (长安驿);{"type":"MultiLineString","coordinates":[[[113.449135000007,29.473248999994],[113.70691,29.5306350000001]]]};1;1903 atlas
+325;121;361;FENGSHANYI Hubei (凤山驿) - FENGSHANYI Hubei (凤山驿);{"type":"MultiLineString","coordinates":[[[113.783332824707,29.6333332061769],[113.874610900879,29.7083530426025]]]};1;MDYZK
+326;113;362;FURONG Guangdong (芙蓉驿) - SHIXING Guangdong (始兴);{"type":"MultiLineString","coordinates":[[[114.063148,24.945763],[113.603416442871,24.810209274292]]]};1;1903 atlas
+327;72;363;LINGLING Hunan (零陵) - NINGYUAN Hunan (宁远);{"type":"MultiLineString","coordinates":[[[111.612564,26.210339],[111.938683,25.598452]]]};2;
+328;363;364;NINGYUAN Hunan (宁远) - JIANGHUA Hunan (江华);{"type":"MultiLineString","coordinates":[[[111.938116519609,25.6060177526541],[111.58242,25.1899189999999]]]};2;
+329;364;365;JIANGHUA Hunan (江华) - YONGMING Hunan (永明);{"type":"MultiLineString","coordinates":[[[111.58242,25.1899189999999],[111.336449,25.2769739999999]]]};2;
+330;366;367;PINGXIANG Jiangxi (萍乡) - LILING Hunan (醴陵);{"type":"MultiLineString","coordinates":[[[113.838638,27.6314240000002],[113.494102,27.6685180000001]]]};2;1903 atlas
+331;367;696;LILING Hunan (醴陵) - LUKOUYI Hunan (渌口驿);{"type":"MultiLineString","coordinates":[[[113.494102,27.6685180000001],[113.147522000003,27.7106339999977]]]};2;1903 atlas
+332;113;369;FURONG Guangdong (芙蓉驿) - LIBUTOU Guangdong (犁步头);{"type":"MultiLineString","coordinates":[[[113.603416442871,24.810209274292],[113.527947000009,24.8962149999962]]]};2;1903 atlas
+333;369;370;LIBUTOU Guangdong (犁步头) - LECHANG Guangdong (乐昌);{"type":"MultiLineString","coordinates":[[[113.527947000009,24.8962149999962],[113.346794,25.1348740000001]]]};2;1903 atlas
+334;374;375;HETOU Guangdong (河头) - WENGYUAN Guangdong (翁源);{"type":"MultiLineString","coordinates":[[[113.461098000008,24.2600779999972],[113.82032,24.375137]]]};2;1903 atlas
+335;376;377;LONGGUIXU Guangdong (龙归墟) - RUYUAN Guangdong (乳源);{"type":"MultiLineString","coordinates":[[[113.454010000008,24.7280709999969],[113.269,24.784]]]};2;1903 atlas
+336;379;380;BAISHITANXU Guangdong (白石潭) - DUBUXU Guangdong (社步墟);{"type":"MultiLineString","coordinates":[[[112.759628,24.126741],[112.662041,24.328947]]]};2;1903 atlas
+337;380;381;DUBUXU Guangdong (社步墟) - SHUIKOU Guangdong (水口);{"type":"MultiLineString","coordinates":[[[112.662041,24.328947],[112.713646,24.3961849999999]]]};2;1903 atlas
+338;385;386;SANZHOU Guangdong (三洲) - GAOMING Guangdong (高明);{"type":"MultiLineString","coordinates":[[[112.848,22.889],[112.695587,22.8623350000001]]]};2;1903 atlas
+339;96;387;XI'NAN Guangdong (西南驿) - SIHUI Guangdong (四会);{"type":"MultiLineString","coordinates":[[[112.886070251465,23.1658687591553],[112.694534,23.348709]]]};2;1903 atlas
+340;387;388;SIHUI Guangdong (四会) - GUANGNING Guangdong (广宁);{"type":"MultiLineString","coordinates":[[[112.694534,23.348709],[112.43132,23.642736]]]};2;1903 atlas
+341;388;389;GUANGNING Guangdong (广宁) - HUAIJI Guangdong (怀集驿);{"type":"MultiLineString","coordinates":[[[112.43132,23.642736],[112.179237,23.9121860000001]]]};2;1903 atlas
+342;354;355;YONGDINGWEI Hunan (永定卫) - CILI Hunan (慈利);{"type":"MultiLineString","coordinates":[[[110.484711,29.127953],[111.121712,29.426342]]]};2;1903 atlas
+343;355;356;CILI Hunan (慈利) - SHIMEN Hunan (石门);{"type":"MultiLineString","coordinates":[[[111.121712,29.426342],[111.373611,29.588543]]]};2;1903 atlas
+344;76;356;LANJIANGYI Hunan (兰江驿) - SHIMEN Hunan (石门);{"type":"MultiLineString","coordinates":[[[111.756988525391,29.6401519775392],[111.373611,29.588543]]]};2;1903 atlas
+345;70;699;TAOYUAN Hunan (桃源驿) - ZHENGJIAYI Hunan (郑家驿);{"type":"MultiLineString","coordinates":[[[111.339485,28.7062870000001],[111.477767944336,28.9015979766846]]]};1;1903 atlas
+346;308;309;XUNZHOU Guangxi (浔州) - WUXUAN Guangxi (武宣);{"type":"MultiLineString","coordinates":[[[109.655029,23.5967410000001],[110.071663,23.394571]]]};2;1903 atlas
+347;307;308;GUIXIAN Guangxi (贵县) - XUNZHOU Guangxi (浔州);{"type":"MultiLineString","coordinates":[[[110.071663,23.394571],[109.608444,23.099092]]]};2;1903 atlas
+348;306;307;HENGZHOU Guangxi (横州) - GUIXIAN Guangxi (贵县);{"type":"MultiLineString","coordinates":[[[109.608444,23.099092],[109.267044,22.6929570000001]]]};2;1903 atlas
+349;305;306;NANXIANG Guangxi (南乡) - HENGZHOU Guangxi (横州);{"type":"MultiLineString","coordinates":[[[109.267044,22.6929570000001],[109.147781999999,22.6141109999996]]]};2;1903 atlas
+350;304;305;YONGCHANG Guangxi (永淐) - NANXIANG Guangxi (南乡);{"type":"MultiLineString","coordinates":[[[109.147781999999,22.6141109999996],[108.914207,22.804642]]]};2;1903 atlas
+351;303;304;NANNING Guangxi (南宁府) - YONGCHANG Guangxi (永淐);{"type":"MultiLineString","coordinates":[[[108.914207,22.804642],[108.312073,22.806145]]]};2;1903 atlas
+352;304;390;YONGCHANG Guangxi (永淐) - JIAOYIXU Guangxi (校椅);{"type":"MultiLineString","coordinates":[[[108.914207,22.804642],[109.239464,22.835493]]]};2;1903 atlas
+353;307;390;GUIXIAN Guangxi (贵县) - JIAOYIXU Guangxi (校椅);{"type":"MultiLineString","coordinates":[[[109.239464,22.835493],[109.608444,23.099092]]]};2;1903 atlas
+354;328;329;BOBAI Guangxi (博白) - YULIN Guangxi (郁林);{"type":"MultiLineString","coordinates":[[[110.145882,22.632095],[109.971413,22.2758690000001]]]};2;1903 atlas
+355;327;328;HEPU Guangxi (合浦) - BOBAI Guangxi (博白);{"type":"MultiLineString","coordinates":[[[109.971413,22.2758690000001],[109.150001525879,21.6833324432374]]]};2;1903 atlas
+356;327;339;HEPU Guangxi (合浦) - BEIHAI Guangxi (北海);{"type":"MultiLineString","coordinates":[[[109.150001525879,21.6833324432374],[109.080520442069,21.6130295304748]]]};2;1903 atlas
+357;305;339;NANXIANG Guangxi (南乡) - BEIHAI Guangxi (北海);{"type":"MultiLineString","coordinates":[[[109.147781999999,22.6141109999996],[109.080520442069,21.6130295304748]]]};2;1903 atlas
+358;339;340;BEIHAI Guangxi (北海) - ANPU Guangdong (安铺);{"type":"MultiLineString","coordinates":[[[110.016045,21.458857],[109.080520442069,21.6130295304748]]]};2;1903 atlas
+359;303;391;NANNING Guangxi (南宁府) - QINZHOU Guangxi (钦州);{"type":"MultiLineString","coordinates":[[[108.312073,22.806145],[108.614395,21.951426]]]};2;1903 atlas
+360;339;391;BEIHAI Guangxi (北海) - QINZHOU Guangxi (钦州);{"type":"MultiLineString","coordinates":[[[108.614395,21.951426],[109.080520442069,21.6130295304748]]]};2;1903 atlas
+361;340;392;ANPU Guangdong (安铺) - SUIXI Guangdong (遂溪);{"type":"MultiLineString","coordinates":[[[110.016045,21.458857],[110.250893,21.3829800000001]]]};2;1903 atlas
+362;392;394;SUIXI Guangdong (遂溪) - YANGJING Guangdong (洋菁);{"type":"MultiLineString","coordinates":[[[110.250893,21.3829800000001],[110.11496,21.3664230000001]]]};2;1903 atlas
+363;393;394;CHENGYUE Guangdong (城月) - YANGJING Guangdong (洋菁);{"type":"MultiLineString","coordinates":[[[110.11496,21.3664230000001],[110.074829,21.174923]]]};2;1903 atlas
+364;393;395;CHENGYUE Guangdong (城月) - HAIKANG Guangdong (海康);{"type":"MultiLineString","coordinates":[[[110.074829,21.174923],[110.087914,20.9019580000001]]]};2;1903 atlas
+365;395;396;HAIKANG Guangdong (海康) - YINGLI Guangdong (英利驿);{"type":"MultiLineString","coordinates":[[[110.087914,20.9019580000001],[110.083938,20.568853]]]};2;1903 atlas
+366;396;397;YINGLI Guangdong (英利驿) - XUWEN Guangdong (徐闻);{"type":"MultiLineString","coordinates":[[[110.083938,20.568853],[110.162781,20.3296760000001]]]};2;1903 atlas
+367;340;398;ANPU Guangdong (安铺) - SHICHENG Guangdong (石城);{"type":"MultiLineString","coordinates":[[[110.016045,21.458857],[110.273559,21.593603]]]};2;1903 atlas
+368;398;399;SHICHENG Guangdong (石城) - LINGSHUIYI Guangdong (陵水驿);{"type":"MultiLineString","coordinates":[[[110.273559,21.593603],[110.625313,21.654028]]]};2;1903 atlas
+369;399;400;LINGSHUIYI Guangdong (陵水驿) - NANSHENG Guangdong (南盛);{"type":"MultiLineString","coordinates":[[[110.625313,21.654028],[110.70665,21.7317470000001]]]};2;1903 atlas
+370;400;401;NANSHENG Guangdong (南盛) - SHIGU Guangdong (石鼓);{"type":"MultiLineString","coordinates":[[[110.70665,21.7317470000001],[110.76403,21.8307340000001]]]};2;1903 atlas
+371;401;402;SHIGU Guangdong (石鼓) - GAOZHOU Guangdong (高州);{"type":"MultiLineString","coordinates":[[[110.76403,21.8307340000001],[110.853813,21.9192140000001]]]};2;1903 atlas
+372;308;338;XUNZHOU Guangxi (浔州) - BITANYI Guangxi (碧潭驿);{"type":"MultiLineString","coordinates":[[[110.071663,23.394571],[110.21003,23.6002670000001]]]};2;1903 atlas
+373;337;338;PINGNAN Guangxi (平南) - BITANYI Guangxi (碧潭驿);{"type":"MultiLineString","coordinates":[[[110.21003,23.6002670000001],[110.394737,23.5499800000001]]]};2;1903 atlas
+374;336;337;DANZHU Guangxi (丹竹) - PINGNAN Guangxi (平南);{"type":"MultiLineString","coordinates":[[[110.394737,23.5499800000001],[110.524315,23.476589]]]};2;1903 atlas
+375;333;334;MENGJIANG Guangxi (濛江) - BAIMAXU Guangxi (白马);{"type":"MultiLineString","coordinates":[[[110.588886,23.465922],[110.735909,23.475643]]]};2;1903 atlas
+376;332;333;TENGXIAN Guangxi (藤县) - MENGJIANG Guangxi (濛江);{"type":"MultiLineString","coordinates":[[[110.735909,23.475643],[110.904282,23.373119]]]};2;1903 atlas
+377;332;403;TENGXIAN Guangxi (藤县) - WUZHOU Guangxi (梧州);{"type":"MultiLineString","coordinates":[[[110.904282,23.373119],[111.308571,23.486898]]]};2;1903 atlas
+378;326;404;ZHAOJINYI Guangxi (昭津驿) - ZHAOPING Guangxi (昭潭驿);{"type":"MultiLineString","coordinates":[[[110.6465,24.6357270000001],[110.803612,24.1691230000001]]]};2;1903 atlas
+379;403;404;WUZHOU Guangxi (梧州) - ZHAOPING Guangxi (昭潭驿);{"type":"MultiLineString","coordinates":[[[110.803612,24.1691230000001],[111.308571,23.486898]]]};2;1903 atlas
+380;403;405;WUZHOU Guangxi (梧州) - ZHAOQING Guangdong (崧台驿);{"type":"MultiLineString","coordinates":[[[111.308571,23.486898],[112.453155,23.056921]]]};2;1903 atlas
+381;101;378;ANYUAN Guangdong (安远驿) - SHAHE Guangdong (沙河);{"type":"MultiLineString","coordinates":[[[113.022132873535,23.7207279205323],[112.889171,23.9889830000001]]]};2;1903 atlas
+382;378;379;SHAHE Guangdong (沙河) - BAISHITANXU Guangdong (白石潭);{"type":"MultiLineString","coordinates":[[[112.889171,23.9889830000001],[112.759628,24.126741]]]};2;1903 atlas
+383;381;382;SHUIKOU Guangdong (水口) - YANGSHAN Guangdong (阳山);{"type":"MultiLineString","coordinates":[[[112.713646,24.3961849999999],[112.638267,24.485014]]]};2;1903 atlas
+384;382;383;YANGSHAN Guangdong (阳山) - LIANZHOU Guangdong (连州);{"type":"MultiLineString","coordinates":[[[112.638267,24.485014],[112.378121,24.7797010000001]]]};2;1903 atlas
+385;383;384;LIANZHOU Guangdong (连州) - SANJIANG Guangdong (三江);{"type":"MultiLineString","coordinates":[[[112.378121,24.7797010000001],[112.282501,24.7188109999999]]]};2;1903 atlas
+386;109;374;YINGDE Guangdong (英德) - HETOU Guangdong (河头);{"type":"MultiLineString","coordinates":[[[113.402076721192,24.1729373931886],[113.461098000008,24.2600779999972]]]};1;1903 atlas
+387;113;376;FURONG Guangdong (芙蓉驿) - LONGGUIXU Guangdong (龙归墟);{"type":"MultiLineString","coordinates":[[[113.603416442871,24.810209274292],[113.454010000008,24.7280709999969]]]};2;1903 atlas
+388;113;371;FURONG Guangdong (芙蓉驿) - MABA Guangdong (马霸);{"type":"MultiLineString","coordinates":[[[113.596169000011,24.6838679999958],[113.603416442871,24.810209274292]]]};1;1903 atlas
+389;371;372;MABA Guangdong (马霸) - WUSHI Guangdong (乌石);{"type":"MultiLineString","coordinates":[[[113.589706000011,24.5742259999959],[113.596169000011,24.6838679999958]]]};1;1903 atlas
+390;372;373;WUSHI Guangdong (乌石) - SHAKOU Guangdong (沙口);{"type":"MultiLineString","coordinates":[[[113.514343000009,24.4235759999966],[113.589706000011,24.5742259999959]]]};1;1903 atlas
+391;373;374;SHAKOU Guangdong (沙口) - HETOU Guangdong (河头);{"type":"MultiLineString","coordinates":[[[113.461098000008,24.2600779999972],[113.514343000009,24.4235759999966]]]};1;1903 atlas
+392;96;405;XI'NAN Guangdong (西南驿) - ZHAOQING Guangdong (崧台驿);{"type":"MultiLineString","coordinates":[[[112.453155,23.056921],[112.886070251465,23.1658687591553]]]};2;1903 atlas
+393;96;385;XI'NAN Guangdong (西南驿) - SANZHOU Guangdong (三洲);{"type":"MultiLineString","coordinates":[[[112.886070251465,23.1658687591553],[112.848,22.889]]]};2;1903 atlas
+394;406;407;SHANTOU Guangdong (汕头) - ANBU Guangdong (菴埠);{"type":"MultiLineString","coordinates":[[[116.682884,23.3639550000001],[116.684898,23.4515000000002]]]};2;1903 atlas
+395;407;408;ANBU Guangdong (菴埠) - CAITANGXU Guangdong (彩塘市);{"type":"MultiLineString","coordinates":[[[116.684898,23.4515000000002],[116.655524,23.5068140000001]]]};2;1903 atlas
+396;408;409;CAITANGXU Guangdong (彩塘市) - LONGHU Guangdong (龙湖);{"type":"MultiLineString","coordinates":[[[116.655524,23.5068140000001],[116.646716,23.5552670000001]]]};2;1903 atlas
+397;409;410;LONGHU Guangdong (龙湖) - FUYANG Guangdong (浮阳);{"type":"MultiLineString","coordinates":[[[116.646716,23.5552670000001],[116.602913,23.5814360000001]]]};2;1903 atlas
+398;410;411;FUYANG Guangdong (浮阳) - FENGCHENGYI Guangdong (凤城驿);{"type":"MultiLineString","coordinates":[[[116.602913,23.5814360000001],[116.636658,23.667706]]]};2;1903 atlas
+399;411;412;FENGCHENGYI Guangdong (凤城驿) - LIUHUANG Guangdong (馏隍);{"type":"MultiLineString","coordinates":[[[116.6403,23.6661000000001],[116.458,23.914]]]};2;1903 atlas
+400;412;413;LIUHUANG Guangdong (馏隍) - XINDU Guangdong (新渡);{"type":"MultiLineString","coordinates":[[[116.458,23.914],[116.523247,24.095016]]]};2;1903 atlas
+401;414;415;JIAYINGFU Guangdong (嘉应) - CHENGJIANGYI Guangdong (程江驿);{"type":"MultiLineString","coordinates":[[[116.63282,24.1862220000002],[116.110497,24.3157810000001]]]};2;1903 atlas
+402;413;415;XINDU Guangdong (新渡) - CHENGJIANGYI Guangdong (程江驿);{"type":"MultiLineString","coordinates":[[[116.523247,24.095016],[116.63282,24.1862220000002]]]};2;1903 atlas
+403;415;416;CHENGJIANGYI Guangdong (程江驿) - SANHEBA Guangdong (三河灞);{"type":"MultiLineString","coordinates":[[[116.63282,24.1862220000002],[116.563042,24.3946900000001]]]};2;1903 atlas
+404;416;417;SANHEBA Guangdong (三河灞) - DAPU Guangdong (大埔);{"type":"MultiLineString","coordinates":[[[116.563042,24.3946900000001],[116.68544,24.517746]]]};2;1903 atlas
+405;418;419;QIDUYI Guangdong (七都驿) - XINGNING Guangdong (兴宁驿);{"type":"MultiLineString","coordinates":[[[115.97683,24.0406340000001],[115.727348,24.1386910000001]]]};2;1903 atlas
+406;414;418;JIAYINGFU Guangdong (嘉应) - QIDUYI Guangdong (七都驿);{"type":"MultiLineString","coordinates":[[[115.97683,24.0406340000001],[116.110497,24.3157810000001]]]};2;1903 atlas
+407;433;434;XINLEYI Guangdong (欣乐驿) - BOLUO Guangdong (博罗);{"type":"MultiLineString","coordinates":[[[114.273606,23.1722470000001],[114.410285,23.0893780000001]]]};2;1903 atlas
+408;432;433;HENGLI Guangdong (横沥) - XINLEYI Guangdong (欣乐驿);{"type":"MultiLineString","coordinates":[[[114.410285,23.0893780000001],[114.610985000079,23.1724949999744]]]};2;1903 atlas
+409;431;432;CHIWEI Guangdong (赤尾) - HENGLI Guangdong (横沥);{"type":"MultiLineString","coordinates":[[[114.610985000079,23.1724949999744],[114.523194000069,23.3647159999774]]]};2;1903 atlas
+410;430;431;GUANYINGE Guangdong (观音阁) - CHIWEI Guangdong (赤尾);{"type":"MultiLineString","coordinates":[[[114.523194000069,23.3647159999774],[114.586777,23.4017560000001]]]};2;1903 atlas
+411;429;430;PUQIAN Guangdong (埔前) - GUANYINGE Guangdong (观音阁);{"type":"MultiLineString","coordinates":[[[114.586777,23.4017560000001],[114.616235279933,23.5731104549179]]]};2;1903 atlas
+412;428;429;HEYUAN Guangdong (河源) - PUQIAN Guangdong (埔前);{"type":"MultiLineString","coordinates":[[[114.616235279933,23.5731104549179],[114.69146,23.736834]]]};2;1903 atlas
+413;427;952;LANKOU Guangdong (蓝口) - YIHEYI Guangdong (义合驿);{"type":"MultiLineString","coordinates":[[[114.866569,23.8398740000001],[115.083984,23.956976]]]};2;1903 atlas
+414;426;427;LONGCHUAN Guangdong (龙川) - LANKOU Guangdong (蓝口);{"type":"MultiLineString","coordinates":[[[115.083984,23.956976],[115.186172,24.0600030000001]]]};2;1903 atlas
+415;425;426;LAOLONG Guangdong (老隆) - LONGCHUAN Guangdong (龙川);{"type":"MultiLineString","coordinates":[[[115.186172,24.0600030000001],[115.255585,24.0997140000001]]]};2;1903 atlas
+416;424;425;HESHIXU Guangdong (鹤市墟) - LAOLONG Guangdong (老隆);{"type":"MultiLineString","coordinates":[[[115.255585,24.0997140000001],[115.361618,24.0070190000001]]]};2;1903 atlas
+417;423;424;QILINGXU Guangdong (岐岭) - HESHIXU Guangdong (鹤市墟);{"type":"MultiLineString","coordinates":[[[115.361618,24.0070190000001],[115.447479,24.0808700000001]]]};2;1903 atlas
+418;422;423;CHANGLE Guangdong (长乐) - QILINGXU Guangdong (岐岭);{"type":"MultiLineString","coordinates":[[[115.447479,24.0808700000001],[115.61644,24.0660500000001]]]};2;1903 atlas
+419;419;422;XINGNING Guangdong (兴宁驿) - CHANGLE Guangdong (长乐);{"type":"MultiLineString","coordinates":[[[115.61644,24.0660500000001],[115.727348,24.1386910000001]]]};2;1903 atlas
+420;435;436;WENCHUANYI Sichuan (文川驿) - NANXI Sichuan (南溪);{"type":"MultiLineString","coordinates":[[[104.616356,28.774832],[104.972015,28.8479840000001]]]};2;1903 atlas
+421;436;437;NANXI Sichuan (南溪) - LUCHUANYI Sichuan (卢川驿);{"type":"MultiLineString","coordinates":[[[104.972015,28.8479840000001],[105.437004,28.8843630000001]]]};2;1903 atlas
+422;438;440;LUQIAOYI Sichuan (陆桥驿) - NEIJIANG Sichuan (内江);{"type":"MultiLineString","coordinates":[[[105.273041,29.34938],[105.053894,29.5807550000001]]]};2;1903 atlas
+423;440;441;NEIJIANG Sichuan (内江) - ZIZHOU Sichuan (资县);{"type":"MultiLineString","coordinates":[[[105.053894,29.5807550000001],[104.848358,29.7847480000001]]]};2;1903 atlas
+424;437;443;LUCHUANYI Sichuan (卢川驿) - HEJIANG Sichuan (合江);{"type":"MultiLineString","coordinates":[[[105.437004,28.8843630000001],[105.826729,28.8120020000001]]]};2;1903 atlas
+425;438;439;LUQIAOYI Sichuan (陆桥驿) - RONGCHANG Chongqing (荣昌);{"type":"MultiLineString","coordinates":[[[105.273041,29.34938],[105.596313,29.4127710000001]]]};2;1903 atlas
+426;439;442;RONGCHANG Chongqing (荣昌) - DONGCHUAN Chongqing (东皋驿);{"type":"MultiLineString","coordinates":[[[105.596313,29.4127710000001],[105.896606,29.3602870000001]]]};2;1903 atlas
+427;437;444;LUCHUANYI Sichuan (卢川驿) - NAXI Sichuan (纳溪驿);{"type":"MultiLineString","coordinates":[[[105.437004,28.8843630000001],[105.381729,28.7820630000001]]]};2;1903 atlas
+428;445;846;YONGNING Sichuan (永宁卫) - YONG'ANYI Sichuan (永安驿);{"type":"MultiLineString","coordinates":[[[105.368880998823,28.3842909992281],[105.420772,28.1744040000001]]]};2;1903 atlas
+429;446;447;CHANGNING Sichuan (长宁) - DUNINGYI Sichuan (都宁驿);{"type":"MultiLineString","coordinates":[[[104.889175,28.379269],[104.797791,28.3811910000001]]]};2;1903 atlas
+430;446;448;CHANGNING Sichuan (长宁) - XINGWEN Sichuan (兴文);{"type":"MultiLineString","coordinates":[[[105.086327,28.3406260000001],[104.889175,28.379269]]]};2;1903 atlas
+431;449;450;HUILI Sichuan (会理) - AYONGYI Sichuan (阿用驿);{"type":"MultiLineString","coordinates":[[[102.233864,26.6618670000001],[102.326459,27.3329090000001]]]};2;1903 atlas
+432;451;840;LUCHUANYI Sichuan (泸川驿) - LUMAYI Sichuan (禄马驿);{"type":"MultiLineString","coordinates":[[[102.207599,27.7206120000001],[102.266953,27.8998149999999]]]};2;1903 atlas
+433;451;839;LUCHUANYI Sichuan (泸川驿) - XILONGYI Sichuan (谿龙驿);{"type":"MultiLineString","coordinates":[[[102.266953,27.8998149999999],[102.182885,28.1311830000001]]]};2;1903 atlas
+434;452;454;LUGUGUAN Sichuan (泸沽驿) - YUEXI Sichuan (越xi);{"type":"MultiLineString","coordinates":[[[102.197121,28.307333],[102.503777,28.6437640000001]]]};2;1903 atlas
+435;452;453;LUGUGUAN Sichuan (泸沽驿) - NINGFANWEI Sichuan (宁番卫);{"type":"MultiLineString","coordinates":[[[102.197121,28.307333],[102.165703,28.5509510000001]]]};2;1903 atlas
+436;454;456;YUEXI Sichuan (越xi) - FULIN Sichuan (富林);{"type":"MultiLineString","coordinates":[[[102.503777,28.6437640000001],[102.676926,29.3540380000001]]]};2;1903 atlas
+437;455;456;QINGXI Sichuan (清溪) - FULIN Sichuan (富林);{"type":"MultiLineString","coordinates":[[[102.676926,29.3540380000001],[102.617798,29.585054]]]};2;1903 atlas
+438;455;457;QINGXI Sichuan (清溪) - JINGKOUYI Sichuan (箐口驿);{"type":"MultiLineString","coordinates":[[[102.617798,29.585054],[102.837318,29.7953260000002]]]};2;1903 atlas
+439;457;458;JINGKOUYI Sichuan (箐口驿) - YA'AN Sichuan (雅安驿);{"type":"MultiLineString","coordinates":[[[102.837318,29.7953260000002],[102.984367,29.9855560000001]]]};2;1903 atlas
+440;458;459;YA'AN Sichuan (雅安驿) - TAIPINGYI Sichuan (太平驿);{"type":"MultiLineString","coordinates":[[[102.984367,29.9855560000001],[102.750504,30.078638]]]};2;1903 atlas
+441;435;463;WENCHUANYI Sichuan (文川驿) - JIANWEI Sichuan (犍为);{"type":"MultiLineString","coordinates":[[[104.616356,28.774832],[103.943123,29.2092440000001]]]};2;1903 atlas
+442;462;463;ZHUGENTAN Sichuan (竹根滩) - JIANWEI Sichuan (犍为);{"type":"MultiLineString","coordinates":[[[103.943123,29.2092440000001],[103.814689997035,29.4011989963]]]};2;1903 atlas
+443;462;464;ZHUGENTAN Sichuan (竹根滩) - NIUHUAXI Sichuan (牛华溪);{"type":"MultiLineString","coordinates":[[[103.814689997035,29.4011989963],[103.809395,29.469742]]]};2;1903 atlas
+444;461;464;JIADING Sichuan (嘉定州) - NIUHUAXI Sichuan (牛华溪);{"type":"MultiLineString","coordinates":[[[103.809395,29.469742],[103.751564,29.5706860000001]]]};2;1903 atlas
+445;460;838;QIONGZHOU Sichuan (邛州) - BAIZHANGYI Sichuan (百丈驿);{"type":"MultiLineString","coordinates":[[[103.257193998075,30.190762993817],[103.456825,30.4165900000001]]]};2;1903 atlas
+446;460;468;QIONGZHOU Sichuan (邛州) - CHONGQINGZHOU Sichuan (崇庆州);{"type":"MultiLineString","coordinates":[[[103.456825,30.4165900000001],[103.672607,30.6365640000001]]]};2;1903 atlas
+447;461;465;JIADING Sichuan (嘉定州) - QINGSHEN Sichuan (青神);{"type":"MultiLineString","coordinates":[[[103.751564,29.5706860000001],[103.845108,29.8372760000001]]]};2;1903 atlas
+448;465;466;QINGSHEN Sichuan (青神) - MEIZHOU Sichuan (眉州驿);{"type":"MultiLineString","coordinates":[[[103.845108,29.8372760000001],[103.831459,30.050497]]]};2;1903 atlas
+449;466;467;MEIZHOU Sichuan (眉州驿) - PENGSHAN Sichuan (彭山);{"type":"MultiLineString","coordinates":[[[103.831459,30.050497],[103.869247,30.200752]]]};2;1903 atlas
+450;467;837;PENGSHAN Sichuan (彭山) - MUMAYI Sichuan (木马驿);{"type":"MultiLineString","coordinates":[[[103.869247,30.200752],[104.066665649414,30.4999999999999]]]};2;1903 atlas
+451;8;837;JINGUANYI Sichuan (锦官驿) - MUMAYI Sichuan (木马驿);{"type":"MultiLineString","coordinates":[[[104.066665649414,30.4999999999999],[104.077995300293,30.6503849029541]]]};2;1903 atlas
+452;468;469;CHONGQINGZHOU Sichuan (崇庆州) - WENJIANG Sichuan (温江);{"type":"MultiLineString","coordinates":[[[103.672607,30.6365640000001],[103.830605,30.702269]]]};2;1903 atlas
+453;8;469;JINGUANYI Sichuan (锦官驿) - WENJIANG Sichuan (温江);{"type":"MultiLineString","coordinates":[[[103.830605,30.702269],[104.077995300293,30.6503849029541]]]};2;1903 atlas
+454;8;473;JINGUANYI Sichuan (锦官驿) - YONGKANGYI Sichuan (永康驿);{"type":"MultiLineString","coordinates":[[[104.077995300293,30.6503849029541],[103.621403672805,31.0126133072906]]]};2;1903 atlas
+455;473;832;YONGKANGYI Sichuan (永康驿) - TAIPINGYI Sichuan (太平驿);{"type":"MultiLineString","coordinates":[[[103.621403672805,31.0126133072906],[103.499463490766,31.1463699465936]]]};2;1903 atlas
+456;471;474;ANYUANYI Sichuan (安远驿) - HULINYI Sichuan (护林驿);{"type":"MultiLineString","coordinates":[[[103.578148,31.477791],[103.853035,31.688931]]]};2;1903 atlas
+457;471;472;ANYUANYI Sichuan (安远驿) - HANSHUIYI Sichuan (寒水驿);{"type":"MultiLineString","coordinates":[[[103.480194,31.2977910000001],[103.578148,31.477791]]]};2;1903 atlas
+458;472;832;HANSHUIYI Sichuan (寒水驿) - TAIPINGYI Sichuan (太平驿);{"type":"MultiLineString","coordinates":[[[103.499463490766,31.1463699465936],[103.480194,31.2977910000001]]]};2;1903 atlas
+459;475;476;JIANGYOU Sichuan (江油) - ZHONGBA Sichuan (中坝);{"type":"MultiLineString","coordinates":[[[104.776527,31.8828120000001],[104.740952,31.7781160000001]]]};2;1903 atlas
+460;14;477;JINSHANYI Sichuan (金山驿) - ZHANGMING Sichuan (彰明);{"type":"MultiLineString","coordinates":[[[104.718544,31.7186320000001],[104.749298095703,31.4590072631837]]]};2;1903 atlas
+461;476;477;ZHONGBA Sichuan (中坝) - ZHANGMING Sichuan (彰明);{"type":"MultiLineString","coordinates":[[[104.740952,31.7781160000001],[104.718544,31.7186320000001]]]};2;1903 atlas
+462;470;831;HANZHOU Sichuan (汉州) - GUDIANYI Sichuan (古店驿);{"type":"MultiLineString","coordinates":[[[104.283066,30.9813100000001],[104.499779,30.9987300000001]]]};1;1903 atlas
+463;480;830;HUANGHUAYI Sichuan (皇华驿) - JIANNINGYI Sichuan (建宁驿);{"type":"MultiLineString","coordinates":[[[104.875994,31.0772870000001],[105.08757,31.09462]]]};1;1903 atlas
+464;14;480;JINSHANYI Sichuan (金山驿) - HUANGHUAYI Sichuan (皇华驿);{"type":"MultiLineString","coordinates":[[[105.08757,31.09462],[104.749298095703,31.4590072631837]]]};2;1903 atlas
+465;483;484;BAXIAN Chongqing (巴县) - LAIFENGYI Chongqing (来凤驿);{"type":"MultiLineString","coordinates":[[[106.552667,29.559972],[106.202049,29.436478]]]};2;1903 atlas
+466;442;484;DONGCHUAN Chongqing (东皋驿) - LAIFENGYI Chongqing (来凤驿);{"type":"MultiLineString","coordinates":[[[106.202049,29.436478],[105.896606,29.3602870000001]]]};2;1903 atlas
+467;8;482;JINGUANYI Sichuan (锦官驿) - JIANZHOU Sichuan (简州);{"type":"MultiLineString","coordinates":[[[104.550407,30.3902720000002],[104.077995300293,30.6503849029541]]]};2;1903 atlas
+468;441;858;ZIZHOU Sichuan (资县) - NANJINYI Sichuan (南津驿);{"type":"MultiLineString","coordinates":[[[104.848358,29.7847480000001],[104.692558,30.035488]]]};2;1903 atlas
+469;482;858;JIANZHOU Sichuan (简州) - NANJINYI Sichuan (南津驿);{"type":"MultiLineString","coordinates":[[[104.692558,30.035488],[104.550407,30.3902720000002]]]};2;1903 atlas
+470;491;785;HEYANGYI Chongqing (合阳驿) - TUTUOYI Chongqing (土陀驿);{"type":"MultiLineString","coordinates":[[[106.501281999692,29.7919269997673],[106.25956,30.0039420000001]]]};2;1903 atlas
+471;490;491;DINGYUAN Sichuan (定远) - HEYANGYI Chongqing (合阳驿);{"type":"MultiLineString","coordinates":[[[106.25956,30.0039420000001],[106.2584,30.272371]]]};2;1903 atlas
+472;489;490;NANCHONG Sichuan (南充) - DINGYUAN Sichuan (定远);{"type":"MultiLineString","coordinates":[[[106.2584,30.272371],[106.080727,30.7989860000001]]]};2;1903 atlas
+473;488;489;XICHONG Sichuan (西充) - NANCHONG Sichuan (南充);{"type":"MultiLineString","coordinates":[[[106.080727,30.7989860000001],[105.880943,31.0104580000001]]]};2;1903 atlas
+474;487;488;NANBU Sichuan (南部) - XICHONG Sichuan (西充);{"type":"MultiLineString","coordinates":[[[105.880943,31.0104580000001],[106.058586,31.359615]]]};2;1903 atlas
+475;486;487;JINPINGYI Sichuan (锦屏驿) - NANBU Sichuan (南部);{"type":"MultiLineString","coordinates":[[[106.058586,31.359615],[105.967033,31.5831600000001]]]};2;1903 atlas
+476;485;486;CANGXI Sichuan (苍溪驿) - JINPINGYI Sichuan (锦屏驿);{"type":"MultiLineString","coordinates":[[[105.967033,31.5831600000001],[105.933037,31.7431050000001]]]};1;1903 atlas
+477;21;818;WENJINYI Sichuan (问津驿) - LONGTANYI Sichuan (龙潭驿);{"type":"MultiLineString","coordinates":[[[105.85006648168,32.3184427683531],[105.832992553711,32.4438896179199]]]};1;1903 atlas
+478;344;483;QIJIANG Chongqing (綦江) - BAXIAN Chongqing (巴县);{"type":"MultiLineString","coordinates":[[[106.639313,29.0252590000001],[106.552667,29.559972]]]};2;1903 atlas
+479;492;493;FENGTAI Beijing (丰台区) - ZHANGXINDIAN Beijing (长辛店);{"type":"MultiLineString","coordinates":[[[116.193977,39.827301],[116.283989,39.8494490000001]]]};1;1903 atlas
+480;178;493;LANGXIANG Beijing (固节驿) - ZHANGXINDIAN Beijing (长辛店);{"type":"MultiLineString","coordinates":[[[116.193977,39.827301],[116.135581970215,39.7412528991699]]]};1;
+481;494;495;QINGYUANYI Hebei (清苑驿) - LIANGGEZHUANG Hebei (梁各庄);{"type":"MultiLineString","coordinates":[[[115.400124,39.3835370000002],[115.493477,39.349037]]]};1;1903 atlas
+482;164;494;LAISHUI Hebei (涞水) - QINGYUANYI Hebei (清苑驿);{"type":"MultiLineString","coordinates":[[[115.493477,39.349037],[115.707802,39.391743]]]};1;1903 atlas
+483;162;501;JINTAIYI Hebei (金台驿) - BAIGOUYI Hebei (白沟驿);{"type":"MultiLineString","coordinates":[[[115.550667,38.9505230000001],[115.50209,38.8557010000001]]]};1;1903 atlas
+484;170;172;ZHULUYI Hebei (逐鹿驿) - FENSHUI Hebei (汾水驿);{"type":"MultiLineString","coordinates":[[[115.968147277832,39.4872207641603],[115.987564,39.245949]]]};1;1903 atlas
+485;172;497;FENSHUI Hebei (汾水驿) - FENSHUIYI Hebei (汾水驿);{"type":"MultiLineString","coordinates":[[[115.987564086914,39.245948791504],[116.008331,39.110516]]]};1;
+486;158;502;DICHENG Hebei (翟城驿) - XINGYANG Hebei (陉阳驿);{"type":"MultiLineString","coordinates":[[[115.133422851563,38.7052650451661],[115.244057,38.7802090000001]]]};1;1903 atlas
+487;162;502;JINTAIYI Hebei (金台驿) - XINGYANG Hebei (陉阳驿);{"type":"MultiLineString","coordinates":[[[115.244057,38.7802090000001],[115.50209,38.8557010000001]]]};1;1903 atlas
+488;174;498;ZHENGCHEN Hebei (郑城驿) - MAOZHOUZHEN Hebei (鄚州镇);{"type":"MultiLineString","coordinates":[[[116.107063,38.860367],[116.090484619141,38.7076683044434]]]};1;1903 atlas
+489;174;500;ZHENGCHEN Hebei (郑城驿) - SHIMENQIAO Hebei (石门桥);{"type":"MultiLineString","coordinates":[[[116.090484619141,38.7076683044434],[116.051177000127,38.6356219989831]]]};1;
+490;499;500;SANSHILIPU Hebei (三十里铺) - SHIMENQIAO Hebei (石门桥);{"type":"MultiLineString","coordinates":[[[116.071208,38.5655700000001],[116.051177000127,38.6356219989831]]]};1;1903 atlas
+491;503;504;QIZHOU Hebei (祁州) - DONGTING Hebei (东亭);{"type":"MultiLineString","coordinates":[[[115.315086,38.4123420000001],[115.125023,38.47488]]]};2;1903 atlas
+492;156;504;YONGDING Hebei (永定驿) - DONGTING Hebei (东亭);{"type":"MultiLineString","coordinates":[[[115.125023,38.47488],[114.975044250488,38.52006149292]]]};2;1903 atlas
+493;144;145;HENGSHANYI Hebei (恒山驿) - GUANCHENG Hebei (关城驿);{"type":"MultiLineString","coordinates":[[[114.652694702148,37.8857803344728],[114.563644,38.1401100000002]]]};1;V
+494;152;505;FUCHENG Hebei (伏城驿) - JINZHOU Hebei (晋州);{"type":"MultiLineString","coordinates":[[[115.035423,38.0324940000001],[114.834182739258,38.0367126464844]]]};2;1903 atlas
+495;144;152;HENGSHANYI Hebei (恒山驿) - FUCHENG Hebei (伏城驿);{"type":"MultiLineString","coordinates":[[[114.834182739258,38.0367126464844],[114.56364440918,38.1401100158692]]]};2;1903 atlas
+496;179;506;FUCHENG Hebei (阜城驿) - JIANQIAOZHEN Hebei (建桥镇);{"type":"MultiLineString","coordinates":[[[116.272868000173,37.9488879987471],[116.144706726074,37.8681793212891]]]};1;1903 atlas
+497;507;508;LINMINGYI Hebei (临铭驿) - LINMINGGUAN Hebei (临铭驿);{"type":"MultiLineString","coordinates":[[[114.499619,36.936829],[114.482628,36.7903630000001]]]};1;1903 atlas
+498;141;508;CONGTAI Hebei (从台驿) - LINMINGGUAN Hebei (临铭驿);{"type":"MultiLineString","coordinates":[[[114.482628,36.7903630000001],[114.472038,36.5934750000001]]]};1;1903 atlas
+499;141;512;CONGTAI Hebei (从台驿) - FEIXIANG Hebei (肥乡);{"type":"MultiLineString","coordinates":[[[114.472038269043,36.5934753417969],[114.803101,36.5520290000001]]]};2;1903 atlas
+500;511;512;GUANGPING Hebei (广平) - FEIXIANG Hebei (肥乡);{"type":"MultiLineString","coordinates":[[[114.803101,36.5520290000001],[114.936844,36.4805180000001]]]};2;1903 atlas
+501;510;511;DAMINGFU Hebei (大名府) - GUANGPING Hebei (广平);{"type":"MultiLineString","coordinates":[[[114.936844,36.4805180000001],[115.1465,36.275528]]]};2;
+502;510;516;DAMINGFU Hebei (大名府) - LONGWANGMIAO Hebei (龙王庙);{"type":"MultiLineString","coordinates":[[[115.146523,36.275528],[115.221046,36.221699]]]};2;1903 atlas
+503;513;516;NANLE Henan (南乐) - LONGWANGMIAO Hebei (龙王庙);{"type":"MultiLineString","coordinates":[[[115.221046,36.221699],[115.197624,36.0774730000001]]]};2;1903 atlas
+504;513;514;NANLE Henan (南乐) - QINGFENG Henan (清丰);{"type":"MultiLineString","coordinates":[[[115.197624,36.0774730000001],[115.110039,35.908768]]]};2;1903 atlas
+505;514;515;QINGFENG Henan (清丰) - KAIZHOU Henan (开州);{"type":"MultiLineString","coordinates":[[[115.110039,35.908768],[115.005928,35.754284]]]};2;1903 atlas
+506;141;517;CONGTAI Hebei (从台驿) - MATOU Hebei (码头);{"type":"MultiLineString","coordinates":[[[114.472038269043,36.5934753417969],[114.423614501953,36.4736099243165]]]};1;
+507;188;518;HUITONGGUAN Beijing (会同馆) - YUHE Beijing (榆河驿);{"type":"MultiLineString","coordinates":[[[116.368003845215,39.9314270019532],[116.223679,40.222099]]]};2;1903 atlas
+508;518;519;YUHE Beijing (榆河驿) - TUMUYI Hebei (土木驿);{"type":"MultiLineString","coordinates":[[[116.223679,40.222099],[115.759587,40.3613330000001]]]};2;
+509;520;560;WANQUANDUSI Hebei (万全都司) - JIMINGBAO Hebei (鸡鸣驿);{"type":"MultiLineString","coordinates":[[[115.31073,40.4544260000001],[115.051147,40.6103630000001]]]};2;1903 atlas
+510;520;521;WANQUANDUSI Hebei (万全都司) - ZHAOCHUANBAO Hebei (赵川堡);{"type":"MultiLineString","coordinates":[[[115.051147,40.6103630000001],[115.344215,40.682587]]]};2;1903 atlas
+511;521;522;ZHAOCHUANBAO Hebei (赵川堡) - LONGMEN Hebei (龙门);{"type":"MultiLineString","coordinates":[[[115.344215,40.682587],[115.572678,40.7791940000001]]]};2;1903 atlas
+512;522;523;LONGMEN Hebei (龙门) - CHICHENG Hebei (赤城县);{"type":"MultiLineString","coordinates":[[[115.572678,40.7791940000001],[115.81398,40.9134860000001]]]};2;1903 atlas
+513;523;524;CHICHENG Hebei (赤城县) - DUSHIKOU Hebei (独石堡);{"type":"MultiLineString","coordinates":[[[115.81398,40.9134860000001],[115.711235,41.313564]]]};2;1903 atlas
+514;520;525;WANQUANDUSI Hebei (万全都司) - ZHANGJIAKOU Hebei (张家口);{"type":"MultiLineString","coordinates":[[[115.051147,40.6103630000001],[114.885941,40.7912560000001]]]};2;1903 atlas
+515;525;526;ZHANGJIAKOU Hebei (张家口) - WANQUAN Hebei (万全);{"type":"MultiLineString","coordinates":[[[114.885941,40.7912560000001],[114.734733,40.864902]]]};2;1903 atlas
+516;529;530;MIYUN Beijing (密云驿) - SHIXIA Beijing (石匣驿);{"type":"MultiLineString","coordinates":[[[116.840462,40.371483],[117.066665649414,40.5499992370606]]]};2;1903 atlas
+517;528;529;SHUNYI Beijing (顺义驿) - MIYUN Beijing (密云驿);{"type":"MultiLineString","coordinates":[[[116.641403,40.127552],[116.840462,40.371483]]]};2;1903 atlas
+518;188;528;HUITONGGUAN Beijing (会同馆) - SHUNYI Beijing (顺义驿);{"type":"MultiLineString","coordinates":[[[116.368003845215,39.9314270019532],[116.641403,40.127552]]]};2;1903 atlas
+519;530;531;SHIXIA Beijing (石匣驿) - GUBEIKOU Beijing (古北口);{"type":"MultiLineString","coordinates":[[[117.066665649414,40.5499992370606],[117.159034998557,40.6875419962755]]]};2;1903 atlas
+520;531;532;GUBEIKOU Beijing (古北口) - LUANPING Hebei (滦平);{"type":"MultiLineString","coordinates":[[[117.159034998557,40.6875419962755],[117.730652,40.949322]]]};2;1903 atlas
+521;532;533;LUANPING Hebei (滦平) - CHENGDEFU Hebei (承德府);{"type":"MultiLineString","coordinates":[[[117.730652,40.949322],[117.919853,40.9657940000001]]]};2;1903 atlas
+522;533;535;CHENGDEFU Hebei (承德府) - HUANGGUTUN Hebei (黄姑屯);{"type":"MultiLineString","coordinates":[[[117.919853,40.9657940000001],[117.726203995383,41.3134689935423]]]};2;1903 atlas
+523;534;535;ZHANGSANYING Hebei (张三营) - HUANGGUTUN Hebei (黄姑屯);{"type":"MultiLineString","coordinates":[[[117.726203995383,41.3134689935423],[117.740593,41.5715180000001]]]};2;1903 atlas
+524;534;537;ZHANGSANYING Hebei (张三营) - WEICHANG Hebei (围场);{"type":"MultiLineString","coordinates":[[[117.740593,41.5715180000001],[117.740226994746,41.9425009932491]]]};2;1903 atlas
+525;536;537;TAIPINGDI Hebei (太平地) - WEICHANG Hebei (围场);{"type":"MultiLineString","coordinates":[[[117.740226994746,41.9425009932491],[118.153435,41.9018900000001]]]};2;1903 atlas
+526;127;538;WEIYUANYI Henan (卫源驿) - DAOKOUZHEN Henan (道口镇);{"type":"MultiLineString","coordinates":[[[114.070266723633,35.410385131836],[114.510803,35.581505]]]};2;1903 atlas
+527;515;538;KAIZHOU Henan (开州) - DAOKOUZHEN Henan (道口镇);{"type":"MultiLineString","coordinates":[[[114.510803,35.581505],[115.005928,35.754284]]]};2;1903 atlas
+528;120;546;XINZHONG Henan (新中驿) - CHONGNINGYI Henan (崇宁驿);{"type":"MultiLineString","coordinates":[[[113.86824798584,35.3099403381348],[113.660217,35.2681270000002]]]};1;MDYZK
+529;546;547;CHONGNINGYI Henan (崇宁驿) - WU’ANYI Henan (武安驿);{"type":"MultiLineString","coordinates":[[[113.660217,35.2681270000002],[113.434837,35.2311970000001]]]};1;MDYZK
+530;547;549;WU’ANYI Henan (武安驿) - NINGGUOYI Henan (宁郭驿);{"type":"MultiLineString","coordinates":[[[113.434837,35.2311970000001],[113.203026,35.1496930000001]]]};1;MDYZK
+531;544;549;HUAIQINGFU Henan (覃怀驿) - NINGGUOYI Henan (宁郭驿);{"type":"MultiLineString","coordinates":[[[113.203026,35.1496930000001],[112.936989,35.0893020000001]]]};1;MDYZK
+532;543;544;HEYANGYI Henan (河阳驿) - HUAIQINGFU Henan (覃怀驿);{"type":"MultiLineString","coordinates":[[[112.936989,35.0893020000001],[112.782799,34.9031790000001]]]};1;MDYZK
+533;542;543;MENGJIN Henan (孟津) - HEYANGYI Henan (河阳驿);{"type":"MultiLineString","coordinates":[[[112.782799,34.9031790000001],[112.636742,34.8138350000001]]]};1;MDYZK
+534;544;545;HUAIQINGFU Henan (覃怀驿) - JIYUAN Henan (济源);{"type":"MultiLineString","coordinates":[[[112.936989,35.0893020000001],[112.582672,35.092438]]]};2;1903 atlas
+535;541;542;ZHOUNANYI Henan (周南驿) - MENGJIN Henan (孟津);{"type":"MultiLineString","coordinates":[[[112.636742,34.8138350000001],[112.38263,34.6652760000001]]]};1;MDYZK
+536;540;541;SHOUYANGYI Henan (首阳驿) - ZHOUNANYI Henan (周南驿);{"type":"MultiLineString","coordinates":[[[112.38263,34.6652760000001],[112.813207,34.7149080000001]]]};2;1903 atlas
+537;539;540;GONGXIAN Henan (洛口驿) - SHOUYANGYI Henan (首阳驿);{"type":"MultiLineString","coordinates":[[[112.813207,34.7149080000001],[113.019588,34.7789240000001]]]};2;1903 atlas
+538;539;580;GONGXIAN Henan (洛口驿) - YINGYANG Henan (荥阳);{"type":"MultiLineString","coordinates":[[[113.347397,34.783108],[113.019588,34.7789240000001]]]};2;MDYZK
+539;519;558;TUMUYI Hebei (土木驿) - SHACHENG Hebei (沙城);{"type":"MultiLineString","coordinates":[[[115.759587,40.3613330000001],[115.510704,40.3976590000001]]]};2;1903 atlas
+540;558;559;SHACHENG Hebei (沙城) - TUMUYI Hebei (土木驿);{"type":"MultiLineString","coordinates":[[[115.510704,40.3976590000001],[115.403694,40.4361270000001]]]};2;1903 atlas
+541;559;560;TUMUYI Hebei (土木驿) - JIMINGBAO Hebei (鸡鸣驿);{"type":"MultiLineString","coordinates":[[[115.403694,40.4361270000001],[115.31073,40.4544260000001]]]};2;1903 atlas
+542;520;556;WANQUANDUSI Hebei (万全都司) - BAO'ANZHOU Hebei (保安州);{"type":"MultiLineString","coordinates":[[[115.051147,40.6103630000001],[115.214745,40.3765560000002]]]};2;1903 atlas
+543;556;557;BAO'ANZHOU Hebei (保安州) - FANSHANBAO Hebei (蠜山堡);{"type":"MultiLineString","coordinates":[[[115.214745,40.3765560000002],[115.430687,40.2164880000001]]]};2;1903 atlas
+544;552;557;TAOHUABAO Hebei (桃花堡) - FANSHANBAO Hebei (蠜山堡);{"type":"MultiLineString","coordinates":[[[115.430687,40.2164880000001],[114.989136,40.0620500000001]]]};2;1903 atlas
+545;552;553;TAOHUABAO Hebei (桃花堡) - JIJIAZHUANG Hebei (吉家庄);{"type":"MultiLineString","coordinates":[[[114.989136,40.0620500000001],[114.851044,40.0180930000001]]]};2;1903 atlas
+546;550;553;XIHEYING Hebei (西河营) - JIJIAZHUANG Hebei (吉家庄);{"type":"MultiLineString","coordinates":[[[114.851044,40.0180930000001],[114.760765,39.9614940000001]]]};2;1903 atlas
+547;550;551;XIHEYING Hebei (西河营) - WEIZHOU Hebei (蔚州);{"type":"MultiLineString","coordinates":[[[114.760765,39.9614940000001],[114.569054,39.8405380000002]]]};2;1903 atlas
+548;147;551;GUANGCHANG Hebei (广昌) - WEIZHOU Hebei (蔚州);{"type":"MultiLineString","coordinates":[[[114.688774108887,39.3540153503417],[114.569054,39.8405380000002]]]};2;1903 atlas
+549;541;568;ZHOUNANYI Henan (周南驿) - HANGUANYI Henan (函关驿);{"type":"MultiLineString","coordinates":[[[112.38263,34.6652760000001],[112.144302,34.733059]]]};1;MDYZK
+550;567;568;LICHENGYI Henan (蠡城驿) - HANGUANYI Henan (函关驿);{"type":"MultiLineString","coordinates":[[[112.144302,34.733059],[111.766312,34.765198]]]};1;MDYZK
+551;566;567;GUTANGYI Henan (甘棠驿) - LICHENGYI Henan (蠡城驿);{"type":"MultiLineString","coordinates":[[[111.766312,34.765198],[111.155629,34.790542]]]};1;MDYZK
+552;565;566;TAOLINYI Henan (桃林驿) - GUTANGYI Henan (甘棠驿);{"type":"MultiLineString","coordinates":[[[111.155629,34.790542],[110.94149,34.684616]]]};1;MDYZK
+553;60;564;TONGGUAN Shaanxi (潼关驿) - TONGGUANTING Shaanxi (潼关);{"type":"MultiLineString","coordinates":[[[110.94149,34.684616],[110.273651123047,34.5988082885743]]]};1;MDYZK
+554;120;570;XINZHONG Henan (新中驿) - KANGCUNYI Henan (亢村驿);{"type":"MultiLineString","coordinates":[[[113.86824798584,35.3099403381348],[113.681358,35.1249620000001]]]};1;
+555;108;570;GUANGWU Henan (广武驿) - KANGCUNYI Henan (亢村驿);{"type":"MultiLineString","coordinates":[[[113.681358,35.1249620000001],[113.528235887029,34.9844101586617]]]};1;Skinner
+556;146;149;HUAISHUI Hebei (槐水驿) - ZHAOZHOU Hebei (鄗城驿);{"type":"MultiLineString","coordinates":[[[114.68058013916,37.4946899414062],[114.772178649902,37.7529258728028]]]};1;MDYZK
+557;211;571;YANGFAN Hebei (阳樊驿) - SHIMENZHENYI Hebei (石门镇驿);{"type":"MultiLineString","coordinates":[[[117.696754,40.112427],[117.754776000977,39.8836708068849]]]};2;MDYZK
+558;571;572;SHIMENZHENYI Hebei (石门镇驿) - ZUNHUA Hebei (遵化驿);{"type":"MultiLineString","coordinates":[[[117.696754,40.112427],[117.957985,40.1844480000001]]]};2;MDYZK
+559;193;574;LUHE Beijing (潞河驿) - ZHANGJIAWAN Beijing (张家湾);{"type":"MultiLineString","coordinates":[[[116.658805847168,39.9059219360352],[116.698002,39.8468690000001]]]};2;MDYZK
+560;573;574;HEHEYI Beijing (和合驿) - ZHANGJIAWAN Beijing (张家湾);{"type":"MultiLineString","coordinates":[[[116.698002,39.8468690000001],[116.871553,39.769569]]]};2;MDYZK
+561;573;575;HEHEYI Beijing (和合驿) - HEXIYI Tianjin (河西驿);{"type":"MultiLineString","coordinates":[[[116.870887569595,39.769339782794],[116.953323,39.6216470000001]]]};2;MDYZK
+562;575;577;HEXIYI Tianjin (河西驿) - YANGCUNYI Tianjin (杨村驿);{"type":"MultiLineString","coordinates":[[[116.953323,39.6216470000001],[117.063126,39.3785930000001]]]};2;MDYZK
+563;576;577;YANGQINGYI Tianjin (杨青驿) - YANGCUNYI Tianjin (杨村驿);{"type":"MultiLineString","coordinates":[[[117.062596842079,39.3777748995234],[117.18782,39.1369710000001]]]};2;MDYZK
+564;108;579;GUANGWU Henan (广武驿) - SUNINGYI Henan (索亭驿);{"type":"MultiLineString","coordinates":[[[113.534416,34.8743630000001],[113.528235887029,34.9844101586617]]]};1;MDYZK
+565;115;580;GUANCHENGYI Henan (管城驿) - YINGYANG Henan (荥阳);{"type":"MultiLineString","coordinates":[[[113.347397,34.783108],[113.641311645508,34.7580757141113]]]};2;MDYZK
+566;129;136;LITINGYI Henan (廪廷驿) - DALIANGYI Henan (大梁驿);{"type":"MultiLineString","coordinates":[[[114.194686889648,35.1427612304688],[114.343330383301,34.7854766845703]]]};1;MDYZK
+567;136;581;DALIANGYI Henan (大梁驿) - PUTIANYI Henan (圃田驿);{"type":"MultiLineString","coordinates":[[[114.343330383301,34.7854766845703],[114.026253,34.7320940000001]]]};2;MDYZK
+568;115;581;GUANCHENGYI Henan (管城驿) - PUTIANYI Henan (圃田驿);{"type":"MultiLineString","coordinates":[[[114.026067588881,34.7331555973423],[113.641311645508,34.7580757141113]]]};2;MDYZK
+569;136;582;DALIANGYI Henan (大梁驿) - WEISHIYI Henan (尉氏驿);{"type":"MultiLineString","coordinates":[[[114.343330383301,34.7854766845703],[114.180771,34.4134520000001]]]};1;MDYZK
+570;582;583;WEISHIYI Henan (尉氏驿) - WEICHUANYI Henan (洧川驿);{"type":"MultiLineString","coordinates":[[[114.184799163656,34.4219581678486],[113.98011897513,34.2882894733011]]]};1;MDYZK
+571;569;583;XUZHOUYI Henan (许州驿) - WEICHUANYI Henan (洧川驿);{"type":"MultiLineString","coordinates":[[[113.98011897513,34.2882894733011],[113.819748,34.031391]]]};1;MDYZK
+572;123;569;LINYING Henan (临颖驿) - XUZHOUYI Henan (许州驿);{"type":"MultiLineString","coordinates":[[[113.829741693764,34.0293063776151],[113.960639953613,33.8086051940918]]]};1;MDYZK
+573;586;587;ZHENYANG Henan (真阳县) - LUOSHAN Henan (罗山);{"type":"MultiLineString","coordinates":[[[114.38121,32.6091190000001],[114.52224,32.202374]]]};2;MDYZK
+574;125;589;XIPING Henan (西平驿) - SUIPING Henan (遂平);{"type":"MultiLineString","coordinates":[[[114.015533,33.3890570000001],[113.989113,33.1478390000001]]]};2;1903 atlas
+575;589;590;SUIPING Henan (遂平) - QUESHAN Henan (确山);{"type":"MultiLineString","coordinates":[[[113.989113,33.1478390000001],[114.019905,32.807674]]]};2;1903 atlas
+576;92;591;BOWANG Henan (博望驿) - WANCHENGYI Henan (宛城驿);{"type":"MultiLineString","coordinates":[[[112.711799621582,33.164291381836],[112.535469,33.0016780000001]]]};1;MDYZK
+577;591;592;WANCHENGYI Henan (宛城驿) - LINSHUIYI Henan (林水驿);{"type":"MultiLineString","coordinates":[[[112.535469,33.0016780000001],[112.511,32.7550000000001]]]};1;MDYZK
+578;136;593;DALIANGYI Henan (大梁驿) - SHENCHENGYI Henan (莘城驿);{"type":"MultiLineString","coordinates":[[[114.343330383301,34.7854766845703],[114.524528,34.673195]]]};2;MDYZK
+579;593;594;SHENCHENGYI Henan (莘城驿) - YONGQIUYI Henan (雍丘驿);{"type":"MultiLineString","coordinates":[[[114.524528,34.673195],[114.774483,34.553513]]]};2;MDYZK
+580;594;595;YONGQIUYI Henan (雍丘驿) - YONGQIUYI Henan (雍丘驿);{"type":"MultiLineString","coordinates":[[[114.774483000082,34.553512999869],[115.065971,34.4305040000002]]]};2;MDYZK
+581;596;597;KUIQIUYI Henan (葵丘驿) - NINGCHENGYI Henan (宁城驿);{"type":"MultiLineString","coordinates":[[[115.068776065514,34.4292061665534],[115.315368,34.4459760000001]]]};2;MDYZK
+582;597;598;NINGCHENGYI Henan (宁城驿) - SHANGQIUYI Henan (商丘驿);{"type":"MultiLineString","coordinates":[[[115.316240010121,34.4501454234047],[115.607452,34.385052]]]};2;MDYZK
+583;598;599;SHANGQIUYI Henan (商丘驿) - SHILIUGUYI Henan (石榴固驿);{"type":"MultiLineString","coordinates":[[[115.607452,34.385052],[115.858717127465,34.2351282182326]]]};2;MDYZK
+584;599;600;SHILIUGUYI Henan (石榴固驿) - HUITINGYI Henan (会亭驿);{"type":"MultiLineString","coordinates":[[[115.851142844231,34.2445599925009],[116.068848,34.097176]]]};2;MDYZK
+585;600;601;HUITINGYI Henan (会亭驿) - TAIQIUYI Henan (太丘驿);{"type":"MultiLineString","coordinates":[[[116.066246119158,34.0979851945418],[116.363998,33.9394570000001]]]};2;MDYZK
+586;587;588;LUOSHAN Henan (罗山) - SHAWO Henan (沙窝);{"type":"MultiLineString","coordinates":[[[114.52224,32.202374],[115.125107,31.6977650000002]]]};2;MDYZK
+587;544;548;HUAIQINGFU Henan (覃怀驿) - WANSHANYI Henan (万善驿);{"type":"MultiLineString","coordinates":[[[112.936989,35.0893020000001],[112.961136955687,35.1764894803572]]]};2;MDYZK
+588;122;602;WANGJIAZHUANG Shanxi (王家庄驿) - SHAJIANYI Shanxi (砂涧驿);{"type":"MultiLineString","coordinates":[[[113.544609,39.2751500000001],[113.916412,39.4309390000002]]]};1;MDYZK
+589;93;603;YUANPING Shanxi (原平驿) - JIUYUANYI Shanxi (九原驿);{"type":"MultiLineString","coordinates":[[[112.712097167969,38.7266006469727],[112.731201,38.3985630000001]]]};1;MDYZK
+590;98;604;YANMEN Shanxi (雁门驿) - GUANGWUYI Shanxi (广武驿);{"type":"MultiLineString","coordinates":[[[112.949043273926,39.0603904724122],[112.785454,39.2015190000002]]]};2;MDYZK
+591;604;605;GUANGWUYI Shanxi (广武驿) - CHENGDONGYI Shanxi (城东驿);{"type":"MultiLineString","coordinates":[[[112.785454,39.2015190000002],[112.421997,39.3079990000001]]]};2;MDYZK
+592;605;607;CHENGDONGYI Shanxi (城东驿) - PIANTOUGUANSUO Shanxi (偏头关所);{"type":"MultiLineString","coordinates":[[[112.421997,39.3079990000001],[111.497002,39.4420010000001]]]};2;MDYZK
+593;607;610;PIANTOUGUANSUO Shanxi (偏头关所) - YONGNINGYI Shanxi (永宁驿);{"type":"MultiLineString","coordinates":[[[111.497002,39.4420010000001],[111.571893361683,38.7019869982085]]]};2;MDYZK
+0;188;193;HUITONGGUAN Beijing (会同馆) - LUHE Beijing (潞河驿);{"type":"MultiLineString","coordinates":[[[116.368003845215,39.9314270019531],[116.658805847168,39.9059219360352]]]};2;
+1;193;202;LUHE Beijing (潞河驿) - SANHE Hebei (三河驿);{"type":"MultiLineString","coordinates":[[[116.658805847168,39.9059219360352],[117.076118469238,39.9827880859375]]]};2;
+2;202;206;SANHE Hebei (三河驿) - YUYANG Tianjin (渔阳驿);{"type":"MultiLineString","coordinates":[[[117.076118469238,39.9827880859375],[117.401817321777,40.0438652038574]]]};2;
+3;206;571;YUYANG Tianjin (渔阳驿) - SHIMENZHENYI Hebei (石门镇驿);{"type":"MultiLineString","coordinates":[[[117.401817321777,40.0438652038575],[117.696754,40.112427]]]};2;MDYZK
+4;211;214;YANGFAN Hebei (阳樊驿) - YIFENG Hebei (义丰驿);{"type":"MultiLineString","coordinates":[[[117.754776000977,39.8836708068848],[118.134895324707,39.8276023864746]]]};2;
+5;214;223;YIFENG Hebei (义丰驿) - QIJIALINGYI Hebei (七家岭驿);{"type":"MultiLineString","coordinates":[[[118.134895324707,39.8276023864746],[118.469192,39.866402]]]};2;MDYZK
+6;223;225;QIJIALINGYI Hebei (七家岭驿) - LUANHE Hebei (滦河驿);{"type":"MultiLineString","coordinates":[[[118.469192,39.866402],[118.861999511719,39.8769989013672]]]};2;MDYZK
+7;225;231;LUANHE Hebei (滦河驿) - LUFENGKOU Hebei (芦峰口驿);{"type":"MultiLineString","coordinates":[[[118.861999511719,39.8769989013672],[119.158262970909,39.8822349819471]]]};2;MDYZK
+8;231;578;LUFENGKOU Hebei (芦峰口驿) - YUGUANYI Hebei (榆关驿);{"type":"MultiLineString","coordinates":[[[119.158262970909,39.8822349819471],[119.770241,40.010193]]]};2;MDYZK
+9;188;492;HUITONGGUAN Beijing (会同馆) - FENGTAI Beijing (丰台区);{"type":"MultiLineString","coordinates":[[[116.368003845215,39.9314270019532],[116.283989,39.8494490000001]]]};1;
+10;170;178;ZHULUYI Hebei (逐鹿驿) - LANGXIANG Beijing (固节驿);{"type":"MultiLineString","coordinates":[[[116.135581970215,39.7412528991699],[115.968147277832,39.4872207641602]]]};1;
+11;163;167;BAIGOU Hebei (白沟驿) - XUANHUAYI Hebei (宣化驿);{"type":"MultiLineString","coordinates":[[[115.774192810059,39.2695922851562],[115.657386779785,39.0194358825684]]]};1;
+12;163;501;BAIGOU Hebei (白沟驿) - BAIGOUYI Hebei (白沟驿);{"type":"MultiLineString","coordinates":[[[115.657386779785,39.0194358825685],[115.550667,38.9505230000001]]]};1;1903 atlas
+13;175;497;GUIYI Hebei (归义驿) - FENSHUIYI Hebei (汾水驿);{"type":"MultiLineString","coordinates":[[[116.008331,39.110516],[116.092704772949,38.9758796691895]]]};1;1903 atlas
+14;175;498;GUIYI Hebei (归义驿) - MAOZHOUZHEN Hebei (鄚州镇);{"type":"MultiLineString","coordinates":[[[116.092704772949,38.9758796691895],[116.107063,38.860367]]]};1;1903 atlas
+15;173;499;YINGHAIYI Hebei (瀛海驿) - SANSHILIPU Hebei (三十里铺);{"type":"MultiLineString","coordinates":[[[116.071208,38.5655700000001],[116.08553314209,38.4356994628907]]]};1;1903 atlas
+16;173;177;YINGHAIYI Hebei (瀛海驿) - LECHENG Hebei (乐城驿);{"type":"MultiLineString","coordinates":[[[116.08553314209,38.4356994628906],[116.114898681641,38.1906967163086]]]};1;
+594;610;611;YONGNINGYI Shanxi (永宁驿) - LANXIAN Shanxi (岚县);{"type":"MultiLineString","coordinates":[[[111.571893361683,38.7019869982085],[111.693001,38.3909990000001]]]};2;MDYZK
+595;611;612;LANXIAN Shanxi (岚县) - NAONIYI Shanxi (闹埿驿);{"type":"MultiLineString","coordinates":[[[111.693001,38.3909990000001],[111.940109,38.3576580000001]]]};2;MDYZK
+596;612;613;NAONIYI Shanxi (闹埿驿) - KANGJIAHUIYI Shanxi (康家会驿);{"type":"MultiLineString","coordinates":[[[111.940109,38.3576580000001],[112.187622,38.316681]]]};2;MDYZK
+597;613;614;KANGJIAHUIYI Shanxi (康家会驿) - LINGJINGYI Shanxi (凌井驿);{"type":"MultiLineString","coordinates":[[[112.187622,38.316681],[112.415596,38.1396140000001]]]};2;MDYZK
+598;89;614;LINFENYI Shanxi (临汾驿) - LINGJINGYI Shanxi (凌井驿);{"type":"MultiLineString","coordinates":[[[112.415596,38.1396140000001],[112.478928,37.727589]]]};2;MDYZK
+599;551;615;WEIZHOU Hebei (蔚州) - GUANGLING Shanxi (广灵);{"type":"MultiLineString","coordinates":[[[114.569054,39.8405380000002],[114.276054,39.7635540000001]]]};2;MDYZK
+600;615;616;GUANGLING Shanxi (广灵) - WENGCHENGKOUYI Shanxi (瓮城口驿);{"type":"MultiLineString","coordinates":[[[114.280105677306,39.7632511174395],[113.501696,39.8784580000001]]]};2;MDYZK
+601;616;617;WENGCHENGKOUYI Shanxi (瓮城口驿) - HUNYUAN Shanxi (浑源州);{"type":"MultiLineString","coordinates":[[[113.501696000004,39.8784579999807],[113.684898,39.696335]]]};2;MDYZK
+602;122;617;WANGJIAZHUANG Shanxi (王家庄驿) - HUNYUAN Shanxi (浑源州);{"type":"MultiLineString","coordinates":[[[113.920331173224,39.4320301454279],[113.684898,39.696335]]]};2;MDYZK
+603;616;618;WENGCHENGKOUYI Shanxi (瓮城口驿) - YUNZHONGYI Shanxi (云中驿);{"type":"MultiLineString","coordinates":[[[113.501696,39.8784580000001],[113.296387,40.0928380000001]]]};2;MDYZK
+604;618;619;YUNZHONGYI Shanxi (云中驿) - XI’ANYI Shanxi (西安驿);{"type":"MultiLineString","coordinates":[[[113.295008820892,40.083050676623],[113.102997,39.8200000000001]]]};2;MDYZK
+605;619;620;XI’ANYI Shanxi (西安驿) - ANYINZIYI Shanxi (安银子驿);{"type":"MultiLineString","coordinates":[[[113.10655550923,39.8189305049758],[113.183650045819,39.5590933631391]]]};2;MDYZK
+606;620;621;ANYINZIYI Shanxi (安银子驿) - SHANGYINYI Shanxi (山阴驿);{"type":"MultiLineString","coordinates":[[[113.185077722422,39.5576656865357],[112.942734,39.440437]]]};2;MDYZK
+607;98;621;YANMEN Shanxi (雁门驿) - SHANGYINYI Shanxi (山阴驿);{"type":"MultiLineString","coordinates":[[[112.942734,39.440437],[112.949043,39.0603910000001]]]};2;MDYZK
+608;89;623;LINFENYI Shanxi (临汾驿) - TONGGEYI Shanxi (同戈驿);{"type":"MultiLineString","coordinates":[[[112.478928,37.727589],[112.509769,37.5958639999974]]]};1;MDYZK
+609;88;624;XUGOU Shanxi (徐沟) - JIALINGYI Shanxi (贾令驿);{"type":"MultiLineString","coordinates":[[[112.508995056152,37.5571823120118],[112.356949,37.4152530000002]]]};1;MDYZK
+610;77;625;RUISHI Shanxi (瑞石驿) - RENYI Shanxi (仁义驿);{"type":"MultiLineString","coordinates":[[[111.776214599609,36.8421516418458],[111.766853,36.745735]]]};1;MDYZK
+611;69;626;MENGCHENGYI Shanxi (蒙城驿) - HOUSHANYI Shanxi (霍山驿);{"type":"MultiLineString","coordinates":[[[111.338074,35.6088640000001],[111.449478,35.792095]]]};1;MDYZK
+612;624;627;JIALINGYI Shanxi (贾令驿) - PANTUOYI Shanxi (盘陀驿);{"type":"MultiLineString","coordinates":[[[112.356949,37.4152530000002],[112.482773,37.2356870000001]]]};2;MDYZK
+613;627;628;PANTUOYI Shanxi (盘陀驿) - NANGUANYI Shanxi (南关驿);{"type":"MultiLineString","coordinates":[[[112.482773,37.2356870000001],[112.509659,37.0958980000001]]]};2;MDYZK
+614;628;629;NANGUANYI Shanxi (南关驿) - QUANDIANYI Shanxi (权店驿);{"type":"MultiLineString","coordinates":[[[112.509659,37.0958980000001],[112.58008,36.9531180000001]]]};2;MDYZK
+615;629;630;QUANDIANYI Shanxi (权店驿) - QINYANGYI Shanxi (沁阳驿);{"type":"MultiLineString","coordinates":[[[112.585396301415,36.9517706684002],[112.698982,36.757431]]]};2;MDYZK
+616;630;631;QINYANGYI Shanxi (沁阳驿) - YUTINGYI Shanxi (毓婷驿);{"type":"MultiLineString","coordinates":[[[112.710318004222,36.764388114191],[112.805954,36.5692820000001]]]};2;MDYZK
+617;631;633;YUTINGYI Shanxi (毓婷驿) - YUWUYI Shanxi (余吾驿);{"type":"MultiLineString","coordinates":[[[112.805954,36.5692820000001],[112.826920000001,36.3783719999966]]]};2;MDYZK
+618;632;633;ZHANGZEYI Shanxi (漳泽驿) - YUWUYI Shanxi (余吾驿);{"type":"MultiLineString","coordinates":[[[112.826920000001,36.3783719999966],[113.103485,36.1835370000001]]]};2;MDYZK
+619;632;634;ZHANGZEYI Shanxi (漳泽驿) - CHANGPINGYI Shanxi (长平驿);{"type":"MultiLineString","coordinates":[[[113.099954743926,36.1903431465345],[112.855727000001,35.8995079999966]]]};2;MDYZK
+620;634;635;CHANGPINGYI Shanxi (长平驿) - GAOPING Shanxi (高平);{"type":"MultiLineString","coordinates":[[[112.855727000001,35.8995079999966],[112.919586,35.7920570000001]]]};2;MDYZK
+621;635;636;GAOPING Shanxi (高平) - QIAOCUNYI Shanxi (乔村驿);{"type":"MultiLineString","coordinates":[[[112.924469494746,35.8007064068298],[112.885002,35.6980020000001]]]};2;MDYZK
+622;636;637;QIAOCUNYI Shanxi (乔村驿) - TAIHANGYI Shanxi (太行驿);{"type":"MultiLineString","coordinates":[[[112.885002,35.6980020000001],[112.839157,35.5043180000001]]]};2;MDYZK
+623;548;637;WANSHANYI Henan (万善驿) - TAIHANGYI Shanxi (太行驿);{"type":"MultiLineString","coordinates":[[[112.961136955687,35.1764894803572],[112.839157,35.5043180000001]]]};2;MDYZK
+624;646;647;HUANGXIAN Shandong (黄县) - DENGZHOUFU Shandong (登州府);{"type":"MultiLineString","coordinates":[[[120.740502,37.8045160000001],[120.520738619038,37.6466739914786]]]};2;MDYZK
+625;645;646;HUANGSHANGUANYI Shandong (黄山馆驿) - HUANGXIAN Shandong (黄县);{"type":"MultiLineString","coordinates":[[[120.514727263119,37.6465020725966],[120.275146,37.5408780000001]]]};2;MDYZK
+626;644;645;LAIZHOUFU Shandong (莱州府) - HUANGSHANGUANYI Shandong (黄山馆驿);{"type":"MultiLineString","coordinates":[[[120.272022240524,37.5322879443167],[119.938004,37.1754300000001]]]};2;MDYZK
+627;643;644;HUIBUYI Shandong (灰埠驿) - LAIZHOUFU Shandong (莱州府);{"type":"MultiLineString","coordinates":[[[119.948415543731,37.1848866374655],[119.70797,36.989552]]]};2;MDYZK
+628;642;643;CHANGYI Shandong (昌邑) - HUIBUYI Shandong (灰埠驿);{"type":"MultiLineString","coordinates":[[[119.705710521136,36.9992886790108],[119.399979,36.855667]]]};2;MDYZK
+629;641;642;WEIXIAN Shandong (潍县) - CHANGYI Shandong (昌邑);{"type":"MultiLineString","coordinates":[[[119.391621668367,36.8517620966493],[119.106499,36.7027050000001]]]};2;MDYZK
+630;640;;;{"type":"MultiLineString","coordinates":[[[119.091809581632,36.7232712023344],[118.478272,36.6879160000001]]]};2;MDYZK
+631;639;640;JINGLINGZHENYI Shandong (金岭镇驿) - QINGSHEYI Shandong (青社驿);{"type":"MultiLineString","coordinates":[[[118.468390798104,36.7042355142878],[118.195038,36.799858]]]};2;MDYZK
+632;638;639;LONGSHANZHENYI Shandong (龙山镇驿) - JINGLINGZHENYI Shandong (金岭镇驿);{"type":"MultiLineString","coordinates":[[[118.195038,36.799858],[117.348885,36.731243]]]};2;MDYZK
+633;201;638;TANGCHENGYI Shandong (谭城驿) - LONGSHANZHENYI Shandong (龙山镇驿);{"type":"MultiLineString","coordinates":[[[117.348885,36.731243],[117.001487731934,36.650131225586]]]};2;MDYZK
+634;194;201;DONGBEIZHIYI Shandong (东北置驿) - TANGCHENGYI Shandong (谭城驿);{"type":"MultiLineString","coordinates":[[[116.723243713379,36.5528297424318],[117.001487731934,36.650131225586]]]};1;MDYZK
+635;190;651;XINQIAO Shandong (新桥驿) - XINJIAYI Shandong (新嘉驿);{"type":"MultiLineString","coordinates":[[[116.485557556152,35.7298545837402],[116.669609,35.6504020000001]]]};1;MDYZK
+636;196;649;CHANGPINGYI Shandong (昌平驿) - WUNINGYI Shandong (五宁驿);{"type":"MultiLineString","coordinates":[[[116.768405323229,36.2548602567385],[116.790016,35.7643970000001],[116.823699951172,35.556697845459]]]};1;MDYZK
+637;194;649;DONGBEIZHIYI Shandong (东北置驿) - WUNINGYI Shandong (五宁驿);{"type":"MultiLineString","coordinates":[[[116.723243713379,36.5528297424318],[116.768082,36.250946]]]};1;MDYZK
+638;601;654;TAIQIUYI Henan (太丘驿) - BAISHANDAOYI Anhui (百善道驿);{"type":"MultiLineString","coordinates":[[[116.363998,33.9394570000001],[116.659035000737,33.7882689986289]]]};2;MDYZK
+639;200;654;SUIYANGYI Anhui (睢阳驿) - BAISHANDAOYI Anhui (百善道驿);{"type":"MultiLineString","coordinates":[[[116.659035000737,33.7882689986289],[116.971397399902,33.6423683166504]]]};2;MDYZK
+640;209;655;HONGXIN Anhui (红心驿) - HAOLIANGYI Anhui (濠梁驿);{"type":"MultiLineString","coordinates":[[[117.537746,32.8653480000002],[117.64022100121,32.9016339967412]]]};1;MDYZK
+641;656;657;HUCHENGYI Anhui (护城驿) - ZHANGQIAOYI Anhui (张桥驿);{"type":"MultiLineString","coordinates":[[[117.571381001543,32.0650669971639],[117.619057,32.329155]]]};1;MDYZK
+642;210;657;DINGYUAN Anhui (定远) - ZHANGQIAOYI Anhui (张桥驿);{"type":"MultiLineString","coordinates":[[[117.675689697266,32.5302467346193],[117.619057,32.329155]]]};1;MDYZK
+643;205;659;JINDOUYI Anhui (金斗驿) - PAIHEYI Anhui (派河驿);{"type":"MultiLineString","coordinates":[[[117.276458740234,31.8644561767579],[117.157761,31.7169380000001]]]};1;MDYZK
+644;658;659;SANGOUYI Anhui (三沟驿) - PAIHEYI Anhui (派河驿);{"type":"MultiLineString","coordinates":[[[117.157761,31.7169380000001],[116.975045,31.5028980000001]]]};1;MDYZK
+645;220;660;JIANGDONGYI Jiangsu (江东驿) - YEYIYI Jiangsu (棠邑驿);{"type":"MultiLineString","coordinates":[[[118.617599487305,32.0648689270021],[118.837898,32.348419]]]};1;MDYZK
+646;234;660;YANGZHOU Jiangsu (扬州府) - YEYIYI Jiangsu (棠邑驿);{"type":"MultiLineString","coordinates":[[[118.837898,32.348419],[119.437187194824,32.3912696838379]]]};1;MDYZK
+647;198;661;LVTING Anhui (吕亭驿) - MEIXINYI Anhui (梅心驿);{"type":"MultiLineString","coordinates":[[[117.02015,31.3403730000001],[116.938606262207,31.0522804260253]]]};1;MDYZK
+648;191;662;QINGKOU Anhui (青口驿) - TAOCHONGYI Anhui (陶冲驿);{"type":"MultiLineString","coordinates":[[[116.790157,30.922533],[116.567199707031,30.6303462982178]]]};1;MDYZK
+649;183;663;TAIHU Anhui (太湖) - XIAOCHIYI Anhui (小池驿);{"type":"MultiLineString","coordinates":[[[116.395973000847,30.5246699992475],[116.265075683594,30.4200592041017]]]};1;MDYZK
+650;664;176;SUSONG Anhui (宿松) - FENGXIANGYI Anhui (枫香驿);{"type":"MultiLineString","coordinates":[[[116.216667175293,30.3666667938232],[116.114197,30.151213]]]};1;MDYZK
+651;667;588;MACHENG Hubei (麻城) - SHAWO Henan (沙窝);{"type":"MultiLineString","coordinates":[[[115.125107,31.6977650000002],[115.030968,31.1809180000001]]]};2;
+652;667;668;MACHENG Hubei (麻城) - LIPINGYI Hubei (李坪驿);{"type":"MultiLineString","coordinates":[[[115.030968,31.1809180000001],[114.86824,30.6317749999999]]]};2;
+653;81;669;HANJIANGYI Hubei (汉江驿) - LVYANYI Hubei (吕堰驿);{"type":"MultiLineString","coordinates":[[[112.228928,32.265553],[112.155862,32.0202830000001]]]};1;MDYZK
+654;670;671;SHIQIAOYI Hubei (石桥驿) - LIYANGYI Hubei (丽阳驿);{"type":"MultiLineString","coordinates":[[[112.318733,31.4335310000001],[112.227371,31.2606850000001]]]};1;MDYZK
+655;83;670;JINGSHANYI Hubei (荆山驿) - SHIQIAOYI Hubei (石桥驿);{"type":"MultiLineString","coordinates":[[[112.227371,31.2606850000001],[112.198417663574,31.0287284851075]]]};1;MDYZK
+656;83;672;JINGSHANYI Hubei (荆山驿) - JIANYANGYI Hubei (建阳驿);{"type":"MultiLineString","coordinates":[[[112.198417663574,31.0287284851075],[112.180946,30.6917460000001]]]};1;
+657;673;674;GONG'ANYI Hubei (公安驿) - BAISHAYI Hubei (白沙驿);{"type":"MultiLineString","coordinates":[[[112.270240343068,30.1919207076714],[112.226486,30.0575329999996]]]};1;MDYZK
+658;80;673;CHANLING Hubei (孱陵驿) - GONG'ANYI Hubei (公安驿);{"type":"MultiLineString","coordinates":[[[112.226486,30.0575329999996],[112.078102111816,29.9145011901857]]]};1;MDYZK
+659;76;676;LANJIANGYI Hunan (兰江驿) - QINGHUAYI Hunan (清化驿);{"type":"MultiLineString","coordinates":[[[111.756988525391,29.6401519775392],[111.652144599495,29.4478514394625]]]};1;MDYZK
+660;675;676;DALONGYI Hunan (大龙驿) - QINGHUAYI Hunan (清化驿);{"type":"MultiLineString","coordinates":[[[111.752823,29.2116179999998],[111.652144599495,29.4478514394625]]]};1;MDYZK
+661;116;678;DE'ANFU Hubei (德安府) - SUIZHOU Hubei (随州);{"type":"MultiLineString","coordinates":[[[113.369187065837,31.7208101111252],[113.686897277832,31.2526092529298]]]};2;MDYZK
+662;677;678;ZAOYANG Hubei (枣阳县) - SUIZHOU Hubei (随州);{"type":"MultiLineString","coordinates":[[[112.756599,32.1320230000001],[113.36982,31.7151049999999]]]};2;MDYZK
+663;81;677;HANJIANGYI Hubei (汉江驿) - ZAOYANG Hubei (枣阳县);{"type":"MultiLineString","coordinates":[[[112.155862,32.0202830000001],[112.756599,32.1320230000001]]]};2;MDYZK
+664;679;680;SHICHENGYI Hubei (石城驿) - FENGLEHEYI Hubei (丰乐河驿);{"type":"MultiLineString","coordinates":[[[112.479250395264,31.4649227721912],[112.589256,31.1698270000001]]]};1;MDYZK
+665;85;680;YANCHENG Hubei (鄢城驿) - FENGLEHEYI Hubei (丰乐河驿);{"type":"MultiLineString","coordinates":[[[112.260132,31.7107010000001],[112.481163,31.4644640000001]]]};1;MDYZK
+666;681;682;CHENGBEIYI Hubei (城北驿) - LIUJIAYI Hubei (刘家驿);{"type":"MultiLineString","coordinates":[[[113.810852,30.764212],[113.569679,30.946003]]]};1;MDYZK
+667;681;683;CHENGBEIYI Hubei (城北驿) - YINGDONGYI Hubei (郢东驿);{"type":"MultiLineString","coordinates":[[[113.569679,30.946003],[112.877403,31.1546020000001]]]};1;MDYZK
+668;679;683;SHICHENGYI Hubei (石城驿) - YINGDONGYI Hubei (郢东驿);{"type":"MultiLineString","coordinates":[[[112.884694410049,31.1568729356294],[112.589256,31.1698270000001]]]};1;MDYZK
+669;131;687;HANYANGFU Hubei (汉阳府) - JINKOUYI Hubei (金口驿);{"type":"MultiLineString","coordinates":[[[114.261924743652,30.5443744659424],[114.135407,30.3428860000002]]]};2;MDYZK
+670;687;688;JINKOUYI Hubei (金口驿) - PAIZHOUYI Hubei (簲州驿);{"type":"MultiLineString","coordinates":[[[114.135407,30.3428860000002],[113.931702,30.215948]]]};2;MDYZK
+671;688;689;PAIZHOUYI Hubei (簲州驿) - YUSHANYI Hubei (鱼山驿);{"type":"MultiLineString","coordinates":[[[113.931702,30.215948],[113.895576000019,29.9755989999831]]]};2;MDYZK
+672;686;689;SHITOUKOUYI Hubei (石头口驿) - YUSHANYI Hubei (鱼山驿);{"type":"MultiLineString","coordinates":[[[113.895576000019,29.9755989999831],[113.62487,29.8792320000001]]]};2;MDYZK
+673;106;686;LINXIANG Hunan (临湘) - SHITOUKOUYI Hubei (石头口驿);{"type":"MultiLineString","coordinates":[[[113.62487,29.8792320000001],[113.292869567871,29.5881385803224]]]};2;MDYZK
+674;132;691;XIANNING Hubei (咸宁驿) - GUANTANGYI Hubei (官塘驿);{"type":"MultiLineString","coordinates":[[[114.271622,29.8924790000001],[114.084274,29.8072170000001]]]};1;MDYZK
+675;360;361;GANGKOUYI Hubei (港口驿) - FENGSHANYI Hubei (凤山驿);{"type":"MultiLineString","coordinates":[[[113.783332824707,29.6333332061769],[113.70691,29.5306350000001]]]};1;MDYZK
+676;359;690;YUNXI Hunan (云谿驿) - CHANG'ANYI Hunan (长安驿);{"type":"MultiLineString","coordinates":[[[113.449135000007,29.473248999994],[113.263153000004,29.4730489999962]]]};1;MDYZK
+677;692;693;DONGHUYI Hubei (东湖驿) - SHANPOYI Hubei (山陂驿);{"type":"MultiLineString","coordinates":[[[114.402428,30.3534050000001],[114.343849,30.0930180000001]]]};1;MDYZK
+678;132;693;XIANNING Hubei (咸宁驿) - SHANPOYI Hubei (山陂驿);{"type":"MultiLineString","coordinates":[[[114.343849,30.0930180000001],[114.271622,29.8924790000001]]]};1;MDYZK
+679;95;358;SHENGZHUYI Hunan (笙竹驿) - DAJINGYI Hunan (大荆驿);{"type":"MultiLineString","coordinates":[[[113.262848,28.9623780000001],[112.880294799805,28.6762104034425]]]};1;MDYZK
+680;95;357;SHENGZHUYI Hunan (笙竹驿) - JINGGANG Hunan (靖港);{"type":"MultiLineString","coordinates":[[[112.880294799805,28.6762104034425],[112.781631,28.4623640000001]]]};1;MDYZK
+681;99;357;LINXIANGYI Hunan (临湘驿) - JINGGANG Hunan (靖港);{"type":"MultiLineString","coordinates":[[[112.781631,28.4623640000001],[112.978134155274,28.1981983184815]]]};1;MDYZK
+682;694;695;DUSHIYI Hunan (都石驿) - HUANGHUAYI Hunan (皇华驿);{"type":"MultiLineString","coordinates":[[[112.885614598816,27.3825111997162],[113.096931000003,27.6129419999981]]]};1;MDYZK
+683;694;696;DUSHIYI Hunan (都石驿) - LUKOUYI Hunan (渌口驿);{"type":"MultiLineString","coordinates":[[[113.096931000003,27.6129419999981],[113.147522000003,27.7106339999977]]]};1;MDYZK
+684;368;696;ZHUZHOU Hunan (株洲) - LUKOUYI Hunan (渌口驿);{"type":"MultiLineString","coordinates":[[[113.147522000003,27.7106339999978],[113.150009,27.852556]]]};1;MDYZK
+685;97;368;XIANGTANYI Hunan (湘潭驿) - ZHUZHOU Hunan (株洲);{"type":"MultiLineString","coordinates":[[[113.149258878262,27.8488855568589],[112.911262512207,27.8726978302002]]]};1;MDYZK
+686;90;697;LINCHENGYI Hunan (临丞驿) - PAISHANYI Hunan (排山驿);{"type":"MultiLineString","coordinates":[[[112.597038269043,26.9016170501709],[112.227511,26.7927830000002]]]};1;MDYZK
+687;79;698;SANWUYI Hunan (三吾驿) - SANWUYI Hunan (三吾驿);{"type":"MultiLineString","coordinates":[[[111.855895996094,26.5916919708251],[111.584228,26.443543]]]};1;
+688;699;700;ZHENGJIAYI Hunan (郑家驿) - XINDIANYI Hunan (新店驿);{"type":"MultiLineString","coordinates":[[[111.339485,28.7062870000001],[111.117941,28.6370550000001]]]};1;MDYZK
+689;63;700;YIRONGYI Hunan (怡容驿) - XINDIANYI Hunan (新店驿);{"type":"MultiLineString","coordinates":[[[111.117941,28.6370550000001],[110.396965026855,28.4581909179687]]]};1;MDYZK
+690;63;701;YIRONGYI Hunan (怡容驿) - BEIRONGYI Hunan (北溶驿);{"type":"MultiLineString","coordinates":[[[110.493019,28.6385080000001],[110.396965026855,28.4581909179687]]]};2;MDYZK
+691;81;702;HANJIANGYI Hubei (汉江驿) - GUCHENG Hubei (谷城);{"type":"MultiLineString","coordinates":[[[112.155862,32.0202830000001],[111.645805,32.2693600000001]]]};2;MDYZK
+692;703;704;JUNYANGYI Hubei (均阳驿) - YUNYANGYI Hubei (郧阳驿);{"type":"MultiLineString","coordinates":[[[111.169085757486,32.6719057622638],[110.813988,32.83374]]]};2;MDYZK
+693;702;703;GUCHENG Hubei (谷城) - JUNYANGYI Hubei (均阳驿);{"type":"MultiLineString","coordinates":[[[111.645805,32.2693600000001],[111.16557,32.668153]]]};2;MDYZK
+694;76;705;LANJIANGYI Hunan (兰江驿) - NANPINGYI Hunan (南平驿);{"type":"MultiLineString","coordinates":[[[111.756988525391,29.6401519775392],[112.056684,29.3930550000001]]]};2;MDYZK
+695;967;968;LINJIANGYI Hunan (临江驿) - CHENGLINGJIYI Hunan (城陵矶驿);{"type":"MultiLineString","coordinates":[[[112.895958000001,29.5416549999985],[113.150040000003,29.4337789999972]]]};2;MDYZK
+696;706;707;TASHIYI Hunan (塔市驿) - JIANLI Hubei (监利);{"type":"MultiLineString","coordinates":[[[112.806843455518,29.7283587485916],[112.900253,29.8157580000001]]]};2;MDYZK
+697;706;708;TASHIYI Hunan (塔市驿) - SHISHOUYI Hubei (石首驿);{"type":"MultiLineString","coordinates":[[[112.405904276036,29.7188409045683],[112.808655934774,29.7307813326853]]]};2;MDYZK
+698;673;708;GONG'ANYI Hubei (公安驿) - SHISHOUYI Hubei (石首驿);{"type":"MultiLineString","coordinates":[[[112.226486,30.0575329999996],[112.406464,29.7243100000001]]]};2;MDYZK
+699;9;709;QINGSHUI Gansu (清水驿) - DINGYUANYI Gansu (定远驿);{"type":"MultiLineString","coordinates":[[[104.107872009277,35.8468208312991],[104.003593,35.9742280000005]]]};2;
+700;7;710;LANQUANYI Gansu (兰泉驿) - SHAJING'ERYI Gansu (沙井儿驿);{"type":"MultiLineString","coordinates":[[[103.847137451172,36.0470314025881],[103.617769,36.1533590000004]]]};2;MDYZK
+701;710;711;SHAJING'ERYI Gansu (沙井儿驿) - KUSHUIWANYI Gansu (苦水湾驿);{"type":"MultiLineString","coordinates":[[[103.617769,36.1533590000004],[103.424869,36.2519880000002]]]};2;MDYZK
+702;711;712;KUSHUIWANYI Gansu (苦水湾驿) - HONGCHENGZIYI Gansu (红城子驿);{"type":"MultiLineString","coordinates":[[[103.410849360896,36.2661786163401],[103.387032,36.4698910000004]]]};2;MDYZK
+703;712;713;HONGCHENGZIYI Gansu (红城子驿) - ZAICHENGYI Gansu (在城驿);{"type":"MultiLineString","coordinates":[[[103.387032,36.4698910000004],[103.258614,36.7369960000003]]]};2;MDYZK
+704;713;714;ZAICHENGYI Gansu (在城驿) - WUSHENGYI Gansu (武胜驿);{"type":"MultiLineString","coordinates":[[[103.258614,36.7369960000003],[103.157784,36.8801500000002]]]};2;MDYZK
+705;714;715;WUSHENGYI Gansu (武胜驿) - CHAKOUYI Gansu (岔口驿);{"type":"MultiLineString","coordinates":[[[103.157784,36.8801500000002],[103.079232,37.0235720000003]]]};2;MDYZK
+706;715;716;CHAKOUYI Gansu (岔口驿) - ZHENGUANGYI Gansu (镇光驿);{"type":"MultiLineString","coordinates":[[[103.079232,37.0235720000003],[102.85546401855,37.1607509850682]]]};2;MDYZK
+707;716;717;ZHENGUANGYI Gansu (镇光驿) - HEISONGLINYI Gansu (黑松林驿);{"type":"MultiLineString","coordinates":[[[102.85546401855,37.1607509850682],[102.90318301798,37.3561859853483]]]};2;MDYZK
+708;717;718;HEISONGLINYI Gansu (黑松林驿) - GULANGSUO Gansu (古浪所);{"type":"MultiLineString","coordinates":[[[102.90318301798,37.3561859853483],[102.880882,37.4639890000001]]]};2;MDYZK
+709;718;719;GULANGSUO Gansu (古浪所) - JINGBIANYI Gansu (靖边驿);{"type":"MultiLineString","coordinates":[[[102.880882,37.4639890000001],[102.833061020975,37.6691629842777]]]};2;MDYZK
+710;719;720;JINGBIANYI Gansu (靖边驿) - DAHEYI Gansu (大河驿);{"type":"MultiLineString","coordinates":[[[102.833061020975,37.6691629842777],[102.746250024332,37.8500899831081]]]};2;MDYZK
+711;720;721;DAHEYI Gansu (大河驿) - WUWEIYI Gansu (武威驿);{"type":"MultiLineString","coordinates":[[[102.746250024332,37.8500899831081],[102.634697,37.9269180000001]]]};2;MDYZK
+712;721;722;WUWEIYI Gansu (武威驿) - HUAI'ANYI Gansu (怀安驿);{"type":"MultiLineString","coordinates":[[[102.634697,37.9269180000001],[102.447502136231,38.0713882446291]]]};2;MDYZK
+713;722;723;HUAI'ANYI Gansu (怀安驿) - ROUYUANYI Gansu (柔远驿);{"type":"MultiLineString","coordinates":[[[102.44750213623,38.0713882446289],[102.283485045849,38.132575976717]]]};2;MDYZK
+714;723;724;ROUYUANYI Gansu (柔远驿) - ZHENJINGYI Gansu (真景驿);{"type":"MultiLineString","coordinates":[[[102.283485045849,38.132575976717],[101.969124,38.2466470000002]]]};2;MDYZK
+715;724;725;ZHENJINGYI Gansu (真景驿) - SHUIQUAN'ERYI Gansu (水泉儿驿);{"type":"MultiLineString","coordinates":[[[101.969124,38.2466470000002],[101.650087,38.374939]]]};2;MDYZK
+716;725;726;SHUIQUAN'ERYI Gansu (水泉儿驿) - SHIXIAKOUYI Gansu (石峡口驿);{"type":"MultiLineString","coordinates":[[[101.650087,38.3749390000001],[101.41075,38.5078810000002]]]};2;MDYZK
+717;726;727;SHIXIAKOUYI Gansu (石峡口驿) - SHANDANYI Gansu (山丹驿);{"type":"MultiLineString","coordinates":[[[101.41075,38.5078810000002],[101.087959,38.7811050000003]]]};2;MDYZK
+718;727;728;SHANDANYI Gansu (山丹驿) - RENSHOUYI Gansu (仁寿驿);{"type":"MultiLineString","coordinates":[[[101.087959,38.7811050000003],[100.678802,38.8866160000002]]]};2;MDYZK
+719;728;729;RENSHOUYI Gansu (仁寿驿) - GANZHOUWEI Gansu (甘州卫);{"type":"MultiLineString","coordinates":[[[100.678802,38.8866160000002],[100.449921,38.933113]]]};2;MDYZK
+720;729;730;GANZHOUWEI Gansu (甘州卫) - GAOTAISUO Gansu (高台所);{"type":"MultiLineString","coordinates":[[[100.449921,38.933113],[99.8202820000001,39.3812180000002]]]};2;MDYZK
+721;730;731;GAOTAISUO Gansu (高台所) - ZHENYUANYI Gansu (镇远驿);{"type":"MultiLineString","coordinates":[[[99.8202820000001,39.3812180000002],[99.5272448614448,39.759587902023]]]};2;MDYZK
+722;731;732;ZHENYUANYI Gansu (镇远驿) - SUZHOUWEI Gansu (肃州卫);{"type":"MultiLineString","coordinates":[[[99.5272448614448,39.759587902023],[98.5113581760316,39.7544094489659]]]};2;MDYZK
+723;732;733;SUZHOUWEI Gansu (肃州卫) - JIAYUGUANYI Gansu (嘉峪关驿);{"type":"MultiLineString","coordinates":[[[98.5113581760316,39.7544094489659],[98.2197294527081,39.8112528714767]]]};2;MDYZK
+724;761;762;YULINYI Shaanxi (榆林驿) - YULINWEI Shaanxi (榆林卫);{"type":"MultiLineString","coordinates":[[[109.848999,37.9886209999977],[109.753868,38.2947079999976]]]};2;MDYZK
+725;751;752;HUACHIYI Gansu (华池驿) - HONGHUAYI Gansu (弘化驿);{"type":"MultiLineString","coordinates":[[[107.876022,36.0051650000003],[108.019011999983,35.8178289999636]]]};2;MDYZK
+726;756;757;WEIZHOUSUO Ningxia (韦州所) - SHIGOUYI Ningxia (石沟驿);{"type":"MultiLineString","coordinates":[[[106.478569,37.2780380000004],[106.445258999853,37.7152209994838]]]};2;MDYZK
+727;754;755;QUZIYI Gansu (曲子驿) - LINGWUYI Gansu (灵武驿);{"type":"MultiLineString","coordinates":[[[107.519164999957,36.2930369999061],[107.304320999941,36.5734099998631]]]};2;MDYZK
+728;746;747;ZHANGCUNYI Shaanxi (张村驿) - LONGYIZHENYI Shaanxi (隆益镇驿);{"type":"MultiLineString","coordinates":[[[109.135810999999,35.8871959999965],[109.006607,35.958126]]]};2;MDYZK
+729;52;734;JINGZHAO Shaanxi (京兆驿) - JIANZHONGYI Shaanxi (建忠驿);{"type":"MultiLineString","coordinates":[[[108.9214,34.6178000000002],[108.944206237793,34.2666053771975]]]};2;MDYZK
+730;734;735;JIANZHONGYI Shaanxi (建忠驿) - SHUNYIYI Shaanxi (顺义驿);{"type":"MultiLineString","coordinates":[[[108.971465999999,34.9132689999957],[108.9214,34.6178]]]};2;MDYZK
+731;736;737;ZHAIDAOYI Shaanxi (翟道驿) - YUNYANGYI Shaanxi (云阳驿);{"type":"MultiLineString","coordinates":[[[109.263817,35.5894740000001],[109.113105999999,35.3972779999966]]]};2;MDYZK
+732;736;738;ZHAIDAOYI Shaanxi (翟道驿) - FUZHOUYI Shaanxi (富州驿);{"type":"MultiLineString","coordinates":[[[109.367164,35.9956279999977],[109.263817,35.5894740000001]]]};2;MDYZK
+733;739;740;FU'ANYI Shaanxi (抚安驿) - JINMINGYI Shaanxi (金明驿);{"type":"MultiLineString","coordinates":[[[109.46991,36.5918080000006],[109.344574,36.2786250000001]]]};2;MDYZK
+734;744;745;SHIZUICHAYI Shaanxi (石嘴岔驿) - QINGYANGYI Shaanxi (青阳驿);{"type":"MultiLineString","coordinates":[[[110.2539,37.4997000000001],[110.156433,37.3135219999981]]]};2;MDYZK
+735;745;;;{"type":"MultiLineString","coordinates":[[[111.1342,37.5156000000001],[110.2539,37.4997000000001]]]};2;MDYZK
+736;759;760;YINCHUANYI Shaanxi (银川驿) - YUHEYI Shaanxi (鱼河驿);{"type":"MultiLineString","coordinates":[[[110.183258,37.7602580000002],[109.934769,37.9688719999978]]]};2;MDYZK
+739;84;;;{"type":"MultiLineString","coordinates":[[[112.216796875,37.284248352051],[111.7775,37.2646999999999]]]};2;MDYZK
+740;738;739;FUZHOUYI Shaanxi (富州驿) - FU'ANYI Shaanxi (抚安驿);{"type":"MultiLineString","coordinates":[[[109.344574,36.2786250000001],[109.367164,35.9956279999977]]]};2;MDYZK
+741;743;744;QINGJIANYI Shaanxi (青涧) - SHIZUICHAYI Shaanxi (石嘴岔驿);{"type":"MultiLineString","coordinates":[[[110.156433,37.3135219999981],[110.125702,37.0966189999982]]]};2;MDYZK
+742;742;743;WEN'ANYI Shaanxi (文安驿) - QINGJIANYI Shaanxi (青涧);{"type":"MultiLineString","coordinates":[[[110.125702,37.0966189999982],[110.065598,36.8748399999983]]]};2;MDYZK
+743;741;742;GANGUYI Shaanxi (干谷驿) - WEN'ANYI Shaanxi (文安驿);{"type":"MultiLineString","coordinates":[[[110.065598,36.8748399999983],[109.811584,36.7127989999982]]]};2;MDYZK
+744;740;741;JINMINGYI Shaanxi (金明驿) - GANGUYI Shaanxi (干谷驿);{"type":"MultiLineString","coordinates":[[[109.811584,36.7127989999982],[109.46991,36.5918080000006]]]};2;MDYZK
+745;735;737;SHUNYIYI Shaanxi (顺义驿) - YUNYANGYI Shaanxi (云阳驿);{"type":"MultiLineString","coordinates":[[[109.113105999999,35.3972779999965],[108.971465999999,34.9132689999956]]]};2;MDYZK
+746;749;752;SONGZHUANGYI Gansu (宋庄驿) - HONGHUAYI Gansu (弘化驿);{"type":"MultiLineString","coordinates":[[[108.327068,36.0820170000002],[107.876022,36.0051650000003]]]};2;MDYZK
+747;748;749;SHAOZHUANGYI Gansu (邵庄驿) - SONGZHUANGYI Gansu (宋庄驿);{"type":"MultiLineString","coordinates":[[[108.677402,36.1202590000003],[108.327068,36.0820170000002]]]};2;MDYZK
+748;747;748;LONGYIZHENYI Shaanxi (隆益镇驿) - SHAOZHUANGYI Gansu (邵庄驿);{"type":"MultiLineString","coordinates":[[[109.006607,35.958126],[108.677402,36.1202590000003]]]};2;MDYZK
+749;738;746;FUZHOUYI Shaanxi (富州驿) - ZHANGCUNYI Shaanxi (张村驿);{"type":"MultiLineString","coordinates":[[[109.367164,35.9956279999977],[109.135810999999,35.8871959999965]]]};2;MDYZK
+750;39;750;YILUYI Shaanxi (宜禄驿) - PENGYUANYI Gansu (彭原驿);{"type":"MultiLineString","coordinates":[[[107.930466,35.5014270000001],[107.789321899414,35.2054405212407]]]};2;MDYZK
+751;750;751;PENGYUANYI Gansu (彭原驿) - HUACHIYI Gansu (华池驿);{"type":"MultiLineString","coordinates":[[[108.019011999983,35.8178289999636],[107.930466,35.5014270000001]]]};2;MDYZK
+752;752;753;HONGHUAYI Gansu (弘化驿) - LINGYI Gansu (灵驿);{"type":"MultiLineString","coordinates":[[[107.876022,36.0051650000003],[107.640274047852,36.2172203063965]]]};2;MDYZK
+753;753;754;LINGYI Gansu (灵驿) - QUZIYI Gansu (曲子驿);{"type":"MultiLineString","coordinates":[[[107.640274047852,36.2172203063965],[107.519164999957,36.2930369999061]]]};2;MDYZK
+754;755;756;LINGWUYI Gansu (灵武驿) - WEIZHOUSUO Ningxia (韦州所);{"type":"MultiLineString","coordinates":[[[107.304321,36.57341],[106.478569,37.2780380000004]]]};2;MDYZK
+755;758;767;LINGZHOUSUO Ningxia (灵州所) - NINGXIAWEI Ningxia (宁夏卫);{"type":"MultiLineString","coordinates":[[[106.32814,38.0888860000005],[106.2731,38.4681]]]};2;MDYZK
+756;757;758;SHIGOUYI Ningxia (石沟驿) - LINGZHOUSUO Ningxia (灵州所);{"type":"MultiLineString","coordinates":[[[106.445258999854,37.7152209994838],[106.32814,38.0888860000005]]]};2;MDYZK
+757;745;759;QINGYANGYI Shaanxi (青阳驿) - YINCHUANYI Shaanxi (银川驿);{"type":"MultiLineString","coordinates":[[[110.2539,37.4997000000001],[110.183258,37.7602580000002]]]};2;MDYZK
+758;760;761;YUHEYI Shaanxi (鱼河驿) - YULINYI Shaanxi (榆林驿);{"type":"MultiLineString","coordinates":[[[109.934769,37.9688719999978],[109.848999,37.9886209999977]]]};2;MDYZK
+759;762;763;YULINWEI Shaanxi (榆林卫) - GAOJIABAO Shaanxi (高家堡);{"type":"MultiLineString","coordinates":[[[109.753868,38.2947080000006],[110.294067,38.5549960000003]]]};2;
+760;763;764;GAOJIABAO Shaanxi (高家堡) - BAILINBAO Shaanxi (柏林堡);{"type":"MultiLineString","coordinates":[[[110.294067,38.5549960000003],[110.325404,38.738793]]]};2;
+761;764;765;BAILINBAO Shaanxi (柏林堡) - ZHENQIANGBAO Shaanxi (镇羌所);{"type":"MultiLineString","coordinates":[[[110.325404,38.738793],[110.717293,39.0705640000001]]]};2;
+762;765;766;ZHENQIANGBAO Shaanxi (镇羌所) - BAODEZHOU Shaanxi (保德州);{"type":"MultiLineString","coordinates":[[[110.717293,39.0705640000001],[111.07457,39.0321429999975]]]};2;
+763;781;782;TAIPINGYI Sichuan (太平驿) - QUXIAN Sichuan (渠县);{"type":"MultiLineString","coordinates":[[[106.962242,30.8443260000001],[107.204842,30.7381970000001]]]};2;MDYZK
+764;778;779;JIXIANYI Chongqing (集贤驿) - FENSHUIYI Chongqing (分水驿);{"type":"MultiLineString","coordinates":[[[108.083335876465,30.7166671752931],[108.373596,30.8128639999999]]]};2;MDYZK
+765;775;777;NANTUOYI Chongqing (南陀驿) - BAYANGYI Chongqing (巴阳驿);{"type":"MultiLineString","coordinates":[[[109.450866699218,30.9959220886222],[109.160903999999,30.9906539999983]]]};2;MDYZK
+766;774;775;YONGNINGYI Chongqing (永宁驿) - NANTUOYI Chongqing (南陀驿);{"type":"MultiLineString","coordinates":[[[109.458934,30.9952189999992],[109.52475,31.0547069999992]]]};2;MDYZK
+767;773;774;GAOTANGYI Chongqing (高塘驿) - YONGNINGYI Chongqing (永宁驿);{"type":"MultiLineString","coordinates":[[[109.52475,31.0547069999992],[109.888863,31.0813450000001]]]};2;MDYZK
+768;772;773;BASHANYI Hubei (巴山驿) - GAOTANGYI Chongqing (高塘驿);{"type":"MultiLineString","coordinates":[[[109.888863,31.0813450000001],[110.404533,31.0300219999995]]]};2;MDYZK
+769;771;772;JIANPINGYI Hubei (建平驿) - BASHANYI Hubei (巴山驿);{"type":"MultiLineString","coordinates":[[[110.404533,31.030022],[110.69416,30.9996169999999]]]};2;MDYZK
+770;770;771;HUANGNIUYI Hubei (黄牛驿) - JIANPINGYI Hubei (建平驿);{"type":"MultiLineString","coordinates":[[[110.69416,30.9996169999999],[111.069206,30.8332199999996]]]};2;MDYZK
+771;768;769;LIUDIANYI Hubei (流店驿) - FENGXIYI Hubei (凤栖驿);{"type":"MultiLineString","coordinates":[[[111.287125,30.704227],[111.501,30.296]]]};2;MDYZK
+772;82;768;JINGNAN Hubei (荆南驿) - LIUDIANYI Hubei (流店驿);{"type":"MultiLineString","coordinates":[[[111.501,30.296],[112.1903,30.3503000000001]]]};2;MDYZK
+773;783;784;GUANG'ANZHOU Sichuan (广安州) - PANLONGYI Chongqing (盘龙驿);{"type":"MultiLineString","coordinates":[[[106.631752,30.4744280000001],[106.550003051758,30.25]]]};2;MDYZK
+774;491;784;HEYANGYI Chongqing (合阳驿) - PANLONGYI Chongqing (盘龙驿);{"type":"MultiLineString","coordinates":[[[106.550003051758,30.25],[106.25956,30.0039420000001]]]};2;MDYZK
+775;769;770;FENGXIYI Hubei (凤栖驿) - HUANGNIUYI Hubei (黄牛驿);{"type":"MultiLineString","coordinates":[[[111.069206,30.8332199999996],[111.287125,30.7042269999996]]]};2;MDYZK
+776;483;785;BAXIAN Chongqing (巴县) - TUTUOYI Chongqing (土陀驿);{"type":"MultiLineString","coordinates":[[[106.552667,29.559972],[106.501281999692,29.7919269997673]]]};2;1903 atlas
+777;782;783;QUXIAN Sichuan (渠县) - GUANG'ANZHOU Sichuan (广安州);{"type":"MultiLineString","coordinates":[[[106.631752,30.4744280000001],[106.962242,30.8443260000001]]]};2;MDYZK
+778;780;781;LONGXIYI Chongqing (龙溪驿) - TAIPINGYI Sichuan (太平驿);{"type":"MultiLineString","coordinates":[[[107.204842,30.7381970000001],[107.676733679253,30.6624869372628]]]};2;MDYZK
+779;779;1011;FENSHUIYI Chongqing (分水驿) - LIANGSHANYI Chongqing (梁山驿);{"type":"MultiLineString","coordinates":[[[107.788970999963,30.6666549999661],[108.083335876465,30.7166671752931]]]};2;MDYZK
+780;776;778;WUFENGYI Chongqing (五峰驿) - JIXIANYI Chongqing (集贤驿);{"type":"MultiLineString","coordinates":[[[108.373596,30.8128639999999],[108.891494999998,30.9668539999968]]]};2;MDYZK
+781;776;777;WUFENGYI Chongqing (五峰驿) - BAYANGYI Chongqing (巴阳驿);{"type":"MultiLineString","coordinates":[[[108.891495,30.9668540000001],[109.160903999999,30.9906539999983]]]};2;MDYZK
+782;49;786;DIANZHANG Shaanxi (店张) - WEISHUIYI Shaanxi (渭水驿);{"type":"MultiLineString","coordinates":[[[108.709946,34.3390540000001],[108.527099609375,34.428539276123]]]};2;
+783;52;786;JINGZHAO Shaanxi (京兆驿) - WEISHUIYI Shaanxi (渭水驿);{"type":"MultiLineString","coordinates":[[[108.944206237793,34.2666053771973],[108.709946,34.3390540000001]]]};1;
+784;33;787;CHENCANG Shaanxi (陈仓驿) - QIYANGYI Shaanxi (岐阳驿);{"type":"MultiLineString","coordinates":[[[107.385918,34.522518],[107.14038848877,34.3818702697754]]]};1;
+785;787;788;QIYANGYI Shaanxi (岐阳驿) - LONGZHOUYI Shaanxi (陇州驿);{"type":"MultiLineString","coordinates":[[[107.385918,34.522518],[106.852959,34.8914070000001]]]};2;
+786;788;789;LONGZHOUYI Shaanxi (陇州驿) - QINGSHUIYI Gansu (清水);{"type":"MultiLineString","coordinates":[[[106.852959,34.8914070000001],[106.136581,34.7463040000001]]]};2;
+787;789;790;QINGSHUIYI Gansu (清水) - QINZHOU Gansu (秦州);{"type":"MultiLineString","coordinates":[[[106.136581,34.7463040000001],[105.376754999392,34.6377449985783]]]};2;
+788;790;791;QINZHOU Gansu (秦州) - NINGYUANYI Gansu (宁远);{"type":"MultiLineString","coordinates":[[[105.376754999392,34.6377449985783],[104.885292,34.7200160000002]]]};2;
+789;791;792;NINGYUANYI Gansu (宁远) - TONG’ANYI Gansu (通安驿);{"type":"MultiLineString","coordinates":[[[104.885292,34.7200160000002],[104.635605,35.007137]]]};2;
+790;26;794;FENGXIANG Shaanxi (凤县) - SONGLINYI Shaanxi (松林驿);{"type":"MultiLineString","coordinates":[[[106.622940063477,33.9452476501465],[106.512786999763,33.9183119996524]]]};1;
+791;26;793;FENGXIANG Shaanxi (凤县) - DONGHEQIAOYI Shaanxi (东河桥驿);{"type":"MultiLineString","coordinates":[[[106.946062,34.2344860000001],[106.622940063477,33.9452476501465]]]};1;
+792;794;798;SONGLINYI Shaanxi (松林驿) - HUANGHUAYI Gansu (黄花驿);{"type":"MultiLineString","coordinates":[[[106.512786999763,33.9183119996524],[106.298553,33.9096300000001]]]};2;
+793;797;798;HUISHANYI Gansu (徽山驿) - HUANGHUAYI Gansu (黄花驿);{"type":"MultiLineString","coordinates":[[[106.298553,33.9096300000001],[106.08667,33.7775540000001]]]};2;
+794;796;797;PINGLUOYI Gansu (平落驿) - HUISHANYI Gansu (徽山驿);{"type":"MultiLineString","coordinates":[[[106.08667,33.7775540000001],[105.412055999269,33.5572889987542]]]};2;
+795;795;796;LINHONGGUANYI Gansu (临红关驿) - PINGLUOYI Gansu (平落驿);{"type":"MultiLineString","coordinates":[[[105.412055999269,33.5572889987542],[104.938194,33.0640720000002]]]};2;
+796;795;800;LINHONGGUANYI Gansu (临红关驿) - JIEZHOU Gansu (阶州);{"type":"MultiLineString","coordinates":[[[104.938194,33.0640720000002],[104.913357999012,33.394629997961]]]};2;
+797;799;800;SHAZEIQIAOYI Gansu (杀贼桥驿) - JIEZHOU Gansu (阶州);{"type":"MultiLineString","coordinates":[[[104.913357999012,33.394629997961],[104.498474,33.6927910000002]]]};2;
+798;799;801;SHAZEIQIAOYI Gansu (杀贼桥驿) - DANGCHANGYI Gansu (宕昌驿);{"type":"MultiLineString","coordinates":[[[104.498474,33.6927910000002],[104.395683,34.0508920000001]]]};2;
+799;801;802;DANGCHANGYI Gansu (宕昌驿) - MINSHANYI Gansu (岷山驿);{"type":"MultiLineString","coordinates":[[[104.395683,34.0508920000001],[104.030251,34.4364550000001]]]};2;
+800;802;803;MINSHANYI Gansu (岷山驿) - JIUDIANYI Gansu (酒店子驿);{"type":"MultiLineString","coordinates":[[[104.030251,34.4364550000001],[104.148955000044,34.7019149954222]]]};2;
+801;804;803;SANCHAYI Gansu (三岔驿) - JIUDIANYI Gansu (酒店子驿);{"type":"MultiLineString","coordinates":[[[104.148955000044,34.7019149954222],[104.328697,34.8793070000001]]]};2;
+802;804;805;SANCHAYI Gansu (三岔驿) - ZHUODANYI Gansu (桌旦驿);{"type":"MultiLineString","coordinates":[[[104.328697,34.8793070000001],[104.472138,34.8506360000002]]]};2;
+803;792;805;TONG’ANYI Gansu (通安驿) - ZHUODANYI Gansu (桌旦驿);{"type":"MultiLineString","coordinates":[[[104.472138,34.8506360000002],[104.635605,35.007137]]]};2;
+804;12;807;YANSHOUYI Gansu (延寿驿) - XIGONGYI Gansu (西巩驿);{"type":"MultiLineString","coordinates":[[[104.846504,35.6580090000001],[104.620307922363,35.5750923156739]]]};2;
+805;16;806;BAONINGYI Gansu (保宁驿) - QINGJIAYI Gansu (青家驿);{"type":"MultiLineString","coordinates":[[[105.434918,35.7024800000002],[105.056137084961,35.6941986083985]]]};2;
+806;792;808;TONG’ANYI Gansu (通安驿) - TONG'ANYI Gansu (通安驿);{"type":"MultiLineString","coordinates":[[[104.635605,35.007137],[104.677536,35.3001670000001]]]};2;
+807;12;808;YANSHOUYI Gansu (延寿驿) - TONG'ANYI Gansu (通安驿);{"type":"MultiLineString","coordinates":[[[104.677536,35.3001670000001],[104.620307922363,35.5750923156739]]]};2;
+808;794;809;SONGLINYI Shaanxi (松林驿) - MADAOYI Shaanxi (马道驿);{"type":"MultiLineString","coordinates":[[[106.512786999763,33.9183119996524],[106.927345,33.619236]]]};1;
+809;30;810;MIANXIAN Shaanxi (勉县) - SHUNZHENGYI Shaanxi (顺政驿);{"type":"MultiLineString","coordinates":[[[106.774803161621,33.1379013061523],[106.621712,33.151005]]]};1;
+810;810;811;SHUNZHENGYI Shaanxi (顺政驿) - JINNIUYI Shaanxi (金牛驿);{"type":"MultiLineString","coordinates":[[[106.621712,33.151005],[106.38165,33.074981]]]};1;
+811;812;813;YANGPINGYI Shaanxi (阳平驿) - HUANGBAYI Shaanxi (黄坝驿);{"type":"MultiLineString","coordinates":[[[106.291878,33.0430640000001],[106.254318237305,32.8196296691894]]]};1;
+812;813;814;HUANGBAYI Shaanxi (黄坝驿) - SHENXUANYI Sichuan (神宣驿);{"type":"MultiLineString","coordinates":[[[106.254318237305,32.8196296691894],[105.967220999504,32.6705369993854]]]};1;
+813;814;815;SHENXUANYI Sichuan (神宣驿) - CHAOTIANYI Sichuan (朝天驿);{"type":"MultiLineString","coordinates":[[[105.967220999504,32.6705369993854],[105.89238,32.6290050000001]]]};1;
+814;815;816;CHAOTIANYI Sichuan (朝天驿) - SHAHEYI Sichuan (沙河驿);{"type":"MultiLineString","coordinates":[[[105.89238,32.6290050000001],[105.852608,32.5485270000001]]]};1;
+815;485;817;CANGXI Sichuan (苍溪驿) - BAILINYI Sichuan (柏林驿);{"type":"MultiLineString","coordinates":[[[105.933037,31.7431050000001],[105.878792,32.0931000000002]]]};1;1903 atlas
+816;817;818;BAILINYI Sichuan (柏林驿) - LONGTANYI Sichuan (龙潭驿);{"type":"MultiLineString","coordinates":[[[105.878792,32.0931000000002],[105.85006648168,32.3184427683531]]]};1;1903 atlas
+817;486;819;JINPINGYI Sichuan (锦屏驿) - LIUBIANYI Sichuan (柳边驿);{"type":"MultiLineString","coordinates":[[[105.967033,31.5831600000001],[105.719035,31.3733180000002]]]};1;
+818;819;820;LIUBIANYI Sichuan (柳边驿) - FUCUNYI Sichuan (富村驿);{"type":"MultiLineString","coordinates":[[[105.719035,31.3733180000002],[105.542371530515,31.3145935933239]]]};1;
+819;820;821;FUCUNYI Sichuan (富村驿) - YUNXIYI Sichuan (云谿驿);{"type":"MultiLineString","coordinates":[[[105.542371530515,31.3145935933239],[105.376114,31.2293050000001]]]};1;
+820;821;822;YUNXIYI Sichuan (云谿驿) - QIULINYI Sichuan (秋林驿);{"type":"MultiLineString","coordinates":[[[105.376114,31.2293050000001],[105.243111,31.1460270000001]]]};1;
+821;480;822;HUANGHUAYI Sichuan (皇华驿) - QIULINYI Sichuan (秋林驿);{"type":"MultiLineString","coordinates":[[[105.243111,31.1460270000001],[105.08757,31.09462]]]};1;
+822;475;823;JIANGYOU Sichuan (江油) - XIPINGYI Sichuan (西平驿);{"type":"MultiLineString","coordinates":[[[104.776527,31.8828120000001],[104.778015,32.0407490000001]]]};2;
+823;823;824;XIPINGYI Sichuan (西平驿) - XIAOXIYI Sichuan (小谿驿);{"type":"MultiLineString","coordinates":[[[104.778015,32.0407490000001],[104.772395047513,32.280071481652]]]};2;
+824;824;825;XIAOXIYI Sichuan (小谿驿) - GUCHENGYI Sichuan (古城驿);{"type":"MultiLineString","coordinates":[[[104.772395047513,32.280071481652],[104.633758,32.3855170000002]]]};2;
+825;825;826;GUCHENGYI Sichuan (古城驿) - HANZIYI Sichuan (汉子驿);{"type":"MultiLineString","coordinates":[[[104.633758,32.3855170000002],[104.559530635111,32.4029233723207]]]};2;
+826;479;827;WUPINGYI Sichuan (武平驿) - SHUIJINYI Sichuan (水进驿);{"type":"MultiLineString","coordinates":[[[104.529724,32.4131550000001],[104.220581,32.4986420000002]]]};2;
+827;827;828;SHUIJINYI Sichuan (水进驿) - XIAOHEYI Sichuan (小河驿);{"type":"MultiLineString","coordinates":[[[104.220581,32.4986420000002],[104.153396613158,32.596973991466]]]};2;
+828;828;829;XIAOHEYI Sichuan (小河驿) - SANSHEYI Sichuan (三舍驿);{"type":"MultiLineString","coordinates":[[[104.153396613158,32.596973991466],[103.899717160597,32.7900522414707]]]};2;
+829;478;829;GUSONGYI Sichuan (古松驿) - SANSHEYI Sichuan (三舍驿);{"type":"MultiLineString","coordinates":[[[103.899717160597,32.7900522414707],[103.592697,32.6483230000001]]]};2;
+830;481;830;WUCHENGYI Sichuan (五城驿) - JIANNINGYI Sichuan (建宁驿);{"type":"MultiLineString","coordinates":[[[104.679047,31.0442770000001],[104.875994,31.0772870000001]]]};1;1903 atlas
+831;481;831;WUCHENGYI Sichuan (五城驿) - GUDIANYI Sichuan (古店驿);{"type":"MultiLineString","coordinates":[[[104.499779,30.9987300000001],[104.679047,31.0442770000001]]]};1;1903 atlas
+832;474;835;HULINYI Sichuan (护林驿) - CHANGNINGYI Sichuan (长宁驿);{"type":"MultiLineString","coordinates":[[[103.853035,31.688931],[103.780584,31.7848920000001]]]};2;
+833;834;835;LAIDAYI Sichuan (来达驿) - CHANGNINGYI Sichuan (长宁驿);{"type":"MultiLineString","coordinates":[[[103.780584,31.7848920000001],[103.681,32.0431750000001]]]};2;
+834;833;834;ZHENPINGYI Sichuan (镇平驿) - LAIDAYI Sichuan (来达驿);{"type":"MultiLineString","coordinates":[[[103.681,32.0431750000001],[103.769798,32.2340160000001]]]};2;
+835;833;836;ZHENPINGYI Sichuan (镇平驿) - GUIHUAYI Sichuan (归化驿);{"type":"MultiLineString","coordinates":[[[103.769798,32.2340160000001],[103.626694,32.5679780000002]]]};2;
+836;478;836;GUSONGYI Sichuan (古松驿) - GUIHUAYI Sichuan (归化驿);{"type":"MultiLineString","coordinates":[[[103.626694,32.5679780000002],[103.592697,32.6483230000001]]]};2;
+837;458;838;YA'AN Sichuan (雅安驿) - BAIZHANGYI Sichuan (百丈驿);{"type":"MultiLineString","coordinates":[[[103.257193998075,30.190762993817],[102.984367,29.9855560000001]]]};2;
+838;452;839;LUGUGUAN Sichuan (泸沽驿) - XILONGYI Sichuan (谿龙驿);{"type":"MultiLineString","coordinates":[[[102.182885,28.1311830000001],[102.197121,28.307333]]]};2;1903 atlas
+839;450;840;AYONGYI Sichuan (阿用驿) - LUMAYI Sichuan (禄马驿);{"type":"MultiLineString","coordinates":[[[102.326459,27.3329090000001],[102.207599,27.7206120000001]]]};2;1903 atlas
+840;435;841;WENCHUANYI Sichuan (文川驿) - LUODONGYI Sichuan (罗东驿);{"type":"MultiLineString","coordinates":[[[104.616356,28.774832],[104.430572997538,28.6378119979915]]]};2;
+841;841;842;LUODONGYI Sichuan (罗东驿) - NIXIYI Sichuan (泥溪驿);{"type":"MultiLineString","coordinates":[[[104.430572997538,28.6378119979915],[104.161313517061,28.6567307114744]]]};2;
+842;842;843;NIXIYI Sichuan (泥溪驿) - MANYISI Sichuan (曼彝司);{"type":"MultiLineString","coordinates":[[[104.161313517061,28.6567307114744],[103.906243996836,28.7412299967907]]]};2;
+843;444;844;NAXI Sichuan (纳溪驿) - TONGYOUYI Sichuan (通邮驿);{"type":"MultiLineString","coordinates":[[[105.381729,28.7820630000001],[105.350438,28.5809290000001]]]};2;1903 atlas
+844;844;845;TONGYOUYI Sichuan (通邮驿) - JIANGMENYI Sichuan (江门驿);{"type":"MultiLineString","coordinates":[[[105.350438,28.5809290000001],[105.328323,28.459982]]]};2;1903 atlas
+845;845;846;JIANGMENYI Sichuan (江门驿) - YONG'ANYI Sichuan (永安驿);{"type":"MultiLineString","coordinates":[[[105.328323,28.459982],[105.368880998823,28.3842909992281]]]};2;1903 atlas
+846;448;845;XINGWEN Sichuan (兴文) - JIANGMENYI Sichuan (江门驿);{"type":"MultiLineString","coordinates":[[[105.328323,28.459982],[105.086327,28.3406260000001]]]};2;
+847;445;850;YONGNING Sichuan (永宁卫) - YONG'ANYI Sichuan (永安驿);{"type":"MultiLineString","coordinates":[[[105.420772,28.1744040000001],[105.469380803852,28.0646360558213]]]};2;
+848;849;850;PUSHIYI Sichuan (普市驿) - YONG'ANYI Sichuan (永安驿);{"type":"MultiLineString","coordinates":[[[105.469380803852,28.0646360558213],[105.558021999014,27.927678999404]]]};2;
+849;848;849;MONIYI Sichuan (摩泥驿) - PUSHIYI Sichuan (普市驿);{"type":"MultiLineString","coordinates":[[[105.558021999014,27.927678999404],[105.594855999049,27.8476239994333]]]};2;
+850;847;848;CHISHUIWEI Sichuan (赤水驿) - MONIYI Sichuan (摩泥驿);{"type":"MultiLineString","coordinates":[[[105.594855999049,27.8476239994333],[105.580269,27.7292650000001]]]};2;
+851;847;851;CHISHUIWEI Sichuan (赤水驿) - BIJIEYI Guizhou (毕节驿);{"type":"MultiLineString","coordinates":[[[105.580269,27.7292650000001],[105.284004,27.3080810000001]]]};2;
+852;851;852;BIJIEYI Guizhou (毕节驿) - ZHOUNIYI Guizhou (周尼驿);{"type":"MultiLineString","coordinates":[[[105.284004,27.3080810000001],[104.986678998281,27.1947849989933]]]};2;
+853;852;853;ZHOUNIYI Guizhou (周尼驿) - HEIZHANGYI Guizhou (赫章驿);{"type":"MultiLineString","coordinates":[[[104.986678998281,27.1947849989933],[104.722077,27.1274720000001]]]};2;
+854;853;854;HEIZHANGYI Guizhou (赫章驿) - WADIANYI Guizhou (瓦甸驿);{"type":"MultiLineString","coordinates":[[[104.722077,27.1274720000001],[104.506228,27.0390420000002]]]};2;
+855;854;855;WADIANYI Guizhou (瓦甸驿) - ZAICHENGYI Guizhou (在城驿);{"type":"MultiLineString","coordinates":[[[104.506228,27.0390420000002],[104.289833,26.8602710000001]]]};2;
+856;855;856;ZAICHENGYI Guizhou (在城驿) - WUSAYI Guizhou (乌撒驿);{"type":"MultiLineString","coordinates":[[[104.289833,26.8602710000001],[104.013701996527,26.7479739976139]]]};2;
+857;856;857;WUSAYI Guizhou (乌撒驿) - PUDEGUIYI Guizhou (普德归驿);{"type":"MultiLineString","coordinates":[[[104.013701996527,26.7479739976138],[103.883331298828,26.533332824707]]]};2;
+858;483;862;BAXIAN Chongqing (巴县) - JIANGJINYI Chongqing (江津驿);{"type":"MultiLineString","coordinates":[[[106.552667,29.559972],[106.25296,29.2815070000001]]]};2;
+859;859;862;BAISHAZHENYI Chongqing (白沙镇驿) - JIANGJINYI Chongqing (江津驿);{"type":"MultiLineString","coordinates":[[[106.25296,29.2815070000001],[106.131142,29.0581230000001]]]};2;
+860;859;861;BAISHAZHENYI Chongqing (白沙镇驿) - LISHIYI Chongqing (立市驿);{"type":"MultiLineString","coordinates":[[[106.131142,29.0581230000001],[105.949988999375,29.0489599995697]]]};2;
+861;860;861;NIUNAOYI Chongqing (牛脑驿) - LISHIYI Chongqing (立市驿);{"type":"MultiLineString","coordinates":[[[105.949988999375,29.0489599995697],[105.895943,28.9205950000001]]]};2;
+862;443;860;HEJIANG Sichuan (合江) - NIUNAOYI Chongqing (牛脑驿);{"type":"MultiLineString","coordinates":[[[105.895943,28.9205950000001],[105.826729,28.8120020000001]]]};2;
+863;6;266;ZHANYI Yunnan (沾益) - XUANWEI Yunnan (宣威);{"type":"MultiLineString","coordinates":[[[104.106407,26.2188420000001],[103.822113037109,25.6099281311036]]]};2;
+864;668;685;LIPINGYI Hubei (李坪驿) - YANGLUOYI Hubei (阳逻驿);{"type":"MultiLineString","coordinates":[[[114.86824,30.6317749999999],[114.562859,30.6599410000001]]]};2;
+865;135;685;WUCHANGFU Hubei (武昌府) - YANGLUOYI Hubei (阳逻驿);{"type":"MultiLineString","coordinates":[[[114.562859,30.6599410000001],[114.319190979004,30.5413856506348]]]};2;
+866;165;863;DE'AN Jiangxi (德安) - KUANGLUYI Jiangxi (匡庐驿);{"type":"MultiLineString","coordinates":[[[116.041122,29.4534860000001],[115.745025634766,29.3305644989013]]]};1;
+867;168;865;NANPU Jiangxi (南浦驿) - QIAOSHEYI Jiangxi (樵舍驿);{"type":"MultiLineString","coordinates":[[[115.897720336914,28.6748962402344],[115.978859000579,28.8564399996135]]]};2;
+868;864;865;WUCHENGYI Jiangxi (吴城驿) - QIAOSHEYI Jiangxi (樵舍驿);{"type":"MultiLineString","coordinates":[[[115.978859000579,28.8564399996135],[115.994408,29.1768300000001]]]};2;
+869;866;867;SHICHAYI Jiangxi (市汊驿) - JIANJIANGYI Jiangxi (剑江驿);{"type":"MultiLineString","coordinates":[[[115.836689,28.4112890000001],[115.785782,28.1977540000001]]]};1;
+870;161;870;XIAOTAN Jiangxi (萧滩驿) - LUOXIYI Jiangxi (罗溪驿);{"type":"MultiLineString","coordinates":[[[115.398986816406,28.0155696868897],[114.93114,27.8040800000001]]]};2;
+871;869;870;ANRENYI Jiangxi (安仁驿) - LUOXIYI Jiangxi (罗溪驿);{"type":"MultiLineString","coordinates":[[[114.93114,27.8040800000001],[114.818693000117,27.7466559999322]]]};2;
+872;868;869;FENYI Jiangxi (分宜) - ANRENYI Jiangxi (安仁驿);{"type":"MultiLineString","coordinates":[[[114.818693000117,27.7466559999322],[114.67572,27.816052]]]};2;
+873;868;872;FENYI Jiangxi (分宜) - XIUJIANGYI Jiangxi (秀江驿);{"type":"MultiLineString","coordinates":[[[114.67572,27.816052],[114.43177800006,27.8413719999641]]]};2;
+874;871;872;YUANZHOUFU Jiangxi (袁州府) - XIUJIANGYI Jiangxi (秀江驿);{"type":"MultiLineString","coordinates":[[[114.43177800006,27.8413719999641],[114.375885,27.7942660000001]]]};2;
+875;366;871;PINGXIANG Jiangxi (萍乡) - YUANZHOUFU Jiangxi (袁州府);{"type":"MultiLineString","coordinates":[[[114.375885,27.7942660000001],[113.838638,27.6314240000002]]]};2;
+876;159;873;YUXIA Jiangxi (玉峡驿) - BAISHAYI Jiangxi (白沙驿);{"type":"MultiLineString","coordinates":[[[115.147277832031,27.5536899566651],[115.093897,27.3275160000001]]]};1;
+877;150;874;WUYUN Jiangxi (五云驿) - ZAOKOUYI Jiangxi (皂口驿);{"type":"MultiLineString","coordinates":[[[114.779678344727,26.4617691040038],[114.905912,26.3224240000001]]]};1;
+878;874;875;ZAOKOUYI Jiangxi (皂口驿) - YOUZHENYI Jiangxi (攸镇驿);{"type":"MultiLineString","coordinates":[[[114.905912,26.3224240000001],[114.905495,26.1298120000001]]]};1;
+879;138;876;HENGPUYI Jiangxi (横浦驿) - XIAOXIYI Jiangxi (小溪驿);{"type":"MultiLineString","coordinates":[[[114.550178000074,25.4853459999678],[114.350570678711,25.3999538421631]]]};1;
+880;168;877;NANPU Jiangxi (南浦驿) - WUYANGYI Jiangxi (武阳驿);{"type":"MultiLineString","coordinates":[[[115.897720336914,28.6748962402344],[116.003492,28.5269740000001]]]};2;
+881;877;878;WUYANGYI Jiangxi (武阳驿) - KONGJIADUYI Jiangxi (孔家渡驿);{"type":"MultiLineString","coordinates":[[[116.003492,28.5269740000001],[116.351341000896,27.9847809994583]]]};2;
+882;878;879;KONGJIADUYI Jiangxi (孔家渡驿) - GANJIANGYI Jiangxi (旰江驿);{"type":"MultiLineString","coordinates":[[[116.351341000896,27.9847809994583],[116.627449,27.5597170000001]]]};2;
+883;879;880;GANJIANGYI Jiangxi (旰江驿) - SHANGUANYI Fujian (杉关驿);{"type":"MultiLineString","coordinates":[[[116.627449,27.5597170000001],[117.118839,27.683653]]]};2;
+884;880;881;SHANGUANYI Fujian (杉关驿) - HANGCHUANYI Fujian (杭川驿);{"type":"MultiLineString","coordinates":[[[117.118839,27.683653],[117.333252,27.5395240000001]]]};2;
+885;881;882;HANGCHUANYI Fujian (杭川驿) - QIAOCHUANYI Fujian (樵川驿);{"type":"MultiLineString","coordinates":[[[117.333252,27.5395240000001],[117.483398,27.3376920000001]]]};2;
+886;215;884;JIANPUYI Fujian (剑浦驿) - WANGTAIYI Fujian (王台驿);{"type":"MultiLineString","coordinates":[[[118.16918182373,26.64217376709],[117.965301,26.6375310000001]]]};2;
+887;884;885;WANGTAIYI Fujian (王台驿) - SHUANGFENGYI Fujian (双峰驿);{"type":"MultiLineString","coordinates":[[[117.965301,26.6375310000001],[117.806002635711,26.7967157345376]]]};2;
+888;885;886;SHUANGFENGYI Fujian (双峰驿) - FUTUNYI Fujian (富屯驿);{"type":"MultiLineString","coordinates":[[[117.806002635711,26.7967157345376],[117.771437042754,26.9326336888039]]]};2;
+889;883;886;NAKOUYI Fujian (拏口驿) - FUTUNYI Fujian (富屯驿);{"type":"MultiLineString","coordinates":[[[117.771437042754,26.9326336888039],[117.642815,27.146669]]]};2;
+890;882;883;QIAOCHUANYI Fujian (樵川驿) - NAKOUYI Fujian (拏口驿);{"type":"MultiLineString","coordinates":[[[117.642815,27.146669],[117.483398,27.3376920000001]]]};2;
+891;222;887;HUANGTIAN Fujian (黄田驿) - CHAYANGYI Fujian (茶洋驿);{"type":"MultiLineString","coordinates":[[[118.409354,26.5142730000001],[118.675102233887,26.4289093017579]]]};1;
+892;228;888;BAISHA Fujian (白沙驿) - SHUIKOUYI Fujian (水口驿);{"type":"MultiLineString","coordinates":[[[118.761289378539,26.3591759546095],[119.08115400477,26.2090169945714]]]};1;
+893;233;889;SANSHAN Fujian (三山驿) - DATIANYI Fujian (大田驿);{"type":"MultiLineString","coordinates":[[[119.321578979492,26.0739536285401],[119.335979004575,25.8766429936645]]]};2;
+894;889;890;DATIANYI Fujian (大田驿) - FUQINGYI Fujian (福清);{"type":"MultiLineString","coordinates":[[[119.335979004575,25.8766429936645],[119.381439,25.727917]]]};2;
+895;890;891;FUQINGYI Fujian (福清) - HONGLUYI Fujian (宏路驿);{"type":"MultiLineString","coordinates":[[[119.381439,25.727917],[119.309998004723,25.702289993875]]]};2;
+896;891;892;HONGLUYI Fujian (宏路驿) - SUANLINGYI Fujian (蒜岭驿);{"type":"MultiLineString","coordinates":[[[119.309998004723,25.702289993875],[119.194786004977,25.4832519944721]]]};2;
+897;892;893;SUANLINGYI Fujian (蒜岭驿) - PUYANGYI Fujian (莆阳驿);{"type":"MultiLineString","coordinates":[[[119.194786004977,25.4832519944721],[119.011101,25.433954]]]};2;
+898;893;895;PUYANGYI Fujian (莆阳驿) - FENGTINGYI Fujian (枫亭驿);{"type":"MultiLineString","coordinates":[[[119.011101,25.433954],[118.844421,25.2414230000001]]]};2;
+899;894;895;JINTIANYI Fujian (锦田驿) - FENGTINGYI Fujian (枫亭驿);{"type":"MultiLineString","coordinates":[[[118.844421,25.2414230000001],[118.802818,25.0220780000001]]]};2;
+900;894;896;JINTIANYI Fujian (锦田驿) - JIN'ANYI Fujian (晋安驿);{"type":"MultiLineString","coordinates":[[[118.802818,25.0220780000001],[118.589905,24.909641]]]};2;
+901;896;897;JIN'ANYI Fujian (晋安驿) - KANGDIANYI Fujian (康店驿);{"type":"MultiLineString","coordinates":[[[118.589905,24.909641],[118.41775,24.7467090000001]]]};2;
+902;897;898;KANGDIANYI Fujian (康店驿) - DALUNYI Fujian (大轮驿);{"type":"MultiLineString","coordinates":[[[118.41775,24.7467090000001],[118.144500401745,24.7366983944193]]]};2;
+903;898;899;DALUNYI Fujian (大轮驿) - SHENQINGYI Fujian (深青驿);{"type":"MultiLineString","coordinates":[[[118.144500401745,24.7366983944193],[117.963955,24.5938190000001]]]};2;
+904;899;900;SHENQINGYI Fujian (深青驿) - JIANGDONGYI Fujian (江东驿);{"type":"MultiLineString","coordinates":[[[117.963955,24.5938190000001],[117.899891810346,24.5244504726992]]]};2;
+905;900;901;JIANGDONGYI Fujian (江东驿) - DANXIAYI Fujian (丹霞驿);{"type":"MultiLineString","coordinates":[[[117.899891810346,24.5244504726992],[117.653053,24.5117440000001]]]};2;
+906;901;902;DANXIAYI Fujian (丹霞驿) - GANTANGYI Fujian (甘棠驿);{"type":"MultiLineString","coordinates":[[[117.653053,24.5117440000001],[117.674274,24.2687090000001]]]};2;
+907;902;903;GANTANGYI Fujian (甘棠驿) - LINZHANGYI Fujian (临漳驿);{"type":"MultiLineString","coordinates":[[[117.674274,24.2687090000001],[117.610697413853,24.1170780218715]]]};2;
+908;903;904;LINZHANGYI Fujian (临漳驿) - YUNXIAOYI Fujian (云霄驿);{"type":"MultiLineString","coordinates":[[[117.610697413853,24.1170780218715],[117.328308,23.9595510000001]]]};2;
+909;901;906;DANXIAYI Fujian (丹霞驿) - NANJINGYI Fujian (南靖);{"type":"MultiLineString","coordinates":[[[117.653053,24.5117440000001],[117.505692,24.5729940000001]]]};2;
+910;906;907;NANJINGYI Fujian (南靖) - PINGNANYI Fujian (平南驿);{"type":"MultiLineString","coordinates":[[[117.505692,24.5729940000001],[117.29586,24.7787650000001]]]};2;
+911;907;908;PINGNANYI Fujian (平南驿) - SHIZHONGYI Fujian (适中驿);{"type":"MultiLineString","coordinates":[[[117.29586,24.7787650000001],[117.115129070981,24.8814406992862]]]};2;
+912;215;909;JIANPUYI Fujian (剑浦驿) - DAHENGYI Fujian (大横驿);{"type":"MultiLineString","coordinates":[[[118.255791,26.768646],[118.16918182373,26.64217376709]]]};1;
+913;909;910;DAHENGYI Fujian (大横驿) - TAIPINGYI Fujian (太平驿);{"type":"MultiLineString","coordinates":[[[118.290583,26.9105930000002],[118.255791,26.768646]]]};1;
+914;213;911;JIANXI Fujian (建溪驿) - YEFANGYI Fujian (叶坊驿);{"type":"MultiLineString","coordinates":[[[118.105369567871,27.339879989624],[118.221629003813,27.1677459969582]]]};1;
+915;213;912;JIANXI Fujian (建溪驿) - XINGTIANYI Fujian (兴田驿);{"type":"MultiLineString","coordinates":[[[118.105369567871,27.339879989624],[118.066269,27.5035110000001]]]};1;
+916;912;913;XINGTIANYI Fujian (兴田驿) - CHANGPINGYI Fujian (长平驿);{"type":"MultiLineString","coordinates":[[[118.066269,27.5035110000001],[118.026779,27.756025]]]};1;
+917;913;914;CHANGPINGYI Fujian (长平驿) - DA'ANYI Fujian (大安驿);{"type":"MultiLineString","coordinates":[[[118.026779,27.756025],[117.893829,27.8702720000002]]]};1;
+918;917;918;GEYANGYI Jiangxi (葛阳驿) - HUAIYUYI Jiangxi (怀玉驿);{"type":"MultiLineString","coordinates":[[[118.240181,28.679602],[117.965052784791,28.4479172732084]]]};1;
+919;916;917;EHUYI Jiangxi (鹅湖驿) - GEYANGYI Jiangxi (葛阳驿);{"type":"MultiLineString","coordinates":[[[117.965052784791,28.4479172732084],[117.77659,28.2084500000001]]]};1;
+920;915;916;CHEPANYI Jiangxi (车盘驿) - EHUYI Jiangxi (鹅湖驿);{"type":"MultiLineString","coordinates":[[[117.77659,28.2084500000001],[117.800003051758,28.0000000000001]]]};1;
+921;914;915;DA'ANYI Fujian (大安驿) - CHEPANYI Jiangxi (车盘驿);{"type":"MultiLineString","coordinates":[[[117.800003051758,28.0000000000001],[117.893829,27.8702720000002]]]};1;
+922;918;920;HUAIYUYI Jiangxi (怀玉驿) - CAOPINGYI Jiangxi (草平驿);{"type":"MultiLineString","coordinates":[[[118.344015,28.8124770000001],[118.240181,28.679602]]]};1;
+923;237;921;GUSHUI Zhejiang (濲水驿) - SHUANGXIYI Zhejiang (双溪驿);{"type":"MultiLineString","coordinates":[[[119.478851318359,29.2044525146485],[119.649918,29.104712]]]};2;
+924;921;923;SHUANGXIYI Zhejiang (双溪驿) - HUAXIYI Zhejiang (华溪驿);{"type":"MultiLineString","coordinates":[[[119.649918,29.104712],[120.025253,28.8972680000001]]]};2;
+925;922;923;DANFENGYI Zhejiang (丹峰驿) - HUAXIYI Zhejiang (华溪驿);{"type":"MultiLineString","coordinates":[[[120.025253,28.8972680000001],[120.058441,28.648392]]]};2;
+926;922;924;DANFENGYI Zhejiang (丹峰驿) - KUOCANGYI Zhejiang (括苍驿);{"type":"MultiLineString","coordinates":[[[120.058441,28.648392],[119.913009,28.448732]]]};2;
+927;924;925;KUOCANGYI Zhejiang (括苍驿) - ZHITIANYI Zhejiang (芝田驿);{"type":"MultiLineString","coordinates":[[[119.913009,28.448732],[120.288155,28.1438750000001]]]};2;
+928;925;926;ZHITIANYI Zhejiang (芝田驿) - XIANGPUYI Zhejiang (象浦驿);{"type":"MultiLineString","coordinates":[[[120.288155,28.1438750000001],[120.653221,28.018291]]]};2;
+929;926;927;XIANGPUYI Zhejiang (象浦驿) - YAO'AOLINGYI Zhejiang (窑奥岭驿);{"type":"MultiLineString","coordinates":[[[120.653221,28.018291],[120.957687,28.1306759999999]]]};2;
+930;927;928;YAO'AOLINGYI Zhejiang (窑奥岭驿) - XIGAOYI Zhejiang (西皋驿);{"type":"MultiLineString","coordinates":[[[120.957687,28.1306759999999],[121.101448,28.2683120000002]]]};2;
+931;928;929;XIGAOYI Zhejiang (西皋驿) - GUANTOUYI Zhejiang (馆头驿);{"type":"MultiLineString","coordinates":[[[121.101448,28.2683120000002],[121.146011,28.4124640000002]]]};2;
+932;929;930;GUANTOUYI Zhejiang (馆头驿) - LINGDIANYI Zhejiang (岭店驿);{"type":"MultiLineString","coordinates":[[[121.146011,28.4124640000002],[121.250861940767,28.544274975491]]]};2;
+933;930;931;LINGDIANYI Zhejiang (岭店驿) - HUANGYANYI Zhejiang (黄岩);{"type":"MultiLineString","coordinates":[[[121.250861940767,28.544274975491],[121.258354,28.642613]]]};2;
+934;931;932;HUANGYANYI Zhejiang (黄岩) - CHICHENGYI Zhejiang (赤城驿);{"type":"MultiLineString","coordinates":[[[121.258354,28.642613],[121.120598,28.8431320000001]]]};2;
+935;932;933;CHICHENGYI Zhejiang (赤城驿) - ZHUJIA'AOYI Zhejiang (朱家奥驿);{"type":"MultiLineString","coordinates":[[[121.120598,28.8431320000001],[121.277054,29.0649030000001]]]};2;
+936;933;934;ZHUJIA'AOYI Zhejiang (朱家奥驿) - SANGZHOUYI Zhejiang (桑州驿);{"type":"MultiLineString","coordinates":[[[121.277054,29.0649030000001],[121.315544,29.1609540000001]]]};2;
+937;934;935;SANGZHOUYI Zhejiang (桑州驿) - BAIQIAOYI Zhejiang (白峤驿);{"type":"MultiLineString","coordinates":[[[121.315544,29.1609540000001],[121.324591926479,29.2004479732758]]]};2;
+938;935;936;BAIQIAOYI Zhejiang (白峤驿) - NINGHAIYI Zhejiang (宁海);{"type":"MultiLineString","coordinates":[[[121.324591926479,29.2004479732758],[121.425551915383,29.2836169718458]]]};2;
+939;936;937;NINGHAIYI Zhejiang (宁海) - LIANSHANYI Zhejiang (连山驿);{"type":"MultiLineString","coordinates":[[[121.425551915383,29.2836169718458],[121.406906,29.6516570000001]]]};2;
+940;937;938;LIANSHANYI Zhejiang (连山驿) - SIMINGYI Zhejiang (四明驿);{"type":"MultiLineString","coordinates":[[[121.406906,29.6516570000001],[121.542939789085,29.864761657422]]]};2;
+941;938;939;SIMINGYI Zhejiang (四明驿) - CHEJIUYI Zhejiang (车厩驿);{"type":"MultiLineString","coordinates":[[[121.542939789085,29.864761657422],[121.444199,29.9791950000001]]]};2;
+942;939;940;CHEJIUYI Zhejiang (车厩驿) - YAOJIANGYI Zhejiang (姚江驿);{"type":"MultiLineString","coordinates":[[[121.444199,29.9791950000001],[121.152763,30.049067]]]};2;
+943;940;941;YAOJIANGYI Zhejiang (姚江驿) - DONGGUANYI Zhejiang (东关驿);{"type":"MultiLineString","coordinates":[[[121.152763,30.049067],[120.973587,29.9526540000001]]]};2;
+944;941;942;DONGGUANYI Zhejiang (东关驿) - PENGLAIYI Zhejiang (蓬莱驿);{"type":"MultiLineString","coordinates":[[[120.973587,29.9526540000001],[120.578262,30.0045150000001]]]};2;
+945;942;943;PENGLAIYI Zhejiang (蓬莱驿) - XIXINGYI Zhejiang (西兴驿);{"type":"MultiLineString","coordinates":[[[120.578262,30.0045150000001],[120.22258,30.197996]]]};2;
+946;244;943;WULIN Zhejiang (武林驿) - XIXINGYI Zhejiang (西兴驿);{"type":"MultiLineString","coordinates":[[[120.22258,30.197996],[120.16862487793,30.2941246032715]]]};2;
+947;410;944;FUYANG Guangdong (浮阳) - LINGSHANYI Guangdong (灵山驿);{"type":"MultiLineString","coordinates":[[[116.602913,23.5814360000001],[116.594063,23.260954]]]};2;
+948;944;945;LINGSHANYI Guangdong (灵山驿) - WUNINGYI Guangdong (武宁驿);{"type":"MultiLineString","coordinates":[[[116.594063,23.260954],[116.504666527808,23.0785938039394]]]};2;
+949;945;946;WUNINGYI Guangdong (武宁驿) - HUILAI Guangdong (惠来);{"type":"MultiLineString","coordinates":[[[116.504666527808,23.0785938039394],[116.288513,23.039129]]]};2;
+950;946;947;HUILAI Guangdong (惠来) - BEISHANYI Guangdong (北山驿);{"type":"MultiLineString","coordinates":[[[116.288513,23.039129],[116.159019,22.9965250000001]]]};2;
+951;947;948;BEISHANYI Guangdong (北山驿) - DAPOYI Guangdong (大陂驿);{"type":"MultiLineString","coordinates":[[[116.159019,22.9965250000001],[115.847465309807,22.9591367314312]]]};2;
+952;420;948;LUFENG Guangdong (陆丰) - DAPOYI Guangdong (大陂驿);{"type":"MultiLineString","coordinates":[[[115.847465309807,22.9591367314312],[115.641083,22.9484669999999]]]};2;
+953;420;421;LUFENG Guangdong (陆丰) - NANFENGYI Guangdong (南丰驿);{"type":"MultiLineString","coordinates":[[[115.641083,22.9484669999999],[115.335,22.9760000000001]]]};2;
+954;421;949;NANFENGYI Guangdong (南丰驿) - PING'ANYI Guangdong (平安驿);{"type":"MultiLineString","coordinates":[[[115.335,22.9760000000001],[115.20752,22.8946]]]};2;
+955;949;950;PING'ANYI Guangdong (平安驿) - PINGZHENGYI Guangdong (平政驿);{"type":"MultiLineString","coordinates":[[[115.20752,22.8946],[114.897375423893,22.8403623504521]]]};2;
+956;950;951;PINGZHENGYI Guangdong (平政驿) - PINGSHANYI Guangdong (平山驿);{"type":"MultiLineString","coordinates":[[[114.897375423893,22.8403623504521],[114.716667175293,22.9833335876465]]]};2;
+957;433;951;XINLEYI Guangdong (欣乐驿) - PINGSHANYI Guangdong (平山驿);{"type":"MultiLineString","coordinates":[[[114.716667175293,22.9833335876465],[114.410285,23.0893780000001]]]};2;
+958;428;952;HEYUAN Guangdong (河源) - YIHEYI Guangdong (义合驿);{"type":"MultiLineString","coordinates":[[[114.69146,23.736834],[114.866569,23.8398740000001]]]};2;1903 atlas
+959;434;955;BOLUO Guangdong (博罗) - SUZHOUYI Guangdong (苏州驿);{"type":"MultiLineString","coordinates":[[[114.273606,23.1722470000001],[114.175034,23.085466]]]};2;
+960;953;955;TIEGANGYI Guangdong (铁冈驿) - SUZHOUYI Guangdong (苏州驿);{"type":"MultiLineString","coordinates":[[[114.175034,23.085466],[114.088139,23.066694]]]};2;
+961;953;954;TIEGANGYI Guangdong (铁冈驿) - HUANGJIASHANYI Guangdong (黄家山驿);{"type":"MultiLineString","coordinates":[[[114.088139,23.066694],[113.852598155963,23.1104905208846]]]};2;
+962;954;956;HUANGJIASHANYI Guangdong (黄家山驿) - DONGZHOUYI Guangdong (东州驿);{"type":"MultiLineString","coordinates":[[[113.852598155963,23.1104905208846],[113.540619,23.0942500000001]]]};2;
+963;104;956;WUYANG Guangdong (五羊驿) - DONGZHOUYI Guangdong (东州驿);{"type":"MultiLineString","coordinates":[[[113.540619,23.0942500000001],[113.256065368652,23.1346244812013]]]};2;
+964;343;962;YUANSHUIYI Hunan (沅水驿) - HUAIHUAYI Hunan (怀化驿);{"type":"MultiLineString","coordinates":[[[110.112259,27.620098],[109.684082,27.447302]]]};1;
+965;59;963;CHENYANGSHUIYI Hunan (辰阳水驿) - SHANTANGYI Hunan (山塘驿);{"type":"MultiLineString","coordinates":[[[110.214518,27.8893199999998],[110.182647705078,28.018482208252]]]};1;
+966;58;59;CHUANXIYI Hunan (船溪驿) - CHENYANGSHUIYI Hunan (辰阳水驿);{"type":"MultiLineString","coordinates":[[[110.182647705078,28.018482208252],[110.154220581055,28.2800292968751]]]};1;
+967;58;964;CHUANXIYI Hunan (船溪驿) - JIANGKOUYI Hunan (江口驿);{"type":"MultiLineString","coordinates":[[[110.300003051758,28.3500003814698],[110.154220581055,28.2800292968751]]]};1;
+968;63;964;YIRONGYI Hunan (怡容驿) - JIANGKOUYI Hunan (江口驿);{"type":"MultiLineString","coordinates":[[[110.39209,28.440548],[110.300003051758,28.3500003814698]]]};1;
+969;699;701;ZHENGJIAYI Hunan (郑家驿) - BEIRONGYI Hunan (北溶驿);{"type":"MultiLineString","coordinates":[[[111.339485,28.7062870000001],[110.493019,28.6385080000001]]]};2;
+970;354;966;YONGDINGWEI Hunan (永定卫) - MAOGANGSI Hunan (茅冈司);{"type":"MultiLineString","coordinates":[[[110.484711,29.127953],[110.185295,29.236904]]]};2;
+971;707;967;JIANLI Hubei (监利) - LINJIANGYI Hunan (临江驿);{"type":"MultiLineString","coordinates":[[[112.900253,29.8157580000001],[112.895958000001,29.5416549999985]]]};2;MDYZK
+972;359;968;YUNXI Hunan (云谿驿) - CHENGLINGJIYI Hunan (城陵矶驿);{"type":"MultiLineString","coordinates":[[[113.263153000004,29.4730489999962],[113.150040000003,29.4337789999971]]]};1;MDYZK
+973;957;958;LUSHUNKOUYI Liaoning (旅顺口驿) - MUCHANGYI Liaoning (木场驿);{"type":"MultiLineString","coordinates":[[[121.255562,38.8087200000001],[121.434743,38.982421]]]};2;
+974;958;959;MUCHANGYI Liaoning (木场驿) - JINZHOUYI Liaoning (金州驿);{"type":"MultiLineString","coordinates":[[[121.434743,38.982421],[121.70105,39.098946]]]};2;
+975;959;960;JINZHOUYI Liaoning (金州驿) - SHIHEYI Liaoning (石河驿);{"type":"MultiLineString","coordinates":[[[121.70105,39.098946],[121.844092520576,39.3440929242232]]]};2;
+976;960;961;SHIHEYI Liaoning (石河驿) - BOLANYI Liaoning (孛兰驿);{"type":"MultiLineString","coordinates":[[[121.844092520576,39.3440929242232],[121.956467,39.3900340000002]]]};2;
+985;976;977;ANSHANYI Liaoning (鞍山驿) - LIAODONGDUSI Liaoning (辽东都司);{"type":"MultiLineString","coordinates":[[[122.942413,41.0739400000001],[123.167984,41.2658500000001]]]};2;
+986;977;978;LIAODONGDUSI Liaoning (辽东都司) - HUPIYI Liaoning (虎皮驿);{"type":"MultiLineString","coordinates":[[[123.167984,41.2658500000001],[123.35186,41.5108530000001]]]};2;
+988;250;979;ZAICHENGYI Liaoning (在城驿) - PUHESUO Liaoning (蒲河所);{"type":"MultiLineString","coordinates":[[[123.419883728027,41.7882499694825],[123.582886,41.947865]]]};2;
+989;979;980;PUHESUO Liaoning (蒲河所) - YILUYI Liaoning (懿路驿);{"type":"MultiLineString","coordinates":[[[123.582886,41.947865],[123.649576,42.0992660000001]]]};2;
+990;980;981;YILUYI Liaoning (懿路驿) - QIZHOUYI Liaoning (器州驿);{"type":"MultiLineString","coordinates":[[[123.649576,42.0992660000001],[123.847854,42.295509]]]};2;
+991;981;982;QIZHOUYI Liaoning (器州驿) - ZHONGGUCHENG Liaoning (中固城);{"type":"MultiLineString","coordinates":[[[123.847854,42.295509],[123.992081,42.440292]]]};2;
+992;982;983;ZHONGGUCHENG Liaoning (中固城) - ANLEZHOUYI Liaoning (安乐州);{"type":"MultiLineString","coordinates":[[[123.992081,42.440292],[124.076736,42.604393]]]};2;
+993;983;984;ANLEZHOUYI Liaoning (安乐州) - WEIYUANBAO Liaoning (威远堡);{"type":"MultiLineString","coordinates":[[[124.076736,42.604393],[124.275090656673,42.6693795402394]]]};2;
+994;975;985;ZAICHENGYI Liaoning (在城驿) - NIUZHUANGYI Liaoning (牛庄驿);{"type":"MultiLineString","coordinates":[[[122.750341814172,40.8496358850931],[122.523674,40.9455340000001]]]};2;
+995;985;986;NIUZHUANGYI Liaoning (牛庄驿) - XININGBAO Liaoning (西宁堡);{"type":"MultiLineString","coordinates":[[[122.523674,40.9455340000001],[122.364069448361,41.0278291272778]]]};2;
+996;986;987;XININGBAO Liaoning (西宁堡) - SHALINGYI Liaoning (沙岭驿);{"type":"MultiLineString","coordinates":[[[122.364069448361,41.0278291272778],[122.367058,41.145584]]]};2;
+997;987;989;SHALINGYI Liaoning (沙岭驿) - XIPINGYI Liaoning (西平驿);{"type":"MultiLineString","coordinates":[[[122.367058,41.145584],[122.337014657228,41.246704957526]]]};2;
+998;988;989;PANSHANYI Liaoning (盘山驿) - XIPINGYI Liaoning (西平驿);{"type":"MultiLineString","coordinates":[[[122.337014657228,41.246704957526],[122.005074,41.478075]]]};2;
+999;988;990;PANSHANYI Liaoning (盘山驿) - BANQIAOYI Liaoning (板桥驿);{"type":"MultiLineString","coordinates":[[[122.005074,41.478075],[121.786598,41.595165]]]};2;
+1000;990;991;BANQIAOYI Liaoning (板桥驿) - QIANMALINGYI Liaoning (牵马岭驿);{"type":"MultiLineString","coordinates":[[[121.786598,41.595165],[121.563899,41.5517110000001]]]};2;
+1001;991;992;QIANMALINGYI Liaoning (牵马岭驿) - YIZHOUYI Liaoning (义州驿);{"type":"MultiLineString","coordinates":[[[121.563899,41.5517110000001],[121.243027,41.5393940000001]]]};2;
+1002;991;993;QIANMALINGYI Liaoning (牵马岭驿) - LVYANGYI Liaoning (闾阳驿);{"type":"MultiLineString","coordinates":[[[121.563899,41.5517110000001],[121.665000915527,41.3791656494141]]]};2;
+1003;993;994;LVYANGYI Liaoning (闾阳驿) - SHISANSHANYI Liaoning (十三山驿);{"type":"MultiLineString","coordinates":[[[121.665000915527,41.3791656494141],[121.505920125425,41.2625863511877]]]};2;
+1004;994;997;SHISANSHANYI Liaoning (十三山驿) - GUANGGNINGZHONGZUOSUOYI Liaoning (广宁中左所);{"type":"MultiLineString","coordinates":[[[121.505920125425,41.2625863511877],[121.354941640026,41.171370931203]]]};2;
+1005;996;997;XIAOLINGHEYI Liaoning (小凌河驿) - GUANGGNINGZHONGZUOSUOYI Liaoning (广宁中左所);{"type":"MultiLineString","coordinates":[[[121.354941640026,41.171370931203],[121.25663,41.0971830000001]]]};2;
+1006;995;996;XINGSHANYI Liaoning (杏山驿) - XIAOLINGHEYI Liaoning (小凌河驿);{"type":"MultiLineString","coordinates":[[[121.25663,41.0971830000001],[121.078743,40.9464990000002]]]};2;
+1007;995;1004;XINGSHANYI Liaoning (杏山驿) - NINGYUANZHONGZUOSUO Liaoning (宁远中左所);{"type":"MultiLineString","coordinates":[[[121.078743,40.9464990000002],[120.991585,40.895901]]]};2;
+1008;1004;1005;NINGYUANZHONGZUOSUO Liaoning (宁远中左所) - LIANSHANYI Liaoning (连山驿);{"type":"MultiLineString","coordinates":[[[120.991585,40.895901],[120.848937787043,40.756000947569]]]};2;
+1009;1005;1008;LIANSHANYI Liaoning (连山驿) - NINGYUANWEI Liaoning (宁远卫);{"type":"MultiLineString","coordinates":[[[120.848937787043,40.756000947569],[120.703437818338,40.6192279517906]]]};2;
+1010;1006;1008;CAOZHUANGYI Liaoning (曹庄驿) - NINGYUANWEI Liaoning (宁远卫);{"type":"MultiLineString","coordinates":[[[120.703437818338,40.6192279517907],[120.570982755753,40.4799345140498]]]};2;
+1011;1006;1007;CAOZHUANGYI Liaoning (曹庄驿) - NINGYUANZHONGYOUSUO Liaoning (宁远中右所);{"type":"MultiLineString","coordinates":[[[120.570982755753,40.4799345140498],[120.5,40.4333343505859]]]};2;
+1012;1003;1007;DONGGUANYI Liaoning (东关驿) - NINGYUANZHONGYOUSUO Liaoning (宁远中右所);{"type":"MultiLineString","coordinates":[[[120.5,40.4333343505859],[120.447158863441,40.402405958574]]]};2;
+1013;1002;1003;GUANGNINGZHONGHOUSUO Liaoning (广宁中后所) - DONGGUANYI Liaoning (东关驿);{"type":"MultiLineString","coordinates":[[[120.447158863441,40.402405958574],[120.333030879864,40.3282619613105]]]};2;
+1014;1001;1002;SHAHEYI Liaoning (沙河驿) - GUANGNINGZHONGHOUSUO Liaoning (广宁中后所);{"type":"MultiLineString","coordinates":[[[120.333030879864,40.3282619613105],[120.247355325768,40.2734891050922]]]};2;
+1015;1000;1001;BEIYINZHANGBAO Liaoning (背阴障堡) - SHAHEYI Liaoning (沙河驿);{"type":"MultiLineString","coordinates":[[[120.247355325768,40.2734891050922],[120.099998474121,40.2000007629395]]]};2;
+1016;999;1000;GAOLINGYI Liaoning (高岭驿) - BEIYINZHANGBAO Liaoning (背阴障堡);{"type":"MultiLineString","coordinates":[[[120.099998474121,40.2000007629395],[120.003854881241,40.1462817328904]]]};2;
+1017;998;999;GUANGNINGZHONGQIANSUOYI Liaoning (广宁中前所) - GAOLINGYI Liaoning (高岭驿);{"type":"MultiLineString","coordinates":[[[120.003854881241,40.1462817328904],[119.952042,40.0910070000002]]]};2;
+1018;578;998;YUGUANYI Hebei (榆关驿) - GUANGNINGZHONGQIANSUOYI Liaoning (广宁中前所);{"type":"MultiLineString","coordinates":[[[119.952042,40.0910070000002],[119.770241,40.010193]]]};2;
+1019;904;905;YUNXIAOYI Fujian (云霄驿) - NANZHAOYI Fujian (南诏驿);{"type":"MultiLineString","coordinates":[[[117.328308,23.9595510000001],[117.174672820041,23.7047564085065]]]};2;
+1020;406;905;SHANTOU Guangdong (汕头) - NANZHAOYI Fujian (南诏驿);{"type":"MultiLineString","coordinates":[[[117.174672820041,23.7047564085065],[116.682884,23.3639550000001]]]};2;
+1021;352;1009;JINGZHOU Hunan (靖州) - TONGDAO Hunan (通道);{"type":"MultiLineString","coordinates":[[[109.694778,26.5757600000001],[109.625748,26.3194099999999]]]};2;MDYZK
+1023;315;1009;GUNI Guangxi (古泥) - TONGDAO Hunan (通道);{"type":"MultiLineString","coordinates":[[[109.625748,26.3194099999999],[109.595757,25.785355]]]};2;MDYZK
+1024;311;318;LIUZHOU Guangxi (柳州) - LUORONG Guangxi (洛容);{"type":"MultiLineString","coordinates":[[[109.6091,24.41452],[109.404396,24.3099880000001]]]};2;
+1025;780;1011;LONGXIYI Chongqing (龙溪驿) - LIANGSHANYI Chongqing (梁山驿);{"type":"MultiLineString","coordinates":[[[107.788970999963,30.6666549999661],[107.676733679253,30.6624869372628]]]};2;MDYZ
+1026;778;1012;JIXIANYI Chongqing (集贤驿) - NANGTUYI Chongqing (灢途驿);{"type":"MultiLineString","coordinates":[[[108.373596,30.812864],[108.297454999988,30.5949969999878]]]};2;MDYZK
+1027;1012;1013;NANGTUYI Chongqing (灢途驿) - CAOXIYI  Chongqing (曹谿驿);{"type":"MultiLineString","coordinates":[[[108.297454999988,30.5949969999878],[108.202239999985,30.4237179999854]]]};2;MDYZK
+1028;1013;1014;CAOXIYI  Chongqing (曹谿驿) - YUNGENYI Chongqing (云根驿);{"type":"MultiLineString","coordinates":[[[108.202239999985,30.4237179999854],[108.031577999978,30.2985779999797]]]};2;MDYZK
+1029;1014;1015;YUNGENYI Chongqing (云根驿) - HUALINYI Chongqing (花林驿);{"type":"MultiLineString","coordinates":[[[108.031577999978,30.2985779999797],[107.883361999969,30.1376129999733]]]};2;MDYZK
+1030;1015;1016;HUALINYI Chongqing (花林驿) - FENGLINGYI Chongqing (酆陵驿);{"type":"MultiLineString","coordinates":[[[107.883361999969,30.1376129999733],[107.714560999957,29.8873959999644]]]};2;MDYZK
+1031;1017;1016;DONGQINGYI Chongqing (东青驿_ - FENGLINGYI Chongqing (酆陵驿);{"type":"MultiLineString","coordinates":[[[107.714560999957,29.8873959999644],[107.469626999932,29.9080559999452]]]};2;MDYZK
+1032;1017;1018;DONGQINGYI Chongqing (东青驿_ - FULINGYI Chongqing (涪陵驿);{"type":"MultiLineString","coordinates":[[[107.469626999932,29.9080559999452],[107.390960999921,29.7027759999389]]]};2;MDYZK
+1033;1018;1019;FULINGYI Chongqing (涪陵驿) - LINSHIYI Chongqing (蔺市驿);{"type":"MultiLineString","coordinates":[[[107.390960999921,29.7027759999389],[107.19399299989,29.6613769999163]]]};2;MDYZK
+1034;1019;1020;LINSHIYI Chongqing (蔺市驿) - CHANGSHOUYI Chongqing (长寿驿);{"type":"MultiLineString","coordinates":[[[107.19399299989,29.6613769999163],[107.061149999864,29.833636999895]]]};2;MDYZK
+1035;1021;1020;LONGXIYI Chongqing (龙溪驿) - CHANGSHOUYI Chongqing (长寿驿);{"type":"MultiLineString","coordinates":[[[107.061149999864,29.833636999895],[106.88425599982,29.6816609998656]]]};2;MDYZK
+1036;1021;1022;LONGXIYI Chongqing (龙溪驿) - MUDONGYI Chongqing (木洞驿);{"type":"MultiLineString","coordinates":[[[106.88425599982,29.6816609998656],[106.840629999808,29.5705929998586]]]};2;MDYZK
+1037;483;1022;BAXIAN Chongqing (巴县) - MUDONGYI Chongqing (木洞驿);{"type":"MultiLineString","coordinates":[[[106.840629999808,29.5705929998586],[106.552667,29.559972]]]};2;MDYZK
+1038;479;826;WUPINGYI Sichuan (武平驿) - HANZIYI Sichuan (汉子驿);{"type":"MultiLineString","coordinates":[[[104.559530635111,32.4029233723207],[104.529723998609,32.4131549973258]]]};2;MDYZK
+1039;170;496;ZHULUYI Hebei (逐鹿驿) - GAOBEIDIAN Hebei (高碑店);{"type":"MultiLineString","coordinates":[[[115.968147277832,39.4872207641602],[115.858864000091,39.3257599991559]]]};1;MDYZK
+1040;167;496;XUANHUAYI Hebei (宣化驿) - GAOBEIDIAN Hebei (高碑店);{"type":"MultiLineString","coordinates":[[[115.858864000091,39.3257599991559],[115.774192810059,39.2695922851562]]]};1;MDYZK
+1041;5;6;NANNING XIAN Yunnan (南宁县) - ZHANYI Yunnan (沾益);{"type":"MultiLineString","coordinates":[[[103.822113037109,25.6099281311035],[103.796775817871,25.4958438873291]]]};1;MDYZK
+1042;5;6;NANNING XIAN Yunnan (南宁县) - ZHANYI Yunnan (沾益);{"type":"MultiLineString","coordinates":[[[103.822113037109,25.6099281311035],[103.796775817871,25.4958438873291]]]};2;MDYZK
+17;177;185;LECHENG Hebei (乐城驿) - FUZHUANG Hebei (富庄驿);{"type":"MultiLineString","coordinates":[[[116.114898681641,38.1906967163086],[116.285118103027,38.0170440673828]]]};1;1903 atlas
+18;185;506;FUZHUANG Hebei (富庄驿) - JIANQIAOZHEN Hebei (建桥镇);{"type":"MultiLineString","coordinates":[[[116.285118103027,38.0170440673829],[116.272868000173,37.9488879987471]]]};1;1903 atlas
+19;179;182;FUCHENG Hebei (阜城驿) - DONGGUANG Hebei (东光驿);{"type":"MultiLineString","coordinates":[[[116.144706726074,37.8681793212891],[116.258102416992,37.6880073547363]]]};1;
+20;182;186;DONGGUANG Hebei (东光驿) - ANDE Shandong (安德);{"type":"MultiLineString","coordinates":[[[116.258102416992,37.6880073547363],[116.287414550781,37.4516448974609]]]};1;MDYZK
+21;186;189;ANDE Shandong (安德) - TAOYUAN Shandong (桃源驿);{"type":"MultiLineString","coordinates":[[[116.287414550781,37.4516448974609],[116.429069519043,37.1577339172363]]]};1;MDYZK
+22;189;192;TAOYUAN Shandong (桃源驿) - LIUPU Shandong (刘普驿);{"type":"MultiLineString","coordinates":[[[116.429069519043,37.1577339172363],[116.652389526367,36.9453582763672]]]};1;MDYZK
+23;195;201;YANCHENG Shandong (宴城驿) - TANGCHENGYI Shandong (谭城驿);{"type":"MultiLineString","coordinates":[[[116.780632019043,36.7010765075684],[117.001487731934,36.6501312255859]]]};1;MDYZK
+24;156;158;YONGDING Hebei (永定驿) - DICHENG Hebei (翟城驿);{"type":"MultiLineString","coordinates":[[[115.133422851562,38.705265045166],[114.975044250488,38.5200614929199]]]};1;
+25;151;156;XILE Hebei (西乐驿) - YONGDING Hebei (永定驿);{"type":"MultiLineString","coordinates":[[[114.975044250488,38.5200614929199],[114.787605285645,38.3950424194336]]]};1;
+26;144;151;HENGSHANYI Hebei (恒山驿) - XILE Hebei (西乐驿);{"type":"MultiLineString","coordinates":[[[114.787605285645,38.3950424194337],[114.56364440918,38.1401100158692]]]};1;1903 atlas
+27;145;149;GUANCHENG Hebei (关城驿) - ZHAOZHOU Hebei (鄗城驿);{"type":"MultiLineString","coordinates":[[[114.652694702148,37.8857803344727],[114.772178649902,37.7529258728027]]]};1;MDYZK
+28;143;146;ZHONGQIUYI Hebei (中丘驿) - HUAISHUI Hebei (槐水驿);{"type":"MultiLineString","coordinates":[[[114.68058013916,37.4946899414062],[114.511863708496,37.2950019836427]]]};1;MDYZK
+31;140;517;CIZHOU Hebei (磁州) - MATOU Hebei (码头);{"type":"MultiLineString","coordinates":[[[114.423614501953,36.4736099243165],[114.374244689942,36.359043121338]]]};1;
+977;961;969;BOLANYI Liaoning (孛兰驿) - LUANGUYI Liaoning (栾古驿);{"type":"MultiLineString","coordinates":[[[121.956467,39.3900340000002],[121.870128,39.5123400000001]]]};2;
+978;969;970;LUANGUYI Liaoning (栾古驿) - FUZHOUYI Liaoning (复州驿);{"type":"MultiLineString","coordinates":[[[121.870128,39.5123400000001],[121.711601,39.7337380000001]]]};2;
+979;970;971;FUZHOUYI Liaoning (复州驿) - WUSHIZHAIYI Liaoning (五十寨驿);{"type":"MultiLineString","coordinates":[[[121.711601,39.7337380000001],[121.992362417319,40.0423199158061]]]};2;
+980;971;972;WUSHIZHAIYI Liaoning (五十寨驿) - XIONGYUEYI Liaoning (熊岳驿);{"type":"MultiLineString","coordinates":[[[121.992362417319,40.0423199158061],[122.127632,40.1773680000002]]]};2;
+981;972;973;XIONGYUEYI Liaoning (熊岳驿) - GAIZHOUYI Liaoning (盖州驿);{"type":"MultiLineString","coordinates":[[[122.127632,40.1773680000002],[122.359466174439,40.39796090145]]]};2;
+982;973;974;GAIZHOUYI Liaoning (盖州驿) - YAOZHOUYI Liaoning (耀州驿);{"type":"MultiLineString","coordinates":[[[122.359466174439,40.3979609014499],[122.500912049439,40.6631368948695]]]};2;
+983;974;975;YAOZHOUYI Liaoning (耀州驿) - ZAICHENGYI Liaoning (在城驿);{"type":"MultiLineString","coordinates":[[[122.500912049439,40.6631368948695],[122.750341814172,40.8496358850931]]]};2;
+984;975;976;ZAICHENGYI Liaoning (在城驿) - ANSHANYI Liaoning (鞍山驿);{"type":"MultiLineString","coordinates":[[[122.750341814172,40.8496358850931],[122.942413,41.0739400000001]]]};2;
+987;250;978;ZAICHENGYI Liaoning (在城驿) - HUPIYI Liaoning (虎皮驿);{"type":"MultiLineString","coordinates":[[[123.35186,41.5108530000001],[123.419883728027,41.7882499694825]]]};2;

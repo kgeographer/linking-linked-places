@@ -1,13 +1,13 @@
-﻿select cs.id, array_agg(cp.sys_id) into z_edges_more 
+﻿-- drop table z_edges_more
+select cs.id, array_agg(cp.yz_id) as nodes into z_edges_more 
 	from courier_places cp, courier_segments cs 
  	where st_intersects(cs.geom,st_buffer(cp.geom,.02))
- 	-- cs.id = 730
-	group by cs.id
+	group by cs.id;
 
-select cs.id from courier_segments cs where cs.id not in
-	(select z.id from z_edges z)
-
-select array_agg[1] from z_edges
+-- select cs.id from courier_segments cs where cs.id not in
+-- 	(select z.id from z_edges z)
+-- 
+-- select array_agg[1] from z_edges
 
 update courier_segments cs set source = z.nodes[1] from z_edges_more z
 	where cs.id = z.id;
