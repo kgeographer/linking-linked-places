@@ -32,8 +32,8 @@
 <body>
   <div id="wrapper">
     <div id="header">header</div>
-      <div id='map'>map</div>
-      <div id='tl'>timeline tl</div>
+      <div id='map'></div>
+      <div id='tl'></div>
       <div id="menu">...</div>
       <div id='data' class="panel panel-default">
         <div id='data_select'>
@@ -57,8 +57,41 @@
         </div>
         <h3 class="data-header"></h3>
         <!-- <h3 class="panel-title"></h3> -->
+        <div id='data_layers' class="panel-body">
+          <p class="menu-header">Journeys</p>
+          <div class="checkbox">
+            <label><input type="checkbox" value="xuanzang">Xuanzang's Pilgrimage</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="roundabout">Roundabout</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="incanto-j">Venetian Incanto (journeys)</label>
+          </div>
+          <p class="menu-header">Flows</p>
+          <div class="checkbox">
+            <label><input type="checkbox" value="incanto-f">Venetian Incanto (flows)</label>
+          </div>
+          <p class="menu-header">Historical Routes</p>
+          <div class="checkbox">
+            <label><input type="checkbox" value="courier">Ming Courier Routes</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="vicarello">Vicarello Beakers</label>
+          </div>
+          <!-- <ul class="layer-list" >
+            <li class="dropdown-header">Journeys</li>
+            <li><a href="#" set='xuanzang'>Xuanzang</a></li>
+            <li><a href="#" set='roundabout'>Roundabout</a></li>
+            <li><a href="#" set='incanto-j'>Incanto (journeys)</a></li>
+            <li class="dropdown-header">Flows</li>
+            <li><a href="#" set='incanto-f'>Incanto (flows)</a></li>
+            <li class="dropdown-header">Historical Routes</li>
+            <li><a href="#" set='courier'>Ming Courier Routes</a></li>
+            <li><a href="#" set='vicarello'>Vicarello Beakers</a></li>
+          </ul> -->
+        </div>
         <div id='data_abstract'>#data_abstract</div>
-        <div id='data_inset' class="panel-body">#data_inset</div>
         <!-- <div id='data_inset' class="panel-body">Panel content #data_inset</div> -->
       </div>
       <div id="search" class="panel left-panel">

@@ -37,7 +37,9 @@ $(function() {
     e.preventDefault()
     location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
   });
-
+  $("input:checkbox").change(function(){
+    console.log(this.value)
+  })
 });
 
 window.midpoint = function(ts,type) {
@@ -221,7 +223,7 @@ function summarizeEvents(eventsObj){
   // multi-day, -week, -month, -year
   console.log(eventsObj)
 }
-function makeAbstract(attribs){
+function writeAbstract(attribs){
   let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
     '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'+
     '<p>'+attribs.description+'</p>'
@@ -231,9 +233,10 @@ function makeAbstract(attribs){
 function startMapM(dataset){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
-
   // AWMC tiles in mapbox
-  window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh')
+  window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh', {attributionControl: false})
+  var credits = L.control.attribution().addTo(ttmap);
+  credits.addAttribution('Tiles and Data © 2013 AWMC CC-BY-NC 3.0 ')
   // window.ttmap = L.mapbox.map('map') // don't load basemap
 
   /*  read a single FeatureCollection of
@@ -247,8 +250,9 @@ function startMapM(dataset){
       // console.log(featureLayer)
       // get Collection attributes
       window.collection = featureLayer._geojson
-      $("#data_abstract").html(makeAbstract(collection.attributes))
-      // set timeline midpoint
+      $("#data_abstract").html(writeAbstract(collection.attributes))
+      $("#data_abstract").append("<a href='data/"+ dataset +
+        ".geojson' target='_blank'>download GeoJSON-T</a>")
       tlMidpoint = midpoint(collection.when.timespan,'mid')
 
       // build separate L.featureGroup for points & lines
@@ -281,7 +285,7 @@ function startMapM(dataset){
         else if(geomF.type == 'GeometryCollection') {
           // console.log('layer.feature', layer.feature)
           //* TODO: create feature for each geometry
-          dataRows = '<table><hr><td>id</td><td>label</td></hr>'
+          // dataRows = '<table><hr><td>id</td><td>label</td></hr>'
           for(let i in geomF.geometries) {
             // console.log(geomF.geometries[i])
               let whenObj = geomF.geometries[i].when
@@ -304,9 +308,9 @@ function startMapM(dataset){
               lineFeatures.push(segment)
               var sid = feat.properties.segment_id
               idToFeature.segments[sid] = segment
-
-              dataRows += '<tr><td>'+sid+'</td>'+
-                '<td>'+feat.properties.label+'</td></tr>'
+              // console.log(feat.properties.segment_id,feat.properties.label)
+              // dataRows += '<tr><td>'+sid+'</td></tr>'
+              //   +'<td>'+feat.properties.label+'</td></tr>'
 
               //* build event object for timeline
               if (whenObj != ({} || '')) {
@@ -325,7 +329,7 @@ function startMapM(dataset){
           console.log(whenF == undefined ? 'whenF undef' : whenF)
         }
       })
-      $("#data_inset").html(dataRows+'</table>')
+      // $("#data_inset").html(dataRows+'</table>')
       // console.log(summarizeEvents(eventsObj))
       window.places = L.featureGroup(pointFeatures).addTo(ttmap)
       ttmap.fitBounds(places.getBounds())
