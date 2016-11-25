@@ -7,8 +7,8 @@ from elasticsearch import Elasticsearch
 
 es = Elasticsearch()
 
-#projects = ["incanto", "vicarello", "courier", "xuanzang", "roundabout"]
-projects = ["incanto", "vicarello", "xuanzang", "roundabout"]
+projects = ["incanto", "vicarello", "courier", "xuanzang", "roundabout"]
+#projects = ["incanto", "vicarello", "xuanzang", "roundabout"]
 #projects = ["courier"]
 
 # put dataset in index
@@ -23,7 +23,7 @@ for y in range(len(projects)):
         try:
             #res = es.index(index="linkedplaces", doc_type='place', id=doc['id'], body=raw[0])
             res = es.index(index="linkedplaces", doc_type='place', id=doc['id'], body=doc)
-            print(res['created'])
+            print(res['created'], doc['id'])
         except:
             print("error:", sys.exc_info()[0])
 
