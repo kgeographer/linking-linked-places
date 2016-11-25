@@ -28,7 +28,8 @@ window.tlMidpoint = ''
 window.dataRows = ''
 
 $(function() {
-  startMapM(searchParams['d'])
+  startMapM() // TODO: bounding boxes for datasets
+  // startMapM(searchParams['d'])
   $("#menu").click(function(){
     $("#data").toggle("fast")
   })
@@ -54,7 +55,7 @@ window.midpoint = function(ts,type) {
   return mid
 }
 
-window.initTimeline = function(events) {
+window.initTimeline = function(events,project) {
   // console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
   // console.log('in initTimeline()', JSON.stringify(events.events[0]))
@@ -66,7 +67,8 @@ window.initTimeline = function(events) {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
-  let cfg = tlConfig[searchParams['d']]
+  let cfg = tlConfig[project]
+  // let cfg = tlConfig[searchParams['d']]
   // var d = Timeline.DateTime.parseGregorianDateTime("2016-10-01")
   var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
   // DAY, WEEK, MONTH, YEAR, DECADE, CENTURY
@@ -218,11 +220,13 @@ var geojsonMarkerOptions = {
 function writePopup(layer) {
   console.log(layer)
 }
+
 function summarizeEvents(eventsObj){
   // get bounds, midpoint, granularity
   // multi-day, -week, -month, -year
   console.log(eventsObj)
 }
+
 function writeAbstract(attribs){
   let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
     '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'+
@@ -238,105 +242,108 @@ function startMapM(dataset){
   var credits = L.control.attribution().addTo(ttmap);
   credits.addAttribution('Tiles and Data © 2013 AWMC CC-BY-NC 3.0 ')
   // window.ttmap = L.mapbox.map('map') // don't load basemap
-
-  /*  read a single FeatureCollection of
-      Places (geometry.type == Point), and
-      Routes (geometry.type == GeometryCollection or undefined)
-        - route geometry.geometries[i] == LineString or MultiLineString
-  */
-  let featureLayer = L.mapbox.featureLayer()
-    .loadURL('data/' + dataset + '.geojson')
-    .on('ready', function(){
-      // console.log(featureLayer)
-      // get Collection attributes
-      window.collection = featureLayer._geojson
-      $("#data_abstract").html(writeAbstract(collection.attributes))
-      $("#data_abstract").append("<a href='data/"+ dataset +
-        ".geojson' target='_blank'>download GeoJSON-T</a>")
-      tlMidpoint = midpoint(collection.when.timespan,'mid')
-
-      // build separate L.featureGroup for points & lines
-      featureLayer.eachLayer(function(layer){
-        let geomF = layer.feature.geometry
-        let whenF = layer.feature.when
-        /*  feature cases:
-            Place if(geomF.type == 'Point')
-        */
-        // put places features pointFeatures array
-        if(geomF.type == 'Point') {
-            let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
-            var placeFeature = new L.CircleMarker(latlng, {
-              color: '#000',
-              fillColor: '#ffff00',
-              radius: 4,
-              fillOpacity: 0.8,
-              weight: 1
-            })
-            // console.log(placeFeature)
-            placeFeature.bindPopup(layer.feature.properties.toponym+
-              '<br/><a href="'+layer.feature.properties.gazetteer_uri+
-              '" target="_blank">gazetteer record</a>'
-              )
-            pointFeatures.push(placeFeature)
-            var pid = layer.feature.properties.place_id
-            idToFeature.places[pid] = placeFeature
-        }
-        // the rest are routes with segments in a GeometryCollection
-        else if(geomF.type == 'GeometryCollection') {
-          // console.log('layer.feature', layer.feature)
-          //* TODO: create feature for each geometry
-          // dataRows = '<table><hr><td>id</td><td>label</td></hr>'
-          for(let i in geomF.geometries) {
-            // console.log(geomF.geometries[i])
-              let whenObj = geomF.geometries[i].when
-              let feat = {
-                "type":"Feature",
-                "geometry": {
-                  "type":geomF.geometries[i].type,
-                  "coordinates":geomF.geometries[i].coordinates
-                  },
-                "when": whenObj,
-                "properties": geomF.geometries[i].properties
-              }
-              // console.log('feat', feat)
-              // console.log('whenObj', whenObj)
-              var segment = new L.GeoJSON(feat, {
-                  style: mapStyles.segments
-                }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
-                  feat.properties.segment_id+')')
-
-              lineFeatures.push(segment)
-              var sid = feat.properties.segment_id
-              idToFeature.segments[sid] = segment
-              // console.log(feat.properties.segment_id,feat.properties.label)
-              // dataRows += '<tr><td>'+sid+'</td></tr>'
-              //   +'<td>'+feat.properties.label+'</td></tr>'
-
-              //* build event object for timeline
-              if (whenObj != ({} || '')) {
-                if (collection.attributes.segmentType == 'journey') {
-                  eventsObj.events.push(buildSegmentEvent(feat));
-                }
-              }
-          }
-          if(eventsObj.events.length == 0) {
-            // needs a period
-            eventsObj.events.push(buildCollectionPeriod(collection))
-            // console.log('build',buildCollectionPeriod(collection))
-            // console.log('period eventsObj', eventsObj.events[0])
-          }
-        } else {
-          console.log(whenF == undefined ? 'whenF undef' : whenF)
-        }
-      })
-      // $("#data_inset").html(dataRows+'</table>')
-      // console.log(summarizeEvents(eventsObj))
-      window.places = L.featureGroup(pointFeatures).addTo(ttmap)
-      ttmap.fitBounds(places.getBounds())
-      window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
-      initTimeline(eventsObj)
-    })
 }
+
+window.loadLayer = function(project) {
+    /*  read a single FeatureCollection of
+        Places (geometry.type == Point), and
+        Routes (geometry.type == GeometryCollection or undefined)
+          - route geometry.geometries[i] == LineString or MultiLineString
+    */
+    let featureLayer = L.mapbox.featureLayer()
+      .loadURL('data/' + project + '.geojson')
+      .on('ready', function(){
+        // console.log(featureLayer)
+        // get Collection attributes
+        window.collection = featureLayer._geojson
+        $("#data_abstract").html(writeAbstract(collection.attributes))
+        $("#data_abstract").append("<a href='data/"+ project +
+          ".geojson' target='_blank'>download GeoJSON-T</a>")
+        tlMidpoint = midpoint(collection.when.timespan,'mid')
+
+        // build separate L.featureGroup for points & lines
+        featureLayer.eachLayer(function(layer){
+          let geomF = layer.feature.geometry
+          let whenF = layer.feature.when
+          /*  feature cases:
+              Place if(geomF.type == 'Point')
+          */
+          // put places features pointFeatures array
+          if(geomF.type == 'Point') {
+              let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
+              var placeFeature = new L.CircleMarker(latlng, {
+                color: '#000',
+                fillColor: '#ffff00',
+                radius: 4,
+                fillOpacity: 0.8,
+                weight: 1
+              })
+              // console.log(placeFeature)
+              placeFeature.bindPopup(layer.feature.properties.toponym+
+                '<br/><a href="'+layer.feature.properties.gazetteer_uri+
+                '" target="_blank">gazetteer record</a>'
+                )
+              pointFeatures.push(placeFeature)
+              var pid = layer.feature.properties.place_id
+              idToFeature.places[pid] = placeFeature
+          }
+          // the rest are routes with segments in a GeometryCollection
+          else if(geomF.type == 'GeometryCollection') {
+            // console.log('layer.feature', layer.feature)
+            //* TODO: create feature for each geometry
+            // dataRows = '<table><hr><td>id</td><td>label</td></hr>'
+            for(let i in geomF.geometries) {
+              // console.log(geomF.geometries[i])
+                let whenObj = geomF.geometries[i].when
+                let feat = {
+                  "type":"Feature",
+                  "geometry": {
+                    "type":geomF.geometries[i].type,
+                    "coordinates":geomF.geometries[i].coordinates
+                    },
+                  "when": whenObj,
+                  "properties": geomF.geometries[i].properties
+                }
+                // console.log('feat', feat)
+                // console.log('whenObj', whenObj)
+                var segment = new L.GeoJSON(feat, {
+                    style: mapStyles.segments
+                  }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
+                    feat.properties.segment_id+')')
+
+                lineFeatures.push(segment)
+                var sid = feat.properties.segment_id
+                idToFeature.segments[sid] = segment
+                // console.log(feat.properties.segment_id,feat.properties.label)
+                // dataRows += '<tr><td>'+sid+'</td></tr>'
+                //   +'<td>'+feat.properties.label+'</td></tr>'
+
+                //* build event object for timeline
+                if (whenObj != ({} || '')) {
+                  if (collection.attributes.segmentType == 'journey') {
+                    eventsObj.events.push(buildSegmentEvent(feat));
+                  }
+                }
+            }
+            if(eventsObj.events.length == 0) {
+              // needs a period
+              eventsObj.events.push(buildCollectionPeriod(collection))
+              // console.log('build',buildCollectionPeriod(collection))
+              // console.log('period eventsObj', eventsObj.events[0])
+            }
+          } else {
+            console.log(whenF == undefined ? 'whenF undef' : whenF)
+          }
+        })
+        // $("#data_inset").html(dataRows+'</table>')
+        // console.log(summarizeEvents(eventsObj))
+        window.places = L.featureGroup(pointFeatures).addTo(ttmap)
+        ttmap.fitBounds(places.getBounds())
+        window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
+        initTimeline(eventsObj,project)
+      })
+}
+
 
 /* xuanzang
         "when": {
