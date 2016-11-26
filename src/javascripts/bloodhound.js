@@ -22,6 +22,7 @@ var toponyms = new Bloodhound({
       return $.map(response.q[0].options, function(place) {
         // console.log(place)
         return {
+          id: place._source.id,
           data: place._source.is_conflation_of,
           value: place._source.representative_title,
             // +" ("+place._source.is_conflation_of.length+")",
@@ -64,14 +65,17 @@ $(".typeahead").on("typeahead:select", function(e,obj){
   var html = "<ul class='gaz-entries'>";
   for(let i=0;i<obj.data.length;i++){
     var project = collections[obj.data[i].source_gazetteer]
-    html += "<li value="+project+">"+obj.data[i].title+" ("+project+")</li>"
+    html += "<li value="+project+" id="+obj.id+">"+obj.data[i].title
+      +" ("+project+")</li>"
   }
   html += "</ul>"
   $("#results_inset").html(html)
   $(".gaz-entries li").click(function(e){
     e.preventDefault()
-    console.log('clicked', this.getAttribute('value'))
+    console.log('clicked', this.getAttribute('value'), this.getAttribute('id'))
+    // is dataset loaded?
     location.href = location.origin+location.pathname+'?d='+this.getAttribute('value')
+    // idToFeature[this.getAttribute('id')].openPopup()
   })
   $(".typeahead.tt-input")[0].value = '';
   //

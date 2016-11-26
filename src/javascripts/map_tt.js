@@ -11,13 +11,13 @@ import './bloodhound.js';
 // require('@turf/centroid')
 // require('@turf/buffer')
 
+// expose for debugging
 window.parsedUrl = url.parse(window.location.href, true, true)
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // window.q = querystring;
 // window.cent = ctr
 // window.buff = buf
 // require('leaflet-ajax');
-// expose for debugging
 window.idToFeature = {places:{}, segments:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
@@ -28,18 +28,21 @@ window.tlMidpoint = ''
 window.dataRows = ''
 
 $(function() {
-  startMapM() // TODO: bounding boxes for datasets
+  // startMapM() // TODO: bounding boxes for datasets
+  Object.getOwnPropertyNames(searchParams).length == 0 ?
+    startMapM() : startMapM(searchParams['d'])
   // startMapM(searchParams['d'])
   $("#menu").click(function(){
     $("#data").toggle("fast")
   })
   $(".data-header").html(searchParams['d'])
-  $('.dropdown-menu a').click(function(e){
-    e.preventDefault()
-    location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
-  });
+  // $('.dropdown-menu a').click(function(e){
+  //   e.preventDefault()
+  //   location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
+  // });
   $("input:checkbox").change(function(){
     console.log(this.value)
+    loadLayer(this.value)
   })
 });
 
@@ -51,7 +54,7 @@ window.midpoint = function(ts,type) {
     let end = ts[3] == ('' || undefined) ? new Date(Date.now()) : new Date(ts[3])
     var mid = new Date((start.getTime() + end.getTime()) / 2);
   }
-  console.log(mid)
+  // console.log(mid)
   return mid
 }
 
@@ -234,7 +237,7 @@ function writeAbstract(attribs){
   return html
 }
 
-function startMapM(dataset){
+function startMapM(dataset=null){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
   // AWMC tiles in mapbox
@@ -242,6 +245,7 @@ function startMapM(dataset){
   var credits = L.control.attribution().addTo(ttmap);
   credits.addAttribution('Tiles and Data © 2013 AWMC CC-BY-NC 3.0 ')
   // window.ttmap = L.mapbox.map('map') // don't load basemap
+  if(dataset != null) {loadLayer(dataset);}
 }
 
 window.loadLayer = function(project) {
@@ -284,7 +288,8 @@ window.loadLayer = function(project) {
                 '" target="_blank">gazetteer record</a>'
                 )
               pointFeatures.push(placeFeature)
-              var pid = layer.feature.properties.place_id
+              var pid = layer.feature.id
+              // console.log('place properties',layer.feature.properties)
               idToFeature.places[pid] = placeFeature
           }
           // the rest are routes with segments in a GeometryCollection
