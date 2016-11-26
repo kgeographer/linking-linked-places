@@ -3,6 +3,7 @@ var url = require('url'),
     querystring = require('querystring')
 require('bootstrap')
 require('mapbox.js')
+require('font-awesome')
 
 // import add'l app JavaScript
 import './bloodhound.js';

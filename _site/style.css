@@ -36,7 +36,8 @@ body {
 .panel h3 {
   margin: 4px 0;
   text-align: center;
-  color: #336699;
+  font-weight: bold;
+  color: darkgoldenrod;
 }
 .left-panel {
   left: 40px;
@@ -67,10 +68,13 @@ body {
   background: floralwhite;
   font-weight: 800;
   font-size: 1.1em;
-  color: darkgoldenrod;
+  color: darkgray;
 }
 #data_inset.table {
   width: 250px;
+}
+input[type=radio] {
+  margin: 2px 0 0;
 }
 #menu {
   position: absolute;

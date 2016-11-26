@@ -18,6 +18,8 @@
   <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" /> -->
   <link rel='stylesheet' href='lib/mapbox.css'/>
   <link rel='stylesheet' href='lib/bootstrap.min.css'/>
+  <link rel='stylesheet' href='lib/font-awesome/css/font-awesome.min.css'/>
+
 
   <!-- <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' /> -->
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -35,48 +37,36 @@
       <div id='map'></div>
       <div id='tl'></div>
       <div id="menu">...</div>
-      <div id='data' class="panel panel-default">
-        <!-- <div id='data_select'>
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Select dataset
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li class="dropdown-header">Journeys</li>
-              <li><a href="#" set='xuanzang'>Xuanzang</a></li>
-              <li><a href="#" set='roundabout'>Roundabout</a></li>
-              <li><a href="#" set='incanto-j'>Incanto (journeys)</a></li>
-              <li class="dropdown-header">Flows</li>
-              <li><a href="#" set='incanto-f'>Incanto (flows)</a></li>
-              <li class="dropdown-header">Historical Routes</li>
-              <li><a href="#" set='courier'>Ming Courier Routes</a></li>
-              <li><a href="#" set='vicarello'>Vicarello Beakers</a></li>
-            </ul>
-          </div>
-        </div> -->
+      <div id='data' class="panel">
+      <!-- <div id='data' class="panel panel-default"> -->
         <h3 class="panel-title">Linked Places</h3>
         <div id='data_layers' class="panel-body">
           <p class="menu-header">Journeys</p>
           <div class="checkbox">
-            <label><input type="checkbox" value="xuanzang">Xuanzang's Pilgrimage</label>
+            <label><input type="checkbox" value="xuanzang">Xuanzang's Pilgrimage (7 c.)</label>
+            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="roundabout">Roundabout</label>
+            <label><input type="checkbox" value="roundabout">Roundabout (21 c.)</label>
+            <!-- (21 c.) <i class="fa fa-info-circle" aria-hidden="true"></i> -->
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="incanto-j">Venetian Incanto (journeys)</label>
+            <label><input type="checkbox" value="incanto-j">Venetian Incanto (13-15 c.)</label>
+            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
           </div>
           <p class="menu-header">Flows</p>
           <div class="checkbox">
-            <label><input type="checkbox" value="incanto-f">Venetian Incanto (flows)</label>
+            <label><input type="checkbox" value="incanto-f">Venetian Incanto (13-15 c.)</label>
+            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
           </div>
           <p class="menu-header">Historical Routes</p>
           <div class="checkbox">
-            <label><input type="checkbox" value="courier">Ming Courier Routes</label>
+            <label><input type="checkbox" value="courier">Ming Courier Routes (14-17 c.)</label>
+            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="vicarello">Vicarello Beakers</label>
+            <label><input type="checkbox" value="vicarello">Vicarello Beakers (1?-5 c.)</label>
+            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
           </div>
           <!-- <ul class="layer-list" >
             <li class="dropdown-header">Journeys</li>
@@ -90,7 +80,13 @@
             <li><a href="#" set='vicarello'>Vicarello Beakers</a></li>
           </ul> -->
         </div>
-        <div id='data_abstract'>#data_abstract</div>
+        <div id='data_abstract'>
+          <p>This work-in-progress prototype is intended to test and demonstrate <b>GeoJSON-T</b>, a GeoJSON extension
+            in development for repesenting data about historical movement as well as
+            Place records for historical gazetteers. </p>
+          <p>The datasets listed above concern three kinds of movement: <b>journeys</b>, <b>flows</b>,
+            and <b>named historical routes/route systems</b>.</p>
+        </div>
         <!-- <div id='data_inset' class="panel-body">Panel content #data_inset</div> -->
       </div>
       <div id="search" class="panel left-panel">
