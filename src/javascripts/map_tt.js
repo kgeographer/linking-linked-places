@@ -43,8 +43,12 @@ $(function() {
   //   location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
   // });
   $("input:checkbox").change(function(){
-    console.log(this.value)
-    loadLayer(this.value)
+    if(this.checked == true) {
+      loadLayer(this.value)
+    } else {
+      zapLayer(this.value)
+    }
+
   })
 });
 
@@ -239,6 +243,14 @@ function writeAbstract(attribs){
   return html
 }
 
+window.zapLayer = function(project) {
+  let name_p = "places_"+project
+  let name_s = "segments_"+project
+  features[name_p].removeFrom(ttmap)
+  features[name_s].removeFrom(ttmap)
+  // features.places_roundabout.removeFrom(ttmap)
+}
+
 function startMapM(dataset=null){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
@@ -251,6 +263,10 @@ function startMapM(dataset=null){
 }
 
 window.loadLayer = function(project) {
+    // empty these arrays to reuse them
+    pointFeatures = [];
+    lineFeatures = [];
+    $(":checkbox[value="+project+"]").prop("checked","true")
     /*  read a single FeatureCollection of
         Places (geometry.type == Point), and
         Routes (geometry.type == GeometryCollection or undefined)
