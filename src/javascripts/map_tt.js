@@ -18,7 +18,9 @@ window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // window.cent = ctr
 // window.buff = buf
 // require('leaflet-ajax');
-window.idToFeature = {places:{}, segments:{}}
+window.features = {}
+window.idToFeature = {}
+// window.idToFeature = {places:{}, segments:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
 window.pointFeatures = []
@@ -254,6 +256,8 @@ window.loadLayer = function(project) {
         Routes (geometry.type == GeometryCollection or undefined)
           - route geometry.geometries[i] == LineString or MultiLineString
     */
+    window.idToFeature[project] = {places:{}, segments:{}}
+    // window.idToFeature = {places:{}, segments:{}}
     let featureLayer = L.mapbox.featureLayer()
       .loadURL('data/' + project + '.geojson')
       .on('ready', function(){
@@ -290,7 +294,7 @@ window.loadLayer = function(project) {
               pointFeatures.push(placeFeature)
               var pid = layer.feature.id
               // console.log('place properties',layer.feature.properties)
-              idToFeature.places[pid] = placeFeature
+              idToFeature[project].places[pid] = placeFeature
           }
           // the rest are routes with segments in a GeometryCollection
           else if(geomF.type == 'GeometryCollection') {
@@ -318,7 +322,7 @@ window.loadLayer = function(project) {
 
                 lineFeatures.push(segment)
                 var sid = feat.properties.segment_id
-                idToFeature.segments[sid] = segment
+                idToFeature[project].segments[sid] = segment
                 // console.log(feat.properties.segment_id,feat.properties.label)
                 // dataRows += '<tr><td>'+sid+'</td></tr>'
                 //   +'<td>'+feat.properties.label+'</td></tr>'
@@ -340,11 +344,11 @@ window.loadLayer = function(project) {
             console.log(whenF == undefined ? 'whenF undef' : whenF)
           }
         })
-        // $("#data_inset").html(dataRows+'</table>')
-        // console.log(summarizeEvents(eventsObj))
-        window.places = L.featureGroup(pointFeatures).addTo(ttmap)
-        ttmap.fitBounds(places.getBounds())
-        window.segments = L.featureGroup(lineFeatures).addTo(ttmap)
+        let name_p = "places_"+project
+        let name_s = "segments_"+project
+        features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
+        features[name_s] = L.featureGroup(lineFeatures).addTo(ttmap)
+        ttmap.fitBounds(features[name_p].getBounds())
         initTimeline(eventsObj,project)
       })
 }
