@@ -39,7 +39,12 @@ $(function() {
   $(".data-header").html(searchParams['d'])
   $("input:checkbox").change(function(){
     if(this.checked == true) {
-      loadLayer(this.value)
+      if(searchParams['p'] == undefined) {
+        loadLayer(this.value)
+      } else {
+        location.href = location.origin+location.pathname+'?d='+this.value;
+        // startMapM(this.value)
+      }
     } else {
       zapLayer(this.value)
     }
@@ -257,9 +262,14 @@ function startMapM(dataset=null){
 }
 
 window.loadLayer = function(project) {
+    // window.location.search = '';
     // empty these arrays to reuse them
     pointFeatures = [];
     lineFeatures = [];
+    if(searchParams['p'] != undefined){
+      $("#results_inset").html('<p>Dataset: '+searchParams['d']+
+        '</p><p>Place:'+searchParams['p']+'</p>')
+    }
     $(":checkbox[value="+project+"]").prop("checked","true")
     /*  read a single FeatureCollection of
         Places (geometry.type == Point), and
