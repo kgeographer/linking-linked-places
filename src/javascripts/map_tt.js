@@ -3,11 +3,9 @@ var url = require('url'),
     querystring = require('querystring')
 require('bootstrap')
 require('mapbox.js')
-require('font-awesome')
 
 // import add'l app JavaScript
 import './bloodhound.js';
-// import './elastic.js';
 
 // require('@turf/centroid')
 // require('@turf/buffer')
@@ -33,23 +31,18 @@ window.dataRows = ''
 $(function() {
   // startMapM() // TODO: bounding boxes for datasets
   Object.getOwnPropertyNames(searchParams).length == 0 ?
-    startMapM() : startMapM(searchParams['d'])
+    startMapM() : startMapM(searchParams['d'],searchParams['p'])
   // startMapM(searchParams['d'])
   $("#menu").click(function(){
     $("#data").toggle("fast")
   })
   $(".data-header").html(searchParams['d'])
-  // $('.dropdown-menu a').click(function(e){
-  //   e.preventDefault()
-  //   location.href = location.origin+location.pathname+'?d='+$(this).attr('set')
-  // });
   $("input:checkbox").change(function(){
     if(this.checked == true) {
       loadLayer(this.value)
     } else {
       zapLayer(this.value)
     }
-
   })
 });
 
@@ -365,7 +358,14 @@ window.loadLayer = function(project) {
         let name_s = "segments_"+project
         features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
         features[name_s] = L.featureGroup(lineFeatures).addTo(ttmap)
-        ttmap.fitBounds(features[name_p].getBounds())
+        // user clicked on a place and it's in the url
+        console.log('searchParams p',searchParams['p'])
+        if(searchParams['p'] != undefined) {
+          ttmap.setView(idToFeature[project].places[searchParams['p']].getLatLng(),8)
+          idToFeature[project].places[searchParams['p']].openPopup()
+        } else {
+          ttmap.fitBounds(features[name_p].getBounds())
+        }
         initTimeline(eventsObj,project)
       })
 }

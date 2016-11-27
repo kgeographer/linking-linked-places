@@ -61,22 +61,49 @@ $(".typeahead").on("typeahead:select", function(e,obj){
   window.obj = obj
   $("#results h3").html(obj.value)
   var re = /\((.*)\)/;
-  let collection = collections[re.exec(obj.value)]
-  var html = "<ul class='gaz-entries'>";
+  // let collection = collections[re.exec(obj.value)]
+  var html = "<table class='gaz-entries'><tr>"+
+    "<th>Toponym</th><th>Dataset</th></tr>";
   for(let i=0;i<obj.data.length;i++){
-    var project = collections[obj.data[i].source_gazetteer]
-    html += "<li value="+project+" id="+obj.id+">"+obj.data[i].title
-      +" ("+project+")</li>"
+    let project = collections[obj.data[i].source_gazetteer]
+    html +=
+      "<tr><td class='result-title'><a href='#'id='"+obj.data[i].id+
+        "' project='"+project+"'>"+obj.data[i].title+"</a></td>"+
+      // <a href='#' id='"+obj.id+"'>"+obj.data[i].title+"</td>"+
+      "<td class='result-project'>"+project+"</td><tr>"
+    // html += "<li value="+project+" id="+obj.id+">"+obj.data[i].title
+    //   +" ("+project+")</li>"
   }
-  html += "</ul>"
+  html += "</table>"
   $("#results_inset").html(html)
-  $(".gaz-entries li").click(function(e){
-    e.preventDefault()
-    console.log('clicked', this.getAttribute('value'), this.getAttribute('id'))
-    // is dataset loaded?
-    location.href = location.origin+location.pathname+'?d='+this.getAttribute('value')
-    // idToFeature[this.getAttribute('id')].openPopup()
+  $(".result-title a").click(function(e){
+    window.proj = $(this).attr('project').substring(0,7) == 'incanto'?'incanto-f':$(this).attr('project')
+    console.log('project',proj)
+    // if project/dataset isn't loaded, load it (project !- dataset for incanto)
+    window.pcheck = $("input:checkbox[value='"+proj+"']")
+    console.log('toponym checked',pcheck,proj)
+    if(pcheck.prop('checked') == false){
+      location.href = location.origin+location.pathname+'?d='+proj+'&p='+this.id
+      pcheck.prop('checked', true)
+    } else {
+      console.log(proj,'already loaded, zoom to',this.id)
+    }
+    console.log('got data, now place', this.id)
+    ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),8)
+    idToFeature[proj].places[this.id].openPopup()
   })
+  // $(".result-project a").click(function(e){
+  //   e.preventDefault()
+  //   console.log('clicked', this.text)
+  //   // if project/dataset isn't loaded, load it
+  //   if($("input:checkbox[value='"+this.text+"']").is('checked') == false){
+  //     location.href = location.origin+location.pathname+'?d='+this.text
+  //   }
+  //   // is dataset loaded?
+  //   // location.href = location.origin+location.pathname+'?d='+this.getAttribute('value')
+  //   // idToFeature[this.getAttribute('id')].openPopup()
+  // })
+  // this.getAttribute('id')
   $(".typeahead.tt-input")[0].value = '';
   //
 })

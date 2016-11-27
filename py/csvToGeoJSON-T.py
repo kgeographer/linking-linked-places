@@ -10,8 +10,8 @@ def init():
     dir = os.getcwd() + '/data/'
     global proj, reader_p, reader_s, finp, fins, fout, foutp, collection, collectionAttributes, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'xuanzang'
-    data = 'xuanzang'
+    proj = 'courier'
+    data = 'courier'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -115,6 +115,7 @@ def createPlaces():
             "temporal_bounds_union": collectionAttributes['timespan'][1:-1].split(','),
             "suggest": parseNames(row),
             "is_conflation_of": [{
+                "id": row['place_id'],
                 "uri": row['gazetteer_uri'],
                 "source_gazetteer": row['collection'],
                 "title": row['toponym'],
