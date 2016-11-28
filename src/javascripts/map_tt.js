@@ -49,6 +49,22 @@ $(function() {
       zapLayer(this.value)
     }
   })
+  // TODO: failed attempt to load gaz record in modal
+  // ttmap.on('popupopen', function (e) {
+  //   console.log(e.popup._source.gazid);
+  //   $("#gazframe").attr("src",e.popup._source.gazid)
+  //   console.log('gazframe',gazframe)
+  //   $(".modal-link").click(function(e){
+  //     e.preventDefault()
+  //     console.log('clicked a tgaz link',this)
+  //   })
+  // });
+  // // $('#myModal').modal({ show: false})
+  // $(".modal-link").click(function(e){
+  //   // e.preventDefault()
+  //   console.log('clicked a tgaz link',this)
+  //   $('#myModal').modal()
+  // })
 });
 
 window.midpoint = function(ts,type) {
@@ -307,10 +323,15 @@ window.loadLayer = function(project) {
                 weight: 1
               })
               // console.log(placeFeature)
+              let gazURI = layer.feature.properties.gazetteer_uri
+
               placeFeature.bindPopup(layer.feature.properties.toponym+
-                '<br/><a href="'+layer.feature.properties.gazetteer_uri+
-                '" target="_blank">gazetteer record</a>'
+                '<br/><a href="'+gazURI+
+                '" target="_blank">'+(project=='courier'?'TGAZ record':
+                  project=='vicarello'?'Pleiades record':
+                  ['roundabout','xuanzang'].indexOf(project)>-1?'Geonames record':'')+'</a>'
                 )
+
               pointFeatures.push(placeFeature)
               var pid = layer.feature.id
               // console.log('place properties',layer.feature.properties)
@@ -366,8 +387,8 @@ window.loadLayer = function(project) {
         })
         let name_p = "places_"+project
         let name_s = "segments_"+project
-        features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
         features[name_s] = L.featureGroup(lineFeatures).addTo(ttmap)
+        features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
         // user clicked on a place and it's in the url
         console.log('searchParams p',searchParams['p'])
         if(searchParams['p'] != undefined) {

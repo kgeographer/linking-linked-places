@@ -71,6 +71,11 @@ body {
   font-size: 1.1em;
   color: darkgray;
 }
+.modal-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
 #data_inset.table {
   width: 250px;
 }

@@ -34,70 +34,86 @@
 <body>
   <div id="wrapper">
     <div id="header">header</div>
-      <div id='map'></div>
-      <div id='tl'></div>
-      <div id="menu">...</div>
-      <div id='data' class="panel">
+    <div id='map'></div>
+    <div id='tl'></div>
+    <div id='data' class="panel">
       <!-- <div id='data' class="panel panel-default"> -->
-        <h3 class="panel-title">Linked Places</h3>
-        <div id='data_layers' class="panel-body">
-          <p class="menu-header">Journeys</p>
-          <div class="checkbox">
-            <label><input type="checkbox" value="xuanzang">Xuanzang's Pilgrimage (7 c.)</label>
-            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="roundabout">Roundabout (21 c.)</label>
-            <!-- (21 c.) <i class="fa fa-info-circle" aria-hidden="true"></i> -->
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="incanto-j">Venetian Incanto (13-15 c.)</label>
-            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
-          </div>
-          <p class="menu-header">Flows</p>
-          <div class="checkbox">
-            <label><input type="checkbox" value="incanto-f">Venetian Incanto (13-15 c.)</label>
-            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
-          </div>
-          <p class="menu-header">Historical Routes</p>
-          <div class="checkbox">
-            <label><input type="checkbox" value="courier">Ming Courier Routes (14-17 c.)</label>
-            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="vicarello">Vicarello Beakers (1?-5 c.)</label>
-            <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
-          </div>
-          <!-- <ul class="layer-list" >
-            <li class="dropdown-header">Journeys</li>
-            <li><a href="#" set='xuanzang'>Xuanzang</a></li>
-            <li><a href="#" set='roundabout'>Roundabout</a></li>
-            <li><a href="#" set='incanto-j'>Incanto (journeys)</a></li>
-            <li class="dropdown-header">Flows</li>
-            <li><a href="#" set='incanto-f'>Incanto (flows)</a></li>
-            <li class="dropdown-header">Historical Routes</li>
-            <li><a href="#" set='courier'>Ming Courier Routes</a></li>
-            <li><a href="#" set='vicarello'>Vicarello Beakers</a></li>
-          </ul> -->
+      <h3 class="panel-title">Linked Places</h3>
+      <div id='data_layers' class="panel-body">
+        <p class="menu-header">Journeys</p>
+        <div class="checkbox">
+          <label><input type="checkbox" value="xuanzang">Xuanzang's Pilgrimage (7 c.)</label>
+          <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
         </div>
-        <div id='data_abstract'>
-          <p>This work-in-progress prototype is intended to test and demonstrate <b>GeoJSON-T</b>, a GeoJSON extension
-            in development for repesenting data about historical movement as well as
-            Place records for historical gazetteers. </p>
-          <p>The datasets listed above concern three kinds of movement: <b>journeys</b>, <b>flows</b>,
-            and <b>named historical routes/route systems</b>.</p>
+        <div class="checkbox">
+          <label><input type="checkbox" value="roundabout">Roundabout (21 c.)</label>
+          <!-- (21 c.) <i class="fa fa-info-circle" aria-hidden="true"></i> -->
         </div>
-        <!-- <div id='data_inset' class="panel-body">Panel content #data_inset</div> -->
+        <div class="checkbox">
+          <label><input type="checkbox" value="incanto-j">Venetian Incanto (13-15 c.)</label>
+          <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
+        </div>
+        <p class="menu-header">Flows</p>
+        <div class="checkbox">
+          <label><input type="checkbox" value="incanto-f">Venetian Incanto (13-15 c.)</label>
+          <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
+        </div>
+        <p class="menu-header">Historical Routes</p>
+        <div class="checkbox">
+          <label><input type="checkbox" value="courier">Ming Courier Routes (14-17 c.)</label>
+          <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="vicarello">Vicarello Beakers (1?-5 c.)</label>
+          <!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->
+        </div>
+        <!-- <ul class="layer-list" >
+          <li class="dropdown-header">Journeys</li>
+          <li><a href="#" set='xuanzang'>Xuanzang</a></li>
+          <li><a href="#" set='roundabout'>Roundabout</a></li>
+          <li><a href="#" set='incanto-j'>Incanto (journeys)</a></li>
+          <li class="dropdown-header">Flows</li>
+          <li><a href="#" set='incanto-f'>Incanto (flows)</a></li>
+          <li class="dropdown-header">Historical Routes</li>
+          <li><a href="#" set='courier'>Ming Courier Routes</a></li>
+          <li><a href="#" set='vicarello'>Vicarello Beakers</a></li>
+        </ul> -->
       </div>
-      <div id="search" class="panel left-panel">
-        <div id="bloodhound">
-          <input class="typeahead" type="text" placeholder="Search place names">
-        </div>
-        <div id="results">
-          <!-- <h3></h3> -->
-          <div id="results_inset"></div>
+      <div id='data_abstract'>
+        <p>This work-in-progress prototype is intended to test and demonstrate <b>GeoJSON-T</b>, a GeoJSON extension
+          in development for repesenting data about historical movement as well as
+          Place records for historical gazetteers. </p>
+        <p>The datasets listed above concern three kinds of movement: <b>journeys</b>, <b>flows</b>,
+          and <b>named historical routes/route systems</b>.</p>
+      </div>
+      <!-- <div id='data_inset' class="panel-body">Panel content #data_inset</div> -->
+    </div>
+    <div id="search" class="panel left-panel">
+      <div id="bloodhound">
+        <input class="typeahead" type="text" placeholder="Search place names">
+      </div>
+      <div id="results">
+        <!-- <h3></h3> -->
+        <div id="results_inset"></div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <iframe id="gazframe" src="" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
+    </div>
     <div id="footer">footer</div>
   </div>
   <script src="lib/typeahead.js"></script>
