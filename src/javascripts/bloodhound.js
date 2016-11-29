@@ -1,10 +1,5 @@
 require('handlebars')
 
-function prepare(query, settings) {
-  settings.type = 'POST';
-  return settings;
-}
-
 // resolve collection names in data
 var collections = {"ra":"roundabout","courier":"courier","incanto":"incanto",
   "vb":"vicarello","xuanzang":"xuanzang"}
@@ -25,8 +20,6 @@ var toponyms = new Bloodhound({
           id: place._source.id,
           data: place._source.is_conflation_of,
           value: place._source.representative_title,
-            // +" ("+place._source.is_conflation_of.length+")",
-            // + ' (' + place._source.is_conflation_of[0].source_gazetteer + ')',
           names: place._source.suggest
         };
       });
@@ -58,11 +51,10 @@ $('#bloodhound .typeahead').typeahead({
 });
 
 $(".typeahead").on("typeahead:select", function(e,obj){
-  window.obj = obj
-  $("#results h3").html(obj.value)
+  console.log('obj',obj)
+  // $("#results h3").html(obj.value)
   var re = /\((.*)\)/;
-  // let collection = collections[re.exec(obj.value)]
-  var html = "<table class='gaz-entries'><tr>"+
+  window.html = "<table class='gaz-entries'><tr>"+
     "<th>Toponym</th><th>Dataset</th></tr>";
   for(let i=0;i<obj.data.length;i++){
     let project = collections[obj.data[i].source_gazetteer]

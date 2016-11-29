@@ -8,10 +8,10 @@ import os, sys, csv, json, codecs, re
 
 def init():
     dir = os.getcwd() + '/data/'
-    global proj, reader_p, reader_s, finp, fins, fout, foutp, collection, collectionAttributes, routeidx
+    global proj, reader_p, reader_s, finp, fins, fout, foutp, fouts, collection, collectionAttributes, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'roundabout'
-    data = 'roundabout'
+    proj = 'courier'
+    data = 'courier'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -19,6 +19,9 @@ def init():
     
     # output places only for index
     foutp = codecs.open('../_site/data/'+proj+'.jsonl', 'w', 'utf8')
+    
+    # output segments only for index
+    fouts = codecs.open('../_site/data/'+proj+'_seg.jsonl', 'w', 'utf8')
     
     # TODO: option for separate places and segments files (xuanzang is example)
     #foutp = codecs.open('../data/out/'+data+'_places.geojson', 'w', 'utf8')
@@ -234,11 +237,14 @@ def createSegments():
             counter += 1
             #print('new geometry ', row['segment_id'])
 
-        #print(counter)
-
-    fout.write(json.dumps(collection,indent=2))
-    fout.close()
+    print(feat)
+        # JSONlines for index
+    fouts.write(json.dumps(feat) + '\n')
+        
+       
+    #fout.write(json.dumps(collection,indent=2))
+    #fout.close()
 
 init()
-createPlaces()
+#createPlaces()
 createSegments()

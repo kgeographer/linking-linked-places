@@ -11,7 +11,7 @@ projects = ["incanto", "vicarello", "courier", "xuanzang", "roundabout"]
 #projects = ["incanto", "vicarello", "xuanzang", "roundabout"]
 #projects = ["courier"]
 
-# put dataset in index
+# put places dataset in linkedplaces index
 # assumes mapping template
 for y in range(len(projects)):
     print(projects[y])

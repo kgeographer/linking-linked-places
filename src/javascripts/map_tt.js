@@ -354,7 +354,7 @@ window.loadLayer = function(project) {
                   "when": whenObj,
                   "properties": geomF.geometries[i].properties
                 }
-                // console.log('feat', feat)
+                console.log('feat', feat.properties.source, feat.properties.target)
                 // console.log('whenObj', whenObj)
                 var segment = new L.GeoJSON(feat, {
                     style: mapStyles.segments
