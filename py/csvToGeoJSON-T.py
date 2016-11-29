@@ -2,7 +2,7 @@
 # read places and segments csv, output GeoJSON-T for routes, JSONlines for Elasticsearch
 # 2016-11-22 k. grossner
 
-import os, sys, csv, json, codecs, re
+import os, sys, csv, json, codecs, re, copy
 # TODO should we de-duplicate?
 # TODO options: separate files for QGIS work; generate edges (here or in js?)
 
@@ -17,15 +17,14 @@ def init():
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
     fout = codecs.open('../_site/data/'+data+'.geojson', 'w', 'utf8')  
     
-    # output places only for index
-    foutp = codecs.open('../_site/data/'+proj+'.jsonl', 'w', 'utf8')
+    # NOTE: demo uses manually edited place records
+    # output places for index
+    # foutp = codecs.open('../_site/data/index/'+proj+'.jsonl', 'w', 'utf8')
     
-    # output segments only for index
-    fouts = codecs.open('../_site/data/'+proj+'_seg.jsonl', 'w', 'utf8')
+    # output segments for index
+    fouts = codecs.open('../_site/data/index/'+data+'_seg.jsonl', 'w', 'utf8')
     
-    # TODO: option for separate places and segments files (xuanzang is example)
-    #foutp = codecs.open('../data/out/'+data+'_places.geojson', 'w', 'utf8')
-    #fouts = codecs.open('../data/out/'+data+'_segments.geojson', 'w', 'utf8')
+    # TODO: option for separate places and segments files
 
     reader_p = csv.DictReader(filter(lambda row: row[0]!='#', finp), delimiter=';')
     reader_s = csv.DictReader(filter(lambda row: row[0]!='#', fins), delimiter=';')
@@ -60,10 +59,9 @@ def init():
     # TODO test segments columns, offer options
     #fins.seek(0)
     #if not reader_s.fieldnames[:10] == req_s:
-        ##sys.exit('core segment field names incorrect. You have: \n' + str(reader_s.fieldnames))
+        #sys.exit('core segment field names incorrect. You have: \n' + str(reader_s.fieldnames))
         #sys.exit('core segment field names incorrect.')
 
-    #fins.seek(0)
     print('Project: ' + proj + ', Data: ' + data)
 
 
@@ -136,10 +134,10 @@ def createPlaces():
     #foutp.write(json.dumps(places,indent=2))
     
     # JSONlines for index
-    for x in range(len(places)):
-        foutp.write(json.dumps(places[x]) + '\n')
-        
-    foutp.close()
+    # NOTE: demo place index records have been manually edited , do not regenerate
+    #for x in range(len(places)):
+        #foutp.write(json.dumps(places[x]) + '\n')
+    #foutp.close()
 
 def createSegments():
 
@@ -200,6 +198,8 @@ def createSegments():
         # core properties
         g['properties'] = {
             "segment_id": (row['segment_id'] if 'segment_id' in reader_s.fieldnames else '') ,
+            "collection": row['collection'],
+            "route_id": row['route_id'],
             "label": row['label'],
             "source": row['source'],
             "target": row['target']
@@ -214,37 +214,45 @@ def createSegments():
 
 
     for idx, row in enumerate(reader_s):
+        segment = toGeometry(row)
         #print('route_id is ' + row['route_id'])
         if row['route_id'] != routeidx:
             # first row for a route
             feat = {"type":"Feature",
                     "geometry": {"type":"GeometryCollection",
-                                 "geometries": [toGeometry(row)]
+                                 "geometries": [segment]
                                  },
                     "when": {},
                     "properties": {
                         "collection": row['collection'],
                         "route_id": row['route_id']
                     }
-                    }
+                }
             routeidx = row['route_id']
             collection['features'].append(feat)
             counter += 1
+            
+            # segments as JSONlines for index
+                      
             #print('new feature: ',counter)
         else:
             # add geometry + properties for each segment within a route
-            feat['geometry']['geometries'].append(toGeometry(row))
+            feat['geometry']['geometries'].append(segment)
             counter += 1
-            #print('new geometry ', row['segment_id'])
+            
+        # output modified segment as JSONline for index
+        leanSegment = copy.deepcopy(segment)
+        leanSegment['geometry'] = {"type":segment['type'], "coordinates":segment['coordinates']}
+        del leanSegment['coordinates']
+        del leanSegment['type']
+        print(leanSegment)
+        fouts.write(json.dumps(leanSegment) + '\n')
 
-    print(feat)
-        # JSONlines for index
-    fouts.write(json.dumps(feat) + '\n')
         
-       
-    #fout.write(json.dumps(collection,indent=2))
-    #fout.close()
+    fout.write(json.dumps(collection,indent=2))
+    fout.close()
+    fouts.close()
 
 init()
-#createPlaces()
+createPlaces()
 createSegments()

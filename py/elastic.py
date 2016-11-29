@@ -8,24 +8,51 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch()
 
 projects = ["incanto", "vicarello", "courier", "xuanzang", "roundabout"]
+#datasets = ["incanto-f", "incanto-j", "vicarello", "courier", "xuanzang", "roundabout"]
+#datasets = ["incanto-j", "vicarello", "courier", "xuanzang", "roundabout"]
 #projects = ["incanto", "vicarello", "xuanzang", "roundabout"]
 #projects = ["courier"]
+datasets = ["roundabout"]
 
-# put places dataset in linkedplaces index
-# assumes mapping template
-for y in range(len(projects)):
-    print(projects[y])
-    fin = codecs.open('../_site/data/'+projects[y]+'.jsonl', 'r', 'utf8')
-    raw = fin.readlines()
-    fin.close()    
-    for x in range(len(raw)):
-        doc = json.loads(raw[x])
-        try:
-            #res = es.index(index="linkedplaces", doc_type='place', id=doc['id'], body=raw[0])
-            res = es.index(index="linkedplaces", doc_type='place', id=doc['id'], body=doc)
-            print(res['created'], doc['id'])
-        except:
-            print("error:", sys.exc_info()[0])
+def indexPlaces():
+    # PLACES
+    for y in range(len(projects)):
+        print(projects[y])
+        # NOTE: place index for demo site uses manually edited jsonl files in (...)data/demo
+        finp = codecs.open('../_site/data/index/'+projects[y]+'.jsonl', 'r', 'utf8')
+        rawp = finp.readlines()
+        finp.close()    
+        
+        # index places
+        for x in range(len(rawp)):
+            doc = json.loads(rawp[x])
+            try:
+                res = es.index(index="linkedplaces", doc_type='place', id=doc['id'], body=doc)
+                print(res['created'], 'place', doc['id'])
+            except:
+                print("error:", sys.exc_info()[0])
+
+def indexSegments():
+    # SEGMENTS
+    for y in range(len(datasets)):
+        print(datasets[y])
+        fins = codecs.open('../_site/data/index/'+datasets[y]+'_seg.jsonl', 'r', 'utf8')
+        raws = fins.readlines()
+        fins.close()
+        
+        # index segments
+        for x in range(len(raws)):
+            doc = json.loads(raws[x])
+            try:
+                print(doc['properties']['segment_id'])
+                res = es.index(index="linkedplaces", doc_type='segment', id=doc['properties']['segment_id'], body=doc)
+                print(res['created'], 'segment', doc['properties']['segment_id'])
+            except:
+                print("error:", sys.exc_info()[0])
+    
+#indexPlaces()
+indexSegments()
+
 
 #es.indices.refresh(index="linkedplaces")
 

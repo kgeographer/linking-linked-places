@@ -271,6 +271,7 @@ function startMapM(dataset=null){
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
   // AWMC tiles in mapbox
   window.ttmap = L.mapbox.map('map', 'isawnyu.map-knmctlkh', {attributionControl: false})
+    .setView(L.latLng(40.4165,-3.70256),3)
   var credits = L.control.attribution().addTo(ttmap);
   credits.addAttribution('Tiles and Data © 2013 AWMC CC-BY-NC 3.0 ')
   // window.ttmap = L.mapbox.map('map') // don't load basemap
@@ -354,7 +355,7 @@ window.loadLayer = function(project) {
                   "when": whenObj,
                   "properties": geomF.geometries[i].properties
                 }
-                console.log('feat', feat.properties.source, feat.properties.target)
+                // console.log('feat', feat.properties.source, feat.properties.target)
                 // console.log('whenObj', whenObj)
                 var segment = new L.GeoJSON(feat, {
                     style: mapStyles.segments
