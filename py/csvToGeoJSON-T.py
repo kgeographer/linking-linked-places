@@ -10,8 +10,8 @@ def init():
     dir = os.getcwd() + '/data/'
     global proj, reader_p, reader_s, finp, fins, fout, foutp, fouts, collection, collectionAttributes, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'courier'
-    data = 'courier'
+    proj = 'incanto'
+    data = 'incanto-j'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -245,6 +245,7 @@ def createSegments():
         leanSegment['geometry'] = {"type":segment['type'], "coordinates":segment['coordinates']}
         del leanSegment['coordinates']
         del leanSegment['type']
+        leanSegment['type'] = "Feature"
         print(leanSegment)
         fouts.write(json.dumps(leanSegment) + '\n')
 

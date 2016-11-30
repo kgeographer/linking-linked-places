@@ -8,11 +8,11 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch()
 
 projects = ["incanto", "vicarello", "courier", "xuanzang", "roundabout"]
-#datasets = ["incanto-f", "incanto-j", "vicarello", "courier", "xuanzang", "roundabout"]
-#datasets = ["incanto-j", "vicarello", "courier", "xuanzang", "roundabout"]
+datasets = ["incanto-f", "incanto-j", "vicarello", "courier", "xuanzang", "roundabout"]
+#datasets = ["incanto-f", "incanto-j", "vicarello", "xuanzang"]
 #projects = ["incanto", "vicarello", "xuanzang", "roundabout"]
 #projects = ["courier"]
-datasets = ["roundabout"]
+#datasets = ["incanto-j"]
 
 def indexPlaces():
     # PLACES
@@ -32,6 +32,7 @@ def indexPlaces():
             except:
                 print("error:", sys.exc_info()[0])
 
+
 def indexSegments():
     # SEGMENTS
     for y in range(len(datasets)):
@@ -44,13 +45,12 @@ def indexSegments():
         for x in range(len(raws)):
             doc = json.loads(raws[x])
             try:
-                print(doc['properties']['segment_id'])
                 res = es.index(index="linkedplaces", doc_type='segment', id=doc['properties']['segment_id'], body=doc)
                 print(res['created'], 'segment', doc['properties']['segment_id'])
             except:
-                print("error:", sys.exc_info()[0])
+                print("error:",  doc['properties']['segment_id'], sys.exc_info()[0])
     
-#indexPlaces()
+indexPlaces()
 indexSegments()
 
 

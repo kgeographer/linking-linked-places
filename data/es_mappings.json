@@ -13,174 +13,7 @@ PUT linkedplaces
           }
         },
         "is_conflation_of": {
-          "properties": {
-            "close_matches": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "descriptions": {
-              "properties": {
-                "description": {
-                  "type": "text",
-                  "fields": {
-                    "keyword": {
-                      "type": "keyword",
-                      "ignore_above": 256
-                    }
-                  }
-                },
-                "language": {
-                  "type": "text",
-                  "fields": {
-                    "keyword": {
-                      "type": "keyword",
-                      "ignore_above": 256
-                    }
-                  }
-                }
-              }
-            },
-            "exact_matches": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "names": {
-              "properties": {
-                "language": {
-                  "type": "text",
-                  "fields": {
-                    "keyword": {
-                      "type": "keyword",
-                      "ignore_above": 256
-                    }
-                  }
-                },
-                "name": {
-                  "type": "text",
-                  "fields": {
-                    "keyword": {
-                      "type": "keyword",
-                      "ignore_above": 256
-                    }
-                  }
-                }
-              }
-            },
-            "place_types": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "source_gazetteer": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "temporal_bounds": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "title": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "uri": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            }
-          }
-        },
-        "representative_geometry": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
-            }
-          }
-        },
-        "representative_point": {PUT linkedplaces/segment/1
-{"coordinates": [[-119.25183, 39.60797], [-112.57717, 39.35218]], "when": {"follows": "6001-1", "timespan": ["2016-09-11"], "duration": ""}, "type": "LineString", "properties": {"source": "ra0002", "label": "Fernley > Delta", "collection": "ra", "follows": "6001-1", "target": "ra0003", "mode": "auto", "route_id": "6001", "segment_id": "6001-2"}}
-
-GET /linkedplaces/_mapping
-
-GET /linkedplaces/place/_search
-{  "query": { "match_all": {}}}
-
-GET /linkedplaces/segment/_search
-{  "query": { "match_all": {}}}
-
-POST linkedplaces/place/_delete_by_query?conflicts=proceed
-{  "query": { "match_all": {}}}
-
-POST linkedplaces/segment/_delete_by_query?conflicts=proceed
-{  "query": { "match_all": {}}}
-
-POST linkedplaces/_suggest?pretty
-{
-    "place-suggest" : {
-        "prefix" : "c",
-        "completion" : {
-            "field" : "suggest",
-            "size": 10
-        }
-    }
-}
-
-GET /linkedplaces/_mapping/place
-
-DELETE /linkedplaces
-
-GET /_cat/indices?v
-
-PUT linkedplaces
-{
-  "mappings": {
-    "place": {
-      "properties": {
-        "id": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
-            }
-          }
-        },
-        "is_conflation_of": {
+          "type":"nested",
           "properties": {
             "close_matches": {
               "type": "text",
@@ -337,10 +170,8 @@ PUT linkedplaces
     },
     "segment": {
       "properties": {
-        "coordinates": {
-          "type": "geo-shape"
-        },
         "properties": {
+          "type": "nested",
           "properties": {
             "collection": {
               "type": "text",
@@ -417,6 +248,7 @@ PUT linkedplaces
           }
         },
         "when": {
+          "type": "nested",
           "properties": {
             "duration": {
               "type": "text",
@@ -437,35 +269,7 @@ PUT linkedplaces
               }
             },
             "timespan": {
-              "type": "date"
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-          "type": "float"
-        },
-        "representative_title": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
-            }
-          }
-        },
-        "suggest": {
-          "type": "completion"
-        },
-        "temporal_bounds_union": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
+              "type": "text"
             }
           }
         }
