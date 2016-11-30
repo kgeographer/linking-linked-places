@@ -18,13 +18,21 @@ html, body { height: 100%; margin:0; padding:0;}
   background: aliceblue;
 }
 #bloodhound {
-  width: 80%;
-  margin: 4px 18px;
+  width: 100%;
+  margin: 4px ;
 }
 #results {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
+#results_inset {
+  background: #fff;
+  td {padding: 2px !important;}
+  th {color:aliceblue; background:darkgray;}
+  tr:nth-child(odd) {background: #f2f2f2}
+  // tr:nth-child(odd) {background: #FFF}
+}
+
 .panel {
   position:absolute;
   z-index: 5;
@@ -79,7 +87,6 @@ html, body { height: 100%; margin:0; padding:0;}
   text-decoration: underline;
   color: blue;
 }
-#data_inset.table {width: 250px;}
 
 input[type=checkbox] {margin: 2px 0 0;}
 

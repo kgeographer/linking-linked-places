@@ -391,7 +391,7 @@ window.loadLayer = function(project) {
         features[name_s] = L.featureGroup(lineFeatures).addTo(ttmap)
         features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
         // user clicked on a place and it's in the url
-        console.log('searchParams p',searchParams['p'])
+        // console.log('searchParams p',searchParams['p'])
         if(searchParams['p'] != undefined) {
           ttmap.setView(idToFeature[project].places[searchParams['p']].getLatLng(),8)
           idToFeature[project].places[searchParams['p']].openPopup()

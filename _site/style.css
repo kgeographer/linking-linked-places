@@ -19,12 +19,25 @@ body {
   background: aliceblue;
 }
 #bloodhound {
-  width: 80%;
-  margin: 4px 18px;
+  width: 100%;
+  margin: 4px ;
 }
 #results {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+}
+#results_inset {
+  background: #fff;
+}
+#results_inset td {
+  padding: 2px !important;
+}
+#results_inset th {
+  color: aliceblue;
+  background: darkgray;
+}
+#results_inset tr:nth-child(odd) {
+  background: #f2f2f2;
 }
 .panel {
   position: absolute;
@@ -76,9 +89,6 @@ body {
   text-decoration: underline;
   color: blue;
 }
-#data_inset.table {
-  width: 250px;
-}
 input[type=checkbox] {
   margin: 2px 0 0;
 }
@@ -121,7 +131,7 @@ input[type=checkbox] {
 .typeahead,
 .tt-query,
 .tt-hint {
-  width: 180px;
+  width: 240px;
   height: 28px;
   padding: 4px 12px;
   font-size: 14px;
@@ -147,7 +157,7 @@ input[type=checkbox] {
   color: #999;
 }
 .tt-menu {
-  width: 180px;
+  width: 220px;
   margin: 6px 0;
   padding: 3px 0;
   background-color: #fff;
