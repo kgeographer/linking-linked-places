@@ -24,7 +24,7 @@ window.segmentSearch = function(obj){
   let html = ''
   var plKeys = Object.keys(obj)
   for(let i = 0; i < plKeys.length; i++){
-
+    console.log('plKeys', plKeys[i])
     // multi_match
     var searchParams = {
       index: 'linkedplaces',
@@ -59,8 +59,9 @@ window.segmentSearch = function(obj){
     client.search(searchParams).then(function (resp) {
       return Promise.all(resp.hits.hits)
     }).then(function(hitsArray){
-        html += '<div class="place-card"><h4>'+obj[plKeys[i]]+
-          ' connections:</h4><ul class="ul-segments">';
+        html += '<div class="place-card"><h4><a href="#" project="'+obj[plKeys[i]][0]+
+          '" id="'+plKeys[i]+'">'+
+          obj[plKeys[i]][1]+'</a> connections:</h4><ul class="ul-segments">';
         for(let j = 0; j < hitsArray.length; j++){
           let l = hitsArray[j]._source.properties.label
           html += '<li>'+(l==''?'<em>no label</em>':l)+' ('+
@@ -75,7 +76,23 @@ window.segmentSearch = function(obj){
         };
         html += '</ul></div>'
         $("#results_inset").html(html)
-      }).catch(console.log.bind(console));;
+        $(".place-card a").click(function(e){
+          window.proj = $(this).attr('project').substring(0,7) == 'incanto'?'incanto-f':$(this).attr('project')
+          console.log('project',proj)
+          // if project/dataset isn't loaded, load it (project !- dataset for incanto)
+          window.pcheck = $("input:checkbox[value='"+proj+"']")
+          console.log('toponym checked',pcheck,proj)
+          if(pcheck.prop('checked') == false){
+            location.href = location.origin+location.pathname+'?d='+proj+'&p='+this.id
+            pcheck.prop('checked', true)
+          } else {
+            console.log(proj,'already loaded, zoom to',this.id)
+          }
+          console.log('got data, now place', this.id)
+          ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),8)
+          idToFeature[proj].places[this.id].openPopup()
+        })
+      }).catch(console.log.bind(console));
   }
 }
 
@@ -141,7 +158,7 @@ $('#bloodhound .typeahead').typeahead({
 });
 
 $(".typeahead").on("typeahead:select", function(e,obj){
-  // console.log('obj',obj)
+  console.log('obj',obj)
   // $("#results h3").html(obj.value)
   var re = /\((.*)\)/;
   window.html = "<table class='gaz-entries'><tr>"+
@@ -150,7 +167,7 @@ $(".typeahead").on("typeahead:select", function(e,obj){
   for(let i=0;i<obj.data.length;i++){
     let project = collections[obj.data[i].source_gazetteer];
     // gather place_ids from 'conflation_of' records
-    placeObj[obj.data[i].id] = obj.data[i].title;
+    placeObj[obj.data[i].id] = [project, obj.data[i].title];
   }
   // related segments to results_inset
   segmentSearch(placeObj);
