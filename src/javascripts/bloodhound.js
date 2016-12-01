@@ -25,22 +25,36 @@ window.segmentSearch = function(obj){
   var plKeys = Object.keys(obj)
   for(let i = 0; i < plKeys.length; i++){
 
-    // 29-43 works
+    // multi_match
     var searchParams = {
       index: 'linkedplaces',
       type: 'segment',
       body: {
         query: {
-          nested : {
-              path : "properties",
-              query : {
-                 match : {"properties.source" : plKeys[i] }
-              },
-              inner_hits : {}
+          multi_match : {
+              query : plKeys[i],
+              fields: ["properties.source","properties.target"]
           }
         }
       }
     }
+
+    // 54-68 works; matches only source
+    // var searchParams = {
+    //   index: 'linkedplaces',
+    //   type: 'segment',
+    //   body: {
+    //     query: {
+    //       nested : {
+    //           path : "properties",
+    //           query : {
+    //              match : {"properties.source" : plKeys[i] }
+    //           },
+    //           inner_hits : {}
+    //       }
+    //     }
+    //   }
+    // }
 
     client.search(searchParams).then(function (resp) {
       return Promise.all(resp.hits.hits)
@@ -48,7 +62,8 @@ window.segmentSearch = function(obj){
         html += '<div class="place-card"><h4>'+obj[plKeys[i]]+
           ' connections:</h4><ul class="ul-segments">';
         for(let j = 0; j < hitsArray.length; j++){
-          html += '<li>'+hitsArray[j]._source.properties.label+'('+
+          let l = hitsArray[j]._source.properties.label
+          html += '<li>'+(l==''?'<em>no label</em>':l)+' ('+
           years(hitsArray[j]._source.when.timespan)+
           ')</li>';
           // html += '<li>'+hitsArray[j]._source.properties.target+
