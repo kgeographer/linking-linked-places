@@ -25,6 +25,7 @@ window.segmentSearch = function(obj){
   var plKeys = Object.keys(obj)
   for(let i = 0; i < plKeys.length; i++){
 
+    // 29-43 works
     var searchParams = {
       index: 'linkedplaces',
       type: 'segment',
@@ -45,12 +46,16 @@ window.segmentSearch = function(obj){
       return Promise.all(resp.hits.hits)
     }).then(function(hitsArray){
         html += '<div class="place-card"><h4>'+obj[plKeys[i]]+
-          ' connected with:</h4><ul class="ul-segments">';
+          ' connections:</h4><ul class="ul-segments">';
         for(let j = 0; j < hitsArray.length; j++){
-          html += '<li>'+hitsArray[j]._source.properties.target+
-          ' ('+hitsArray[j]._source.properties.segment_id+') '+
+          html += '<li>'+hitsArray[j]._source.properties.label+'('+
           years(hitsArray[j]._source.when.timespan)+
-          '</li>';
+          ')</li>';
+          // html += '<li>'+hitsArray[j]._source.properties.target+
+          // ' ('+hitsArray[j]._source.properties.label+') '+
+          // // ' ('+hitsArray[j]._source.properties.segment_id+') '+
+          // years(hitsArray[j]._source.when.timespan)+
+          // '</li>';
           // console.log(hitsArray[i]._source.when)
         };
         html += '</ul></div>'
