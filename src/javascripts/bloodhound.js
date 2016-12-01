@@ -1,56 +1,62 @@
 require('handlebars')
 window.segments = []
 
-var segmentRecord = function(props){
-  // console.log(props)
-  return '<li>'+JSON.stringify(props)+'</li>'
-  // return '<li>'+props.segment_id+'</li>'
-  // for(let i = 0; i < props.length; i++) {
-  //   html = "<li>"
-  // }
-}
 var elasticsearch = require('elasticsearch');
 window.client = new elasticsearch.Client({
   host: 'localhost:9200',
   // log: 'trace'
 });
 
-window.segmentSearch = function(id){
-  var searchParams = {
-    index: 'linkedplaces',
-    type: 'segment',
-    body: {
-      query: {
-        nested : {
-            path : "properties",
-            query : {
-               match : {"properties.source" : id }
-            },
-            inner_hits : {}
+var years = function(timespan){
+  //return start and end from topotime when timespan
+  var str = '';
+  if(timespan.length > 1) {
+    str = timespan[0].substring(0,4)+'-'+timespan[3].substring(0,4);
+  } else {
+    str = timespan[0]
+  }
+  return str;
+}
+window.segmentSearch = function(obj){
+  // retrieve all segments associated with a place,
+  // populate results_inset
+  console.log('segmentSearch()', obj)
+  let html = ''
+  var plKeys = Object.keys(obj)
+  for(let i = 0; i < plKeys.length; i++){
+
+    var searchParams = {
+      index: 'linkedplaces',
+      type: 'segment',
+      body: {
+        query: {
+          nested : {
+              path : "properties",
+              query : {
+                 match : {"properties.source" : plKeys[i] }
+              },
+              inner_hits : {}
+          }
         }
       }
     }
+
+    client.search(searchParams).then(function (resp) {
+      return Promise.all(resp.hits.hits)
+    }).then(function(hitsArray){
+        html += '<div class="place-card"><h4>'+obj[plKeys[i]]+
+          ' connected with:</h4><ul class="ul-segments">';
+        for(let j = 0; j < hitsArray.length; j++){
+          html += '<li>'+hitsArray[j]._source.properties.target+
+          ' ('+hitsArray[j]._source.properties.segment_id+') '+
+          years(hitsArray[j]._source.when.timespan)+
+          '</li>';
+          // console.log(hitsArray[i]._source.when)
+        };
+        html += '</ul></div>'
+        $("#results_inset").html(html)
+      }).catch(console.log.bind(console));;
   }
-
-  // let newArr = [];
-  // client.search(searchParams).then(function (resp) {
-  //   for(let i = 0; i < resp.hits.hits.length; i++){
-  //     segments.push(resp.hits.hits[i]._source.properties);
-  //   }
-  //   // console.log('newArr: ',newArr)
-  //   // return newArr;
-  // }, function (err) {
-  //   console.trace(err.message);
-  // });
-
-  // return client.search(searchParams).then(function (resp) {
-  return client.search(searchParams).then(function (resp) {
-    var hits = resp.hits.hits;
-    // console.log('hits: ',hits)
-    return hits;
-  }, function (err) {
-    console.trace(err.message);
-  })
 }
 
 window.resolveId = function(id){
@@ -115,43 +121,38 @@ $('#bloodhound .typeahead').typeahead({
 });
 
 $(".typeahead").on("typeahead:select", function(e,obj){
-  console.log('obj',obj)
+  // console.log('obj',obj)
   // $("#results h3").html(obj.value)
   var re = /\((.*)\)/;
   window.html = "<table class='gaz-entries'><tr>"+
     "<th>Toponym</th><th>Dataset</th></tr>";
-  window.placeArray = [];
+  var placeObj = {};
   for(let i=0;i<obj.data.length;i++){
     let project = collections[obj.data[i].source_gazetteer];
     // gather place_ids from 'conflation_of' records
-    placeArray.push(obj.data[i].id)
-    html +=
-      "<tr><td class='result-title'><a href='#'id='"+obj.data[i].id+
-        "' project='"+project+"'>"+obj.data[i].title+"</a></td>"+
-      // <a href='#' id='"+obj.id+"'>"+obj.data[i].title+"</td>"+
-      "<td class='result-project'>"+project+"</td><tr>"
-      +"<tr><td colspan=2>"+resolveId(obj.data[i].id)+"</td></tr>"
-    // html += "<li value="+project+" id="+obj.id+">"+obj.data[i].title
-    //   +" ("+project+")</li>"
+    placeObj[obj.data[i].id] = obj.data[i].title;
   }
+  // related segments to results_inset
+  segmentSearch(placeObj);
+  // console.log(placeArray)
   html += "</table>"
-  $("#results_inset").html(html)
-  $(".result-title a").click(function(e){
-    window.proj = $(this).attr('project').substring(0,7) == 'incanto'?'incanto-f':$(this).attr('project')
-    console.log('project',proj)
-    // if project/dataset isn't loaded, load it (project !- dataset for incanto)
-    window.pcheck = $("input:checkbox[value='"+proj+"']")
-    console.log('toponym checked',pcheck,proj)
-    if(pcheck.prop('checked') == false){
-      location.href = location.origin+location.pathname+'?d='+proj+'&p='+this.id
-      pcheck.prop('checked', true)
-    } else {
-      console.log(proj,'already loaded, zoom to',this.id)
-    }
-    console.log('got data, now place', this.id)
-    ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),8)
-    idToFeature[proj].places[this.id].openPopup()
-  })
+  // $("#results_inset").html(html)
+  // $(".result-title a").click(function(e){
+  //   window.proj = $(this).attr('project').substring(0,7) == 'incanto'?'incanto-f':$(this).attr('project')
+  //   console.log('project',proj)
+  //   // if project/dataset isn't loaded, load it (project !- dataset for incanto)
+  //   window.pcheck = $("input:checkbox[value='"+proj+"']")
+  //   console.log('toponym checked',pcheck,proj)
+  //   if(pcheck.prop('checked') == false){
+  //     location.href = location.origin+location.pathname+'?d='+proj+'&p='+this.id
+  //     pcheck.prop('checked', true)
+  //   } else {
+  //     console.log(proj,'already loaded, zoom to',this.id)
+  //   }
+  //   console.log('got data, now place', this.id)
+  //   ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),8)
+  //   idToFeature[proj].places[this.id].openPopup()
+  // })
 
   $(".typeahead.tt-input")[0].value = '';
   //

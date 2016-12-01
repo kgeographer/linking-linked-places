@@ -26,9 +26,6 @@ body {
   width: 95%;
   margin: 0 auto;
 }
-#results_inset {
-  background: #fff;
-}
 #results_inset td {
   padding: 2px !important;
 }
@@ -38,6 +35,15 @@ body {
 }
 #results_inset tr:nth-child(odd) {
   background: #f2f2f2;
+}
+.place-card {
+  padding: 3px;
+  margin-bottom: 4px;
+  background: #eeeee0;
+}
+.ul-segments {
+  list-style: none;
+  padding-left: 0;
 }
 .panel {
   position: absolute;
