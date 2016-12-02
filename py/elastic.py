@@ -51,18 +51,5 @@ def indexSegments():
                 print("error:",  doc['properties']['segment_id'], sys.exc_info()[0])
     
 indexPlaces()
-indexSegments()
+#indexSegments()
 
-
-#es.indices.refresh(index="linkedplaces")
-
-#res = es.search(index="linkedplaces", body={"query": {"match_all": {}}})
-#print("Got %d Hits:" % res['hits']['total'])
-#for hit in res['hits']['hits']:
-    #print("%(timestamp)s %(author)s: %(text)s" % hit["_source"])
-    
-#doc = {
-    #'author': 'kimchy',
-    #'text': 'Elasticsearch: cool. bonsai cool.',
-    #'timestamp': datetime.now(),
-#}

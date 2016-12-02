@@ -1,6 +1,6 @@
 # csvToGeoJSON-T.py
 # read places and segments csv, output GeoJSON-T for routes, JSONlines for Elasticsearch
-# 2016-11-22 k. grossner
+# 2016-12-02 k. grossner
 
 import os, sys, csv, json, codecs, re, copy
 # TODO should we de-duplicate?
@@ -10,8 +10,8 @@ def init():
     dir = os.getcwd() + '/data/'
     global proj, reader_p, reader_s, finp, fins, fout, foutp, fouts, collection, collectionAttributes, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'roundabout'
-    data = 'roundabout'
+    proj = 'xuanzang'
+    data = 'xuanzang'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -19,7 +19,7 @@ def init():
     
     # NOTE: demo uses manually edited place records
     # output places for index
-    # foutp = codecs.open('../_site/data/index/'+proj+'.jsonl', 'w', 'utf8')
+    foutp = codecs.open('../_site/data/index/'+proj+'.jsonl', 'w', 'utf8')
     
     # output segments for index
     fouts = codecs.open('../_site/data/index/'+data+'_seg.jsonl', 'w', 'utf8')
@@ -130,14 +130,12 @@ def createPlaces():
             }
         places.append(place)
         #print(json.dumps(place))
-    # pretty print
-    #foutp.write(json.dumps(places,indent=2))
     
     # JSONlines for index
     # NOTE: demo place index records have been manually edited , do not regenerate
-    #for x in range(len(places)):
-        #foutp.write(json.dumps(places[x]) + '\n')
-    #foutp.close()
+    for x in range(len(places)):
+        foutp.write(json.dumps(places[x]) + '\n')
+    foutp.close()
 
 def createSegments():
 

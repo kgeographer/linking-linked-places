@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "uid": 1, "project": "xuanzang" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 66.89211509, 12.82137942 ], [ 66.89211509, 42.96932584 ], [ 108.9423866, 42.96932584 ], [ 108.9423866, 12.82137942 ], [ 66.89211509, 12.82137942 ] ] ] } },
+{ "type": "Feature", "properties": { "uid": 2, "project": "vicarello" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -6.2944, 36.5284 ], [ -6.2944, 45.1931 ], [ 13.0181, 45.1931 ], [ 13.0181, 36.5284 ], [ -6.2944, 36.5284 ] ] ] } },
+{ "type": "Feature", "properties": { "uid": 3, "project": "roundabout" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -122.14302, 13.75398 ], [ -122.14302, 64.1265 ], [ 100.50144, 64.1265 ], [ 100.50144, 13.75398 ], [ -122.14302, 13.75398 ] ] ] } },
+{ "type": "Feature", "properties": { "uid": 4, "project": "incanto" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -10.6363346019475, 31.1907510437441 ], [ -10.6363346019475, 51.53 ], [ 44.42, 51.53 ], [ 44.42, 31.1907510437441 ], [ -10.6363346019475, 31.1907510437441 ] ] ] } },
+{ "type": "Feature", "properties": { "uid": 5, "project": "courier" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 98.219729452708094, 20.329676 ], [ 98.219729452708094, 42.669379540239447 ], [ 124.275090656672973, 42.669379540239447 ], [ 124.275090656672973, 20.329676 ], [ 98.219729452708094, 20.329676 ] ] ] } }
+]
+}

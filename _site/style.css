@@ -45,6 +45,11 @@ body {
   list-style: none;
   padding-left: 0;
 }
+.ul-segments li {
+  display: block;
+  border-bottom: 1px dashed lightgray;
+  padding: 2px 0;
+}
 .panel {
   position: absolute;
   z-index: 5;

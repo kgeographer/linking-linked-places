@@ -20,11 +20,11 @@ var years = function(timespan){
 window.segmentSearch = function(obj){
   // retrieve all segments associated with a place,
   // populate results_inset
-  console.log('segmentSearch()', obj)
   let html = ''
   var plKeys = Object.keys(obj)
+  console.log('segmentSearch obj', obj)
   for(let i = 0; i < plKeys.length; i++){
-    console.log('plKeys', plKeys[i])
+    // console.log('plKeys', plKeys[i])
     // multi_match
     var searchParams = {
       index: 'linkedplaces',
@@ -89,7 +89,7 @@ window.segmentSearch = function(obj){
             console.log(proj,'already loaded, zoom to',this.id)
           }
           console.log('got data, now place', this.id)
-          ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),8)
+          ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),6)
           idToFeature[proj].places[this.id].openPopup()
         })
       }).catch(console.log.bind(console));
@@ -99,13 +99,13 @@ window.segmentSearch = function(obj){
 window.resolveId = function(id){
   return 'TODO: segments for id: '+id
 }
-client.ping({requestTimeout: 30000}, function (error) {
-  if (error) {
-    console.error('elasticsearch cluster is down!');
-  } else {
-    console.log('ES is up');
-  }
-});
+// client.ping({requestTimeout: 30000}, function (error) {
+//   if (error) {
+//     console.error('elasticsearch cluster is down!');
+//   } else {
+//     console.log('ES is up');
+//   }
+// });
 
 // resolve collection names in data
 var collections = {"ra":"roundabout","courier":"courier","incanto":"incanto",
@@ -158,7 +158,7 @@ $('#bloodhound .typeahead').typeahead({
 });
 
 $(".typeahead").on("typeahead:select", function(e,obj){
-  console.log('obj',obj)
+  console.log('typeahead obj',obj)
   // $("#results h3").html(obj.value)
   var re = /\((.*)\)/;
   window.html = "<table class='gaz-entries'><tr>"+
@@ -171,7 +171,7 @@ $(".typeahead").on("typeahead:select", function(e,obj){
   }
   // related segments to results_inset
   segmentSearch(placeObj);
-  // console.log(placeArray)
+  console.log('typeahead placeObj', placeObj)
   html += "</table>"
   // $("#results_inset").html(html)
   // $(".result-title a").click(function(e){
