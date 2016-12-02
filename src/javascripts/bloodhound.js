@@ -17,14 +17,17 @@ var years = function(timespan){
   }
   return str;
 }
+
 window.segmentSearch = function(obj){
   // retrieve all segments associated with a place,
   // populate results_inset
   let html = ''
   var plKeys = Object.keys(obj)
+  var relevantProjects = []
   console.log('segmentSearch obj', obj)
   for(let i = 0; i < plKeys.length; i++){
     // console.log('plKeys', plKeys[i])
+    relevantProjects.push(obj[plKeys[i]][0])
     // multi_match
     var searchParams = {
       index: 'linkedplaces',
@@ -60,19 +63,13 @@ window.segmentSearch = function(obj){
       return Promise.all(resp.hits.hits)
     }).then(function(hitsArray){
         html += '<div class="place-card"><h4><a href="#" project="'+obj[plKeys[i]][0]+
-          '" id="'+plKeys[i]+'">'+
-          obj[plKeys[i]][1]+'</a> connections:</h4><ul class="ul-segments">';
+          '" id="'+plKeys[i]+'">'+obj[plKeys[i]][1]+
+          '</a> connections:</h4><ul class="ul-segments">';
         for(let j = 0; j < hitsArray.length; j++){
           let l = hitsArray[j]._source.properties.label
           html += '<li>'+(l==''?'<em>no label</em>':l)+' ('+
           years(hitsArray[j]._source.when.timespan)+
           ')</li>';
-          // html += '<li>'+hitsArray[j]._source.properties.target+
-          // ' ('+hitsArray[j]._source.properties.label+') '+
-          // // ' ('+hitsArray[j]._source.properties.segment_id+') '+
-          // years(hitsArray[j]._source.when.timespan)+
-          // '</li>';
-          // console.log(hitsArray[i]._source.when)
         };
         html += '</ul></div>'
         $("#results_inset").html(html)
@@ -94,18 +91,9 @@ window.segmentSearch = function(obj){
         })
       }).catch(console.log.bind(console));
   }
+  // clear map layers if present, load relevant datasets
+  loadLayers(relevantProjects);
 }
-
-window.resolveId = function(id){
-  return 'TODO: segments for id: '+id
-}
-// client.ping({requestTimeout: 30000}, function (error) {
-//   if (error) {
-//     console.error('elasticsearch cluster is down!');
-//   } else {
-//     console.log('ES is up');
-//   }
-// });
 
 // resolve collection names in data
 var collections = {"ra":"roundabout","courier":"courier","incanto":"incanto",
@@ -145,7 +133,6 @@ $('#bloodhound .typeahead').typeahead({
   name: 'places',
   limit: 10,
   display: 'value',
-  // source: movies
   source: toponyms,
   templates: {
     empty: [
@@ -160,9 +147,9 @@ $('#bloodhound .typeahead').typeahead({
 $(".typeahead").on("typeahead:select", function(e,obj){
   console.log('typeahead obj',obj)
   // $("#results h3").html(obj.value)
-  var re = /\((.*)\)/;
-  window.html = "<table class='gaz-entries'><tr>"+
-    "<th>Toponym</th><th>Dataset</th></tr>";
+  // var re = /\((.*)\)/;
+  // window.html = "<table class='gaz-entries'><tr>"+
+  //   "<th>Toponym</th><th>Dataset</th></tr>";
   var placeObj = {};
   for(let i=0;i<obj.data.length;i++){
     let project = collections[obj.data[i].source_gazetteer];
@@ -172,25 +159,16 @@ $(".typeahead").on("typeahead:select", function(e,obj){
   // related segments to results_inset
   segmentSearch(placeObj);
   console.log('typeahead placeObj', placeObj)
-  html += "</table>"
-  // $("#results_inset").html(html)
-  // $(".result-title a").click(function(e){
-  //   window.proj = $(this).attr('project').substring(0,7) == 'incanto'?'incanto-f':$(this).attr('project')
-  //   console.log('project',proj)
-  //   // if project/dataset isn't loaded, load it (project !- dataset for incanto)
-  //   window.pcheck = $("input:checkbox[value='"+proj+"']")
-  //   console.log('toponym checked',pcheck,proj)
-  //   if(pcheck.prop('checked') == false){
-  //     location.href = location.origin+location.pathname+'?d='+proj+'&p='+this.id
-  //     pcheck.prop('checked', true)
-  //   } else {
-  //     console.log(proj,'already loaded, zoom to',this.id)
-  //   }
-  //   console.log('got data, now place', this.id)
-  //   ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),8)
-  //   idToFeature[proj].places[this.id].openPopup()
-  // })
+  // html += "</table>"
 
   $(".typeahead.tt-input")[0].value = '';
   //
 })
+
+// client.ping({requestTimeout: 30000}, function (error) {
+//   if (error) {
+//     console.error('elasticsearch cluster is down!');
+//   } else {
+//     console.log('ES is up');
+//   }
+// });

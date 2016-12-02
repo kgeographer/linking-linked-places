@@ -66,7 +66,6 @@ $(function() {
   //   $('#myModal').modal()
   // })
 });
-
 window.midpoint = function(ts,type) {
   if(type == 'start') {
     var mid = new Date(ts[0])
@@ -259,13 +258,34 @@ function writeAbstract(attribs){
 }
 
 window.zapLayer = function(project) {
+  $("input:checkbox[value='"+project+"']").prop('checked',false)
+  console.log('zapping',project)
   let name_p = "places_"+project
   let name_s = "segments_"+project
   features[name_p].removeFrom(ttmap)
   features[name_s].removeFrom(ttmap)
-  // features.places_roundabout.removeFrom(ttmap)
+  // de-select checkbox
 }
 
+window.loadLayers = function(arr) {
+  // what is already loaded?
+  var loadedIDs = $("#data_layers input:checkbox:checked").map(function(){
+    return $(this).val();
+  }).get();
+  console.log('conflate:',arr,loadedIDs)
+  for(let i in loadedIDs){
+    if(arr.indexOf(loadedIDs[i]) < 0){
+      zapLayer(loadedIDs[i])
+    }
+  }
+  for(let i in arr){
+    if(loadedIDs.indexOf(arr[i]) <0){
+      console.log('loading',arr[i])
+      // TODO: multiple datasets per project is an issue
+      loadLayer(arr[i]=='incanto'?'incanto-f':arr[i])
+    }
+  }
+}
 function startMapM(dataset=null){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
