@@ -209,6 +209,12 @@ var mapStyles = {
     radius: 4,
     fillOpacity: 0.8,
     weight: 1
+  },
+  bbox: {
+    color: 'orange',
+    fillColor: '#eeeee0',
+    fillOpacity: 0.6,
+    weight: 1
   }
 }
 
@@ -277,9 +283,38 @@ function startMapM(dataset=null){
   var credits = L.control.attribution().addTo(ttmap);
   credits.addAttribution('Tiles and Data © 2013 AWMC CC-BY-NC 3.0 ')
   // window.ttmap = L.mapbox.map('map') // don't load basemap
-  if(dataset != null) {loadLayer(dataset);}
+  if(dataset != null) {loadLayer(dataset);} else {
+    // load bboxes
+    let bboxLayer = L.mapbox.featureLayer()
+      .loadURL('data/bb_all.geojson')
+      .on('ready', function(){
+        bboxLayer.eachLayer(function(layer){
+          window.b = layer
+          // console.log('bbox layer',layer)
+          layer.bindPopup('<b>'+layer.feature.properties.project+'</b>',{ closeButton: false})
+            .setStyle(mapStyles.bbox)
+            .on("mouseover", function(e){
+              layer.setStyle({"weight":3});
+              layer.openPopup();
+            })
+            .on("mouseout", function(e){
+              layer.setStyle(mapStyles.bbox);
+              layer.closePopup();
+            })
+            layer.addTo(ttmap)
+            layer.on("click", function(e){
+              layer.closePopup();
+              $('.leaflet-overlay-pane svg g .leaflet-interactive').remove()
+              loadLayer(layer.feature.properties.project)
+            })
+          // console.log('bbox props', bbox.properties)
+        })
+      })
+      // {lat: 32.694865977875075, lng: 47.4609375}
+    ttmap.setView(L.latLng(32.6948,47.4609),2)
+    // ttmap.setView(L.latLng(32.6948,-3.70256),2)
+  }
 }
-
 function style(feature) {
   window.feat = feature
   var colorMap = {"ra":"#ffff80","courier":"#ff9999","incanto":"#ffb366",
