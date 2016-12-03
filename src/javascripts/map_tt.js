@@ -10,16 +10,14 @@ import './bloodhound.js';
 // require('@turf/centroid')
 // require('@turf/buffer')
 
-// expose for debugging
+// exposed for debugging
 window.parsedUrl = url.parse(window.location.href, true, true)
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // window.q = querystring;
 // window.cent = ctr
 // window.buff = buf
-// require('leaflet-ajax');
 window.features = {}
 window.idToFeature = {}
-// window.idToFeature = {places:{}, segments:{}}
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
 window.pointFeatures = []
@@ -32,7 +30,6 @@ $(function() {
   // startMapM() // TODO: bounding boxes for datasets
   Object.getOwnPropertyNames(searchParams).length == 0 ?
     startMapM() : startMapM(searchParams['d'],searchParams['p'])
-  // startMapM(searchParams['d'])
   $("#menu").click(function(){
     $("#data").toggle("fast")
   })
@@ -43,7 +40,6 @@ $(function() {
         loadLayer(this.value)
       } else {
         location.href = location.origin+location.pathname+'?d='+this.value;
-        // startMapM(this.value)
       }
     } else {
       zapLayer(this.value)
@@ -142,10 +138,6 @@ function onResize() {
     }
 }
 
-function validateWhen(place){
-  // does Topotime place record have valid when object?
-}
-
 function buildEvent(place){
   // console.log(place)
   // need validate function here
@@ -206,28 +198,17 @@ function buildCollectionPeriod(coll){
 }
 
 var mapStyles = {
-  areas: {
-      "color": "#993333",
-      "weight": 1,
-      "opacity": .8,
-      "fillColor": "orange",
-      "fillOpacity": 0.3,
-    },
-  points: {
-    "color": "#000",
-    "fillColor": "#990000",
-    "marker-size": "small",
-    "marker-color": "#006600"
-  },
-  lines: {
-      "color": "#FB2E35",
-      "weight": 2,
-      "opacity": 0.6
-  },
   segments: {
-      "color": "green",
-      "weight": 3,
-      "opacity": 0.6
+    color: "gray",
+    weight: 3,
+    opacity: 0.6
+  },
+  places: {
+    color: '#000',
+    fillColor: '#ffff00',
+    radius: 4,
+    fillOpacity: 0.8,
+    weight: 1
   }
 }
 
@@ -286,6 +267,7 @@ window.loadLayers = function(arr) {
     }
   }
 }
+
 function startMapM(dataset=null){
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
@@ -298,27 +280,45 @@ function startMapM(dataset=null){
   if(dataset != null) {loadLayer(dataset);}
 }
 
+function style(feature) {
+  window.feat = feature
+  var colorMap = {"ra":"#ffff80","courier":"#ff9999","incanto":"#ffb366",
+    "vb":"#b380ff","xuanzang":"#99e699"}
+  let fill=colorMap[feature.toGeoJSON().properties.collection]
+  // console.log(coll)
+	return {
+      color: '#000',
+      fillColor: fill,
+      radius: 4,
+      fillOpacity: 0.6,
+      weight: 1
+    };
+}
+
 window.loadLayer = function(project) {
-    // window.location.search = '';
-    // empty these arrays to reuse them
+    // clear feature arrays
     pointFeatures = [];
-    lineFeatures = [];
-    if(searchParams['p'] != undefined){
-      $("#results_inset").html('<p>Dataset: '+searchParams['d']+
-        '</p><p>Place:'+searchParams['p']+'</p>')
-    }
+    lineFeatures = []
+    // map id to leaflet layer object
+    window.idToFeature[project] = {places:{}, segments:{}}
+
+    // TODO: reconfigure managing state in window.href
+    // if(searchParams['p'] != undefined){
+    //   $("#results_inset").html('<p>Dataset: '+searchParams['d']+
+    //     '</p><p>Place:'+searchParams['p']+'</p>')
+    // }
+
+    // check in case layer was loaded programatically
     $(":checkbox[value="+project+"]").prop("checked","true")
+
     /*  read a single FeatureCollection of
         Places (geometry.type == Point), and
         Routes (geometry.type == GeometryCollection or undefined)
           - route geometry.geometries[i] == LineString or MultiLineString
     */
-    window.idToFeature[project] = {places:{}, segments:{}}
-    // window.idToFeature = {places:{}, segments:{}}
     let featureLayer = L.mapbox.featureLayer()
       .loadURL('data/' + project + '.geojson')
       .on('ready', function(){
-        // console.log(featureLayer)
         // get Collection attributes
         window.collection = featureLayer._geojson
         $("#data_abstract").html(writeAbstract(collection.attributes))
@@ -330,19 +330,13 @@ window.loadLayer = function(project) {
         featureLayer.eachLayer(function(layer){
           let geomF = layer.feature.geometry
           let whenF = layer.feature.when
-          /*  feature cases:
-              Place if(geomF.type == 'Point')
-          */
-          // put places features pointFeatures array
+
+          // put places features in pointFeatures array
           if(geomF.type == 'Point') {
               let latlng = new L.LatLng(geomF.coordinates[1],geomF.coordinates[0])
-              var placeFeature = new L.CircleMarker(latlng, {
-                color: '#000',
-                fillColor: '#ffff00',
-                radius: 4,
-                fillOpacity: 0.8,
-                weight: 1
-              })
+
+              var placeFeature = new L.CircleMarker(latlng,style(layer))
+              // var placeFeature = new L.CircleMarker(latlng, mapStyles.places)
               // console.log(placeFeature)
               let gazURI = layer.feature.properties.gazetteer_uri
 
@@ -358,13 +352,13 @@ window.loadLayer = function(project) {
               // console.log('place properties',layer.feature.properties)
               idToFeature[project].places[pid] = placeFeature
           }
-          // the rest are routes with segments in a GeometryCollection
+
+          // the rest are line features for routes/segments in GeometryCollection
           else if(geomF.type == 'GeometryCollection') {
             // console.log('layer.feature', layer.feature)
             //* TODO: create feature for each geometry
             // dataRows = '<table><hr><td>id</td><td>label</td></hr>'
             for(let i in geomF.geometries) {
-              // console.log(geomF.geometries[i])
                 let whenObj = geomF.geometries[i].when
                 let feat = {
                   "type":"Feature",
@@ -382,12 +376,10 @@ window.loadLayer = function(project) {
                   }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
                     feat.properties.segment_id+')')
 
+                // map id to map feature
                 lineFeatures.push(segment)
                 var sid = feat.properties.segment_id
                 idToFeature[project].segments[sid] = segment
-                // console.log(feat.properties.segment_id,feat.properties.label)
-                // dataRows += '<tr><td>'+sid+'</td></tr>'
-                //   +'<td>'+feat.properties.label+'</td></tr>'
 
                 //* build event object for timeline
                 if (whenObj != ({} || '')) {
@@ -397,7 +389,7 @@ window.loadLayer = function(project) {
                 }
             }
             if(eventsObj.events.length == 0) {
-              // needs a period
+              // needs a period, not bunch of events
               eventsObj.events.push(buildCollectionPeriod(collection))
               // console.log('build',buildCollectionPeriod(collection))
               // console.log('period eventsObj', eventsObj.events[0])
@@ -406,18 +398,21 @@ window.loadLayer = function(project) {
             console.log(whenF == undefined ? 'whenF undef' : whenF)
           }
         })
+        // featureGroup pairs as layers
         let name_p = "places_"+project
         let name_s = "segments_"+project
         features[name_s] = L.featureGroup(lineFeatures).addTo(ttmap)
         features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
-        // user clicked on a place and it's in the url
-        // console.log('searchParams p',searchParams['p'])
+
+        // TODO: reconfigure managing state in window.href
         if(searchParams['p'] != undefined) {
           ttmap.setView(idToFeature[project].places[searchParams['p']].getLatLng(),8)
           idToFeature[project].places[searchParams['p']].openPopup()
         } else {
           ttmap.fitBounds(features[name_p].getBounds())
         }
+
+        // load timeline
         initTimeline(eventsObj,project)
       })
 }

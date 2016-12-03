@@ -22,6 +22,7 @@ body {
   text-align: center;
   font-size: 2em;
   color: gainsboro;
+  margin-top: 30px;
 }
 #bloodhound {
   width: 100%;
