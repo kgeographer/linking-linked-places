@@ -22,6 +22,7 @@ window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {}
 window.pointFeatures = []
 window.lineFeatures = []
+window.bboxFeatures = []
 window.tl = {}
 window.tlMidpoint = ''
 window.dataRows = ''
@@ -75,6 +76,9 @@ window.midpoint = function(ts,type) {
 }
 
 window.initTimeline = function(events,project) {
+  Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
+   (evt.getDescription ());
+   }
   // console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
   // console.log('in initTimeline()', JSON.stringify(events.events[0]))
@@ -275,6 +279,8 @@ window.loadLayers = function(arr) {
 }
 
 function startMapM(dataset=null){
+  bboxFeatures = []
+  // var bboxGroup = L.featureGroup()
   // mapbox.js (non-gl)
   L.mapbox.accessToken = 'pk.eyJ1Ijoia2dlb2dyYXBoZXIiLCJhIjoiUmVralBPcyJ9.mJegAI1R6KR21x_CVVTlqw';
   // AWMC tiles in mapbox
@@ -285,13 +291,12 @@ function startMapM(dataset=null){
   // window.ttmap = L.mapbox.map('map') // don't load basemap
   if(dataset != null) {loadLayer(dataset);} else {
     // load bboxes
-    let bboxLayer = L.mapbox.featureLayer()
+    var bboxLayer = L.mapbox.featureLayer()
       .loadURL('data/bb_all.geojson')
       .on('ready', function(){
         bboxLayer.eachLayer(function(layer){
-          window.b = layer
-          // console.log('bbox layer',layer)
-          layer.bindPopup('<b>'+layer.feature.properties.project+'</b>',{ closeButton: false})
+          bboxFeatures.push(layer)
+          layer.bindPopup(blurbs[layer.feature.properties.project],{ closeButton: false})
             .setStyle(mapStyles.bbox)
             .on("mouseover", function(e){
               layer.setStyle({"weight":3});
@@ -301,20 +306,21 @@ function startMapM(dataset=null){
               layer.setStyle(mapStyles.bbox);
               layer.closePopup();
             })
-            layer.addTo(ttmap)
+            // layer.addTo(ttmap)
             layer.on("click", function(e){
               layer.closePopup();
               $('.leaflet-overlay-pane svg g .leaflet-interactive').remove()
               loadLayer(layer.feature.properties.project)
             })
-          // console.log('bbox props', bbox.properties)
         })
+        features['bboxes'] = L.featureGroup(bboxFeatures).addTo(ttmap)
       })
-      // {lat: 32.694865977875075, lng: 47.4609375}
+    // global to start
     ttmap.setView(L.latLng(32.6948,47.4609),2)
-    // ttmap.setView(L.latLng(32.6948,-3.70256),2)
+    // Madrid: (L.latLng(32.6948,-3.70256),2)
   }
 }
+
 function style(feature) {
   window.feat = feature
   var colorMap = {"ra":"#ffff80","courier":"#ff9999","incanto":"#ffb366",
@@ -331,6 +337,7 @@ function style(feature) {
 }
 
 window.loadLayer = function(project) {
+    features.bboxes.removeFrom(ttmap)
     // clear feature arrays
     pointFeatures = [];
     lineFeatures = []
