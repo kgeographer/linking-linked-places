@@ -127,6 +127,9 @@ input[type=checkbox] {
   width: 100%;
   background: aliceblue;
 }
+.timeline-segment-highlight {
+  color: red;
+}
 .timeline-event-label,
 .timeline-date-label {
   font-family: Verdana, Geneva, sans-serif;

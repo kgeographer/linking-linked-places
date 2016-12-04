@@ -11,21 +11,22 @@ import './bloodhound.js';
 // require('@turf/buffer')
 
 // exposed for debugging
-window.parsedUrl = url.parse(window.location.href, true, true)
+window.parsedUrl = url.parse(window.location.href, true, true);
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // window.q = querystring;
 // window.cent = ctr
 // window.buff = buf
-window.features = {}
-window.idToFeature = {}
+window.features = {};
+window.idToFeature = {};
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
-window.myLayer = {}
-window.pointFeatures = []
-window.lineFeatures = []
-window.bboxFeatures = []
-window.tl = {}
-window.tlMidpoint = ''
-window.dataRows = ''
+window.myLayer = {};
+window.pointFeatures = [];
+window.lineFeatures = [];
+window.bboxFeatures = [];
+window.tl = {};
+window.tlMidpoint = '';
+window.dataRows = '';
+window.timelineCounter = 0;
 
 $(function() {
   // startMapM() // TODO: bounding boxes for datasets
@@ -80,6 +81,7 @@ window.initTimeline = function(events,dataset) {
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     // popup segment event/period
     // reset all to gray
+    console.log('timeline event obj', evt)
     let name_s = 'segments_'+dataset
     features[name_s].setStyle({'color':'gray'})
 
@@ -137,13 +139,16 @@ window.initTimeline = function(events,dataset) {
   bandInfos[1].syncWith = 0;
   bandInfos[1].highlight = true;
 
-  tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
+  window.tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
   // from a file
   // tl.loadJSON("data/euro_poland.tl.json", function(json, url) {
   //   eventSrc.loadJSON(json, url);
   // });
   // from the dynamic object; no idea why it needs a dummy url
   eventSrc.loadJSON(events, 'dummyUrl');
+
+  console.log('counter',timelineCounter)
+  timelineCounter += 1;
 }
 
 var resizeTimerID = null;
@@ -220,7 +225,10 @@ var mapStyles = {
   segments: {
     color: "gray",
     weight: 3,
-    opacity: 0.6
+    opacity: 0.6,
+    highlight: {
+      color: "red"
+    }
   },
   places: {
     color: '#000',
@@ -432,7 +440,23 @@ window.loadLayer = function(dataset) {
                     style: mapStyles.segments
                   }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
                     feat.properties.segment_id+')')
-
+                segment.on("click", function(e){
+                  var leafletId = e.layer._leaflet_id
+                  console.log('clicked this',this)
+                  this.setStyle(mapStyles.segments.highlight)
+                  // reset color on timeline
+                  $(".timeline-event-label").removeClass('timeline-segment-highlight')
+                  let date = e.layer.feature.when.timespan[0]
+                  // label-tl-1-0-5001-6
+                  var labelId = '#label-tl-'+(timelineCounter - 1)+'-0-'+
+                    feat.properties.segment_id
+                  // console.log(labelId)
+                  $(labelId)[0].className += ' timeline-segment-highlight'
+                  tl.getBand(0).setCenterVisibleDate(Timeline.DateTime.parseGregorianDateTime(date))
+                }).on("popupclose",function(e){
+                  this.setStyle(mapStyles.segments);
+                  $(".timeline-event-label").removeClass('timeline-segment-highlight')
+                })
                 // map id to map feature
                 lineFeatures.push(segment)
                 var sid = feat.properties.segment_id
