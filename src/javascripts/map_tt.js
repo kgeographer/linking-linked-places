@@ -77,7 +77,17 @@ window.midpoint = function(ts,type) {
 
 window.initTimeline = function(events,project) {
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
-   (evt.getDescription ());
+    // popup segment event/period
+    // first reset all to gray
+    let name_s = 'segments_'+project
+    features[name_s].setStyle({'color':'gray'})
+    console.log(evt._id);
+    idToFeature[project].segments[evt._id].openPopup()
+      .setStyle({'color':'red'})
+    idToFeature[project].segments[evt._id].on("popupclose", function(e){
+      this.setStyle({'color':'gray'})
+    })
+    // idToFeature[project].segments[evt._id].setStyle({'color':'red'})
    }
   // console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
