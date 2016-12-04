@@ -75,19 +75,24 @@ window.midpoint = function(ts,type) {
   return mid
 }
 
-window.initTimeline = function(events,project) {
+window.initTimeline = function(events,dataset) {
+  // custom timeline click event
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     // popup segment event/period
-    // first reset all to gray
-    let name_s = 'segments_'+project
+    // reset all to gray
+    let name_s = 'segments_'+dataset
     features[name_s].setStyle({'color':'gray'})
-    console.log(evt._id);
-    idToFeature[project].segments[evt._id].openPopup()
-      .setStyle({'color':'red'})
-    idToFeature[project].segments[evt._id].on("popupclose", function(e){
-      this.setStyle({'color':'gray'})
-    })
-    // idToFeature[project].segments[evt._id].setStyle({'color':'red'})
+
+    if(tlConfig[dataset].type == 'journey'){
+      // case dataset is journey(s)
+      idToFeature[dataset].segments[evt._id].openPopup()
+        .setStyle({'color':'red'})
+      idToFeature[dataset].segments[evt._id].on("popupclose", function(e){
+        this.setStyle({'color':'gray'})
+      })
+    }
+
+    // idToFeature[dataset].segments[evt._id].setStyle({'color':'red'})
    }
   // console.log('tlMidpoint',tlMidpoint)
   // let sourceFile = 'data/' + file
@@ -100,7 +105,7 @@ window.initTimeline = function(events,project) {
   theme.event.bubble.width = 350;
   theme.event.bubble.height = 300;
 
-  let cfg = tlConfig[project]
+  let cfg = tlConfig[dataset]
   // let cfg = tlConfig[searchParams['d']]
   // var d = Timeline.DateTime.parseGregorianDateTime("2016-10-01")
   var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
@@ -258,11 +263,11 @@ function writeAbstract(attribs){
   return html
 }
 
-window.zapLayer = function(project) {
-  $("input:checkbox[value='"+project+"']").prop('checked',false)
-  console.log('zapping',project)
-  let name_p = "places_"+project
-  let name_s = "segments_"+project
+window.zapLayer = function(dataset) {
+  $("input:checkbox[value='"+dataset+"']").prop('checked',false)
+  console.log('zapping',dataset)
+  let name_p = "places_"+dataset
+  let name_s = "segments_"+dataset
   features[name_p].removeFrom(ttmap)
   features[name_s].removeFrom(ttmap)
   // de-select checkbox
@@ -346,13 +351,13 @@ function style(feature) {
     };
 }
 
-window.loadLayer = function(project) {
+window.loadLayer = function(dataset) {
     features.bboxes.removeFrom(ttmap)
     // clear feature arrays
     pointFeatures = [];
     lineFeatures = []
     // map id to leaflet layer object
-    window.idToFeature[project] = {places:{}, segments:{}}
+    window.idToFeature[dataset] = {places:{}, segments:{}}
 
     // TODO: reconfigure managing state in window.href
     // if(searchParams['p'] != undefined){
@@ -361,7 +366,7 @@ window.loadLayer = function(project) {
     // }
 
     // check in case layer was loaded programatically
-    $(":checkbox[value="+project+"]").prop("checked","true")
+    $(":checkbox[value="+dataset+"]").prop("checked","true")
 
     /*  read a single FeatureCollection of
         Places (geometry.type == Point), and
@@ -369,12 +374,12 @@ window.loadLayer = function(project) {
           - route geometry.geometries[i] == LineString or MultiLineString
     */
     let featureLayer = L.mapbox.featureLayer()
-      .loadURL('data/' + project + '.geojson')
+      .loadURL('data/' + dataset + '.geojson')
       .on('ready', function(){
         // get Collection attributes
         window.collection = featureLayer._geojson
         $("#data_abstract").html(writeAbstract(collection.attributes))
-        $("#data_abstract").append("<a href='data/"+ project +
+        $("#data_abstract").append("<a href='data/"+ dataset +
           ".geojson' target='_blank'>download GeoJSON-T</a>")
         tlMidpoint = midpoint(collection.when.timespan,'mid')
 
@@ -394,15 +399,15 @@ window.loadLayer = function(project) {
 
               placeFeature.bindPopup(layer.feature.properties.toponym+
                 '<br/><a href="'+gazURI+
-                '" target="_blank">'+(project=='courier'?'TGAZ record':
-                  project=='vicarello'?'Pleiades record':
-                  ['roundabout','xuanzang'].indexOf(project)>-1?'Geonames record':'')+'</a>'
+                '" target="_blank">'+(dataset=='courier'?'TGAZ record':
+                  dataset=='vicarello'?'Pleiades record':
+                  ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>'
                 )
 
               pointFeatures.push(placeFeature)
               var pid = layer.feature.id
               // console.log('place properties',layer.feature.properties)
-              idToFeature[project].places[pid] = placeFeature
+              idToFeature[dataset].places[pid] = placeFeature
           }
 
           // the rest are line features for routes/segments in GeometryCollection
@@ -431,7 +436,7 @@ window.loadLayer = function(project) {
                 // map id to map feature
                 lineFeatures.push(segment)
                 var sid = feat.properties.segment_id
-                idToFeature[project].segments[sid] = segment
+                idToFeature[dataset].segments[sid] = segment
 
                 //* build event object for timeline
                 if (whenObj != ({} || '')) {
@@ -451,21 +456,21 @@ window.loadLayer = function(project) {
           }
         })
         // featureGroup pairs as layers
-        let name_p = "places_"+project
-        let name_s = "segments_"+project
+        let name_p = "places_"+dataset
+        let name_s = "segments_"+dataset
         features[name_s] = L.featureGroup(lineFeatures).addTo(ttmap)
         features[name_p] = L.featureGroup(pointFeatures).addTo(ttmap)
 
         // TODO: reconfigure managing state in window.href
         if(searchParams['p'] != undefined) {
-          ttmap.setView(idToFeature[project].places[searchParams['p']].getLatLng(),8)
-          idToFeature[project].places[searchParams['p']].openPopup()
+          ttmap.setView(idToFeature[dataset].places[searchParams['p']].getLatLng(),8)
+          idToFeature[dataset].places[searchParams['p']].openPopup()
         } else {
           ttmap.fitBounds(features[name_p].getBounds())
         }
 
         // load timeline
-        initTimeline(eventsObj,project)
+        initTimeline(eventsObj,dataset)
       })
 }
 
