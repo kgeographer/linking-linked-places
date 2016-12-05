@@ -1,7 +1,8 @@
 var url = require('url'),
-    $ = require('jquery'),
-    querystring = require('querystring')
-require('bootstrap')
+    // $ = require('jquery'),
+    querystring = require('querystring'),
+    d3 = require('d3')
+// require('bootstrap')
 require('mapbox.js')
 
 // import add'l app JavaScript
@@ -17,6 +18,7 @@ window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 // window.cent = ctr
 // window.buff = buf
 window.features = {};
+window.d3graph = {"nodes":[], "links":[]}
 window.idToFeature = {};
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {};
@@ -47,22 +49,6 @@ $(function() {
       zapLayer(this.value)
     }
   })
-  // TODO: failed attempt to load gaz record in modal
-  // ttmap.on('popupopen', function (e) {
-  //   console.log(e.popup._source.gazid);
-  //   $("#gazframe").attr("src",e.popup._source.gazid)
-  //   console.log('gazframe',gazframe)
-  //   $(".modal-link").click(function(e){
-  //     e.preventDefault()
-  //     console.log('clicked a tgaz link',this)
-  //   })
-  // });
-  // // $('#myModal').modal({ show: false})
-  // $(".modal-link").click(function(e){
-  //   // e.preventDefault()
-  //   console.log('clicked a tgaz link',this)
-  //   $('#myModal').modal()
-  // })
 });
 window.midpoint = function(ts,type) {
   if(type == 'start') {
@@ -271,8 +257,104 @@ function writeAbstract(attribs){
   return html
 }
 
-function download(type,data){
-  console.log('download()', type, data)
+window.buildGraph = function(){
+  console.log('current d3graph',d3graph)
+  var svg = d3.select(".modal-body svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+  var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.id; }))
+      .force("charge", d3.forceManyBody())
+      .force("center", d3.forceCenter(width / 2, height / 2));
+
+  // var graph = JSON.parse(d3graph)
+  // for now, use data in d3graph{}, built on each loadLayer()
+  // d3.json(d3graph, function(error, graph) {
+  // d3.json(JSON.parse(d3graph), function(error, graph) {
+    // if (error) throw error
+
+    var link = svg.append("g")
+        .attr("class", "links")
+      .selectAll("line")
+      .data(d3graph.links)
+      .enter().append("line")
+        .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+    var node = svg.append("g")
+        .attr("class", "nodes")
+      .selectAll("circle")
+      .data(d3graph.nodes)
+      .enter().append("circle")
+        .attr("r", 5)
+        .attr("fill", function(d) { return color(d.group); })
+        .call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
+    node.append("title")
+        .text(function(d) { return d.id; });
+
+    simulation
+        .nodes(d3graph.nodes)
+        .on("tick", ticked);
+
+    simulation.force("link")
+        .links(d3graph.links);
+
+    function ticked() {
+      link
+          .attr("x1", function(d) { return d.source.x; })
+          .attr("y1", function(d) { return d.source.y; })
+          .attr("x2", function(d) { return d.target.x; })
+          .attr("y2", function(d) { return d.target.y; });
+
+      node
+          .attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; });
+    }
+
+    // });
+
+  function dragstarted(d) {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  function dragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+  }
+
+  function dragended(d) {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+
+}
+  // .loadURL('data/' + data + '.geojson')
+function download(type, data){
+  switch(type) {
+    case "d3":
+      console.log('make d3 dataset for '+data+' and load it in force layout somewhere');
+      $(".modal-body svg").html('')
+      $(".modal-title").html(data)
+      // for now, use data in d3graph{}, built on each loadLayer()
+      // if(["incanto-f","courier"])
+      $(".modal-body").html(buildGraph())
+      $('#myModal').modal('show');
+
+      break;
+    case "geojson-t":
+      window.open('data/'+data+'.geojson')
+      console.log('deliver GeoJSON-T for '+data+' to browser');
+      break;
+  }
 }
 
 window.zapLayer = function(dataset) {
@@ -367,7 +449,9 @@ window.loadLayer = function(dataset) {
     features.bboxes.removeFrom(ttmap)
     // clear feature arrays
     pointFeatures = [];
-    lineFeatures = []
+    lineFeatures = [];
+    d3graph.nodes = [];
+    d3graph.links = [];
     // map id to leaflet layer object
     window.idToFeature[dataset] = {places:{}, segments:{}}
 
@@ -392,9 +476,11 @@ window.loadLayer = function(dataset) {
         window.collection = featureLayer._geojson
         $("#data_abstract").html(writeAbstract(collection.attributes))
         $("#data_abstract").append("download:" +
-          " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>; " +
-          " <a href='#' data='"+dataset+"' type='d3'>d3 graph</a>"
+          " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>"
         )
+        if(["incanto-f","courier"].indexOf(dataset) > -1){
+          $("#data_abstract").append("; <a href='#' data='"+dataset+"' type='d3'>d3 graph</a>")
+        }
         $("#data_abstract a").click(function(e){
           download(e.currentTarget.attributes.type.value,
             e.currentTarget.attributes.data.value)
@@ -424,8 +510,11 @@ window.loadLayer = function(dataset) {
 
               pointFeatures.push(placeFeature)
               var pid = layer.feature.id
-              // console.log('place properties',layer.feature.properties)
               idToFeature[dataset].places[pid] = placeFeature
+              // add to links for graph viz for some
+              if(["incanto-f","courier"].indexOf(dataset) > -1) {
+                    d3graph.nodes.push({"id":pid, "group":"1"})
+                  }
           }
 
           // the rest are line features for routes/segments in GeometryCollection
@@ -471,6 +560,13 @@ window.loadLayer = function(dataset) {
                 lineFeatures.push(segment)
                 var sid = feat.properties.segment_id
                 idToFeature[dataset].segments[sid] = segment
+
+                // add to links for graph viz; skip any with blank target
+                if(feat.properties.source != '' && feat.properties.target != ''
+                    && ["incanto-f","courier"].indexOf(dataset) > -1) {
+                  d3graph.links.push({"id":sid, "source": feat.properties.source,
+                    "target": feat.properties.target, "value": "1" })
+                }
 
                 //* build event object for timeline
                 if (whenObj != ({} || '')) {
@@ -538,21 +634,6 @@ window.loadLayer = function(dataset) {
           ]
         }
 */
-        // if (geomF.type ='GeometryCollection') {
-        //   console.log('collection w/', geomF.geometries.length, ' segments; when = ', whenF)
-        // }
-        // console.log(layer.feature.when)
-        // console.log()
-
-
-        // build temporal object and pass to timeline
-        // eventsObj.events.push(buildEvent(layer.feature));
-    //     idToFeature['places'][layer.feature.properties.id] = layer._leaflet_id;
-    //   })
-    //   initTimeline(eventsObj);
-    //   // initTimeline('');
-    // })
-    // .addTo(ttmap);
 
 // }
 

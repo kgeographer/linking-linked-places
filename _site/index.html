@@ -5,9 +5,11 @@
   <title>Linked Places sandbox</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script
-  			  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  			  crossorigin="anonymous"></script>
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
    Timeline_ajax_url="lib/timeline-src_2.3.0/src/ajax/api/simile-ajax-api.js";
    Timeline_urlPrefix='lib/timeline-src_2.3.0/src/timeline_js/';
@@ -96,7 +98,7 @@
         <div id="results_inset"></div>
       </div>
     </div>
-    <!-- <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -104,14 +106,16 @@
             <h4 class="modal-title">Modal Header</h4>
           </div>
           <div class="modal-body">
-            <iframe id="gazframe" src="" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
+            <p>Route flows and networks can be un-moored from geography, to
+              examine network properties in other ways.</p>
+            <svg width="600" height="600"></svg>
           </div>
-          <div class="modal-footer">
+          <!-- <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+          </div> -->
         </div>
       </div>
-    </div> -->
+    </div>
     <div id="footer">footer</div>
   </div>
   <script src="lib/typeahead.js"></script>
