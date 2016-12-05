@@ -1,13 +1,14 @@
 var url = require('url'),
     // $ = require('jquery'),
-    querystring = require('querystring'),
-    d3 = require('d3')
+    querystring = require('querystring')
+    // , d3 = require('d3')
 // require('bootstrap')
+var d3 = Object.assign({}, require("d3"), require("d3-scale"));
 require('mapbox.js')
+// require('d3-scale')
 
 // import add'l app JavaScript
 import './bloodhound.js';
-
 // require('@turf/centroid')
 // require('@turf/buffer')
 
@@ -258,6 +259,10 @@ function writeAbstract(attribs){
 }
 
 window.buildGraph = function(){
+  var edgeScale = d3.scaleLinear()
+    .domain([1,100])
+    .range([1,5])
+
   console.log('current d3graph',d3graph)
   var svg = d3.select(".modal-body svg"),
     width = +svg.attr("width"),
@@ -565,7 +570,8 @@ window.loadLayer = function(dataset) {
                 if(feat.properties.source != '' && feat.properties.target != ''
                     && ["incanto-f","courier"].indexOf(dataset) > -1) {
                   d3graph.links.push({"id":sid, "source": feat.properties.source,
-                    "target": feat.properties.target, "value": "1" })
+                    "target": feat.properties.target, "value": dataset=='incanto-f'?
+                      feat.properties.num_journeys:"1"})
                 }
 
                 //* build event object for timeline

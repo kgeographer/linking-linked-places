@@ -141,6 +141,14 @@ input[type=checkbox] {
 .timeline-date-label {
   font-size: .8em;
 }
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
 
 .gaz-entries li {
   cursor: pointer;
