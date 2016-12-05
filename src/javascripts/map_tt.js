@@ -147,7 +147,7 @@ window.initTimeline = function(events,dataset) {
   // from the dynamic object; no idea why it needs a dummy url
   eventSrc.loadJSON(events, 'dummyUrl');
 
-  console.log('counter',timelineCounter)
+  // console.log('counter',timelineCounter)
   timelineCounter += 1;
 }
 
@@ -271,6 +271,10 @@ function writeAbstract(attribs){
   return html
 }
 
+function download(type,data){
+  console.log('download()', type, data)
+}
+
 window.zapLayer = function(dataset) {
   $("input:checkbox[value='"+dataset+"']").prop('checked',false)
   console.log('zapping',dataset)
@@ -387,8 +391,14 @@ window.loadLayer = function(dataset) {
         // get Collection attributes
         window.collection = featureLayer._geojson
         $("#data_abstract").html(writeAbstract(collection.attributes))
-        $("#data_abstract").append("<a href='data/"+ dataset +
-          ".geojson' target='_blank'>download GeoJSON-T</a>")
+        $("#data_abstract").append("download:" +
+          " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>; " +
+          " <a href='#' data='"+dataset+"' type='d3'>d3 graph</a>"
+        )
+        $("#data_abstract a").click(function(e){
+          download(e.currentTarget.attributes.type.value,
+            e.currentTarget.attributes.data.value)
+        })
         tlMidpoint = midpoint(collection.when.timespan,'mid')
 
         // build separate L.featureGroup for points & lines
@@ -442,7 +452,7 @@ window.loadLayer = function(dataset) {
                     feat.properties.segment_id+')')
                 segment.on("click", function(e){
                   var leafletId = e.layer._leaflet_id
-                  console.log('clicked this',this)
+                  // console.log('clicked this',this)
                   this.setStyle(mapStyles.segments.highlight)
                   // reset color on timeline
                   $(".timeline-event-label").removeClass('timeline-segment-highlight')
