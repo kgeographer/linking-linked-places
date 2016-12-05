@@ -1,7 +1,7 @@
 .timeline-duration-event {
     position: absolute;
     overflow: hidden;
-    border: 1px solid blue;
+    border: 12px solid blue;
 }
 
 .timeline-instant-event2 {

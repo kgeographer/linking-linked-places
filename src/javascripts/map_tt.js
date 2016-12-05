@@ -91,8 +91,9 @@ window.initTimeline = function(events,dataset) {
   // The default theme is defined in
   // http://simile-widgets.googlecode.com/svn/timeline/tags/latest/src/webapp/api/scripts/themes.js
   var theme = Timeline.ClassicTheme.create();
-  theme.event.bubble.width = 350;
-  theme.event.bubble.height = 300;
+  theme.event.bubble.width = 320;
+  // theme.event.bubble.height = 300;
+  theme.ether.backgroundColors[1] = theme.ether.backgroundColors[0];
 
   let cfg = tlConfig[dataset]
   // let cfg = tlConfig[searchParams['d']]
