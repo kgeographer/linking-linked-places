@@ -253,13 +253,15 @@ function style(feature) {
 
 function listFeatureProperties(props,when){
   let html = "<ul class='ul-segments'>"
+  // console.log(JSON.stringify(when.timespan))
   // only non-standard properties
   for(let key of Object.keys(props)) {
     if(["source","target","route_id","segment_id","label","collection"].indexOf(key) < 0) {
       html += "<li><b>"+key+"</b>: "+props[key]+"</li>"
     }
   }
-  html += "</ul>"
+  html += "</ul><p><b>when</b>:</p>"
+  html += "<p>"+JSON.stringify(when)+"</p>"
   return html;
 }
 
@@ -539,7 +541,7 @@ window.loadLayer = function(dataset) {
                 var segment = new L.GeoJSON(feat, {
                   style: mapStyles.segments
                 }).bindPopup('<b>'+feat.properties.label+'</b><br/>'+
-                  listFeatureProperties(feat.properties))
+                  listFeatureProperties(feat.properties,feat.when))
                 segment.on("click", function(e){
                   var leafletId = e.layer._leaflet_id
                   // console.log('clicked this',this)
