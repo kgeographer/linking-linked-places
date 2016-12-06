@@ -56,6 +56,9 @@ body {
   border-bottom: 1px dashed lightgray;
   padding: 2px 0;
 }
+.ul-segments li b {
+  color: #993333;
+}
 .panel {
   position: absolute;
   z-index: 5;
@@ -126,6 +129,9 @@ input[type=checkbox] {
   bottom: 0;
   width: 100%;
   background: aliceblue;
+}
+.timeline-band-layer-inner {
+  cursor: move;
 }
 .timeline-segment-highlight {
   color: red;

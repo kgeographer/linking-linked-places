@@ -47,6 +47,9 @@ $(function() {
         location.href = location.origin+location.pathname+'?d='+this.value;
       }
     } else {
+      // one set of events at a time right now
+      eventSrc.clear()
+      // $("#tl").html('<p>time is of the essence</p>')
       zapLayer(this.value)
     }
   })
@@ -68,7 +71,7 @@ window.initTimeline = function(events,dataset) {
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     // popup segment event/period
     // reset all to gray
-    console.log('timeline event obj', evt)
+    // console.log('timeline event obj', evt)
     let name_s = 'segments_'+dataset
     features[name_s].setStyle({'color':'gray'})
 
@@ -80,12 +83,13 @@ window.initTimeline = function(events,dataset) {
         this.setStyle({'color':'gray'})
       })
     }
+    // window.z = idToFeature[dataset].segments[evt._id];
+    ttmap.fitBounds(idToFeature[dataset].segments[evt._id].getBounds())
+    // ttmap.zoomOut()
 
     // idToFeature[dataset].segments[evt._id].setStyle({'color':'red'})
    }
-  // console.log('tlMidpoint',tlMidpoint)
-  // let sourceFile = 'data/' + file
-  // console.log('in initTimeline()', JSON.stringify(events.events[0]))
+
   window.eventSrc = new Timeline.DefaultEventSource(0);
   // Example of changing the theme from the defaults
   // The default theme is defined in
@@ -96,8 +100,6 @@ window.initTimeline = function(events,dataset) {
   theme.ether.backgroundColors[1] = theme.ether.backgroundColors[0];
 
   let cfg = tlConfig[dataset]
-  // let cfg = tlConfig[searchParams['d']]
-  // var d = Timeline.DateTime.parseGregorianDateTime("2016-10-01")
   var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
   // DAY, WEEK, MONTH, YEAR, DECADE, CENTURY
   var bandInfos = [
@@ -128,13 +130,8 @@ window.initTimeline = function(events,dataset) {
   bandInfos[1].highlight = true;
 
   window.tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
-  // from a file
-  // tl.loadJSON("data/euro_poland.tl.json", function(json, url) {
-  //   eventSrc.loadJSON(json, url);
-  // });
   // from the dynamic object; no idea why it needs a dummy url
   eventSrc.loadJSON(events, 'dummyUrl');
-
   // console.log('counter',timelineCounter)
   timelineCounter += 1;
 }
@@ -233,23 +230,37 @@ var mapStyles = {
   }
 }
 
-var geojsonMarkerOptions = {
-    radius: 8,
-    fillColor: "#ff7800",
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-};
-
-function writePopup(layer) {
-  console.log(layer)
-}
-
 function summarizeEvents(eventsObj){
   // get bounds, midpoint, granularity
   // multi-day, -week, -month, -year
   console.log(eventsObj)
+}
+
+function style(feature) {
+  window.feat = feature
+  var colorMap = {"ra":"#ffff80","courier":"#ff9999","incanto":"#ffb366",
+    "vb":"#b380ff","xuanzang":"#99e699"}
+  let fill=colorMap[feature.toGeoJSON().properties.collection]
+  // console.log(coll)
+	return {
+      color: '#000',
+      fillColor: fill,
+      radius: 4,
+      fillOpacity: 0.6,
+      weight: 1
+    };
+}
+
+function listFeatureProperties(props,when){
+  let html = "<ul class='ul-segments'>"
+  // only non-standard properties
+  for(let key of Object.keys(props)) {
+    if(["source","target","route_id","segment_id","label","collection"].indexOf(key) < 0) {
+      html += "<li><b>"+key+"</b>: "+props[key]+"</li>"
+    }
+  }
+  html += "</ul>"
+  return html;
 }
 
 function writeAbstract(attribs){
@@ -343,7 +354,7 @@ window.buildGraph = function(){
   }
 
 }
-  // .loadURL('data/' + data + '.geojson')
+
 function download(type, data){
   switch(type) {
     case "d3":
@@ -436,21 +447,6 @@ function startMapM(dataset=null){
   }
 }
 
-function style(feature) {
-  window.feat = feature
-  var colorMap = {"ra":"#ffff80","courier":"#ff9999","incanto":"#ffb366",
-    "vb":"#b380ff","xuanzang":"#99e699"}
-  let fill=colorMap[feature.toGeoJSON().properties.collection]
-  // console.log(coll)
-	return {
-      color: '#000',
-      fillColor: fill,
-      radius: 4,
-      fillOpacity: 0.6,
-      weight: 1
-    };
-}
-
 window.loadLayer = function(dataset) {
     features.bboxes.removeFrom(ttmap)
     // clear feature arrays
@@ -458,10 +454,11 @@ window.loadLayer = function(dataset) {
     lineFeatures = [];
     d3graph.nodes = [];
     d3graph.links = [];
+    eventsObj.events = [];
     // map id to leaflet layer object
     window.idToFeature[dataset] = {places:{}, segments:{}}
 
-    // TODO: reconfigure managing state in window.href
+    // TODO: resume managing state in window.href
     // if(searchParams['p'] != undefined){
     //   $("#results_inset").html('<p>Dataset: '+searchParams['d']+
     //     '</p><p>Place:'+searchParams['p']+'</p>')
@@ -539,12 +536,10 @@ window.loadLayer = function(dataset) {
                   "when": whenObj,
                   "properties": geomF.geometries[i].properties
                 }
-                // console.log('feat', feat.properties.source, feat.properties.target)
-                // console.log('whenObj', whenObj)
                 var segment = new L.GeoJSON(feat, {
-                    style: mapStyles.segments
-                  }).bindPopup('<b>'+feat.properties.label+'</b><br/>(segment '+
-                    feat.properties.segment_id+')')
+                  style: mapStyles.segments
+                }).bindPopup('<b>'+feat.properties.label+'</b><br/>'+
+                  listFeatureProperties(feat.properties))
                 segment.on("click", function(e){
                   var leafletId = e.layer._leaflet_id
                   // console.log('clicked this',this)
@@ -555,6 +550,7 @@ window.loadLayer = function(dataset) {
                   // label-tl-1-0-5001-6
                   var labelId = '#label-tl-'+(timelineCounter - 1)+'-0-'+
                     feat.properties.segment_id
+                  ttmap.fitBounds(idToFeature[dataset].segments[feat.properties.segment_id].getBounds())
                   // console.log(labelId)
                   $(labelId)[0].className += ' timeline-segment-highlight'
                   tl.getBand(0).setCenterVisibleDate(Timeline.DateTime.parseGregorianDateTime(date))
@@ -641,24 +637,3 @@ window.loadLayer = function(dataset) {
           ]
         }
 */
-
-// }
-
-
-// open popup
-// featureLayer._layers[92].openPopup()
-// style
-// featureLayer._layers[idToFeature['places']['pol03']].setStyle({fillColor :'blue'})
-
-// event format
-// {
-// 'dateTimeFormat': 'iso8601',
-// 'events' :
-//   [
-//     {'start': '1900', 'latestStart': '1901', 'earliestEnd': '1903', 'end': '1902',
-//     'title': 'Test 6g: Bad dates: earliestEnd > end',
-//     'description': 'Test 6g: Bad dates: earliestEnd > end',
-//     'durationEvent': true, 'image':'<url>', 'link':'<url>'
-//     },
-//     {}
-//   ]
