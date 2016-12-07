@@ -59,6 +59,12 @@ body {
 .ul-segments li b {
   color: #993333;
 }
+.segment-when p {
+  font-weight: 800;
+  color: darkgreen;
+  margin-bottom: 0;
+  font-size: 1em;
+}
 .panel {
   position: absolute;
   z-index: 5;

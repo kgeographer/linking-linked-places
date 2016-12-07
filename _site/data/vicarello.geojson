@@ -1,11 +1,11 @@
 {
   "when": {
     "timespan": [
-      "0200",
-      "",
+      "-000015",
+      "0015",
       "",
       "0400",
-      "around 200 - 400 CE"
+      "Variously: 'Dated to between 15 BCE and 15 CE'; 'around 200 - 400 CE'"
     ]
   },
   "attributes": {
@@ -15,7 +15,7 @@
     "contributors": "",
     "date": "",
     "description": "Dated to between 15 BCE and 15 CE, the Vicarello Beakers are four cylindrical vessels made of silver with heights varying between 95-153 mm. They were discovered in the Roman baths at Vicarello, Italy, apparently deposited as a votive offering. Although differing in the details, on the surface of each beaker is engraved the land route between Gades and Rome. They have traditionally been identified as miniature replicas of a milestone probably erected in Gades, perhaps similar in design to the Miliarium Aureum (the Golden Milestone) in Rome.",
-    "timespan": "[0200,,,0400,around 200 - 400 CE]",
+    "timespan": "[-15,15,,400,Variously,'Dated to between 15 BCE and 15 CE'; 'around 200 - 400 CE']",
     "date (numeric)": "300",
     "title": "Vicarello Beakers",
     "uri": "[http://commons.pelagios.org/2013/10/iwp2-pelagios-and-the-beakers-of-vicarello/",

@@ -21,6 +21,7 @@ window.searchParams = querystring.parse(parsedUrl.search.substring(1));
 window.features = {};
 window.d3graph = {"nodes":[], "links":[]}
 window.idToFeature = {};
+// window.eventsObj = {'dateTimeFormat': 'Gregorian','events':[ ]};
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {};
 window.pointFeatures = [];
@@ -53,6 +54,7 @@ $(function() {
       zapLayer(this.value)
     }
   })
+  $('[data-toggle="popover"]').popover();
 });
 window.midpoint = function(ts,type) {
   if(type == 'start') {
@@ -67,14 +69,16 @@ window.midpoint = function(ts,type) {
 }
 
 window.initTimeline = function(events,dataset) {
+  console.log(events)
   // custom timeline click event
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     // popup segment event/period
-    // reset all to gray
-    // console.log('timeline event obj', evt)
+    window.evt = evt
+    console.log('timeline evt obj', evt)
     let name_s = 'segments_'+dataset
     features[name_s].setStyle({'color':'gray'})
 
+    // journey segment popup on map
     if(tlConfig[dataset].type == 'journey'){
       // case dataset is journey(s)
       idToFeature[dataset].segments[evt._id].openPopup()
@@ -82,13 +86,18 @@ window.initTimeline = function(events,dataset) {
       idToFeature[dataset].segments[evt._id].on("popupclose", function(e){
         this.setStyle({'color':'gray'})
       })
+      ttmap.fitBounds(idToFeature[dataset].segments[evt._id].getBounds())
+    } else {
+      $('#period_modal .modal-header h4').html(evt._text)
+      $('#period_modal .modal-body p').html(evt._description+"<br/>"
+        +evt._start.getFullYear()
+        +";"+evt._latestStart.getFullYear()
+        +";"+evt._earliestEnd.getFullYear()
+        +";"+evt._end.getFullYear()
+        )
+      $('#period_modal').modal('show');
     }
-    // window.z = idToFeature[dataset].segments[evt._id];
-    ttmap.fitBounds(idToFeature[dataset].segments[evt._id].getBounds())
-    // ttmap.zoomOut()
-
-    // idToFeature[dataset].segments[evt._id].setStyle({'color':'red'})
-   }
+  }
 
   window.eventSrc = new Timeline.DefaultEventSource(0);
   // Example of changing the theme from the defaults
@@ -101,30 +110,31 @@ window.initTimeline = function(events,dataset) {
 
   let cfg = tlConfig[dataset]
   var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
+  // var d = Timeline.DateTime.parseGregorianDateTime(tlMidpoint)
   // DAY, WEEK, MONTH, YEAR, DECADE, CENTURY
   var bandInfos = [
-      Timeline.createBandInfo({
-          width:          cfg.width1,
-          // width:          "75%",
-          intervalUnit:   eval('Timeline.DateTime.'+cfg.intUnit1),
-          // intervalPixels: 50,
-          intervalPixels: cfg.intPixels1,
-          eventSource:    eventSrc,
-          date:           d,
-          theme:          theme,
-          layout:         'original'  // original, overview, detailed
-      }),
-      Timeline.createBandInfo({
-          width:          cfg.width2,
-          // width:          "25%",
-          intervalUnit:   eval('Timeline.DateTime.'+cfg.intUnit2),
-          intervalPixels: cfg.intPixels2,
-          // intervalPixels: 120,
-          eventSource:    eventSrc,
-          date:           d,
-          theme:          theme,
-          layout:         'overview'  // original, overview, detailed
-      })
+    Timeline.createBandInfo({
+        width:          cfg.width1,
+        // width:          "75%",
+        intervalUnit:   eval('Timeline.DateTime.'+cfg.intUnit1),
+        // intervalPixels: 50,
+        intervalPixels: cfg.intPixels1,
+        eventSource:    eventSrc,
+        date:           d,
+        theme:          theme,
+        layout:         'original'  // original, overview, detailed
+    }),
+    Timeline.createBandInfo({
+        width:          cfg.width2,
+        // width:          "25%",
+        intervalUnit:   eval('Timeline.DateTime.'+cfg.intUnit2),
+        intervalPixels: cfg.intPixels2,
+        // intervalPixels: 120,
+        eventSource:    eventSrc,
+        date:           d,
+        theme:          theme,
+        layout:         'overview'  // original, overview, detailed
+    })
   ];
   bandInfos[1].syncWith = 0;
   bandInfos[1].highlight = true;
@@ -132,7 +142,7 @@ window.initTimeline = function(events,dataset) {
   window.tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
   // from the dynamic object; no idea why it needs a dummy url
   eventSrc.loadJSON(events, 'dummyUrl');
-  // console.log('counter',timelineCounter)
+
   timelineCounter += 1;
 }
 
@@ -168,7 +178,7 @@ function buildEvent(place){
 }
 
 function buildSegmentEvent(feat){
-  // console.log(' in buildSegmentEvent()',feat.when.timespan)
+  console.log(' in buildSegmentEvent()',feat.when.timespan)
   // need validate function here
   // if(validateWhen(place)==true {})
   var event = {};
@@ -187,7 +197,28 @@ function buildSegmentEvent(feat){
   return event;
 }
 
+// function buildCollectionPeriod(coll){
+//   console.log(' in buildCollectionPeriod()',coll.when.timespan)
+//   window.ts = coll.when.timespan
+//   var event = {};
+//   event['id'] = 'LinkedPlaces001';
+//   event['title'] = 'valid period, '+coll.attributes.title;
+//   event['description'] = ts[4];
+//   event['start'] = new Date(ts[0]);
+//   event['latestStart'] = new Date(ts[1]) == "" ? "" :new Date(ts[1]);
+//   event['earliestEnd'] = new Date(ts[2]) == "" ? "" :new Date(ts[2]);
+//   event['end'] = new Date(ts[3]) == "" ? "" :new Date(ts[3]);
+//   event['durationEvent'] = "true";
+//   event['link'] = "";
+//   // event['link'] = coll.attributes.uri;
+//   event['image'] = "";
+//   // console.log('event', JSON.stringify(event))
+//   tlMidpoint = midpoint(ts,'start')
+//   return event;
+// }
+//
 function buildCollectionPeriod(coll){
+  console.log(' in buildCollectionPeriod()',coll.when.timespan)
   window.ts = coll.when.timespan
   var event = {};
   event['id'] = 'LinkedPlaces001';
@@ -251,6 +282,14 @@ function style(feature) {
     };
 }
 
+function parseWhen(when) {
+  console.log(when.timespan[0])
+  let html = "<div class='segment-when'>";
+  html+="start: "+when.timespan[0]+"-"+when.timespan[1]+"<br/>"+
+        "end: "+when.timespan[2]+"-"+when.timespan[3]+"<br/>"+
+        "duration: "+when.duration==""?"throughout":when.duration+"</div>"
+  return html;
+}
 function listFeatureProperties(props,when){
   let html = "<ul class='ul-segments'>"
   // console.log(JSON.stringify(when.timespan))
@@ -260,8 +299,13 @@ function listFeatureProperties(props,when){
       html += "<li><b>"+key+"</b>: "+props[key]+"</li>"
     }
   }
-  html += "</ul><p><b>when</b>:</p>"
-  html += "<p>"+JSON.stringify(when)+"</p>"
+  html += "</ul><div class='segment-when'><p><b>when</b>:</p>"
+  // html += parseWhen(when)
+  html += "";
+  html+="<em>start</em>: "+when.timespan[0]+(when.timespan[1]==""?"":"-"+when.timespan[1])+"<br/>"+
+        "<em>end</em>: "+when.timespan[2]+(when.timespan[3]==""?"":"-"+when.timespan[1])+"<br/>"+
+        "<em>duration</em>: "+(when.duration==""?"throughout":when.duration)+
+        "</div>"
   return html;
 }
 
@@ -577,6 +621,7 @@ window.loadLayer = function(dataset) {
                 if (whenObj != ({} || '')) {
                   if (collection.attributes.segmentType == 'journey') {
                     eventsObj.events.push(buildSegmentEvent(feat));
+                    // console.log(buildSegmentEvent(feat))
                   }
                 }
             }
