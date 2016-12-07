@@ -547,10 +547,22 @@ window.loadLayer = function(dataset) {
                 (dataset=='courier'?'TGAZ record':dataset=='vicarello'?'Pleiades record':
                   ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>')
                 .click(function(){
-                  // alert('test')
-                  // e.preventDefault();
                   console.log('gonna get and parse gaz json here',gazURI)
+                  $(".loader").show()
+                  $.when(
+                    $.getJSON(gazURI, function(result){
+                      // console.log(result)
+                      $.each(result, function(i, field){
+                          $("#gaz_modal .modal-body").append(field + " ");
+                      })
+                      // console.log( $("#gaz_modal .modal-body").html())
+                    })
+                  ).done(function(){
+                    $(".loader").hide()
+                    $("#gaz_modal .modal-title").html(gazURI)
+                    $("#gaz_modal").modal(); })
                 })
+
               // console.log(popContent)
               // $("p").prepend("<b>Prepended text</b>")
 
