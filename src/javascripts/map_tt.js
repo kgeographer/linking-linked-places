@@ -56,6 +56,7 @@ $(function() {
     }
   })
   $('[data-toggle="popover"]').popover();
+
 });
 window.midpoint = function(ts,type) {
   if(type == 'start') {
@@ -198,31 +199,9 @@ function buildSegmentEvent(feat){
   return event;
 }
 
-// NOTE: negative dates won't display faded properly
-// function buildCollectionPeriod(coll){
-//   console.log(' in buildCollectionPeriod()',coll.when.timespan)
-//   window.ts = coll.when.timespan
-//   var event = {};
-//   event['id'] = 'LinkedPlaces001';
-//   event['title'] = 'valid period, '+coll.attributes.title;
-//   event['description'] = ts[4];
-//   event['start'] = new Date(ts[0]);
-//   event['latestStart'] = ts[1] == "" ? "" :new Date(ts[1]);
-//   event['earliestEnd'] = ts[2] == "" ? "" :new Date(ts[2]);
-//   event['end'] = ts[3] == "" ? "" :new Date(ts[3]);
-//   event['durationEvent'] = "true";
-//   event['link'] = "";
-//   // event['link'] = coll.attributes.uri;
-//   event['image'] = "";
-//   // console.log('event', JSON.stringify(event))
-//   tlMidpoint = midpoint(ts,'start')
-//   return event;
-// }
-
-function fixDate(d){
-  let date = new Date();
-  date.setFullYear(d);
-  return date;
+window.fixDate = function(d){
+  let foo = moment(d).toISOString()
+  return foo;
 }
 
 function buildCollectionPeriod(coll){
@@ -558,12 +537,28 @@ window.loadLayer = function(dataset) {
               // console.log(placeFeature)
               let gazURI = layer.feature.properties.gazetteer_uri
 
-              placeFeature.bindPopup(layer.feature.properties.toponym+
-                '<br/><a href="'+gazURI+
-                '" target="_blank">'+(dataset=='courier'?'TGAZ record':
-                  dataset=='vicarello'?'Pleiades record':
-                  ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>'
-                )
+              // placeFeature.bindPopup(layer.feature.properties.toponym+
+              //   '<br/><a href="#" gaz='+gazURI+'>'+(dataset=='courier'?'TGAZ record':
+              //     dataset=='vicarello'?'Pleiades record':
+              //     ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>'
+              //   )
+              var popContent = $('<a href="#" gaz="'+gazURI+'">'+
+                // layer.feature.properties.toponym+'<br/>'+
+                (dataset=='courier'?'TGAZ record':dataset=='vicarello'?'Pleiades record':
+                  ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>')
+                .click(function(){
+                  // alert('test')
+                  // e.preventDefault();
+                  console.log('gonna get and parse gaz json here',gazURI)
+                })
+              // console.log(popContent)
+              // $("p").prepend("<b>Prepended text</b>")
+
+              var toponym = $('<div />').html('<p>'+layer.feature.properties.toponym+'</p>')
+                .append(popContent)[0]
+
+              placeFeature.bindPopup(toponym)
+              // placeFeature.bindPopup(layer.feature.properties.toponym+'<br/>'+foo)
 
               pointFeatures.push(placeFeature)
               var pid = layer.feature.id
@@ -661,7 +656,10 @@ window.loadLayer = function(dataset) {
         initTimeline(eventsObj,dataset)
       })
 }
-
+$(".leaflet-popup-content a").click(function(e){
+  e.preventDefault();
+  console.log(e)
+})
 
 /* xuanzang
         "when": {
