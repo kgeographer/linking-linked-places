@@ -5,7 +5,8 @@ var url = require('url'),
 // require('bootstrap')
 var d3 = Object.assign({}, require("d3"), require("d3-scale"));
 require('mapbox.js')
-// require('d3-scale')
+window.moment = require('moment');
+moment().format();
 
 // import add'l app JavaScript
 import './bloodhound.js';
@@ -69,7 +70,7 @@ window.midpoint = function(ts,type) {
 }
 
 window.initTimeline = function(events,dataset) {
-  console.log(events)
+  // console.log(events)
   // custom timeline click event
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     // popup segment event/period
@@ -197,6 +198,7 @@ function buildSegmentEvent(feat){
   return event;
 }
 
+// NOTE: negative dates won't display faded properly
 // function buildCollectionPeriod(coll){
 //   console.log(' in buildCollectionPeriod()',coll.when.timespan)
 //   window.ts = coll.when.timespan
@@ -205,9 +207,9 @@ function buildSegmentEvent(feat){
 //   event['title'] = 'valid period, '+coll.attributes.title;
 //   event['description'] = ts[4];
 //   event['start'] = new Date(ts[0]);
-//   event['latestStart'] = new Date(ts[1]) == "" ? "" :new Date(ts[1]);
-//   event['earliestEnd'] = new Date(ts[2]) == "" ? "" :new Date(ts[2]);
-//   event['end'] = new Date(ts[3]) == "" ? "" :new Date(ts[3]);
+//   event['latestStart'] = ts[1] == "" ? "" :new Date(ts[1]);
+//   event['earliestEnd'] = ts[2] == "" ? "" :new Date(ts[2]);
+//   event['end'] = ts[3] == "" ? "" :new Date(ts[3]);
 //   event['durationEvent'] = "true";
 //   event['link'] = "";
 //   // event['link'] = coll.attributes.uri;
@@ -216,9 +218,15 @@ function buildSegmentEvent(feat){
 //   tlMidpoint = midpoint(ts,'start')
 //   return event;
 // }
-//
+
+function fixDate(d){
+  let date = new Date();
+  date.setFullYear(d);
+  return date;
+}
+
 function buildCollectionPeriod(coll){
-  console.log(' in buildCollectionPeriod()',coll.when.timespan)
+  // console.log(' in buildCollectionPeriod()',coll.when.timespan)
   window.ts = coll.when.timespan
   var event = {};
   event['id'] = 'LinkedPlaces001';
