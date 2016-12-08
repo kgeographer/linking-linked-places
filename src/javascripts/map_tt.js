@@ -530,13 +530,47 @@ window.loadLayer = function(dataset) {
                   // console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
-                    $.getJSON(gazURI, function(result){
-                      // console.log(result)
-                      $.each(result, function(i, field){
-                          $("#gaz_modal .modal-body").append(field + " ");
-                      })
-                      // console.log( $("#gaz_modal .modal-body").html())
+                    $.ajax({
+                      url: gazURI,
+                      dataType: 'json',
+                      type: 'get',
+                      crossDomain: true,
+                      success: function(data) {
+                        console.log(data)
+                        $.each(data, function(i, field){
+                            $("#gaz_modal .modal-body").append(field + " ");
+                        })
+                        // let json_response = data;
+                        // console.log(json_response);
+                      }
                     })
+
+                    // function get(url) {
+                    //   return new Promise((resolve, reject) => {
+                    //     const req = new XMLHttpRequest();
+                    //     req.open('GET', url);
+                    //     req.onload = () => req.status === 200 ? resolve(req.response) : reject(Error(req.statusText));
+                    //     req.onerror = (e) => reject(Error(`Network Error: ${e}`));
+                    //     req.send();
+                    //   });
+                    // }
+                    // get(gazURI)
+                    //   .then((data) => {
+                    //     console.log(JSON.parse(data))
+                    //     // Do stuff with data, if foo.txt was successfully loaded.
+                    //   })
+                    //   .catch((err) => {
+                    //     console.log(err)
+                    //     // Do stuff on error...
+                    //   });
+
+                    // $.getJSON(gazURI, function(result){
+                    //   // console.log(result)
+                    //   $.each(result, function(i, field){
+                    //       $("#gaz_modal .modal-body").append(field + " ");
+                    //   })
+                    // })
+
                   ).done(function(){
                     $(".loader").hide()
                     $("#gaz_modal .modal-title").html(gazURI)
