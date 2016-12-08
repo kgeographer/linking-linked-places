@@ -45,7 +45,10 @@ window.segmentSearch = function(obj){
     client.search(searchParams).then(function (resp) {
       return Promise.all(resp.hits.hits)
     }).then(function(hitsArray){
-        html += '<div class="place-card"><h4><a href="#" project="'+obj[plKeys[i]][0]+
+        // console.log('plKeys[i] for .place-card', obj[plKeys[i]])
+        html += '<div class="place-card">'+
+          '<p class="search-result-project">from: <em>'+obj[plKeys[i]][0]+'</em></p>'+
+          '<h4><a href="#" project="'+obj[plKeys[i]][0]+
           '" id="'+plKeys[i]+'">'+obj[plKeys[i]][1]+
           '</a> connections:</h4><ul class="ul-segments">';
         for(let j = 0; j < hitsArray.length; j++){

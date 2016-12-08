@@ -290,7 +290,7 @@ window.buildGraph = function(){
     .domain([1,100])
     .range([1,5])
 
-  console.log('current d3graph',d3graph)
+  // console.log('current d3graph',d3graph)
   var svg = d3.select(".modal-body svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -373,7 +373,7 @@ window.buildGraph = function(){
 function download(type, data){
   switch(type) {
     case "d3":
-      console.log('make d3 dataset for '+data+' and load it in force layout somewhere');
+      // console.log('make d3 dataset for '+data+' and load it in force layout somewhere');
       $(".modal-body svg").html('')
       $(".modal-title").html(data)
       // for now, use data in d3graph{}, built on each loadLayer()
@@ -391,7 +391,7 @@ function download(type, data){
 
 window.zapLayer = function(dataset) {
   $("input:checkbox[value='"+dataset+"']").prop('checked',false)
-  console.log('zapping',dataset)
+  // console.log('zapping',dataset)
   let name_p = "places_"+dataset
   let name_s = "segments_"+dataset
   features[name_p].removeFrom(ttmap)

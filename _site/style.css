@@ -47,6 +47,13 @@ body {
   margin-bottom: 4px;
   background: #eeeee0;
 }
+.search-result-project {
+  font-size: 1em;
+}
+.search-result-project em {
+  color: #993333;
+  font-weight: bold;
+}
 .ul-segments {
   list-style: none;
   padding-left: 0;
