@@ -542,11 +542,23 @@ window.loadLayer = function(dataset) {
                     $("#gaz_modal .modal-title").html(gazURI)
                     $("#gaz_modal").modal(); })
                 })
-              var searchLink = $('<p class="popup-find-links"><a href="#">Find linked places</a></p>')
+              var searchLink = $('<p class="popup-find-links"><a href="#">Find connections</a></p>')
                 .click(function(e){
-                  alert('one day soon, this will run a search against the index, '+
-                    'with the same results as using the search feature')
+                  let placeObj = {};
+                  placeObj[layer.feature.id]= [dataset,layer.feature.properties.toponym];
+                  segmentSearch(placeObj)
+                  // alert('one day soon, this will run a search against the index, '+
+                  //   'with the same results as using the search feature')
                 })
+
+                // for(let i=0;i<obj.data.length;i++){
+                //   let project = collections[obj.data[i].source_gazetteer];
+                //   // gather place_ids from 'conflation_of' records
+                //   placeObj[obj.data[i].id] = [project, obj.data[i].title];
+                // }
+                // get segments and display in #results_inset
+                // segmentSearch(placeObj);
+
               var toponym = $('<div />').html('<p>'+layer.feature.properties.toponym+'</p>')
                 // .append(popContent)[0]
                 .append(popContent, searchLink)[0];
