@@ -49,7 +49,7 @@ def init():
     collection = {
         "type":"FeatureCollection",
         "attributes": collectionAttributes,
-        "when": {"timespan": collectionAttributes['timespan'][1:-1].split(',') },
+        "when": {"timespan": collectionAttributes['timespan'][1:-1].split(','), "periods": collectionAttributes['periods']},
         "features": []
         }
 

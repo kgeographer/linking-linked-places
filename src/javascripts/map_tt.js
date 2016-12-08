@@ -34,7 +34,7 @@ window.dataRows = '';
 window.timelineCounter = 0;
 
 $(function() {
-  // startMapM() // TODO: bounding boxes for datasets
+  // TODO: restore state in href approach (?)
   Object.getOwnPropertyNames(searchParams).length == 0 ?
     startMapM() : startMapM(searchParams['d'],searchParams['p'])
   $("#menu").click(function(){
@@ -51,13 +51,13 @@ $(function() {
     } else {
       // one set of events at a time right now
       eventSrc.clear()
-      // $("#tl").html('<p>time is of the essence</p>')
       zapLayer(this.value)
     }
   })
   $('[data-toggle="popover"]').popover();
 
 });
+
 window.midpoint = function(ts,type) {
   if(type == 'start') {
     var mid = new Date(ts[0])
@@ -159,28 +159,12 @@ function onResize() {
     }
 }
 
-function buildEvent(place){
-  // console.log(place)
-  // need validate function here
-  // if(validateWhen(place)==true {})
-  var event = {};
-  event['id'] = place.properties.id;
-  event['title'] = place.properties.label;
-  event['description'] = !place.properties.description ? "" : place.properties.description;
-  // assuming valid; we know it's there in toy example
-  event['start'] = place.when.timespans[0].start.earliest;
-  event['latestStart'] = !place.when.timespans[0].start.latest ? "" :place.when.timespans[0].start.latest;
-  event['end'] = place.when.timespans[0].end.latest;
-  event['earliestEnd'] = !place.when.timespans[0].end.latest ? "" :place.when.timespans[0].end.latest;
-  event['durationEvent'] = "true";
-  event['link'] = "";
-  event['image'] = "";
-
-  return event;
+window.fixDate = function(d){
+  let foo = moment(d).toISOString()
+  return foo;
 }
 
 function buildSegmentEvent(feat){
-  console.log(' in buildSegmentEvent()',feat.when.timespan)
   // need validate function here
   // if(validateWhen(place)==true {})
   var event = {};
@@ -197,11 +181,6 @@ function buildSegmentEvent(feat){
   event['image'] = "";
   // console.log('built ', event)
   return event;
-}
-
-window.fixDate = function(d){
-  let foo = moment(d).toISOString()
-  return foo;
 }
 
 function buildCollectionPeriod(coll){
@@ -277,6 +256,7 @@ function parseWhen(when) {
         "duration: "+when.duration==""?"throughout":when.duration+"</div>"
   return html;
 }
+
 function listFeatureProperties(props,when){
   let html = "<ul class='ul-segments'>"
   // console.log(JSON.stringify(when.timespan))
@@ -298,8 +278,10 @@ function listFeatureProperties(props,when){
 
 function writeAbstract(attribs){
   let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
-    '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'+
-    '<p>'+attribs.description+'</p>'
+    '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
+  html += attribs.periods?'<p><b>Period(s)</b>: <a href="'+
+    attribs.periods[0]+'" target="_blank">'+attribs.periods[0]+'</a><p>':''
+  html += '<p>'+attribs.description+'</p>'
   return html
 }
 
@@ -508,7 +490,7 @@ window.loadLayer = function(dataset) {
     let featureLayer = L.mapbox.featureLayer()
       .loadURL('data/' + dataset + '.geojson')
       .on('ready', function(){
-        // get Collection attributes
+        // get Collection attributes into right panel
         window.collection = featureLayer._geojson
         $("#data_abstract").html(writeAbstract(collection.attributes))
         $("#data_abstract").append("download:" +
@@ -521,6 +503,8 @@ window.loadLayer = function(dataset) {
           download(e.currentTarget.attributes.type.value,
             e.currentTarget.attributes.data.value)
         })
+
+        // set period midpoint for timeline
         tlMidpoint = midpoint(collection.when.timespan,'mid')
 
         // build separate L.featureGroup for points & lines
@@ -550,7 +534,8 @@ window.loadLayer = function(dataset) {
                   console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
-                    $.getJSON(gazURI, function(result){
+                    $.getJSON('http://maps.cga.harvard.edu/tgaz/placename/hvd_9755', function(result){
+                    // $.getJSON(gazURI, function(result){
                       // console.log(result)
                       $.each(result, function(i, field){
                           $("#gaz_modal .modal-body").append(field + " ");
@@ -672,20 +657,6 @@ $(".leaflet-popup-content a").click(function(e){
   e.preventDefault();
   console.log(e)
 })
-
-/* xuanzang
-        "when": {
-          "follows": "20604",
-          "duration": "?",
-          "timespan": [
-            "[0645-01-01",
-            "",
-            "",
-            "0645-12-31",
-            "]"
-          ]
-        }
-*/
 
 /* polands
         "when": {
