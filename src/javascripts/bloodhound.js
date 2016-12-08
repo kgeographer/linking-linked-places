@@ -21,6 +21,7 @@ var years = function(timespan){
 window.segmentSearch = function(obj){
   // retrieve all segments associated with a place,
   // populate results_inset
+  console.log('segmentSearch obj',obj)
   let html = ''
   var plKeys = Object.keys(obj)
   var relevantProjects = []

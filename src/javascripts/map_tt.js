@@ -521,17 +521,13 @@ window.loadLayer = function(dataset) {
               // console.log(placeFeature)
               let gazURI = layer.feature.properties.gazetteer_uri
 
-              // placeFeature.bindPopup(layer.feature.properties.toponym+
-              //   '<br/><a href="#" gaz='+gazURI+'>'+(dataset=='courier'?'TGAZ record':
-              //     dataset=='vicarello'?'Pleiades record':
-              //     ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>'
-              //   )
               var popContent = $('<a href="#" gaz="'+gazURI+'">'+
                 // layer.feature.properties.toponym+'<br/>'+
                 (dataset=='courier'?'TGAZ record':dataset=='vicarello'?'Pleiades record':
                   ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>')
-                .click(function(){
-                  console.log('gonna get and parse gaz json here',gazURI)
+                .click(function(e){
+                  console.log(e)
+                  // console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
                     $.getJSON(gazURI, function(result){
@@ -546,16 +542,20 @@ window.loadLayer = function(dataset) {
                     $("#gaz_modal .modal-title").html(gazURI)
                     $("#gaz_modal").modal(); })
                 })
-
-              // console.log(popContent)
-              // $("p").prepend("<b>Prepended text</b>")
-
+              var searchLink = $('<p class="popup-find-links"><a href="#">Find linked places</a></p>')
+                .click(function(e){
+                  alert('one day soon, this will run a search against the index, '+
+                    'with the same results as using the search feature')
+                })
               var toponym = $('<div />').html('<p>'+layer.feature.properties.toponym+'</p>')
-                .append(popContent)[0]
+                // .append(popContent)[0]
+                .append(popContent, searchLink)[0];
 
               placeFeature.bindPopup(toponym)
-              // placeFeature.bindPopup(layer.feature.properties.toponym+'<br/>'+foo)
 
+              // placeFeature.on("click", function(e){
+              //   alert('this will query the ElasticSearch index...')
+              // })
               pointFeatures.push(placeFeature)
               var pid = layer.feature.id
               idToFeature[dataset].places[pid] = placeFeature
@@ -605,7 +605,11 @@ window.loadLayer = function(dataset) {
                 })
                 // map id to map feature
                 lineFeatures.push(segment)
-                var sid = feat.properties.segment_id
+
+                // var sid = feat.properties.route_id
+                var sid = Object.hasOwnProperty(feat.properties,'segment_id') ?
+                  feat.properties.segment_id : feat.properties.route_id
+                // console.log()
                 idToFeature[dataset].segments[sid] = segment
 
                 // add to links for graph viz; skip any with blank target
