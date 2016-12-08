@@ -404,7 +404,7 @@ window.loadLayers = function(arr) {
   var loadedIDs = $("#data_layers input:checkbox:checked").map(function(){
     return $(this).val();
   }).get();
-  console.log('conflate:',arr,loadedIDs)
+  // console.log('conflate:',arr,loadedIDs)
   for(let i in loadedIDs){
     if(arr.indexOf(loadedIDs[i]) < 0){
       zapLayer(loadedIDs[i])
@@ -412,7 +412,7 @@ window.loadLayers = function(arr) {
   }
   for(let i in arr){
     if(loadedIDs.indexOf(arr[i]) <0){
-      console.log('loading',arr[i])
+      // console.log('loading',arr[i])
       // TODO: multiple datasets per project is an issue
       loadLayer(arr[i]=='incanto'?'incanto-f':arr[i])
     }
@@ -534,8 +534,7 @@ window.loadLayer = function(dataset) {
                   console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
-                    $.getJSON('http://maps.cga.harvard.edu/tgaz/placename/hvd_9755', function(result){
-                    // $.getJSON(gazURI, function(result){
+                    $.getJSON(gazURI, function(result){
                       // console.log(result)
                       $.each(result, function(i, field){
                           $("#gaz_modal .modal-body").append(field + " ");

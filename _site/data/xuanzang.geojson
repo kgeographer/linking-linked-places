@@ -16,7 +16,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1279179",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1279179&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Ajanta Caves",
         "toponym": "Ajanta",
@@ -38,7 +38,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529660",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529660&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Aksu",
         "toponym": "Aksu",
@@ -60,7 +60,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1148671",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1148671&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "An\u1e0fa\u1e5f\u0101b",
         "toponym": "Andarab",
@@ -82,7 +82,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529004",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529004&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Yuanquan",
         "toponym": "An-hsi",
@@ -126,7 +126,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1184249",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1184249&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Attock City",
         "toponym": "Attock",
@@ -148,7 +148,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1278094",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1278094&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Ayodhya",
         "toponym": "Ayodhya",
@@ -192,7 +192,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1147290",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1147290&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "",
         "toponym": "Balkh",
@@ -214,7 +214,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1147242",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1147242&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "B\u0101m\u012b\u0101n",
         "toponym": "Bamiyan",
@@ -236,7 +236,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1276100",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1276100&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Bhar\u016bch",
         "toponym": "Bharukaccha",
@@ -258,7 +258,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1275389",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1275389&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Bodh Gaya",
         "toponym": "Bodh Gaya",
@@ -280,7 +280,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1790630",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1790630&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Xi'an",
         "toponym": "Chang'an",
@@ -302,7 +302,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1280122",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1280122&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Ruoqiang",
         "toponym": "Charkhlik",
@@ -324,7 +324,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1181439",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1181439&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Ch\u0101rsadda",
         "toponym": "Charsadda",
@@ -346,7 +346,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1280249",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1280249&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Qiemo",
         "toponym": "Cherchen",
@@ -368,7 +368,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1271883",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1271883&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "F\u012brozpur",
         "toponym": "Chinabhukti",
@@ -390,7 +390,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/7096609",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=7096609&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Dar\u0113l",
         "toponym": "Darel",
@@ -412,7 +412,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1278718",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1278718&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Amar\u0101vati",
         "toponym": "Dhanakataka",
@@ -434,7 +434,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1142170",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1142170&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Faizabad",
         "toponym": "Faizabad",
@@ -456,7 +456,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529484",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529484&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Hami",
         "toponym": "Hami",
@@ -500,7 +500,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1268782",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1268782&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Jalandhar",
         "toponym": "Jalandhara",
@@ -522,7 +522,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1268159",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1268159&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "K\u0101nchipuram",
         "toponym": "Kancipuram",
@@ -544,7 +544,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1268011",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1268011&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Kannauj",
         "toponym": "Kanyakubja",
@@ -588,7 +588,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/7054036",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=7054036&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Bagr\u0101m",
         "toponym": "Kapisi",
@@ -610,7 +610,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529031",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529031&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Yanqi",
         "toponym": "Karashahr",
@@ -632,7 +632,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1280849",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1280849&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Kashi",
         "toponym": "Kashgar",
@@ -654,7 +654,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1267401",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1267401&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Kaushambi",
         "toponym": "Kausambi",
@@ -676,7 +676,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1281019",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1281019&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Hotan",
         "toponym": "Khotan",
@@ -698,7 +698,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529363",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529363&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Kuqa",
         "toponym": "Kucha",
@@ -720,7 +720,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1135689",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1135689&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Kond\u016bz",
         "toponym": "Kunduz",
@@ -764,7 +764,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1803936",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1803936&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Wuwei",
         "toponym": "Liangzhou",
@@ -786,7 +786,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529336",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529336&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Loulan Yiji",
         "toponym": "Loulan",
@@ -808,7 +808,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1282839",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1282839&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Rummin-dei",
         "toponym": "Lumbini",
@@ -830,7 +830,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1263364",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1263364&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Mathura",
         "toponym": "Mathura",
@@ -852,7 +852,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1263879",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1263879&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Mand\u0101war",
         "toponym": "Matipura",
@@ -874,7 +874,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1169825",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1169825&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Mult\u0101n",
         "toponym": "Multan",
@@ -896,7 +896,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1139715",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1139715&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Nagarahara",
         "toponym": "Nagarahara",
@@ -918,7 +918,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1262080",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1262080&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "N\u0101landa",
         "toponym": "Nalanda",
@@ -940,7 +940,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1261731",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1261731&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "N\u0101sik",
         "toponym": "Nasik",
@@ -962,7 +962,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1280555",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1280555&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Minfeng",
         "toponym": "Niya",
@@ -1006,7 +1006,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1260086",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1260086&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Patna",
         "toponym": "Pataliputra",
@@ -1028,7 +1028,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1168197",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1168197&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Pesh\u0101war",
         "toponym": "Peshawar",
@@ -1050,7 +1050,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1278994",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1278994&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Allah\u0101b\u0101d",
         "toponym": "Prayaga",
@@ -1072,7 +1072,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1164909",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1164909&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Si\u0101lkot",
         "toponym": "Sakala",
@@ -1094,7 +1094,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1216265",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1216265&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Samarqand",
         "toponym": "Samarkand",
@@ -1138,7 +1138,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1257373",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1257373&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Sank\u0101sya",
         "toponym": "Sankasya",
@@ -1160,7 +1160,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1257137",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1257137&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "S\u0101rn\u0101th",
         "toponym": "Sarnath and Varanasi",
@@ -1182,7 +1182,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/7074006",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=7074006&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Garhi Sh\u0101hb\u0101z",
         "toponym": "Shabaz Gharhi",
@@ -1204,7 +1204,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1255634",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1255634&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Sr\u012bnagar",
         "toponym": "Shrinigar",
@@ -1270,7 +1270,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1255046",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1255046&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Taml\u016bk",
         "toponym": "Tamrallipti",
@@ -1292,7 +1292,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1512569",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1512569&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Tashkent",
         "toponym": "Tashkent",
@@ -1314,7 +1314,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1279901",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1279901&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Taxkorgan",
         "toponym": "Tashkurghan",
@@ -1336,7 +1336,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1163715",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1163715&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Taxila",
         "toponym": "Taxila",
@@ -1380,7 +1380,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1527199",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1527199&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Tokmok",
         "toponym": "Tokmak",
@@ -1402,7 +1402,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529531",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529531&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Dunhuang",
         "toponym": "Tun-huang",
@@ -1424,7 +1424,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1529114",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1529114&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Turpan",
         "toponym": "Turfan",
@@ -1446,7 +1446,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1253914",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1253914&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Ujjain",
         "toponym": "Ujjayini",
@@ -1490,7 +1490,7 @@
       "properties": {
         "status": "",
         "collection": "xuanzang",
-        "gazetteer_uri": "http://geonames.org/1280037",
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1280037&username=demo&style=full",
         "source": "Wri98",
         "gazetteer_label": "Shache",
         "toponym": "Yarkand",

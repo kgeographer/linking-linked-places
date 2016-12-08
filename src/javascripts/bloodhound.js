@@ -24,7 +24,7 @@ window.segmentSearch = function(obj){
   let html = ''
   var plKeys = Object.keys(obj)
   var relevantProjects = []
-  console.log('segmentSearch obj', obj)
+  // console.log('segmentSearch obj', obj)
   for(let i = 0; i < plKeys.length; i++){
     // console.log('plKeys', plKeys[i])
     relevantProjects.push(obj[plKeys[i]][0])
@@ -41,23 +41,6 @@ window.segmentSearch = function(obj){
         }
       }
     }
-
-    // 54-68 works; matches only source
-    // var searchParams = {
-    //   index: 'linkedplaces',
-    //   type: 'segment',
-    //   body: {
-    //     query: {
-    //       nested : {
-    //           path : "properties",
-    //           query : {
-    //              match : {"properties.source" : plKeys[i] }
-    //           },
-    //           inner_hits : {}
-    //       }
-    //     }
-    //   }
-    // }
 
     client.search(searchParams).then(function (resp) {
       return Promise.all(resp.hits.hits)
@@ -78,14 +61,14 @@ window.segmentSearch = function(obj){
           console.log('project',proj)
           // if project/dataset isn't loaded, load it (project !- dataset for incanto)
           window.pcheck = $("input:checkbox[value='"+proj+"']")
-          console.log('toponym checked',pcheck,proj)
+          // console.log('toponym checked',pcheck,proj)
           if(pcheck.prop('checked') == false){
             location.href = location.origin+location.pathname+'?d='+proj+'&p='+this.id
             pcheck.prop('checked', true)
           } else {
-            console.log(proj,'already loaded, zoom to',this.id)
+            // console.log(proj,'already loaded, zoom to',this.id)
           }
-          console.log('got data, now place', this.id)
+          // console.log('got data, now place', this.id)
           ttmap.setView(idToFeature[proj].places[this.id].getLatLng(),6)
           idToFeature[proj].places[this.id].openPopup()
         })
@@ -95,7 +78,7 @@ window.segmentSearch = function(obj){
   loadLayers(relevantProjects);
 }
 
-// resolve collection names in data
+// resolve collection names as the exist in data
 var collections = {"ra":"roundabout","courier":"courier","incanto":"incanto",
   "vb":"vicarello","xuanzang":"xuanzang"}
 
@@ -145,30 +128,17 @@ $('#bloodhound .typeahead').typeahead({
 });
 
 $(".typeahead").on("typeahead:select", function(e,obj){
-  console.log('typeahead obj',obj)
-  // $("#results h3").html(obj.value)
-  // var re = /\((.*)\)/;
-  // window.html = "<table class='gaz-entries'><tr>"+
-  //   "<th>Toponym</th><th>Dataset</th></tr>";
+  // console.log('typeahead obj',obj)
   var placeObj = {};
   for(let i=0;i<obj.data.length;i++){
     let project = collections[obj.data[i].source_gazetteer];
     // gather place_ids from 'conflation_of' records
     placeObj[obj.data[i].id] = [project, obj.data[i].title];
   }
-  // related segments to results_inset
+  // get segments and display in #results_inset
   segmentSearch(placeObj);
-  console.log('typeahead placeObj', placeObj)
-  // html += "</table>"
+  // console.log('typeahead placeObj', placeObj)
 
   $(".typeahead.tt-input")[0].value = '';
   //
 })
-
-// client.ping({requestTimeout: 30000}, function (error) {
-//   if (error) {
-//     console.error('elasticsearch cluster is down!');
-//   } else {
-//     console.log('ES is up');
-//   }
-// });

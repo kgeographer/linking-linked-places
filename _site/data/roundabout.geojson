@@ -24,7 +24,7 @@
         "gazetteer_label": "Palo Alto",
         "toponym": "Palo Alto, CA",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/5380748"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=5380748&username=demo&style=full"
       },
       "label": "Palo Alto, CA",
       "id": "ra0001",
@@ -45,7 +45,7 @@
         "gazetteer_label": "Fernley",
         "toponym": "Fernley, NV",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/5504003"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=5504003&username=demo&style=full"
       },
       "label": "Fernley, NV",
       "id": "ra0002",
@@ -66,7 +66,7 @@
         "gazetteer_label": "Delta",
         "toponym": "Delta, UT",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/5538080"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=5538080&username=demo&style=full"
       },
       "label": "Delta, UT",
       "id": "ra0003",
@@ -87,7 +87,7 @@
         "gazetteer_label": "Craig",
         "toponym": "Craig, CO",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/5576064"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=5576064&username=demo&style=full"
       },
       "label": "Craig, CO",
       "id": "ra0004",
@@ -108,7 +108,7 @@
         "gazetteer_label": "Fort Collins",
         "toponym": "Fort Collins, CO",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/5577147"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=5577147&username=demo&style=full"
       },
       "label": "Fort Collins, CO",
       "id": "ra0005",
@@ -129,7 +129,7 @@
         "gazetteer_label": "Denver",
         "toponym": "Denver, CO",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/5419384"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=5419384&username=demo&style=full"
       },
       "label": "Denver, CO",
       "id": "ra0006",
@@ -150,7 +150,7 @@
         "gazetteer_label": "Cambridge",
         "toponym": "Cambridge, MA",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/4931972"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=4931972&username=demo&style=full"
       },
       "label": "Cambridge, MA",
       "id": "ra0007",
@@ -171,7 +171,7 @@
         "gazetteer_label": "Paris",
         "toponym": "Paris, France",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/2988507"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=2988507&username=demo&style=full"
       },
       "label": "Paris, France",
       "id": "ra0008",
@@ -192,7 +192,7 @@
         "gazetteer_label": "Bourg-en-Bresse",
         "toponym": "Bourg-en-Bresse, France",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3031009"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3031009&username=demo&style=full"
       },
       "label": "Bourg-en-Bresse, France",
       "id": "ra0009",
@@ -213,7 +213,7 @@
         "gazetteer_label": "Milan",
         "toponym": "Milan, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3173435"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3173435&username=demo&style=full"
       },
       "label": "Milan, Italy",
       "id": "ra0010",
@@ -234,7 +234,7 @@
         "gazetteer_label": "Rijeka",
         "toponym": "Rijeka, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3191648"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3191648&username=demo&style=full"
       },
       "label": "Rijeka, Croatia",
       "id": "ra0011",
@@ -255,7 +255,7 @@
         "gazetteer_label": "Zagreb",
         "toponym": "Zagreb, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3186886"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3186886&username=demo&style=full"
       },
       "label": "Zagreb, Croatia",
       "id": "ra0012",
@@ -276,7 +276,7 @@
         "gazetteer_label": "Sarajevo",
         "toponym": "Sarajevo, Bosnia and Herzegovina",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3191281"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3191281&username=demo&style=full"
       },
       "label": "Sarajevo, Bosnia and Herzegovina",
       "id": "ra0013",
@@ -297,7 +297,7 @@
         "gazetteer_label": "Mostar",
         "toponym": "Mostar, Bosnia and Herzegovina",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3194828"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3194828&username=demo&style=full"
       },
       "label": "Mostar, Bosnia and Herzegovina",
       "id": "ra0014",
@@ -318,7 +318,7 @@
         "gazetteer_label": "Dubrovnik",
         "toponym": "Dubrovnik, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3201047"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3201047&username=demo&style=full"
       },
       "label": "Dubrovnik, Croatia",
       "id": "ra0015",
@@ -339,7 +339,7 @@
         "gazetteer_label": "Kotor",
         "toponym": "Kotor, Montenegro",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3197538"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3197538&username=demo&style=full"
       },
       "label": "Kotor, Montenegro",
       "id": "ra0016",
@@ -360,7 +360,7 @@
         "gazetteer_label": "Split",
         "toponym": "Split, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3190261"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3190261&username=demo&style=full"
       },
       "label": "Split, Croatia",
       "id": "ra0017",
@@ -381,7 +381,7 @@
         "gazetteer_label": "Trogir",
         "toponym": "Trogir, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3188763"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3188763&username=demo&style=full"
       },
       "label": "Trogir, Croatia",
       "id": "ra0018",
@@ -402,7 +402,7 @@
         "gazetteer_label": "Solin",
         "toponym": "Solin, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3190359"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3190359&username=demo&style=full"
       },
       "label": "Solin, Croatia",
       "id": "ra0019",
@@ -423,7 +423,7 @@
         "gazetteer_label": "Ancona",
         "toponym": "Ancona, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3183089"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3183089&username=demo&style=full"
       },
       "label": "Ancona, Italy",
       "id": "ra0020",
@@ -444,7 +444,7 @@
         "gazetteer_label": "Ascoli Piceno",
         "toponym": "Ascoli Piceno, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3182749"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3182749&username=demo&style=full"
       },
       "label": "Ascoli Piceno, Italy",
       "id": "ra0021",
@@ -465,7 +465,7 @@
         "gazetteer_label": "Madrid",
         "toponym": "Madrid, Spain",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3117735"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3117735&username=demo&style=full"
       },
       "label": "Madrid, Spain",
       "id": "ra0022",
@@ -486,7 +486,7 @@
         "gazetteer_label": "Edinburgh",
         "toponym": "Edinburgh, Scotland",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/2650225"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=2650225&username=demo&style=full"
       },
       "label": "Edinburgh, Scotland",
       "id": "ra0023",
@@ -507,7 +507,7 @@
         "gazetteer_label": "Bangkok",
         "toponym": "Bangkok, Thailand",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/1609350"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=1609350&username=demo&style=full"
       },
       "label": "Bangkok, Thailand",
       "id": "ra0024",
@@ -528,7 +528,7 @@
         "gazetteer_label": "Korenica",
         "toponym": "Korenica, Croatia",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3189076"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3189076&username=demo&style=full"
       },
       "label": "Korenica, Croatia",
       "id": "ra0025",
@@ -549,7 +549,7 @@
         "gazetteer_label": "Sarnano",
         "toponym": "Sarnano, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3167119"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3167119&username=demo&style=full"
       },
       "label": "Sarnano, Italy",
       "id": "ra0026",
@@ -570,7 +570,7 @@
         "gazetteer_label": "Grottammare",
         "toponym": "Grottammare, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3175771"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3175771&username=demo&style=full"
       },
       "label": "Grottammare, Italy",
       "id": "ra0027",
@@ -591,7 +591,7 @@
         "gazetteer_label": "Offida",
         "toponym": "Offida, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3172104"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3172104&username=demo&style=full"
       },
       "label": "Offida, Italy",
       "id": "ra0028",
@@ -612,7 +612,7 @@
         "gazetteer_label": "Rome",
         "toponym": "Rome, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3169070"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3169070&username=demo&style=full"
       },
       "label": "Rome, Italy",
       "id": "ra0029",
@@ -633,7 +633,7 @@
         "gazetteer_label": "Urbino",
         "toponym": "Urbino, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3165035"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3165035&username=demo&style=full"
       },
       "label": "Urbino, Italy",
       "id": "ra0030",
@@ -654,7 +654,7 @@
         "gazetteer_label": "San Marino",
         "toponym": "San Marino",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3168070"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3168070&username=demo&style=full"
       },
       "label": "San Marino",
       "id": "ra0031",
@@ -675,7 +675,7 @@
         "gazetteer_label": "Rieti",
         "toponym": "Rieti, Italy",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3169412"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3169412&username=demo&style=full"
       },
       "label": "Rieti, Italy",
       "id": "ra0032",
@@ -696,7 +696,7 @@
         "gazetteer_label": "Boston",
         "toponym": "Boston, MA",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/4930956"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=4930956&username=demo&style=full"
       },
       "label": "Boston, MA",
       "id": "ra0033",
@@ -717,7 +717,7 @@
         "gazetteer_label": "Reykjavik",
         "toponym": "Reykjavik, Iceland",
         "comment": "",
-        "gazetteer_uri": "http://www.geonames.org/3413829"
+        "gazetteer_uri": "http://api.geonames.org/getJSON?geonameId=3413829&username=demo&style=full"
       },
       "label": "Reykjavik, Iceland",
       "id": "ra0034",
