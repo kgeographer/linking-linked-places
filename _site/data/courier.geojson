@@ -7,7 +7,7 @@
     "places": "places_courier.csv",
     "title": "Late Ming Dynasty Courier Routes and Postal Stations",
     "timespan": "[1368,,,1644,Ming Dynasty]",
-    "periods": ["http://n2t.net/ark:/99152/p0fp7wv2s8c"],
+    "periods": ["https://test.perio.do/fp7wv2s8c.json"],
     "contributors": "Lex Berman (CGA, Harvard Univ)"
   },
   "type": "FeatureCollection",

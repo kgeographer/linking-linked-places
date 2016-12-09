@@ -44,6 +44,7 @@ $(function() {
   $("input:checkbox").change(function(){
     if(this.checked == true) {
       if(searchParams['p'] == undefined) {
+        $(".loader").show()
         loadLayer(this.value)
       } else {
         location.href = location.origin+location.pathname+'?d='+this.value;
@@ -276,11 +277,63 @@ function listFeatureProperties(props,when){
   return html;
 }
 
+// $.getJSON(gazURI, function(result){
+//   // console.log(result)
+//   $.each(result, function(i, field){
+//       $("#gaz_modal .modal-body").append(field + " ");
+//   })
+// })
+
+// function writeAbstract(attribs){
+//   let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
+//     '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
+//   // if there's a period, make a link w/bound event, otherwise ''
+//   html += attribs.periods?'<p><b>Period(s)</b>: '+
+//     $('<a href="'+attribs.periods[0]+'" target="_blank">'+attribs.periods[0]+'</a></p>')
+//       .on("click", function(e){console.log('we do an ajax call for a period here')})
+//     :''
+//   html += '<p>'+attribs.description+'</p>'
+//   return html
+// }
+window.loadPeriods = function(uri){
+  console.log('loadPeriods()',uri)
+  $.when(
+    // vanilla
+    $.ajax({
+      url: uri,
+      dataType: 'json',
+      type: 'get',
+      crossDomain: true,
+      success: function(data) {
+        console.log(data)
+        $.each(data, function(i, field){
+            $("#gaz_modal .modal-body").append(field + " ");
+        })
+        // let json_response = data;
+        // console.log(json_response);
+      }
+    })
+
+    // $.getJSON(uri, function(result){
+    //   // console.log(result)
+    //   $.each(result, function(i, field){
+    //       $("#gaz_modal .modal-body").append(field + " ");
+    //   })
+    // })
+  ).done(function(){
+    $(".loader").hide()
+    $("#gaz_modal .modal-title").html(uri)
+    $("#gaz_modal").modal(); })
+}
 function writeAbstract(attribs){
+  if(attribs.periods){
+    var foo = '<span class="span-link" onclick="loadPeriods(\''+attribs.periods[0]+'\')">'
+  }
   let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
     '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
-  html += attribs.periods?'<p><b>Period(s)</b>: <a href="'+
-    attribs.periods[0]+'" target="_blank">'+attribs.periods[0]+'</a><p>':''
+  html += attribs.periods?
+    '<p><b>Period(s)</b>: '+ foo +
+    attribs.periods[0]+'</span><p>':''
   html += '<p>'+attribs.description+'</p>'
   return html
 }
@@ -371,6 +424,7 @@ window.buildGraph = function(){
 }
 
 function download(type, data){
+  // console.log('download', type,data)
   switch(type) {
     case "d3":
       // console.log('make d3 dataset for '+data+' and load it in force layout somewhere');
@@ -530,45 +584,26 @@ window.loadLayer = function(dataset) {
                   // console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
-                    $.ajax({
-                      url: gazURI,
-                      dataType: 'json',
-                      type: 'get',
-                      crossDomain: true,
-                      success: function(data) {
-                        console.log(data)
-                        $.each(data, function(i, field){
-                            $("#gaz_modal .modal-body").append(field + " ");
-                        })
-                        // let json_response = data;
-                        // console.log(json_response);
-                      }
+                    $.getJSON(gazURI, function(result){
+                      // console.log(result)
+                      $.each(result, function(i, field){
+                          $("#gaz_modal .modal-body").append(field + " ");
+                      })
                     })
-
-                    // function get(url) {
-                    //   return new Promise((resolve, reject) => {
-                    //     const req = new XMLHttpRequest();
-                    //     req.open('GET', url);
-                    //     req.onload = () => req.status === 200 ? resolve(req.response) : reject(Error(req.statusText));
-                    //     req.onerror = (e) => reject(Error(`Network Error: ${e}`));
-                    //     req.send();
-                    //   });
-                    // }
-                    // get(gazURI)
-                    //   .then((data) => {
-                    //     console.log(JSON.parse(data))
-                    //     // Do stuff with data, if foo.txt was successfully loaded.
-                    //   })
-                    //   .catch((err) => {
-                    //     console.log(err)
-                    //     // Do stuff on error...
-                    //   });
-
-                    // $.getJSON(gazURI, function(result){
-                    //   // console.log(result)
-                    //   $.each(result, function(i, field){
-                    //       $("#gaz_modal .modal-body").append(field + " ");
-                    //   })
+                    // vanilla
+                    // $.ajax({
+                    //   url: gazURI,
+                    //   dataType: 'json',
+                    //   type: 'get',
+                    //   crossDomain: true,
+                    //   success: function(data) {
+                    //     console.log(data)
+                    //     $.each(data, function(i, field){
+                    //         $("#gaz_modal .modal-body").append(field + " ");
+                    //     })
+                    //     // let json_response = data;
+                    //     // console.log(json_response);
+                    //   }
                     // })
 
                   ).done(function(){
@@ -657,7 +692,6 @@ window.loadLayer = function(dataset) {
                 // var sid = feat.properties.route_id
                 var sid = feat.properties.hasOwnProperty('segment_id') ?
                   feat.properties.segment_id : feat.properties.route_id
-                console.log(feat.properties)
                 idToFeature[dataset].segments[sid] = segment
 
                 // add to links for graph viz; skip any with blank target
@@ -703,6 +737,7 @@ window.loadLayer = function(dataset) {
         // load timeline
         initTimeline(eventsObj,dataset)
       })
+      $(".loader").hide()
 }
 $(".leaflet-popup-content a").click(function(e){
   e.preventDefault();

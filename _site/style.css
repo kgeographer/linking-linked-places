@@ -45,6 +45,11 @@ body {
 .popup-find-links {
   font-size: 1em !important;
 }
+.span-link {
+  text-decoration: underline;
+  color: #336699;
+  cursor: pointer;
+}
 .place-card {
   padding: 3px;
   margin-bottom: 4px;
