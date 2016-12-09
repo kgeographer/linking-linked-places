@@ -641,6 +641,8 @@ window.loadLayer = function(dataset) {
                   // label-tl-1-0-5001-6
                   var labelId = '#label-tl-'+(timelineCounter - 1)+'-0-'+
                     feat.properties.segment_id
+                  // console.log(dataset, feat.properties.segment_id)
+                  // console.log(idToFeature[dataset].segments)
                   ttmap.fitBounds(idToFeature[dataset].segments[feat.properties.segment_id].getBounds())
                   // console.log(labelId)
                   $(labelId)[0].className += ' timeline-segment-highlight'
@@ -653,9 +655,9 @@ window.loadLayer = function(dataset) {
                 lineFeatures.push(segment)
 
                 // var sid = feat.properties.route_id
-                var sid = Object.hasOwnProperty(feat.properties,'segment_id') ?
+                var sid = feat.properties.hasOwnProperty('segment_id') ?
                   feat.properties.segment_id : feat.properties.route_id
-                // console.log()
+                console.log(feat.properties)
                 idToFeature[dataset].segments[sid] = segment
 
                 // add to links for graph viz; skip any with blank target
