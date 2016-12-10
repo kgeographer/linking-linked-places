@@ -96,6 +96,11 @@ body {
 .panel table {
   width: 100%;
 }
+.panel i {
+  color: #336699;
+  cursor: pointer;
+  font-size: .9em;
+}
 .left-panel {
   left: 40px;
   top: 10px;

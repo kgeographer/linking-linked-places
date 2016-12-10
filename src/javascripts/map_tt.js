@@ -16,12 +16,12 @@ import './bloodhound.js';
 // exposed for debugging
 window.parsedUrl = url.parse(window.location.href, true, true);
 window.searchParams = querystring.parse(parsedUrl.search.substring(1));
-// window.q = querystring;
 // window.cent = ctr
 // window.buff = buf
 window.features = {};
 window.d3graph = {"nodes":[], "links":[]}
 window.idToFeature = {};
+// TODO; simile doesn't seem able to handle BCE well
 // window.eventsObj = {'dateTimeFormat': 'Gregorian','events':[ ]};
 window.eventsObj = {'dateTimeFormat': 'iso8601','events':[ ]};
 window.myLayer = {};
@@ -56,7 +56,9 @@ $(function() {
     }
   })
   $('[data-toggle="popover"]').popover();
-
+  $('.panel-title i').click(function(){
+    window.open('http://kgeographer.com/?p=140&preview=true', '', 'width=700');
+  })
 });
 
 window.midpoint = function(ts,type) {
@@ -277,26 +279,8 @@ function listFeatureProperties(props,when){
   return html;
 }
 
-// $.getJSON(gazURI, function(result){
-//   // console.log(result)
-//   $.each(result, function(i, field){
-//       $("#gaz_modal .modal-body").append(field + " ");
-//   })
-// })
-
-// function writeAbstract(attribs){
-//   let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
-//     '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
-//   // if there's a period, make a link w/bound event, otherwise ''
-//   html += attribs.periods?'<p><b>Period(s)</b>: '+
-//     $('<a href="'+attribs.periods[0]+'" target="_blank">'+attribs.periods[0]+'</a></p>')
-//       .on("click", function(e){console.log('we do an ajax call for a period here')})
-//     :''
-//   html += '<p>'+attribs.description+'</p>'
-//   return html
-// }
 window.loadPeriods = function(uri){
-  console.log('loadPeriods()',uri)
+  // console.log('loadPeriods()',uri)
   $.when(
     // vanilla
     $.ajax({
@@ -305,25 +289,19 @@ window.loadPeriods = function(uri){
       type: 'get',
       crossDomain: true,
       success: function(data) {
-        console.log(data)
-        $.each(data, function(i, field){
-            $("#gaz_modal .modal-body").append(field + " ");
-        })
-        // let json_response = data;
-        // console.log(json_response);
+        // window.pdata = data
+        // console.log('period data',data)
+        $("#period_pre").html(JSON.stringify(data,undefined,2))
+        // $.each(data, function(i, field){
+        //     $("#period_modal .modal-body").append(field + " <br/>");
+        //     // $("#period_modal .modal-body").append(field + " ");
+        // })
       }
     })
-
-    // $.getJSON(uri, function(result){
-    //   // console.log(result)
-    //   $.each(result, function(i, field){
-    //       $("#gaz_modal .modal-body").append(field + " ");
-    //   })
-    // })
   ).done(function(){
     $(".loader").hide()
-    $("#gaz_modal .modal-title").html(uri)
-    $("#gaz_modal").modal(); })
+    $("#period_modal .modal-title").html(uri)
+    $("#period_modal").modal(); })
 }
 
 function writeCard(dataset,attribs){
@@ -332,7 +310,7 @@ function writeCard(dataset,attribs){
   html += "download:" +
     " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>";
   if(["incanto-f","courier"].indexOf(dataset) > -1){
-    html += "; <a href='#' data='"+dataset+"' type='d3'>d3 graph</a></div>";
+    html += "; <a href='#' data='"+dataset+"' type='d3'>D3 graph</a></div>";
   } else {
     html += "</div>";
   }
@@ -345,36 +323,10 @@ function writeCard(dataset,attribs){
     download(e.currentTarget.attributes.type.value,
       e.currentTarget.attributes.data.value)
   })
-
-  // $("#data_abstract").html()
-  // $("#data_abstract").append("download:" +
-  //   " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>"
-  // )
-  // if(["incanto-f","courier"].indexOf(dataset) > -1){
-  //   $("#data_abstract").append("; <a href='#' data='"+dataset+"' type='d3'>d3 graph</a>")
-  // }
-  // $("#data_abstract a").click(function(e){
-  //   download(e.currentTarget.attributes.type.value,
-  //     e.currentTarget.attributes.data.value)
-  // })
-
-  // if(attribs.periods){
-  //   var foo = '<span class="span-link" onclick="loadPeriods(\''+attribs.periods[0]+'\')">'
-  // }
-  // let html = "<div id='"+attribs.lpid+
-  //   "' class='project-card'><span class='project-card-title'>"+
-  //   attribs.short_title+"</span>"
-  // html += '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
-  //   '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
-  // html += attribs.periods?
-  //   '<p><b>Period(s)</b>: '+ foo +
-  //   attribs.periods[0]+'</span><p>':''
-  // html += '<p>'+attribs.description+'</p></div>'
-  // return html
 }
 
 function writeAbstract(attribs){``
-  console.log('writeAbstract() attribs',attribs)
+  // console.log('writeAbstract() attribs',attribs)
   if(attribs.periods){
     var foo = '<span class="span-link" onclick="loadPeriods(\''+attribs.periods[0]+'\')">'
   }
@@ -485,7 +437,7 @@ function download(type, data){
       // for now, use data in d3graph{}, built on each loadLayer()
       // if(["incanto-f","courier"])
       $(".modal-body").html(buildGraph())
-      $('#myModal').modal('show');
+      $('#graph_modal').modal('show');
 
       break;
     case "geojson-t":
@@ -497,15 +449,16 @@ function download(type, data){
 
 window.zapLayer = function(dataset) {
   // uncheck it
-  $("input:checkbox[value='"+dataset+"']").prop('checked',false)
+  $("input:checkbox[value='"+dataset+"']").prop('checked',false);
   //remove its card from data panel
-  $("#lp_"+dataset).remove()
+  $("#lp_"+dataset).remove();
+  // remove all div.place-card
+  $(".place-card").remove();
   // remove its data from the map
-  let name_p = "places_"+dataset
-  let name_s = "segments_"+dataset
-  features[name_p].removeFrom(ttmap)
-  features[name_s].removeFrom(ttmap)
-  // de-select checkbox
+  let name_p = "places_"+dataset;
+  let name_s = "segments_"+dataset;
+  features[name_p].removeFrom(ttmap);
+  features[name_s].removeFrom(ttmap);
 }
 
 window.loadLayers = function(arr) {
@@ -627,15 +580,16 @@ window.loadLayer = function(dataset) {
                 (dataset=='courier'?'TGAZ record':dataset=='vicarello'?'Pleiades record':
                   ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>')
                 .click(function(e){
-                  console.log(e)
+                  // console.log(e)
                   // console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
                     $.getJSON(gazURI, function(result){
                       // console.log(result)
-                      $.each(result, function(i, field){
-                          $("#gaz_modal .modal-body").append(field + " ");
-                      })
+                      $("#gaz_pre").html(JSON.stringify(result,undefined,2))
+                      // $.each(result, function(i, field){
+                      //     $("#gaz_modal .modal-body").append(field + " ");
+                      // })
                     })
                   ).done(function(){
                     $(".loader").hide()

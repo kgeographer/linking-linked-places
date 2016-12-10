@@ -7,12 +7,10 @@ from elasticsearch import Elasticsearch
 
 es = Elasticsearch()
 
+# it's all or nothing - delete index first
 projects = ["incanto", "vicarello", "courier", "xuanzang", "roundabout"]
 datasets = ["incanto-f", "incanto-j", "vicarello", "courier", "xuanzang", "roundabout"]
-#datasets = ["incanto-f", "incanto-j", "vicarello", "xuanzang"]
-#projects = ["incanto", "vicarello", "xuanzang", "roundabout"]
-#projects = ["courier"]
-#datasets = ["incanto-j"]
+
 
 def indexPlaces():
     # PLACES
@@ -21,7 +19,7 @@ def indexPlaces():
         # NOTE: place index for demo site uses manually edited jsonl files in (...)data/demo
         finp = codecs.open('../_site/data/index/'+projects[y]+'.jsonl', 'r', 'utf8')
         rawp = finp.readlines()
-        finp.close()    
+        finp.close()
         
         # index places
         for x in range(len(rawp)):
@@ -31,6 +29,7 @@ def indexPlaces():
                 print(res['created'], 'place', doc['id'])
             except:
                 print("error:", sys.exc_info()[0])
+                
 
 
 def indexSegments():
@@ -49,7 +48,6 @@ def indexSegments():
                 print(res['created'], 'segment', doc['properties']['segment_id'])
             except:
                 print("error:",  doc['properties']['segment_id'], sys.exc_info()[0])
-    
-indexPlaces()
-#indexSegments()
 
+indexPlaces()
+indexSegments()

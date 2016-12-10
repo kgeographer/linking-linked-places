@@ -10,8 +10,8 @@ def init():
     dir = os.getcwd() + '/data/'
     global proj, reader_p, reader_s, finp, fins, fout, foutp, fouts, collection, collectionAttributes, routeidx
     # courier, incanto-f, incanto-j, roundabout, vicarello, xuanzang
-    proj = 'incanto'
-    data = 'incanto-f'
+    proj = 'roundabout'
+    data = 'roundabout'
 
     finp = codecs.open('../data/source/'+proj+'/places_'+proj+'.csv', 'r', 'utf8')
     fins = codecs.open('../data/source/'+proj+'/segments_'+data+'.csv', 'r', 'utf8')
@@ -49,7 +49,9 @@ def init():
     collection = {
         "type":"FeatureCollection",
         "attributes": collectionAttributes,
-        "when": {"timespan": collectionAttributes['timespan'][1:-1].split(','), "periods": collectionAttributes['periods']},
+        # NOTE: line 53 used for courier, the only one with a "periods" object now
+        #"when": {"timespan": collectionAttributes['timespan'][1:-1].split(','), "periods": collectionAttributes['periods']},
+        "when": {"timespan": collectionAttributes['timespan'][1:-1].split(',')},
         "features": []
         }
 
