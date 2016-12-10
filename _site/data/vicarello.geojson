@@ -9,6 +9,7 @@
     ]
   },
   "attributes": {
+    "lp_id":"lp_vicarello",
     "language": "la",
     "segmentType": "hroute",
     "collections": "Latin Tradition",
@@ -19,6 +20,7 @@
     "timespan": "[-15,15,,400,Variously,'Dated to between 15 BCE and 15 CE'; 'around 200 - 400 CE']",
     "date (numeric)": "300",
     "title": "Vicarello Beakers",
+    "short_title": "Vicarello Beakers",
     "uri": "[http://commons.pelagios.org/2013/10/iwp2-pelagios-and-the-beakers-of-vicarello/",
     "places": "places_vicarello.csv",
     "author": "Anonymous"

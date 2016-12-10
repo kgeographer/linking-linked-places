@@ -4241,9 +4241,11 @@
     }
   ],
   "attributes": {
+    "lp_id":"lp_xuanzang",
     "pub_date": "2010",
     "places": "places_xuanzang.csv",
     "title": "The Pilgramage of Xuanzang, 629-645CE",
+    "short_title":"Xuanzang Pilgrimage",
     "timespan": "[629,,,645,]",
     "contributors": "Whitney Thorpe; K. Grossner",
     "description": "Drawn from Wriggens, S. (2003) 'The Silk Road journey with Xuanzang'",

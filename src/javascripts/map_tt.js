@@ -325,11 +325,63 @@ window.loadPeriods = function(uri){
     $("#gaz_modal .modal-title").html(uri)
     $("#gaz_modal").modal(); })
 }
-function writeAbstract(attribs){
+
+function writeCard(dataset,attribs){
+  // write card and replace intro or append to div#data_abstract
+  let html = writeAbstract(attribs)
+  html += "download:" +
+    " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>";
+  if(["incanto-f","courier"].indexOf(dataset) > -1){
+    html += "; <a href='#' data='"+dataset+"' type='d3'>d3 graph</a></div>";
+  } else {
+    html += "</div>";
+  }
+  if($("#data_abstract_intro").html() == undefined) {
+    $("#data_abstract").append(html);
+  } else {
+    $("#data_abstract_intro").replaceWith(html);
+  }
+  $("#data_abstract a").click(function(e){
+    download(e.currentTarget.attributes.type.value,
+      e.currentTarget.attributes.data.value)
+  })
+
+  // $("#data_abstract").html()
+  // $("#data_abstract").append("download:" +
+  //   " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>"
+  // )
+  // if(["incanto-f","courier"].indexOf(dataset) > -1){
+  //   $("#data_abstract").append("; <a href='#' data='"+dataset+"' type='d3'>d3 graph</a>")
+  // }
+  // $("#data_abstract a").click(function(e){
+  //   download(e.currentTarget.attributes.type.value,
+  //     e.currentTarget.attributes.data.value)
+  // })
+
+  // if(attribs.periods){
+  //   var foo = '<span class="span-link" onclick="loadPeriods(\''+attribs.periods[0]+'\')">'
+  // }
+  // let html = "<div id='"+attribs.lpid+
+  //   "' class='project-card'><span class='project-card-title'>"+
+  //   attribs.short_title+"</span>"
+  // html += '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
+  //   '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
+  // html += attribs.periods?
+  //   '<p><b>Period(s)</b>: '+ foo +
+  //   attribs.periods[0]+'</span><p>':''
+  // html += '<p>'+attribs.description+'</p></div>'
+  // return html
+}
+
+function writeAbstract(attribs){``
+  console.log('writeAbstract() attribs',attribs)
   if(attribs.periods){
     var foo = '<span class="span-link" onclick="loadPeriods(\''+attribs.periods[0]+'\')">'
   }
-  let html = '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
+  let html = "<div id='"+attribs.lp_id+
+    "' class='project-card'><span class='project-card-title'>"+
+    attribs.short_title+"</span>"
+  html += '<p><b>Date</b>: '+attribs.pub_date+'</p>'+
     '<p><b>Contributor(s)</b>: '+attribs.contributors+'<p>'
   html += attribs.periods?
     '<p><b>Period(s)</b>: '+ foo +
@@ -444,8 +496,11 @@ function download(type, data){
 }
 
 window.zapLayer = function(dataset) {
+  // uncheck it
   $("input:checkbox[value='"+dataset+"']").prop('checked',false)
-  // console.log('zapping',dataset)
+  //remove its card from data panel
+  $("#lp_"+dataset).remove()
+  // remove its data from the map
   let name_p = "places_"+dataset
   let name_s = "segments_"+dataset
   features[name_p].removeFrom(ttmap)
@@ -545,18 +600,10 @@ window.loadLayer = function(dataset) {
       .loadURL('data/' + dataset + '.geojson')
       .on('ready', function(){
         // get Collection attributes into right panel
-        window.collection = featureLayer._geojson
-        $("#data_abstract").html(writeAbstract(collection.attributes))
-        $("#data_abstract").append("download:" +
-          " <a href='#' data='"+dataset+"' type='geojson-t'>GeoJSON-T</a>"
-        )
-        if(["incanto-f","courier"].indexOf(dataset) > -1){
-          $("#data_abstract").append("; <a href='#' data='"+dataset+"' type='d3'>d3 graph</a>")
-        }
-        $("#data_abstract a").click(function(e){
-          download(e.currentTarget.attributes.type.value,
-            e.currentTarget.attributes.data.value)
-        })
+        var collection = featureLayer._geojson
+
+        // write dataset card for data panel
+        writeCard(dataset,collection.attributes)
 
         // set period midpoint for timeline
         tlMidpoint = midpoint(collection.when.timespan,'mid')
@@ -590,22 +637,6 @@ window.loadLayer = function(dataset) {
                           $("#gaz_modal .modal-body").append(field + " ");
                       })
                     })
-                    // vanilla
-                    // $.ajax({
-                    //   url: gazURI,
-                    //   dataType: 'json',
-                    //   type: 'get',
-                    //   crossDomain: true,
-                    //   success: function(data) {
-                    //     console.log(data)
-                    //     $.each(data, function(i, field){
-                    //         $("#gaz_modal .modal-body").append(field + " ");
-                    //     })
-                    //     // let json_response = data;
-                    //     // console.log(json_response);
-                    //   }
-                    // })
-
                   ).done(function(){
                     $(".loader").hide()
                     $("#gaz_modal .modal-title").html(gazURI)

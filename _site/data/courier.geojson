@@ -1,11 +1,13 @@
 {
   "attributes": {
+    "lp_id": "lp_courier",
     "pub_date": "2014",
     "description": "These data were compiled primarily from the \"Mingdai Yizhankao\" by YANG Zhengtai, supplemented for some areas with information derived from the 1908 Postal Atlas. They were developed for use in an <a href='http://maps.cga.harvard.edu/chinapostoffice/' target='_blank'>online network analyst application</a>, which calculates the shortest route between selected postal stations on the fly.",
     "segmentType": "hroute",
     "uri": "https://github.com/kgeographer/topotime/tree/master/data/source/courier/README_Ming_Courier_Routes_Stations_2014.txt",
     "places": "places_courier.csv",
     "title": "Late Ming Dynasty Courier Routes and Postal Stations",
+    "short_title": "Ming Courier Routes",
     "timespan": "[1368,,,1644,Ming Dynasty]",
     "periods": ["https://test.perio.do/fp7wv2s8c.json"],
     "contributors": "Lex Berman (CGA, Harvard Univ)"

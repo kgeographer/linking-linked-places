@@ -50,17 +50,17 @@ body {
   color: #336699;
   cursor: pointer;
 }
-.place-card {
-  padding: 3px;
-  margin-bottom: 4px;
-  background: #eeeee0;
-}
 .search-result-project {
   font-size: 1em;
 }
 .search-result-project em {
   color: #993333;
   font-weight: bold;
+}
+.place-card {
+  padding: 3px;
+  margin-bottom: 4px;
+  background: #eeeee0;
 }
 .ul-segments {
   list-style: none;
@@ -108,15 +108,25 @@ body {
 }
 #data_abstract {
   position: relative;
-  margin: 0 4px 6px;
-  background: #fff;
-  padding: 4px;
+  margin: 0 4px 0;
 }
 #data_layers {
   position: relative;
   margin: 0 4px 0;
   background: antiquewhite;
   padding: 4px;
+}
+.project-card {
+  margin: 4px 0;
+  background: #fff;
+  padding: 4px;
+}
+.project-card p {
+  margin-bottom: 4px;
+}
+.project-card-title {
+  font-size: 1.2em;
+  color: darkgoldenrod;
 }
 .menu-header {
   display: block;

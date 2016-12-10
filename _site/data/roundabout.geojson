@@ -1758,12 +1758,14 @@
     }
   ],
   "attributes": {
+    "lp_id":"lp_roundabout",
     "pub_date": "2016",
     "contributors": "[K. Grossner]",
     "segmentType": "journey",
     "description": "An 8-month sojourn of geohumanities computing and tourism",
     "timespan": "[2016-09-10,,,2016-11-18,end date uncertain]",
-    "title": "Roundabout, a circumnavigation of the globe, 2016-2017CE"
+    "title": "Roundabout, a circumnavigation of the globe, 2016-2017CE",
+    "short_title":"Roundabout circumnavigation"
   },
   "type": "FeatureCollection"
 }
