@@ -1027,7 +1027,7 @@
               "collection": "ra",
               "mode": "air",
               "target": "ra0034",
-              "segment_id": "6001-34",
+              "segment_id": "6001-39",
               "follows": "6001-6",
               "source": "ra0033",
               "duration": "",
@@ -1045,7 +1045,7 @@
                 "",
                 ""
               ],
-              "follows": "6001-34"
+              "follows": "6001-39"
             },
             "coordinates": [
               [
