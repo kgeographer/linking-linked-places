@@ -19,6 +19,7 @@ var years = function(timespan){
 }
 
 window.segmentSearch = function(obj){
+  ga('send', 'event', ['Search'], ['Select'], ['Search panel']);
   // retrieve all segments associated with a place,
   // populate results_inset
   console.log('segmentSearch obj',obj)
@@ -61,6 +62,7 @@ window.segmentSearch = function(obj){
         html += '</ul></div>'
         $("#results_inset").html(html)
         $(".place-card a").click(function(e){
+          ga('send', 'event', ['Search'], ['Choose dataset'], ['Search panel']);
           window.proj = $(this).attr('project').substring(0,7) == 'incanto'?'incanto-f':$(this).attr('project')
           console.log('project',proj)
           // if project/dataset isn't loaded, load it (project !- dataset for incanto)

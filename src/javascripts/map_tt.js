@@ -44,6 +44,7 @@ $(function() {
   $("input:checkbox").change(function(){
     if(this.checked == true) {
       if(searchParams['p'] == undefined) {
+        ga('send', 'event', ['Layers'], ['Check'], ['Data panel']);
         $(".loader").show()
         loadLayer(this.value)
       } else {
@@ -77,6 +78,7 @@ window.initTimeline = function(events,dataset) {
   // console.log(events)
   // custom timeline click event
   Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
+    ga('send', 'event', ['Timeline'], ['Click event'], ['Timeline']);
     // popup segment event/period
     window.evt = evt
     console.log('timeline evt obj', evt)
@@ -431,6 +433,7 @@ function download(type, data){
   // console.log('download', type,data)
   switch(type) {
     case "d3":
+      ga('send', 'event', ['Graph'], ['Click'], ['Linked Data']);
       // console.log('make d3 dataset for '+data+' and load it in force layout somewhere');
       $(".modal-body svg").html('')
       $(".modal-title").html(data)
@@ -441,6 +444,7 @@ function download(type, data){
 
       break;
     case "geojson-t":
+      ga('send', 'event', ['Download'], ['Click'], ['Linked Data']);
       window.open('data/'+data+'.geojson')
       console.log('deliver GeoJSON-T for '+data+' to browser');
       break;
@@ -454,6 +458,7 @@ window.zapLayer = function(dataset) {
   $("#lp_"+dataset).remove();
   // remove all div.place-card
   $(".place-card").remove();
+  // remove
   // remove its data from the map
   let name_p = "places_"+dataset;
   let name_s = "segments_"+dataset;
@@ -580,7 +585,7 @@ window.loadLayer = function(dataset) {
                 (dataset=='courier'?'TGAZ record':dataset=='vicarello'?'Pleiades record':
                   ['roundabout','xuanzang'].indexOf(dataset)>-1?'Geonames record':'')+'</a>')
                 .click(function(e){
-                  // console.log(e)
+                  ga('send', 'event', ['Map'], ['Gaz lookup'], ['Linked Data']);
                   // console.log('gonna get and parse gaz json here',gazURI)
                   $(".loader").show()
                   $.when(
@@ -618,7 +623,9 @@ window.loadLayer = function(dataset) {
                 .append(popContent, searchLink)[0];
 
               placeFeature.bindPopup(toponym)
-
+              placeFeature.on("click",function(){
+                ga('send', 'event', ['Map'], ['Click place'], ['Map']);
+              })
               // placeFeature.on("click", function(e){
               //   alert('this will query the ElasticSearch index...')
               // })
@@ -652,6 +659,7 @@ window.loadLayer = function(dataset) {
                 }).bindPopup('<b>'+feat.properties.label+'</b><br/>'+
                   listFeatureProperties(feat.properties,feat.when))
                 segment.on("click", function(e){
+                  ga('send', 'event', ['Map'], ['Click segment'], ['Map']);
                   var leafletId = e.layer._leaflet_id
                   // console.log('clicked this',this)
                   this.setStyle(mapStyles.segments.highlight)
