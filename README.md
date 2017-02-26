@@ -9,11 +9,11 @@ Topotime
 
 The project's planned work products include:
 
-* [**GeoJSON-T**](https://github.com/kgeographer/geojson-t), adding temporal ("when") elements to GeoJSON, making it suitable for representing
+* **GeoJSON-T** ([repo](https://github.com/kgeographer/geojson-t)), adding temporal ("when") elements to GeoJSON, making it suitable for representing
 	* attestations of historical geographic movement, such as journeys, routes, and flows (e.g. of commodities, people, or information)  
 	* historical gazetteer records
 	* historical periods
-* [**Linked Places**](https://github.com/kgeographer/linked-places), a web application featuring (at the moment) a web map linked to a traditional timeline. The next phase development will add _temporal geometry_ visualizations and some basic network analysis and visualizations.
+* **Linked Places** ([repo](https://github.com/kgeographer/linked-places)), a web application featuring (at the moment) a web map linked to a traditional timeline. The next phase development will add _temporal geometry_ visualizations and some basic network analysis and visualizations.
 * **topotime.js** (soon), a JavaScript library for rendering GeoJSON&#8209;T data in web apps such as Linked Places. Its dependencies at the moment include the Leaflet, Simile Timeline, and D3 libraries, as well as [...TBD]
 * **topotime.py** (soon), a Python package that reads GeoJSON&#8209;T data and can (a) generate and analyze _temporal geometries_; (b) perform basic network measures
 
